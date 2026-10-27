@@ -536,4 +536,5 @@ mark.reading.conf-medium { border-bottom-style: dashed; }
 .access-direct { background: color-mix(in srgb, var(--green) 15%, transparent); color: var(--green); }
 .access-partial { background: color-mix(in srgb, var(--gold) 18%, transparent); color: var(--gold); }
 .access-search-only { background: color-mix(in srgb, var(--red) 14%, transparent); color: var(--red); }
+.access-private { background: color-mix(in srgb, var(--st-family) 16%, transparent); color: var(--st-family); }
 @media (max-width: 760px) { .cp.cont { display: none; } .ccol:empty, .ccol:not(:has(.cp:not(.cont))) { display: none; } }

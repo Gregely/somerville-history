@@ -634,20 +634,27 @@
  },
  {
   "id": "ev-bunt-born",
-  "year": 1884,
-  "approx": true,
-  "display": "c. 1884",
+  "year": 1882,
+  "approx": false,
+  "display": "8 Aug 1882",
   "kind": "family",
   "title": "W. A. T. B. (\"Bunt\") Somerville born",
-  "desc": "{q:264}",
+  "desc": "Born at Newtownards, according to the family tree; his ages in 1891 and at his death in 1951 agree {s:family-tree-2026} {s:winters-p69}. The narrator: \"born in about 1884\" {q:264} {q:T2:103}.",
   "people": [
    "bunt"
   ],
   "cite": [
    264
   ],
-  "status": "testimony",
-  "conf": "medium"
+  "status": "family",
+  "conf": "medium",
+  "month": 8,
+  "day": 8,
+  "src": [
+   "family-tree-2026",
+   "winters-p68",
+   "winters-p69"
+  ]
  },
  {
   "id": "ev-plan-of-campaign",
@@ -741,7 +748,7 @@
   "display": "by 1894",
   "kind": "family",
   "title": "Bellingham Arthur acquires Clermont",
-  "desc": "Colonel Tottenham buys Clermont at auction and sells it on at cost to Bellingham Arthur, the underbidder {q:574-580} {q:T2:228-231}. A heritage summary (seen only in search results) dates the house's wings to 1894, for \"B A Somerville\" {s:wicklowheritage-clermont}. A compiled genealogy records his daughter Dorothy dying at Seaview House, Wicklow, in March 1895 {s:winters-p68}, so the exact year of the move is uncertain. {ctx}The National Library's list of the Rooke Papers confirms the purchase in the mid-1890s from Col. Charles George Tottenham of Ballycurry {s:nli-rooke}; the 1894 wings were designed by Sir Thomas Drew {s:dia-clermont}.",
+  "desc": "Colonel Tottenham buys Clermont at auction and sells it on at cost to Bellingham Arthur, the underbidder {q:574-580} {q:T2:228-231}. A heritage summary (seen only in search results) dates the house's wings to 1894, for \"B A Somerville\" {s:wicklowheritage-clermont}. A compiled genealogy records his daughter Dorothy dying at Seaview House, Wicklow, in March 1895 {s:winters-p68}, so the exact year of the move is uncertain. {ctx}The National Library's list of the Rooke Papers confirms the purchase in the mid-1890s from Col. Charles George Tottenham of Ballycurry {s:nli-rooke}; the 1894 wings were designed by Sir Thomas Drew {s:dia-clermont}. {int}The family tree's dates narrow the move: Gualter was born at Ballyhenry in May 1894 and Dorothy died at Seaview House in March 1895, while Reginald, the only child born at Clermont, was born in 1897; so the family moved in between March 1895 and 1897 {s:family-tree-2026}.",
   "people": [
    "bellingham-arthur-somerville",
    "colonel-tottenham",
@@ -792,12 +799,12 @@
  },
  {
   "id": "ev-reginald-born",
-  "year": 1896,
-  "approx": true,
-  "display": "c. 1896–97",
+  "year": 1897,
+  "approx": false,
+  "display": "1897",
   "kind": "family",
   "title": "Reginald Somerville born at Clermont",
-  "desc": "The youngest child and the only one born at Clermont; he was 17 when war broke out in 1914 and \"38 at the time\" of his first wife's death, about 1934 {q:348} {q:510} {q:574} {q:T2:138} {q:T2:199} {q:T2:228}. No birth record has been found.",
+  "desc": "The youngest child and the only one born at Clermont; he was 17 when war broke out in 1914 {q:348} {q:574} {q:T2:138} {q:T2:228}. The family tree cites a civil birth registration in 1897, Rathdrum district {s:family-tree-2026}.",
   "people": [
    "reginald-somerville"
   ],
@@ -812,8 +819,11 @@
    "T2:199",
    "T2:228"
   ],
-  "status": "inferred",
-  "conf": "medium"
+  "status": "family",
+  "conf": "medium",
+  "src": [
+   "family-tree-2026"
+  ]
  },
  {
   "id": "ev-cecil-marries",
@@ -1157,12 +1167,12 @@
  },
  {
   "id": "ev-maud-dies",
-  "year": 1934,
+  "year": 1935,
   "approx": true,
-  "display": "c. 1934",
+  "display": "Mar 1935",
   "kind": "family",
   "title": "Maudie dies on the voyage home",
-  "desc": "Two years after Juanita's birth, travelling home to show her to the family; Reginald \"arrived back in Ireland as a widower\" {q:508-510} {q:T2:198-199}.",
+  "desc": "Maudie dies at sea on the voyage home from Kenya, probably on 11 March 1935; Reginald lands in London from Beira on 5 April 1935 with the infant Juanita (family tree, citing the passenger list) {s:family-tree-2026}. The narrator places it \"two years after\" Juanita's birth in 1932 {q:508-510} {q:T2:198-199}.",
   "people": [
    "maud-moore",
    "reginald-somerville",
@@ -1175,17 +1185,21 @@
    "T2:198",
    "T2:199"
   ],
-  "status": "testimony",
-  "conf": "medium"
+  "status": "family",
+  "conf": "medium",
+  "month": 3,
+  "src": [
+   "family-tree-2026"
+  ]
  },
  {
   "id": "ev-honor-marriage",
-  "year": 1935,
+  "year": 1936,
   "approx": true,
-  "display": "mid-1930s",
+  "display": "Apr–Jun 1936",
   "kind": "family",
   "title": "Reginald marries Honor Johnson",
-  "desc": "Childhood friends who met again at Clermont {q:512-514}.",
+  "desc": "Childhood friends who met again at Clermont {q:512-514}. The marriage was registered in Rathdrum district in the April–June quarter of 1936 (family tree, citing the civil marriage index) {s:family-tree-2026}.",
   "people": [
    "reginald-somerville",
    "honor-johnson"
@@ -1198,8 +1212,11 @@
    512,
    514
   ],
-  "status": "testimony",
-  "conf": "high"
+  "status": "family",
+  "conf": "medium",
+  "src": [
+   "family-tree-2026"
+  ]
  },
  {
   "id": "ev-narrator-born",
@@ -1968,6 +1985,49 @@
    "winters-p69"
   ],
   "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-queenstown",
+  "year": 1884,
+  "display": "1884–87",
+  "approx": true,
+  "kind": "family",
+  "title": "The family at Queenstown, Co. Cork",
+  "desc": "According to the family tree, Jim was born at Queenstown (Cobh) on 23 March 1884 and Alan Everard on 6 October 1885; Alan Everard died there on 14 December 1887 {s:family-tree-2026}. {int}This places Bellingham Arthur in east Cork through the Youghal affair of March 1887, as the narrator's \"early stations … in Cork\" implies {q:T2:116}; by April 1888 the family was in Wicklow. The entries are uncited and need the civil registers.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "jim",
+   "alan-everard-somerville"
+  ],
+  "places": [
+   "cork-city"
+  ],
+  "cite": [
+   "T2:116"
+  ],
+  "src": [
+   "family-tree-2026"
+  ],
+  "status": "family",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-reginald-dies",
+  "year": 1971,
+  "month": 7,
+  "display": "Jul 1971",
+  "kind": "family",
+  "title": "Reginald Somerville dies",
+  "desc": "Buried at Delgany, Co. Wicklow (family tree, citing Find a Grave) {s:family-tree-2026}. The narrator says he died of cancer.",
+  "people": [
+   "reginald-somerville"
+  ],
+  "places": [],
+  "src": [
+   "family-tree-2026"
+  ],
+  "status": "family",
   "conf": "medium"
  }
 ]

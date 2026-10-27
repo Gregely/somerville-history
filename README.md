@@ -4,14 +4,14 @@ An interactive, interconnected family-history archive built from a recorded conv
 
 - **Story**: an 11-chapter historical narrative, from the 1748 baronetcy to the sale of Clermont, with family testimony, our interpretations and published history visibly distinguished.
 - **Family tree**: an interactive SVG chart (pan, zoom, pinch, collapse branches, click for details) of the Somervilles and related families (Bellingham, Clinch, Johnson, Truell, O'Connor and others), with the narrator's line of descent highlighted, plus an accessible outline view.
-- **People**: 88 profiles, including the narrator's own immediate family, including a few placeholders for people known to exist but not named. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
+- **People**: 89 profiles, including the narrator's own immediate family, including a few placeholders for people known to exist but not named. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
 - **Places**: 64 places on a map (Leaflet/OpenStreetMap), from Cumry and Castle Bellingham to Trinidad, Archangel and Nanyuki.
-- **Timeline**: 84 events, with family events and wider history side by side, grouped by era.
+- **Timeline**: 86 events, with family events and wider history side by side, grouped by era.
 - **Glossary**: 66 terms covering RIC ranks, militia, dormant titles, expressions, surnames and nicknames.
 - **Open questions**: a register of 43 ambiguities and contradictions (13 resolved, 13 partly resolved, 17 open), each with the evidence, the reasoning and the next research steps.
 - **Transcripts**: both versions of the conversation (A, the original working transcript; B, the companion), with 283 inline "readings" of misheard words (e.g. *"Whitflow"* → Wicklow, *"badayos"* → Badajoz, *"Green desert"* → Reendesert), each with a confidence level and, where useful, a note on how the other transcript heard it. Chips show which entries cite each passage, and every paragraph links to its parallel in the other transcript.
 - **Compare**: transcripts A and B side by side, paragraph by paragraph (`#/compare`), so any reading can be checked against both.
-- **Sources**: 70 external sources, each marked as read directly, partly read, or known only from a search result, with the date checked.
+- **Sources**: 72 sources, including the family's private Ancestry tree (cited, never published), each marked as read directly, partly read, or known only from a search result, with the date checked.
 - **Search**: one search box over everything, including transcript misspellings and near-misses (try *bellendrum*, *Bunt*, *Tete*, *Whitflow*, *Gualter*).
 
 ## Running it
@@ -43,7 +43,7 @@ They are two machine transcriptions of one recording, not two interviews: B is o
 | ◇ **Interpretation** | Our reading: resolving a misheard word, merging references, inferring a relationship or date |
 | ▤ **Published record** | From an external source, with a numbered citation |
 | ⚑ **Conflict** | The recording and published sources disagree and the evidence is not decisive; both are kept |
-| ✎ **Family information** | Supplied by the family in 2026, not said in the recording (e.g. the names of the narrator's children) |
+| ✎ **Family information** | Supplied by the family in 2026, including its Ancestry tree; not said in the recording and not independently verified (e.g. the names of the narrator's children, dates taken from the tree) |
 
 **When records contradict the narrator.** Where a primary record or well-supported published research contradicts Grandpa's recollection, the archive's conclusion follows the documentary evidence, and his own words are shown beside it as *❝ Narrator's account*, with the source and the reasoning in a note. His testimony is never silently replaced; the transcripts remain the primary source for what he said. In the data this is the optional `narrator` field on a fact or a birth or death date.
 
@@ -74,6 +74,7 @@ transcripts/alignment.json  GENERATED A↔B paragraph alignment
 scripts/build.mjs           validator + bundler (+ quotation checker)
 scripts/align.py            regenerates the A↔B alignment
 scripts/repo-check.mjs      final check: no credentials, transcripts complete and fully bundled
+research/                   evidence-audit reports and registers (e.g. evidence-audit-2026-10.md / .csv)
 tests/smoke.cjs             headless browser smoke test (Playwright)
 ```
 
@@ -146,6 +147,22 @@ Open questions were re-examined against primary records and well-supported publi
 - **Bunt: King's Own (Royal Lancaster)**, the commander at Archangel. **Tenison**, not Tennyson. **Cumry** is the townland Na Comraigh in Aghnamullen parish, near Ballybay, spelled exactly as the narrator spelled it. **Reendesert Lodge** was Kitty's home with her first husband, **Alan Campbell Ferguson** (d. 1920), so she was his widow. The sale of **Castle Bellingham** was completed by Alan's widow. The **recording date** is adopted as 27 October 2026.
 - Partly resolved: **Pat** was probably captured in October 1914 near Zonnebeke, with the 2nd Battalion, not "in the retreat from Mons". **Tenison Alan** died on 31 July 1895, but who died first is still open. **Gunners' Venture Ltd** existed: a 17,000-acre farm near Nanyuki owned by ex-artillery officers. A **Rachel Clinch** was Margaret's mother; a sister of that name is unconfirmed. Some of the **papers** are located: the NLI's Rooke Papers and G.O. MS 182A, and in 1998 the library noted that "the Somerville Papers" were with Mr William Somerville.
 - **The narrator's family** is now identified, with relationships confirmed by the family: William Somerville (b. 1937), son of Reginald Somerville and Honor Johnson; his sister Juanita (b. 1932, strictly a half-sister); his sons James, Charles and Edward; and his grandson Gergely, Charles's son, the interviewer. All of them are in the tree and the profiles. The existing records for the narrator, the interviewer and Juanita were updated rather than duplicated.
+
+### Evidence audit against the family's Ancestry tree (October 2026)
+
+The family's Ancestry tree, exported as a GEDCOM file, was cross-examined against both transcripts, the archive and independent sources, claim by claim. The full report, with a 39-claim discrepancy register, verdicts, error patterns, a bibliography, records to consult and a change log, is in [`research/evidence-audit-2026-10.md`](research/evidence-audit-2026-10.md), with the register as [CSV](research/evidence-audit-2026-10.csv).
+
+**The GEDCOM is never committed.** `*.ged` is git-ignored, because the file contains living relatives and other branches of the family. In the archive it is cited as a private source with no public link, and its claims carry the *Family information* label. Only 27% of its vital facts carry any citation, and the records it cites (civil indexes, censuses, passenger lists, Find a Grave) could not be opened, so none is presented as an independently verified record.
+
+Main results:
+- Two of Bellingham Arthur's children were born at Queenstown, Co. Cork, in 1884–85, which puts the family in east Cork at the time of the Youghal riot.
+- The ninth child who died young is named: Alan Everard (1885–87).
+- Bunt was born in 1882.
+- Maudie died in March 1935 and Reginald remarried in 1936.
+- The archive had skipped a generation in the Johnson line; this is corrected.
+- "William P … William J" in the recording are the tree's labels for Major William and Captain William.
+- New conflicts are now visible (Henry Bellingham Somerville's birth, Vere's death, Captain William's birth day).
+- The tree's own errors are listed and were not adopted: impossible parents for Elizabeth Tenison, the 17th-century generations, a duplicated Cecilia.
 
 ### Source checks
 

@@ -549,7 +549,7 @@
   "url": "https://winters-online.net/bishopmeredith/g1/p66.htm",
   "type": "compiled genealogy",
   "reliability": "Compiled online genealogy citing Stirnet (Somerville03) and Rayment's Baronetage. Secondary; not checked against originals.",
-  "used": "William Somerville (1720–March 1780), son of Sir James Somerville, 1st Bt, and Elizabeth Quaile; 'He was a Major in the Army'; married Sarah (before 1744) and Elizabeth Munroe (1774); son William born 3 March 1776.",
+  "used": "William Somerville (1720–March 1780), son of Sir James Somerville, 1st Bt, and Elizabeth Quaile; 'He was a Major in the Army'; married Sarah (before 1744) and Elizabeth Munroe (1774); son William born 3 March 1776. Also: Elizabeth Quaile's father is named as William Quaile, Alderman of Dublin (Wikipedia says James Quayle); Sir James's eldest son Quaile was born 14 March 1714.",
   "access": "direct",
   "checked": "2026-10-27"
  },
@@ -780,5 +780,28 @@
   "used": "Search summaries: a museum caption names \"Captain W A T Somerville DSO\"; a forum account of the 1st Battalion's fighting at Haucourt names Lieutenant W. A. T. B. Somerville as adjutant.",
   "checked": "2026-10-27",
   "access": "search-only"
+ },
+ {
+  "id": "family-tree-2026",
+  "title": "Somerville Family Tree (the family's Ancestry member tree), GEDCOM export of 27 October 2026",
+  "publisher": "Private research file supplied by the family; not published",
+  "year": "2026",
+  "type": "family tree",
+  "access": "private",
+  "checked": "2026-10-27",
+  "reliability": "A private, partly sourced family tree. Some facts cite record indexes (Irish civil registration, 1901/1911/1926 censuses, passenger lists, probate calendars, newspapers); many are uncited, and the earliest generations are copied from other online trees. The cited records were not inspected for this archive.",
+  "used": "Cross-examined claim by claim in the October 2026 evidence audit (research/evidence-audit-2026-10.md). Adopted, as family information: the births at Queenstown, Co. Cork (1884, 1885) and the death there in 1887 of Alan Everard; Bunt's, Gualter's and Edeline's births; Reginald's birth (1897, citing the civil birth index), second marriage (1936, citing the civil marriage index) and death (1971); Maudie's death at sea (March 1935) and Reginald's arrival in London on 5 April 1935 (passenger list BT26/1069/131); Honor Johnson's names and dates; Rev. Phillip Bernard Johnson; the structure of the Johnson line; Clinch, Truell and O'Connor dates."
+ },
+ {
+  "id": "wp-henry-rooke-priest",
+  "title": "Henry Rooke (priest)",
+  "publisher": "Wikipedia",
+  "year": "",
+  "url": "https://en.wikipedia.org/wiki/Henry_Rooke_(priest)",
+  "type": "reference",
+  "access": "direct",
+  "checked": "2026-10-27",
+  "reliability": "Encyclopedia article citing Crockford's Clerical Directory (1898).",
+  "used": "Henry Rooke was rector of Wicklow 1873–1906 and Archdeacon of Glendalough 1906–14; so Rev. Johnson's incumbency at Wicklow would follow 1906."
  }
 ]

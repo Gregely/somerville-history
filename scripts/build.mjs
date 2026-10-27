@@ -310,8 +310,8 @@ else if (quoteIssues.length) warn(`${quoteIssues.length} quotation(s) with weak 
 
 // ---------- sources ----------
 for (const s of data.sources) {
-  if (!/^https?:\/\//.test(s.url || "")) err(`source ${s.id}: missing or bad url`);
-  if (!["direct", "search-only", "partial"].includes(s.access)) err(`source ${s.id}: access must be direct | partial | search-only`);
+  if (s.access === "private" ? s.url : !/^https?:\/\//.test(s.url || "")) err(`source ${s.id}: ${s.access === "private" ? "a private source must not have a public url" : "missing or bad url"}`);
+  if (!["direct", "search-only", "partial", "private"].includes(s.access)) err(`source ${s.id}: access must be direct | partial | search-only | private`);
 }
 
 // ---------- report ----------

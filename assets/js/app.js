@@ -31,7 +31,7 @@
     return { path, params };
   }
   // People whose ids changed when they were identified; old links still work.
-  const MOVED = { "unidentified-son": "tenison-somerville-1812", "elder-brother-ric": "william-dennistoun-somerville", "mrs-truell": "vere-somerville", "died-young-1": "dorothy-somerville", "jim-wife": "margaret-lucy-starkey" };
+  const MOVED = { "unidentified-son": "tenison-somerville-1812", "died-young-2": "alan-everard-somerville", "elder-brother-ric": "william-dennistoun-somerville", "mrs-truell": "vere-somerville", "died-young-1": "dorothy-somerville", "jim-wife": "margaret-lucy-starkey" };
   function route() {
     const { path, params } = parse();
     const moved = path.match(/^\/(person)\/([^/]+)$/);
@@ -124,7 +124,7 @@
         + `<div class="pop-f">Click to open in the transcript · <a href="#/compare?at=${t}:${a}">compare A | B</a></div>`;
     } else if (el.matches(".cite-s")) {
       const s = SA.sources[el.dataset.s];
-      pop.innerHTML = `<div class="pop-h">Source [${SA.sourceNo[s.id]}]</div><p><b>${esc(s.title)}</b><br>${esc(s.publisher)}</p>${s.used ? `<p class="small">${esc(s.used)}</p>` : ""}<div class="pop-f">Click for the source list · <a href="${esc(s.url)}" target="_blank" rel="noopener">open the source ↗</a></div>`;
+      pop.innerHTML = `<div class="pop-h">Source [${SA.sourceNo[s.id]}]</div><p><b>${esc(s.title)}</b><br>${esc(s.publisher)}</p>${s.used ? `<p class="small">${esc(s.used)}</p>` : ""}<div class="pop-f">Click for the source list${s.url ? ` · <a href="${esc(s.url)}" target="_blank" rel="noopener">open the source ↗</a>` : " · private family file, not online"}</div>`;
     } else if (el.matches("mark.reading")) {
       pop.innerHTML = `<div class="pop-h">Reading · ${esc(SA.CONF[el.dataset.conf])}</div><p>Heard as “${esc(el.textContent)}”; probably <b>${esc(el.dataset.reading)}</b>.</p>${el.dataset.note ? `<p class="small">${esc(el.dataset.note)}</p>` : ""}${el.dataset.href ? `<div class="pop-f"><a href="${el.dataset.href}">${esc(el.dataset.target)} →</a></div>` : ""}`;
     }

@@ -171,12 +171,14 @@
    }
   ],
   "born": {
-   "display": "c. 1698",
-   "status": "record",
-   "conf": "medium",
+   "display": "c. 1694–98",
+   "status": "conflict",
+   "conf": "low",
    "src": [
-    "wp-sir-james-somerville"
-   ]
+    "wp-sir-james-somerville",
+    "family-tree-2026"
+   ],
+   "note": "Wikipedia (after Rayment): c. 1698; the family tree: 1694. He married in February 1713 and his eldest son was born in March 1714, which fits the earlier date better."
   },
   "died": {
    "display": "16 Aug 1748",
@@ -255,7 +257,7 @@
   "aliases": [
    "Elizabeth Quaile"
   ],
-  "summary": "Wife of Sir James Somerville, 1st Bt; daughter of James Quayle. Known only from published sources.",
+  "summary": "Wife of Sir James Somerville, 1st Bt, married 2 February 1713; daughter of James Quayle (Wikipedia) or William Quaile, Alderman of Dublin (Stirnet, via a compiled genealogy). Died 10 November 1725.",
   "bio": [
    "{ctx}Married Sir James Somerville on 2 February 1713 {s:wp-sir-james-somerville}. She is not mentioned in the recording. Her family name was carried on in her son Quaile Somerville's first name.",
    "{ctx}The compiled genealogy spells it Quaile, makes her the daughter of William Quaile, an alderman of Dublin, and gives her death as 10 November 1725 {s:winters-p66}; Wikipedia says she was the daughter of James Quayle {s:wp-sir-james-somerville}. The discrepancy is unresolved."
@@ -269,9 +271,27 @@
     "src": [
      "wp-sir-james-somerville"
     ]
+   },
+   {
+    "label": "Father",
+    "value": "James Quayle (Wikipedia) / William Quaile, Alderman of Dublin (Stirnet)",
+    "status": "conflict",
+    "conf": "low",
+    "src": [
+     "wp-sir-james-somerville",
+     "winters-p66"
+    ]
    }
   ],
-  "places": []
+  "places": [],
+  "died": {
+   "display": "10 Nov 1725",
+   "status": "record",
+   "conf": "medium",
+   "src": [
+    "winters-p66"
+   ]
+  }
  },
  {
   "id": "quaile-somerville-2bt",
@@ -556,7 +576,9 @@
    "note": "compiled genealogy; not checked against the original registers"
   },
   "aliases": [
-   "Major William"
+   "Major William",
+   "William P",
+   "William Padlou (family tree label)"
   ],
   "variants": [
    "Williams album",
@@ -688,8 +710,8 @@
    }
   ],
   "born": {
-   "display": "3 Mar 1776",
-   "status": "record",
+   "display": "Mar 1776 (3 or 17 Mar)",
+   "status": "conflict",
    "conf": "medium",
    "cite": [
     62,
@@ -697,10 +719,11 @@
    ],
    "src": [
     "lf-bellingham",
-    "winters-p67"
+    "winters-p67",
+    "family-tree-2026"
    ],
    "narrator": "\"born in 1777, I think\" {q:62} {q:T2:30}.",
-   "note": "The published Bellingham genealogy (1776) and a compiled genealogy (3 March 1776) agree, so 1776 is preferred to the narrator's tentative 1777."
+   "note": "Year agreed by all written sources. The day differs: 3 March (Stirnet, via a compiled genealogy) or 17 March (the family's Ancestry tree, uncited)."
   },
   "died": {
    "display": "Dec 1844, Dublin",
@@ -716,7 +739,9 @@
    "note": "A compiled genealogy gives 19 December 1844."
   },
   "aliases": [
-   "Captain William"
+   "Captain William",
+   "William J",
+   "William James (family tree label)"
   ],
   "variants": [
    "Captain William Summerhill",
@@ -737,8 +762,8 @@
   "facts": [
    {
     "label": "Born",
-    "value": "3 March 1776",
-    "status": "record",
+    "value": "March 1776 (3 or 17 March)",
+    "status": "conflict",
     "conf": "medium",
     "cite": [
      62,
@@ -746,7 +771,8 @@
     ],
     "src": [
      "lf-bellingham",
-     "winters-p67"
+     "winters-p67",
+     "family-tree-2026"
     ],
     "narrator": "1777, \"I think\"."
    },
@@ -873,14 +899,12 @@
   "parentConf": "high",
   "order": 2,
   "born": {
-   "display": "1779",
+   "display": "5 Sep 1779",
    "status": "record",
-   "conf": "medium",
+   "conf": "high",
    "src": [
-    "lf-bellingham",
-    "winters-p67"
-   ],
-   "note": "Compiled genealogy: 5 September 1779, at Thomastown, Co. Louth."
+    "lf-bellingham"
+   ]
   },
   "died": {
    "display": "16 Dec 1839",
@@ -2157,17 +2181,22 @@
    "oconnor-seaman"
   ],
   "died": {
-   "display": "c. 1895",
-   "status": "testimony",
-   "conf": "medium",
+   "display": "c. 1895 (narrator) / 31 Dec 1898, Rathmines (family tree)",
+   "status": "conflict",
+   "conf": "low",
    "cite": [
-    216,
     "T2:88"
-   ]
+   ],
+   "src": [
+    "family-tree-2026"
+   ],
+   "narrator": "\"he died first. I think about 1890 … She died about 1895\" {q:T2:88}.",
+   "note": "The family tree date is uncited; if right, the narrator's order of deaths is correct and his dates early."
   },
   "aliases": [
    "Elizabeth O'Connor",
-   "Cecelia Eliza O'Connor"
+   "Cecelia Eliza O'Connor",
+   "Cecilia Eliza Priscilla O'Connor"
   ],
   "summary": "Wife of Tenison Alan Somerville and the narrator's great-grandmother; daughter of a seaman.",
   "bio": [
@@ -2187,11 +2216,14 @@
    },
    {
     "label": "Death",
-    "value": "About 1895, after her husband",
-    "status": "testimony",
-    "conf": "medium",
+    "value": "About 1895, after her husband (narrator); 31 December 1898, Rathmines (family tree)",
+    "status": "conflict",
+    "conf": "low",
     "cite": [
      216
+    ],
+    "src": [
+     "family-tree-2026"
     ]
    },
    {
@@ -2208,18 +2240,26 @@
   "places": [
    "dublin-castle",
    "rathmines"
-  ]
+  ],
+  "born": {
+   "display": "21 Jun 1815, Shoreham, Sussex",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  }
  },
  {
   "id": "oconnor-seaman",
-  "name": "Mr O'Connor (seaman)",
-  "fullName": "Mr O'Connor, seaman, father of Eliza O'Connor",
+  "name": "Daniel O'Connor (seaman)",
+  "fullName": "Daniel O'Connor, seaman, father of Eliza O'Connor",
   "sex": "m",
   "family": "somerville",
   "category": "in-law",
   "parents": [],
   "aliases": [],
-  "summary": "Eliza O'Connor's father, a seaman who married three times.",
+  "summary": "Eliza O'Connor's father, a seaman who married three times (narrator). The family tree names him Daniel O'Connor (c. 1790–1878); Cecil B. Rooke's papers also mention her great-grandfather Daniel O'Connor.",
   "bio": [
    "\"The daughter of a seaman, who altogether [had] three marriages. I can't now remember quite the order\" {q:208}. First name unknown."
   ],
@@ -2232,9 +2272,28 @@
     "cite": [
      208
     ]
+   },
+   {
+    "label": "Name",
+    "value": "Daniel O'Connor",
+    "status": "record",
+    "conf": "medium",
+    "src": [
+     "nli-rooke",
+     "family-tree-2026"
+    ],
+    "note": "The NLI list of the Rooke Papers notes that Cecil B. Rooke's great-grandfather Daniel O'Connor \"appears to have been a rather colourful\" figure; the family tree independently names Eliza's father Daniel."
    }
   ],
-  "places": []
+  "places": [],
+  "died": {
+   "display": "Jun 1878, Inishowen",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  }
  },
  {
   "id": "bellingham-arthur-somerville",
@@ -2315,7 +2374,7 @@
   "summary": "The narrator's grandfather and the family's first genealogist: an RIC officer at the centre of the 1887 Youghal riot inquiry, later District Inspector at Wicklow and builder-owner of Clermont.",
   "bio": [
    "\"Our interest in genealogy really began with my grandfather, whose name was Bellingham Arthur Somerville. He was born in 18… It's the year of the Crimean War, anyway. I think it was 1856. And he died in 1916\" (transcript B {q:T2:1-2}; A {q:2}). {ctx}The records give 17 November 1853: he was baptised in Dublin in June 1854, joined the RIC aged 18 in 1872 and was 36 at the 1891 census {s:winters-p68}. The archive therefore uses 1853; the narrator's 1856 is kept as his recollection (the Crimean War began in 1853). \"He was alive before the fire in the Four Courts and therefore he had access to records which are no longer available\" {q:4} {q:T2:2}; \"an avid collector of records about anybody with whom the Somerville family are connected\", he filled \"about six volumes\", following up newspaper notices and writing notes on them {q:6-8} {q:T2:3-4}. \"As a boy, he was known as Fighting Atty. Atty being Arthur. And sometimes you see him being written as Arthur Bellingham Somerville. But it is actually Bellingham Arthur Somerville\" (transcript B {q:T2:11-12}; A garbles the nickname as \"fighting atte\" {q:24-26}).",
-   "Like his father and his elder brother he served in the RIC {q:12} {q:T2:6}. Early stations were in Cork and Limerick, but \"most of his stations were in what is now Northern Ireland, Newtownards, all around there\" (B {q:T2:116}; A \"uternards\" {q:294}). He had \"a name for attending riots\", the \"outrages\" of his diary, in the 1880s and 1890s \"when the Fenians were at large\" {q:290-298} {q:T2:117-118}. {ctx}His eldest child, Cecilia, was born at Newtownards on 9 October 1880, according to a compiled genealogy citing the IGI {s:winters-p68}, which supports a posting there around 1880. {ctx}Records fill out his career: he joined the RIC in 1872, aged 18, and by the census of April 1891, when the family was staying with his Clinch parents-in-law at Witney, he was a \"Retired D. I. R. I. Constabulary\" {s:winters-p68}.",
+   "Like his father and his elder brother he served in the RIC {q:12} {q:T2:6}. Early stations were in Cork and Limerick, but \"most of his stations were in what is now Northern Ireland, Newtownards, all around there\" (B {q:T2:116}; A \"uternards\" {q:294}). He had \"a name for attending riots\", the \"outrages\" of his diary, in the 1880s and 1890s \"when the Fenians were at large\" {q:290-298} {q:T2:117-118}. {ctx}His eldest child, Cecilia, was born at Newtownards on 9 October 1880, according to a compiled genealogy citing the IGI {s:winters-p68}, which supports a posting there around 1880. {ctx}Records fill out his career: he joined the RIC in 1872, aged 18, and by the census of April 1891, when the family was staying with his Clinch parents-in-law at Witney, he was a \"Retired D. I. R. I. Constabulary\" {s:winters-p68}. {ctx}The family's Ancestry tree adds that two of his children were born at Queenstown (Cobh), Co. Cork, in 1884 and 1885, and that the younger died there in December 1887; by April 1888 the family was at Seaview House, Wicklow {s:family-tree-2026}. That would place him in east Cork from about 1884 until shortly after Youghal, and date the transfer to Wicklow to the winter of 1887–88.",
    "{sensitive}The narrator prefaced the next story with \"This now is not for publication. Well, I'll let you use your own discretion, but be careful\" {q:290} {q:T2:115}, adding \"Be careful with this … because I think it has had a great effect on the family. I'll explain why in a minute\" {q:304} {q:T2:119}. The family has chosen to include it.",
    "The family's account: a riot at Youghal \"got out of hand\", \"no doubt over fishing\"; \"a detachment of RIC was sent by train from Cork to Youghal under the command of Captain Somerville\"; \"some rioter called Hanlon or O'Hanlon was [cut] with a sabre and killed\"; \"Captain Somerville and the man who did it were had up, relieved of their positions, suspended. And the whole thing went as far as Parliament in London\". \"Captain Somerville, while reinstated in due course, was never officially … acquitted … I think that's correct to say that he was never formally acquitted. … It wasn't him that did [it] … he was in charge\" (transcript B {q:T2:123-127}; A {q:312-322}, which garbles the last point as \"there is no great formally accredited\").",
    "{ctx}What the records establish: Hansard shows disturbances at Youghal in early March 1887, when the house of the local District Inspector, Kerin, was attacked {s:hansard-1887b}; an inquest verdict of wilful murder against \"District Inspector Somerville and Constable Ward\", both in custody (24 March 1887) {s:hansard-1887}; and, on 10 May 1887, that \"Sub-Inspector Summerville and Constable Ward, released on bail\", were on leave of absence with pay and would \"return to duty on the expiration of their leave, as the Attorney General sees no grounds to advise a prosecution\" {s:hansard-1887c}. A local history adds that the dead man was Patrick Hanlon, a 30-year-old fisherman from Ballymacoda, killed on 8 March 1887 by a sword bayonet during protests over the arrest of Fr Daniel Keller (a Plan of Campaign case), and that the Crown entered a nolle prosequi; it describes the two men as \"eventually acquitted\" {s:ballymacoda-1887}.",
@@ -2528,6 +2587,31 @@
     "src": [
      "nli-rooke"
     ]
+   },
+   {
+    "label": "Stationed in Co. Cork",
+    "value": "c. 1884–87, at or near Queenstown (Cobh): two children born there (1884, 1885), one died there (Dec 1887)",
+    "status": "inferred",
+    "conf": "medium",
+    "cite": [
+     "T2:116",
+     290,
+     294
+    ],
+    "src": [
+     "family-tree-2026"
+    ],
+    "note": "Inferred from the family tree's birthplaces (uncited). Matches the narrator's \"early stations in … Cork\" and puts the family in east Cork when the Youghal riot occurred."
+   },
+   {
+    "label": "Censuses 1901 and 1911",
+    "value": "At Newrath (Clermont), Glenealy, Co. Wicklow, with his family",
+    "status": "family",
+    "conf": "medium",
+    "src": [
+     "family-tree-2026"
+    ],
+    "note": "The family tree cites the National Archives of Ireland census returns (not inspected)."
    }
   ],
   "places": [
@@ -2772,7 +2856,16 @@
      "winters-p68"
     ]
    }
-  ]
+  ],
+  "died": {
+   "display": "1891 (buried 8 Aug 1891, St Mary's, Witney)",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "Family tree (uncited). He was alive at the census of April 1891."
+  }
  },
  {
   "id": "rachel-clinch",
@@ -3055,17 +3148,14 @@
    }
   ],
   "born": {
-   "display": "c. 1883–84",
-   "status": "testimony",
+   "display": "8 Aug 1882, Newtownards",
+   "status": "family",
    "conf": "medium",
-   "cite": [
-    264,
-    "T2:103"
-   ],
    "src": [
-    "winters-p69"
+    "family-tree-2026"
    ],
-   "note": "Narrator: \"about 1884\"; compiled genealogy: about 1883 (aged 68 at death)."
+   "note": "From the family's Ancestry tree (uncited). Two independent ages agree with 1882: 8 at the 1891 census, and 68 at his death in February 1951 (The Times, via a compiled genealogy).",
+   "narrator": "\"Bunt was born in about 1884\" {q:T2:103} {q:264}."
   },
   "died": {
    "display": "1951 (13 Feb, Reendesert Lodge, Bantry)",
@@ -3107,12 +3197,19 @@
   "facts": [
    {
     "label": "Born",
-    "value": "About 1884",
-    "status": "testimony",
+    "value": "8 August 1882, Newtownards",
+    "status": "family",
     "conf": "medium",
     "cite": [
      264
-    ]
+    ],
+    "src": [
+     "family-tree-2026",
+     "winters-p68",
+     "winters-p69"
+    ],
+    "narrator": "\"About 1884\".",
+    "note": "Family tree date, supported by his census age (1891) and his age at death (1951); preferred to the narrator's estimate."
    },
    {
     "label": "Army",
@@ -3453,13 +3550,13 @@
    "rathnew"
   ],
   "born": {
-   "display": "1884",
-   "status": "record",
+   "display": "23 Mar 1884, Queenstown, Co. Cork",
+   "status": "family",
    "conf": "medium",
    "src": [
-    "winters-p68"
+    "family-tree-2026"
    ],
-   "note": "compiled genealogy; not checked against the original registers"
+   "note": "From the family's Ancestry tree (uncited); consistent with his age (7) at the 1891 census."
   }
  },
  {
@@ -3590,13 +3687,14 @@
    "note": "compiled genealogy; not checked against the original registers"
   },
   "died": {
-   "display": "18 Apr 1976, Wimborne, Dorset",
-   "status": "record",
-   "conf": "medium",
+   "display": "18 Apr 1975 or 1976 (buried Broadstone, Dorset)",
+   "status": "conflict",
+   "conf": "low",
    "src": [
-    "winters-p68"
+    "winters-p68",
+    "family-tree-2026"
    ],
-   "note": "Compiled genealogy citing The Times."
+   "note": "Compiled genealogy: 18 April 1976, Wimborne. Family tree, citing Find a Grave: 18 April 1975. Same day and month: one year is probably a typing error."
   }
  },
  {
@@ -3641,12 +3739,38 @@
     "cite": [
      252
     ]
+   },
+   {
+    "label": "Regiment",
+    "value": "Connaught Rangers (1912 marriage notice)",
+    "status": "family",
+    "conf": "medium",
+    "src": [
+     "family-tree-2026"
+    ]
    }
   ],
   "places": [
    "clonmannon",
    "dorset"
-  ]
+  ],
+  "born": {
+   "display": "14 Aug 1878",
+   "status": "family",
+   "conf": "medium",
+   "src": [
+    "family-tree-2026"
+   ]
+  },
+  "died": {
+   "display": "3 May 1950; buried Broadstone, Dorset",
+   "status": "family",
+   "conf": "medium",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "Family tree citing Find a Grave (not inspected). A Dorset burial fits the narrator's account of his English inheritance."
+  }
  },
  {
   "id": "bertie-truell",
@@ -3809,7 +3933,16 @@
   "places": [
    "clermont",
    "india"
-  ]
+  ],
+  "born": {
+   "display": "c. 1892, Co. Wicklow",
+   "status": "family",
+   "conf": "medium",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "Estimated from her census ages (1901, 1911) in the family's Ancestry tree."
+  }
  },
  {
   "id": "uncle-jordan",
@@ -3877,14 +4010,13 @@
   ],
   "order": 8,
   "born": {
-   "display": "1894/95",
-   "status": "record",
+   "display": "1 May 1894, Ballyhenry, Co. Wicklow",
+   "status": "family",
    "conf": "medium",
    "src": [
-    "winters-p68",
-    "iwm-gualter"
+    "family-tree-2026"
    ],
-   "note": "Compiled genealogy: 1894; IWM (search result): 1895. Narrator: \"two or three years older than my father\"."
+   "note": "From the family's Ancestry tree; a heritage article (search result only) also places his birth at Ballyhenry House, Ashford, in 1894. An IWM index gives 1895."
   },
   "died": {
    "display": "1947 (10 Jul, Adderbury)",
@@ -4036,6 +4168,20 @@
     "src": [
      "winters-p68"
     ]
+   },
+   {
+    "label": "Daughter",
+    "value": "Julia Heather Margaret Somerville (1931–2017), mother of the grandson who visited the narrator",
+    "status": "family",
+    "conf": "low",
+    "cite": [
+     454,
+     456
+    ],
+    "src": [
+     "family-tree-2026"
+    ],
+    "note": "Name and dates from the family's Ancestry tree (uncited)."
    }
   ],
   "places": [
@@ -4062,7 +4208,7 @@
  {
   "id": "reginald-somerville",
   "name": "Reginald Somerville",
-  "fullName": "Reginald Malcolm John Somerville",
+  "fullName": "Reginald Malcolm John Bellingham Somerville",
   "sex": "m",
   "family": "somerville",
   "category": "family",
@@ -4082,33 +4228,35 @@
      506,
      "T2:192",
      "T2:197"
-    ]
+    ],
+    "note": "The family tree gives 31 July 1928 (uncited)."
    },
    {
     "id": "honor-johnson",
-    "date": "c. 1935–36",
-    "status": "testimony",
-    "conf": "high",
+    "date": "1936 (April–June quarter), Rathdrum district",
+    "status": "family",
+    "conf": "medium",
     "cite": [
      512,
      514,
      "T2:200",
      "T2:201"
-    ]
+    ],
+    "src": [
+     "family-tree-2026"
+    ],
+    "note": "Civil marriage index and an Irish Independent notice of 17 April 1936, as cited in the family tree (not inspected)."
    }
   ],
   "born": {
-   "display": "c. 1896–97, at Clermont",
-   "status": "inferred",
+   "display": "1897, at Clermont (Rathdrum registration district)",
+   "status": "family",
    "conf": "medium",
-   "cite": [
-    348,
-    572,
-    "T2:138",
-    "T2:199",
-    "T2:228"
+   "src": [
+    "family-tree-2026"
    ],
-   "note": "17 when war began in 1914 (both transcripts); \"38 at the time\" in about 1934 (both); the only child born at Clermont. No record found."
+   "note": "The family tree cites the Irish civil birth index (1897, Rathdrum district, which includes Rathnew) and the 1901/1911 censuses; not inspected.",
+   "narrator": "\"My father was 17 when the Great War started in 1914\" {q:T2:138} {q:348}; \"the only one who was born at Clermont\" {q:T2:228}."
   },
   "aliases": [
    "Reggie",
@@ -4124,7 +4272,8 @@
    "\"And then finally it was my father, Reginald Malcolm John … the youngest\" {q:228}, \"the only one who was born at Clermont\" {q:574}. He never went to school and, before the war, \"he'd never been outside Clermont really\", apart from Clonmannon; \"he was a very keen shot and a fisherman\" {q:346-350}. \"He was very deprived of education … he was the one who'd never had any opportunities\" {q:352-354}.",
    "He was 17 when war broke out {q:348}; after training (\"in Lincolnshire, I think\") he reached the front in 1916, was at Passchendaele, and \"remained a second lieutenant for the entire duration of the war\" in the Royal Warwickshire Regiment {q:356-358}. He ended the war in Italy, possibly after transferring to the Gunners {q:362}.",
    "Aged about 22, after the war, \"the word was, what do we do with Reggie?\" He went to Africa with \"a company called Gunner's Venture … started by Gunner officers after the First World War who wanted a job\", to \"help manage coffee plantations up in a place called Nanyuki, which is about 120 miles north of Nairobi\"; \"I trekked [he trekked] up there, it was 1920, with an ox and cart\" {q:496-502} {q:T2:192-195}. \"And then eventually his mother bought a farm\": a photograph shows him, \"virtually a schoolboy\", at a thatched hut. \"That was the farm. And he built it up\" (transcript B {q:T2:196}; transcript A garbles this {q:504}). The farm was \"a long way from Nanyuki\" according to B {q:T2:197}, \"Long way from UK\" according to A {q:504} ({qn:q-kenya-farm}). On leave in 1928 he married \"a girl from Greystokes [Greystones?] called Maudie Moore. She came from the County Laois family\" {q:496} {q:506-508} {q:T2:197}; their daughter {p:juanita|Juanita} was born in Kenya in 1932, and two years later Maudie died on the voyage home, so that \"he arrived back in Ireland as a widower\" {q:508-510} {q:T2:197-199}.",
-   "\"There was a European nanny, and it was alleged that she had her claws out for young Reggie … He was 38 at the time\" {q:T2:199} {q:510}. Staying at Clermont, he met again \"a childhood friend, who was the daughter of the rector of Wicklow … And they got married. And they were my parents\": {p:honor-johnson|Honor Johnson} {q:512-514} {q:T2:200-201}. The narrator was born in 1937 {q:516} {q:T2:201}. Under his parents' wills Reggie was fourth in line for Clermont {q:T2:149-150}; after 1949 he looked after the empty house but did not own it, and he and Honor \"felt that they could never afford it\" {q:380} {q:560} {q:T2:149} {q:T2:221}. He smoked, and died of cancer like all his brothers {q:394} {q:568-570} {q:T2:153} {q:T2:226}."
+   "\"There was a European nanny, and it was alleged that she had her claws out for young Reggie … He was 38 at the time\" {q:T2:199} {q:510}. Staying at Clermont, he met again \"a childhood friend, who was the daughter of the rector of Wicklow … And they got married. And they were my parents\": {p:honor-johnson|Honor Johnson} {q:512-514} {q:T2:200-201}. The narrator was born in 1937 {q:516} {q:T2:201}. Under his parents' wills Reggie was fourth in line for Clermont {q:T2:149-150}; after 1949 he looked after the empty house but did not own it, and he and Honor \"felt that they could never afford it\" {q:380} {q:560} {q:T2:149} {q:T2:221}. He smoked, and died of cancer like all his brothers {q:394} {q:568-570} {q:T2:153} {q:T2:226}.",
+   "{ctx}The family's Ancestry tree fills in dates the recording leaves open {s:family-tree-2026}. Reginald's birth was registered in 1897 in Rathdrum district, which includes Clermont. He landed in London from Beira on 5 April 1935 with the infant Juanita, so Maudie's death at sea fell early in 1935, not 1934 as the narrator remembered; \"38 at the time\" fits that year. He married Honor Johnson in the spring of 1936, the year before the narrator's birth. He died in July 1971 and is buried at Delgany. His full name was Reginald Malcolm John Bellingham Somerville, as a 1940 newspaper index gives it and the narrator's \"Reginald Malcolm John\" begins it."
   ],
   "facts": [
    {
@@ -4138,12 +4287,15 @@
    },
    {
     "label": "Born",
-    "value": "c. 1897 at Clermont",
-    "status": "inferred",
+    "value": "1897, at Clermont",
+    "status": "family",
     "conf": "medium",
     "cite": [
      348,
      574
+    ],
+    "src": [
+     "family-tree-2026"
     ]
    },
    {
@@ -4196,7 +4348,7 @@
    },
    {
     "label": "Second marriage",
-    "value": "Honor Johnson",
+    "value": "Honor Johnson, 1936",
     "status": "testimony",
     "conf": "high",
     "cite": [
@@ -4235,7 +4387,16 @@
    "italy-front",
    "nanyuki",
    "kenya"
-  ]
+  ],
+  "died": {
+   "display": "July 1971; buried at Delgany, Co. Wicklow",
+   "status": "family",
+   "conf": "medium",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "The family tree cites Find a Grave (not inspected). The narrator says he died of cancer."
+  }
  },
  {
   "id": "dorothy-somerville",
@@ -4287,13 +4448,13 @@
    "src": [
     "winters-p68"
    ],
-   "note": "Compiled genealogy citing The Times."
+   "note": "Compiled genealogy citing The Times. The family tree gives 6 March 1895."
   }
  },
  {
-  "id": "died-young-2",
-  "name": "Child who died young",
-  "fullName": "Child of Bellingham Arthur and Margaret Somerville (died young)",
+  "id": "alan-everard-somerville",
+  "name": "Alan Everard Somerville (1885–1887)",
+  "fullName": "Alan Everard Whichnour Bellingham Somerville",
   "sex": "u",
   "family": "somerville",
   "category": "family",
@@ -4303,13 +4464,58 @@
    "margaret-hall-clinch"
   ],
   "order": 10,
-  "aliases": [],
-  "summary": "One of two children who died young; not named.",
-  "bio": [
-   "\"There were nine children altogether. I've left out two because they died as children\" {q:228} {q:T2:92}. One is probably Dorothy (1888–1895), found in a compiled genealogy; this placeholder stands for the other, not yet identified."
+  "aliases": [
+   "Alan Everard",
+   "child who died young"
   ],
-  "facts": [],
-  "places": []
+  "summary": "The second of the two children of Bellingham Arthur and Margaret who died young, named only in the family's Ancestry tree: born and died at Queenstown (Cobh), Co. Cork, 1885–87.",
+  "bio": [
+   "The narrator counted \"nine children altogether. I've left out two because they died as children\" {q:T2:92} {q:228-230}. One was Dorothy (1888–95). The family's Ancestry tree supplies the other: Alan Everard Whichnour Bellingham Somerville, born at Queenstown, Co. Cork, on 6 October 1885 and died there on 14 December 1887 {s:family-tree-2026}. {int}With him the count is exactly nine. His third name (Whichnour, i.e. Wychnor in Staffordshire) matches the family's naming habits: Dorothy's middle name, Alrewas, is the neighbouring village. The entry is uncited and needs the Cork civil registers to confirm it."
+  ],
+  "facts": [
+   {
+    "label": "Identity",
+    "value": "Second child who died young (narrator: two of nine died as children)",
+    "status": "family",
+    "conf": "medium",
+    "cite": [
+     "T2:92",
+     228
+    ],
+    "src": [
+     "family-tree-2026"
+    ]
+   },
+   {
+    "label": "Place",
+    "value": "Queenstown (Cobh), Co. Cork",
+    "status": "family",
+    "conf": "medium",
+    "src": [
+     "family-tree-2026"
+    ],
+    "note": "Places the family in east Cork in 1885–87, at the time of the Youghal riot."
+   }
+  ],
+  "places": [],
+  "born": {
+   "display": "6 Oct 1885, Queenstown, Co. Cork",
+   "status": "family",
+   "conf": "medium",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "From the family's Ancestry tree (uncited)."
+  },
+  "died": {
+   "display": "14 Dec 1887, Queenstown, aged two",
+   "status": "family",
+   "conf": "medium",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "From the family's Ancestry tree (uncited)."
+  }
  },
  {
   "id": "maud-moore",
@@ -4320,13 +4526,14 @@
   "category": "in-law",
   "parents": [],
   "died": {
-   "display": "c. 1934, on the voyage home",
-   "status": "testimony",
+   "display": "Mar 1935 (probably 11 Mar), at sea on the voyage home",
+   "status": "family",
    "conf": "medium",
-   "cite": [
-    508,
-    510
-   ]
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "Family tree: died 11 March 1935 at sea (uncited); Reginald's arrival in London on 5 April 1935 from Beira (passenger list BT 26/1069/131, cited in the tree) supports early 1935.",
+   "narrator": "\"Two years after that [1932] … his wife died on the journey\" {q:T2:198} {q:508-510}; \"1932, 1934\" {q:T2:199}."
   },
   "aliases": [
    "Maudie",
@@ -4375,13 +4582,17 @@
    },
    {
     "label": "Death",
-    "value": "c. 1934, on the journey home",
-    "status": "testimony",
+    "value": "March 1935, at sea on the journey home",
+    "status": "family",
     "conf": "medium",
     "cite": [
      510,
      "T2:198"
-    ]
+    ],
+    "src": [
+     "family-tree-2026"
+    ],
+    "narrator": "c. 1934"
    }
   ],
   "places": [
@@ -4450,7 +4661,7 @@
  {
   "id": "honor-johnson",
   "name": "Honor Johnson",
-  "fullName": "Honor Johnson, Mrs Reginald Somerville",
+  "fullName": "Honor Lucretia Phillipa Johnson, Mrs Reginald Somerville",
   "sex": "f",
   "family": "johnson",
   "category": "family",
@@ -4458,7 +4669,9 @@
    "rector-johnson"
   ],
   "aliases": [
-   "Honour Johnson"
+   "Honour Johnson",
+   "Honor LP",
+   "Honor Lucretia Phillipa"
   ],
   "variants": [
    "Ola Anna"
@@ -4481,23 +4694,57 @@
    },
    {
     "label": "Marriage",
-    "value": "Reginald Somerville, after 1934",
-    "status": "testimony",
-    "conf": "high",
+    "value": "Reginald Somerville, 1936",
+    "status": "family",
+    "conf": "medium",
     "cite": [
      512
+    ],
+    "src": [
+     "family-tree-2026"
+    ]
+   },
+   {
+    "label": "Names",
+    "value": "Honor Lucretia Phillipa (the interviewer's \"Honor LP\")",
+    "status": "family",
+    "conf": "high",
+    "cite": [
+     "T2:203",
+     520
+    ],
+    "src": [
+     "family-tree-2026"
     ]
    }
   ],
   "places": [
    "wicklow-town",
    "clermont"
-  ]
+  ],
+  "born": {
+   "display": "27 Jun 1903, Dublin",
+   "status": "family",
+   "conf": "medium",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "Family tree, citing the 1911 and 1926 censuses and Find a Grave (not inspected)."
+  },
+  "died": {
+   "display": "21 Jun 1985; buried at Delgany",
+   "status": "family",
+   "conf": "medium",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "Family tree, citing Find a Grave (not inspected)."
+  }
  },
  {
   "id": "rector-johnson",
-  "name": "Rev. Philip Johnson, Rector of Wicklow",
-  "fullName": "Philip Johnson, Rector of Wicklow (Honor's father)",
+  "name": "Rev. Philip Johnson (Rector of Wicklow)",
+  "fullName": "Rev. Phillip (Philip) Bernard Johnson, Rector of Wicklow",
   "sex": "m",
   "family": "johnson",
   "category": "family",
@@ -4515,7 +4762,7 @@
    "director Wycliffe",
    "Philip, honour"
   ],
-  "summary": "The narrator's maternal grandfather, Rector of Wicklow. The interviewer's Ancestry notes suggest the name Philip; unconfirmed.",
+  "summary": "The narrator's maternal grandfather, Rector of Wicklow: according to the family tree, Rev. Phillip Bernard Johnson (1866–1926), living in Wicklow town in 1911 with his wife Elizabeth (Lillian), née Pope, and children including Honor.",
   "bio": [
    "\"The daughter of the rector of Wicklow\"; \"my maternal [grand]father was the rector\" {q:512} {q:518} {q:T2:200} {q:T2:202}. Reading from the interviewer's online tree, the narrator confirms the name: \"Honor was my mother. Philip was my grandfather. And then Samuel Johnson? His father, my great-grandfather\" (transcript B {q:T2:203}; A garbles the same exchange {q:520}).",
    "{int}His first name now rests on the narrator's confirmation, but no clergy list or parish record has been checked ({qn:q-johnson-line})."
@@ -4535,18 +4782,49 @@
    },
    {
     "label": "First name",
-    "value": "Philip (narrator confirming the online tree)",
-    "status": "testimony",
+    "value": "Phillip (Philip) Bernard",
+    "status": "family",
     "conf": "medium",
     "cite": [
      520,
      "T2:203"
+    ],
+    "src": [
+     "family-tree-2026"
     ]
+   },
+   {
+    "label": "1911 census",
+    "value": "Bollarney South, Wicklow Urban, with wife Elizabeth Charlotte Annie (Lillian) Pope and children Bernard, Honor, Norah and Edward",
+    "status": "family",
+    "conf": "medium",
+    "src": [
+     "family-tree-2026",
+     "wp-henry-rooke-priest"
+    ],
+    "note": "As cited in the family tree (census return not inspected). His predecessor, Henry Rooke, was rector until 1906."
    }
   ],
   "places": [
    "wicklow-town"
-  ]
+  ],
+  "born": {
+   "display": "16 Oct 1866, Wexford",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  },
+  "died": {
+   "display": "2 Jul 1926",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "Family tree (uncited)."
+  }
  },
  {
   "id": "samuel-johnson",
@@ -4556,7 +4834,7 @@
   "family": "johnson",
   "category": "family",
   "parents": [
-   "zachariah-johnson",
+   "william-abraham-johnson",
    "frances-tench"
   ],
   "parentConf": "low",
@@ -4576,7 +4854,23 @@
     ]
    }
   ],
-  "places": []
+  "places": [],
+  "born": {
+   "display": "2 Jun 1812, Wexford",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  },
+  "died": {
+   "display": "2 Apr 1883, Wexford",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  }
  },
  {
   "id": "zachariah-johnson",
@@ -4589,19 +4883,22 @@
   "aliases": [
    "Zechariah"
   ],
-  "summary": "Given by the narrator as Samuel Johnson's father (\"Old Testament\" names); the online tree has \"Samuel the Elder\" instead.",
+  "summary": "Named in the recording, tentatively, as Samuel Johnson's father; the family tree now places Zacharias Johnson a generation earlier, as the father of William Abraham Johnson. Unverified.",
   "bio": [
    "Transcript A: \"Samuel's father was Zachariah … Old Testament … it might have been Zechariah\"; the interviewer's tree has \"Samuel again … Samuel the Elder, but again I'm not sure\" {q:522-524}. Transcript B is less clear about who said what: \"Samuel's father … It might have been Zachariah … I have Samuel again, Samuel the Elder\" {q:T2:205-206}. See {qn:q-johnson-line}."
   ],
   "facts": [
    {
     "label": "Identity",
-    "value": "Zachariah (narrator) vs Samuel the Elder (online tree)",
+    "value": "Samuel's father (as read aloud, tentatively) vs Samuel's grandfather (family tree, 2026)",
     "status": "conflict",
     "conf": "low",
     "cite": [
      522,
      524
+    ],
+    "src": [
+     "family-tree-2026"
     ]
    }
   ],
@@ -4628,11 +4925,14 @@
   "facts": [
    {
     "label": "Relationship",
-    "value": "Probably Samuel Johnson's mother",
-    "status": "inferred",
+    "value": "Samuel Johnson's mother; wife of William Abraham Johnson (family tree)",
+    "status": "family",
     "conf": "low",
     "cite": [
      522
+    ],
+    "src": [
+     "family-tree-2026"
     ]
    }
   ],
@@ -5550,13 +5850,14 @@
   "category": "in-law",
   "parents": [],
   "died": {
-   "display": "16 Mar 1817",
-   "status": "record",
-   "conf": "medium",
+   "display": "Mar 1817 (11 or 16 Mar)",
+   "status": "conflict",
+   "conf": "low",
    "src": [
-    "winters-p67"
+    "winters-p66",
+    "family-tree-2026"
    ],
-   "note": "compiled genealogy; not checked against the original registers"
+   "note": "Compiled genealogy: died 16 March 1817. Family tree: died 11 March, buried 16 March at St Audoen's. The 16th is probably the burial."
   },
   "aliases": [],
   "summary": "Second wife of Major William Somerville and, according to a compiled genealogy, mother of Captain William Somerville. Not mentioned in the recording.",
@@ -5745,12 +6046,21 @@
   "facts": [],
   "places": [
    "dublin"
-  ]
+  ],
+  "died": {
+   "display": "22 Jan 1927, Doncaster",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ],
+   "note": "Family tree (uncited), which records her as unmarried; a compiled genealogy has her marrying Thomas Forster Woulfe in 1883. Unresolved."
+  }
  },
  {
   "id": "tenison-alan-somerville-1859",
   "name": "Tenison Alan Somerville (1859–1906)",
-  "fullName": "Tenison Alan Somerville, twin son of Tenison Alan (1859–1906)",
+  "fullName": "Tenison Alan Somerville, son of Tenison Alan (1859–1906)",
   "sex": "m",
   "family": "somerville",
   "category": "family",
@@ -5770,15 +6080,17 @@
    "note": "IGI via a compiled genealogy."
   },
   "died": {
-   "display": "1906 (Leeds registration district)",
+   "display": "27 Dec 1906, Leeds",
    "status": "record",
-   "conf": "low",
+   "conf": "medium",
    "src": [
-    "winters-p68"
-   ]
+    "winters-p68",
+    "family-tree-2026"
+   ],
+   "note": "Year from the GRO index (compiled genealogy); day from the family tree."
   },
   "aliases": [],
-  "summary": "A younger son of Tenison Alan Somerville, twin of Henry Bellingham.",
+  "summary": "A younger son of Tenison Alan Somerville, born 1859 (perhaps a twin of Henry Bellingham, if the compiled genealogy is right); died at Leeds in 1906.",
   "bio": [
    "{ctx}Not mentioned in the recording. A compiled genealogy citing the IGI and the GRO index records his birth in Dublin on 28 July 1859 and his death registered at Leeds in 1906 {s:winters-p68}."
   ],
@@ -5790,7 +6102,7 @@
  {
   "id": "henry-bellingham-somerville-1859",
   "name": "Henry Bellingham Somerville (b. 1859)",
-  "fullName": "Henry Bellingham Somerville, twin son of Tenison Alan",
+  "fullName": "Henry Bellingham Somerville",
   "sex": "m",
   "family": "somerville",
   "category": "family",
@@ -5801,23 +6113,32 @@
   "parentConf": "medium",
   "order": 6,
   "born": {
-   "display": "28 Jul 1859, Dublin",
-   "status": "record",
+   "display": "28 Jul 1859 or 23 Dec 1848",
+   "status": "conflict",
    "conf": "low",
    "src": [
-    "winters-p68"
+    "winters-p68",
+    "family-tree-2026"
    ],
-   "note": "IGI via a compiled genealogy."
+   "note": "The Times (1916) called Bellingham Arthur the fourth son of Tenison Alan; that is true only if Henry was born before 1853, which favours 1848."
   },
   "aliases": [],
-  "summary": "A younger son of Tenison Alan Somerville, twin of Tenison Alan (1859–1906); married Mary Dyas in 1880.",
+  "summary": "A son of Tenison Alan Somerville; married Mary Dyas in 1880. His birth year is disputed: 1859 (twin of Tenison Alan, compiled genealogy) or 1848 (family tree).",
   "bio": [
    "{ctx}Not mentioned in the recording. A compiled genealogy citing the IGI records his birth in Dublin on 28 July 1859 and his marriage to Mary Dyas in Dublin on 22 June 1880 {s:winters-p68}."
   ],
   "facts": [],
   "places": [
    "dublin"
-  ]
+  ],
+  "died": {
+   "display": "14 Feb 1915, Dublin",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  }
  },
  {
   "id": "rachel-hall-wright",
@@ -5828,13 +6149,12 @@
   "category": "in-law",
   "parents": [],
   "born": {
-   "display": "c. 1827",
-   "status": "record",
-   "conf": "medium",
+   "display": "1827, Curbridge, Oxfordshire",
+   "status": "family",
+   "conf": "low",
    "src": [
-    "winters-p68"
-   ],
-   "note": "compiled genealogy; not checked against the original registers"
+    "family-tree-2026"
+   ]
   },
   "aliases": [],
   "summary": "Mother of Margaret Hall Clinch, according to a compiled genealogy. Not named in the recording.",
@@ -5844,7 +6164,15 @@
   "facts": [],
   "places": [
    "witney"
-  ]
+  ],
+  "died": {
+   "display": "16 Feb 1894",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  }
  },
  {
   "id": "heather-baker",
@@ -5873,7 +6201,23 @@
     ]
    }
   ],
-  "places": []
+  "places": [],
+  "born": {
+   "display": "1905, Madras",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  },
+  "died": {
+   "display": "1994, Adderbury",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  }
  },
  {
   "id": "james-somerville",
@@ -5965,6 +6309,59 @@
     "value": "{p:narrator|William Somerville} (the narrator)",
     "status": "family",
     "conf": "high"
+   }
+  ],
+  "places": []
+ },
+ {
+  "id": "william-abraham-johnson",
+  "name": "William Abraham Johnson (per family tree)",
+  "fullName": "William Abraham Johnson",
+  "sex": "m",
+  "family": "johnson",
+  "category": "in-law",
+  "parents": [
+   "zachariah-johnson"
+  ],
+  "spouses": [
+   {
+    "id": "frances-tench",
+    "status": "family",
+    "conf": "low",
+    "src": [
+     "family-tree-2026"
+    ]
+   }
+  ],
+  "born": {
+   "display": "c. 1775, Co. Kerry",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  },
+  "died": {
+   "display": "15 Feb 1829, Wexford",
+   "status": "family",
+   "conf": "low",
+   "src": [
+    "family-tree-2026"
+   ]
+  },
+  "summary": "Placed by the family's Ancestry tree between Samuel Johnson and Zachariah: Samuel's father and Frances Tench's husband. Unverified.",
+  "bio": [
+   "In the recording the interviewer, reading an earlier state of the online tree, was unsure who Samuel Johnson's father was: \"It might have been Zachariah … I have Samuel again … Samuel the Elder but again, I'm not sure\" {q:T2:205-206} {q:522-524}. The family tree as exported in October 2026 names Samuel's parents as William Abraham Johnson and Frances Tench, and makes Zacharias Johnson William Abraham's father {s:family-tree-2026}. {int}The \"Samuel again … Samuel the Elder\" were probably the two Samuel Tenches in Frances Tench's line. None of these generations is sourced."
+  ],
+  "facts": [
+   {
+    "label": "Relationship",
+    "value": "Father of Samuel Johnson (per family tree)",
+    "status": "family",
+    "conf": "low",
+    "src": [
+     "family-tree-2026"
+    ]
    }
   ],
   "places": []

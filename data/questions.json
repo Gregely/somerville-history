@@ -108,7 +108,7 @@
   "title": "The other children of Tenison and Eliza O'Connor",
   "status": "partly resolved",
   "priority": "medium",
-  "desc": "The narrator mentions only Bellingham Arthur and an unnamed elder brother, also in the RIC {q:12} {q:T2:6}, and then moves straight to Bellingham Arthur's own children {q:216-218} {q:T2:88}. A compiled genealogy citing the IGI lists six children: William Dennistoun (1842), Tenison Alan (1845–55), Erina Bellingham (1852), Bellingham Arthur (1853), and twins Tenison Alan and Henry Bellingham (1859) {s:winters-p68}. {int}The elder brother in the RIC is probably William Dennistoun; unverified.",
+  "desc": "The narrator mentions only Bellingham Arthur and an unnamed elder brother, also in the RIC {q:12} {q:T2:6}, and then moves straight to Bellingham Arthur's own children {q:216-218} {q:T2:88}. A compiled genealogy citing the IGI lists six children: William Dennistoun (1842), Tenison Alan (1845–55), Erina Bellingham (1852), Bellingham Arthur (1853), Tenison Alan (1859) and Henry Bellingham (1859 or 1848) {s:winters-p68}. {int}The elder brother in the RIC is probably William Dennistoun; unverified. Audit, Oct 2026: the family tree dates Henry Bellingham Somerville's birth to 23 December 1848, not 1859; The Times's description of Bellingham Arthur as the fourth son favours 1848. It also records Erina as dying unmarried at Doncaster in 1927, against the compiled genealogy's 1883 marriage to Thomas Forster Woulfe {s:family-tree-2026}. Both conflicts are shown on the profiles.",
   "next": "RIC officers' registers (HO 184) for William Dennistoun Somerville; Dublin baptismal registers.",
   "people": [
    "william-dennistoun-somerville",
@@ -129,7 +129,7 @@
   "title": "Is the 1887 \"District Inspector Somerville\" Bellingham Arthur? (Resolved: yes)",
   "status": "resolved",
   "priority": "high",
-  "desc": "Hansard names only \"District Inspector Somerville\" (24 March 1887) and \"Sub-Inspector Summerville\" (10 May 1887) {s:hansard-1887} {s:hansard-1887c}; the local history gives no first name {s:ballymacoda-1887}. The family's story matches closely: an RIC detachment from Cork, a dead rioter named Hanlon, a blade, arrest, Parliament, and reinstatement without a formal acquittal {q:312-322} {q:T2:118-127}, which is just what the 10 May reply describes. The narrator remembered \"the 1880s\", \"Captain\" Somerville and a fishing dispute. {int}Resolved: the officer was Bellingham Arthur Somerville. The evidence: (1) he was a serving RIC officer of exactly that rank: he joined in 1872, aged 18, and was a \"Retired D. I. R. I. Constabulary\" at the 1891 census {s:winters-p68}; the rank had been renamed from sub-inspector in 1883, which explains the two titles {s:ukpga-1883-s12}. (2) Ronayne's letter shows the officer was a \"young officer\" from outside, not the local District Inspector, Kerin {s:hansard-1887b}, matching the family's detachment \"from Cork\". (3) The family's account, independent of Hansard, matches every structural point, including the outcome the 10 May reply describes. (4) The family links the affair to his transfer to Wicklow, after which his career soon ended. Limitations: no surviving document seen gives the officer's first name, and the RIC service register (HO 184) has not been examined; the identification is therefore circumstantial but strong, and would be overturned only if another RIC officer named Somerville were found serving in Co. Cork in 1887.",
+  "desc": "Hansard names only \"District Inspector Somerville\" (24 March 1887) and \"Sub-Inspector Summerville\" (10 May 1887) {s:hansard-1887} {s:hansard-1887c}; the local history gives no first name {s:ballymacoda-1887}. The family's story matches closely: an RIC detachment from Cork, a dead rioter named Hanlon, a blade, arrest, Parliament, and reinstatement without a formal acquittal {q:312-322} {q:T2:118-127}, which is just what the 10 May reply describes. The narrator remembered \"the 1880s\", \"Captain\" Somerville and a fishing dispute. {int}Resolved: the officer was Bellingham Arthur Somerville. The evidence: (1) he was a serving RIC officer of exactly that rank: he joined in 1872, aged 18, and was a \"Retired D. I. R. I. Constabulary\" at the 1891 census {s:winters-p68}; the rank had been renamed from sub-inspector in 1883, which explains the two titles {s:ukpga-1883-s12}. (2) Ronayne's letter shows the officer was a \"young officer\" from outside, not the local District Inspector, Kerin {s:hansard-1887b}, matching the family's detachment \"from Cork\". (3) The family's account, independent of Hansard, matches every structural point, including the outcome the 10 May reply describes. (4) The family links the affair to his transfer to Wicklow, after which his career soon ended. Limitations: no surviving document seen gives the officer's first name, and the RIC service register (HO 184) has not been examined; the identification is therefore circumstantial but strong, and would be overturned only if another RIC officer named Somerville were found serving in Co. Cork in 1887. {ctx}Audit, Oct 2026: the family's Ancestry tree places two of his children's births at Queenstown, Co. Cork, in 1884 and 1885 and a death there in December 1887, which would put him in east Cork throughout the Youghal affair {s:family-tree-2026}. Uncited, but independent of the recording; the Cork civil registers would confirm it.",
   "next": "Optional confirmation: RIC officers' register (National Archives UK, HO 184) for Bellingham Arthur Somerville's stations in 1887; Cork Examiner reports of the inquest.",
   "people": [
    "bellingham-arthur-somerville",
@@ -178,7 +178,7 @@
   "title": "Captain William: born 1776 or 1777?",
   "status": "resolved",
   "priority": "low",
-  "desc": "Narrator: 1777, \"I think\" {q:62} {q:T2:30}. Published Bellingham genealogy: 1776 {s:lf-bellingham}; compiled genealogy: 3 March 1776 {s:winters-p67}. Resolved in favour of the published genealogies, which agree on 1776 (3 March 1776 in the compiled genealogy). The narrator's \"1777, I think\" is kept as his recollection.",
+  "desc": "Narrator: 1777, \"I think\" {q:62} {q:T2:30}. Published Bellingham genealogy: 1776 {s:lf-bellingham}; compiled genealogy: 3 March 1776 {s:winters-p67}. Resolved in favour of the published genealogies, which agree on 1776 (3 March 1776 in the compiled genealogy). The narrator's \"1777, I think\" is kept as his recollection. Audit, Oct 2026: the year 1776 stands; the day is disputed (3 March, Stirnet; 17 March, the family tree).",
   "people": [
    "captain-william-somerville"
   ],
@@ -492,7 +492,7 @@
   "title": "Where is Uncle Jim buried?",
   "status": "partly resolved",
   "priority": "low",
-  "desc": "Transcript B: \"he's buried in Rathnew\" {q:T2:151}; transcript A: \"buried in Matthew\" {q:388}. Rathnew is the likelier reading; the grave has not been located.",
+  "desc": "Transcript B: \"he's buried in Rathnew\" {q:T2:151}; transcript A: \"buried in Matthew\" {q:388}. Rathnew is the likelier reading; the grave has not been located. Audit, Oct 2026: his death was registered in Rathdrum district (family tree), which includes Rathnew and Clermont, as transcript B's \"buried in Rathnew\" implies.",
   "people": [
    "jim"
   ],
@@ -540,9 +540,9 @@
  {
   "id": "q-johnson-line",
   "title": "The Johnson ancestry",
-  "status": "open",
+  "status": "partly resolved",
   "priority": "medium",
-  "desc": "From the interviewer's Ancestry tree, read aloud: Honor's father Philip (the Rector of Wicklow), whom the narrator confirms (\"Philip was my grandfather\" {q:T2:203}); his father Samuel Johnson, also confirmed {q:T2:203}; then \"Zachariah\" or \"Samuel the Elder\", and a Frances Tench, both unconfirmed {q:520-524} {q:T2:203-206}.",
+  "desc": "From the interviewer's Ancestry tree, read aloud: Honor's father Philip (the Rector of Wicklow), whom the narrator confirms (\"Philip was my grandfather\" {q:T2:203}); his father Samuel Johnson, also confirmed {q:T2:203}; then \"Zachariah\" or \"Samuel the Elder\", and a Frances Tench, both unconfirmed {q:520-524} {q:T2:203-206}. Audit, Oct 2026: the family tree as exported now gives Rev. Phillip Bernard Johnson (1866–1926) ← Samuel Johnson (1812–83) ← William Abraham Johnson (c. 1775–1829) and Frances Tench ← Zacharias Johnson; the repeated \"Samuel\" the interviewer saw are probably Frances Tench's father and grandfather, both Samuel Tench {s:family-tree-2026}. The archive now follows this structure, labelled as unverified family information; apart from the 1911 census, none of it is sourced.",
   "next": "Clergy of Dublin and Glendalough succession lists for the Rectors of Wicklow; Church of Ireland records.",
   "people": [
    "rector-johnson",
@@ -566,14 +566,15 @@
  {
   "id": "q-ancestry-williams",
   "title": "\"William P. … William J.\" in the online tree",
-  "status": "open",
+  "status": "resolved",
   "priority": "low",
-  "desc": "The interviewer reads out entries (\"William Henry, son of William J … I have William P, who is father of William J. William P being William Padlew\") {q:118-120} {q:T2:53} that cannot be matched to anyone in the narrator's account.",
+  "desc": "The interviewer reads out entries (\"William Henry, son of William J … I have William P, who is father of William J. William P being William Padlew\") {q:118-120} {q:T2:53} that cannot be matched to anyone in the narrator's account. Resolved (audit, Oct 2026): the names come from the interviewer's own Ancestry tree, which labels Major William (1720–80) \"William Padlou Somerville\" and Captain William \"William James Somerville\" {s:family-tree-2026}. \"William Henry, son of William J\" is Captain William's son. The middle names Padlou and James appear in no other source (Stirnet, Burke, Wikipedia) and are not adopted.",
   "cite": [
    118,
    120,
    "T2:53"
-  ]
+  ],
+  "next": ""
  },
  {
   "id": "q-eddie-papers",
@@ -674,8 +675,8 @@
   "title": "When did Tenison Alan Somerville die, and who died first?",
   "status": "partly resolved",
   "priority": "medium",
-  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88}; A is garbled (\"about 189…\") {q:216}. A compiled genealogy gives Tenison's death as 31 July 1895 {s:winters-p67} and none for his wife. Either the narrator's order of deaths or the online date is wrong. Partly resolved: the archive adopts 31 July 1895 (IGI, via the compiled genealogy) for Tenison's death, rather than the narrator's \"about 1890\". Whether he or his wife died first is still open, since no record of her death has been found.",
-  "next": "GRO death index (Dublin), 1888–1896, for Tenison and Cecelia Eliza Somerville.",
+  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88}; A is garbled (\"about 189…\") {q:216}. A compiled genealogy gives Tenison's death as 31 July 1895 {s:winters-p67} and none for his wife. Either the narrator's order of deaths or the online date is wrong. Partly resolved: the archive adopts 31 July 1895 (IGI, via the compiled genealogy) for Tenison's death, rather than the narrator's \"about 1890\". Whether he or his wife died first is still open, since no record of her death has been found. Audit, Oct 2026: the family tree gives Eliza (Cecilia Eliza Priscilla) O'Connor's death as 31 December 1898 at Rathmines {s:family-tree-2026}. If right, the narrator's order (Tenison first) is correct and both his dates are early. Uncited.",
+  "next": "Civil death register, Rathmines, December 1898.",
   "people": [
    "tenison-alan-somerville",
    "eliza-oconnor"
@@ -706,7 +707,7 @@
   "title": "Rachel: Margaret's sister or her mother?",
   "status": "partly resolved",
   "priority": "low",
-  "desc": "The narrator: Margaret's elder sister and co-heiress was \"Rachel\" {q:330} {q:T2:131}. A compiled genealogy names Margaret's mother as Rachel Hall Wright {s:winters-p68}. Both could be true. Partly resolved: the 1891 census at Witney lists Margaret's mother as Rachel H. Clinch, aged 64, with her husband William Clinch (70, banker and brewer) {s:winters-p68}. So a Rachel Clinch certainly existed in the right household: Margaret's mother. Whether Margaret also had a sister Rachel who shared the inheritance, as the narrator says, is unconfirmed; he may have conflated mother and sister.",
+  "desc": "The narrator: Margaret's elder sister and co-heiress was \"Rachel\" {q:330} {q:T2:131}. A compiled genealogy names Margaret's mother as Rachel Hall Wright {s:winters-p68}. Both could be true. Partly resolved: the 1891 census at Witney lists Margaret's mother as Rachel H. Clinch, aged 64, with her husband William Clinch (70, banker and brewer) {s:winters-p68}. So a Rachel Clinch certainly existed in the right household: Margaret's mother. Whether Margaret also had a sister Rachel who shared the inheritance, as the narrator says, is unconfirmed; he may have conflated mother and sister. Audit, Oct 2026: the family tree records only Margaret as a child of William Clinch and Rachel Hall Wright, and dates their deaths to 1891 and 1894 {s:family-tree-2026}; William Clinch's will (probate 1891) would settle the inheritance.",
   "people": [
    "rachel-clinch",
    "rachel-hall-wright",
@@ -715,7 +716,8 @@
   "cite": [
    330,
    "T2:131"
-  ]
+  ],
+  "next": "Probate calendar and will of William Clinch of Witney, 1891."
  },
  {
   "id": "q-kenya-farm",
@@ -741,7 +743,7 @@
   "title": "Maudie Moore: \"from Greystokes\"?",
   "status": "open",
   "priority": "low",
-  "desc": "Transcript B: \"he married a girl from Greystokes called Maudie Moore. She came from the County Laois family\" {q:T2:197}; A: \"grace studs … Morde Moore … County leash family\" {q:506-508}. Greystones, Co. Wicklow is a guess, and her formal first name is not recorded.",
+  "desc": "Transcript B: \"he married a girl from Greystokes called Maudie Moore. She came from the County Laois family\" {q:T2:197}; A: \"grace studs … Morde Moore … County leash family\" {q:506-508}. Greystones, Co. Wicklow is a guess, and her formal first name is not recorded. Audit, Oct 2026: the family tree names her father Arthur Ellard Hawkesworth Moore and gives her birth as January 1901 (uncited) {s:family-tree-2026}; the NLI list of the Rooke Papers records a 1946 letter from Reg Somerville referring to \"the Ellard family\" {s:nli-rooke}. A lead only.",
   "next": "The 1928 marriage record (Ireland or Kenya); Kenya Gazette notices.",
   "people": [
    "maud-moore",
@@ -796,9 +798,9 @@
  {
   "id": "q-reginald-birth",
   "title": "Reginald's birth year",
-  "status": "open",
+  "status": "partly resolved",
   "priority": "low",
-  "desc": "Both transcripts: \"My father was 17 when the Great War started in 1914\" {q:348} {q:T2:138}, and \"He was 38 at the time\" (about 1934) {q:510} {q:T2:199}. Those imply 1896–97, but no record has been found.",
+  "desc": "Both transcripts: \"My father was 17 when the Great War started in 1914\" {q:348} {q:T2:138}, and \"He was 38 at the time\" (about 1934) {q:510} {q:T2:199}. Those imply 1896–97, but no record has been found. Audit, Oct 2026: the family tree cites a civil birth registration in 1897, Rathdrum district (which includes Clermont), and the 1901 and 1911 censuses {s:family-tree-2026}. 1897 is adopted as probable.",
   "people": [
    "reginald-somerville"
   ],
@@ -807,14 +809,15 @@
    510,
    "T2:138",
    "T2:199"
-  ]
+  ],
+  "next": "The civil birth register entry (day and place)."
  },
  {
   "id": "q-hungarian-family",
   "title": "The Hungarian family: the gulag story",
   "status": "open",
   "priority": "low",
-  "desc": "Not Somerville history, but part of the recording. Near the end the interviewer, Gergely Somerville, describes his mother's side of the family: a mother who is the last authority on it, a grandfather Miklós, and a great-grandmother who died about 2010 in a flat in Eger, Hungary. She \"always told these stories about her husband … him being sent to a gulag, and apparently escaping\", but \"no one really knows if the story was true\" {q:588-598} {q:T2:235-240}. It is recorded here as her story, as Gergely reported it; nothing in it has been checked.",
+  "desc": "Not Somerville history, but part of the recording. Near the end the interviewer, Gergely Somerville, describes his mother's side of the family: a mother who is the last authority on it, a grandfather Miklós, and a great-grandmother who died about 2010 in a flat in Eger, Hungary. She \"always told these stories about her husband … him being sent to a gulag, and apparently escaping\", but \"no one really knows if the story was true\" {q:588-598} {q:T2:235-240}. It is recorded here as her story, as Gergely reported it; nothing in it has been checked. Audit note: the family's Ancestry tree identifies the people concerned; as they belong to a separate branch of the family, their names are not published here.",
   "people": [
    "interviewer"
   ],

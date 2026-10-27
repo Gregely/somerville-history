@@ -577,11 +577,12 @@
     A.narrative.forEach((c) => scan(c, `ch:${c.id}`));
     return use;
   }
-  const ACCESS_SHORT = { direct: "read directly", partial: "partly read", "search-only": "search result only" };
+  const ACCESS_SHORT = { direct: "read directly", partial: "partly read", "search-only": "search result only", private: "private family file" };
   const ACCESS = {
     direct: "The page itself was read and checked against the claims attributed to it.",
     partial: "Only part of the source could be read (e.g. text extracted from a scan); see the note.",
     "search-only": "Located through search results; the page blocks automated access, so the quoted details still need direct inspection.",
+    private: "A private family research file (not published); its claims are shown as family information and its own citations are named, but the records it cites were not inspected.",
   };
   V.sources = function (main, params) {
     sourceUse = sourceUse || computeSourceUse();
@@ -608,7 +609,7 @@
         <p class="small muted">Each source is labelled <span class="access access-direct">read directly</span>, <span class="access access-partial">partly read</span> or <span class="access access-search-only">search result only</span>. Compiled online genealogies are secondary: they can confirm that a claim exists somewhere else, but they are not proof of it, and some draw on the same family's own research.</p>
         <ol class="sources">${A.sources.map((s) => `
           <li id="src-${s.id}" value="${SA.sourceNo[s.id]}">
-            <div class="st"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></div>
+            <div class="st">${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</div>
             <div class="small">${esc(s.publisher)}${s.year ? `, ${esc(s.year)}` : ""} · <span class="stype">${esc(s.type)}</span><span class="access access-${esc(s.access)}" title="${esc(ACCESS[s.access] || "")}">${esc(ACCESS_SHORT[s.access] || s.access)}</span>${s.checked ? ` <span class="muted">checked ${esc(s.checked)}</span>` : ""}</div>
             ${s.used ? `<div class="small"><b>Used for:</b> ${esc(s.used)}</div>` : ""}
             ${s.reliability ? `<div class="small muted">${esc(s.reliability)}</div>` : ""}

@@ -47,7 +47,7 @@
     inferred: { label: "Interpretation", long: "Our reading or inference", icon: "◇" },
     record: { label: "Published record", long: "From an external source", icon: "▤" },
     conflict: { label: "Conflict", long: "Sources disagree", icon: "⚑" },
-    family: { label: "Family information", long: "Supplied by the family in 2026; not said in the recording", icon: "✎" },
+    family: { label: "Family information", long: "Supplied by the family in 2026 (including its Ancestry tree); not said in the recording and not independently verified", icon: "✎" },
   };
   SA.CONF = { high: "High confidence", medium: "Medium confidence", low: "Low confidence" };
   SA.badge = (status, conf) => {
