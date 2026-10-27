@@ -1,11 +1,74 @@
 [
   {
     "id": "T1",
-    "title": "Conversation with Grandpa about the Somerville family",
-    "date": "27 October (year not recorded; probably 2026)",
+    "title": "Transcript A: the original working transcript",
+    "date": "27 October 2026 (recording date inferred; see Open questions)",
     "file": "transcripts/interview-01.txt",
     "privateFile": "transcripts/private/interview-01.original.txt",
-    "origin": "Automatic speech-to-text transcript of a recorded conversation between the narrator and a grandchild. Speakers are not labelled and the software frequently mis-hears names.",
-    "asides": [[64, 81], [304, 310], [390, 438], [476, 490], [588, 598]]
+    "origin": "Automatic speech-to-text transcript of a recorded conversation between the narrator and a grandchild, the transcript from which this archive was first built. Speakers are not labelled; one paragraph per line, separated by blank lines, so paragraph numbers are odd line numbers.",
+    "asides": [
+      [
+        64,
+        81
+      ],
+      [
+        306,
+        308
+      ],
+      [
+        390,
+        392
+      ],
+      [
+        396,
+        438
+      ],
+      [
+        476,
+        490
+      ],
+      [
+        588,
+        598
+      ]
+    ],
+    "sourceFile": "27 Oct at 16-17.txt",
+    "role": "original"
+  },
+  {
+    "id": "T2",
+    "title": "Transcript B: companion transcript of the same recording",
+    "sourceFile": "+353 85 ••• •••• - 2026-10-27 19.50.34.txt",
+    "role": "companion",
+    "date": "27 October 2026 (file timestamp 19.50.34)",
+    "file": "transcripts/interview-01-companion.txt",
+    "privateFile": "transcripts/private/interview-01-companion.original.txt",
+    "origin": "A second, independent speech-to-text pass over the same recording, added during the audit. Often clearer on names (Clonmel, Louth Militia, Fighting Atty, Vere, Galter, Rathnew), but not infallible: it has its own errors (“RUC”, “Royal Irish Conservatory”, “Yall”, “York”). The original file name contained a phone number, which is masked here. No audio was available to settle differences between the transcripts.",
+    "asides": [
+      [
+        32,
+        39
+      ],
+      [
+        104,
+        104
+      ],
+      [
+        120,
+        121
+      ],
+      [
+        152,
+        152
+      ],
+      [
+        154,
+        168
+      ],
+      [
+        185,
+        190
+      ]
+    ]
   }
 ]

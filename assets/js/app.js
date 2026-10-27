@@ -17,6 +17,7 @@
     [/^\/glossary\/?$/, (m, p) => V.glossary(main, p), "Glossary", "glossary"],
     [/^\/term\/([^/]+)$/, (m) => V.term(main, m[1]), (m) => SA.terms[m[1]] && SA.terms[m[1]].term, "glossary"],
     [/^\/transcript\/?([^/]*)$/, (m) => V.transcript(main, m[1]), "Transcript", "transcript"],
+    [/^\/compare\/?$/, (m, p) => V.compare(main, p), "Compare transcripts", "transcript"],
     [/^\/questions\/?$/, (m, p) => V.questions(main, p), "Open questions", "questions"],
     [/^\/sources\/?$/, (m, p) => V.sources(main, p), "Sources", "sources"],
     [/^\/search\/?$/, (m, p) => V.search(main, p), "Search"],
@@ -29,8 +30,12 @@
     const params = Object.fromEntries(new URLSearchParams(qs || ""));
     return { path, params };
   }
+  // People whose ids changed when they were identified; old links still work.
+  const MOVED = { "unidentified-son": "tenison-somerville-1812", "elder-brother-ric": "william-dennistoun-somerville", "mrs-truell": "vere-somerville", "died-young-1": "dorothy-somerville", "jim-wife": "margaret-lucy-starkey" };
   function route() {
     const { path, params } = parse();
+    const moved = path.match(/^\/(person)\/([^/]+)$/);
+    if (moved && MOVED[moved[2]]) { location.replace(`#/${moved[1]}/${MOVED[moved[2]]}`); return; }
     hidePop();
     main.className = "";
     for (const [re, fn, title, nav] of ROUTES) {
@@ -41,7 +46,7 @@
       document.title = (t && t !== "Home" ? `${t} · ` : "") + "Somerville Family Archive";
       document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("cur", a.dataset.nav === nav));
       document.body.classList.remove("nav-open");
-      if (!params.e && !params.q && !params.s && !/^\/transcript\/.+/.test(path) && !/^\/tree/.test(path)) window.scrollTo(0, 0);
+      if (!params.e && !params.q && !params.s && !params.at && !/^\/transcript\/.+:/.test(path) && !/^\/tree/.test(path)) window.scrollTo(0, 0);
       main.focus({ preventScroll: true });
       return;
     }
@@ -54,6 +59,7 @@
   const drop = document.getElementById("q-results");
   let sel = -1, items = [];
   const TYPE = { person: "Person", place: "Place", term: "Term", event: "Event", chapter: "Story", question: "Question", source: "Source", passage: "Transcript" };
+  const excerpt = (l) => (l.kind === "withheld" ? `<em>${esc(l.text)}</em>` : esc(l.text.length > 360 ? l.text.slice(0, 360) + "…" : l.text));
   function showDrop() {
     const q = input.value.trim();
     if (!q) { drop.hidden = true; return; }
@@ -91,10 +97,15 @@
   function place(el) {
     const r = el.getBoundingClientRect();
     pop.hidden = false;
+    pop.style.maxHeight = "";
     const pw = pop.offsetWidth, ph = pop.offsetHeight;
-    let x = Math.min(window.innerWidth - pw - 12, Math.max(12, r.left + r.width / 2 - pw / 2));
-    let y = r.bottom + 8;
-    if (y + ph > window.innerHeight - 8) y = Math.max(8, r.top - ph - 8);
+    const x = Math.min(window.innerWidth - pw - 12, Math.max(12, r.left + r.width / 2 - pw / 2));
+    // never cover the link itself: use the side with more room and scroll within it
+    const below = window.innerHeight - r.bottom - 16, above = r.top - 16;
+    const down = ph <= below || below >= above;
+    const room = Math.max(120, down ? below : above);
+    if (ph > room) pop.style.maxHeight = `${room}px`;
+    const y = down ? r.bottom + 8 : r.top - Math.min(ph, room) - 8;
     pop.style.left = `${x}px`; pop.style.top = `${y}px`;
   }
   function showPop(el) {
@@ -105,13 +116,17 @@
       const t = el.dataset.t, a = +el.dataset.a, b = +el.dataset.b;
       const ls = [];
       for (let n = a; n <= b; n++) { const l = SA.lines[`${t}:${n}`]; if (l) ls.push(l); }
-      const shown = ls.slice(0, 3);
-      pop.innerHTML = `<div class="pop-h">Transcript ¶${a}${b !== a ? "–" + b : ""}</div>${shown.map((l) => `<p>${l.kind === "withheld" ? `<em>${esc(l.text)}</em>` : esc(l.text.length > 420 ? l.text.slice(0, 420) + "…" : l.text)}</p>`).join("")}${ls.length > 3 ? `<p class="muted">…and ${ls.length - 3} more paragraphs</p>` : ""}<div class="pop-f">Click to open in the transcript</div>`;
+      const shown = ls.slice(0, 2);
+      const par = [...new Set(shown.flatMap((l) => SA.parallel(`${t}:${l.n}`)))].slice(0, 2);
+      const pt = par.length ? par[0].split(":")[0] : null;
+      pop.innerHTML = `<div class="pop-h">Transcript ${SA.TLABEL[t]} ¶${a}${b !== a ? "–" + b : ""}</div>${shown.map((l) => `<p>${excerpt(l)}</p>`).join("")}${ls.length > 2 ? `<p class="muted">…and ${ls.length - 2} more paragraphs</p>` : ""}`
+        + (par.length ? `<div class="pop-h pop-h2">Same passage in transcript ${SA.TLABEL[pt]} (¶${par.map((k) => k.split(":")[1]).join(", ")})</div>${par.map((k) => `<p class="pop-par">${excerpt(SA.lines[k])}</p>`).join("")}` : "")
+        + `<div class="pop-f">Click to open in the transcript · <a href="#/compare?at=${t}:${a}">compare A | B</a></div>`;
     } else if (el.matches(".cite-s")) {
       const s = SA.sources[el.dataset.s];
       pop.innerHTML = `<div class="pop-h">Source [${SA.sourceNo[s.id]}]</div><p><b>${esc(s.title)}</b><br>${esc(s.publisher)}</p>${s.used ? `<p class="small">${esc(s.used)}</p>` : ""}<div class="pop-f">Click for the source list · <a href="${esc(s.url)}" target="_blank" rel="noopener">open the source ↗</a></div>`;
     } else if (el.matches("mark.reading")) {
-      pop.innerHTML = `<div class="pop-h">Reading · ${esc(SA.CONF[el.dataset.conf])}</div><p>Heard as “${esc(el.textContent)}”; probably <b>${esc(el.dataset.reading)}</b>.</p>${el.dataset.href ? `<div class="pop-f"><a href="${el.dataset.href}">${esc(el.dataset.target)} →</a></div>` : ""}`;
+      pop.innerHTML = `<div class="pop-h">Reading · ${esc(SA.CONF[el.dataset.conf])}</div><p>Heard as “${esc(el.textContent)}”; probably <b>${esc(el.dataset.reading)}</b>.</p>${el.dataset.note ? `<p class="small">${esc(el.dataset.note)}</p>` : ""}${el.dataset.href ? `<div class="pop-f"><a href="${el.dataset.href}">${esc(el.dataset.target)} →</a></div>` : ""}`;
     }
     place(el);
   }

@@ -1,502 +1,1605 @@
 [
-  {
-    "id": "clermont", "name": "Clermont, Rathnew", "type": "house", "region": "Co. Wicklow",
-    "coords": [52.997, -6.087], "approx": true,
-    "aliases": ["Clermont House"],
-    "variants": ["Clement", "Upper Clement", "climate", "Claremont", "Clairemont", "planned", "government", "Diamond"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "The family home from the 1890s to c. 1950: a Palladian house at Rathnew bought by Bellingham Arthur Somerville. Later a convent school, now a college campus.",
-    "body": [
-      "The transcript renders the name a dozen ways (\"Clement\", \"climate\", \"Claremont\", \"planned\", \"government\"). Context leaves no doubt that all mean Clermont, the house at Rathnew where the narrator's father was born {q:574} and which his aunts and uncles fought over after 1949.",
-      "Bellingham Arthur Somerville rented houses around Wicklow before Clermont came up for auction; Colonel Tottenham of Ashford outbid him, then sold it to him at the same price \"immediately after the auction\" {q:572-580}. He repaired and extended it; \"it was a sort of pride and property, but it needed a lot of money to maintain it because there wasn't much agricultural land. It was only 70 acres … a typical gentleman's residence\" {q:580-582}. It had a famous avenue of beech trees, since lost {q:538-540}.",
-      "After Margaret Somerville's death in 1949 the house stood empty, looked after by Reginald; Jim spent his last year there (1950). Bunt resolved to live there and died months later; Eddie and Bunt's widow nearly went to law; and the house was sold for £10,000 around 1950–53, \"badly kept\" and without heating {q:380-386, 546-566}. It passed to a religious order and became a school; the narrator describes recent development around it (the Aldi, houses in the old yard and on the land opposite) and its poor state of repair {q:530-544}.",
-      "{ctx}Heritage records describe Clermont as a three-storey red-brick Palladian house of about 1730, built for the Yarner family, with flanking wings added in 1894 for \"B A Somerville\" to designs by Sir Thomas Drew; the Somervilles sold c. 1955 {s:wicklowheritage-clermont}. The Religious of Christian Education came to Clermont in 1956 and ran a girls' secondary school (Our Lady's) until its closure around 2004–05; since 2006 the site has been used as a third-level campus linked to the Institute of Technology, Carlow {s:irishaesthete-clermont} {s:wp-rathnew}. The narrator's \"a developer from Carlow\" may reflect this Carlow connection."
+ {
+  "id": "clermont",
+  "name": "Clermont, Rathnew",
+  "type": "house",
+  "region": "Co. Wicklow",
+  "coords": [
+   52.997,
+   -6.087
+  ],
+  "approx": true,
+  "aliases": [
+   "Clermont House"
+  ],
+  "variants": [
+   "Clement",
+   "Upper Clement",
+   "climate",
+   "Claremont",
+   "Clairemont",
+   "planned",
+   "government",
+   "Diamond",
+   "Upper Claremont",
+   "Clarend",
+   "Glamond",
+   "Clem"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
+  },
+  "summary": "The family home from the 1890s to c. 1950: a Palladian house at Rathnew bought by Bellingham Arthur Somerville. Later a convent school, now a college campus.",
+  "body": [
+   "The transcripts render the name many ways: \"Clement\", \"climate\", \"Claremont\", \"planned\", \"government\" (A) and, consistently, \"Claremont\", plus \"Clarend\" and \"Glamond\" (B). The narrator's pronunciation sounds like \"Claremont\"; the historical name of the house is Clermont {s:irishaesthete-clermont}. Context leaves no doubt that all mean the house at Rathnew where the narrator's father was born {q:574} {q:T2:228} and which his aunts and uncles fought over after 1949.",
+   "Bellingham Arthur Somerville rented houses around Wicklow before Clermont came up for auction; Colonel Tottenham of Ashford outbid him, then sold it to him at the same price \"immediately after the auction\" {q:572-580} {q:T2:227-231}. \"My grandfather took on the repairs and the extensions of the house. And it was, you know, he built the gardens and it was really a prime property, but it needed a lot of money to maintain it because there wasn't much agricultural land. There was only 70 acres. And it was just a typical gentleman's residence\" (transcript B {q:T2:231-232}; A has \"pride and property\" {q:580-582}). It had a famous avenue of beech trees, since lost {q:538-540} {q:T2:212-213}.",
+   "After Margaret Somerville's death in 1949 the house stood empty, looked after by Reginald; Jim spent his last year there (1950). Bunt resolved to live there and died months later; Eddie and Bunt's widow nearly went to law; and the house sold for £10,000, \"badly kept\", with \"no central heating\", having \"been empty for several years\" {q:380-386} {q:546-566} {q:T2:149-151} {q:T2:215-224}. On the date, both transcripts read \"about 1950\" followed by a fragment (\"253\" in A, \"2.53\" in B) {q:566} {q:T2:224-225}, perhaps \"1952, '53\"; see {qn:q-clermont-sale-date}. It passed to a religious order and became a school, which later sold it \"to the county council and to a developer from Carlow\"; the narrator describes the Aldi built on its land, houses in the old yard and opposite, and the decaying fabric of the house {q:530-544} {q:T2:209-214}.",
+   "{ctx}Heritage records describe Clermont as a three-storey red-brick Palladian house of about 1730, built for the Yarner family, with flanking wings added in 1894 for \"B A Somerville\" to designs by Sir Thomas Drew; the Somervilles sold c. 1955 {s:wicklowheritage-clermont}. The Religious of Christian Education came to Clermont in 1956 and ran a girls' secondary school (Our Lady's) until its closure around 2004–05; since 2006 the site has been used as a third-level campus linked to the Institute of Technology, Carlow {s:irishaesthete-clermont} {s:wp-rathnew}. The narrator's \"a developer from Carlow\" may reflect this Carlow connection.",
+   "{ctx}A compiled genealogy records that Bellingham Arthur's daughter Dorothy died on 5 March 1895 at \"Seaview House, Wicklow\" and that Bellingham Arthur, Margaret and Jim all died at Clermont (1916, 1949, 1950) {s:winters-p68}. {int}Set against the 1894 wings, the Seaview death leaves the year of the move into Clermont uncertain."
+  ],
+  "facts": [
+   {
+    "label": "Acreage",
+    "value": "70 acres",
+    "status": "testimony",
+    "conf": "high",
+    "cite": [
+     582,
+     "T2:231"
+    ]
+   },
+   {
+    "label": "Wings",
+    "value": "Added 1894 for B. A. Somerville (architect Sir Thomas Drew)",
+    "status": "record",
+    "conf": "medium",
+    "src": [
+     "wicklowheritage-clermont"
     ],
-    "facts": [
-      { "label": "Acreage", "value": "70 acres", "status": "testimony", "conf": "high", "cite": [582] },
-      { "label": "Wings", "value": "Added 1894 for B. A. Somerville (architect Sir Thomas Drew)", "status": "record", "conf": "high", "src": ["wicklowheritage-clermont"] },
-      { "label": "Sale price", "value": "£10,000", "status": "testimony", "conf": "high", "cite": [564] },
-      { "label": "Sale date", "value": "c. 1950–53 (narrator) / c. 1955 (heritage record)", "status": "conflict", "conf": "medium", "cite": [566], "src": ["wicklowheritage-clermont"] }
+    "note": "Heritage summary seen only in search results."
+   },
+   {
+    "label": "Sale price",
+    "value": "£10,000",
+    "status": "testimony",
+    "conf": "high",
+    "cite": [
+     564,
+     "T2:224"
     ]
-  },
-  {
-    "id": "rathnew", "name": "Rathnew", "type": "town", "region": "Co. Wicklow",
-    "coords": [52.996, -6.083],
-    "aliases": [], "variants": ["resnew", "ratio", "rescue", "Matthew?"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Village near Wicklow town in which Clermont stands.",
-    "body": [
-      "\"A disadvantage was it was in Rathnew\" {q:582}. The narrator repeats unflattering local talk about Rathnew's reputation and origins {q:582-584}; it is preserved in the transcript but not repeated here.",
-      "{int}Uncle Jim is said to be \"buried in Matthew\" {q:388}; Rathnew is one possible reading, but no place of that name has been identified (see {qn:q-jim-burial}). Hunter's Hotel, mentioned in passing {q:538}, is at Newrath Bridge nearby."
-    ]
-  },
-  {
-    "id": "clonmannon", "name": "Clonmannon", "type": "house", "region": "Co. Wicklow",
-    "coords": [53.012, -6.074], "approx": true,
-    "aliases": ["Clonmannon House"], "variants": ["Claude Mannon", "Tom Bannon", "Tom Mannen", "John Madden", "Show Mars"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Estate of the Truell family \"just beyond Clermont\", into which the second Somerville daughter married.",
-    "body": [
-      "\"The owner of Clonmannon, which was the largest [estate] just beyond Clermont … belonged to the Truell family, T-R-U-E-L-L\" {q:246-248}. Edmund Truell, who married the second Somerville daughter, chose not to inherit it {q:250-252}. Reginald, who barely left Clermont as a boy, \"had been to Clonmannon\" {q:350}.",
-      "{ctx}Clonmannon House dates from about 1780 and was held by the Truells through the 19th and early 20th centuries before passing to Sir Alfred Chester Beatty {s:wicklowheritage-clonmannon}."
-    ]
-  },
-  {
-    "id": "ballycurry", "name": "Ballycurry, Ashford", "type": "house", "region": "Co. Wicklow",
-    "coords": [53.020, -6.118], "approx": true,
-    "aliases": ["Ashford"], "variants": [],
-    "ident": { "status": "inferred", "conf": "medium" },
-    "summary": "Seat of the Tottenham family \"on the other side of Ashford\".",
-    "body": ["\"The Tottenhams [have a] large property the other side of Ashford\" {q:578}. {ctx}Ballycurry House (1807, by Francis Johnston) came to the Tottenhams by marriage in 1766, and the family still lives there {s:wicklowheritage-ballycurry}."]
-  },
-  {
-    "id": "wicklow-town", "name": "Wicklow", "type": "town", "region": "Co. Wicklow",
-    "coords": [52.980, -6.044],
-    "aliases": ["Co. Wicklow"], "variants": ["Whitflow", "Wycliffe", "Wickler", "dweckler", "Wicklow"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "County town where Bellingham Arthur served as RIC District Inspector, and where the narrator's maternal grandfather was Rector.",
-    "body": ["After the Youghal affair Bellingham Arthur \"applied for a transfer, and was transferred to Wicklow\", taking charge of \"Wicklow [and] Arklow\" {q:326}; \"in the RIC [he] had been responsible for the Wicklow area\" {q:578}. Honor Johnson's father was Rector of Wicklow {q:512-514}."]
-  },
-  {
-    "id": "arklow", "name": "Arklow", "type": "town", "region": "Co. Wicklow",
-    "coords": [52.798, -6.160],
-    "aliases": [], "variants": ["Arc loud"],
-    "ident": { "status": "inferred", "conf": "medium" },
-    "summary": "Coastal town in south Wicklow; apparently part of Bellingham Arthur's RIC district.",
-    "body": ["\"He was then in charge of Wicklow [and] Arklow\" {q:326}, our reading of \"with Cloud Arc loud\"."]
-  },
-  {
-    "id": "castle-bellingham", "name": "Castle Bellingham", "type": "house", "region": "Co. Louth",
-    "coords": [53.897, -6.388],
-    "aliases": ["Castlebellingham", "Bellingham Castle"], "variants": ["Castle bellendrome", "Castle bellendrum", "Castle, Bellinger"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Seat of the Bellingham family in Co. Louth, where Eliza Bellingham grew up; lost by her brother Alan to their uncle Sir William.",
-    "body": [
-      "\"They were brought up in Castle Bellingham. But they could never afford to maintain the estate\" {q:28-30}; Alan \"sold it, actually, to his uncle\" Sir William, and \"that Bellingham line took over Castle Bellingham\" {q:36-38}.",
-      "{ctx}The Bellinghams held the estate from the start of the 18th century; the village was formerly Gernonstown. Sir William Bellingham was created baronet \"of Castle Bellingham\" in 1796, and his heirs kept it until about 1956 {s:wp-bellingham-bt} {s:wp-castlebellingham}."
-    ]
-  },
-  {
-    "id": "ardrass", "name": "Ardrass", "type": "house", "region": "Co. Kildare",
-    "coords": [53.333, -6.565], "approx": true,
-    "aliases": ["Ardrass Lodge"], "variants": ["Address", "a r d r. A s s", "I'll dress", "our dress"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "The Kildare estate inherited by Major William Somerville in the mid-1700s, near Celbridge. The main house was demolished in the 1950s.",
-    "body": [
-      "The narrator spells it: \"an estate in County Kildare called Ardrass, A-R-D-R-A-S-S. There was a large house and a lot of land\" {q:86}. Captain William put half of his interest in the lands into his marriage settlement, and there is no record of him living there {q:88-90}. \"There is a place called Ardrass Lodge … The main house was pulled down in the 1950s\"; a genealogist friend remembered the contents sale {q:94}.",
-      "{ctx}Ardrass is a townland near Celbridge, Co. Kildare. The National Library of Ireland's Registered Pedigrees include one for \"the Somervilles of Ardrass, Celbridge\" (1752–1946) {s:nli-ardrass}. {int}The transcript's \"between … looking and Salvage\" may be \"between Lucan and Celbridge\"; that is a guess."
+   },
+   {
+    "label": "Sale date",
+    "value": "\"about 1950 … 2.53\" (both transcripts) / c. 1955 (heritage summary); religious order from 1956",
+    "status": "conflict",
+    "conf": "medium",
+    "cite": [
+     566,
+     "T2:224",
+     "T2:225"
     ],
-    "facts": [
-      { "label": "Demolition", "value": "Main house pulled down in the 1950s", "status": "testimony", "conf": "medium", "cite": [94] }
+    "src": [
+     "wicklowheritage-clermont",
+     "irishaesthete-clermont"
     ]
+   }
+  ]
+ },
+ {
+  "id": "rathnew",
+  "name": "Rathnew",
+  "type": "town",
+  "region": "Co. Wicklow",
+  "coords": [
+   52.996,
+   -6.083
+  ],
+  "aliases": [],
+  "variants": [
+   "resnew",
+   "ratio",
+   "rescue",
+   "Matthew?"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "cumry", "name": "Cumry", "type": "house", "region": "Co. Monaghan",
-    "coords": [54.13, -6.90], "approx": true,
-    "aliases": ["Cumry"], "variants": ["comray", "camri", "Camry", "Cumry", "C u m r y"],
-    "ident": { "status": "testimony", "conf": "medium" },
-    "summary": "A small farm near Ballybay, Co. Monaghan, where Captain William and Eliza lived in the 1820s and where little Archie was \"brought out\".",
-    "body": [
-      "\"They lived, as I said, in County Monaghan, at a place called Cumry, C-U-M-R-Y, which I think was a small farm. I don't think it was a Bellingham property, although the Bellinghams did have property in County Monaghan\" {q:136}. Little Archie was \"brought out\" to Cumry from Ballybay {q:162}, and the youngest son Samuel died there {q:182}.",
-      "{int}The townland has not yet been located on a map; the marker is placed at Ballybay, \"the local town\". See {qn:q-cumry}."
+  "summary": "Village near Wicklow town in which Clermont stands.",
+  "body": [
+   "\"A disadvantage was it was in Rathnew\" {q:582}. The narrator repeats unflattering local talk about Rathnew's reputation and origins {q:582-584}; it is preserved in the transcript but not repeated here.",
+   "Uncle Jim is \"buried in Rathnew\" according to transcript B {q:T2:151}; transcript A hears \"buried in Matthew\" {q:388}. The B reading is taken as more likely, but no grave has been checked ({qn:q-jim-burial}). Hunter's Hotel, mentioned in passing {q:538} {q:T2:212}, is at Newrath Bridge nearby."
+  ]
+ },
+ {
+  "id": "clonmannon",
+  "name": "Clonmannon",
+  "type": "house",
+  "region": "Co. Wicklow",
+  "coords": [
+   53.012,
+   -6.074
+  ],
+  "approx": true,
+  "aliases": [
+   "Clonmannon House"
+  ],
+  "variants": [
+   "Claude Mannon",
+   "Tom Bannon",
+   "Tom Mannen",
+   "John Madden",
+   "Show Mars"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
+  },
+  "summary": "Estate of the Truell family \"just beyond Clermont\", into which the second Somerville daughter married.",
+  "body": [
+   "\"The owner of Clonmannon, which was the largest [estate] just beyond Clermont … belonged to the Truell family, T-R-U-E-L-L\" {q:246-248}. Edmund Truell, who married the second Somerville daughter, chose not to inherit it {q:250-252}. Reginald, who barely left Clermont as a boy, \"had been to Clonmannon\" {q:350}.",
+   "{ctx}Clonmannon House dates from about 1780 and was held by the Truells through the 19th and early 20th centuries before passing to Sir Alfred Chester Beatty {s:wicklowheritage-clonmannon}."
+  ]
+ },
+ {
+  "id": "ballycurry",
+  "name": "Ballycurry, Ashford",
+  "type": "house",
+  "region": "Co. Wicklow",
+  "coords": [
+   53.02,
+   -6.118
+  ],
+  "approx": true,
+  "aliases": [
+   "Ashford"
+  ],
+  "variants": [],
+  "ident": {
+   "status": "inferred",
+   "conf": "medium"
+  },
+  "summary": "Seat of the Tottenham family \"on the other side of Ashford\".",
+  "body": [
+   "\"The Tottenhams [have a] large property the other side of Ashford\" {q:578}. {ctx}Ballycurry House (1807, by Francis Johnston) came to the Tottenhams by marriage in 1766, and the family still lives there {s:wicklowheritage-ballycurry}."
+  ]
+ },
+ {
+  "id": "wicklow-town",
+  "name": "Wicklow",
+  "type": "town",
+  "region": "Co. Wicklow",
+  "coords": [
+   52.98,
+   -6.044
+  ],
+  "aliases": [
+   "Co. Wicklow"
+  ],
+  "variants": [
+   "Whitflow",
+   "Wycliffe",
+   "Wickler",
+   "dweckler",
+   "Wicklow",
+   "Whitcliffe"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
+  },
+  "summary": "County town where Bellingham Arthur served as RIC District Inspector, and where the narrator's maternal grandfather was Rector.",
+  "body": [
+   "After the Youghal affair Bellingham Arthur \"applied for a transfer and he was transferred to Wicklow … he was then in charge of Wicklow and Arklow. Was that how the Somervilles got to Wicklow? That's how the Somervilles got to Wicklow\" {q:326} {q:T2:129}; \"in the RIC [he] had been responsible for the Wicklow area\" {q:578} {q:T2:230}. Honor Johnson's father was Rector of Wicklow {q:512-514} {q:T2:200-201}."
+  ]
+ },
+ {
+  "id": "arklow",
+  "name": "Arklow",
+  "type": "town",
+  "region": "Co. Wicklow",
+  "coords": [
+   52.798,
+   -6.16
+  ],
+  "aliases": [],
+  "variants": [
+   "Arc loud"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
+  },
+  "summary": "Coastal town in south Wicklow; apparently part of Bellingham Arthur's RIC district.",
+  "body": [
+   "\"He was then in charge of Wicklow and Arklow\" (transcript B {q:T2:129}); transcript A has \"with Cloud Arc loud\" {q:326}."
+  ]
+ },
+ {
+  "id": "castle-bellingham",
+  "name": "Castle Bellingham",
+  "type": "house",
+  "region": "Co. Louth",
+  "coords": [
+   53.897,
+   -6.388
+  ],
+  "aliases": [
+   "Castlebellingham",
+   "Bellingham Castle"
+  ],
+  "variants": [
+   "Castle bellendrome",
+   "Castle bellendrum",
+   "Castle, Bellinger"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
+  },
+  "summary": "Seat of the Bellingham family in Co. Louth, where Eliza Bellingham grew up; lost by her brother Alan to their uncle Sir William.",
+  "body": [
+   "\"They were brought up in Castle Bellingham. But they could never afford to maintain the estate\" {q:28-30}; Alan \"sold it, actually, to his uncle\" Sir William, and \"that Bellingham line took over Castle Bellingham\" {q:36-38}.",
+   "{ctx}The area was known as Gernonstown from at least 1301; the Bellinghams held the castle from the 17th century until the late 1950s {s:wp-castlebellingham}. Sir William Bellingham was created baronet \"of Castle Bellingham\" in 1796 {s:wp-bellingham-bt}."
+  ]
+ },
+ {
+  "id": "ardrass",
+  "name": "Ardrass",
+  "type": "house",
+  "region": "Co. Kildare",
+  "coords": [
+   53.333,
+   -6.565
+  ],
+  "approx": true,
+  "aliases": [
+   "Ardrass Lodge"
+  ],
+  "variants": [
+   "Address",
+   "a r d r. A s s",
+   "I'll dress",
+   "our dress",
+   "Ardras",
+   "Adras"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
+  },
+  "summary": "The Kildare estate inherited by Major William Somerville in the mid-1700s, near Celbridge. The main house was demolished in the 1950s.",
+  "body": [
+   "The narrator spells it out: \"an estate in County Kildare called Ardras, A-R-D-R-A-S-S\" (transcript B {q:T2:41}; A: \"Address a r d r. A s s\" {q:86}). \"There was a large house and a lot of land\" {q:86} {q:T2:41}. Captain William put half of his interest in the lands into his marriage settlement, and there is no record of him living there {q:88-90} {q:T2:42-43}. \"It's in Kildare near Celbridge. And there is, if you're going between Lucan and Celbridge, or anyway, the back road, there is a place called Ardras Lodge … The main house was pulled down in the 1950s\"; a genealogist friend remembered the contents sale {q:T2:44-46} {q:94}.",
+   "{ctx}Ardrass is a townland near Celbridge, Co. Kildare. The National Library of Ireland's Registered Pedigrees include one for \"the Somervilles of Ardrass, Celbridge\" (1752–1946) {s:nli-ardrass}, seen only in search results so far. A compiled genealogy describes Captain William as \"of Ardrass\" {s:winters-p67}. {int}We use the spelling Ardrass because it matches the letters the narrator spoke and the NLI catalogue; transcript B writes \"Ardras\"."
+  ],
+  "facts": [
+   {
+    "label": "Demolition",
+    "value": "Main house pulled down in the 1950s",
+    "status": "testimony",
+    "conf": "medium",
+    "cite": [
+     94
     ]
+   }
+  ]
+ },
+ {
+  "id": "cumry",
+  "name": "Cumry",
+  "type": "house",
+  "region": "Co. Monaghan",
+  "coords": [
+   54.13,
+   -6.9
+  ],
+  "approx": true,
+  "aliases": [
+   "Cumry"
+  ],
+  "variants": [
+   "comray",
+   "camri",
+   "Camry",
+   "Cumry",
+   "C u m r y",
+   "Cymru",
+   "C-U-M-R-Y"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "medium"
   },
-  {
-    "id": "ballybay", "name": "Ballybay", "type": "town", "region": "Co. Monaghan",
-    "coords": [54.130, -6.900],
-    "aliases": [], "variants": ["Bali Bay"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Market town near Cumry, from which little Archie was brought out to visit.",
-    "body": ["\"Brought out from where?\" \"From Monaghan. From Ballybay, local town\" {q:162}."]
+  "summary": "A small farm near Ballybay, Co. Monaghan, where Captain William and Eliza lived in the 1820s and where little Archie was \"brought out\".",
+  "body": [
+   "\"They lived, as I said, in County Monaghan, at a place called Cumry, C-U-M-R-Y\" {q:136}. Transcript B has the speech-to-text software substitute the Welsh word: \"at a place called Cymru, C-U-M-R-Y, C-U-M-R-Y, which I think was a small farm. I don't think it was a Bellingham property, although the Bellinghams did have property in County Monaghan\" {q:T2:62}. Both transcripts preserve the same spelled-out letters. Little Archie was \"brought out\" to Cumry from Ballybay {q:162} {q:T2:67-68}, and the youngest son Samuel died there {q:182} {q:T2:77}.",
+   "{int}The townland has not yet been located on a map; the marker is placed at Ballybay, \"the local town\". See {qn:q-cumry}."
+  ]
+ },
+ {
+  "id": "ballybay",
+  "name": "Ballybay",
+  "type": "town",
+  "region": "Co. Monaghan",
+  "coords": [
+   54.13,
+   -6.9
+  ],
+  "aliases": [],
+  "variants": [
+   "Bali Bay"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "farm-cavan", "name": "\"Farm\", near Belturbet", "type": "house", "region": "Co. Cavan",
-    "coords": [54.101, -7.449], "approx": true,
-    "aliases": ["Farm"], "variants": ["Farm farm", "Herbert in County cotton"],
-    "ident": { "status": "inferred", "conf": "low" },
-    "summary": "The family's next home after Cumry; \"a house called Farm\", which we tentatively place near Belturbet, Co. Cavan.",
-    "body": ["\"They moved from Cumry [to] another house, called Farm, just called Farm … now, about Herbert, in County [Cavan?], and they lived there for a few years\" {q:182}. {int}\"Herbert in County cotton\" is most plausibly Belturbet in Co. Cavan, which is close to Monaghan; the house name might be Farnham or similar. Unverified."]
+  "summary": "Market town near Cumry, from which little Archie was brought out to visit.",
+  "body": [
+   "\"Brought out from where?\" \"From Monaghan. From Ballybay, local town\" {q:162}."
+  ]
+ },
+ {
+  "id": "farm-cavan",
+  "name": "\"Farm\", near Belturbet",
+  "type": "house",
+  "region": "Co. Cavan",
+  "coords": [
+   54.101,
+   -7.449
+  ],
+  "approx": true,
+  "aliases": [
+   "Farm"
+  ],
+  "variants": [
+   "Farm farm",
+   "Herbert in County cotton",
+   "Bell Turbot",
+   "F-A-R-M"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "bayview", "name": "Bayview Avenue / Crescent, Dublin", "type": "street", "region": "Dublin",
-    "coords": [53.357, -6.240], "approx": true,
-    "aliases": ["Bayview Crescent", "Bayview Avenue"], "variants": ["Bayview Avenue or Crescent"],
-    "ident": { "status": "testimony", "conf": "medium" },
-    "summary": "The Dublin home of Captain William and Eliza in the 1830s, \"now part of Clontarf\" in the narrator's description.",
-    "body": ["\"They moved to Dublin, to Bayview Avenue, Bayview Crescent, which is now part of Clontarf, in North Dublin\" {q:184}. Eliza died there in 1839; the injured Bellingham lived there with his parents {q:196}. {ctx}Bayview Avenue is in the North Strand–Fairview area of Dublin 3, between the city and Clontarf. Which of the two names is right is unresolved."]
+  "summary": "The family's next home after Cumry: \"a house called Farm, just called Farm, F-A-R-M, near Belturbet in County Cavan\". The exact location is not yet found.",
+  "body": [
+   "\"They then moved from Cumry to another house called Farm, just called Farm, F-A-R-M, near Bell Turbot [Belturbet] in County Cavan. And they lived there for a few years\" (transcript B {q:T2:77-78}). Transcript A garbles the same sentence as \"Farm, just called Farm farm. Now, about Herbert in County cotton\" {q:182}; the earlier reading of this as Belturbet, Co. Cavan, is confirmed by B. The house's exact site is unidentified ({qn:q-farm})."
+  ]
+ },
+ {
+  "id": "bayview",
+  "name": "Bayview Avenue / Crescent, Dublin",
+  "type": "street",
+  "region": "Dublin",
+  "coords": [
+   53.357,
+   -6.24
+  ],
+  "approx": true,
+  "aliases": [
+   "Bayview Crescent",
+   "Bayview Avenue"
+  ],
+  "variants": [
+   "Bayview Avenue or Crescent"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "medium"
   },
-  {
-    "id": "dublin-lodgings", "name": "Lodgings north of the Liffey", "type": "street", "region": "Dublin",
-    "coords": [53.348, -6.262], "approx": true,
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "low" },
-    "summary": "Unnamed street on the north side of the river where Captain William and his son Bellingham lived out their last years (d. 1844).",
-    "body": ["\"Can't remember the name of the street. I know it well … it's just beside our office, on the north side of the river\" {q:200}. The narrator's office is not named, so the location is approximate."]
+  "summary": "The Dublin home of Captain William and Eliza in the 1830s, \"now part of Clontarf\" in the narrator's description.",
+  "body": [
+   "\"They moved to Dublin, to Bayview Avenue, Bayview Crescent, which is now part of Clontarf, in North Dublin\" {q:184}. Eliza died there in 1839; the injured Bellingham lived there with his parents {q:196}. {ctx}Bayview Avenue is in the North Strand–Fairview area of Dublin 3, between the city and Clontarf. Which of the two names is right is unresolved."
+  ]
+ },
+ {
+  "id": "dublin-lodgings",
+  "name": "Lodgings north of the Liffey",
+  "type": "street",
+  "region": "Dublin",
+  "coords": [
+   53.348,
+   -6.262
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "low"
   },
-  {
-    "id": "dublin-castle", "name": "Dublin Castle", "type": "institution", "region": "Dublin",
-    "coords": [53.3429, -6.2674],
-    "aliases": ["the Castle"], "variants": ["Dublin vessel", "the castle"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Seat of British administration in Ireland and headquarters of the Constabulary, where Tenison Alan Somerville had his office and flat.",
-    "body": ["Tenison worked \"in the Secretariat of the RIC, and [had] a flat and office in Dublin Castle … the headquarters of the RIC\" {q:208-210}. Later the Genealogical Office was housed in the Castle's Bedford Tower: \"the little belfry, the upper yard of the castle\" {q:274}."]
+  "summary": "Unnamed street on the north side of the river where Captain William and his son Bellingham lived out their last years (d. 1844).",
+  "body": [
+   "\"Can't remember the name of the street. I know it well … it's just beside our office, on the north side of the river\" {q:200}. The narrator's office is not named, so the location is approximate."
+  ]
+ },
+ {
+  "id": "dublin-castle",
+  "name": "Dublin Castle",
+  "type": "institution",
+  "region": "Dublin",
+  "coords": [
+   53.3429,
+   -6.2674
+  ],
+  "aliases": [
+   "the Castle"
+  ],
+  "variants": [
+   "Dublin vessel",
+   "the castle"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "rathmines", "name": "Rathmines (\"Livingston Avenue\")", "type": "street", "region": "Dublin",
-    "coords": [53.322, -6.265], "approx": true,
-    "aliases": ["Livingston Avenue"], "variants": ["Breath of Hines", "Livingston Avenue"],
-    "ident": { "status": "inferred", "conf": "medium" },
-    "summary": "Dublin suburb where Tenison and Eliza Somerville lived after leaving the Castle.",
-    "body": ["\"They moved out of the Castle and they had a house in Livingston Avenue, Rathmines\" {q:216}. {int}\"Breath of Hines\" is almost certainly Rathmines; \"Livingston Avenue\" may itself be a mishearing (see {qn:q-livingston})."]
+  "summary": "Seat of British administration in Ireland and headquarters of the Constabulary, where Tenison Alan Somerville had his office and flat.",
+  "body": [
+   "Tenison worked \"in the Secretariat of the RIC, and [had] a flat and office in Dublin Castle … the headquarters of the RIC\" {q:208-210}. Later the Genealogical Office was housed in the Castle's Bedford Tower: \"the little belfry, the upper yard of the castle\" {q:274}."
+  ]
+ },
+ {
+  "id": "rathmines",
+  "name": "Rathmines (\"Leinster\" or \"Livingston\" Avenue)",
+  "type": "street",
+  "region": "Dublin",
+  "coords": [
+   53.322,
+   -6.265
+  ],
+  "approx": true,
+  "aliases": [
+   "Livingston Avenue"
+  ],
+  "variants": [
+   "Breath of Hines",
+   "Livingston Avenue",
+   "Linster Avenue",
+   "Brathmines"
+  ],
+  "ident": {
+   "status": "conflict",
+   "conf": "low"
   },
-  {
-    "id": "dublin", "name": "Dublin", "type": "town", "region": "Dublin",
-    "coords": [53.3498, -6.2603],
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Capital; scene of Eliza and Dorothea's journey in 1823, the family's later homes, and Cecilia's learned societies.",
-    "body": ["Eliza and Dorothea \"went to Dublin in the car, the night freezing and cold\" in February 1823 {q:144}. Cecilia was \"a member of all sorts of learned societies in Dublin\" {q:232}."]
+  "summary": "Where Tenison and Eliza Somerville lived after leaving the Castle. The street is heard as \"Livingston Avenue\" (A) and \"Linster Avenue\" (B), both in Rathmines; the true address is unresolved.",
+  "body": [
+   "\"They moved out of the castle and they had a house in Linster Avenue. Rathmines\" (transcript B {q:T2:87-88}); transcript A: \"Livingston Avenue. Breath of Hines\" {q:216}.",
+   "{ctx}Leinster Road runs through Rathmines {s:wp-rathmines}, while Leinster Avenue is in North Strand, Dublin 3 {s:dublish-leinster-ave}, near Bayview Avenue where the family had lived in the 1830s. {int}So the address may have been Leinster Road, Rathmines, or Leinster Avenue, North Strand, with \"Rathmines\" misremembered or misheard. Unresolved ({qn:q-livingston})."
+  ]
+ },
+ {
+  "id": "dublin",
+  "name": "Dublin",
+  "type": "town",
+  "region": "Dublin",
+  "coords": [
+   53.3498,
+   -6.2603
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "st-audoens", "name": "St Audoen's Church, Dublin", "type": "institution", "region": "Dublin",
-    "coords": [53.3435, -6.2735],
-    "aliases": [], "variants": [],
-    "ident": { "status": "record", "conf": "medium" },
-    "summary": "Medieval church where Major William Somerville is said to be buried (published source).",
-    "body": ["{ctx}Not mentioned in the recording; given as Major William Somerville's burial place {s:wp-sir-james-somerville}."]
+  "summary": "Capital; scene of Eliza and Dorothea's journey in 1823, the family's later homes, and Cecilia's learned societies.",
+  "body": [
+   "Eliza and Dorothea \"went to Dublin in the car, the night freezing and cold\" in February 1823 {q:144}. Cecilia was \"a member of all sorts of learned societies in Dublin\" {q:232}."
+  ]
+ },
+ {
+  "id": "st-audoens",
+  "name": "St Audoen's Church, Dublin",
+  "type": "institution",
+  "region": "Dublin",
+  "coords": [
+   53.3435,
+   -6.2735
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "record",
+   "conf": "medium"
   },
-  {
-    "id": "somerville-meath", "name": "Somerville, Co. Meath", "type": "house", "region": "Co. Meath",
-    "coords": [53.620, -6.470], "approx": true,
-    "aliases": ["Somerville House", "Balrath"], "variants": [],
-    "ident": { "status": "record", "conf": "medium" },
-    "summary": "Seat of the Somerville baronets, from which the 1748 title took its name.",
-    "body": ["{ctx}The baronetcy was \"of Somerville, County Meath\"; the 2nd Baron Athlumney died there in January 1929 {s:wp-2nd-baron}. Not named in the recording."]
+  "summary": "Medieval church where Major William Somerville is said to be buried (published source).",
+  "body": [
+   "{ctx}Not mentioned in the recording; given as Major William Somerville's burial place {s:wp-sir-james-somerville}."
+  ]
+ },
+ {
+  "id": "somerville-meath",
+  "name": "Somerville, Co. Meath",
+  "type": "house",
+  "region": "Co. Meath",
+  "coords": [
+   53.62,
+   -6.47
+  ],
+  "approx": true,
+  "aliases": [
+   "Somerville House",
+   "Balrath"
+  ],
+  "variants": [],
+  "ident": {
+   "status": "record",
+   "conf": "medium"
   },
-  {
-    "id": "roscrea", "name": "Roscrea", "type": "town", "region": "Co. Tipperary",
-    "coords": [52.951, -7.801],
-    "aliases": [], "variants": [],
-    "ident": { "status": "record", "conf": "medium" },
-    "summary": "Where Captain William Somerville and Eliza Bellingham married on 30 August 1800 (published source).",
-    "body": ["{ctx}The recording gives only the year, 1800 {q:62}; the place and day come from the published Bellingham genealogy {s:lf-bellingham}."]
+  "summary": "Seat of the Somerville baronets, from which the 1748 title took its name.",
+  "body": [
+   "{ctx}The baronetcy was \"of Somerville, County Meath\"; the 2nd Baron Athlumney died there in January 1929 {s:wp-2nd-baron}. Not named in the recording."
+  ]
+ },
+ {
+  "id": "roscrea",
+  "name": "Roscrea",
+  "type": "town",
+  "region": "Co. Tipperary",
+  "coords": [
+   52.951,
+   -7.801
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "record",
+   "conf": "medium"
   },
-  {
-    "id": "timolin", "name": "Timolin", "type": "town", "region": "Co. Kildare",
-    "coords": [52.983, -6.810],
-    "aliases": [], "variants": [],
-    "ident": { "status": "record", "conf": "medium" },
-    "summary": "Where Eliza's mother, Elizabeth Tenison, died in 1814 (published source).",
-    "body": ["{ctx}From the published genealogy {s:lf-bellingham}."]
+  "summary": "Where Captain William Somerville and Eliza Bellingham married on 30 August 1800 (published source).",
+  "body": [
+   "{ctx}The recording gives only the year, 1800 {q:62}; the place and day come from the published Bellingham genealogy {s:lf-bellingham}."
+  ]
+ },
+ {
+  "id": "timolin",
+  "name": "Timolin",
+  "type": "town",
+  "region": "Co. Kildare",
+  "coords": [
+   52.983,
+   -6.81
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "record",
+   "conf": "medium"
   },
-  {
-    "id": "clonmel", "name": "Clonmel", "type": "town", "region": "Co. Tipperary",
-    "coords": [52.355, -7.704],
-    "aliases": [], "variants": ["include Mal"],
-    "ident": { "status": "inferred", "conf": "low" },
-    "summary": "Probable stopping place of Archibald James in February 1823, and home of his aunt Dorothea's Riall family.",
-    "body": ["The diary: Archibald had left home \"and spent a few days include Mal, and then took ship\" {q:148}. {int}\"In Clonmel\" is the closest reading, and his aunt Dorothea was married to William Riall, a Clonmel banker {s:lf-bellingham}. Clonmel is inland, so he must then have travelled to a port (Waterford or Cork) to embark."]
+  "summary": "Where Eliza's mother, Elizabeth Tenison, died in 1814 (published source).",
+  "body": [
+   "{ctx}From the published genealogy {s:lf-bellingham}."
+  ]
+ },
+ {
+  "id": "clonmel",
+  "name": "Clonmel",
+  "type": "town",
+  "region": "Co. Tipperary",
+  "coords": [
+   52.355,
+   -7.704
+  ],
+  "aliases": [],
+  "variants": [
+   "include Mal"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "brooke-ulster", "name": "Brooke lands, Ulster", "type": "region", "region": "Ulster",
-    "coords": [54.32, -7.40], "approx": true,
-    "aliases": ["Colebrooke?"], "variants": ["The Brook family"],
-    "ident": { "status": "inferred", "conf": "low" },
-    "summary": "Land William Henry Somerville rented from \"the Brooke family\" in Ulster; probably the Colebrooke estate, Co. Fermanagh.",
-    "body": ["William Henry \"rented land from the Brooke family, this well-known family … [in] Ulster\" {q:106}. {int}Placement at Colebrooke, Co. Fermanagh, is a guess from the family's prominence."]
+  "summary": "Where Archibald James spent \"a few days\" before sailing in February 1823; also home of his aunt Dorothea's Riall family.",
+  "body": [
+   "Transcript B: Archibald \"had left home, spent a few days in Clonmel, and then taken ship on board the George and Thomas for the Barbados\" {q:T2:65}. Transcript A garbles it as \"spent a few days include Mal\" {q:148}. {int}His aunt Dorothea was married to William Riall, a Clonmel banker {s:lf-bellingham}, which may explain the stop. Clonmel is inland, so he must have travelled on to a port (Waterford or Cork) to embark; which one is unknown."
+  ]
+ },
+ {
+  "id": "brooke-ulster",
+  "name": "Brooke lands, Ulster",
+  "type": "region",
+  "region": "Ulster",
+  "coords": [
+   54.32,
+   -7.4
+  ],
+  "approx": true,
+  "aliases": [
+   "Colebrooke?"
+  ],
+  "variants": [
+   "The Brook family"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "low"
   },
-  {
-    "id": "ulster", "name": "Ulster / Northern Ireland", "type": "region", "region": "Ulster",
-    "coords": [54.6, -6.7], "approx": true,
-    "aliases": ["Northern Ireland"], "variants": ["uternards"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where most of Bellingham Arthur's RIC stations lay, and where most of Captain William's children were born.",
-    "body": ["Most of Captain William's children were born in what is now Northern Ireland {q:62}. Of Bellingham Arthur: \"most of his stations were in what is now Northern Ireland\", where rioting was \"much more acute\" because of the \"division of society\" {q:294-296}."]
+  "summary": "Land William Henry Somerville rented from \"the Brooke family\" in Ulster; probably the Colebrooke estate, Co. Fermanagh.",
+  "body": [
+   "William Henry \"rented land from the Brooke family, this well-known family … [in] Ulster\" {q:106}. {int}Placement at Colebrooke, Co. Fermanagh, is a guess from the family's prominence."
+  ]
+ },
+ {
+  "id": "ulster",
+  "name": "Ulster / Northern Ireland",
+  "type": "region",
+  "region": "Ulster",
+  "coords": [
+   54.6,
+   -6.7
+  ],
+  "approx": true,
+  "aliases": [
+   "Northern Ireland"
+  ],
+  "variants": [
+   "uternards"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "cork-city", "name": "Cork", "type": "town", "region": "Co. Cork",
-    "coords": [51.898, -8.470],
-    "aliases": [], "variants": ["cool", "Cool", "Coke"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "One of Bellingham Arthur's early RIC stations, from which the detachment went by train to Youghal in 1887.",
-    "body": ["\"One of his early stations was in Cork\" {q:290}. A detachment \"was sent by train from Cork to Youghal\" {q:316}. The interviewer mentions the Burning of Cork (December 1920) {q:602-606}; see {e:ev-burning-cork}."]
+  "summary": "Where most of Bellingham Arthur's RIC stations lay, and where most of Captain William's children were born.",
+  "body": [
+   "Most of Captain William's children were born in what is now Northern Ireland {q:62}. Of Bellingham Arthur: \"most of his stations were in what is now Northern Ireland, Newtownards, all around there\" {q:T2:116}, where rioting was \"much more acute\" because of the \"division of society\" {q:294-296}."
+  ]
+ },
+ {
+  "id": "cork-city",
+  "name": "Cork",
+  "type": "town",
+  "region": "Co. Cork",
+  "coords": [
+   51.898,
+   -8.47
+  ],
+  "aliases": [],
+  "variants": [
+   "cool",
+   "Cool",
+   "Coke"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "limerick", "name": "Limerick", "type": "town", "region": "Co. Limerick",
-    "coords": [52.664, -8.630],
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "An RIC station of Bellingham Arthur's.",
-    "body": ["\"It was also in Limerick and Cork\" {q:294}."]
+  "summary": "One of Bellingham Arthur's early RIC stations, from which the detachment went by train to Youghal in 1887.",
+  "body": [
+   "\"One of his early stations was in Cork\" {q:290}. A detachment \"was sent by train from Cork to Youghal\" {q:316}. The interviewer mentions the Burning of Cork (December 1920) {q:602-606}; see {e:ev-burning-cork}."
+  ]
+ },
+ {
+  "id": "limerick",
+  "name": "Limerick",
+  "type": "town",
+  "region": "Co. Limerick",
+  "coords": [
+   52.664,
+   -8.63
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "youghal", "name": "Youghal", "type": "town", "region": "Co. Cork",
-    "coords": [51.954, -7.850],
-    "aliases": [], "variants": ["your", "Cool to your"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Port at the mouth of the Blackwater; scene of the riot of 8 March 1887 in which Patrick Hanlon was killed.",
-    "body": ["\"A detachment of RIC was sent by train from Cork to Youghal under the command of Captain Somerville\" {q:316}. See {e:ev-youghal-1887}."]
+  "summary": "An RIC station of Bellingham Arthur's.",
+  "body": [
+   "\"It was also in Limerick and Cork\" {q:294}."
+  ]
+ },
+ {
+  "id": "youghal",
+  "name": "Youghal",
+  "type": "town",
+  "region": "Co. Cork",
+  "coords": [
+   51.954,
+   -7.85
+  ],
+  "aliases": [
+   "York (as transcribed)"
+  ],
+  "variants": [
+   "your",
+   "Cool to your",
+   "Yall",
+   "Yule"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "ballynatray", "name": "Ballynatray", "type": "house", "region": "Co. Waterford",
-    "coords": [51.997, -7.883], "approx": true,
-    "aliases": ["Ballynatray House"], "variants": ["Ballon a tray"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Great estate on the Blackwater above Youghal. The narrator links the 1887 riot to its fishing rights; published accounts tie it to the Plan of Campaign instead.",
-    "body": [
-      "\"There's a big estate, which now belongs to Mr. Dyson … called Ballynatray. It's on the borders of Cork, where the river Blackwater goes into the sea. They have fishing rights and all sorts of things … And there was a riot, no doubt over fishing\" {q:312-314}.",
-      "{ctx}Ballynatray, an 850-acre estate long held by the Smyth family, was sold in 2024; the buyer was widely reported to be Sir James Dyson {s:agriland-ballynatray} {s:landedestates-ballynatray}. {int}Published accounts of the 1887 riot connect it with the arrest of Fr Keller and the Plan of Campaign on the Ponsonby estate, not with fishing {s:ballymacoda-1887}; the narrator's \"no doubt\" is his own surmise, though the dead man was indeed a fisherman."
-    ]
+  "summary": "Port at the mouth of the Blackwater; scene of the riot of 8 March 1887 in which Patrick Hanlon was killed.",
+  "body": [
+   "\"A detachment of RIC was sent by train from Cork to Youghal under the command of Captain Somerville\" {q:316} {q:T2:124-125}. The town's name defeats both transcripts: A writes \"your\" and \"Cool to your\", B \"Yall\", \"Yule\", \"York\" and \"corp to your\" {q:T2:118-125}. See {e:ev-youghal-1887}."
+  ]
+ },
+ {
+  "id": "ballynatray",
+  "name": "Ballynatray",
+  "type": "house",
+  "region": "Co. Waterford",
+  "coords": [
+   51.997,
+   -7.883
+  ],
+  "approx": true,
+  "aliases": [
+   "Ballynatray House"
+  ],
+  "variants": [
+   "Ballon a tray"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "castle-harrison", "name": "Castle Harrison", "type": "house", "region": "Co. Cork",
-    "coords": [52.30, -8.66], "approx": true,
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Home of the Harrison family, North Cork; Kitty Harrison, Bunt's wife, was the eldest of the family.",
-    "body": ["\"Kathleen Harrison, from Castle Harrison. She was the eldest of that family\" {q:372}. Marker approximate (near Charleville)."]
+  "summary": "Great estate on the Blackwater above Youghal. The narrator links the 1887 riot to its fishing rights; published accounts tie it to the Plan of Campaign instead.",
+  "body": [
+   "\"There's a big estate, which now belongs to Mr. Dyson … called Ballynatray. It's on the borders of Cork, where the river Blackwater goes into the sea. They have fishing rights and all sorts of things … And there was a riot, no doubt over fishing\" {q:312-314}. Only transcript A records the name; transcript B has \"There's a big estate in Yule which now belongs to Mr. Dyson … It's on the borders of Cork\" {q:T2:123-124}.",
+   "{ctx}Ballynatray, an 850-acre estate long held by the Smyth family, was sold in 2024; the buyer was widely reported to be Sir James Dyson {s:agriland-ballynatray} {s:landedestates-ballynatray}. {int}Published accounts of the 1887 riot connect it with the arrest of Fr Keller and the Plan of Campaign on the Ponsonby estate, not with fishing {s:ballymacoda-1887}; the narrator's \"no doubt\" is his own surmise, though the dead man was indeed a fisherman."
+  ]
+ },
+ {
+  "id": "castle-harrison",
+  "name": "Castle Harrison",
+  "type": "house",
+  "region": "Co. Cork",
+  "coords": [
+   52.3,
+   -8.66
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "bantry-glengarriff", "name": "Between Bantry and Glengarriff", "type": "region", "region": "Co. Cork",
-    "coords": [51.71, -9.50], "approx": true,
-    "aliases": ["West Cork"], "variants": ["pantry", "Green desert"],
-    "ident": { "status": "testimony", "conf": "medium" },
-    "summary": "Where Bunt and Kitty lived, with \"wonderful gardens\"; the exact place (\"Green desert\" in the transcript) is unidentified.",
-    "body": ["\"Two cottages near Bantry, an area called [Green desert?]. It's between Bantry and Glengarriff, in West Cork\" {q:374}; Bunt \"had a lovely place down in West Cork … wonderful gardens\" {q:554}. {int}See {qn:q-green-desert}."]
+  "summary": "Home of the Harrison family, North Cork; Kitty Harrison, Bunt's wife, was the eldest of the family.",
+  "body": [
+   "\"Kathleen Harrison, from Castle Harrison. She was the eldest of that family\" {q:372}. Marker approximate (near Charleville)."
+  ]
+ },
+ {
+  "id": "bantry-glengarriff",
+  "name": "Reendesert, Bantry (\"Green desert\")",
+  "type": "region",
+  "region": "Co. Cork",
+  "coords": [
+   51.71,
+   -9.5
+  ],
+  "approx": true,
+  "aliases": [
+   "Reendesert Lodge",
+   "West Cork"
+  ],
+  "variants": [
+   "pantry",
+   "Green desert",
+   "Green Desert",
+   "Lengariff",
+   "Reendesert Lodge"
+  ],
+  "ident": {
+   "status": "record",
+   "conf": "medium"
   },
-  {
-    "id": "castletownshend", "name": "Drishane, Castletownshend", "type": "house", "region": "Co. Cork",
-    "coords": [51.526, -9.177],
-    "aliases": ["Drishane House"], "variants": ["Trishan house", "Castle Townsend", "Carson Townsend"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Home of the Cork Somervilles, a distantly related family who \"have managed to hold on to their estates\".",
-    "body": [
-      "The interviewer's lecturer knew of \"the Somervilles of Cork\"; \"they still live in Drishane House, down in Castletownshend\" {q:280-282}. They were \"very naval … further off related\" {q:472}; the narrator has met the present owner, Thomas, and his sons {q:472-474}.",
-      "{ctx}Drishane was built around 1780 by Thomas Somerville and is still lived in by the family; Edith Somerville the novelist lived there {s:drishane-southernstar}."
-    ]
+  "summary": "Bunt and Kitty's home between Bantry and Glengarriff, with \"wonderful gardens\": both transcripts hear \"Green desert\"; a compiled genealogy gives Reendesert Lodge, Bantry.",
+  "body": [
+   "\"Did up two cottages near Bantry, an area called Green Desert. It's between Bantry and Glengarriff in West Cork\" (transcript B {q:T2:147}; A {q:374}); Bunt \"had a lovely place down in West Cork where he lived for many years, wonderful gardens\" {q:T2:219} {q:554}.",
+   "{ctx}A compiled genealogy citing The Times records Bunt's death on 13 February 1951 at Reendesert Lodge, Bantry {s:winters-p69}. {int}Both transcripts independently hear \"Green desert\", which must be Reendesert. The marker position is approximate."
+  ]
+ },
+ {
+  "id": "castletownshend",
+  "name": "Drishane, Castletownshend",
+  "type": "house",
+  "region": "Co. Cork",
+  "coords": [
+   51.526,
+   -9.177
+  ],
+  "aliases": [
+   "Drishane House"
+  ],
+  "variants": [
+   "Trishan house",
+   "Castle Townsend",
+   "Carson Townsend",
+   "Drishan House",
+   "Dreshawn House",
+   "Cossack Townsend"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "witney", "name": "Witney (Clinch's brewery)", "type": "town", "region": "Oxfordshire",
-    "coords": [51.785, -1.485],
-    "aliases": ["Oxford", "Eagle Brewery"], "variants": ["Oxford"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Site of Clinch & Co.'s Eagle Brewery, source of Margaret Hall Clinch's fortune. The recording says \"Oxford\".",
-    "body": ["\"Margaret Hall Clinch, Clinch's Brewery in Oxford\" {q:240}. {ctx}Clinch & Co. brewed at the Eagle Brewery, Witney, Oxfordshire, until 1963; part of the site later became the Wychwood Brewery {s:bhs-clinch} {s:wp-clinch}."]
+  "summary": "Home of the Cork Somervilles, a distantly related family who \"have managed to hold on to their estates\".",
+  "body": [
+   "The interviewer's lecturer knew of \"the Somervilles of Cork\"; \"they still live in Drishane House, down in Castletownshend\" {q:280-282}. They were \"very naval … further off related\" {q:472}; the narrator has met the present owner, \"Thomas, Tom Somerville\", a number of times {q:472-474} {q:T2:184}.",
+   "{ctx}Drishane was built around 1780 by Thomas Somerville and is still lived in by the family; Edith Somerville the novelist lived there {s:drishane-southernstar}."
+  ]
+ },
+ {
+  "id": "witney",
+  "name": "Witney (Clinch's brewery)",
+  "type": "town",
+  "region": "Oxfordshire",
+  "coords": [
+   51.785,
+   -1.485
+  ],
+  "aliases": [
+   "Oxford",
+   "Eagle Brewery"
+  ],
+  "variants": [
+   "Oxford"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "adderbury", "name": "Adderbury", "type": "town", "region": "Oxfordshire",
-    "coords": [52.016, -1.317],
-    "aliases": [], "variants": ["atterbury", "Atterbury"],
-    "ident": { "status": "inferred", "conf": "medium" },
-    "summary": "Village \"north of Oxford\" where Uncle Pat worked as a doctor's gardener.",
-    "body": ["\"Uncle Pat went to the village of Adderbury, north of Oxford, and was the gardener for a local doctor\" {q:462-464}."]
+  "summary": "Site of Clinch & Co.'s Eagle Brewery, source of Margaret Hall Clinch's fortune. The recording says \"Oxford\".",
+  "body": [
+   "\"Margaret Hall Clinch, Clinch's Brewery in Oxford\" {q:240} {q:T2:95-96}. {ctx}Clinch & Co. brewed at the Eagle Brewery, The Crofts, Witney, Oxfordshire, until 1963 {s:bhs-clinch} {s:wp-clinch}. A compiled genealogy records Bellingham Arthur's marriage at St Mary's, Witney, on 27 August 1879, and several of his children staying with their grandfather William Clinch at Church Green, Witney, in 1891 {s:winters-p68}. {int}\"Oxford\" in the recording therefore most likely means Oxfordshire."
+  ]
+ },
+ {
+  "id": "adderbury",
+  "name": "Adderbury",
+  "type": "town",
+  "region": "Oxfordshire",
+  "coords": [
+   52.016,
+   -1.317
+  ],
+  "aliases": [],
+  "variants": [
+   "atterbury",
+   "Atterbury"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "gloucestershire", "name": "Gloucestershire", "type": "region", "region": "England",
-    "coords": [51.86, -2.24], "approx": true,
-    "aliases": [], "variants": ["gloucestershire"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where Uncle Jim and his English wife had their home.",
-    "body": ["{q:378}"]
+  "summary": "Village \"north of Oxford\" where Uncle Pat worked as a doctor's gardener.",
+  "body": [
+   "\"Uncle Paddy went to the village of Adderbury, north of Oxford, and was a gardener for a local doctor\" (transcript B {q:T2:180}; A \"atterbury\" {q:462-464}). {ctx}A compiled genealogy citing The Times records his death at Adderbury on 10 July 1947 {s:winters-p68}."
+  ]
+ },
+ {
+  "id": "gloucestershire",
+  "name": "Gloucestershire",
+  "type": "region",
+  "region": "England",
+  "coords": [
+   51.86,
+   -2.24
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [
+   "gloucestershire"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "dorset", "name": "Dorset", "type": "region", "region": "England",
-    "coords": [50.75, -2.33], "approx": true,
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where Edmund Truell lived on his English estate.",
-    "body": ["\"He inherited an estate in England and lived in Dorset\" {q:252}. Lyme Regis, where Monique Bellingham settled, is also in Dorset."]
+  "summary": "Where Uncle Jim and his English wife had their home.",
+  "body": [
+   "{q:378}"
+  ]
+ },
+ {
+  "id": "dorset",
+  "name": "Dorset",
+  "type": "region",
+  "region": "England",
+  "coords": [
+   50.75,
+   -2.33
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "lyme-regis", "name": "Lyme Regis", "type": "town", "region": "Dorset",
-    "coords": [50.725, -2.936],
-    "aliases": ["the West Country seaside town"], "variants": ["west country indefinland"],
-    "ident": { "status": "record", "conf": "medium" },
-    "summary": "The West Country seaside town the narrator could not name: Monique Bellingham lived there from 1815 until her death in 1856.",
-    "body": ["\"Settled in the West Country in England. There's a very interesting booklet about her life … seaside town. I tried to remember the name of it\" {q:42}. {ctx}The published Bellingham genealogy records that Monique \"settled at Lyme Regis (Dorset)\" and was buried there in 1856, citing a Lyme Regis Museum article about her {s:lf-bellingham}."]
+  "summary": "Where Edmund Truell lived on his English estate.",
+  "body": [
+   "\"He inherited an estate in England and lived in Dorset\" {q:252}. Lyme Regis, where Monique Bellingham settled, is also in Dorset."
+  ]
+ },
+ {
+  "id": "lyme-regis",
+  "name": "Lyme Regis",
+  "type": "town",
+  "region": "Dorset",
+  "coords": [
+   50.725,
+   -2.936
+  ],
+  "aliases": [
+   "the West Country seaside town"
+  ],
+  "variants": [
+   "west country indefinland",
+   "Devonland"
+  ],
+  "ident": {
+   "status": "record",
+   "conf": "medium"
   },
-  {
-    "id": "london", "name": "London", "type": "town", "region": "England",
-    "coords": [51.507, -0.128],
-    "aliases": ["War Office"], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where Pat reported to the War Office after his escape; where Alan Bellingham went after separating from Monique.",
-    "body": ["Pat \"found his way across Germany, across Holland, and to London … when he got to the War Office in London\" he was interrogated at length {q:446-450}."]
+  "summary": "The West Country seaside town the narrator could not name: Monique Bellingham lived there from 1815 until her death in 1856.",
+  "body": [
+   "\"Monique [Bâby] settled in the West Country, in Devonland, there's a very interesting booklet about her life, Seaside Town, and I'm trying to remember the name of it now\" (transcript B {q:T2:20-21}; A {q:42}). {ctx}The published Bellingham genealogy records that Monique \"settled at Lyme Regis (Dorset)\" and was buried there in 1856, citing a Lyme Regis Museum article about her {s:lf-bellingham}. {int}Lyme Regis is in Dorset rather than Devon, but it fits \"a seaside town in the West Country\"."
+  ]
+ },
+ {
+  "id": "london",
+  "name": "London",
+  "type": "town",
+  "region": "England",
+  "coords": [
+   51.507,
+   -0.128
+  ],
+  "aliases": [
+   "War Office"
+  ],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "lincolnshire", "name": "Lincolnshire", "type": "region", "region": "England",
-    "coords": [53.1, -0.2], "approx": true,
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "low" },
-    "summary": "Where Reginald trained before going to the front (\"I think\").",
-    "body": ["\"He went to [a military] training college up in Lincolnshire, I think it was\" {q:356}."]
+  "summary": "Where Pat reported to the War Office after his escape; where Alan Bellingham went after separating from Monique.",
+  "body": [
+   "Pat \"found his way across Germany, across Holland, and to London … when he got to the War Office in London\" he was interrogated at length {q:446-450}."
+  ]
+ },
+ {
+  "id": "lincolnshire",
+  "name": "Lincolnshire",
+  "type": "region",
+  "region": "England",
+  "coords": [
+   53.1,
+   -0.2
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "low"
   },
-  {
-    "id": "four-courts", "name": "Four Courts (Public Record Office)", "type": "institution", "region": "Dublin",
-    "coords": [53.3457, -6.2737],
-    "aliases": ["Public Record Office of Ireland"], "variants": ["The far in the four courts", "the four chords"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "The Public Record Office destroyed in June 1922; Bellingham Arthur used its records before the fire.",
-    "body": ["\"He was alive before the fire in the Four Courts, and therefore he had access to records which are no longer available\" {q:4}. See {e:ev-four-courts}."]
+  "summary": "Where Reginald trained before going to the front (\"I think\").",
+  "body": [
+   "\"He went to [a military] training college up in Lincolnshire, I think it was\" {q:356}."
+  ]
+ },
+ {
+  "id": "four-courts",
+  "name": "Four Courts (Public Record Office)",
+  "type": "institution",
+  "region": "Dublin",
+  "coords": [
+   53.3457,
+   -6.2737
+  ],
+  "aliases": [
+   "Public Record Office of Ireland"
+  ],
+  "variants": [
+   "The far in the four courts",
+   "the four chords",
+   "fire in the forecourts"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "genealogical-office", "name": "Genealogical Office", "type": "institution", "region": "Dublin",
-    "coords": [53.3410, -6.2546],
-    "aliases": ["Office of Arms", "National Library of Ireland", "Kildare Street Club"], "variants": ["Juniological office"],
-    "ident": { "status": "inferred", "conf": "medium" },
-    "summary": "The heraldic and genealogical office, formerly in the Kildare Street Club and in Dublin Castle, now part of the National Library of Ireland.",
-    "body": ["The narrator recalls \"a wonderful office … in what was formerly the Kildare Street Club, at the bottom of Kildare Street. Then it moved to the Castle … the genealogical office was in that cupola and belfry\"; now \"I think it's just part of the National Library\" {q:272-276}. {ctx}The Genealogical Office was housed in Dublin Castle's Bedford Tower and later moved to Kildare Street; it is now part of the National Library of Ireland {s:wp-genealogical-office}. {int}The narrator's order of moves differs from the published one."]
+  "summary": "The Public Record Office destroyed in June 1922; Bellingham Arthur used its records before the fire.",
+  "body": [
+   "\"He was alive before the fire in the Four Courts, and therefore he had access to records which are no longer available\" {q:4}. Transcript A reads \"The far in the four courts\" {q:4}; transcript B \"the fire in the forecourts\" {q:T2:2}. Later the interviewer names it outright: \"Are you talking about the destruction of the Irish records? The Four Courts?\" {q:T2:241}. {int}Reading these as the 1922 fire at the Public Record Office in the Four Courts is an interpretation, but a secure one. See {e:ev-four-courts}."
+  ]
+ },
+ {
+  "id": "genealogical-office",
+  "name": "Genealogical Office",
+  "type": "institution",
+  "region": "Dublin",
+  "coords": [
+   53.341,
+   -6.2546
+  ],
+  "aliases": [
+   "Office of Arms",
+   "National Library of Ireland",
+   "Kildare Street Club"
+  ],
+  "variants": [
+   "Juniological office"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "medium"
   },
-  {
-    "id": "war-memorial-gardens", "name": "Irish National War Memorial Gardens", "type": "institution", "region": "Dublin",
-    "coords": [53.3446, -6.3206],
-    "aliases": ["Islandbridge"], "variants": ["The Irish Memorial designed by elections"],
-    "ident": { "status": "inferred", "conf": "medium" },
-    "summary": "Lutyens's memorial at Islandbridge, beside the Phoenix Park, whose granite book-rooms hold the Rolls of Honour of the Irish dead of the First World War.",
-    "body": ["\"The Irish Memorial designed by [Lutyens] up in the Phoenix Park … they have these sort of pillars … all [the names] are stored in these pillars\" {q:526-528}. {ctx}The gardens at Islandbridge were designed by Sir Edwin Lutyens; their book-rooms house the illuminated volumes of names {s:wp-war-memorial-gardens}."]
+  "summary": "The heraldic and genealogical office, formerly in the Kildare Street Club and in Dublin Castle, now part of the National Library of Ireland.",
+  "body": [
+   "The narrator recalls \"a wonderful office in what was formerly the Kildare Street Club at the bottom of Kildare Street. Then it moved to the castle … the genealogical office was in that cupola and belfry. Now I think it's just part of the National Library\" {q:272-276} {q:T2:108-109}.",
+   "{ctx}The Genealogical Office was based in Dublin Castle until 1981, moved in 1987 to part of the former Kildare Street Club premises in Kildare Street, and became formally part of the National Library in 1997 {s:wp-genealogical-office}. {int}The narrator has the order of the moves reversed. The belfry in the Castle's upper yard is presumably the Bedford Tower, though our source does not name it."
+  ]
+ },
+ {
+  "id": "war-memorial-gardens",
+  "name": "Irish National War Memorial Gardens",
+  "type": "institution",
+  "region": "Dublin",
+  "coords": [
+   53.3446,
+   -6.3206
+  ],
+  "aliases": [
+   "Islandbridge"
+  ],
+  "variants": [
+   "The Irish Memorial designed by elections"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "medium"
   },
-  {
-    "id": "badajoz", "name": "Badajoz", "type": "battlefield", "region": "Spain",
-    "coords": [38.879, -6.970],
-    "aliases": [], "variants": ["badayos", "butter yours", "Mateo's"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Spanish fortress stormed by Wellington's army on 6 April 1812, where Henry Tenison Bellingham was killed.",
-    "body": ["\"Killed at the siege of Badajoz, in Spain, in the Peninsular War\" {q:44}. See {e:ev-badajoz}."]
+  "summary": "Lutyens's memorial at Islandbridge, beside the Phoenix Park, whose granite book-rooms hold the Rolls of Honour of the Irish dead of the First World War.",
+  "body": [
+   "\"The old Irish memorial designed by Lutyens up in the Phoenix Park … They have these sort of pillars … all medals and things are all stored in these pillars\" (transcript B {q:T2:207-208}; A has \"designed by elections\" and \"all medicine. Um, things\" {q:526-528}).",
+   "{ctx}The Irish National War Memorial Gardens at Islandbridge, opposite the Phoenix Park obelisk, were designed by Sir Edwin Lutyens; the granite book-rooms hold the illuminated volumes of Ireland's Memorial Records 1914–1918, with artwork by Harry Clarke, and the memorial is dedicated to 49,400 Irish soldiers {s:wp-war-memorial-gardens}. {int}So the \"pillars\" hold books of names rather than medals, as far as the published description goes."
+  ]
+ },
+ {
+  "id": "badajoz",
+  "name": "Badajoz",
+  "type": "battlefield",
+  "region": "Spain",
+  "coords": [
+   38.879,
+   -6.97
+  ],
+  "aliases": [],
+  "variants": [
+   "badayos",
+   "butter yours",
+   "Mateo's"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "barbados", "name": "Barbados", "type": "country", "region": "West Indies",
-    "coords": [13.19, -59.54],
-    "aliases": ["the Barbados"], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Destination of Archibald James, who sailed in 1823 aboard the George and Thomas.",
-    "body": ["\"Took ship on board the George and Thomas for the Barbados\" {q:148-150}; a letter came from there later in 1823 {q:156}."]
+  "summary": "Spanish fortress stormed by Wellington's army on 6 April 1812, where Henry Tenison Bellingham was killed.",
+  "body": [
+   "\"Killed at the siege of Badajoz, in Spain, in the Peninsular War\" {q:44}. See {e:ev-badajoz}."
+  ]
+ },
+ {
+  "id": "barbados",
+  "name": "Barbados",
+  "type": "country",
+  "region": "West Indies",
+  "coords": [
+   13.19,
+   -59.54
+  ],
+  "aliases": [
+   "the Barbados"
+  ],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "madeira", "name": "Madeira", "type": "country", "region": "Atlantic",
-    "coords": [32.65, -16.91],
-    "aliases": [], "variants": ["Madera"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Island port of call on the voyage to the West Indies, from which Archibald James wrote home in 1823.",
-    "body": ["\"A couple of letters were received from Archibald James. One from Madeira. One from Barbados\" {q:156}."]
+  "summary": "Destination of Archibald James, who sailed in 1823 aboard the George and Thomas.",
+  "body": [
+   "\"Took ship on board the George and Thomas for the Barbados\" {q:148-150}; a letter came from there later in 1823 {q:156}."
+  ]
+ },
+ {
+  "id": "madeira",
+  "name": "Madeira",
+  "type": "country",
+  "region": "Atlantic",
+  "coords": [
+   32.65,
+   -16.91
+  ],
+  "aliases": [],
+  "variants": [
+   "Madera"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "trinidad", "name": "Trinidad", "type": "country", "region": "West Indies",
-    "coords": [10.65, -61.50],
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where Archibald James moved, followed by his brothers Tenison Alan and Bellingham.",
-    "body": ["Tenison \"went to Trinidad … where Archibald James had moved\" {q:194}; Bellingham \"also [went to] Trinidad, and he had an accident\" {q:196}."]
+  "summary": "Island port of call on the voyage to the West Indies, from which Archibald James wrote home in 1823.",
+  "body": [
+   "\"A couple of letters were received from Archibald James. One from Madeira. One from Barbados\" {q:156}."
+  ]
+ },
+ {
+  "id": "trinidad",
+  "name": "Trinidad",
+  "type": "country",
+  "region": "West Indies",
+  "coords": [
+   10.65,
+   -61.5
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "america", "name": "America", "type": "country", "region": "North America",
-    "coords": [40.0, -78.0], "approx": true,
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "medium" },
-    "summary": "Where Eliza Somerville (Mrs Thomas Nelson) settled; the exact place is not stated.",
-    "body": ["{q:164} {q:172}"]
+  "summary": "Where Archibald James moved, followed by his brothers Tenison Alan and Bellingham.",
+  "body": [
+   "Tenison \"went to Trinidad … where Archibald James had moved\" {q:194}; Bellingham \"also [went to] Trinidad, and he had an accident\" {q:196}."
+  ]
+ },
+ {
+  "id": "america",
+  "name": "America",
+  "type": "country",
+  "region": "North America",
+  "coords": [
+   40.0,
+   -78.0
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "medium"
   },
-  {
-    "id": "canada", "name": "Canada", "type": "country", "region": "North America",
-    "coords": [45.50, -73.57], "approx": true,
-    "aliases": ["Montreal"], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where Alan Bellingham spent time as a young man, and the home of his wife's family, the Bâbys.",
-    "body": ["\"As a young man he had been in Canada, because there was a cousin [with a] regiment … in Canada\", who gave family members \"a leg up\" {q:30-34}. {ctx}Monique's father Jacques Duperon Bâby was a fur trader of Montreal {s:lf-bellingham}."]
+  "summary": "Where Eliza Somerville (Mrs Thomas Nelson) settled; the exact place is not stated.",
+  "body": [
+   "{q:164} {q:172}"
+  ]
+ },
+ {
+  "id": "canada",
+  "name": "Canada",
+  "type": "country",
+  "region": "North America",
+  "coords": [
+   45.5,
+   -73.57
+  ],
+  "approx": true,
+  "aliases": [
+   "Montreal"
+  ],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "detroit", "name": "Detroit", "type": "town", "region": "North America",
-    "coords": [42.331, -83.046],
-    "aliases": [], "variants": [],
-    "ident": { "status": "record", "conf": "medium" },
-    "summary": "Where Alan Bellingham married Monique Bâby on 22 March 1795 (published source).",
-    "body": ["{ctx}Detroit was still under British control in 1795. Marriage details from the published Bellingham genealogy {s:lf-bellingham}."]
+  "summary": "Where Alan Bellingham spent time as a young man, and the home of his wife's family, the Bâbys.",
+  "body": [
+   "\"As a young man he had been in Canada, because there was a cousin [with a] regiment … in Canada\", who gave family members \"a leg up\" {q:30-34}. {ctx}Monique's father Jacques Duperon Bâby was a fur trader of Montreal {s:lf-bellingham}."
+  ]
+ },
+ {
+  "id": "detroit",
+  "name": "Detroit",
+  "type": "town",
+  "region": "North America",
+  "coords": [
+   42.331,
+   -83.046
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "record",
+   "conf": "medium"
   },
-  {
-    "id": "india", "name": "India", "type": "country", "region": "Asia",
-    "coords": [22.5, 78.9], "approx": true,
-    "aliases": [], "variants": ["indoor"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where Bunt, Jim and Eddie's husband served.",
-    "body": ["Bunt \"was in India\" {q:362} and is said to have fallen for a Maharani {q:370}; Jim \"spent most of his life in India\" {q:366}; Eddie's husband was stationed there {q:256}."]
+  "summary": "Where Alan Bellingham married Monique Bâby on 22 March 1795 (published source).",
+  "body": [
+   "{ctx}Marriage details from the published Bellingham genealogy {s:lf-bellingham}. Not mentioned in the recording."
+  ]
+ },
+ {
+  "id": "india",
+  "name": "India",
+  "type": "country",
+  "region": "Asia",
+  "coords": [
+   22.5,
+   78.9
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [
+   "indoor"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "archangel", "name": "Archangel", "type": "town", "region": "Russia",
-    "coords": [64.539, 40.516],
-    "aliases": ["Arkhangelsk"], "variants": ["Archangel"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "North Russian port where Bunt commanded troops in 1919 during the Allied intervention against the Bolsheviks.",
-    "body": ["{q:364} See {e:ev-archangel}."]
+  "summary": "Where Bunt, Jim and Eddie's husband served.",
+  "body": [
+   "Bunt \"was in India\" {q:362} and is said to have fallen for a Maharani {q:370}; Jim \"spent most of his life in India\" {q:366}; Eddie's husband was stationed there {q:256}, \"for the whole of his career\" in B's reading {q:T2:102}."
+  ]
+ },
+ {
+  "id": "archangel",
+  "name": "Archangel",
+  "type": "town",
+  "region": "Russia",
+  "coords": [
+   64.539,
+   40.516
+  ],
+  "aliases": [
+   "Arkhangelsk"
+  ],
+  "variants": [
+   "Archangel"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "mons", "name": "Mons", "type": "battlefield", "region": "Belgium",
-    "coords": [50.454, 3.952],
-    "aliases": [], "variants": ["mons", "mums"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "First battle of the British Expeditionary Force (23 August 1914); Pat was captured in the retreat that followed.",
-    "body": ["\"Have you heard of the Battle of Mons? … somewhere in France [Belgium] … the Expeditionary Force took a beating, and in the retreat from Mons, Uncle Patty was captured\" {q:440-442}."]
+  "summary": "North Russian port where Bunt commanded troops in 1919 during the Allied intervention against the Bolsheviks.",
+  "body": [
+   "{q:364} See {e:ev-archangel}."
+  ]
+ },
+ {
+  "id": "mons",
+  "name": "Mons",
+  "type": "battlefield",
+  "region": "Belgium",
+  "coords": [
+   50.454,
+   3.952
+  ],
+  "aliases": [],
+  "variants": [
+   "mons",
+   "mums"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "germany", "name": "Germany (prison camps)", "type": "country", "region": "Europe",
-    "coords": [52.0, 9.5], "approx": true,
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where Pat was held \"in several different camps\" until his third escape.",
-    "body": ["{q:446} {q:452}"]
+  "summary": "First battle of the British Expeditionary Force (23 August 1914); Pat was captured in the retreat that followed.",
+  "body": [
+   "\"Have you heard of the Battle of Mons? … The expeditionary force took a beating. And in the retreat from Mons, Uncle Paddy was captured\" {q:440-442} {q:T2:170}. {ctx}Mons was fought on 23 August 1914 {s:wp-mons}; the retreat followed from 24 August {s:wp-great-retreat}. Other accounts place Pat's capture at Zonnebeke near Ypres in October 1914 ({qn:q-pat-capture})."
+  ]
+ },
+ {
+  "id": "germany",
+  "name": "Germany (prison camps)",
+  "type": "country",
+  "region": "Europe",
+  "coords": [
+   52.0,
+   9.5
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "holland", "name": "Holland", "type": "country", "region": "Europe",
-    "coords": [52.13, 5.29], "approx": true,
-    "aliases": ["Netherlands"], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Neutral country through which Pat escaped to London.",
-    "body": ["{q:446}"]
+  "summary": "Where Pat was held \"in several different camps\" until his third escape.",
+  "body": [
+   "{q:446} {q:452}"
+  ]
+ },
+ {
+  "id": "holland",
+  "name": "Holland",
+  "type": "country",
+  "region": "Europe",
+  "coords": [
+   52.13,
+   5.29
+  ],
+  "approx": true,
+  "aliases": [
+   "Netherlands"
+  ],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "passchendaele", "name": "Passchendaele", "type": "battlefield", "region": "Belgium",
-    "coords": [50.900, 3.021],
-    "aliases": ["Third Battle of Ypres"], "variants": ["passchendale", "Passioned"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Reginald fought in the 1917 battle as a second lieutenant.",
-    "body": ["{q:356} See {e:ev-passchendaele}."]
+  "summary": "Neutral country through which Pat escaped to London.",
+  "body": [
+   "{q:446}"
+  ]
+ },
+ {
+  "id": "passchendaele",
+  "name": "Passchendaele",
+  "type": "battlefield",
+  "region": "Belgium",
+  "coords": [
+   50.9,
+   3.021
+  ],
+  "aliases": [
+   "Third Battle of Ypres"
+  ],
+  "variants": [
+   "passchendale",
+   "Passioned"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "italy-front", "name": "Italian Front", "type": "battlefield", "region": "Italy",
-    "coords": [45.87, 11.5], "approx": true,
-    "aliases": ["Italy"], "variants": [],
-    "ident": { "status": "testimony", "conf": "medium" },
-    "summary": "Where Reginald ended the war, perhaps after transferring to the artillery.",
-    "body": ["\"My father ended up in Italy. I've never really quite known why … I think he transferred to the Gunners\" {q:362}."]
+  "summary": "Reginald fought in the 1917 battle as a second lieutenant.",
+  "body": [
+   "{q:356} See {e:ev-passchendaele}."
+  ]
+ },
+ {
+  "id": "italy-front",
+  "name": "Italian Front",
+  "type": "battlefield",
+  "region": "Italy",
+  "coords": [
+   45.87,
+   11.5
+  ],
+  "approx": true,
+  "aliases": [
+   "Italy"
+  ],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "medium"
   },
-  {
-    "id": "nanyuki", "name": "Nanyuki", "type": "town", "region": "Kenya",
-    "coords": [0.017, 37.074],
-    "aliases": [], "variants": ["nanuki"],
-    "ident": { "status": "inferred", "conf": "high" },
-    "summary": "Settler town on the slopes of Mount Kenya near which Reginald managed coffee plantations from 1920.",
-    "body": ["\"Coffee plantations up [at] a place called Nanyuki, which is about 120 miles north of Nairobi, in Kenya\" {q:500}. {ctx}Nanyuki lies on the equator north-west of Mount Kenya, about 200 km (125 miles) by road from Nairobi; the town grew up with European settlement after the First World War {s:wp-nanyuki}."]
+  "summary": "Where Reginald ended the war, perhaps after transferring to the artillery.",
+  "body": [
+   "\"My father ended up in Italy. I've never really quite known why … I think he transferred to the Gunners\" {q:362}."
+  ]
+ },
+ {
+  "id": "nanyuki",
+  "name": "Nanyuki",
+  "type": "town",
+  "region": "Kenya",
+  "coords": [
+   0.017,
+   37.074
+  ],
+  "aliases": [],
+  "variants": [
+   "nanuki"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "high"
   },
-  {
-    "id": "kenya", "name": "Kenya", "type": "country", "region": "East Africa",
-    "coords": [-1.29, 36.82], "approx": true,
-    "aliases": ["East Africa", "Kenya Colony", "Nairobi"], "variants": ["Nairobia"],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Where Reginald farmed in the 1920s–30s and where Juanita was born.",
-    "body": ["\"This is a time that Africa, East Africa, was being opened up to European settlement\" {q:498}. {ctx}Kenya became a Crown colony in 1920 {s:wp-kenya-colony}."]
+  "summary": "Settler town on the slopes of Mount Kenya near which Reginald managed coffee plantations from 1920.",
+  "body": [
+   "\"Coffee plantations up in a place called Nanyuki, which is about 120 miles north of Nairobi in Kenya\" (transcript B {q:T2:195}; A {q:500}). Later his mother bought him a farm \"a long way from Nanyuki\" {q:T2:196-197}. {ctx}Nanyuki lies north-west of Mount Kenya, just north of the equator {s:wp-nanyuki}. The \"120 miles\" is the narrator's figure."
+  ]
+ },
+ {
+  "id": "kenya",
+  "name": "Kenya",
+  "type": "country",
+  "region": "East Africa",
+  "coords": [
+   -1.29,
+   36.82
+  ],
+  "approx": true,
+  "aliases": [
+   "East Africa",
+   "Kenya Colony",
+   "Nairobi"
+  ],
+  "variants": [
+   "Nairobia"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
   },
-  {
-    "id": "laois", "name": "County Laois", "type": "region", "region": "Co. Laois",
-    "coords": [53.0, -7.3], "approx": true,
-    "aliases": ["Queen's County"], "variants": ["County leash"],
-    "ident": { "status": "inferred", "conf": "medium" },
-    "summary": "Home county of Maud Moore's family.",
-    "body": ["\"She comes [from a] County Laois family\" {q:508}."]
+  "summary": "Where Reginald farmed in the 1920s–30s and where Juanita was born.",
+  "body": [
+   "\"It was a time that Africa, East Africa, was being opened up to European settlement\" {q:498} {q:T2:194}. \"And then eventually his mother bought a farm\", a thatched hut that Reginald \"built up\" and farmed {q:T2:196-197}. {ctx}Kenya became a Crown colony in 1920; in the 1920s Kenyans objected to the reservation of the \"White Highlands\" for European settlers, especially British war veterans {s:wp-kenya-colony}."
+  ]
+ },
+ {
+  "id": "laois",
+  "name": "County Laois",
+  "type": "region",
+  "region": "Co. Laois",
+  "coords": [
+   53.0,
+   -7.3
+  ],
+  "approx": true,
+  "aliases": [
+   "Queen's County"
+  ],
+  "variants": [
+   "County leash"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "medium"
   },
-  {
-    "id": "australia", "name": "Australia", "type": "country", "region": "Oceania",
-    "coords": [-25.3, 134.0], "approx": true,
-    "aliases": [], "variants": [],
-    "ident": { "status": "testimony", "conf": "high" },
-    "summary": "Alan Ferguson's sheep stations.",
-    "body": ["{q:374}"]
-  }
+  "summary": "Home county of Maudie Moore's family.",
+  "body": [
+   "\"She came from the County Laois family\" (transcript B {q:T2:197}; both transcripts write \"Leash\" {q:508})."
+  ]
+ },
+ {
+  "id": "australia",
+  "name": "Australia",
+  "type": "country",
+  "region": "Oceania",
+  "coords": [
+   -25.3,
+   134.0
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
+  },
+  "summary": "Alan Ferguson's sheep stations.",
+  "body": [
+   "{q:374}"
+  ]
+ },
+ {
+  "id": "newtownards",
+  "name": "Newtownards",
+  "type": "town",
+  "region": "Co. Down",
+  "coords": [
+   54.591,
+   -5.693
+  ],
+  "aliases": [],
+  "variants": [
+   "Newtonards",
+   "uternards"
+  ],
+  "ident": {
+   "status": "testimony",
+   "conf": "high"
+  },
+  "summary": "A town in Co. Down named by the narrator among Bellingham Arthur's RIC stations; his eldest daughter was born there in 1880.",
+  "body": [
+   "\"Most of his stations were in what is now Northern Ireland, Newtownards, all around there\" (transcript B {q:T2:116}; A \"uternards\" {q:294}).",
+   "{ctx}A compiled genealogy citing the IGI gives Cecilia Somerville's birth at Newtownards on 9 October 1880 {s:winters-p68}, which supports a posting there."
+  ]
+ },
+ {
+  "id": "glenealy",
+  "name": "Glenealy",
+  "type": "town",
+  "region": "Co. Wicklow",
+  "coords": [
+   52.965,
+   -6.141
+  ],
+  "aliases": [],
+  "variants": [
+   "Glanile"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "medium"
+  },
+  "summary": "Village near Rathnew where Uncle Jim was \"thinking of buying a little house\" in his last year.",
+  "body": [
+   "\"He was thinking of buying a little house near Glanile. But he didn't. He still had his place in Gloucestershire\" (transcript B {q:T2:151}; transcript A: \"He was sinking and buying a little house, but he didn't\" {q:388}). {int}\"Glanile\" is read as Glenealy, a village a few miles from Clermont."
+  ]
+ },
+ {
+  "id": "greystones",
+  "name": "Greystones (?)",
+  "type": "town",
+  "region": "Co. Wicklow",
+  "coords": [
+   53.144,
+   -6.063
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [
+   "Greystokes",
+   "grace studs"
+  ],
+  "ident": {
+   "status": "inferred",
+   "conf": "low"
+  },
+  "summary": "Possibly where Maudie Moore came from: transcript B has \"a girl from Greystokes\".",
+  "body": [
+   "\"He married a girl from Greystokes called Maudie Moore. She came from the County Laois family\" (transcript B {q:T2:197}; A: \"grace studs\" {q:506}). {int}Greystones, Co. Wicklow, is the likeliest place meant, but this is a guess ({qn:q-maudie-origin})."
+  ]
+ },
+ {
+  "id": "seaview-house",
+  "name": "Seaview House, Wicklow",
+  "type": "house",
+  "region": "Co. Wicklow",
+  "coords": [
+   52.983,
+   -6.04
+  ],
+  "approx": true,
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "record",
+   "conf": "medium"
+  },
+  "summary": "Where Dorothy Somerville died in 1895, according to a compiled genealogy; perhaps one of the houses the family rented around Wicklow before Clermont.",
+  "body": [
+   "{ctx}A compiled genealogy citing The Times records that Dorothy Alrewas Hester Bellingham Somerville died on 5 March 1895 at Seaview House, Wicklow {s:winters-p68}. {int}The narrator says his grandfather \"rented places around Wicklow\" before Clermont {q:T2:228}. Whether Seaview House was one of them is not known, and its location is not established (the marker is placed at Wicklow town)."
+  ]
+ },
+ {
+  "id": "st-louis",
+  "name": "St Louis, Missouri",
+  "type": "town",
+  "region": "North America",
+  "coords": [
+   38.627,
+   -90.199
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "record",
+   "conf": "low"
+  },
+  "summary": "Birthplace (1852) of Bellingham Brooke Somerville, a son of Archibald James, according to a compiled genealogy.",
+  "body": [
+   "{ctx}From a compiled genealogy citing the IGI {s:winters-p68}. Not mentioned in the recording."
+  ]
+ },
+ {
+  "id": "cleveland",
+  "name": "Cleveland, Ohio",
+  "type": "town",
+  "region": "North America",
+  "coords": [
+   41.499,
+   -81.694
+  ],
+  "aliases": [],
+  "variants": [],
+  "ident": {
+   "status": "record",
+   "conf": "low"
+  },
+  "summary": "Where Corry Somerville died in 1880, according to a compiled genealogy.",
+  "body": [
+   "{ctx}From a compiled genealogy quoting an Ancestry family tree {s:winters-p67}. Not mentioned in the recording, though the narrator says the family had American connections through Eliza Nelson {q:T2:72}."
+  ]
+ }
 ]

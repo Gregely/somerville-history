@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 (async () => {
   const browser = await chromium.launch();
   const out = process.argv[2] || null;
-  const routes = ['', 'story', 'story/west-indies', 'story/district-inspector', 'tree', 'tree/bellingham', 'tree/somerville?focus=reginald-somerville', 'people', 'person/bellingham-arthur-somerville', 'person/tenison-alan-somerville', 'person/narrator', 'person/unidentified-son', 'places', 'place/clermont', 'timeline', 'timeline?e=ev-youghal-1887', 'glossary', 'term/ric', 'transcript', 'transcript/T1:148', 'questions', 'questions?q=q-bunt-regiment', 'sources', 'search?q=bellendrum', 'search?q=Bunt', 'about'];
+  const routes = ['', 'story', 'story/west-indies', 'story/district-inspector', 'tree', 'tree/bellingham', 'tree/somerville?focus=reginald-somerville', 'people', 'person/bellingham-arthur-somerville', 'person/tenison-alan-somerville', 'person/narrator', 'person/tenison-somerville-1812', 'person/pat', 'person/vere-somerville', 'places', 'place/clermont', 'timeline', 'timeline?e=ev-youghal-1887', 'glossary', 'term/ric', 'transcript', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'questions', 'questions?q=q-bunt-regiment', 'sources', 'search?q=bellendrum', 'search?q=Bunt', 'search?q=Tenison', 'search?q=Reendesert', 'about'];
   for (const [w, h, tag] of [[1366, 900, 'd'], [390, 844, 'm']]) {
     const page = await browser.newPage({ viewport: { width: w, height: h } });
     const errs = [];
@@ -19,7 +19,7 @@ const { chromium } = require('playwright');
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
       if (/Something went wrong|Not found/.test(txt) || overflow) errs.push(`${tag} ${r}: ${overflow ? 'HORIZONTAL OVERFLOW ' : ''}${txt}`);
       const name = (tag + '-' + (r || 'home')).replace(/[^a-z0-9-]+/gi, '_');
-      if (out && ['', 'tree', 'person/bellingham-arthur-somerville', 'places', 'timeline', 'transcript/T1:148', 'story/west-indies', 'people'].includes(r)) await page.screenshot({ path: `${out}/${name}.png` });
+      if (out && ['', 'tree', 'person/bellingham-arthur-somerville', 'places', 'timeline', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'story/west-indies', 'people'].includes(r)) await page.screenshot({ path: `${out}/${name}.png` });
     }
     console.log(tag, errs.length ? errs.join('\n') : 'no errors');
     if (errs.length) process.exitCode = 1;

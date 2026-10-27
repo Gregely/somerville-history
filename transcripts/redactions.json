@@ -1,0 +1,395 @@
+{
+ "T1": {
+  "original": "transcripts/private/interview-01.original.txt",
+  "public": "transcripts/interview-01.txt",
+  "whole": {
+   "64": {
+    "reason": "personal or domestic aside",
+    "length": 205
+   },
+   "66": {
+    "reason": "personal or domestic aside",
+    "length": 6
+   },
+   "68": {
+    "reason": "personal or domestic aside",
+    "length": 263
+   },
+   "70": {
+    "reason": "personal or domestic aside",
+    "length": 251
+   },
+   "72": {
+    "reason": "personal or domestic aside",
+    "length": 270
+   },
+   "74": {
+    "reason": "personal or domestic aside",
+    "length": 328
+   },
+   "76": {
+    "reason": "personal or domestic aside",
+    "length": 291
+   },
+   "78": {
+    "reason": "personal or domestic aside",
+    "length": 296
+   },
+   "80": {
+    "reason": "personal or domestic aside",
+    "length": 300
+   },
+   "306": {
+    "reason": "personal or domestic aside",
+    "length": 314
+   },
+   "308": {
+    "reason": "personal or domestic aside",
+    "length": 318
+   },
+   "400": {
+    "reason": "personal or domestic aside",
+    "length": 281
+   },
+   "424": {
+    "reason": "personal or domestic aside",
+    "length": 279
+   },
+   "426": {
+    "reason": "personal or domestic aside",
+    "length": 106
+   },
+   "430": {
+    "reason": "third-party private matter",
+    "length": 48
+   },
+   "434": {
+    "reason": "personal or domestic aside",
+    "length": 278
+   },
+   "436": {
+    "reason": "third-party private matter",
+    "length": 311
+   },
+   "438": {
+    "reason": "third-party private matter",
+    "length": 288
+   },
+   "480": {
+    "reason": "personal or domestic aside",
+    "length": 269
+   },
+   "482": {
+    "reason": "personal or domestic aside",
+    "length": 348
+   },
+   "484": {
+    "reason": "personal or domestic aside",
+    "length": 278
+   },
+   "486": {
+    "reason": "personal or domestic aside",
+    "length": 274
+   },
+   "588": {
+    "reason": "third-party private matter",
+    "length": 278
+   },
+   "590": {
+    "reason": "third-party private matter",
+    "length": 265
+   },
+   "592": {
+    "reason": "third-party private matter",
+    "length": 309
+   },
+   "594": {
+    "reason": "third-party private matter",
+    "length": 323
+   },
+   "596": {
+    "reason": "third-party private matter",
+    "length": 274
+   },
+   "598": {
+    "reason": "third-party private matter",
+    "length": 315
+   }
+  },
+  "partial": {
+   "62": {
+    "length": 249,
+    "spans": [
+     {
+      "start": 116,
+      "end": 137,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   },
+   "82": {
+    "length": 275,
+    "spans": [
+     {
+      "start": 0,
+      "end": 196,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   },
+   "304": {
+    "length": 270,
+    "spans": [
+     {
+      "start": 93,
+      "end": 270,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   },
+   "310": {
+    "length": 270,
+    "spans": [
+     {
+      "start": 0,
+      "end": 125,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   },
+   "422": {
+    "length": 305,
+    "spans": [
+     {
+      "start": 113,
+      "end": 161,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   },
+   "568": {
+    "length": 268,
+    "spans": [
+     {
+      "start": 0,
+      "end": 132,
+      "reason": "third-party private matter"
+     }
+    ]
+   },
+   "584": {
+    "length": 304,
+    "spans": [
+     {
+      "start": 185,
+      "end": 304,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   }
+  }
+ },
+ "T2": {
+  "original": "transcripts/private/interview-01-companion.original.txt",
+  "public": "transcripts/interview-01-companion.txt",
+  "whole": {
+   "32": {
+    "reason": "personal or domestic aside",
+    "length": 161
+   },
+   "33": {
+    "reason": "personal or domestic aside",
+    "length": 341
+   },
+   "34": {
+    "reason": "personal or domestic aside",
+    "length": 194
+   },
+   "35": {
+    "reason": "personal or domestic aside",
+    "length": 330
+   },
+   "36": {
+    "reason": "personal or domestic aside",
+    "length": 218
+   },
+   "37": {
+    "reason": "personal or domestic aside",
+    "length": 299
+   },
+   "38": {
+    "reason": "personal or domestic aside",
+    "length": 274
+   },
+   "39": {
+    "reason": "personal or domestic aside",
+    "length": 283
+   },
+   "120": {
+    "reason": "third-party private matter",
+    "length": 268
+   },
+   "121": {
+    "reason": "third-party private matter",
+    "length": 341
+   },
+   "154": {
+    "reason": "personal or domestic aside",
+    "length": 314
+   },
+   "155": {
+    "reason": "personal or domestic aside",
+    "length": 288
+   },
+   "163": {
+    "reason": "personal or domestic aside",
+    "length": 331
+   },
+   "164": {
+    "reason": "personal or domestic aside",
+    "length": 394
+   },
+   "166": {
+    "reason": "third-party private matter",
+    "length": 153
+   },
+   "167": {
+    "reason": "third-party private matter",
+    "length": 229
+   },
+   "168": {
+    "reason": "third-party private matter",
+    "length": 281
+   },
+   "187": {
+    "reason": "personal or domestic aside",
+    "length": 272
+   },
+   "188": {
+    "reason": "personal or domestic aside",
+    "length": 242
+   },
+   "189": {
+    "reason": "personal or domestic aside",
+    "length": 385
+   },
+   "190": {
+    "reason": "personal or domestic aside",
+    "length": 385
+   },
+   "236": {
+    "reason": "third-party private matter",
+    "length": 320
+   },
+   "237": {
+    "reason": "third-party private matter",
+    "length": 261
+   },
+   "238": {
+    "reason": "third-party private matter",
+    "length": 309
+   },
+   "239": {
+    "reason": "third-party private matter",
+    "length": 154
+   }
+  },
+  "partial": {
+   "31": {
+    "length": 233,
+    "spans": [
+     {
+      "start": 0,
+      "end": 17,
+      "reason": "personal or domestic aside"
+     },
+     {
+      "start": 153,
+      "end": 233,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   },
+   "119": {
+    "length": 377,
+    "spans": [
+     {
+      "start": 238,
+      "end": 377,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   },
+   "122": {
+    "length": 284,
+    "spans": [
+     {
+      "start": 0,
+      "end": 127,
+      "reason": "third-party private matter"
+     }
+    ]
+   },
+   "179": {
+    "length": 270,
+    "spans": [
+     {
+      "start": 125,
+      "end": 166,
+      "reason": "third-party private matter"
+     }
+    ]
+   },
+   "184": {
+    "length": 224,
+    "spans": [
+     {
+      "start": 96,
+      "end": 199,
+      "reason": "third-party private matter"
+     }
+    ]
+   },
+   "225": {
+    "length": 338,
+    "spans": [
+     {
+      "start": 149,
+      "end": 268,
+      "reason": "third-party private matter"
+     }
+    ]
+   },
+   "234": {
+    "length": 368,
+    "spans": [
+     {
+      "start": 0,
+      "end": 179,
+      "reason": "personal or domestic aside"
+     }
+    ]
+   },
+   "235": {
+    "length": 363,
+    "spans": [
+     {
+      "start": 84,
+      "end": 363,
+      "reason": "third-party private matter"
+     }
+    ]
+   },
+   "240": {
+    "length": 358,
+    "spans": [
+     {
+      "start": 0,
+      "end": 278,
+      "reason": "third-party private matter"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -9,7 +9,7 @@
     <div class="legend" aria-label="How to read the evidence labels">
       ${Object.entries(SA.STATUS).map(([k, s]) => `<div>${SA.badge(k)}<span>${esc(s.long)}</span></div>`).join("")}
       <div><span class="badge st-plain">Confidence<span class="conf conf-high"><i></i><i></i><i></i></span></span><span>three bars high · two medium · one low</span></div>
-      <div><a class="cite-q" tabindex="-1">¶16</a><span>links to the supporting passage of the transcript</span></div>
+      <div><span><a class="cite-q" tabindex="-1">¶16</a> <a class="cite-q cite-b" tabindex="-1">B¶7</a></span><span>a supporting passage in transcript A (the original) or B (the companion transcript); hover to see it beside the parallel passage in the other transcript</span></div>
       <div><a class="cite-s" tabindex="-1">[3]</a><span>links to an external source</span></div>
     </div>`;
   SA.legend = legend;
@@ -27,7 +27,8 @@
       const l = SA.lines[k];
       if (!l) return "";
       const text = l.kind === "withheld" ? `<em class="muted">${esc(l.text)}</em>` : query ? SA.snippet(l.text, query, 260) : esc(l.text.length > 300 ? l.text.slice(0, 300) + "…" : l.text);
-      return `<li><a class="pn" href="#/transcript/${k}">¶${l.n}</a><span>${text}</span></li>`;
+      const t = k.split(":")[0];
+      return `<li><a class="pn" href="#/transcript/${k}">${t === "T1" ? "" : SA.TLABEL[t]}¶${l.n}</a><span>${text}</span></li>`;
     }).join("")}</ol>`;
   }
   function evidenceSection(owner, primaryName) {
@@ -416,66 +417,122 @@
   };
 
   // ---------- transcript ----------
-  function markReadings(l) {
-    const rs = (SA.readingsByLine[`T1:${l.n}`] || []).map((r) => ({ r, i: l.text.indexOf(r.phrase) })).filter((x) => x.i >= 0).sort((a, b) => a.i - b.i);
+  function markReadings(l, tid) {
+    const rs = (SA.readingsByLine[`${tid}:${l.n}`] || []).map((r) => ({ r, i: l.text.indexOf(r.phrase) })).filter((x) => x.i >= 0).sort((a, b) => a.i - b.i);
     let out = "", pos = 0;
     for (const { r, i } of rs) {
       if (i < pos) continue;
       out += esc(l.text.slice(pos, i));
       const [k, ...rest] = (r.link || "").split(":");
       const href = r.link ? SA.entityHref(r.link) : "";
-      out += `<mark class="reading conf-${r.conf}" tabindex="0" data-reading="${esc(r.reading)}" data-conf="${r.conf}" ${href ? `data-href="${href}" data-target="${esc(SA.entityName(r.link) || rest.join(":"))}"` : ""}>${esc(r.phrase)}</mark>`;
+      out += `<mark class="reading conf-${r.conf}" tabindex="0" data-reading="${esc(r.reading)}" data-conf="${r.conf}"${r.note ? ` data-note="${esc(r.note)}"` : ""} ${href ? `data-href="${href}" data-target="${esc(SA.entityName(r.link) || rest.join(":"))}"` : ""}>${esc(r.phrase)}</mark>`;
       pos = i + r.phrase.length;
     }
     return out + esc(l.text.slice(pos));
   }
-  V.transcript = function (main, target) {
-    const t = A.transcripts[0];
-    const [tid, n] = (target || "").split(":");
-    main.innerHTML = `
-      <div class="transcript-layout">
-        <header class="page-head"><p class="kicker">Primary source</p><h1>${esc(t.title)}</h1>
-          <p class="lede">${esc(t.origin)} Paragraph numbers (¶) are the line numbers of the original file, and every citation in this archive points to them.</p>
-          <p class="small">Recorded ${esc(t.date)}. ${A.private ? "<b>Private build: full unredacted text.</b>" : `Personal, domestic and third-party asides are withheld from this public copy (${t.lines.filter((l) => l.kind === "withheld").length} passages); the line numbering is unchanged.`}</p>
-        </header>
+  SA.markReadings = markReadings;
+  const paraText = (l, tid) => (l.kind === "withheld" ? `<em>${esc(l.text)}</em>` : markReadings(l, tid));
+  const parallelLinks = (key) => {
+    const par = SA.parallel(key);
+    if (!par.length) return "";
+    const t = par[0].split(":")[0];
+    return `<a class="par" href="#/compare?at=${key}" title="Compare with the same passage in transcript ${SA.TLABEL[t]}">≈ ${SA.TLABEL[t]}¶${par.map((k) => k.split(":")[1]).join(", ")}</a>`;
+  };
+  function transcriptTabs(cur) {
+    return `<nav class="ttabs" aria-label="Transcripts">${A.transcripts.map((t) => `<a href="#/transcript/${t.id}" class="${cur === t.id ? "cur" : ""}"><b>${SA.TLABEL[t.id]}</b> ${esc(t.role === "original" ? "Original transcript" : "Companion transcript")}</a>`).join("")}${A.alignment ? `<a href="#/compare" class="${cur === "compare" ? "cur" : ""}"><b>A | B</b> Compare side by side</a>` : ""}</nav>`;
+  }
+  const filterBar = (extra = "") => `
         <div class="filters sticky">
           <input type="search" class="grow" placeholder="Search the transcript…" data-f="q" aria-label="Search the transcript" />
-          <label class="tog"><input type="checkbox" data-f="readings" checked /> Show readings of misheard words</label>
-          <label class="tog"><input type="checkbox" data-f="asides" /> Show domestic asides</label>
-          <span class="tcount small muted"></span>
-        </div>
+          <label class="tog"><input type="checkbox" data-f="readings" checked /> Readings of misheard words</label>
+          <label class="tog"><input type="checkbox" data-f="asides" /> Domestic asides</label>
+          ${extra}<span class="tcount small muted"></span>
+        </div>`;
+  V.transcript = function (main, target) {
+    const [tidRaw, n] = (target || "").split(":");
+    const t = SA.transcripts[tidRaw] || A.transcripts[0];
+    const withheld = t.lines.filter((l) => l.kind === "withheld").length;
+    main.innerHTML = `
+      <div class="transcript-layout">
+        <header class="page-head"><p class="kicker">Primary source · transcript ${SA.TLABEL[t.id]}</p><h1>${esc(t.title)}</h1>
+          ${transcriptTabs(t.id)}
+          <p class="lede">${esc(t.origin)}</p>
+          <p class="small">Recorded ${esc(t.date)}. Source file: <code>${esc(t.sourceFile || "")}</code>. Paragraph numbers (¶) are line numbers of that file; citations in this archive point to them (transcript A as “¶n”, transcript B as “B¶n”). ${A.private ? "<b>Private build: full unredacted text.</b>" : `Personal, domestic and third-party asides are withheld from this public copy (${withheld} whole passages, plus marked fragments); the numbering is unchanged.`}</p>
+        </header>
+        ${filterBar()}
         <div class="transcript"></div>
       </div>`;
     const box = main.querySelector(".transcript");
     box.innerHTML = t.lines.map((l) => {
-      const refs = SA.citedBy(`${t.id}:${l.n}`).filter((r) => !r.startsWith("ch:")).slice(0, 8);
+      const key = `${t.id}:${l.n}`;
+      const refs = SA.citedBy(key).filter((r) => !r.startsWith("ch:")).slice(0, 8);
       return `<div class="tp k-${l.kind}" id="p-${l.n}" data-n="${l.n}">
-        <a class="pn" href="#/transcript/${t.id}:${l.n}" aria-label="Paragraph ${l.n}">¶${l.n}</a>
-        <div class="tx">${l.kind === "withheld" ? `<em>${esc(l.text)}</em>` : markReadings(l)}</div>
-        ${refs.length ? `<div class="refs">${refs.map(SA.chip).join("")}</div>` : ""}
+        <a class="pn" href="#/transcript/${key}" aria-label="Paragraph ${l.n}">${t.id === "T1" ? "" : SA.TLABEL[t.id]}¶${l.n}</a>
+        <div class="tx">${paraText(l, t.id)}</div>
+        <div class="refs">${parallelLinks(key)}${refs.map(SA.chip).join("")}</div>
       </div>`;
     }).join("");
+    wireFilters(main, box, ".tp", ".tx");
+    if (n) focusPara(main, box.querySelector(`#p-${+n}`));
+  };
+  function wireFilters(main, box, rowSel, textSel) {
     const f = (k) => main.querySelector(`[data-f="${k}"]`);
     const apply = () => {
       box.classList.toggle("no-readings", !f("readings").checked);
       box.classList.toggle("show-asides", f("asides").checked);
       const q = f("q").value.trim().toLowerCase();
       let c = 0;
-      box.querySelectorAll(".tp").forEach((el) => {
-        const hit = !q || el.querySelector(".tx").textContent.toLowerCase().includes(q);
+      box.querySelectorAll(rowSel).forEach((el) => {
+        const hit = !q || [...el.querySelectorAll(textSel)].some((x) => x.textContent.toLowerCase().includes(q));
         el.hidden = !hit; if (hit && q) c++;
       });
-      main.querySelector(".tcount").textContent = q ? `${c} passages` : "";
+      main.querySelector(".tcount").textContent = q ? `${c} matching` : "";
     };
     main.querySelector(".filters").addEventListener("input", apply);
     apply();
-    if (n) {
-      const el = box.querySelector(`#p-${+n}`);
-      if (el) {
-        if (el.classList.contains("k-aside")) { f("asides").checked = true; apply(); }
-        el.classList.add("target");
-        setTimeout(() => el.scrollIntoView({ block: "center" }), 30);
-      }
+  }
+  function focusPara(main, el) {
+    if (!el) return;
+    if (el.classList.contains("k-aside")) { main.querySelector('[data-f="asides"]').checked = true; main.querySelector(".filters").dispatchEvent(new Event("input")); }
+    el.classList.add("target");
+    setTimeout(() => el.scrollIntoView({ block: "center" }), 30);
+  }
+  // Side-by-side comparison of transcripts A and B, row by aligned paragraph.
+  V.compare = function (main, params) {
+    const al = A.alignment;
+    if (!al) return V.notFound(main);
+    const [ta, tb] = al.pair;
+    const at = params.at || "";
+    const kindOf = (t, n) => (SA.lines[`${t}:${n}`] || {}).kind || "text";
+    const shown = new Set();
+    const rows = al.blocks.map((blk, i) => {
+      const left = blk.a.map((n) => { const l = SA.lines[`${ta}:${n}`]; return l ? `<div class="cp" id="c-${ta}-${n}"><a class="pn" href="#/transcript/${ta}:${n}">¶${n}</a><div class="tx">${paraText(l, ta)}</div></div>` : ""; }).join("");
+      const right = blk.b.map((n) => {
+        const l = SA.lines[`${tb}:${n}`];
+        if (!l) return "";
+        if (shown.has(n)) return `<div class="cp cont" id="c-${tb}-${n}-${i}"><a class="pn" href="#/transcript/${tb}:${n}">${SA.TLABEL[tb]}¶${n}</a><div class="tx muted small">↑ continued</div></div>`;
+        shown.add(n);
+        return `<div class="cp" id="c-${tb}-${n}"><a class="pn" href="#/transcript/${tb}:${n}">${SA.TLABEL[tb]}¶${n}</a><div class="tx">${paraText(l, tb)}</div></div>`;
+      }).join("");
+      const kinds = [...blk.a.map((n) => kindOf(ta, n)), ...blk.b.map((n) => kindOf(tb, n))];
+      const kind = kinds.every((k) => k !== "text") ? (kinds.includes("withheld") && kinds.every((k) => k === "withheld") ? "withheld" : "aside") : "text";
+      return `<div class="crow k-${kind}" data-a="${blk.a.join(" ")}" data-b="${blk.b.join(" ")}"><div class="ccol">${left}</div><div class="ccol">${right}</div></div>`;
+    }).join("");
+    main.innerHTML = `
+      <div class="transcript-layout wide">
+        <header class="page-head"><p class="kicker">Primary sources · comparison</p><h1>Compare the two transcripts</h1>
+          ${transcriptTabs("compare")}
+          <p class="lede">Both are automatic transcripts of the same recording. Each row pairs a paragraph of transcript A with the matching passage of transcript B, aligned word by word. Where they agree, that agreement is evidence about what was said. Where they differ, the archive keeps both readings, because no audio was available to settle them.</p>
+        </header>
+        ${filterBar()}
+        <div class="compare"><div class="chead"><div>A · ${esc(SA.transcripts[ta].sourceFile || ta)}</div><div>B · ${esc(SA.transcripts[tb].sourceFile || tb)}</div></div>${rows}</div>
+      </div>`;
+    const box = main.querySelector(".compare");
+    wireFilters(main, box, ".crow", ".tx");
+    if (at) {
+      const [t, n] = at.split(":");
+      const row = [...box.querySelectorAll(".crow")].find((r) => (t === ta ? r.dataset.a : r.dataset.b).split(" ").includes(n));
+      if (row) focusPara(main, row);
     }
   };
 
@@ -521,6 +578,12 @@
     A.narrative.forEach((c) => scan(c, `ch:${c.id}`));
     return use;
   }
+  const ACCESS_SHORT = { direct: "read directly", partial: "partly read", "search-only": "search result only" };
+  const ACCESS = {
+    direct: "The page itself was read and checked against the claims attributed to it.",
+    partial: "Only part of the source could be read (e.g. text extracted from a scan); see the note.",
+    "search-only": "Located through search results; the page blocks automated access, so the quoted details still need direct inspection.",
+  };
   V.sources = function (main, params) {
     sourceUse = sourceUse || computeSourceUse();
     const t = A.transcripts[0];
@@ -528,21 +591,25 @@
       <header class="page-head"><p class="kicker">Evidence</p><h1>Sources and method</h1></header>
       <div class="two-col block">
         <section class="prose">
-          <h2>The primary source</h2>
-          <p><a href="#/transcript">${esc(t.title)}</a>, recorded ${esc(t.date)}. ${esc(t.origin)} It contains ${t.lines.length} paragraphs.</p>
+          <h2>The primary sources</h2>
+          <p>Two automatic transcripts of the same recorded conversation:</p>
+          <ul>${A.transcripts.map((t) => `<li><a href="#/transcript/${t.id}"><b>${SA.TLABEL[t.id]}</b>: ${esc(t.title)}</a> (${t.lines.length} paragraphs; file <code>${esc(t.sourceFile || "")}</code>). ${esc(t.origin)}</li>`).join("")}</ul>
+          <p>Transcript A was used to build the archive; B was added during an audit. The <a href="#/compare">side-by-side comparison</a> pairs their paragraphs. Citations to A read “¶n”, citations to B “B¶n”.</p>
           <h2>Method</h2>
           <p>Every person, place, event and term was extracted by reading the whole transcript, resolving the speech-to-text errors from context (for example “Bellinger Martha” as <i>Bellingham Arthur</i>, “Whitflow” as <i>Wicklow</i>, “badayos” as <i>Badajoz</i>). These readings are shown in the transcript itself and graded by confidence.</p>
           <p>References to the same person were merged only when the context made it clear (for instance, “Bunt”, “Bundt” and “Uncle buns” are William Arthur Tenison Bellingham Somerville). People who are mentioned but not named have placeholder entries rather than invented names.</p>
+          <p>Where the two transcripts disagree, the more plausible reading is shown with a confidence label, and the alternative is kept in the reading note or an open question. No audio was available. Where they agree on a wording, that is treated as evidence of what was said, even when the wording is itself a slip (for example “my aunt Eddie's parents”).</p>
           <p>Where the narrator's account could be checked, we looked for published sources, preferring primary records (Hansard), then scholarly and heritage databases, then reference works. External facts are always shown separately from family testimony and numbered below. Where they disagree, both versions are kept and the conflict is flagged.</p>
           <p>Nothing has been added to fill gaps. Dates the narrator did not give are left blank or marked as estimates.</p>
         </section>
         <section><h2>Evidence labels</h2>${legend()}</section>
       </div>
       <section class="block"><h2>External sources <span class="count">${A.sources.length}</span></h2>
+        <p class="small muted">Each source is labelled <span class="access access-direct">read directly</span>, <span class="access access-partial">partly read</span> or <span class="access access-search-only">search result only</span>. Compiled online genealogies are secondary: they can confirm that a claim exists somewhere else, but they are not proof of it, and some draw on the same family's own research.</p>
         <ol class="sources">${A.sources.map((s) => `
           <li id="src-${s.id}" value="${SA.sourceNo[s.id]}">
             <div class="st"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></div>
-            <div class="small">${esc(s.publisher)}${s.year ? `, ${esc(s.year)}` : ""} · <span class="stype">${esc(s.type)}</span></div>
+            <div class="small">${esc(s.publisher)}${s.year ? `, ${esc(s.year)}` : ""} · <span class="stype">${esc(s.type)}</span><span class="access access-${esc(s.access)}" title="${esc(ACCESS[s.access] || "")}">${esc(ACCESS_SHORT[s.access] || s.access)}</span>${s.checked ? ` <span class="muted">checked ${esc(s.checked)}</span>` : ""}</div>
             ${s.used ? `<div class="small"><b>Used for:</b> ${esc(s.used)}</div>` : ""}
             ${s.reliability ? `<div class="small muted">${esc(s.reliability)}</div>` : ""}
             ${sourceUse[s.id] ? `<div class="chips">${[...sourceUse[s.id]].slice(0, 12).map(SA.chip).join("")}</div>` : ""}
@@ -580,13 +647,13 @@
           <li><b>Tree</b>: the Somervilles and five related families, drawn from structured parent and partner links.</li>
           <li><b>People, Places, Glossary, Timeline</b>: directories that link to each other and to the transcript.</li>
           <li><b>Open questions</b>: everything uncertain or contradictory, with suggested next steps.</li>
-          <li><b>Transcript</b>: the conversation itself, with readings of misheard words.</li>
+          <li><b>Transcripts</b>: two independent speech-to-text transcripts of the same conversation (A, the original, and B, a companion), with readings of misheard words, links between parallel passages, and a side-by-side <a href="#/compare">comparison</a>.</li>
         </ul>
         <h2>Privacy and discretion</h2>
-        <p>The public copy of the transcript omits personal, domestic and third-party asides (marked where they occur); no family-history content has been removed. The full original is kept outside the published site. Living people are mentioned only where they bear on the history, with no personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; because the events are recorded in Hansard and local history, they are included here, with his caution shown.</p>
+        <p>The public copies of the transcripts omit personal, domestic and third-party asides (marked where they occur); no family-history content has been removed. The full originals are kept outside the published site. Living people are mentioned only where they bear on the history, with no personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
         <h2>Limitations</h2>
         <ul>
-          <li>The transcript is automatic speech-to-text with no speaker labels; some passages are garbled beyond recovery.</li>
+          <li>Both transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle their disagreements; some passages are garbled beyond recovery in both.</li>
           <li>Many dates rest on one person's memory. External checks cover the points listed under Sources; most family details are not yet verified against civil or church records.</li>
           <li>Map positions marked “approximate” are best guesses.</li>
           <li>Search and the tree run in your browser; the map needs an internet connection.</li>

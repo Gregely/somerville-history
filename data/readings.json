@@ -1,181 +1,2030 @@
 [
-  { "line": 2, "phrase": "Bellingham. Arthur some of them?", "reading": "Bellingham Arthur Somerville", "conf": "high", "link": "p:bellingham-arthur-somerville" },
-  { "line": 2, "phrase": "as a crime man more anyway", "reading": "unclear: possibly an aside about the year", "conf": "low" },
-  { "line": 4, "phrase": "The far in the four courts", "reading": "the fire in the Four Courts (1922)", "conf": "high", "link": "e:ev-four-courts" },
-  { "line": 6, "phrase": "The summer little family", "reading": "the Somerville family", "conf": "high" },
-  { "line": 6, "phrase": "six volumes of the several records", "reading": "six volumes of the Somerville records", "conf": "medium" },
-  { "line": 6, "phrase": "a summer little family", "reading": "a Somerville", "conf": "high" },
-  { "line": 12, "phrase": "in the Ric. That's the right Irish Construction", "reading": "in the RIC, that's the Royal Irish Constabulary", "conf": "high", "link": "t:ric" },
-  { "line": 14, "phrase": "what Kevin boy", "reading": "a cabin boy", "conf": "medium" },
-  { "line": 14, "phrase": "Tennyson, Tennyson, Adam Somerville", "reading": "Tenison Alan Somerville", "conf": "high", "link": "p:tenison-alan-somerville" },
-  { "line": 16, "phrase": "191823", "reading": "1823", "conf": "high" },
-  { "line": 20, "phrase": "Captain William Summerhill", "reading": "Captain William Somerville", "conf": "high", "link": "p:captain-william-somerville" },
-  { "line": 20, "phrase": "Eliza bellendrum", "reading": "Eliza Bellingham", "conf": "high", "link": "p:eliza-bellingham" },
-  { "line": 20, "phrase": "Bellinger Martha", "reading": "Bellingham Arthur", "conf": "high", "link": "p:bellingham-arthur-somerville" },
-  { "line": 24, "phrase": "bellendram Arthur some of them", "reading": "Bellingham Arthur Somerville", "conf": "high", "link": "p:bellingham-arthur-somerville" },
-  { "line": 24, "phrase": "fighting atte", "reading": "a nickname, possibly \"Fighting Artie\"", "conf": "low", "link": "qn:q-fighting-artie" },
-  { "line": 26, "phrase": "Bellinger mass or someone", "reading": "Bellingham Arthur Somerville", "conf": "high" },
-  { "line": 26, "phrase": "beningham", "reading": "Bellingham", "conf": "high" },
-  { "line": 26, "phrase": "James and Holly's bedroom", "reading": "the portrait's present location (a living family member's house)", "conf": "medium" },
-  { "line": 28, "phrase": "Ballenger Brothers", "reading": "Bellingham brothers (Alan and Henry)", "conf": "high" },
-  { "line": 28, "phrase": "Castle bellendrome", "reading": "Castle Bellingham", "conf": "high", "link": "pl:castle-bellingham" },
-  { "line": 30, "phrase": "Out of the spellinger who was Alan. Bellendrum", "reading": "the eldest Bellingham, who was Alan Bellingham", "conf": "medium", "link": "p:alan-bellingham-1773" },
-  { "line": 30, "phrase": "Monique babe", "reading": "Monique Bâby", "conf": "high", "link": "p:monique-baby" },
-  { "line": 30, "phrase": "regiment law for sale", "reading": "unclear: perhaps \"a regimental officer\"", "conf": "low", "link": "qn:q-canada-cousin" },
-  { "line": 34, "phrase": "An ensign ship", "reading": "an ensigncy (junior officer's commission)", "conf": "high", "link": "t:ensign" },
-  { "line": 38, "phrase": "the pits", "reading": "the Pitts (William Pitt the Elder and the Younger)", "conf": "high" },
-  { "line": 38, "phrase": "Benjamin Sir William Belgium", "reading": "Sir William Bellingham", "conf": "high", "link": "p:sir-william-bellingham" },
-  { "line": 42, "phrase": "west country indefinland", "reading": "the West Country in England (Lyme Regis)", "conf": "high", "link": "pl:lyme-regis" },
-  { "line": 44, "phrase": "badayos", "reading": "Badajoz", "conf": "high", "link": "pl:badajoz" },
-  { "line": 44, "phrase": "peninsula wall", "reading": "Peninsular War", "conf": "high", "link": "t:peninsular-war" },
-  { "line": 44, "phrase": "Henry benendrum", "reading": "Henry Bellingham", "conf": "high", "link": "p:henry-tenison-bellingham" },
-  { "line": 46, "phrase": "conducted Tariff", "reading": "a conducted tour", "conf": "high" },
-  { "line": 48, "phrase": "butter yours", "reading": "Badajoz", "conf": "high", "link": "pl:badajoz" },
-  { "line": 52, "phrase": "Mateo's", "reading": "Badajoz", "conf": "medium", "link": "pl:badajoz" },
-  { "line": 56, "phrase": "the Laos", "reading": "the Louth (Militia)", "conf": "medium", "link": "t:militia" },
-  { "line": 58, "phrase": "Love militia", "reading": "Louth Militia (\"County Louth Militia\")", "conf": "medium", "link": "t:militia" },
-  { "line": 84, "phrase": "Williams album known as Major William Salvador", "reading": "William Somerville, known as Major William Somerville", "conf": "high", "link": "p:major-william-somerville" },
-  { "line": 86, "phrase": "talented", "reading": "tenanted", "conf": "high", "link": "t:tenants" },
-  { "line": 86, "phrase": "Address a r d r. A s s", "reading": "Ardrass, A-R-D-R-A-S-S", "conf": "high", "link": "pl:ardrass" },
-  { "line": 88, "phrase": "Did Captain Williamson.", "reading": "Did Captain William's son? (or: Did Captain William…)", "conf": "low" },
-  { "line": 94, "phrase": "Is it looking and Salvage", "reading": "possibly \"between Lucan and Celbridge\"", "conf": "low" },
-  { "line": 94, "phrase": "address Lodge", "reading": "Ardrass Lodge", "conf": "high", "link": "pl:ardrass" },
-  { "line": 104, "phrase": "now do well", "reading": "ne'er-do-well", "conf": "high", "link": "t:ne-er-do-well" },
-  { "line": 106, "phrase": "The Brook family", "reading": "the Brooke family", "conf": "medium", "link": "pl:brooke-ulster" },
-  { "line": 106, "phrase": "a contrast off the hand", "reading": "unclear: perhaps \"I can't offhand remember\"", "conf": "low" },
-  { "line": 108, "phrase": "Archival James", "reading": "Archibald James", "conf": "high", "link": "p:archibald-james-somerville" },
-  { "line": 110, "phrase": "Breaky", "reading": "Breakey (surname)", "conf": "medium", "link": "p:elizabeth-breakey" },
-  { "line": 124, "phrase": "a journal called Crips", "reading": "\"Crisp's\": probably Howard & Crisp's Visitation of Ireland", "conf": "medium", "link": "t:crisps-visitation" },
-  { "line": 126, "phrase": "Arturable, James", "reading": "Archibald James", "conf": "high", "link": "p:archibald-james-somerville" },
-  { "line": 126, "phrase": "Corey, Corey", "reading": "Corry", "conf": "medium", "link": "p:corry-somerville" },
-  { "line": 126, "phrase": "founder of women", "reading": "fond of women", "conf": "high" },
-  { "line": 130, "phrase": "Elizabeth breaking", "reading": "Elizabeth Breakey", "conf": "medium", "link": "p:elizabeth-breakey" },
-  { "line": 136, "phrase": "comray. U m r y s. C u m. R y", "reading": "Cumry, C-U-M-R-Y", "conf": "high", "link": "pl:cumry" },
-  { "line": 136, "phrase": "bell engine property", "reading": "a Bellingham property", "conf": "high" },
-  { "line": 136, "phrase": "County mono", "reading": "County Monaghan", "conf": "high" },
-  { "line": 140, "phrase": "Leslie Mullen", "reading": "unclear: possibly the Leslie family (of Glaslough, Co. Monaghan)", "conf": "low" },
-  { "line": 144, "phrase": "Dorathea", "reading": "Dorothea Bellingham", "conf": "high", "link": "p:dorothea-bellingham" },
-  { "line": 146, "phrase": "Oh, dear son. Archibald.", "reading": "our dear son Archibald", "conf": "high", "link": "p:archibald-james-somerville" },
-  { "line": 148, "phrase": "include Mal", "reading": "in Clonmel (?)", "conf": "low", "link": "pl:clonmel" },
-  { "line": 150, "phrase": "George and Thomas", "reading": "name of the ship", "conf": "high" },
-  { "line": 156, "phrase": "Madera", "reading": "Madeira", "conf": "high", "link": "pl:madeira" },
-  { "line": 162, "phrase": "From modern.", "reading": "From Monaghan.", "conf": "low" },
-  { "line": 162, "phrase": "Bali Bay", "reading": "Ballybay", "conf": "high", "link": "pl:ballybay" },
-  { "line": 166, "phrase": "Eliza Mellendram", "reading": "Eliza Bellingham", "conf": "high", "link": "p:eliza-bellingham" },
-  { "line": 174, "phrase": "The, some of our parents became dormant", "reading": "the Somerville baronetcy became dormant", "conf": "high", "link": "t:dormant" },
-  { "line": 174, "phrase": "the then Baron died in January 1929", "reading": "James, 2nd Baron Athlumney, d. 8 January 1929", "conf": "high", "link": "p:james-somerville-2nd-baron" },
-  { "line": 176, "phrase": "Quentin Somerville debacco", "reading": "Quentin Somerville of the BBC (?)", "conf": "low", "link": "p:quentin-somerville" },
-  { "line": 176, "phrase": "He's not Osama at all", "reading": "He's not a Somerville at all", "conf": "medium" },
-  { "line": 178, "phrase": "Courier", "reading": "Corry", "conf": "medium", "link": "p:corry-somerville" },
-  { "line": 178, "phrase": "electrical illegitimate", "reading": "(a number of) illegitimate", "conf": "medium" },
-  { "line": 182, "phrase": "about Herbert in County cotton", "reading": "near Belturbet, in County Cavan (?)", "conf": "low", "link": "pl:farm-cavan" },
-  { "line": 184, "phrase": "to pay you. Afternoon, Bayview Crescent", "reading": "to Bayview Avenue, Bayview Crescent", "conf": "medium", "link": "pl:bayview" },
-  { "line": 184, "phrase": "clontaf", "reading": "Clontarf", "conf": "high" },
-  { "line": 190, "phrase": "palindrome", "reading": "Bellingham (the son)", "conf": "high", "link": "p:bellingham-somerville" },
-  { "line": 194, "phrase": "Ultimal James", "reading": "Archibald James", "conf": "high", "link": "p:archibald-james-somerville" },
-  { "line": 198, "phrase": "the injur, Bellingham", "reading": "the injured Bellingham", "conf": "high", "link": "p:bellingham-somerville" },
-  { "line": 202, "phrase": "Tennis and Island", "reading": "Tenison Alan", "conf": "high", "link": "p:tenison-alan-somerville" },
-  { "line": 208, "phrase": "a semen", "reading": "a seaman", "conf": "high", "link": "p:oconnor-seaman" },
-  { "line": 208, "phrase": "Tennyson Island", "reading": "Tenison Alan", "conf": "high", "link": "p:tenison-alan-somerville" },
-  { "line": 210, "phrase": "the Iowa. Ric", "reading": "the RIC (then the Irish Constabulary)", "conf": "medium", "link": "t:ric" },
-  { "line": 210, "phrase": "Dublin vessel", "reading": "Dublin Castle", "conf": "high", "link": "pl:dublin-castle" },
-  { "line": 212, "phrase": "officer call", "reading": "officer corps", "conf": "medium" },
-  { "line": 212, "phrase": "So William", "reading": "Sir William (Somerville, Chief Secretary)", "conf": "high", "link": "p:william-meredyth-somerville" },
-  { "line": 216, "phrase": "Breath of Hines", "reading": "Rathmines", "conf": "high", "link": "pl:rathmines" },
-  { "line": 216, "phrase": "Livingston Avenue", "reading": "street name as heard; unverified", "conf": "low", "link": "qn:q-livingston" },
-  { "line": 218, "phrase": "Tennyson, Bellingham somehow", "reading": "Tenison Bellingham Somerville", "conf": "high", "link": "p:bunt" },
-  { "line": 218, "phrase": "Cecilia Eliza Bellinger", "reading": "Cecilia Eliza Bellingham", "conf": "high", "link": "p:cecilia-somerville" },
-  { "line": 218, "phrase": "James, Aubrey Henry Bellinger", "reading": "James Aubrey Henry Bellingham", "conf": "high", "link": "p:jim" },
-  { "line": 224, "phrase": "there to money", "reading": "an unusual first name, unresolved", "conf": "low", "link": "qn:q-truell-daughter" },
-  { "line": 228, "phrase": "Gotta Hugh Roger Bellinger and somehow", "reading": "Hugh Roger Bellingham Somerville", "conf": "high", "link": "p:pat" },
-  { "line": 228, "phrase": "Reginald Malcolm John see", "reading": "Reginald Malcolm John Somerville", "conf": "high", "link": "p:reginald-somerville" },
-  { "line": 232, "phrase": "Henry, Rock", "reading": "Henry Rock (or Rooke)", "conf": "medium", "link": "p:henry-rock" },
-  { "line": 232, "phrase": "Benjamin Arthur's", "reading": "Bellingham Arthur's", "conf": "high", "link": "p:bellingham-arthur-somerville" },
-  { "line": 232, "phrase": "she made a solicitor", "reading": "she married a solicitor", "conf": "high" },
-  { "line": 240, "phrase": "Village of Arthur", "reading": "Bellingham Arthur", "conf": "high", "link": "p:bellingham-arthur-somerville" },
-  { "line": 240, "phrase": "Margaret Hall clench, Clinch's Brewery in Oxford", "reading": "Margaret Hall Clinch, of Clinch's brewery (Witney, Oxfordshire)", "conf": "high", "link": "p:margaret-hall-clinch" },
-  { "line": 240, "phrase": "battles of beer", "reading": "barrels of beer", "conf": "high" },
-  { "line": 246, "phrase": "brought to Upper Clement", "reading": "brought up at Clermont", "conf": "medium", "link": "pl:clermont" },
-  { "line": 248, "phrase": "Claude Mannon", "reading": "Clonmannon", "conf": "high", "link": "pl:clonmannon" },
-  { "line": 248, "phrase": "Tom Bannon", "reading": "Clonmannon", "conf": "high", "link": "pl:clonmannon" },
-  { "line": 248, "phrase": "troll family", "reading": "Truell family", "conf": "high", "link": "t:surname-truell" },
-  { "line": 250, "phrase": "Edmund troll", "reading": "Edmund Truell", "conf": "high", "link": "p:edmund-truell" },
-  { "line": 250, "phrase": "Bertie troll", "reading": "Bertie Truell", "conf": "high", "link": "p:bertie-truell" },
-  { "line": 252, "phrase": "John Madden", "reading": "Clonmannon", "conf": "medium", "link": "pl:clonmannon" },
-  { "line": 256, "phrase": "right Engineers", "reading": "Royal Engineers", "conf": "high", "link": "t:sapper" },
-  { "line": 258, "phrase": "Refuted by the family", "reading": "reputed by the family", "conf": "high" },
-  { "line": 264, "phrase": "164 about 1884", "reading": "about 1884", "conf": "medium", "link": "p:bunt" },
-  { "line": 264, "phrase": "traditional. Korea", "reading": "traditional career", "conf": "high" },
-  { "line": 282, "phrase": "Trishan house", "reading": "Drishane House", "conf": "high", "link": "pl:castletownshend" },
-  { "line": 282, "phrase": "Castle Townsend", "reading": "Castletownshend", "conf": "high", "link": "pl:castletownshend" },
-  { "line": 290, "phrase": "Bellinger Martha Somerville", "reading": "Bellingham Arthur Somerville", "conf": "high", "link": "p:bellingham-arthur-somerville" },
-  { "line": 296, "phrase": "outrageous", "reading": "\"outrages\"", "conf": "high", "link": "t:outrages" },
-  { "line": 296, "phrase": "In other words, rights", "reading": "in other words, riots", "conf": "high" },
-  { "line": 312, "phrase": "a big mistake. Annual", "reading": "a big estate", "conf": "medium" },
-  { "line": 312, "phrase": "Ballon a tray", "reading": "Ballynatray", "conf": "high", "link": "pl:ballynatray" },
-  { "line": 316, "phrase": "from Cool to your", "reading": "from Cork to Youghal", "conf": "high", "link": "pl:youghal" },
-  { "line": 316, "phrase": "Captain, some of them", "reading": "Captain Somerville", "conf": "high", "link": "p:bellingham-arthur-somerville" },
-  { "line": 318, "phrase": "Hanlon or ohann", "reading": "Patrick Hanlon", "conf": "high", "link": "p:patrick-hanlon" },
-  { "line": 322, "phrase": "Captain Salvador", "reading": "Captain Somerville", "conf": "high" },
-  { "line": 324, "phrase": "summer. Girls", "reading": "Somervilles", "conf": "medium" },
-  { "line": 326, "phrase": "Whitflow", "reading": "Wicklow", "conf": "high", "link": "pl:wicklow-town" },
-  { "line": 326, "phrase": "with Cloud Arc loud", "reading": "Wicklow [and] Arklow", "conf": "medium", "link": "pl:arklow" },
-  { "line": 328, "phrase": "substantial memes", "reading": "substantial means", "conf": "high" },
-  { "line": 330, "phrase": "the robbery", "reading": "the brewery", "conf": "high" },
-  { "line": 330, "phrase": "Benjamaster", "reading": "Bellingham Arthur", "conf": "high", "link": "p:bellingham-arthur-somerville" },
-  { "line": 330, "phrase": "Tennis now", "reading": "Tenison", "conf": "high", "link": "p:tenison-alan-somerville" },
-  { "line": 334, "phrase": "So he arrived in Vietnam.", "reading": "unclear: perhaps \"So he arrived in Wicklow\"", "conf": "low" },
-  { "line": 334, "phrase": "Office star area", "reading": "official diary", "conf": "medium" },
-  { "line": 340, "phrase": "No church means.", "reading": "Low Churchman", "conf": "medium", "link": "t:low-church" },
-  { "line": 346, "phrase": "sand test or college", "reading": "Sandhurst, or college", "conf": "high", "link": "t:sandhurst" },
-  { "line": 350, "phrase": "outside climate", "reading": "outside Clermont", "conf": "high", "link": "pl:clermont" },
-  { "line": 350, "phrase": "John Madden", "reading": "Clonmannon", "conf": "medium", "link": "pl:clonmannon" },
-  { "line": 356, "phrase": "Alarm at training College", "reading": "a military training college", "conf": "medium" },
-  { "line": 356, "phrase": "More scene", "reading": "the front (?)", "conf": "low" },
-  { "line": 356, "phrase": "passchendale", "reading": "Passchendaele", "conf": "high", "link": "pl:passchendaele" },
-  { "line": 358, "phrase": "World Warwick Show, Regiment", "reading": "Royal Warwickshire Regiment", "conf": "high", "link": "t:royal-warwickshire" },
-  { "line": 360, "phrase": "up Patrol", "reading": "Pat (Hugh Roger)", "conf": "medium", "link": "p:pat" },
-  { "line": 360, "phrase": "the Irishman in the restaurant", "reading": "the Irishman in the regiment", "conf": "high" },
-  { "line": 362, "phrase": "Warwicks arrangement", "reading": "Warwickshire Regiment", "conf": "high" },
-  { "line": 366, "phrase": "Ghana", "reading": "gunner", "conf": "high", "link": "t:gunners" },
-  { "line": 370, "phrase": "An 80. From County Cork", "reading": "a lady from County Cork", "conf": "medium" },
-  { "line": 374, "phrase": "pantry", "reading": "Bantry", "conf": "high", "link": "pl:bantry-glengarriff" },
-  { "line": 374, "phrase": "Green desert", "reading": "unidentified place name", "conf": "low", "link": "qn:q-green-desert" },
-  { "line": 374, "phrase": "Glengariff", "reading": "Glengarriff", "conf": "high" },
-  { "line": 378, "phrase": "Aquaman died of cancer", "reading": "unclear (\"…who died of cancer\")", "conf": "low" },
-  { "line": 386, "phrase": "at planned", "reading": "at Clermont", "conf": "high", "link": "pl:clermont" },
-  { "line": 388, "phrase": "buried in Matthew", "reading": "unidentified burial place", "conf": "low", "link": "qn:q-jim-burial" },
-  { "line": 394, "phrase": "Royal Workshops", "reading": "Royal Warwickshires", "conf": "high", "link": "t:royal-warwickshire" },
-  { "line": 446, "phrase": "Holland", "reading": "the Netherlands (neutral in WWI)", "conf": "high", "link": "pl:holland" },
-  { "line": 450, "phrase": "I dig up the MC", "reading": "he got the MC", "conf": "high", "link": "t:military-cross" },
-  { "line": 462, "phrase": "atterbury", "reading": "Adderbury", "conf": "medium", "link": "pl:adderbury" },
-  { "line": 468, "phrase": "an indoor most", "reading": "in India most", "conf": "high", "link": "pl:india" },
-  { "line": 472, "phrase": "corks animals", "reading": "Cork Somervilles", "conf": "high", "link": "t:cork-somervilles" },
-  { "line": 472, "phrase": "Coke Centervilles", "reading": "Cork Somervilles", "conf": "high", "link": "t:cork-somervilles" },
-  { "line": 472, "phrase": "Thomas Thompson", "reading": "Thomas Somerville (of Drishane)", "conf": "medium", "link": "pl:castletownshend" },
-  { "line": 500, "phrase": "nanuki", "reading": "Nanyuki", "conf": "high", "link": "pl:nanyuki" },
-  { "line": 500, "phrase": "Nairobia", "reading": "Nairobi", "conf": "high" },
-  { "line": 502, "phrase": "aux card", "reading": "ox cart", "conf": "high" },
-  { "line": 506, "phrase": "Morde Moore", "reading": "Maud Moore", "conf": "medium", "link": "p:maud-moore" },
-  { "line": 508, "phrase": "County leash", "reading": "County Laois", "conf": "medium", "link": "pl:laois" },
-  { "line": 508, "phrase": "Bonita", "reading": "Juanita", "conf": "high", "link": "p:juanita" },
-  { "line": 512, "phrase": "staying at Diamond", "reading": "staying at Clermont (?)", "conf": "low", "link": "pl:clermont" },
-  { "line": 512, "phrase": "Rector of Wycliffe largeman", "reading": "Rector of Wicklow …", "conf": "medium", "link": "p:rector-johnson" },
-  { "line": 514, "phrase": "Ola Anna. Yes. Honour Johnson", "reading": "Honor. Yes. Honor Johnson", "conf": "medium", "link": "p:honor-johnson" },
-  { "line": 522, "phrase": "France's tench", "reading": "Frances Tench", "conf": "high", "link": "p:frances-tench" },
-  { "line": 526, "phrase": "designed by elections", "reading": "designed by Lutyens", "conf": "medium", "link": "pl:war-memorial-gardens" },
-  { "line": 530, "phrase": "our dress", "reading": "Ardrass", "conf": "high", "link": "pl:ardrass" },
-  { "line": 530, "phrase": "Clement's still up", "reading": "Clermont's still up", "conf": "high", "link": "pl:clermont" },
-  { "line": 538, "phrase": "Hunters", "reading": "Hunter's Hotel, Rathnew", "conf": "medium", "link": "pl:rathnew" },
-  { "line": 546, "phrase": "how did Clement who sold it", "reading": "how did Clermont [get] sold", "conf": "high", "link": "pl:clermont" },
-  { "line": 548, "phrase": "Holy English", "reading": "wholly English", "conf": "high" },
-  { "line": 554, "phrase": "ownership of government", "reading": "ownership of Clermont", "conf": "high", "link": "pl:clermont" },
-  { "line": 560, "phrase": "Anchorman's, Uncle band", "reading": "Uncle Bunt's … Uncle Bunt", "conf": "medium", "link": "p:bunt" },
-  { "line": 572, "phrase": "Came dweckler", "reading": "came to Wicklow", "conf": "high", "link": "pl:wicklow-town" },
-  { "line": 574, "phrase": "born on Clement", "reading": "born at Clermont", "conf": "high", "link": "pl:clermont" },
-  { "line": 574, "phrase": "Like a little Totten them", "reading": "by a Colonel Tottenham", "conf": "medium", "link": "p:colonel-tottenham" },
-  { "line": 582, "phrase": "resnew", "reading": "Rathnew", "conf": "high", "link": "pl:rathnew" },
-  { "line": 586, "phrase": "golighter", "reading": "gauleiter (a joke)", "conf": "high", "link": "t:gauleiter" },
-  { "line": 602, "phrase": "Royal Irish conseborough", "reading": "Royal Irish Constabulary", "conf": "high", "link": "t:ric" },
-  { "line": 602, "phrase": "great fire of cork", "reading": "the Burning of Cork (1920)", "conf": "high", "link": "e:ev-burning-cork" }
+ {
+  "line": 2,
+  "phrase": "Bellingham. Arthur some of them?",
+  "reading": "Bellingham Arthur Somerville",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "line": 2,
+  "phrase": "as a crime man more anyway",
+  "reading": "the year of the Crimean War, anyway",
+  "conf": "high",
+  "note": "Transcript B ¶2 reads \"It's the year of the Crimean War, anyway\"."
+ },
+ {
+  "line": 4,
+  "phrase": "The far in the four courts",
+  "reading": "the fire in the Four Courts (1922)",
+  "conf": "high",
+  "link": "e:ev-four-courts"
+ },
+ {
+  "line": 6,
+  "phrase": "The summer little family",
+  "reading": "the Somerville family",
+  "conf": "high"
+ },
+ {
+  "line": 6,
+  "phrase": "six volumes of the several records",
+  "reading": "six volumes of the Somerville records",
+  "conf": "medium"
+ },
+ {
+  "line": 6,
+  "phrase": "a summer little family",
+  "reading": "a Somerville",
+  "conf": "high"
+ },
+ {
+  "line": 12,
+  "phrase": "in the Ric. That's the right Irish Construction",
+  "reading": "in the RIC, that's the Royal Irish Constabulary",
+  "conf": "high",
+  "link": "t:ric"
+ },
+ {
+  "line": 14,
+  "phrase": "what Kevin boy",
+  "reading": "cabin boy",
+  "conf": "high",
+  "note": "Transcript B ¶6: \"As a boy of 15, he went to sea … cabin boy\"."
+ },
+ {
+  "line": 14,
+  "phrase": "Tennyson, Tennyson, Adam Somerville",
+  "reading": "Tenison Alan Somerville",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "line": 16,
+  "phrase": "191823",
+  "reading": "1823",
+  "conf": "high"
+ },
+ {
+  "line": 20,
+  "phrase": "Captain William Summerhill",
+  "reading": "Captain William Somerville",
+  "conf": "high",
+  "link": "p:captain-william-somerville"
+ },
+ {
+  "line": 20,
+  "phrase": "Eliza bellendrum",
+  "reading": "Eliza Bellingham",
+  "conf": "high",
+  "link": "p:eliza-bellingham"
+ },
+ {
+  "line": 20,
+  "phrase": "Bellinger Martha",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "line": 24,
+  "phrase": "bellendram Arthur some of them",
+  "reading": "Bellingham Arthur Somerville",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "line": 24,
+  "phrase": "fighting atte",
+  "reading": "Fighting Atty (Atty for Arthur)",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville",
+  "note": "Transcript B ¶12: \"He was known as Fighting Atty. Atty being Arthur\"."
+ },
+ {
+  "line": 26,
+  "phrase": "Bellinger mass or someone",
+  "reading": "Bellingham Arthur Somerville",
+  "conf": "high"
+ },
+ {
+  "line": 26,
+  "phrase": "beningham",
+  "reading": "Bellingham",
+  "conf": "high"
+ },
+ {
+  "line": 26,
+  "phrase": "James and Holly's bedroom",
+  "reading": "the portrait's present location (a living family member's house)",
+  "conf": "medium"
+ },
+ {
+  "line": 28,
+  "phrase": "Ballenger Brothers",
+  "reading": "Bellingham brothers (Alan and Henry)",
+  "conf": "high"
+ },
+ {
+  "line": 28,
+  "phrase": "Castle bellendrome",
+  "reading": "Castle Bellingham",
+  "conf": "high",
+  "link": "pl:castle-bellingham"
+ },
+ {
+  "line": 30,
+  "phrase": "Out of the spellinger who was Alan. Bellendrum",
+  "reading": "the eldest Bellingham, who was Alan Bellingham",
+  "conf": "medium",
+  "link": "p:alan-bellingham-1773"
+ },
+ {
+  "line": 30,
+  "phrase": "Monique babe",
+  "reading": "Monique Bâby",
+  "conf": "high",
+  "link": "p:monique-baby",
+  "note": "Transcript B: Babet, Babé, Babel; spelling Bâby from the published Bellingham genealogy."
+ },
+ {
+  "line": 30,
+  "phrase": "regiment law for sale",
+  "reading": "a regimental officer",
+  "conf": "high",
+  "link": "qn:q-canada-cousin",
+  "note": "Transcript B ¶15: \"a cousin who was a regimental officer in Canada\"."
+ },
+ {
+  "line": 34,
+  "phrase": "An ensign ship",
+  "reading": "an ensigncy (junior officer's commission)",
+  "conf": "high",
+  "link": "t:ensign"
+ },
+ {
+  "line": 38,
+  "phrase": "the pits",
+  "reading": "the Pitts (William Pitt the Elder and the Younger)",
+  "conf": "high"
+ },
+ {
+  "line": 38,
+  "phrase": "Benjamin Sir William Belgium",
+  "reading": "Sir William Bellingham",
+  "conf": "high",
+  "link": "p:sir-william-bellingham"
+ },
+ {
+  "line": 42,
+  "phrase": "west country indefinland",
+  "reading": "the West Country, in \"Devonland\" / in England (Lyme Regis)",
+  "conf": "medium",
+  "link": "pl:lyme-regis",
+  "note": "Transcript B ¶20–21: \"Monique Babel settled in the West Country, in Devonland\"."
+ },
+ {
+  "line": 44,
+  "phrase": "badayos",
+  "reading": "Badajoz",
+  "conf": "high",
+  "link": "pl:badajoz"
+ },
+ {
+  "line": 44,
+  "phrase": "peninsula wall",
+  "reading": "Peninsular War",
+  "conf": "high",
+  "link": "t:peninsular-war"
+ },
+ {
+  "line": 44,
+  "phrase": "Henry benendrum",
+  "reading": "Henry Bellingham",
+  "conf": "high",
+  "link": "p:henry-tenison-bellingham"
+ },
+ {
+  "line": 46,
+  "phrase": "conducted Tariff",
+  "reading": "a conducted tour",
+  "conf": "high"
+ },
+ {
+  "line": 48,
+  "phrase": "butter yours",
+  "reading": "Badajoz",
+  "conf": "high",
+  "link": "pl:badajoz"
+ },
+ {
+  "line": 52,
+  "phrase": "Mateo's",
+  "reading": "Badajoz",
+  "conf": "medium",
+  "link": "pl:badajoz"
+ },
+ {
+  "line": 56,
+  "phrase": "the Laos",
+  "reading": "the Louth (County Louth Militia)",
+  "conf": "high",
+  "link": "t:militia",
+  "note": "Transcript B ¶29: \"he was in the Louth, that's the County Louth Militia\"."
+ },
+ {
+  "line": 58,
+  "phrase": "Love militia",
+  "reading": "Louth Militia",
+  "conf": "high",
+  "link": "t:militia",
+  "note": "Transcript B ¶29."
+ },
+ {
+  "line": 84,
+  "phrase": "Williams album known as Major William Salvador",
+  "reading": "William Somerville, known as Major William Somerville",
+  "conf": "high",
+  "link": "p:major-william-somerville"
+ },
+ {
+  "line": 86,
+  "phrase": "talented",
+  "reading": "tenanted",
+  "conf": "high",
+  "link": "t:tenants"
+ },
+ {
+  "line": 86,
+  "phrase": "Address a r d r. A s s",
+  "reading": "Ardrass, A-R-D-R-A-S-S",
+  "conf": "high",
+  "link": "pl:ardrass"
+ },
+ {
+  "line": 88,
+  "phrase": "Did Captain Williamson.",
+  "reading": "Did Captain William's son? (or: Did Captain William…)",
+  "conf": "low"
+ },
+ {
+  "line": 94,
+  "phrase": "Is it looking and Salvage",
+  "reading": "between Lucan and Celbridge",
+  "conf": "high",
+  "note": "Transcript B ¶45: \"if you're going between Lucan and Selbridge, or anyway, the back road\"."
+ },
+ {
+  "line": 94,
+  "phrase": "address Lodge",
+  "reading": "Ardrass Lodge",
+  "conf": "high",
+  "link": "pl:ardrass"
+ },
+ {
+  "line": 104,
+  "phrase": "now do well",
+  "reading": "ne'er-do-well",
+  "conf": "high",
+  "link": "t:ne-er-do-well"
+ },
+ {
+  "line": 106,
+  "phrase": "The Brook family",
+  "reading": "the Brooke family",
+  "conf": "medium",
+  "link": "pl:brooke-ulster"
+ },
+ {
+  "line": 106,
+  "phrase": "a contrast off the hand",
+  "reading": "who did he marry now? I can't remember",
+  "conf": "high",
+  "note": "Transcript B ¶49."
+ },
+ {
+  "line": 108,
+  "phrase": "Archival James",
+  "reading": "Archibald James",
+  "conf": "high",
+  "link": "p:archibald-james-somerville"
+ },
+ {
+  "line": 110,
+  "phrase": "Breaky",
+  "reading": "Breaky / Brakey (surname; spelling unknown)",
+  "conf": "medium",
+  "link": "p:elizabeth-breakey",
+  "note": "Transcript B ¶50 hears \"Brakey\"."
+ },
+ {
+  "line": 124,
+  "phrase": "a journal called Crips",
+  "reading": "\"Crisp's\": probably Howard & Crisp's Visitation of Ireland",
+  "conf": "medium",
+  "link": "t:crisps-visitation"
+ },
+ {
+  "line": 126,
+  "phrase": "Arturable, James",
+  "reading": "Archibald James",
+  "conf": "high",
+  "link": "p:archibald-james-somerville"
+ },
+ {
+  "line": 126,
+  "phrase": "Corey, Corey",
+  "reading": "Corry / Corrie",
+  "conf": "medium",
+  "link": "p:corry-somerville",
+  "note": "Transcript B ¶56: \"This is Corrie\"; a compiled genealogy spells it Corry."
+ },
+ {
+  "line": 126,
+  "phrase": "founder of women",
+  "reading": "fond of women",
+  "conf": "high"
+ },
+ {
+  "line": 130,
+  "phrase": "Elizabeth breaking",
+  "reading": "Elizabeth Breakey",
+  "conf": "medium",
+  "link": "p:elizabeth-breakey"
+ },
+ {
+  "line": 136,
+  "phrase": "comray. U m r y s. C u m. R y",
+  "reading": "Cumry, C-U-M-R-Y",
+  "conf": "high",
+  "link": "pl:cumry"
+ },
+ {
+  "line": 136,
+  "phrase": "bell engine property",
+  "reading": "a Bellingham property",
+  "conf": "high"
+ },
+ {
+  "line": 136,
+  "phrase": "County mono",
+  "reading": "County Monaghan",
+  "conf": "high"
+ },
+ {
+  "line": 140,
+  "phrase": "Leslie Mullen",
+  "reading": "a family called Leslie in Monaghan",
+  "conf": "medium",
+  "note": "Transcript B ¶63: \"they might have been Leslie's, there was a family called Leslie in Monaghan\"."
+ },
+ {
+  "line": 144,
+  "phrase": "Dorathea",
+  "reading": "Dorothea Bellingham",
+  "conf": "high",
+  "link": "p:dorothea-bellingham"
+ },
+ {
+  "line": 146,
+  "phrase": "Oh, dear son. Archibald.",
+  "reading": "our dear son Archibald",
+  "conf": "high",
+  "link": "p:archibald-james-somerville"
+ },
+ {
+  "line": 148,
+  "phrase": "include Mal",
+  "reading": "in Clonmel",
+  "conf": "high",
+  "link": "pl:clonmel",
+  "note": "Transcript B ¶65: \"spent a few days in Clonmel\"."
+ },
+ {
+  "line": 150,
+  "phrase": "George and Thomas",
+  "reading": "name of the ship",
+  "conf": "high"
+ },
+ {
+  "line": 156,
+  "phrase": "Madera",
+  "reading": "Madeira",
+  "conf": "high",
+  "link": "pl:madeira"
+ },
+ {
+  "line": 162,
+  "phrase": "From modern.",
+  "reading": "From Monaghan.",
+  "conf": "high",
+  "note": "Transcript B ¶68: \"from Monaghan, from Ballybay, the local town\"."
+ },
+ {
+  "line": 162,
+  "phrase": "Bali Bay",
+  "reading": "Ballybay",
+  "conf": "high",
+  "link": "pl:ballybay"
+ },
+ {
+  "line": 166,
+  "phrase": "Eliza Mellendram",
+  "reading": "Eliza Bellingham",
+  "conf": "high",
+  "link": "p:eliza-bellingham"
+ },
+ {
+  "line": 174,
+  "phrase": "The, some of our parents became dormant",
+  "reading": "the Somerville baronetcy became dormant",
+  "conf": "high",
+  "link": "t:dormant"
+ },
+ {
+  "line": 174,
+  "phrase": "the then Baron died in January 1929",
+  "reading": "James, 2nd Baron Athlumney, d. 8 January 1929",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "line": 176,
+  "phrase": "Quentin Somerville debacco",
+  "reading": "the Quentin Somerville debacle",
+  "conf": "high",
+  "link": "p:quentin-somerville",
+  "note": "Transcript B ¶74. (An earlier reading guessed \"of the BBC\".)"
+ },
+ {
+  "line": 176,
+  "phrase": "He's not Osama at all",
+  "reading": "He's not a Somerville at all",
+  "conf": "medium"
+ },
+ {
+  "line": 178,
+  "phrase": "Courier",
+  "reading": "Corry",
+  "conf": "medium",
+  "link": "p:corry-somerville"
+ },
+ {
+  "line": 178,
+  "phrase": "electrical illegitimate",
+  "reading": "(a number of) illegitimate",
+  "conf": "medium"
+ },
+ {
+  "line": 182,
+  "phrase": "about Herbert in County cotton",
+  "reading": "near Belturbet in County Cavan",
+  "conf": "high",
+  "link": "pl:farm-cavan",
+  "note": "Transcript B ¶77: \"Farm, F-A-R-M, near Bell Turbot in County Cavan\"."
+ },
+ {
+  "line": 184,
+  "phrase": "to pay you. Afternoon, Bayview Crescent",
+  "reading": "to Bayview Avenue, Bayview Crescent",
+  "conf": "medium",
+  "link": "pl:bayview"
+ },
+ {
+  "line": 184,
+  "phrase": "clontaf",
+  "reading": "Clontarf",
+  "conf": "high"
+ },
+ {
+  "line": 190,
+  "phrase": "palindrome",
+  "reading": "Bellingham (the son)",
+  "conf": "high",
+  "link": "p:bellingham-somerville"
+ },
+ {
+  "line": 194,
+  "phrase": "Ultimal James",
+  "reading": "Archibald James",
+  "conf": "high",
+  "link": "p:archibald-james-somerville"
+ },
+ {
+  "line": 198,
+  "phrase": "the injur, Bellingham",
+  "reading": "the injured Bellingham",
+  "conf": "high",
+  "link": "p:bellingham-somerville"
+ },
+ {
+  "line": 202,
+  "phrase": "Tennis and Island",
+  "reading": "Tenison Alan",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "line": 208,
+  "phrase": "a semen",
+  "reading": "a seaman",
+  "conf": "high",
+  "link": "p:oconnor-seaman"
+ },
+ {
+  "line": 208,
+  "phrase": "Tennyson Island",
+  "reading": "Tenison Alan",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "line": 210,
+  "phrase": "the Iowa. Ric",
+  "reading": "the RIC (then the Irish Constabulary)",
+  "conf": "medium",
+  "link": "t:ric"
+ },
+ {
+  "line": 210,
+  "phrase": "Dublin vessel",
+  "reading": "Dublin Castle",
+  "conf": "high",
+  "link": "pl:dublin-castle"
+ },
+ {
+  "line": 212,
+  "phrase": "officer call",
+  "reading": "officer corps",
+  "conf": "medium"
+ },
+ {
+  "line": 212,
+  "phrase": "So William",
+  "reading": "Sir William (Somerville, Chief Secretary)",
+  "conf": "high",
+  "link": "p:william-meredyth-somerville"
+ },
+ {
+  "line": 216,
+  "phrase": "Breath of Hines",
+  "reading": "Rathmines",
+  "conf": "high",
+  "link": "pl:rathmines"
+ },
+ {
+  "line": 216,
+  "phrase": "Livingston Avenue",
+  "reading": "Livingston Avenue (A) / Linster Avenue (B)",
+  "conf": "low",
+  "link": "qn:q-livingston",
+  "note": "Transcript B ¶87 hears \"Linster Avenue\"; see the open question."
+ },
+ {
+  "line": 218,
+  "phrase": "Tennyson, Bellingham somehow",
+  "reading": "Tenison Bellingham Somerville",
+  "conf": "high",
+  "link": "p:bunt"
+ },
+ {
+  "line": 218,
+  "phrase": "Cecilia Eliza Bellinger",
+  "reading": "Cecilia Eliza Bellingham",
+  "conf": "high",
+  "link": "p:cecilia-somerville"
+ },
+ {
+  "line": 218,
+  "phrase": "James, Aubrey Henry Bellinger",
+  "reading": "James Aubrey Henry Bellingham",
+  "conf": "high",
+  "link": "p:jim"
+ },
+ {
+  "line": 224,
+  "phrase": "there to money",
+  "reading": "Vere de Merlie (Vere Frances de Merlie Bellingham Somerville)",
+  "conf": "medium",
+  "link": "p:vere-somerville",
+  "note": "Transcript B ¶89: \"Veer Demerly … the name Vere\"; full name from a compiled genealogy."
+ },
+ {
+  "line": 228,
+  "phrase": "Gotta Hugh Roger Bellinger and somehow",
+  "reading": "Gualter Hugh Roger Bellingham Somerville",
+  "conf": "high",
+  "link": "p:pat",
+  "note": "Transcript B ¶91: \"Galter, Hugh, Roger, Bellingham\"; London Gazette 1913: \"Gualter Hugh Rodger Bellingham Somerville\"."
+ },
+ {
+  "line": 228,
+  "phrase": "Reginald Malcolm John see",
+  "reading": "Reginald Malcolm John Somerville",
+  "conf": "high",
+  "link": "p:reginald-somerville"
+ },
+ {
+  "line": 232,
+  "phrase": "Henry, Rock",
+  "reading": "Henry Rook (or Rooke)",
+  "conf": "medium",
+  "link": "p:henry-rock",
+  "note": "Transcript B ¶94: \"Henry Rook\"."
+ },
+ {
+  "line": 232,
+  "phrase": "Benjamin Arthur's",
+  "reading": "Bellingham Arthur's",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "line": 232,
+  "phrase": "she made a solicitor",
+  "reading": "she married a solicitor",
+  "conf": "high"
+ },
+ {
+  "line": 240,
+  "phrase": "Village of Arthur",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "line": 240,
+  "phrase": "Margaret Hall clench, Clinch's Brewery in Oxford",
+  "reading": "Margaret Hall Clinch, of Clinch's brewery (Witney, Oxfordshire)",
+  "conf": "high",
+  "link": "p:margaret-hall-clinch"
+ },
+ {
+  "line": 240,
+  "phrase": "battles of beer",
+  "reading": "barrels of beer",
+  "conf": "high"
+ },
+ {
+  "line": 246,
+  "phrase": "brought to Upper Clement",
+  "reading": "brought up at Clermont",
+  "conf": "medium",
+  "link": "pl:clermont"
+ },
+ {
+  "line": 248,
+  "phrase": "Claude Mannon",
+  "reading": "Clonmannon",
+  "conf": "high",
+  "link": "pl:clonmannon"
+ },
+ {
+  "line": 248,
+  "phrase": "Tom Bannon",
+  "reading": "Clonmannon",
+  "conf": "high",
+  "link": "pl:clonmannon"
+ },
+ {
+  "line": 248,
+  "phrase": "troll family",
+  "reading": "Truell family",
+  "conf": "high",
+  "link": "t:surname-truell"
+ },
+ {
+  "line": 250,
+  "phrase": "Edmund troll",
+  "reading": "Edmund Truell",
+  "conf": "high",
+  "link": "p:edmund-truell"
+ },
+ {
+  "line": 250,
+  "phrase": "Bertie troll",
+  "reading": "Bertie Truell",
+  "conf": "high",
+  "link": "p:bertie-truell"
+ },
+ {
+  "line": 252,
+  "phrase": "John Madden",
+  "reading": "Clonmannon",
+  "conf": "medium",
+  "link": "pl:clonmannon"
+ },
+ {
+  "line": 256,
+  "phrase": "right Engineers",
+  "reading": "Royal Engineers",
+  "conf": "high",
+  "link": "t:sapper"
+ },
+ {
+  "line": 258,
+  "phrase": "Refuted by the family",
+  "reading": "reputed by the family",
+  "conf": "high"
+ },
+ {
+  "line": 264,
+  "phrase": "164 about 1884",
+  "reading": "about 1884",
+  "conf": "medium",
+  "link": "p:bunt"
+ },
+ {
+  "line": 264,
+  "phrase": "traditional. Korea",
+  "reading": "traditional career",
+  "conf": "high"
+ },
+ {
+  "line": 282,
+  "phrase": "Trishan house",
+  "reading": "Drishane House",
+  "conf": "high",
+  "link": "pl:castletownshend"
+ },
+ {
+  "line": 282,
+  "phrase": "Castle Townsend",
+  "reading": "Castletownshend",
+  "conf": "high",
+  "link": "pl:castletownshend"
+ },
+ {
+  "line": 290,
+  "phrase": "Bellinger Martha Somerville",
+  "reading": "Bellingham Arthur Somerville",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "line": 296,
+  "phrase": "outrageous",
+  "reading": "\"outrages\"",
+  "conf": "high",
+  "link": "t:outrages"
+ },
+ {
+  "line": 296,
+  "phrase": "In other words, rights",
+  "reading": "in other words, riots",
+  "conf": "high"
+ },
+ {
+  "line": 312,
+  "phrase": "a big mistake. Annual",
+  "reading": "a big estate",
+  "conf": "medium"
+ },
+ {
+  "line": 312,
+  "phrase": "Ballon a tray",
+  "reading": "Ballynatray",
+  "conf": "high",
+  "link": "pl:ballynatray"
+ },
+ {
+  "line": 316,
+  "phrase": "from Cool to your",
+  "reading": "from Cork to Youghal",
+  "conf": "high",
+  "link": "pl:youghal"
+ },
+ {
+  "line": 316,
+  "phrase": "Captain, some of them",
+  "reading": "Captain Somerville",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "line": 318,
+  "phrase": "Hanlon or ohann",
+  "reading": "Patrick Hanlon",
+  "conf": "high",
+  "link": "p:patrick-hanlon"
+ },
+ {
+  "line": 322,
+  "phrase": "Captain Salvador",
+  "reading": "Captain Somerville",
+  "conf": "high"
+ },
+ {
+  "line": 324,
+  "phrase": "summer. Girls",
+  "reading": "Somervilles",
+  "conf": "medium"
+ },
+ {
+  "line": 326,
+  "phrase": "Whitflow",
+  "reading": "Wicklow",
+  "conf": "high",
+  "link": "pl:wicklow-town"
+ },
+ {
+  "line": 326,
+  "phrase": "with Cloud Arc loud",
+  "reading": "Wicklow [and] Arklow",
+  "conf": "medium",
+  "link": "pl:arklow"
+ },
+ {
+  "line": 328,
+  "phrase": "substantial memes",
+  "reading": "substantial means",
+  "conf": "high"
+ },
+ {
+  "line": 330,
+  "phrase": "the robbery",
+  "reading": "the brewery",
+  "conf": "high"
+ },
+ {
+  "line": 330,
+  "phrase": "Benjamaster",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "line": 330,
+  "phrase": "Tennis now",
+  "reading": "Tenison",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "line": 334,
+  "phrase": "So he arrived in Vietnam.",
+  "reading": "So he arrived in Wicklow",
+  "conf": "medium",
+  "note": "Transcript B ¶132: \"So he arrived in Whitcliffe\"."
+ },
+ {
+  "line": 334,
+  "phrase": "Office star area",
+  "reading": "official diary",
+  "conf": "medium"
+ },
+ {
+  "line": 340,
+  "phrase": "No church means.",
+  "reading": "Low Churchman",
+  "conf": "medium",
+  "link": "t:low-church"
+ },
+ {
+  "line": 346,
+  "phrase": "sand test or college",
+  "reading": "Sandhurst, or college",
+  "conf": "high",
+  "link": "t:sandhurst"
+ },
+ {
+  "line": 350,
+  "phrase": "outside climate",
+  "reading": "outside Clermont",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "line": 350,
+  "phrase": "John Madden",
+  "reading": "Clonmannon",
+  "conf": "medium",
+  "link": "pl:clonmannon"
+ },
+ {
+  "line": 356,
+  "phrase": "Alarm at training College",
+  "reading": "a military training college",
+  "conf": "medium"
+ },
+ {
+  "line": 356,
+  "phrase": "More scene",
+  "reading": "the front (?)",
+  "conf": "low"
+ },
+ {
+  "line": 356,
+  "phrase": "passchendale",
+  "reading": "Passchendaele",
+  "conf": "high",
+  "link": "pl:passchendaele"
+ },
+ {
+  "line": 358,
+  "phrase": "World Warwick Show, Regiment",
+  "reading": "Royal Warwickshire Regiment",
+  "conf": "high",
+  "link": "t:royal-warwickshire"
+ },
+ {
+  "line": 360,
+  "phrase": "up Patrol",
+  "reading": "up, Pat or Paddy, or Gualter",
+  "conf": "medium",
+  "link": "p:pat",
+  "note": "Transcript B ¶142: \"his next brother up, Pat or Paddy, or Coulter\"."
+ },
+ {
+  "line": 360,
+  "phrase": "the Irishman in the restaurant",
+  "reading": "the Irishman in the regiment",
+  "conf": "high"
+ },
+ {
+  "line": 362,
+  "phrase": "Warwicks arrangement",
+  "reading": "Warwickshire Regiment",
+  "conf": "high"
+ },
+ {
+  "line": 366,
+  "phrase": "Ghana",
+  "reading": "gunner",
+  "conf": "high",
+  "link": "t:gunners"
+ },
+ {
+  "line": 370,
+  "phrase": "An 80. From County Cork",
+  "reading": "a lady from County Cork",
+  "conf": "medium"
+ },
+ {
+  "line": 374,
+  "phrase": "pantry",
+  "reading": "Bantry",
+  "conf": "high",
+  "link": "pl:bantry-glengarriff"
+ },
+ {
+  "line": 374,
+  "phrase": "Green desert",
+  "reading": "Reendesert (Bantry)",
+  "conf": "medium",
+  "link": "pl:bantry-glengarriff",
+  "note": "Both transcripts hear \"Green desert\"; a compiled genealogy gives Reendesert Lodge, Bantry."
+ },
+ {
+  "line": 374,
+  "phrase": "Glengariff",
+  "reading": "Glengarriff",
+  "conf": "high"
+ },
+ {
+  "line": 378,
+  "phrase": "Aquaman died of cancer",
+  "reading": "unclear (\"…who died of cancer\")",
+  "conf": "low"
+ },
+ {
+  "line": 386,
+  "phrase": "at planned",
+  "reading": "at Clermont",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "line": 388,
+  "phrase": "buried in Matthew",
+  "reading": "buried in Rathnew",
+  "conf": "medium",
+  "link": "pl:rathnew",
+  "note": "Transcript B ¶151: \"he's buried in Rathnew\"."
+ },
+ {
+  "line": 394,
+  "phrase": "Royal Workshops",
+  "reading": "Royal Warwickshires",
+  "conf": "high",
+  "link": "t:royal-warwickshire"
+ },
+ {
+  "line": 446,
+  "phrase": "Holland",
+  "reading": "the Netherlands (neutral in WWI)",
+  "conf": "high",
+  "link": "pl:holland"
+ },
+ {
+  "line": 450,
+  "phrase": "I dig up the MC",
+  "reading": "he got the MC",
+  "conf": "high",
+  "link": "t:military-cross"
+ },
+ {
+  "line": 462,
+  "phrase": "atterbury",
+  "reading": "Adderbury",
+  "conf": "medium",
+  "link": "pl:adderbury"
+ },
+ {
+  "line": 468,
+  "phrase": "an indoor most",
+  "reading": "in India most",
+  "conf": "high",
+  "link": "pl:india"
+ },
+ {
+  "line": 472,
+  "phrase": "corks animals",
+  "reading": "Cork Somervilles",
+  "conf": "high",
+  "link": "t:cork-somervilles"
+ },
+ {
+  "line": 472,
+  "phrase": "Coke Centervilles",
+  "reading": "Cork Somervilles",
+  "conf": "high",
+  "link": "t:cork-somervilles"
+ },
+ {
+  "line": 472,
+  "phrase": "Thomas Thompson",
+  "reading": "Thomas Somerville (of Drishane)",
+  "conf": "medium",
+  "link": "pl:castletownshend"
+ },
+ {
+  "line": 500,
+  "phrase": "nanuki",
+  "reading": "Nanyuki",
+  "conf": "high",
+  "link": "pl:nanyuki"
+ },
+ {
+  "line": 500,
+  "phrase": "Nairobia",
+  "reading": "Nairobi",
+  "conf": "high"
+ },
+ {
+  "line": 502,
+  "phrase": "aux card",
+  "reading": "ox cart",
+  "conf": "high"
+ },
+ {
+  "line": 506,
+  "phrase": "Morde Moore",
+  "reading": "Maudie Moore",
+  "conf": "high",
+  "link": "p:maud-moore",
+  "note": "Transcript B ¶197: \"Maudie Moore\"."
+ },
+ {
+  "line": 508,
+  "phrase": "County leash",
+  "reading": "County Laois",
+  "conf": "medium",
+  "link": "pl:laois"
+ },
+ {
+  "line": 508,
+  "phrase": "Bonita",
+  "reading": "Juanita",
+  "conf": "high",
+  "link": "p:juanita"
+ },
+ {
+  "line": 512,
+  "phrase": "staying at Diamond",
+  "reading": "staying at Clermont",
+  "conf": "medium",
+  "link": "pl:clermont",
+  "note": "Transcript B ¶200: \"staying at Glamond\"."
+ },
+ {
+  "line": 512,
+  "phrase": "Rector of Wycliffe largeman",
+  "reading": "Rector of Wicklow …",
+  "conf": "medium",
+  "link": "p:rector-johnson"
+ },
+ {
+  "line": 514,
+  "phrase": "Ola Anna. Yes. Honour Johnson",
+  "reading": "Honor. Yes. Honor Johnson",
+  "conf": "medium",
+  "link": "p:honor-johnson"
+ },
+ {
+  "line": 522,
+  "phrase": "France's tench",
+  "reading": "Frances Tench",
+  "conf": "high",
+  "link": "p:frances-tench"
+ },
+ {
+  "line": 526,
+  "phrase": "designed by elections",
+  "reading": "designed by Lutyens",
+  "conf": "high",
+  "link": "pl:war-memorial-gardens",
+  "note": "Transcript B ¶207 names Lutyens."
+ },
+ {
+  "line": 530,
+  "phrase": "our dress",
+  "reading": "Ardrass",
+  "conf": "high",
+  "link": "pl:ardrass"
+ },
+ {
+  "line": 530,
+  "phrase": "Clement's still up",
+  "reading": "Clermont's still up",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "line": 538,
+  "phrase": "Hunters",
+  "reading": "Hunter's Hotel, Rathnew",
+  "conf": "medium",
+  "link": "pl:rathnew"
+ },
+ {
+  "line": 546,
+  "phrase": "how did Clement who sold it",
+  "reading": "how did Clermont [get] sold",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "line": 548,
+  "phrase": "Holy English",
+  "reading": "wholly English",
+  "conf": "high"
+ },
+ {
+  "line": 554,
+  "phrase": "ownership of government",
+  "reading": "ownership of Clermont",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "line": 560,
+  "phrase": "Anchorman's, Uncle band",
+  "reading": "Uncle Bunt's … Uncle Bunt",
+  "conf": "medium",
+  "link": "p:bunt"
+ },
+ {
+  "line": 572,
+  "phrase": "Came dweckler",
+  "reading": "came to Wicklow",
+  "conf": "high",
+  "link": "pl:wicklow-town"
+ },
+ {
+  "line": 574,
+  "phrase": "born on Clement",
+  "reading": "born at Clermont",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "line": 574,
+  "phrase": "Like a little Totten them",
+  "reading": "by a Colonel Tottenham",
+  "conf": "medium",
+  "link": "p:colonel-tottenham"
+ },
+ {
+  "line": 582,
+  "phrase": "resnew",
+  "reading": "Rathnew",
+  "conf": "high",
+  "link": "pl:rathnew"
+ },
+ {
+  "line": 586,
+  "phrase": "golighter",
+  "reading": "gauleiter (a joke)",
+  "conf": "high",
+  "link": "t:gauleiter"
+ },
+ {
+  "line": 602,
+  "phrase": "Royal Irish conseborough",
+  "reading": "Royal Irish Constabulary",
+  "conf": "high",
+  "link": "t:ric"
+ },
+ {
+  "line": 602,
+  "phrase": "great fire of cork",
+  "reading": "the Burning of Cork (1920)",
+  "conf": "high",
+  "link": "e:ev-burning-cork"
+ },
+ {
+  "t": "T1",
+  "line": 294,
+  "phrase": "uternards",
+  "reading": "Newtownards",
+  "conf": "high",
+  "link": "pl:newtownards",
+  "note": "Transcript B ¶116: \"Newtonards\"."
+ },
+ {
+  "t": "T1",
+  "line": 322,
+  "phrase": "there is no great formally accredited",
+  "reading": "he was never formally acquitted",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville",
+  "note": "Transcript B ¶127: \"I think that's correct to say that he was never formally acquitted\"."
+ },
+ {
+  "t": "T1",
+  "line": 334,
+  "phrase": "Unfortunate enough to have",
+  "reading": "fortunate enough to have",
+  "conf": "medium",
+  "note": "Transcript B ¶133: \"I'm fortunate enough to have both his office diary and his personal diary\"."
+ },
+ {
+  "t": "T1",
+  "line": 344,
+  "phrase": "smarty places",
+  "reading": "smutty places",
+  "conf": "medium",
+  "note": "Transcript B ¶136: \"schools were smutty places\"."
+ },
+ {
+  "t": "T1",
+  "line": 360,
+  "phrase": "Penny",
+  "reading": "Paddy",
+  "conf": "high",
+  "link": "p:pat",
+  "note": "Transcript B ¶142: \"we as a family have always called him Paddy\"."
+ },
+ {
+  "t": "T1",
+  "line": 388,
+  "phrase": "sinking and buying a little house",
+  "reading": "thinking of buying a little house [near Glenealy]",
+  "conf": "medium",
+  "link": "pl:glenealy",
+  "note": "Transcript B ¶151: \"He was thinking of buying a little house near Glanile\"."
+ },
+ {
+  "t": "T1",
+  "line": 260,
+  "phrase": "Uncle Jordan",
+  "reading": "Uncle Jordan (A) / Uncle John (B)",
+  "conf": "low",
+  "link": "qn:q-uncle-jordan",
+  "note": "Transcript B ¶103: \"Uncle John, as he was to me\"."
+ },
+ {
+  "t": "T1",
+  "line": 506,
+  "phrase": "grace studs",
+  "reading": "from Greystones? (B: \"Greystokes\")",
+  "conf": "low",
+  "link": "pl:greystones",
+  "note": "Transcript B ¶197: \"a girl from Greystokes\"."
+ },
+ {
+  "t": "T1",
+  "line": 504,
+  "phrase": "Long way from UK",
+  "reading": "a long way from Nanyuki?",
+  "conf": "low",
+  "link": "qn:q-kenya-farm",
+  "note": "Transcript B ¶197: \"a long way from Nanyuki\"."
+ },
+ {
+  "t": "T1",
+  "line": 528,
+  "phrase": "all medicine. Um, things",
+  "reading": "all medals and things",
+  "conf": "medium",
+  "note": "Transcript B ¶208: \"he said all medals and things are all stored in these pillars\"."
+ },
+ {
+  "t": "T1",
+  "line": 566,
+  "phrase": "253",
+  "reading": "garbled: perhaps '52, '53",
+  "conf": "low",
+  "link": "qn:q-clermont-sale-date",
+  "note": "Transcript B ¶225 has \"2.53\" here."
+ },
+ {
+  "t": "T1",
+  "line": 520,
+  "phrase": "Philip Philip, honour was my mother. It's my grandfather.",
+  "reading": "Philip. Honor was my mother. Philip was my grandfather.",
+  "conf": "high",
+  "link": "p:rector-johnson",
+  "note": "Transcript B ¶203."
+ },
+ {
+  "t": "T1",
+  "line": 236,
+  "phrase": "He was an officer.",
+  "reading": "He was not an officer.",
+  "conf": "medium",
+  "note": "Transcript B ¶95: \"Yes, he was not an officer\"."
+ },
+ {
+  "t": "T1",
+  "line": 62,
+  "phrase": "Most of them. Island.",
+  "reading": "Most of them in Ireland, or what is Northern Ireland.",
+  "conf": "high",
+  "note": "Transcript B ¶31."
+ },
+ {
+  "t": "T1",
+  "line": 382,
+  "phrase": "it was to get that. If they didn't want it, just to cut a wrench.",
+  "reading": "to Pat. If he didn't want it, it was to go to Reggie.",
+  "conf": "medium",
+  "link": "e:ev-will",
+  "note": "Transcript B ¶149–150 gives the full order: Bunt, Jim, Pat, Reggie."
+ },
+ {
+  "t": "T2",
+  "line": 2,
+  "phrase": "fire in the forecourts",
+  "reading": "the fire in the Four Courts (1922)",
+  "conf": "high",
+  "link": "e:ev-four-courts"
+ },
+ {
+  "t": "T2",
+  "line": 7,
+  "phrase": "Tennyson. Alan Somerville",
+  "reading": "Tenison Alan Somerville",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville",
+  "note": "Both transcripts spell it \"Tennyson\", the speech-to-text default; Tenison is the probable spelling."
+ },
+ {
+  "t": "T2",
+  "line": 12,
+  "phrase": "Fighting Atty",
+  "reading": "nickname of Bellingham Arthur (Atty = Arthur)",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "t": "T2",
+  "line": 14,
+  "phrase": "Aldous Bellingham who was Alan Bellingham",
+  "reading": "the eldest Bellingham, who was Alan Bellingham",
+  "conf": "medium",
+  "link": "p:alan-bellingham-1773"
+ },
+ {
+  "t": "T2",
+  "line": 15,
+  "phrase": "Monique Babet",
+  "reading": "Monique Bâby",
+  "conf": "high",
+  "link": "p:monique-baby"
+ },
+ {
+  "t": "T2",
+  "line": 18,
+  "phrase": "Monique Babé",
+  "reading": "Monique Bâby",
+  "conf": "high",
+  "link": "p:monique-baby"
+ },
+ {
+  "t": "T2",
+  "line": 19,
+  "phrase": "Sir William Benjamin",
+  "reading": "Sir William Bellingham",
+  "conf": "high",
+  "link": "p:sir-william-bellingham"
+ },
+ {
+  "t": "T2",
+  "line": 20,
+  "phrase": "Monique Babel",
+  "reading": "Monique Bâby",
+  "conf": "high",
+  "link": "p:monique-baby"
+ },
+ {
+  "t": "T2",
+  "line": 21,
+  "phrase": "in Devonland",
+  "reading": "in the West Country (Lyme Regis, Dorset)",
+  "conf": "low",
+  "link": "pl:lyme-regis",
+  "note": "Possibly \"in England\" (transcript A: \"indefinland\")."
+ },
+ {
+  "t": "T2",
+  "line": 22,
+  "phrase": "Badajos",
+  "reading": "Badajoz",
+  "conf": "high",
+  "link": "pl:badajoz"
+ },
+ {
+  "t": "T2",
+  "line": 22,
+  "phrase": "Henry Ballinger",
+  "reading": "Henry (Tenison) Bellingham",
+  "conf": "high",
+  "link": "p:henry-tenison-bellingham"
+ },
+ {
+  "t": "T2",
+  "line": 41,
+  "phrase": "Ardras, A-R-D-R-A-S-S",
+  "reading": "Ardrass (spelled aloud)",
+  "conf": "high",
+  "link": "pl:ardrass"
+ },
+ {
+  "t": "T2",
+  "line": 42,
+  "phrase": "Captain William Salvo",
+  "reading": "Captain William Somerville",
+  "conf": "high",
+  "link": "p:captain-william-somerville"
+ },
+ {
+  "t": "T2",
+  "line": 44,
+  "phrase": "Selbridge",
+  "reading": "Celbridge",
+  "conf": "high",
+  "link": "pl:ardrass"
+ },
+ {
+  "t": "T2",
+  "line": 45,
+  "phrase": "Lucan and Selbridge",
+  "reading": "Lucan and Celbridge",
+  "conf": "high",
+  "link": "pl:ardrass"
+ },
+ {
+  "t": "T2",
+  "line": 48,
+  "phrase": "the Brook family",
+  "reading": "the Brooke family",
+  "conf": "medium",
+  "link": "pl:brooke-ulster"
+ },
+ {
+  "t": "T2",
+  "line": 50,
+  "phrase": "Elizabeth Brakey",
+  "reading": "Elizabeth Brakey / Breakey",
+  "conf": "medium",
+  "link": "p:elizabeth-breakey",
+  "note": "Transcript A hears \"Breaky\"."
+ },
+ {
+  "t": "T2",
+  "line": 51,
+  "phrase": "a servant girl in the Somerville household",
+  "reading": "a servant girl in the Somerville household (A: \"in some household\")",
+  "conf": "low",
+  "link": "qn:q-brakey-household",
+  "note": "The transcripts disagree; no audio to settle it."
+ },
+ {
+  "t": "T2",
+  "line": 51,
+  "phrase": "living in County Monaghan for 19 years",
+  "reading": "living in County Monaghan for 19 years (or: Archibald was about 19)",
+  "conf": "low",
+  "link": "qn:q-monaghan-years"
+ },
+ {
+  "t": "T2",
+  "line": 53,
+  "phrase": "William Padlew",
+  "reading": "unidentified (interviewer's online tree)",
+  "conf": "low",
+  "link": "qn:q-ancestry-williams"
+ },
+ {
+  "t": "T2",
+  "line": 54,
+  "phrase": "a journal called Crips",
+  "reading": "\"Crisp's\" (probably Howard & Crisp's Visitation of Ireland)",
+  "conf": "medium",
+  "link": "t:crisps-visitation"
+ },
+ {
+  "t": "T2",
+  "line": 56,
+  "phrase": "This is Corrie",
+  "reading": "Corry / Corrie",
+  "conf": "medium",
+  "link": "p:corry-somerville"
+ },
+ {
+  "t": "T2",
+  "line": 57,
+  "phrase": "he consulted with a girl",
+  "reading": "he consorted with a girl",
+  "conf": "high",
+  "link": "p:elizabeth-breakey"
+ },
+ {
+  "t": "T2",
+  "line": 62,
+  "phrase": "Cymru, C-U-M-R-Y, C-U-M-R-Y",
+  "reading": "Cumry (the software substituted the Welsh word Cymru)",
+  "conf": "high",
+  "link": "pl:cumry"
+ },
+ {
+  "t": "T2",
+  "line": 69,
+  "phrase": "Eliza Mellingham",
+  "reading": "Eliza Bellingham",
+  "conf": "high",
+  "link": "p:eliza-bellingham"
+ },
+ {
+  "t": "T2",
+  "line": 75,
+  "phrase": "Lucinda Simonton",
+  "reading": "Lucinda Simmonton",
+  "conf": "medium",
+  "link": "p:lucinda-simmonton",
+  "note": "Spelling Simmonton from a compiled genealogy."
+ },
+ {
+  "t": "T2",
+  "line": 77,
+  "phrase": "Bell Turbot",
+  "reading": "Belturbet",
+  "conf": "high",
+  "link": "pl:farm-cavan"
+ },
+ {
+  "t": "T2",
+  "line": 86,
+  "phrase": "It was like the RUC.",
+  "reading": "a comparison with the later RUC (probably genuine)",
+  "conf": "medium",
+  "link": "t:ruc"
+ },
+ {
+  "t": "T2",
+  "line": 86,
+  "phrase": "an officer of the RUC",
+  "reading": "an officer of the RIC",
+  "conf": "high",
+  "link": "t:ric",
+  "note": "The RUC did not exist until 1922."
+ },
+ {
+  "t": "T2",
+  "line": 87,
+  "phrase": "Linster Avenue",
+  "reading": "Leinster Avenue / Leinster Road?",
+  "conf": "low",
+  "link": "qn:q-livingston",
+  "note": "Transcript A: \"Livingston Avenue\"."
+ },
+ {
+  "t": "T2",
+  "line": 88,
+  "phrase": "Brathmines",
+  "reading": "Rathmines",
+  "conf": "high",
+  "link": "pl:rathmines"
+ },
+ {
+  "t": "T2",
+  "line": 89,
+  "phrase": "Veer Demerly",
+  "reading": "Vere de Merlie",
+  "conf": "high",
+  "link": "p:vere-somerville",
+  "note": "Vere Frances de Merlie Bellingham Somerville (compiled genealogy)."
+ },
+ {
+  "t": "T2",
+  "line": 91,
+  "phrase": "Galter, Hugh, Roger, Bellingham, some of them",
+  "reading": "Gualter Hugh Roger Bellingham Somerville",
+  "conf": "high",
+  "link": "p:pat"
+ },
+ {
+  "t": "T2",
+  "line": 94,
+  "phrase": "who was actually her father. That's Benjamin Arthur's solicitor",
+  "reading": "who was actually her father's — that's Bellingham Arthur's — solicitor",
+  "conf": "medium",
+  "link": "p:henry-rock",
+  "note": "The sentence break could be misread as making Henry Rook her father."
+ },
+ {
+  "t": "T2",
+  "line": 95,
+  "phrase": "Bill and Jo Arthur",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "t": "T2",
+  "line": 95,
+  "phrase": "Margaret Hall, clench",
+  "reading": "Margaret Hall Clinch",
+  "conf": "high",
+  "link": "p:margaret-hall-clinch"
+ },
+ {
+  "t": "T2",
+  "line": 96,
+  "phrase": "marrying Trey",
+  "reading": "marrying trade",
+  "conf": "high",
+  "link": "t:marrying-trade"
+ },
+ {
+  "t": "T2",
+  "line": 98,
+  "phrase": "born abroad to Upper Claremont",
+  "reading": "brought up at Clermont",
+  "conf": "medium",
+  "link": "pl:clermont"
+ },
+ {
+  "t": "T2",
+  "line": 99,
+  "phrase": "Clonmannan",
+  "reading": "Clonmannon",
+  "conf": "high",
+  "link": "pl:clonmannon"
+ },
+ {
+  "t": "T2",
+  "line": 99,
+  "phrase": "Trull family",
+  "reading": "Truell family",
+  "conf": "high",
+  "link": "t:surname-truell"
+ },
+ {
+  "t": "T2",
+  "line": 100,
+  "phrase": "Llanfmanan",
+  "reading": "Clonmannon",
+  "conf": "high",
+  "link": "pl:clonmannon"
+ },
+ {
+  "t": "T2",
+  "line": 101,
+  "phrase": "Edelin",
+  "reading": "Edeline (Adeline)",
+  "conf": "high",
+  "link": "p:eddie",
+  "note": "A compiled genealogy gives Edeline Botelier Marjorie."
+ },
+ {
+  "t": "T2",
+  "line": 103,
+  "phrase": "Uncle John",
+  "reading": "Uncle John (A: \"Uncle Jordan\")",
+  "conf": "low",
+  "link": "qn:q-uncle-jordan"
+ },
+ {
+  "t": "T2",
+  "line": 113,
+  "phrase": "Drishan House down at Castle Townsend",
+  "reading": "Drishane House, Castletownshend",
+  "conf": "high",
+  "link": "pl:castletownshend"
+ },
+ {
+  "t": "T2",
+  "line": 116,
+  "phrase": "Newtonards",
+  "reading": "Newtownards",
+  "conf": "high",
+  "link": "pl:newtownards"
+ },
+ {
+  "t": "T2",
+  "line": 118,
+  "phrase": "a riot at Yall",
+  "reading": "a riot at Youghal",
+  "conf": "high",
+  "link": "pl:youghal"
+ },
+ {
+  "t": "T2",
+  "line": 119,
+  "phrase": "is from York",
+  "reading": "is from Youghal",
+  "conf": "medium",
+  "link": "pl:youghal"
+ },
+ {
+  "t": "T2",
+  "line": 123,
+  "phrase": "a riot in Yule",
+  "reading": "a riot in Youghal",
+  "conf": "high",
+  "link": "pl:youghal"
+ },
+ {
+  "t": "T2",
+  "line": 123,
+  "phrase": "a big estate in Yule",
+  "reading": "a big estate at Youghal (Ballynatray, named in transcript A)",
+  "conf": "medium",
+  "link": "pl:ballynatray"
+ },
+ {
+  "t": "T2",
+  "line": 124,
+  "phrase": "over fishing in York",
+  "reading": "over fishing in Youghal",
+  "conf": "high",
+  "link": "pl:youghal"
+ },
+ {
+  "t": "T2",
+  "line": 125,
+  "phrase": "from corp to your",
+  "reading": "from Cork to Youghal",
+  "conf": "high",
+  "link": "pl:youghal"
+ },
+ {
+  "t": "T2",
+  "line": 125,
+  "phrase": "Hanlon or Ohanlon",
+  "reading": "Patrick Hanlon",
+  "conf": "high",
+  "link": "p:patrick-hanlon"
+ },
+ {
+  "t": "T2",
+  "line": 130,
+  "phrase": "Margaret Hall Lynch",
+  "reading": "Margaret Hall Clinch",
+  "conf": "high",
+  "link": "p:margaret-hall-clinch"
+ },
+ {
+  "t": "T2",
+  "line": 132,
+  "phrase": "arrived in Whitcliffe",
+  "reading": "arrived in Wicklow",
+  "conf": "high",
+  "link": "pl:wicklow-town"
+ },
+ {
+  "t": "T2",
+  "line": 139,
+  "phrase": "Dunmannan",
+  "reading": "Clonmannon",
+  "conf": "medium",
+  "link": "pl:clonmannon"
+ },
+ {
+  "t": "T2",
+  "line": 142,
+  "phrase": "or Coulter",
+  "reading": "or Gualter",
+  "conf": "medium",
+  "link": "p:pat"
+ },
+ {
+  "t": "T2",
+  "line": 147,
+  "phrase": "Green Desert",
+  "reading": "Reendesert",
+  "conf": "medium",
+  "link": "pl:bantry-glengarriff"
+ },
+ {
+  "t": "T2",
+  "line": 147,
+  "phrase": "Lengariff",
+  "reading": "Glengarriff",
+  "conf": "high"
+ },
+ {
+  "t": "T2",
+  "line": 148,
+  "phrase": "Uncle Munt",
+  "reading": "Uncle Bunt",
+  "conf": "high",
+  "link": "p:bunt"
+ },
+ {
+  "t": "T2",
+  "line": 150,
+  "phrase": "to go to Ritchie",
+  "reading": "to go to Reggie",
+  "conf": "medium",
+  "link": "p:reginald-somerville"
+ },
+ {
+  "t": "T2",
+  "line": 151,
+  "phrase": "Clarend",
+  "reading": "Clermont",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "t": "T2",
+  "line": 151,
+  "phrase": "Glanile",
+  "reading": "Glenealy",
+  "conf": "medium",
+  "link": "pl:glenealy"
+ },
+ {
+  "t": "T2",
+  "line": 153,
+  "phrase": "Andrew was during the Second World War",
+  "reading": "unclear (perhaps \"And Jim was, during the Second World War\")",
+  "conf": "low"
+ },
+ {
+  "t": "T2",
+  "line": 182,
+  "phrase": "Bellinger Martha",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "t": "T2",
+  "line": 183,
+  "phrase": "Corkshamables",
+  "reading": "Cork Somervilles",
+  "conf": "high",
+  "link": "t:cork-somervilles"
+ },
+ {
+  "t": "T2",
+  "line": 184,
+  "phrase": "Dreshawn House",
+  "reading": "Drishane House",
+  "conf": "high",
+  "link": "pl:castletownshend"
+ },
+ {
+  "t": "T2",
+  "line": 195,
+  "phrase": "Nanuki",
+  "reading": "Nanyuki",
+  "conf": "high",
+  "link": "pl:nanyuki"
+ },
+ {
+  "t": "T2",
+  "line": 197,
+  "phrase": "Greystokes",
+  "reading": "Greystones?",
+  "conf": "low",
+  "link": "pl:greystones"
+ },
+ {
+  "t": "T2",
+  "line": 197,
+  "phrase": "County Leash",
+  "reading": "County Laois",
+  "conf": "high",
+  "link": "pl:laois"
+ },
+ {
+  "t": "T2",
+  "line": 200,
+  "phrase": "staying at Glamond",
+  "reading": "staying at Clermont",
+  "conf": "medium",
+  "link": "pl:clermont"
+ },
+ {
+  "t": "T2",
+  "line": 205,
+  "phrase": "Francis tension",
+  "reading": "Frances Tench",
+  "conf": "medium",
+  "link": "p:frances-tench"
+ },
+ {
+  "t": "T2",
+  "line": 209,
+  "phrase": "our dress",
+  "reading": "Ardrass",
+  "conf": "high",
+  "link": "pl:ardrass"
+ },
+ {
+  "t": "T2",
+  "line": 209,
+  "phrase": "Clement's still up",
+  "reading": "Clermont's still up",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "t": "T2",
+  "line": 210,
+  "phrase": "Carlo",
+  "reading": "Carlow",
+  "conf": "high"
+ },
+ {
+  "t": "T2",
+  "line": 211,
+  "phrase": "built on Clem",
+  "reading": "built on Clermont [land]",
+  "conf": "medium",
+  "link": "pl:clermont"
+ },
+ {
+  "t": "T2",
+  "line": 223,
+  "phrase": "Uncle Bud's widow",
+  "reading": "Uncle Bunt's widow",
+  "conf": "high",
+  "link": "p:kitty-harrison"
+ },
+ {
+  "t": "T2",
+  "line": 225,
+  "phrase": "2.53",
+  "reading": "garbled date fragment (perhaps '52, '53)",
+  "conf": "low",
+  "link": "qn:q-clermont-sale-date",
+  "note": "Transcript A has \"253\" at the same point."
+ },
+ {
+  "t": "T2",
+  "line": 227,
+  "phrase": "Andrew Martha",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "t": "T2",
+  "line": 234,
+  "phrase": "Gowliter",
+  "reading": "gauleiter (a joke)",
+  "conf": "high",
+  "link": "t:gauleiter"
+ },
+ {
+  "t": "T2",
+  "line": 242,
+  "phrase": "Royal Irish Conservatory",
+  "reading": "Royal Irish Constabulary",
+  "conf": "high",
+  "link": "t:ric"
+ },
+ {
+  "t": "T2",
+  "line": 242,
+  "phrase": "Great Fire of Cork",
+  "reading": "the Burning of Cork (1920)",
+  "conf": "high",
+  "link": "e:ev-burning-cork"
+ },
+ {
+  "t": "T2",
+  "line": 243,
+  "phrase": "That was the time of the Civil War.",
+  "reading": "(a slip: the Burning of Cork was in the War of Independence)",
+  "conf": "medium",
+  "link": "e:ev-burning-cork"
+ }
 ]

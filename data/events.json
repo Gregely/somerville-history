@@ -1,173 +1,1839 @@
 [
-  { "id": "ev-sir-james-mayor", "year": 1736, "display": "1736–37", "kind": "context", "title": "Sir James Somerville is Lord Mayor of Dublin",
-    "desc": "James Somerville, MP for Dublin City since 1729, serves as Lord Mayor {s:wp-sir-james-somerville}.",
-    "people": ["james-somerville-1bt"], "places": ["dublin"], "status": "record", "conf": "high" },
-  { "id": "ev-baronetcy", "year": 1748, "month": 2, "day": 14, "display": "14 Feb 1748", "kind": "family", "title": "Somerville baronetcy created",
-    "desc": "James Somerville is created a baronet \"of Somerville, Co. Meath\"; he dies that August and is succeeded by his eldest son Quaile {s:wp-sir-james-somerville}. The narrator's \"first baronet\" {q:84}.",
-    "people": ["james-somerville-1bt", "quaile-somerville-2bt"], "places": ["somerville-meath"], "cite": [84], "status": "record", "conf": "high" },
-  { "id": "ev-ardrass", "year": 1750, "approx": true, "display": "mid-1700s", "kind": "family", "title": "Major William Somerville inherits Ardrass",
-    "desc": "The second son of the first baronet \"inherited an estate in County Kildare called Ardrass … a large house and a lot of land\", let to tenants as was usual {q:84-86}. The NLI pedigree of the Somervilles of Ardrass begins in 1752 {s:nli-ardrass}.",
-    "people": ["major-william-somerville"], "places": ["ardrass"], "cite": [84, 86], "status": "testimony", "conf": "medium" },
-  { "id": "ev-bellingham-tenison-marriage", "year": 1772, "display": "1772", "kind": "family", "title": "Henry Bellingham marries Elizabeth Tenison",
-    "desc": "Eliza Bellingham's parents marry in Dublin {s:lf-bellingham}. The Tenison name will reappear in two generations.",
-    "people": ["henry-bellingham-ltcol", "elizabeth-tenison"], "places": ["dublin"], "status": "record", "conf": "medium" },
-  { "id": "ev-capt-william-born", "year": 1777, "display": "1776/77", "kind": "family", "title": "Captain William Somerville born",
-    "desc": "The narrator: \"he was born in 1777, I think\" {q:62}; the published Bellingham genealogy gives 1776 {s:lf-bellingham}.",
-    "people": ["captain-william-somerville"], "cite": [62], "status": "conflict", "conf": "medium" },
-  { "id": "ev-eliza-born", "year": 1779, "display": "1779", "kind": "family", "title": "Eliza Bellingham born",
-    "desc": "Published date {s:lf-bellingham}.", "people": ["eliza-bellingham"], "places": ["castle-bellingham"], "status": "record", "conf": "medium" },
-  { "id": "ev-alan-monique", "year": 1795, "month": 3, "day": 22, "display": "22 Mar 1795", "kind": "family", "title": "Alan Bellingham marries Monique Bâby at Detroit",
-    "desc": "Eliza's brother Alan, who had gone to Canada as a young man, marries the French-Canadian Monique Bâby {q:30} {s:lf-bellingham}.",
-    "people": ["alan-bellingham-1773", "monique-baby"], "places": ["detroit", "canada"], "cite": [30], "status": "record", "conf": "high" },
-  { "id": "ev-bellingham-baronetcy", "year": 1796, "month": 4, "day": 19, "display": "19 Apr 1796", "kind": "context", "title": "William Bellingham, Pitt's secretary, made a baronet",
-    "desc": "Created baronet \"of Castle Bellingham\" with remainder to his father's heirs {s:wp-bellingham-bt}.",
-    "people": ["sir-william-bellingham"], "places": ["castle-bellingham"], "cite": [38], "status": "record", "conf": "high" },
-  { "id": "ev-1798", "year": 1798, "display": "1798", "kind": "context", "title": "Rebellion of 1798",
-    "desc": "The United Irishmen's rising. The North Cork Militia, one of the regiments Captain William may have served in {q:54-56}, became notorious for its conduct in the rebellion in Wexford {s:wp-irish-militia}.",
-    "people": [], "places": [], "status": "record", "conf": "high" },
-  { "id": "ev-marriage-1800", "year": 1800, "month": 8, "day": 30, "display": "30 Aug 1800", "kind": "family", "title": "Captain William Somerville marries Eliza Bellingham",
-    "desc": "\"He married Eliza Bellingham, I think 1800\" {q:60-62}; the published genealogy gives Roscrea, 30 August 1800 {s:lf-bellingham}. Half his interest in Ardrass goes into the marriage settlement {q:88-90}.",
-    "people": ["captain-william-somerville", "eliza-bellingham"], "places": ["roscrea", "ardrass"], "cite": [60, 62, 88], "status": "testimony", "conf": "high" },
-  { "id": "ev-henry-dies-1800", "year": 1800, "month": 9, "day": 10, "display": "10 Sep 1800", "kind": "family", "title": "Lt-Col. Henry Bellingham dies; Alan inherits Castle Bellingham",
-    "desc": "Published account {s:lf-bellingham}.", "people": ["henry-bellingham-ltcol", "alan-bellingham-1773"], "places": ["castle-bellingham"], "status": "record", "conf": "medium" },
-  { "id": "ev-archibald-born", "year": 1803, "display": "1803", "kind": "family", "title": "Archibald James Somerville born",
-    "desc": "\"He was born in 1803, is it? Yes\" {q:128}.", "people": ["archibald-james-somerville"], "cite": [128], "status": "testimony", "conf": "medium" },
-  { "id": "ev-badajoz", "year": 1812, "month": 4, "day": 6, "display": "6 Apr 1812", "kind": "family", "title": "Henry Tenison Bellingham killed at Badajoz",
-    "desc": "Eliza's younger brother, a captain, is killed in the storming of Badajoz {q:44, 52} {s:lf-bellingham}. Years later Eliza writes on the anniversary that her brother \"was killed on this day, so many years ago\".",
-    "people": ["henry-tenison-bellingham", "eliza-bellingham"], "places": ["badajoz"], "cite": [44, 48, 52], "src": ["wp-badajoz"], "status": "record", "conf": "high" },
-  { "id": "ev-peninsular", "year": 1812, "display": "16 Mar – 6 Apr 1812", "kind": "context", "title": "Siege of Badajoz",
-    "desc": "Wellington's Anglo-Portuguese army besieges and storms the French-held fortress; the assault costs thousands of allied casualties {s:wp-badajoz}. (Waterloo, which the narrator wondered about, was in 1815; the \"War of 1812\" was a separate Anglo-American conflict.)",
-    "people": [], "places": ["badajoz"], "cite": [48], "status": "record", "conf": "high" },
-  { "id": "ev-alan-separates", "year": 1815, "display": "1815", "kind": "family", "title": "Alan and Monique Bellingham separate",
-    "desc": "\"Their marriage was not successful\" {q:40}. Monique settles at Lyme Regis, Alan in London {s:lf-bellingham}.",
-    "people": ["alan-bellingham-1773", "monique-baby"], "places": ["lyme-regis", "london"], "cite": [40, 42], "status": "record", "conf": "medium" },
-  { "id": "ev-castle-bellingham-sold", "year": 1823, "approx": true, "display": "by c. 1824", "kind": "family", "title": "Castle Bellingham passes to Sir William Bellingham",
-    "desc": "Narrator: Alan \"sold it, actually, to his uncle\" {q:36-38}. Published account: Alan had rented the estate to Sir William, and his widow sold the freehold by about 1824 {s:lf-bellingham}.",
-    "people": ["alan-bellingham-1773", "monique-baby", "sir-william-bellingham"], "places": ["castle-bellingham"], "cite": [36, 38], "status": "conflict", "conf": "medium" },
-  { "id": "ev-archibald-leaves", "year": 1823, "month": 2, "display": "Feb 1823", "kind": "family", "title": "Archibald James leaves home for Barbados",
-    "desc": "While Eliza and Dorothea are in Dublin, Archibald, about 19, leaves home, \"spent a few days [in Clonmel?] and then took ship on board the George and Thomas for the Barbados\". He had \"got a girl into the family way\" {q:16-18, 142-150}.",
-    "people": ["archibald-james-somerville", "eliza-bellingham", "dorothea-bellingham", "captain-william-somerville"], "places": ["cumry", "dublin", "clonmel", "barbados"], "cite": [16, 142, 144, 146, 148, 150], "status": "testimony", "conf": "high" },
-  { "id": "ev-little-archie", "year": 1823, "month": 6, "approx": true, "display": "later in 1823", "kind": "family", "title": "Birth of \"little Archie\"",
-    "desc": "Letters arrive from Madeira and Barbados; one names the child Archibald. Captain William and Eliza take responsibility for \"little Archie\", paying a succession of wet nurses {q:154-162}.",
-    "people": ["little-archie", "archibald-james-somerville", "elizabeth-breakey", "captain-william-somerville", "eliza-bellingham"], "places": ["cumry", "ballybay", "madeira", "barbados"], "cite": [154, 156, 160, 162], "status": "testimony", "conf": "high" },
-  { "id": "ev-sir-william-b-dies", "year": 1826, "month": 10, "day": 27, "display": "27 Oct 1826", "kind": "context", "title": "Sir William Bellingham dies",
-    "desc": "Succeeded by his nephew Sir Alan, 2nd Bt, whose line held Castle Bellingham until c. 1956 {s:wp-bellingham-bt}.",
-    "people": ["sir-william-bellingham", "alan-bellingham-2bt"], "places": ["castle-bellingham"], "status": "record", "conf": "high" },
-  { "id": "ev-move-farm", "year": 1828, "approx": true, "display": "after the 1820s", "kind": "family", "title": "The family moves from Cumry to \"Farm\", then to Dublin",
-    "desc": "From Cumry to a house \"just called Farm\" (probably near Belturbet, Co. Cavan) for a few years, then to Bayview Avenue/Crescent, Dublin {q:182-184}. Dates not given.",
-    "people": ["captain-william-somerville", "eliza-bellingham"], "places": ["cumry", "farm-cavan", "bayview"], "cite": [182, 184], "status": "testimony", "conf": "medium" },
-  { "id": "ev-constabulary-1836", "year": 1836, "display": "1836", "kind": "context", "title": "Irish Constabulary formed",
-    "desc": "The Irish Constabulary Act amalgamates the provincial forces into a single armed, centrally controlled Irish Constabulary {s:wp-ric}.",
-    "people": [], "places": ["dublin-castle"], "status": "record", "conf": "high" },
-  { "id": "ev-eliza-dies", "year": 1839, "month": 12, "day": 16, "display": "16 Dec 1839", "kind": "family", "title": "Eliza Somerville (née Bellingham) dies",
-    "desc": "\"Eliza died, 1839\" {q:186}; \"the family then went into decline\" {q:198}. Day from the published genealogy {s:lf-bellingham}.",
-    "people": ["eliza-bellingham"], "places": ["bayview"], "cite": [186, 196, 198], "status": "testimony", "conf": "high" },
-  { "id": "ev-tenison-returns", "year": 1840, "display": "1840", "kind": "family", "title": "Tenison Alan returns from Trinidad",
-    "desc": "After his mother's death he \"returned to Ireland in 1840 … and secured an appointment\", and married Eliza O'Connor {q:204-208}.",
-    "people": ["tenison-alan-somerville", "eliza-oconnor"], "places": ["trinidad", "dublin"], "cite": [204, 208], "status": "testimony", "conf": "high" },
-  { "id": "ev-1844-deaths", "year": 1844, "month": 12, "display": "autumn & Dec 1844", "kind": "family", "title": "Deaths of Bellingham and of Captain William Somerville",
-    "desc": "Father and son had moved to lodgings north of the Liffey. \"Bellingham died in the autumn of 1844, and Captain William died in December 1844\" {q:198-200}.",
-    "people": ["bellingham-somerville", "captain-william-somerville"], "places": ["dublin-lodgings"], "cite": [198, 200], "status": "testimony", "conf": "high" },
-  { "id": "ev-famine", "year": 1845, "display": "1845–1852", "kind": "context", "title": "The Great Famine",
-    "desc": "Potato blight brings famine, mass death and emigration. The narrator does not mention it, but it frames the years in which Tenison Alan built his career at Dublin Castle and his cousin Sir William served as Chief Secretary {s:wp-great-famine} {s:wp-1st-baron}.",
-    "people": [], "places": [], "status": "record", "conf": "high" },
-  { "id": "ev-chief-secretary", "year": 1847, "month": 7, "day": 22, "display": "1847–1852", "kind": "family", "title": "Sir William Somerville is Chief Secretary for Ireland",
-    "desc": "Tenison's \"cousin\" holds the office responsible for Irish administration and police {s:wp-1st-baron}; the narrator credits him with Tenison's Constabulary appointment {q:212-214}.",
-    "people": ["william-meredyth-somerville", "tenison-alan-somerville"], "places": ["dublin-castle"], "cite": [212, 214], "status": "record", "conf": "high" },
-  { "id": "ev-ba-born", "year": 1856, "display": "1856", "kind": "family", "title": "Bellingham Arthur Somerville born",
-    "desc": "\"He was born in '56 … I think it was 1856\" {q:2}.", "people": ["bellingham-arthur-somerville", "tenison-alan-somerville", "eliza-oconnor"], "cite": [2], "status": "testimony", "conf": "high" },
-  { "id": "ev-monique-dies", "year": 1856, "month": 7, "day": 30, "display": "30 Jul 1856", "kind": "family", "title": "Monique Bellingham dies at Lyme Regis",
-    "desc": "Published account {s:lf-bellingham}.", "people": ["monique-baby"], "places": ["lyme-regis"], "status": "record", "conf": "medium" },
-  { "id": "ev-ric-1867", "year": 1867, "display": "1867", "kind": "context", "title": "The Constabulary becomes \"Royal\"",
-    "desc": "After the Fenian Rising of 1867 the Irish Constabulary is granted the prefix \"Royal\" {s:wp-ric}.",
-    "people": [], "places": [], "status": "record", "conf": "high" },
-  { "id": "ev-archibald-dies", "year": 1871, "display": "1871", "kind": "family", "title": "Archibald James Somerville dies (?)",
-    "desc": "\"He died in 1871, I think\" {q:128}. Unverified.", "people": ["archibald-james-somerville"], "cite": [128], "status": "testimony", "conf": "low" },
-  { "id": "ev-bunt-born", "year": 1884, "approx": true, "display": "c. 1884", "kind": "family", "title": "W. A. T. B. (\"Bunt\") Somerville born",
-    "desc": "{q:264}", "people": ["bunt"], "cite": [264], "status": "testimony", "conf": "medium" },
-  { "id": "ev-plan-of-campaign", "year": 1886, "display": "1886–91", "kind": "context", "title": "The Plan of Campaign",
-    "desc": "Tenants on selected estates withhold rent collectively during the agricultural depression; the Ponsonby estate near Youghal is among the first targeted {s:wp-plan-of-campaign} {s:ballymacoda-1887}.",
-    "people": [], "places": ["youghal"], "status": "record", "conf": "high" },
-  { "id": "ev-youghal-1887", "year": 1887, "month": 3, "day": 8, "display": "8 Mar 1887", "kind": "family", "sensitive": true, "title": "The Youghal riot: Patrick Hanlon killed",
-    "desc": "Family account: a riot at Youghal \"got out of hand\"; RIC sent by train from Cork \"under the command of Captain Somerville\"; a rioter \"Hanlon or O'Hann\" killed with a blade; Somerville and the man responsible held and suspended; the matter raised in Parliament; Somerville acquitted and reinstated {q:312-322}. Published accounts: during protests over the arrest of Fr Daniel Keller, the RIC charged with fixed bayonets and Patrick Hanlon, a 30-year-old fisherman from Ballymacoda, was killed by a sword bayonet. The coroner's jury found wilful murder against District Inspector Somerville and Constable Garrett Ward, both taken to Cork gaol; questions were asked in the Commons (18 and 24 March 1887); the Crown entered a nolle prosequi {s:ballymacoda-1887} {s:hansard-1887}. The narrator asked that this story be handled with discretion {q:290}.",
-    "people": ["bellingham-arthur-somerville", "patrick-hanlon"], "places": ["youghal", "cork-city", "ballynatray"], "cite": [290, 312, 316, 318, 320, 322], "src": ["ballymacoda-1887", "hansard-1887"], "status": "record", "conf": "high" },
-  { "id": "ev-wicklow-transfer", "year": 1888, "approx": true, "display": "after 1887", "kind": "family", "title": "Bellingham Arthur transferred to Wicklow",
-    "desc": "With his health poor and his future in the RIC \"questionable\", he applies for a transfer to Wicklow, where he is District Inspector {q:324-328}.",
-    "people": ["bellingham-arthur-somerville"], "places": ["wicklow-town", "arklow"], "cite": [324, 326, 328], "status": "testimony", "conf": "medium" },
-  { "id": "ev-clermont-bought", "year": 1893, "approx": true, "display": "by 1894", "kind": "family", "title": "Bellingham Arthur acquires Clermont",
-    "desc": "Colonel Tottenham buys Clermont at auction and sells it on at cost to Bellingham Arthur, the underbidder {q:574-580}. The house's wings are added in 1894 for \"B A Somerville\" to designs by Sir Thomas Drew {s:wicklowheritage-clermont}.",
-    "people": ["bellingham-arthur-somerville", "colonel-tottenham", "margaret-hall-clinch"], "places": ["clermont", "ballycurry"], "cite": [574, 578, 580], "src": ["wicklowheritage-clermont"], "status": "testimony", "conf": "high" },
-  { "id": "ev-eliza-oconnor-dies", "year": 1895, "approx": true, "display": "c. 1895", "kind": "family", "title": "Eliza O'Connor (Mrs Tenison Somerville) dies",
-    "desc": "Tenison had died first {q:216}. Around this time young Eddie destroys parts of Captain William's diary {q:134}.",
-    "people": ["eliza-oconnor", "tenison-alan-somerville", "eddie"], "places": ["rathmines"], "cite": [134, 216], "status": "testimony", "conf": "medium" },
-  { "id": "ev-reginald-born", "year": 1897, "approx": true, "display": "c. 1897", "kind": "family", "title": "Reginald Somerville born at Clermont",
-    "desc": "The youngest child and the only one born at Clermont; he was 17 when war broke out in 1914 {q:348, 574}.",
-    "people": ["reginald-somerville"], "places": ["clermont"], "cite": [348, 574], "status": "inferred", "conf": "medium" },
-  { "id": "ev-cecil-marries", "year": 1912, "display": "1912", "kind": "family", "title": "Cecilia Somerville marries Henry Rock",
-    "desc": "\"She's finally married in 1912\" {q:246}.", "people": ["cecilia-somerville", "henry-rock"], "cite": [232, 246], "status": "testimony", "conf": "high" },
-  { "id": "ev-mons", "year": 1914, "month": 8, "day": 23, "display": "Aug 1914", "kind": "family", "title": "Pat captured in the retreat from Mons",
-    "desc": "{q:440-442} The BEF fought at Mons on 23 August 1914 and then fell back for two weeks towards the Marne {s:wp-mons} {s:wp-great-retreat}.",
-    "people": ["pat"], "places": ["mons"], "cite": [440, 442], "status": "testimony", "conf": "high" },
-  { "id": "ev-pat-escape", "year": 1915, "approx": true, "display": "date unknown", "kind": "family", "title": "Pat's third escape succeeds",
-    "desc": "After two recaptures he crosses Germany and Holland to London, is disbelieved at the War Office, and receives the Military Cross {q:446-450}. Date not given.",
-    "people": ["pat"], "places": ["germany", "holland", "london"], "cite": [446, 448, 450], "status": "testimony", "conf": "medium" },
-  { "id": "ev-ba-dies", "year": 1916, "display": "1916", "kind": "family", "title": "Bellingham Arthur Somerville dies",
-    "desc": "Of \"the flu that was then going around\"; the narrator rightly doubts it was the Spanish flu {q:2, 10-12}.", "people": ["bellingham-arthur-somerville"], "places": ["clermont"], "cite": [2, 10, 12], "status": "testimony", "conf": "high" },
-  { "id": "ev-reginald-front", "year": 1916, "display": "1916", "kind": "family", "title": "Reginald reaches the front",
-    "desc": "{q:356}", "people": ["reginald-somerville"], "places": [], "cite": [356], "status": "testimony", "conf": "medium" },
-  { "id": "ev-passchendaele", "year": 1917, "month": 7, "day": 31, "display": "Jul–Nov 1917", "kind": "family", "title": "Reginald at Passchendaele",
-    "desc": "A second lieutenant in the Royal Warwickshire Regiment {q:356-358}. The Third Battle of Ypres ran from July to November 1917 {s:wp-passchendaele}.",
-    "people": ["reginald-somerville"], "places": ["passchendaele"], "cite": [356, 358], "status": "testimony", "conf": "high" },
-  { "id": "ev-flu", "year": 1918, "display": "1918–19", "kind": "context", "title": "The influenza pandemic reaches Ireland",
-    "desc": "Three waves (June 1918, October 1918, February 1919) kill over 20,000 people in Ireland {s:dcc-flu}. Bellingham Arthur's death in 1916 predates it {q:10-12}.",
-    "people": [], "places": [], "cite": [10, 12], "status": "record", "conf": "high" },
-  { "id": "ev-archangel", "year": 1919, "month": 5, "day": 26, "display": "Apr–May 1919", "kind": "family", "title": "Bunt commands troops at Archangel",
-    "desc": "\"He commanded a troop that was sent to Archangel … to keep it from falling into the hands of the Bolsheviks\" {q:364}. Lt-Col W.A.T.B. Somerville DSO took command of the 8th (Special) Battalion, Machine Gun Corps on 12 April 1919; it landed at Archangel on 26 May {s:mgc-8bn} {s:wp-north-russia}.",
-    "people": ["bunt"], "places": ["archangel"], "cite": [364], "src": ["mgc-8bn"], "status": "record", "conf": "high" },
-  { "id": "ev-kenya", "year": 1920, "display": "1920", "kind": "family", "title": "Reginald goes to Kenya",
-    "desc": "With \"Gunners Venture\", to manage coffee near Nanyuki; he travels up with an ox cart {q:496-504}.",
-    "people": ["reginald-somerville"], "places": ["nanyuki", "kenya"], "cite": [496, 498, 500, 502], "status": "testimony", "conf": "high" },
-  { "id": "ev-burning-cork", "year": 1920, "month": 12, "day": 11, "display": "11–12 Dec 1920", "kind": "context", "title": "The Burning of Cork",
-    "desc": "Crown forces burn much of Cork city centre during the War of Independence {s:wp-burning-cork}. Raised by the interviewer, not by the family's story {q:602-606}.",
-    "people": [], "places": ["cork-city"], "cite": [602, 606], "status": "record", "conf": "high" },
-  { "id": "ev-four-courts", "year": 1922, "month": 6, "day": 30, "display": "30 Jun 1922", "kind": "context", "title": "Public Record Office destroyed in the Four Courts",
-    "desc": "At the start of the Civil War an explosion and fire destroy the Public Record Office of Ireland and centuries of records, including most 19th-century census returns {s:irishtimes-pro} {s:tcd-beyond2022}. Bellingham Arthur's notes, made before 1916, preserve information from records now lost {q:4}.",
-    "people": ["bellingham-arthur-somerville"], "places": ["four-courts"], "cite": [4, 600], "status": "record", "conf": "high" },
-  { "id": "ev-maud-marriage", "year": 1928, "display": "1928", "kind": "family", "title": "Reginald marries Maud Moore",
-    "desc": "{q:496} {q:506-508}", "people": ["reginald-somerville", "maud-moore"], "places": ["kenya"], "cite": [496, 506, 508], "status": "testimony", "conf": "high" },
-  { "id": "ev-baronetcy-dormant", "year": 1929, "month": 1, "day": 8, "display": "8 Jan 1929", "kind": "family", "title": "Somerville baronetcy becomes dormant",
-    "desc": "The 2nd Baron Athlumney dies without issue; his peerages become extinct and the baronetcy dormant {q:174} {s:wp-2nd-baron}.",
-    "people": ["james-somerville-2nd-baron"], "places": ["somerville-meath"], "cite": [174], "src": ["wp-2nd-baron"], "status": "record", "conf": "high" },
-  { "id": "ev-juanita-born", "year": 1932, "display": "1932", "kind": "family", "title": "Juanita Somerville born in Kenya",
-    "desc": "{q:508}", "people": ["juanita", "reginald-somerville", "maud-moore"], "places": ["kenya"], "cite": [508], "status": "testimony", "conf": "high" },
-  { "id": "ev-maud-dies", "year": 1934, "approx": true, "display": "c. 1934", "kind": "family", "title": "Maud dies on the voyage home",
-    "desc": "Two years after Juanita's birth, travelling home to show her to the family; Reginald \"arrived back in Ireland a widower\" {q:508-510}.",
-    "people": ["maud-moore", "reginald-somerville", "juanita"], "places": [], "cite": [508, 510], "status": "testimony", "conf": "medium" },
-  { "id": "ev-honor-marriage", "year": 1935, "approx": true, "display": "mid-1930s", "kind": "family", "title": "Reginald marries Honor Johnson",
-    "desc": "Childhood friends who met again at Clermont {q:512-514}.", "people": ["reginald-somerville", "honor-johnson"], "places": ["clermont", "wicklow-town"], "cite": [512, 514], "status": "testimony", "conf": "high" },
-  { "id": "ev-narrator-born", "year": 1937, "display": "1937", "kind": "family", "title": "The narrator is born",
-    "desc": "{q:516}", "people": ["narrator", "reginald-somerville", "honor-johnson"], "cite": [516], "status": "testimony", "conf": "high" },
-  { "id": "ev-pat-dies", "year": 1945, "approx": true, "display": "1940s", "kind": "family", "title": "Uncle Pat dies of cancer",
-    "desc": "{q:386} {q:464}", "people": ["pat"], "places": ["adderbury"], "cite": [386, 464], "status": "testimony", "conf": "medium" },
-  { "id": "ev-margaret-dies", "year": 1949, "display": "1949", "kind": "family", "title": "Margaret Somerville (née Clinch) dies",
-    "desc": "Clermont is left empty; Reginald looks after it. Her domicile is disputed between the Irish and English Revenue {q:380, 386, 548}.",
-    "people": ["margaret-hall-clinch", "reginald-somerville"], "places": ["clermont"], "cite": [380, 386, 548], "status": "testimony", "conf": "high" },
-  { "id": "ev-jim-dies", "year": 1950, "display": "1950", "kind": "family", "title": "Uncle Jim dies after a last year at Clermont",
-    "desc": "{q:386} {q:550}", "people": ["jim"], "places": ["clermont", "rathnew"], "cite": [386, 550], "status": "testimony", "conf": "high" },
-  { "id": "ev-bunt-dies", "year": 1951, "approx": true, "display": "c. 1951", "kind": "family", "title": "Uncle Bunt dies months after deciding to live at Clermont",
-    "desc": "{q:552-556}", "people": ["bunt"], "places": ["clermont", "bantry-glengarriff"], "cite": [552, 554, 556], "status": "testimony", "conf": "medium" },
-  { "id": "ev-clermont-dispute", "year": 1952, "approx": true, "display": "c. 1950–53", "kind": "family", "title": "Dispute and sale of Clermont",
-    "desc": "Aunt Eddie threatens action against Bunt's widow over his administration of their mother's estate; after \"peace talks\" half the proceeds go to the rest of the family. The house sells for £10,000 {q:558-566}. A heritage record dates the sale c. 1955 {s:wicklowheritage-clermont}.",
-    "people": ["eddie", "kitty-harrison", "bunt", "reginald-somerville"], "places": ["clermont"], "cite": [558, 560, 562, 564, 566], "status": "testimony", "conf": "medium" },
-  { "id": "ev-ardrass-demolished", "year": 1955, "approx": true, "display": "1950s", "kind": "family", "title": "Ardrass house demolished",
-    "desc": "\"The main house was pulled down in the 1950s\" after a large sale of contents {q:94}.", "people": [], "places": ["ardrass"], "cite": [94], "status": "testimony", "conf": "medium" },
-  { "id": "ev-clermont-convent", "year": 1956, "display": "1956", "kind": "context", "title": "Clermont becomes a convent school",
-    "desc": "The Religious of Christian Education, invited by Archbishop McQuaid, open a school at Clermont; it closes around 2004–05, and the site later becomes a college campus {s:irishaesthete-clermont} {s:wp-rathnew}.",
-    "people": [], "places": ["clermont"], "cite": [532], "status": "record", "conf": "high" },
-  { "id": "ev-ballynatray-sold", "year": 2024, "display": "2024", "kind": "context", "title": "Ballynatray sold, reportedly to Sir James Dyson",
-    "desc": "\"Which now belongs to Mr. Dyson\" {q:312}. Widely reported but not officially confirmed {s:agriland-ballynatray}.",
-    "people": [], "places": ["ballynatray"], "cite": [312], "status": "record", "conf": "medium" },
-  { "id": "ev-recording", "year": 2026, "month": 10, "day": 27, "approx": true, "display": "27 October (year inferred)", "kind": "family", "title": "The conversation is recorded",
-    "desc": "The transcript file is dated 27 October; the narrator is \"coming up to 90\" (born 1937) and it is half-term {q:50, 310}, which points to 2026, though the year is not stated. See {qn:q-recording-date}.",
-    "people": ["narrator", "interviewer"], "places": [], "cite": [50], "status": "inferred", "conf": "medium" }
+ {
+  "id": "ev-sir-james-mayor",
+  "year": 1736,
+  "display": "1736–37",
+  "kind": "context",
+  "title": "Sir James Somerville is Lord Mayor of Dublin",
+  "desc": "James Somerville, MP for Dublin City since 1729, serves as Lord Mayor {s:wp-sir-james-somerville}.",
+  "people": [
+   "james-somerville-1bt"
+  ],
+  "places": [
+   "dublin"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-baronetcy",
+  "year": 1748,
+  "month": 2,
+  "day": 14,
+  "display": "14 Feb 1748",
+  "kind": "family",
+  "title": "Somerville baronetcy created",
+  "desc": "James Somerville is created a baronet \"of Somerville, Co. Meath\"; he dies that August and is succeeded by his eldest son Quaile {s:wp-sir-james-somerville}. The narrator's \"first baronet\" {q:84}.",
+  "people": [
+   "james-somerville-1bt",
+   "quaile-somerville-2bt"
+  ],
+  "places": [
+   "somerville-meath"
+  ],
+  "cite": [
+   84
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-ardrass",
+  "year": 1750,
+  "approx": true,
+  "display": "mid-1700s",
+  "kind": "family",
+  "title": "Major William Somerville inherits Ardrass",
+  "desc": "The second son of the first baronet \"inherited an estate in County Kildare called Ardrass … a large house and a lot of land\", let to tenants as was usual {q:84-86}. The NLI pedigree of the Somervilles of Ardrass begins in 1752 {s:nli-ardrass}.",
+  "people": [
+   "major-william-somerville"
+  ],
+  "places": [
+   "ardrass"
+  ],
+  "cite": [
+   84,
+   86
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-bellingham-tenison-marriage",
+  "year": 1772,
+  "display": "1772",
+  "kind": "family",
+  "title": "Henry Bellingham marries Elizabeth Tenison",
+  "desc": "Eliza Bellingham's parents marry in Dublin {s:lf-bellingham}. The Tenison name will reappear in two generations.",
+  "people": [
+   "henry-bellingham-ltcol",
+   "elizabeth-tenison"
+  ],
+  "places": [
+   "dublin"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-capt-william-born",
+  "year": 1777,
+  "display": "1776/77",
+  "kind": "family",
+  "title": "Captain William Somerville born",
+  "desc": "The narrator: \"he was born in 1777, I think\" {q:62} {q:T2:30}; the published Bellingham genealogy gives 1776 {s:lf-bellingham}, and a compiled genealogy 3 March 1776 {s:winters-p67}.",
+  "people": [
+   "captain-william-somerville"
+  ],
+  "cite": [
+   62,
+   "T2:30"
+  ],
+  "status": "conflict",
+  "conf": "medium",
+  "src": [
+   "lf-bellingham",
+   "winters-p67"
+  ]
+ },
+ {
+  "id": "ev-eliza-born",
+  "year": 1779,
+  "display": "1779",
+  "kind": "family",
+  "title": "Eliza Bellingham born",
+  "desc": "Published date {s:lf-bellingham}; a compiled genealogy gives 5 September 1779, Thomastown, Co. Louth {s:winters-p67}.",
+  "people": [
+   "eliza-bellingham"
+  ],
+  "places": [
+   "castle-bellingham"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-alan-monique",
+  "year": 1795,
+  "month": 3,
+  "day": 22,
+  "display": "22 Mar 1795",
+  "kind": "family",
+  "title": "Alan Bellingham marries Monique Bâby at Detroit",
+  "desc": "Eliza's brother Alan, who had gone to Canada as a young man, marries the French-Canadian Monique Bâby {q:30} {s:lf-bellingham}.",
+  "people": [
+   "alan-bellingham-1773",
+   "monique-baby"
+  ],
+  "places": [
+   "detroit",
+   "canada"
+  ],
+  "cite": [
+   30
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-bellingham-baronetcy",
+  "year": 1796,
+  "month": 4,
+  "day": 19,
+  "display": "19 Apr 1796",
+  "kind": "context",
+  "title": "William Bellingham, Pitt's secretary, made a baronet",
+  "desc": "Created baronet \"of Castle Bellingham\" with remainder to his father's heirs {s:wp-bellingham-bt}.",
+  "people": [
+   "sir-william-bellingham"
+  ],
+  "places": [
+   "castle-bellingham"
+  ],
+  "cite": [
+   38
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-1798",
+  "year": 1798,
+  "display": "1798",
+  "kind": "context",
+  "title": "Rebellion of 1798",
+  "desc": "The United Irishmen's rising. Irish militia regiments, including the North and South Cork regiments in which Captain William may have served {q:54-56} {q:T2:27-28}, saw heavy service in it {s:wp-irish-militia}.",
+  "people": [],
+  "places": [],
+  "status": "record",
+  "conf": "high",
+  "cite": [
+   54,
+   56,
+   "T2:27",
+   "T2:28"
+  ]
+ },
+ {
+  "id": "ev-marriage-1800",
+  "year": 1800,
+  "month": 8,
+  "day": 30,
+  "display": "30 Aug 1800",
+  "kind": "family",
+  "title": "Captain William Somerville marries Eliza Bellingham",
+  "desc": "\"He married Eliza Bellingham, I think 1800\" {q:60-62}; the published genealogy gives Roscrea, 30 August 1800 {s:lf-bellingham}. Half his interest in Ardrass goes into the marriage settlement {q:88-90}.",
+  "people": [
+   "captain-william-somerville",
+   "eliza-bellingham"
+  ],
+  "places": [
+   "roscrea",
+   "ardrass"
+  ],
+  "cite": [
+   60,
+   62,
+   88
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-henry-dies-1800",
+  "year": 1800,
+  "month": 9,
+  "day": 10,
+  "display": "10 Sep 1800",
+  "kind": "family",
+  "title": "Lt-Col. Henry Bellingham dies; Alan inherits Castle Bellingham",
+  "desc": "Published account {s:lf-bellingham}.",
+  "people": [
+   "henry-bellingham-ltcol",
+   "alan-bellingham-1773"
+  ],
+  "places": [
+   "castle-bellingham"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-archibald-born",
+  "year": 1803,
+  "display": "1803",
+  "kind": "family",
+  "title": "Archibald James Somerville born",
+  "desc": "\"He was born in 1803, is it? Yes\" {q:128} {q:T2:57}. A compiled genealogy gives 13 May 1803 {s:winters-p67}.",
+  "people": [
+   "archibald-james-somerville"
+  ],
+  "cite": [
+   128,
+   "T2:57"
+  ],
+  "status": "testimony",
+  "conf": "high",
+  "src": [
+   "winters-p67"
+  ]
+ },
+ {
+  "id": "ev-badajoz",
+  "year": 1812,
+  "month": 4,
+  "day": 6,
+  "display": "6 Apr 1812",
+  "kind": "family",
+  "title": "Henry Tenison Bellingham killed at Badajoz",
+  "desc": "Eliza's younger brother, a captain, is killed in the storming of Badajoz {q:44, 52} {s:lf-bellingham}. Years later Eliza writes on the anniversary that her brother \"was killed on this day, so many years ago\".",
+  "people": [
+   "henry-tenison-bellingham",
+   "eliza-bellingham"
+  ],
+  "places": [
+   "badajoz"
+  ],
+  "cite": [
+   44,
+   48,
+   52
+  ],
+  "src": [
+   "wp-badajoz"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-peninsular",
+  "year": 1812,
+  "display": "16 Mar – 6 Apr 1812",
+  "kind": "context",
+  "title": "Siege of Badajoz",
+  "desc": "Wellington's Anglo-Portuguese army besieges and storms the French-held fortress; the assault costs thousands of allied casualties {s:wp-badajoz}. (Waterloo, which the narrator wondered about, was in 1815; the \"War of 1812\" was a separate Anglo-American conflict.)",
+  "people": [],
+  "places": [
+   "badajoz"
+  ],
+  "cite": [
+   48
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-alan-separates",
+  "year": 1815,
+  "display": "1815",
+  "kind": "family",
+  "title": "Alan and Monique Bellingham separate",
+  "desc": "\"Their marriage was not successful\" {q:40}. Monique settles at Lyme Regis, Alan in London {s:lf-bellingham}.",
+  "people": [
+   "alan-bellingham-1773",
+   "monique-baby"
+  ],
+  "places": [
+   "lyme-regis",
+   "london"
+  ],
+  "cite": [
+   40,
+   42
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-castle-bellingham-sold",
+  "year": 1823,
+  "approx": true,
+  "display": "by c. 1824",
+  "kind": "family",
+  "title": "Castle Bellingham passes to Sir William Bellingham",
+  "desc": "Narrator: Alan \"sold it, actually, to his uncle\" {q:36-38}. Published account: Alan had rented the estate to Sir William, and his widow sold the freehold by about 1824 {s:lf-bellingham}.",
+  "people": [
+   "alan-bellingham-1773",
+   "monique-baby",
+   "sir-william-bellingham"
+  ],
+  "places": [
+   "castle-bellingham"
+  ],
+  "cite": [
+   36,
+   38
+  ],
+  "status": "conflict",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-archibald-leaves",
+  "year": 1823,
+  "month": 2,
+  "display": "Feb 1823",
+  "kind": "family",
+  "title": "Archibald James leaves home for Barbados",
+  "desc": "While \"Eliza and I and Dorothea\" were in Dublin (so transcript B; A omits \"I\"), Archibald, aged 19, left home, \"spent a few days in Clonmel, and then taken ship on board the George and Thomas for the Barbados\". He had \"got a girl into the family way\" {q:16-18} {q:142-150} {q:T2:8-9} {q:T2:63-65}.",
+  "people": [
+   "archibald-james-somerville",
+   "eliza-bellingham",
+   "dorothea-bellingham",
+   "captain-william-somerville"
+  ],
+  "places": [
+   "cumry",
+   "dublin",
+   "clonmel",
+   "barbados"
+  ],
+  "cite": [
+   16,
+   142,
+   144,
+   146,
+   148,
+   150,
+   "T2:8",
+   "T2:63",
+   "T2:64",
+   "T2:65"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-little-archie",
+  "year": 1823,
+  "month": 6,
+  "approx": true,
+  "display": "later in 1823",
+  "kind": "family",
+  "title": "Birth of \"little Archie\"",
+  "desc": "Letters arrive from Madeira and Barbados; one names the child Archibald. Captain William and Eliza take responsibility for \"little Archie\", paying a succession of wet nurses {q:154-162} {q:T2:65-68}.",
+  "people": [
+   "little-archie",
+   "archibald-james-somerville",
+   "elizabeth-breakey",
+   "captain-william-somerville",
+   "eliza-bellingham"
+  ],
+  "places": [
+   "cumry",
+   "ballybay",
+   "madeira",
+   "barbados"
+  ],
+  "cite": [
+   154,
+   156,
+   160,
+   162
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-sir-william-b-dies",
+  "year": 1826,
+  "month": 10,
+  "day": 27,
+  "display": "27 Oct 1826",
+  "kind": "context",
+  "title": "Sir William Bellingham dies",
+  "desc": "Succeeded by his nephew Sir Alan, 2nd Bt, whose line held Castle Bellingham until c. 1956 {s:wp-bellingham-bt}.",
+  "people": [
+   "sir-william-bellingham",
+   "alan-bellingham-2bt"
+  ],
+  "places": [
+   "castle-bellingham"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-move-farm",
+  "year": 1828,
+  "approx": true,
+  "display": "after the 1820s",
+  "kind": "family",
+  "title": "The family moves from Cumry to \"Farm\", then to Dublin",
+  "desc": "From Cumry to a house \"just called Farm\" (probably near Belturbet, Co. Cavan) for a few years, then to Bayview Avenue/Crescent, Dublin {q:182-184}. Dates not given.",
+  "people": [
+   "captain-william-somerville",
+   "eliza-bellingham"
+  ],
+  "places": [
+   "cumry",
+   "farm-cavan",
+   "bayview"
+  ],
+  "cite": [
+   182,
+   184
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-constabulary-1836",
+  "year": 1836,
+  "display": "1836",
+  "kind": "context",
+  "title": "Irish Constabulary formed",
+  "desc": "The Irish Constabulary Act amalgamates the provincial forces into a single armed, centrally controlled Irish Constabulary {s:wp-ric}.",
+  "people": [],
+  "places": [
+   "dublin-castle"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-eliza-dies",
+  "year": 1839,
+  "month": 12,
+  "day": 16,
+  "display": "16 Dec 1839",
+  "kind": "family",
+  "title": "Eliza Somerville (née Bellingham) dies",
+  "desc": "\"Eliza died, 1839\" {q:186}; \"the family then went into decline\" {q:198}. Day from the published genealogy {s:lf-bellingham}.",
+  "people": [
+   "eliza-bellingham"
+  ],
+  "places": [
+   "bayview"
+  ],
+  "cite": [
+   186,
+   196,
+   198
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-tenison-returns",
+  "year": 1840,
+  "display": "1840",
+  "kind": "family",
+  "title": "Tenison Alan returns from Trinidad",
+  "desc": "After his mother's death he \"returned to Ireland in 1840 … and secured an appointment. They were always looking for appointments, particularly in the West Indies\" {q:204} {q:T2:83}.",
+  "people": [
+   "tenison-alan-somerville",
+   "eliza-oconnor"
+  ],
+  "places": [
+   "trinidad",
+   "dublin"
+  ],
+  "cite": [
+   204,
+   "T2:83"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-1844-deaths",
+  "year": 1844,
+  "month": 12,
+  "display": "autumn & Dec 1844",
+  "kind": "family",
+  "title": "Deaths of Bellingham and of Captain William Somerville",
+  "desc": "Father and son had moved to lodgings north of the Liffey. \"Bellingham died in the autumn of 1844 and Captain William died in December 1844\" {q:198-200} {q:T2:81-82}. A compiled genealogy gives 19 December 1844 for Captain William, and 17 November 1845 for Bellingham, noting that the IGI gives 1844 {s:winters-p67}.",
+  "people": [
+   "bellingham-somerville",
+   "captain-william-somerville"
+  ],
+  "places": [
+   "dublin-lodgings"
+  ],
+  "cite": [
+   198,
+   200,
+   "T2:81",
+   "T2:82"
+  ],
+  "status": "testimony",
+  "conf": "high",
+  "src": [
+   "winters-p67"
+  ]
+ },
+ {
+  "id": "ev-famine",
+  "year": 1845,
+  "display": "1845–1852",
+  "kind": "context",
+  "title": "The Great Famine",
+  "desc": "Potato blight brings famine, mass death and emigration. The narrator does not mention it, but it frames the years in which Tenison Alan built his career at Dublin Castle and his cousin Sir William served as Chief Secretary {s:wp-great-famine} {s:wp-1st-baron}.",
+  "people": [],
+  "places": [],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-chief-secretary",
+  "year": 1847,
+  "month": 7,
+  "day": 22,
+  "display": "1847–1852",
+  "kind": "family",
+  "title": "Sir William Somerville is Chief Secretary for Ireland",
+  "desc": "Tenison's \"cousin\" holds the office that made him, in effect, the minister governing Ireland {s:wp-1st-baron} {s:wp-chief-secretary}; the narrator credits him with Tenison's Constabulary appointment {q:212-214} {q:T2:86-87}.",
+  "people": [
+   "william-meredyth-somerville",
+   "tenison-alan-somerville"
+  ],
+  "places": [
+   "dublin-castle"
+  ],
+  "cite": [
+   212,
+   214,
+   "T2:86",
+   "T2:87"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-ba-born",
+  "year": 1853,
+  "display": "1853 or 1856",
+  "kind": "family",
+  "title": "Bellingham Arthur Somerville born",
+  "desc": "The narrator: \"He was born in 18… It's the year of the Crimean War, anyway. I think it was 1856\" {q:2} {q:T2:1-2}. The IGI, as quoted in a compiled genealogy, gives 17 November 1853, with baptism in Dublin on 16 June 1854 {s:winters-p68}. The Crimean War (1853–56) fits either year.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "tenison-alan-somerville",
+   "eliza-oconnor"
+  ],
+  "cite": [
+   2,
+   "T2:1",
+   "T2:2"
+  ],
+  "status": "conflict",
+  "conf": "medium",
+  "src": [
+   "winters-p68"
+  ]
+ },
+ {
+  "id": "ev-monique-dies",
+  "year": 1856,
+  "month": 7,
+  "day": 30,
+  "display": "30 Jul 1856",
+  "kind": "family",
+  "title": "Monique Bellingham dies at Lyme Regis",
+  "desc": "Published account {s:lf-bellingham}.",
+  "people": [
+   "monique-baby"
+  ],
+  "places": [
+   "lyme-regis"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-ric-1867",
+  "year": 1867,
+  "display": "1867",
+  "kind": "context",
+  "title": "The Constabulary becomes \"Royal\"",
+  "desc": "After the Fenian Rising of 1867 the Irish Constabulary is granted the prefix \"Royal\" {s:wp-ric}.",
+  "people": [],
+  "places": [],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-archibald-dies",
+  "year": 1871,
+  "display": "1871",
+  "kind": "family",
+  "title": "Archibald James Somerville dies (?)",
+  "desc": "\"He died in 1871, I think\" {q:128}. Unverified.",
+  "people": [
+   "archibald-james-somerville"
+  ],
+  "cite": [
+   128
+  ],
+  "status": "testimony",
+  "conf": "low"
+ },
+ {
+  "id": "ev-bunt-born",
+  "year": 1884,
+  "approx": true,
+  "display": "c. 1884",
+  "kind": "family",
+  "title": "W. A. T. B. (\"Bunt\") Somerville born",
+  "desc": "{q:264}",
+  "people": [
+   "bunt"
+  ],
+  "cite": [
+   264
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-plan-of-campaign",
+  "year": 1886,
+  "display": "1886–91",
+  "kind": "context",
+  "title": "The Plan of Campaign",
+  "desc": "Tenants on selected estates withhold rent collectively during the agricultural depression; the Ponsonby estate near Youghal is among the first targeted {s:wp-plan-of-campaign} {s:ballymacoda-1887}.",
+  "people": [],
+  "places": [
+   "youghal"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-youghal-1887",
+  "year": 1887,
+  "month": 3,
+  "day": 8,
+  "display": "8 Mar 1887",
+  "kind": "family",
+  "sensitive": true,
+  "title": "The Youghal riot: Patrick Hanlon killed",
+  "desc": "Family account: a riot at Youghal \"got out of hand\"; RIC were sent by train from Cork \"under the command of Captain Somerville\"; \"some rioter called Hanlon or O'Hanlon\" was killed with a sabre; Somerville and the man responsible were \"had up\", suspended, the matter \"went as far as Parliament\", and he was reinstated but, in the narrator's words, \"never formally acquitted\" {q:312-322} {q:T2:118-127}. Local history: Patrick Hanlon, a 30-year-old fisherman from Ballymacoda, was killed on 8 March 1887 by a sword bayonet when the RIC charged a crowd protesting at the arrest of Fr Daniel Keller (a Plan of Campaign case); the coroner's jury found wilful murder against District Inspector Somerville and Constable Garrett Ward, who were held in Cork; the Crown entered a nolle prosequi {s:ballymacoda-1887}. Hansard: the wilful-murder verdict and custody (24 March) {s:hansard-1887}; on 10 May, \"Sub-Inspector Summerville\" and Ward on bail, on leave with pay, to return to duty, as the Attorney General saw \"no grounds to advise a prosecution\" {s:hansard-1887c}. {int}The records give only the surname; identifying the officer as Bellingham Arthur rests on the family's account. The narrator advised caution in telling this story {q:290} {q:T2:115}; the family has decided to include it.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "patrick-hanlon"
+  ],
+  "places": [
+   "youghal",
+   "cork-city",
+   "ballynatray"
+  ],
+  "cite": [
+   290,
+   312,
+   316,
+   318,
+   320,
+   322,
+   "T2:115",
+   "T2:118",
+   "T2:123",
+   "T2:125",
+   "T2:126",
+   "T2:127"
+  ],
+  "src": [
+   "ballymacoda-1887",
+   "hansard-1887",
+   "hansard-1887c"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-wicklow-transfer",
+  "year": 1888,
+  "approx": true,
+  "display": "after 1887",
+  "kind": "family",
+  "title": "Bellingham Arthur transferred to Wicklow",
+  "desc": "With his health poor and his future in the RIC \"questionable\", he applied for a transfer and \"was transferred to Wicklow … in charge of Wicklow and Arklow … That's how the Somervilles got to Wicklow\" {q:324-328} {q:T2:128-129}. He remained a District Inspector {q:T2:130}.",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "places": [
+   "wicklow-town",
+   "arklow"
+  ],
+  "cite": [
+   324,
+   326,
+   328,
+   "T2:128",
+   "T2:129",
+   "T2:130"
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-clermont-bought",
+  "year": 1893,
+  "approx": true,
+  "display": "by 1894",
+  "kind": "family",
+  "title": "Bellingham Arthur acquires Clermont",
+  "desc": "Colonel Tottenham buys Clermont at auction and sells it on at cost to Bellingham Arthur, the underbidder {q:574-580} {q:T2:228-231}. A heritage summary (seen only in search results) dates the house's wings to 1894, for \"B A Somerville\" {s:wicklowheritage-clermont}. A compiled genealogy records his daughter Dorothy dying at Seaview House, Wicklow, in March 1895 {s:winters-p68}, so the exact year of the move is uncertain.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "colonel-tottenham",
+   "margaret-hall-clinch"
+  ],
+  "places": [
+   "clermont",
+   "ballycurry"
+  ],
+  "cite": [
+   574,
+   578,
+   580
+  ],
+  "src": [
+   "wicklowheritage-clermont",
+   "winters-p68"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-eliza-oconnor-dies",
+  "year": 1895,
+  "approx": true,
+  "display": "c. 1895",
+  "kind": "family",
+  "title": "Eliza O'Connor (Mrs Tenison Somerville) dies",
+  "desc": "\"She died about 1895\", after her husband {q:216} {q:T2:88}. Around this time young Eddie destroyed parts of Captain William's diary {q:134} {q:T2:60-61}.",
+  "people": [
+   "eliza-oconnor",
+   "tenison-alan-somerville",
+   "eddie"
+  ],
+  "places": [
+   "rathmines"
+  ],
+  "cite": [
+   134,
+   216,
+   "T2:60",
+   "T2:88"
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-reginald-born",
+  "year": 1896,
+  "approx": true,
+  "display": "c. 1896–97",
+  "kind": "family",
+  "title": "Reginald Somerville born at Clermont",
+  "desc": "The youngest child and the only one born at Clermont; he was 17 when war broke out in 1914 and \"38 at the time\" of his first wife's death, about 1934 {q:348} {q:510} {q:574} {q:T2:138} {q:T2:199} {q:T2:228}. No birth record has been found.",
+  "people": [
+   "reginald-somerville"
+  ],
+  "places": [
+   "clermont"
+  ],
+  "cite": [
+   348,
+   510,
+   574,
+   "T2:138",
+   "T2:199",
+   "T2:228"
+  ],
+  "status": "inferred",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-cecil-marries",
+  "year": 1912,
+  "display": "1912",
+  "kind": "family",
+  "title": "Cecilia Somerville marries Henry Rook",
+  "desc": "\"She finally married in 1912\" {q:246} {q:T2:98}.",
+  "people": [
+   "cecilia-somerville",
+   "henry-rock"
+  ],
+  "cite": [
+   232,
+   246,
+   "T2:94",
+   "T2:98"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-mons",
+  "year": 1914,
+  "month": 8,
+  "day": 23,
+  "display": "1914",
+  "kind": "family",
+  "title": "Pat taken prisoner (1914)",
+  "desc": "The narrator: \"in the retreat from Mons, Uncle Paddy was captured\" {q:440-442} {q:T2:170}. The BEF fought at Mons on 23 August 1914 and then fell back {s:wp-mons} {s:wp-great-retreat}. Other accounts (a family-derived article; prisoner records seen only in search results) place his capture with the 2nd Battalion at Zonnebeke near Ypres in October 1914 {s:clarke-sense-of-duty} {s:genealogist-pow}; the 2nd Battalion landed at Zeebrugge that month {s:wp-royal-warwick}. See {qn:q-pat-capture}.",
+  "people": [
+   "pat"
+  ],
+  "places": [
+   "mons"
+  ],
+  "cite": [
+   440,
+   442,
+   "T2:170"
+  ],
+  "status": "conflict",
+  "conf": "medium",
+  "src": [
+   "wp-mons",
+   "clarke-sense-of-duty",
+   "genealogist-pow",
+   "wp-royal-warwick"
+  ]
+ },
+ {
+  "id": "ev-pat-escape",
+  "year": 1917,
+  "approx": true,
+  "display": "1917?",
+  "kind": "family",
+  "title": "Pat's third escape succeeds",
+  "desc": "After two recaptures (the narrator says three escapes; other accounts say nine attempts) he crossed Germany and Holland to London, was disbelieved at the War Office, and received the Military Cross {q:446-450} {q:T2:172-173} {s:genealogist-pow}. A family-derived article dates the escape to 1917 {s:clarke-sense-of-duty}; the IWM record gives the MC as 1919 {s:iwm-gualter}.",
+  "people": [
+   "pat"
+  ],
+  "places": [
+   "germany",
+   "holland",
+   "london"
+  ],
+  "cite": [
+   446,
+   448,
+   450,
+   "T2:172",
+   "T2:173"
+  ],
+  "status": "conflict",
+  "conf": "low",
+  "src": [
+   "clarke-sense-of-duty",
+   "genealogist-pow",
+   "iwm-gualter"
+  ]
+ },
+ {
+  "id": "ev-ba-dies",
+  "year": 1916,
+  "display": "1916",
+  "kind": "family",
+  "title": "Bellingham Arthur Somerville dies",
+  "desc": "Of \"the flu that was then going around\"; the narrator \"always thought\" it was the Spanish flu but doubts it {q:2} {q:10-12} {q:T2:4-5}. A compiled genealogy gives 20 January 1916, at Clermont {s:winters-p68}.",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "places": [
+   "clermont"
+  ],
+  "cite": [
+   2,
+   10,
+   12,
+   "T2:4",
+   "T2:5"
+  ],
+  "status": "testimony",
+  "conf": "high",
+  "month": 1,
+  "day": 20,
+  "src": [
+   "winters-p68"
+  ]
+ },
+ {
+  "id": "ev-reginald-front",
+  "year": 1916,
+  "display": "1916",
+  "kind": "family",
+  "title": "Reginald reaches the front",
+  "desc": "{q:356}",
+  "people": [
+   "reginald-somerville"
+  ],
+  "places": [],
+  "cite": [
+   356
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-passchendaele",
+  "year": 1917,
+  "month": 7,
+  "day": 31,
+  "display": "Jul–Nov 1917",
+  "kind": "family",
+  "title": "Reginald at Passchendaele",
+  "desc": "A second lieutenant in the Royal Warwickshire Regiment {q:356-358}. The Third Battle of Ypres ran from July to November 1917 {s:wp-passchendaele}.",
+  "people": [
+   "reginald-somerville"
+  ],
+  "places": [
+   "passchendaele"
+  ],
+  "cite": [
+   356,
+   358
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-flu",
+  "year": 1918,
+  "display": "1918–19",
+  "kind": "context",
+  "title": "The influenza pandemic reaches Ireland",
+  "desc": "Three waves (June–July 1918, October–November 1918, and February–spring 1919) kill over 20,000 people in Ireland {s:dcc-flu}. Bellingham Arthur's death in 1916 came before the pandemic, as the narrator suspected {q:10-12} {q:T2:4-5}.",
+  "people": [],
+  "places": [],
+  "cite": [
+   10,
+   12,
+   "T2:4",
+   "T2:5"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-archangel",
+  "year": 1919,
+  "month": 5,
+  "day": 26,
+  "display": "Apr–May 1919",
+  "kind": "family",
+  "title": "Archangel, 1919: Bunt (or Jim?) commands troops",
+  "desc": "The narrator: Bunt \"commanded a troop that was sent to Archangel … to keep it from falling into the hands of the Bolsheviks\" {q:364} {q:T2:144-145}. A war-diary-based history: \"Lt. Col. W A T B Somerville DSO (Royal Artillery)\" commanded the 8th (Special) Battalion, Machine Gun Corps, from 12 April 1919, and the battalion landed at Archangel on 26 May {s:mgc-8bn} {s:wp-north-russia}. The initials are Bunt's, but a compiled genealogy calls Bunt a King's Own officer and Jim the DSO of the Royal Artillery {s:winters-p68} {s:winters-p69}. See {qn:q-bunt-regiment}.",
+  "people": [
+   "bunt",
+   "jim"
+  ],
+  "places": [
+   "archangel"
+  ],
+  "cite": [
+   364,
+   "T2:144",
+   "T2:145"
+  ],
+  "src": [
+   "mgc-8bn",
+   "winters-p68",
+   "winters-p69"
+  ],
+  "status": "conflict",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-kenya",
+  "year": 1920,
+  "display": "1920",
+  "kind": "family",
+  "title": "Reginald goes to Kenya",
+  "desc": "With \"Gunner's Venture\", to help manage coffee plantations near Nanyuki; \"it was 1920, with an ox and cart\" {q:496-504} {q:T2:193-195}.",
+  "people": [
+   "reginald-somerville"
+  ],
+  "places": [
+   "nanyuki",
+   "kenya"
+  ],
+  "cite": [
+   496,
+   498,
+   500,
+   502,
+   "T2:193",
+   "T2:195"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-burning-cork",
+  "year": 1920,
+  "month": 12,
+  "day": 11,
+  "display": "11–12 Dec 1920",
+  "kind": "context",
+  "title": "The Burning of Cork",
+  "desc": "British forces, including Auxiliaries of the RIC, burn much of Cork city centre on the night of 11–12 December 1920, during the War of Independence {s:wp-burning-cork}. The interviewer raises it, not the family's story; the interviewer's \"that was the time of the Civil War\" {q:T2:243} is a slip, since the Civil War began in 1922 {q:602-606} {q:T2:242-243}.",
+  "people": [],
+  "places": [
+   "cork-city"
+  ],
+  "cite": [
+   602,
+   606,
+   "T2:242",
+   "T2:243"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-four-courts",
+  "year": 1922,
+  "month": 6,
+  "day": 30,
+  "display": "30 Jun 1922",
+  "kind": "context",
+  "title": "Public Record Office destroyed in the Four Courts",
+  "desc": "At the start of the Civil War an explosion and fire destroy the Public Record Office of Ireland and centuries of records, including most 19th-century census returns {s:irishtimes-pro} {s:tcd-beyond2022}. Bellingham Arthur's notes, made before 1916, preserve information from records now lost {q:4} {q:T2:2}.",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "places": [
+   "four-courts"
+  ],
+  "cite": [
+   4,
+   600,
+   "T2:2",
+   "T2:241"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-maud-marriage",
+  "year": 1928,
+  "display": "1928",
+  "kind": "family",
+  "title": "Reginald marries Maudie Moore",
+  "desc": "\"My father married his first wife in 1928\"; \"he married a girl from Greystokes called Maudie Moore. She came from the County Laois family\" {q:496} {q:506-508} {q:T2:192} {q:T2:197}.",
+  "people": [
+   "reginald-somerville",
+   "maud-moore"
+  ],
+  "places": [
+   "kenya"
+  ],
+  "cite": [
+   496,
+   506,
+   508,
+   "T2:192",
+   "T2:197"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-baronetcy-dormant",
+  "year": 1929,
+  "month": 1,
+  "day": 8,
+  "display": "8 Jan 1929",
+  "kind": "family",
+  "title": "Somerville baronetcy becomes dormant",
+  "desc": "The 2nd Baron Athlumney dies without issue; his peerages become extinct and the baronetcy dormant {q:174} {q:T2:73} {s:wp-2nd-baron}. (Transcript B: \"the Somerville baronetcy became dormant when the then baronet died in January 1929\".)",
+  "people": [
+   "james-somerville-2nd-baron"
+  ],
+  "places": [
+   "somerville-meath"
+  ],
+  "cite": [
+   174,
+   "T2:73"
+  ],
+  "src": [
+   "wp-2nd-baron"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-juanita-born",
+  "year": 1932,
+  "display": "1932",
+  "kind": "family",
+  "title": "Juanita Somerville born in Kenya",
+  "desc": "{q:508}",
+  "people": [
+   "juanita",
+   "reginald-somerville",
+   "maud-moore"
+  ],
+  "places": [
+   "kenya"
+  ],
+  "cite": [
+   508
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-maud-dies",
+  "year": 1934,
+  "approx": true,
+  "display": "c. 1934",
+  "kind": "family",
+  "title": "Maudie dies on the voyage home",
+  "desc": "Two years after Juanita's birth, travelling home to show her to the family; Reginald \"arrived back in Ireland as a widower\" {q:508-510} {q:T2:198-199}.",
+  "people": [
+   "maud-moore",
+   "reginald-somerville",
+   "juanita"
+  ],
+  "places": [],
+  "cite": [
+   508,
+   510,
+   "T2:198",
+   "T2:199"
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-honor-marriage",
+  "year": 1935,
+  "approx": true,
+  "display": "mid-1930s",
+  "kind": "family",
+  "title": "Reginald marries Honor Johnson",
+  "desc": "Childhood friends who met again at Clermont {q:512-514}.",
+  "people": [
+   "reginald-somerville",
+   "honor-johnson"
+  ],
+  "places": [
+   "clermont",
+   "wicklow-town"
+  ],
+  "cite": [
+   512,
+   514
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-narrator-born",
+  "year": 1937,
+  "display": "1937",
+  "kind": "family",
+  "title": "The narrator is born",
+  "desc": "{q:516}",
+  "people": [
+   "narrator",
+   "reginald-somerville",
+   "honor-johnson"
+  ],
+  "cite": [
+   516
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-pat-dies",
+  "year": 1947,
+  "approx": false,
+  "display": "10 Jul 1947",
+  "kind": "family",
+  "title": "Uncle Pat (Gualter) dies of cancer",
+  "desc": "\"Uncle Paddy had died of cancer in the 1940s\" {q:386} {q:T2:150}; at Adderbury, \"very soon\" after becoming a gardener {q:464} {q:T2:180-181}. Date from a compiled genealogy citing The Times {s:winters-p68}.",
+  "people": [
+   "pat"
+  ],
+  "places": [
+   "adderbury"
+  ],
+  "cite": [
+   386,
+   464,
+   "T2:150",
+   "T2:181"
+  ],
+  "status": "testimony",
+  "conf": "high",
+  "month": 7,
+  "day": 10,
+  "src": [
+   "winters-p68"
+  ]
+ },
+ {
+  "id": "ev-margaret-dies",
+  "year": 1949,
+  "display": "1949",
+  "kind": "family",
+  "title": "Margaret Somerville (née Clinch) dies",
+  "desc": "Clermont was left empty; Reginald looked after it. Her domicile was disputed between the Irish and English Revenue {q:380} {q:386} {q:548} {q:T2:149-150} {q:T2:216-217}. A compiled genealogy gives 5 July 1949, at Clermont {s:winters-p68}.",
+  "people": [
+   "margaret-hall-clinch",
+   "reginald-somerville"
+  ],
+  "places": [
+   "clermont"
+  ],
+  "cite": [
+   380,
+   386,
+   548,
+   "T2:149",
+   "T2:150",
+   "T2:216"
+  ],
+  "status": "testimony",
+  "conf": "high",
+  "month": 7,
+  "day": 5,
+  "src": [
+   "winters-p68"
+  ]
+ },
+ {
+  "id": "ev-jim-dies",
+  "year": 1950,
+  "display": "1950",
+  "kind": "family",
+  "title": "Uncle Jim dies after a last year at Clermont",
+  "desc": "\"Uncle Jim died in 1950. That last year he spent at Clermont. And he's buried in Rathnew\" (transcript B {q:T2:150-151}; A \"buried in Matthew\" {q:386-388}). A compiled genealogy gives 13 April 1950, at Clermont {s:winters-p68}.",
+  "people": [
+   "jim"
+  ],
+  "places": [
+   "clermont",
+   "rathnew"
+  ],
+  "cite": [
+   386,
+   388,
+   "T2:150",
+   "T2:151"
+  ],
+  "status": "testimony",
+  "conf": "high",
+  "month": 4,
+  "day": 13,
+  "src": [
+   "winters-p68"
+  ]
+ },
+ {
+  "id": "ev-bunt-dies",
+  "year": 1951,
+  "approx": false,
+  "display": "13 Feb 1951",
+  "kind": "family",
+  "title": "Uncle Bunt dies months after deciding to live at Clermont",
+  "desc": "Months after deciding to take on Clermont, two years after his mother {q:552-556} {q:T2:218-219}. Date and place (Reendesert Lodge, Bantry) from a compiled genealogy citing The Times {s:winters-p69}.",
+  "people": [
+   "bunt"
+  ],
+  "places": [
+   "clermont",
+   "bantry-glengarriff"
+  ],
+  "cite": [
+   552,
+   554,
+   556,
+   "T2:218",
+   "T2:219"
+  ],
+  "status": "testimony",
+  "conf": "high",
+  "month": 2,
+  "day": 13,
+  "src": [
+   "winters-p69"
+  ]
+ },
+ {
+  "id": "ev-clermont-dispute",
+  "year": 1952,
+  "approx": true,
+  "display": "c. 1950–55",
+  "kind": "family",
+  "title": "Dispute and sale of Clermont",
+  "desc": "Aunt Eddie threatened action against Bunt's widow over his administration of their mother's estate; after \"peace talks\" half the proceeds went to the rest of the family. The house sold for £10,000 {q:558-566} {q:T2:220-224}. When? \"By the time it was all finished, it was about 1950\", followed by a fragment that both transcripts garble (\"253\", \"2.53\") {q:566} {q:T2:224-225}. A heritage summary dates the sale to c. 1955 {s:wicklowheritage-clermont}. See {qn:q-clermont-sale-date}.",
+  "people": [
+   "eddie",
+   "kitty-harrison",
+   "bunt",
+   "reginald-somerville"
+  ],
+  "places": [
+   "clermont"
+  ],
+  "cite": [
+   558,
+   560,
+   562,
+   564,
+   566,
+   "T2:220",
+   "T2:221",
+   "T2:222",
+   "T2:224",
+   "T2:225"
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-ardrass-demolished",
+  "year": 1955,
+  "approx": true,
+  "display": "1950s",
+  "kind": "family",
+  "title": "Ardrass house demolished",
+  "desc": "\"The main house was pulled down in the 1950s\" after a large sale of contents {q:94}.",
+  "people": [],
+  "places": [
+   "ardrass"
+  ],
+  "cite": [
+   94
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-clermont-convent",
+  "year": 1956,
+  "display": "1956",
+  "kind": "context",
+  "title": "Clermont becomes a convent school",
+  "desc": "The Religious of Christian Education, who came to Ireland in 1956 at Archbishop McQuaid's invitation, run Our Lady's school at Clermont; it was due to close by June 2004 {s:irishaesthete-clermont}, and the site later became a third-level campus linked to IT Carlow {s:wp-rathnew}.",
+  "people": [],
+  "places": [
+   "clermont"
+  ],
+  "cite": [
+   532
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-ballynatray-sold",
+  "year": 2024,
+  "display": "2024",
+  "kind": "context",
+  "title": "Ballynatray sold, reportedly to Sir James Dyson",
+  "desc": "\"Which now belongs to Mr. Dyson\" {q:312}. Widely reported but not officially confirmed {s:agriland-ballynatray}.",
+  "people": [],
+  "places": [
+   "ballynatray"
+  ],
+  "cite": [
+   312
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-recording",
+  "year": 2026,
+  "month": 10,
+  "day": 27,
+  "approx": true,
+  "display": "27 Oct 2026",
+  "kind": "family",
+  "title": "The conversation is recorded",
+  "desc": "Transcript A's file is labelled \"27 Oct at 16-17\"; transcript B's file is stamped \"2026-10-27 19.50.34\". The narrator, born 1937, is \"coming up to 90\" {q:50} {q:T2:25}. {int}The file timestamps point to 27 October 2026, though they record when the files were made rather than the conversation itself. See {qn:q-recording-date}.",
+  "people": [
+   "narrator",
+   "interviewer"
+  ],
+  "places": [],
+  "cite": [
+   50,
+   "T2:25"
+  ],
+  "status": "inferred",
+  "conf": "high"
+ },
+ {
+  "id": "ev-children-born",
+  "year": 1802,
+  "display": "1802–1820",
+  "kind": "family",
+  "title": "Ten children born to Captain William and Eliza",
+  "desc": "\"Eight boys and two girls … every single one born at a different place\" {q:62} {q:84} {q:T2:31} {q:T2:40}. A compiled genealogy gives dates for all ten, from William Henry (January 1802) to Samuel Riall (November 1820), including two who died within days or weeks of birth and an Eliza who died aged four {s:winters-p67}.",
+  "people": [
+   "captain-william-somerville",
+   "eliza-bellingham",
+   "william-henry-somerville",
+   "archibald-james-somerville",
+   "john-churchill-somerville",
+   "corry-somerville",
+   "eliza-somerville-infant",
+   "bellingham-somerville",
+   "tenison-somerville-1812",
+   "eliza-nelson",
+   "tenison-alan-somerville",
+   "samuel-somerville"
+  ],
+  "places": [
+   "ulster",
+   "cumry"
+  ],
+  "cite": [
+   62,
+   84,
+   "T2:31",
+   "T2:40"
+  ],
+  "src": [
+   "winters-p67"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-archibald-crawford",
+  "year": 1836,
+  "month": 11,
+  "day": 30,
+  "display": "30 Nov 1836",
+  "kind": "family",
+  "title": "Archibald James Somerville marries Elizabeth Crawford (compiled genealogy)",
+  "desc": "Recorded in a compiled genealogy quoting an Ancestry family tree; unverified {s:winters-p67}. Not mentioned in the recording, where Archibald's wife is believed to have been Elizabeth Brakey ({qn:q-archibald-marriage}).",
+  "people": [
+   "archibald-james-somerville",
+   "elizabeth-crawford",
+   "elizabeth-breakey"
+  ],
+  "places": [],
+  "src": [
+   "winters-p67"
+  ],
+  "status": "record",
+  "conf": "low"
+ },
+ {
+  "id": "ev-tenison-marriage",
+  "year": 1840,
+  "month": 11,
+  "day": 6,
+  "display": "6 Nov 1840",
+  "kind": "family",
+  "title": "Tenison Alan Somerville marries (Cecelia) Eliza O'Connor",
+  "desc": "The narrator: he \"returned … and married a lady called Elizabeth O'Connor. Eliza O'Connor, yes\" {q:204-208} {q:T2:83-84}. The IGI, as quoted in a compiled genealogy, gives 6 November 1840 at St Mary's, Dublin, and her name as Cecelia Eliza O'Connor {s:winters-p67}.",
+  "people": [
+   "tenison-alan-somerville",
+   "eliza-oconnor"
+  ],
+  "places": [
+   "dublin"
+  ],
+  "cite": [
+   204,
+   208,
+   "T2:83",
+   "T2:84"
+  ],
+  "src": [
+   "winters-p67"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-trinidad-baptisms",
+  "year": 1842,
+  "display": "1842 and 1845",
+  "kind": "family",
+  "title": "Tenison's sons baptised in Trinidad",
+  "desc": "A compiled genealogy citing the IGI records the baptisms of William Dennistoun (1842) and Tenison Alan (1845) at St Paul's, Trinidad {s:winters-p68}. {int}This suggests Tenison returned to the West Indies after his 1840 marriage, so the Constabulary appointment probably came later ({qn:q-tenison-appointment}).",
+  "people": [
+   "tenison-alan-somerville",
+   "william-dennistoun-somerville",
+   "tenison-alan-somerville-1845"
+  ],
+  "places": [
+   "trinidad"
+  ],
+  "src": [
+   "winters-p68"
+  ],
+  "status": "record",
+  "conf": "low"
+ },
+ {
+  "id": "ev-ba-marriage",
+  "year": 1879,
+  "month": 8,
+  "day": 27,
+  "display": "27 Aug 1879",
+  "kind": "family",
+  "title": "Bellingham Arthur Somerville marries Margaret Hall Clinch at Witney",
+  "desc": "The marriage is in the testimony {q:240} {q:T2:95}; date and place (St Mary's, Witney) from a compiled genealogy {s:winters-p68}.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "margaret-hall-clinch",
+   "mr-clinch"
+  ],
+  "places": [
+   "witney"
+  ],
+  "cite": [
+   240,
+   "T2:95"
+  ],
+  "src": [
+   "winters-p68"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-cecilia-born",
+  "year": 1880,
+  "month": 10,
+  "day": 9,
+  "display": "9 Oct 1880",
+  "kind": "family",
+  "title": "Cecilia Somerville born at Newtownards",
+  "desc": "Birth date and place from a compiled genealogy citing the IGI {s:winters-p68}; consistent with the narrator's account that Bellingham Arthur served at Newtownards {q:T2:116}.",
+  "people": [
+   "cecilia-somerville",
+   "bellingham-arthur-somerville"
+  ],
+  "places": [
+   "newtownards"
+  ],
+  "cite": [
+   "T2:116"
+  ],
+  "src": [
+   "winters-p68"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-youghal-may",
+  "year": 1887,
+  "month": 5,
+  "day": 10,
+  "display": "10 May 1887",
+  "kind": "context",
+  "title": "Commons told the officer and constable will return to duty",
+  "desc": "Asked whether \"Sub-Inspector Summerville and Constable Ward, released on bail after a verdict of wilful murder\" had resumed duty, the government replied that they were on leave of absence with pay and would \"return to duty on the expiration of their leave, as the Attorney General sees no grounds to advise a prosecution\" {s:hansard-1887c}. The family's \"reinstated … never formally acquitted\" {q:T2:126-127} fits this record.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "patrick-hanlon"
+  ],
+  "places": [
+   "youghal"
+  ],
+  "cite": [
+   "T2:126",
+   "T2:127"
+  ],
+  "src": [
+   "hansard-1887c"
+  ],
+  "status": "record",
+  "conf": "high",
+  "sensitive": true
+ },
+ {
+  "id": "ev-dorothy-dies",
+  "year": 1895,
+  "month": 3,
+  "day": 5,
+  "display": "5 Mar 1895",
+  "kind": "family",
+  "title": "Dorothy Somerville dies, aged six",
+  "desc": "At Seaview House, Wicklow, according to a compiled genealogy citing The Times {s:winters-p68}. Probably one of the two children the narrator \"left out because they died as children\" {q:228} {q:T2:92}.",
+  "people": [
+   "dorothy-somerville",
+   "bellingham-arthur-somerville",
+   "margaret-hall-clinch"
+  ],
+  "places": [
+   "seaview-house"
+  ],
+  "cite": [
+   228,
+   "T2:92"
+  ],
+  "src": [
+   "winters-p68"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-tenison-dies",
+  "year": 1890,
+  "approx": true,
+  "display": "c. 1890 or 1895",
+  "kind": "family",
+  "title": "Tenison Alan Somerville dies",
+  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88} (A: \"about 189…\" {q:216}). A compiled genealogy gives 31 July 1895 for Tenison {s:winters-p67}. See {qn:q-tenison-death}.",
+  "people": [
+   "tenison-alan-somerville",
+   "eliza-oconnor"
+  ],
+  "places": [
+   "rathmines"
+  ],
+  "cite": [
+   216,
+   "T2:88"
+  ],
+  "src": [
+   "winters-p67"
+  ],
+  "status": "conflict",
+  "conf": "low"
+ },
+ {
+  "id": "ev-vere-marries",
+  "year": 1912,
+  "month": 8,
+  "day": 14,
+  "display": "14 Aug 1912",
+  "kind": "family",
+  "title": "Vere Somerville marries Edmund Truell",
+  "desc": "The marriage is in the testimony {q:T2:98-99}; the date comes from a compiled genealogy citing The Times {s:winters-p68}.",
+  "people": [
+   "vere-somerville",
+   "edmund-truell"
+  ],
+  "places": [
+   "clonmannon"
+  ],
+  "cite": [
+   "T2:98",
+   "T2:99"
+  ],
+  "src": [
+   "winters-p68"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-gualter-commission",
+  "year": 1913,
+  "month": 2,
+  "display": "Feb 1913",
+  "kind": "family",
+  "title": "Gualter (\"Pat\") Somerville joins the Royal Warwickshire Regiment",
+  "desc": "The London Gazette of 4 February 1913 lists \"Gualter Hugh Rodger Bellingham Somerville\" under the Royal Warwickshire Regiment {s:gazette-1913}. The narrator: he \"had been to a military college before the war began\" {q:440} {q:T2:169}.",
+  "people": [
+   "pat"
+  ],
+  "places": [],
+  "cite": [
+   440,
+   "T2:169"
+  ],
+  "src": [
+   "gazette-1913"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-bunt-marries",
+  "year": 1924,
+  "month": 12,
+  "display": "c. 1925",
+  "kind": "family",
+  "title": "Bunt marries Kathleen (\"Kitty\"), widow or former wife of Alan Ferguson",
+  "desc": "{q:370-374} {q:T2:146-147}. A compiled genealogy cites a marriage announcement in The Times of 30 December 1924 {s:winters-p69}.",
+  "people": [
+   "bunt",
+   "kitty-harrison",
+   "alan-ferguson"
+  ],
+  "places": [
+   "bantry-glengarriff"
+  ],
+  "cite": [
+   370,
+   "T2:146"
+  ],
+  "src": [
+   "winters-p69"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-pat-marries",
+  "year": 1925,
+  "month": 9,
+  "day": 7,
+  "display": "7 Sep 1925",
+  "kind": "family",
+  "title": "Gualter (\"Pat\") Somerville marries Heather Edith Baker",
+  "desc": "At Longparish, Hampshire, according to a compiled genealogy citing The Times {s:winters-p68}; the IWM record (search result) also gives 1925 {s:iwm-gualter}. Not mentioned in the recording.",
+  "people": [
+   "pat",
+   "heather-baker"
+  ],
+  "places": [],
+  "src": [
+   "winters-p68",
+   "iwm-gualter"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-jim-marries",
+  "year": 1927,
+  "month": 6,
+  "day": 28,
+  "display": "28 Jun 1927",
+  "kind": "family",
+  "title": "Jim marries Margaret Lucy Starkey",
+  "desc": "\"He married an English lady\" {q:378} {q:T2:148}; name, date and place (Southwell Minster) from a compiled genealogy citing The Times {s:winters-p69}.",
+  "people": [
+   "jim",
+   "margaret-lucy-starkey"
+  ],
+  "places": [
+   "gloucestershire"
+  ],
+  "cite": [
+   378,
+   "T2:148"
+  ],
+  "src": [
+   "winters-p69"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-kenya-farm",
+  "year": 1922,
+  "approx": true,
+  "display": "1920s",
+  "kind": "family",
+  "title": "Reginald's mother buys him a farm in Kenya",
+  "desc": "\"And then eventually his mother bought a farm … it's a thatched hut … That was the farm. And he built it up\"; it was \"a long way from Nanyuki\" (transcript B {q:T2:196-197}). Transcript A garbles the passage and has \"Long way from UK\" {q:504}. Location unknown ({qn:q-kenya-farm}).",
+  "people": [
+   "reginald-somerville",
+   "margaret-hall-clinch"
+  ],
+  "places": [
+   "kenya"
+  ],
+  "cite": [
+   504,
+   "T2:196",
+   "T2:197"
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-will",
+  "year": 1949,
+  "month": 7,
+  "day": 6,
+  "display": "from 1949",
+  "kind": "family",
+  "title": "Clermont's succession under the parents' wills",
+  "desc": "\"The terms of the will of my grandparents was that it was to go to Uncle Bunt if he wanted it. If he didn't want it, it was to go to Uncle Jim, the second one. If he didn't want it, it was to go to Pat. If he didn't want it, it was to go to [Reggie]\" (transcript B {q:T2:149-150}; A garbles the second half {q:382}).",
+  "people": [
+   "bunt",
+   "jim",
+   "pat",
+   "reginald-somerville",
+   "margaret-hall-clinch",
+   "bellingham-arthur-somerville"
+  ],
+  "places": [
+   "clermont"
+  ],
+  "cite": [
+   382,
+   "T2:149",
+   "T2:150"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ }
 ]

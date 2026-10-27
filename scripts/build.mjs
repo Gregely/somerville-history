@@ -35,6 +35,8 @@ const data = {
   narrative: readJSON("data/narrative.json"),
 };
 const manifest = readJSON("transcripts/transcripts.json");
+const alignment = fs.existsSync(path.join(root, "transcripts/alignment.json")) ? readJSON("transcripts/alignment.json") : null;
+const QUOTE_REPORT = args.has("--quotes");
 
 const errors = [];
 const warnings = [];
@@ -54,7 +56,7 @@ const transcripts = manifest.map((t) => {
     const withheld = /^\[Passage withheld/.test(text);
     lines.push({ n, text, kind: withheld ? "withheld" : inAside(n) ? "aside" : "text" });
   });
-  return { id: t.id, title: t.title, date: t.date, origin: t.origin, lines };
+  return { id: t.id, title: t.title, date: t.date, origin: t.origin, role: t.role, sourceFile: t.sourceFile, lines };
 });
 const lineIndex = new Map();
 for (const t of transcripts) for (const l of t.lines) lineIndex.set(`${t.id}:${l.n}`, l);
@@ -214,11 +216,22 @@ for (const ch of data.narrative) {
   (ch.body || []).forEach((b, i) => checkMarkup(b, `${ctx} body[${i}]`, owner));
   for (const id of ch.people || []) if (!has("p", id)) err(`${ctx}: unknown person ${id}`);
 }
+// ---------- alignment ----------
+if (alignment) {
+  const [ta, tb] = alignment.pair;
+  for (const [from, to] of [[ta, tb], [tb, ta]])
+    for (const [n, targets] of Object.entries(alignment.map[from] || {})) {
+      const known = (t, x) => lineIndex.has(`${t}:${x}`);
+      if (!known(from, n)) err(`alignment: ${from}:${n} is not a passage`);
+      for (const x of targets) if (!known(to, x)) err(`alignment: ${to}:${x} is not a passage`);
+    }
+}
 // ---------- readings ----------
 for (const r of data.readings) {
-  const key = `T1:${r.line}`;
+  r.t = r.t || "T1";
+  const key = `${r.t}:${r.line}`;
   const l = lineIndex.get(key);
-  const ctx = `reading line ${r.line} "${r.phrase}"`;
+  const ctx = `reading ${key} "${r.phrase}"`;
   if (!l) { err(`${ctx}: no such passage`); continue; }
   if (l.kind === "withheld") { warn(`${ctx}: passage is withheld in this build`); continue; }
   if (!l.text.includes(r.phrase)) err(`${ctx}: phrase not found in passage`);
@@ -246,6 +259,62 @@ for (const [owner, variants] of variantList) {
   }
 }
 
+// ---------- quotation check ----------
+// A quoted phrase followed by a {q:..} citation should share most of its
+// content words with the cited passages or their parallels in the other
+// transcript. The quotations are lightly cleaned up from the speech-to-text,
+// so this is a warning-level check (run with --quotes for the full report).
+const STOP = new Set("the a an and of to in was he she it his her that i is for on at with as by be had have this from or but so they were there which who you we my me not are been".split(" "));
+const toks = (x) => (x.toLowerCase().match(/[a-z]+/g) || []).filter((w) => w.length > 2 && !STOP.has(w));
+const parallels = (key) => {
+  if (!alignment) return [];
+  const [t, n] = key.split(":");
+  return ((alignment.map[t] || {})[n] || []).map((x) => `${alignment.pair.find((p) => p !== t)}:${x}`);
+};
+const quoteIssues = [];
+function checkQuotes(str, ctx) {
+  if (typeof str !== "string") return;
+  // Runs of adjacent {q:..} tokens are checked together; quotations are
+  // attributed to the run that follows them, after the last {s:..} or {q:..}.
+  const tokens = [...str.matchAll(/\{(q|s):([^}]+)\}/g)];
+  let prevEnd = 0;
+  for (let i = 0; i < tokens.length; i++) {
+    const m = tokens[i];
+    if (m[1] === "s") { prevEnd = m.index + m[0].length; continue; }
+    const group = [m];
+    while (i + 1 < tokens.length && tokens[i + 1][1] === "q" && /^\s*$/.test(str.slice(group[group.length - 1].index + group[group.length - 1][0].length, tokens[i + 1].index))) group.push(tokens[++i]);
+    const seg = str.slice(prevEnd, m.index);
+    const last = group[group.length - 1];
+    prevEnd = last.index + last[0].length;
+    const quotes = [...seg.matchAll(/"([^"\s,;.)][^"]{10,}[^"\s])"/g)].map((x) => x[1]);
+    if (!quotes.length) continue;
+    const keys = group.flatMap((g) => expandCite(g[2].replace(/\s+/g, ""), ctx));
+    if (keys.some((k) => lineIndex.get(k) && lineIndex.get(k).kind === "withheld")) continue;
+    const pool = new Set(keys.flatMap((k) => [k, ...parallels(k)]).flatMap((k) => (lineIndex.get(k) ? toks(lineIndex.get(k).text) : [])));
+    for (const q of quotes) {
+      const qt = toks(q.replace(/\[[^\]]*\]/g, ""));
+      if (qt.length < 3) continue;
+      const hit = qt.filter((w) => pool.has(w)).length / qt.length;
+      if (hit < 0.5) quoteIssues.push(`${ctx}: "${q.slice(0, 70)}" vs ${group.map((g) => g[0]).join(" ")} (${Math.round(hit * 100)}% word overlap)`);
+    }
+  }
+}
+const scan = (obj, ctx) => {
+  if (typeof obj === "string") return checkQuotes(obj, ctx);
+  if (Array.isArray(obj)) return obj.forEach((x, i) => scan(x, ctx));
+  if (obj && typeof obj === "object") for (const [k, v] of Object.entries(obj)) if (!["cite", "src", "id", "url"].includes(k)) scan(v, ctx);
+};
+for (const [kind, list] of Object.entries({ people: data.people, places: data.places, events: data.events, glossary: data.glossary, questions: data.questions, narrative: data.narrative }))
+  for (const item of list) scan(item, `${kind}/${item.id}`);
+if (QUOTE_REPORT) for (const q of quoteIssues) console.warn(`⚠ quote ${q}`);
+else if (quoteIssues.length) warn(`${quoteIssues.length} quotation(s) with weak overlap with their cited passages (run with --quotes to list)`);
+
+// ---------- sources ----------
+for (const s of data.sources) {
+  if (!/^https?:\/\//.test(s.url || "")) err(`source ${s.id}: missing or bad url`);
+  if (!["direct", "search-only", "partial"].includes(s.access)) err(`source ${s.id}: access must be direct | partial | search-only`);
+}
+
 // ---------- report ----------
 for (const w of warnings) console.warn(`⚠ ${w}`);
 if (errors.length) {
@@ -260,7 +329,7 @@ const counts = Object.fromEntries(Object.entries(data).map(([k, v]) => [k, v.len
 console.log(`✓ Data valid: ${Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(", ")}; ${transcripts.reduce((a, t) => a + t.lines.length, 0)} transcript passages; ${backrefs.size} cited passages.`);
 if (CHECK_ONLY) process.exit(0);
 
-const bundle = { ...data, transcripts, refs, mentions, private: PRIVATE };
+const bundle = { ...data, transcripts, alignment, refs, mentions, private: PRIVATE };
 const js = `/* Generated by scripts/build.mjs from data/*.json and transcripts/. Do not edit by hand. */\nwindow.ARCHIVE = ${JSON.stringify(bundle)};\n`;
 
 if (PRIVATE) {

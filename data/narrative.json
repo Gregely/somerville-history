@@ -1,140 +1,238 @@
 [
-  {
-    "id": "keepers", "title": "The keepers of the record", "era": "1850s – today",
-    "lede": "How a family's memory survived a burnt archive, a destroyed diary and ninety years of retelling.",
-    "body": [
-      "This archive begins with a conversation between a grandfather \"coming up to 90\" {q:50} and a grandchild with printouts from an online family tree. But the narrator is himself the heir of a long line of family historians, and he begins with them.",
-      "\"Our interest in genealogy really began with my grandfather\", {p:bellingham-arthur-somerville|Bellingham Arthur Somerville} (1856–1916) {q:2}. An RIC officer with a collector's temperament, he followed up every Somerville he saw in a newspaper and wrote notes on what he found, filling \"about six volumes\" {q:6-8}. Crucially, \"he was alive before the fire in the Four Courts, and therefore he had access to records which are no longer available\" {q:4}.",
-      "{ctx}On 30 June 1922, in the opening battle of the Civil War, an explosion and fire destroyed the Public Record Office of Ireland in the Four Courts, with seven centuries of records including almost all 19th-century census returns and huge numbers of wills and parish registers {s:irishtimes-pro}. For Irish families, notes copied before 1922 are often the only surviving trace of documents that no longer exist {s:tcd-beyond2022}.",
-      "His eldest daughter, {p:cecilia-somerville|Cecilia}, \"took up her father's interest in genealogy … she was a very good genealogist\", active in the learned societies of Dublin {q:230-232}. The family also kept older material: an entry in {t:crisps-visitation|\"Crisp's\"} with the facsimile signatures of {p:captain-william-somerville|Captain William Somerville} and {p:eliza-bellingham|Eliza Bellingham} {q:124}; transcripts of Captain William's diary {q:132}; letters of Eliza and of her daughter {p:eliza-nelson|Eliza Nelson} in America {q:52, 166}; portraits and a miniature {q:26-28, 36, 44}.",
-      "Not everything survived. The diary has \"lots of blank spaces because parts of the diary were destroyed\": {p:eddie|Aunt Eddie} remembered, as a child, destroying papers after the deaths of the older generation in the 1890s {q:132-134}. \"Which is a great shame.\"",
-      "{int}This archive treats the recording as testimony: what a well-informed family historian remembered, often from documents he had read decades before. Where his memory can be checked against published records, it proves remarkably accurate: the three Bellingham sisters and two brothers, Henry's death at Badajoz, the dormancy of the baronetcy in January 1929, the Youghal inquiry, Bunt at Archangel. Where it cannot, we say so."
-    ],
-    "people": ["bellingham-arthur-somerville", "cecilia-somerville", "eddie", "narrator", "interviewer"]
-  },
-  {
-    "id": "origins", "title": "Baronets and Ardrass", "era": "1698 – c. 1800",
-    "lede": "A Lord Mayor's baronetcy, a second son's Kildare estate, and the military habit.",
-    "body": [
-      "The narrator traces the line to \"the first baronet\" {q:84}. {ctx}Sir James Somerville (c. 1698–1748), MP for Dublin City and Lord Mayor of Dublin in 1736–37, was created a baronet \"of Somerville, County Meath\" in February 1748, months before his death {s:wp-sir-james-somerville}. His eldest son Quaile succeeded him, and the title then passed from father to son through the senior line {s:wp-athlumney}.",
-      "The family descend instead from his second son. \"Major William Somerville was the second son of the first baronet, and inherited an estate in County Kildare called Ardrass … There was a large house and a lot of land\" {q:84-86}. As was usual, \"the lands were generally tenanted, leading to the agrarian problems in this country\" {q:86}. {ctx}Published sources confirm a second son, Major William, buried at St Audoen's, Dublin {s:wp-sir-james-somerville}, and the National Library holds a registered pedigree of \"the Somervilles of Ardrass, Celbridge\" beginning in 1752 {s:nli-ardrass}.",
-      "{pl:ardrass|Ardrass} did not stay with this branch. Captain William had an interest in the lands, half of which went into his marriage settlement, but \"there's no record of him having [lived there]\" {q:88-90}. The house survived the political upheavals of the early 20th century only to be pulled down in the 1950s after a great sale of its contents, \"the fate of country houses in this country\" {q:94-96}.",
-      "The senior line went on to public distinction. {ctx}Sir William Meredyth Somerville, 5th Baronet (1802–1873), sat for Drogheda, was Chief Secretary for Ireland through the Famine years 1847–52, and became Baron Athlumney {s:wp-1st-baron}. His son, the 2nd Baron, died childless on 8 January 1929; the peerages became extinct and the baronetcy dormant {s:wp-2nd-baron}. The narrator: \"it has been dormant ever since\" {q:174}.",
-      "\"I don't think I ever realised how much of a military family we were\", says the interviewer; the narrator lists Major William, Captain William and Bellingham Arthur, mostly in \"the county regiments … the equivalent of the territorials\" {q:470}."
-    ],
-    "people": ["james-somerville-1bt", "major-william-somerville", "william-meredyth-somerville", "james-somerville-2nd-baron"]
-  },
-  {
-    "id": "bellinghams", "title": "The Bellinghams of Castle Bellingham", "era": "1772 – 1856",
-    "lede": "Three sisters, two brothers, a French-Canadian bride, a death at Badajoz, and an estate lost to an uncle.",
-    "body": [
-      "\"A Captain William Somerville and a lady called Eliza Bellingham, and that is [how] the name came in\" {q:20}. The Bellingham name has been carried by Somerville sons ever since, and the narrator's own grandfather was christened Bellingham Arthur {q:24-26}.",
-      "\"Eliza Bellingham was one of three sisters … They had two brothers\", brought up at {pl:castle-bellingham|Castle Bellingham} in Co. Louth {q:26-28}. {ctx}The published genealogy names them exactly: the children of Lt-Col. Henry Bellingham, a Louth Militia officer, and Elizabeth Tenison were Alan (c. 1773–1821), Elizabeth (1779–1839), Dorothea (c. 1780–1848), Henrietta Sophia (b. c. 1782) and Henry Tenison (1784–1812) {s:lf-bellingham}.",
-      "The elder brother, {p:alan-bellingham-1773|Alan}, was in the narrator's word \"unsuccessful\". As a young man he had been in Canada {q:30}; he \"married a French Canadian lady called Monique Bâby\", whose portrait still hangs in the family drawing room {q:30, 36}. \"I'm going to use the word unstable … he was completely unable to maintain the estate, and he sold it, actually, to his uncle, who was the secretary of one of the Pitts … Sir William Bellingham … And that Bellingham line took over Castle Bellingham\" {q:36-38}.",
-      "{ctx}Sir William Bellingham (c. 1756–1826) was private secretary to William Pitt the Younger and was made a baronet in 1796 {s:wp-sir-william-bellingham}. Alan married Monique, daughter of the Montreal fur trader Jacques Duperon Bâby, at Detroit in 1795; they separated in 1815; Alan let the estate to his uncle, and after Alan's death in 1821 Monique sold the freehold to Sir William, whose nephews' line then held Castle Bellingham until about 1956 {s:lf-bellingham} {s:wp-bellingham-bt}.",
-      "Of Monique the narrator remembered \"a very interesting booklet about her life\" and a \"seaside town\" in the West Country whose name escaped him {q:40-42}. {ctx}She settled at Lyme Regis in Dorset after the separation and died there in 1856; the Lyme Regis Museum has published an article on her {s:lf-bellingham}.",
-      "\"The other boy was Henry … the young army officer. And he was killed at the siege of Badajoz in Spain, in the Peninsular War\"; a miniature of him survives \"in the other house\" {q:44}. Years later his sister Eliza wrote that \"her brother Henry was killed on this day, so many years ago\" {q:52}. {ctx}Captain Henry Tenison Bellingham was killed in the storming of Badajoz on the night of 6 April 1812 {s:lf-bellingham}, one of the bloodiest assaults of Wellington's Peninsular campaign {s:wp-badajoz}. (The narrator wondered whether it might have been Waterloo {q:48}; that was three years later.)"
-    ],
-    "people": ["eliza-bellingham", "alan-bellingham-1773", "monique-baby", "henry-tenison-bellingham", "dorothea-bellingham", "sir-william-bellingham", "henry-bellingham-ltcol"]
-  },
-  {
-    "id": "captain-william", "title": "Captain William's household", "era": "1800 – 1844",
-    "lede": "A soldier-diarist, ten children each born somewhere different, and a slow decline into Dublin lodgings.",
-    "body": [
-      "{p:captain-william-somerville|Captain William Somerville}, born about 1777, married Eliza Bellingham in 1800, when he was 23 {q:60-62}. {ctx}The published genealogy has the wedding at Roscrea on 30 August 1800 {s:lf-bellingham}. He had been \"certainly a regular officer as a young man\" (family tradition says the South or North Cork Light Infantry, though searches have not confirmed it) and later served in a county militia {q:54-58}.",
-      "They had ten children, \"eight boys and two girls\", \"every single one born at a different place, and most of them in [Northern] Ireland\" {q:62, 84}. The sons, in so far as their order is known, were {p:william-henry-somerville|William Henry}, {p:archibald-james-somerville|Archibald James}, {p:john-churchill-somerville|John Churchill} (died in infancy), {p:corry-somerville|Corry}, {p:tenison-alan-somerville|Tenison Alan}, {p:bellingham-somerville|Bellingham}, an eighth not named, and {p:samuel-somerville|Samuel}, who died as an infant {q:102-126, 180-182, 190}. Of the two daughters both were called Eliza: the first died in infancy and her name passed to her sister {q:170}.",
-      "\"Captain William kept a detailed diary … He entered it up every evening, except when he was away from home\" {q:132}. In the 1820s the family lived at {pl:cumry|Cumry}, \"a small farm\" near Ballybay in Co. Monaghan {q:136}; then at a house \"just called Farm\", apparently near Belturbet in Co. Cavan; then in Dublin, at Bayview Avenue or Crescent on the road to Clontarf {q:182-184}.",
-      "The sons were not easy. William Henry, the eldest, \"was a ne'er-do-well … fond of the bottle\", always in trouble for failing to pay the rent on land he leased from the Brookes in Ulster {q:104-106}. Archibald James and Corry \"were fond of women\" and fathered several illegitimate children, whose baptisms are marked as such in the registers {q:126-128, 178}. Corry married Lucinda (née Simmonton), who had worked in the Somerville household {q:178-180}.",
-      "Eliza died in 1839 {q:186}. \"The family then went into decline\": the sons were scattered, and only the injured Bellingham remained at home with his father. The two men gave up the Bayview house for lodgings north of the Liffey, where Bellingham died in the autumn of 1844 and Captain William that December {q:196-200}."
-    ],
-    "people": ["captain-william-somerville", "eliza-bellingham", "william-henry-somerville", "corry-somerville", "lucinda-simmonton", "bellingham-somerville", "samuel-somerville"]
-  },
-  {
-    "id": "west-indies", "title": "Flight to the West Indies, and little Archie", "era": "1823 – 1871",
-    "lede": "A night journey to Dublin, a son gone to sea, a baby with a succession of wet nurses, and a question about a baronetcy.",
-    "body": [
-      "The best-remembered entry in Captain William's diary dates from February 1823. As the narrator recalls it: \"Eliza and Dorothea went to Dublin in the car, the night freezing and cold. Eliza and I returned … and we found that when we were away our dear son Archibald had left home, and spent a few days in [Clonmel?], and then took ship on board the George and Thomas for the Barbados\" {q:142-150}.",
-      "{p:archibald-james-somerville|Archibald James}, then about nineteen {q:18, 112}, \"had run away from home because he'd got a girl into the family way. And of course this brought shame on all the family\" {q:16-18}. The girl is believed to have been {p:elizabeth-breakey|Elizabeth Breakey}, a servant {q:108-110}.",
-      "{int}If the garbled \"include Mal\" is Clonmel, Archibald may have gone first to his aunt Dorothea, who had married the Clonmel banker William Riall {s:lf-bellingham}, before finding a ship.",
-      "\"Later in that year 1823 there's mention of a child. A couple of letters were received from Archibald James, one from Madeira, one from Barbados, and one of these letters refers to the child as Archibald. And from then on the child is referred to in the diary as little Archie\" {q:154-160}. Remarkably, Captain William and Eliza \"assume responsibility for the child, which was unusual, because no responsibility is assumed for any of the other illegitimate children\". They paid for \"a succession of wet nurses\", and the baby was regularly \"brought out\" to Cumry from Ballybay {q:160-162}.",
-      "Was Archibald married? \"There is no record of that marriage, but it is constantly referred to by Archibald's sister\", Eliza Nelson, in her letters from America {q:168-172}. The narrator's own research led him to believe that Archibald married Elizabeth Breakey, while stressing that \"there is no conclusive proof\" that little Archie was their son {q:130}.",
-      "{int}The narrator then explains why it matters: \"The reason that this detail is of great interest is because the Somerville baronetcy became dormant when the then Baron died in January 1929\" {q:174}. A dormant baronetcy passes to the nearest legitimate male-line heir who can prove his claim. Archibald was the second son, and the narrator's line descends from the fifth, so legitimate descendants of little Archie, if any exist, would stand ahead of the narrator's line in any such reckoning. The archive records this as the family's reason for interest, not as a claim.",
-      "Archibald later moved to Trinidad, where his brothers Tenison and Bellingham followed him; he is said to have died in 1871 {q:128, 194-196}."
-    ],
-    "people": ["archibald-james-somerville", "elizabeth-breakey", "little-archie", "eliza-nelson", "dorothea-bellingham"]
-  },
-  {
-    "id": "tenison", "title": "Tenison Alan: from the sea to the Castle", "era": "c. 1810 – c. 1890",
-    "lede": "A cabin boy, a Trinidad sojourn, and a lifetime in the Constabulary secretariat at Dublin Castle.",
-    "body": [
-      "\"We are descended from, I think, the fifth son … Tenison Alan, the boy who went to sea\" {q:100-102}. He went to sea as a cabin boy and stayed \"about five years, from his boyhood until as a young man\" {q:14}, then followed Archibald to Trinidad {q:194}. \"They were always looking for appointments, particularly in the West Indies\" {q:204}.",
-      "{int}His first name is transcribed \"Tennyson\", but it almost certainly honours his grandmother Elizabeth Tenison and his uncle Henry Tenison Bellingham, as \"Alan\" does his uncle Alan Bellingham {s:lf-bellingham}.",
-      "Tenison \"returned to Ireland in 1840, after the death of his mother in 1839\", and married {p:eliza-oconnor|Eliza O'Connor}, the daughter of a much-married seaman {q:204-208}. He secured a post as an officer \"in the Secretariat of the RIC\", with \"a flat and office in Dublin Castle\", the force's headquarters {q:208-210}. The narrator credits \"his cousin, Sir William\", the Chief Secretary for Ireland, with the appointment {q:212-214}.",
-      "{ctx}The force was then the Irish Constabulary, formed in 1836; it became the Royal Irish Constabulary in 1867 {s:wp-ric}. Sir William Meredyth Somerville was Chief Secretary from July 1847 to February 1852 {s:wp-1st-baron}, which suggests that the appointment, if his doing, came several years after Tenison's return (see {qn:q-tenison-appointment}).",
-      "\"He spent the rest of his life in the RIC.\" The couple later moved to Rathmines; Tenison died first, and Eliza about 1895 {q:216}. In the narrator's summary he was \"a civil servant working in Dublin Castle … well connected, but not wealthy, not landed\" {q:330-332}. Two sons are known, both RIC officers: an elder whose name is not recorded, and {p:bellingham-arthur-somerville|Bellingham Arthur} {q:12}."
-    ],
-    "people": ["tenison-alan-somerville", "eliza-oconnor", "william-meredyth-somerville", "elder-brother-ric"]
-  },
-  {
-    "id": "district-inspector", "title": "The District Inspector", "era": "1856 – 1916",
-    "lede": "Riots in the Fenian years, a death at Youghal, a brewer's daughter, and a house at Rathnew.",
-    "body": [
-      "{p:bellingham-arthur-somerville|Bellingham Arthur Somerville} was born in 1856 {q:2}. Like his father and brother he joined the RIC. His early stations were in Cork and Limerick, but most were in Ulster, and he \"seemed to have got a name\" for attending riots, the \"outrages\" of his diary, in the 1880s and 1890s, \"when the Fenians were at large\" {q:290-298}.",
-      "{sensitive}The narrator introduced the next story with a caution: \"This now is not for publication. Well, I'll let you use your own discretion, but be careful\" {q:290}. The events are a matter of public record, and are told here with that request in mind.",
-      "In the family's memory: a riot at Youghal \"got out of hand\", \"no doubt over fishing\" on the Blackwater; a detachment of RIC went by train from Cork \"under the command of Captain Somerville\"; and \"some rioter called Hanlon or O'Hann\" was killed with a blade. Captain Somerville and the constable who struck the blow were held, suspended and relieved of their positions; \"the whole thing went as far as Parliament in London\"; and he was officially acquitted and reinstated. \"It wasn't him that did [it] … it was just his [men], but he was in charge\" {q:312-322}.",
-      "{ctx}Hansard and local history fill in the rest. On 8 March 1887, during protests at Youghal over the arrest of Fr Daniel Keller, a curate believed to be a trustee of the {t:plan-of-campaign|Plan of Campaign} fund, the RIC charged a crowd with fixed bayonets. {p:patrick-hanlon|Patrick Hanlon}, a 30-year-old fisherman from Ballymacoda, was killed; the cause of death was registered as a \"wound inflicted by sword bayonet\" {s:ballymacoda-1887}. The coroner's jury returned a verdict of wilful murder against \"District Inspector Somerville and Constable Ward\", and both men were held in custody in Cork; on 24 March the MP for East Cork asked the Chief Secretary, Arthur Balfour, whether they would be tried at the Cork Assizes, and another member pressed for their suspension from duty {s:hansard-1887}. In the end the Crown entered a nolle prosequi and there was no trial {s:ballymacoda-1887}.",
-      "{int}The family's account agrees with the record on almost every structural point: the RIC detachment from Cork (the local District Inspector at Youghal was a Mr Kerin {s:hansard-1887b}), a victim named Hanlon, a blade, arrest, Parliament and no conviction. It differs on the cause (fishing rather than the Plan of Campaign), the weapon (sabre rather than bayonet) and the outcome (an \"acquittal\" rather than an abandoned prosecution). The published sources name only \"District Inspector Somerville\"; that he was Bellingham Arthur rests on the family's story, a strong but not documentary identification ({qn:q-youghal-identity}). The death of Patrick Hanlon, a young fisherman, deserves to be remembered in his own right.",
-      "With his health failing (\"something wrong with his foot or his leg\"; gout, or perhaps muscular dystrophy) and a cloud over his career, he asked for a transfer and was posted to Wicklow, where he remained a District Inspector and \"never made County Inspector\" {q:324-328, 334-336}.",
-      "He had married {p:margaret-hall-clinch|Margaret Hall Clinch}, co-heiress with her sister Rachel of Clinch's brewery {q:240, 328-330}. Her father sent barrels of beer to the officers' mess with the name Clinch burnt off, because his daughter was \"marrying trade\" {q:240}. {ctx}Clinch & Co.'s Eagle Brewery was in Witney, Oxfordshire {s:bhs-clinch}. \"She had money, and Bellingham Arthur did not\" {q:330}.",
-      "Margaret's money made {pl:clermont|Clermont} possible. Bellingham Arthur rented houses around Wicklow until Clermont, at Rathnew, came up for auction. Colonel Tottenham of Ballycurry, who \"wanted to have neighbours that he approved of\", outbid him, then sold it to him at the price he had paid, \"immediately after the auction\" {q:572-580}. {ctx}The wings were added in 1894 for \"B A Somerville\" to designs by Sir Thomas Drew {s:wicklowheritage-clermont}.",
-      "He was, in his grandson's words, \"very snobbish … very Low Church\", and \"would have had a fit if he knew that any of his descendants married a Roman Catholic\". He kept his children from school altogether {q:338-346}. He died in 1916 of influenza, but not, as the narrator rightly suspected, of the \"Spanish flu\", which reached Ireland only in 1918 {q:10-12} {s:dcc-flu}."
-    ],
-    "people": ["bellingham-arthur-somerville", "patrick-hanlon", "margaret-hall-clinch", "colonel-tottenham"], "sensitive": true
-  },
-  {
-    "id": "clermont-children", "title": "The Clermont generation", "era": "1880s – 1950",
-    "lede": "Seven children raised without school, five of them soldiers or soldiers' wives, all shaped by the Great War.",
-    "body": [
-      "Bellingham Arthur and Margaret had nine children; two died young {q:228}. The rest were brought up at Clermont: {p:cecilia-somerville|Cecilia} (Aunt Cecil), the eldest; {p:bunt|William Arthur Tenison Bellingham} (\"Bunt\"), born about 1884; {p:jim|James Aubrey Henry Bellingham} (Jim); a second daughter whose name is unclear, who married {p:edmund-truell|Edmund Truell}; {p:eddie|Adeline} (\"Eddie\" or \"Tete\"); {p:pat|Hugh Roger Bellingham} (\"Pat\"); and the youngest, {p:reginald-somerville|Reginald Malcolm John}, the narrator's father {q:218-228}.",
-      "None of them had a normal education: \"he never sent any of his children to school\". Bunt and Jim went for a short while; Pat and Reginald never went at all {q:344-346}. Cecil became a serious genealogist and in 1912 married her father's solicitor, Henry Rock {q:230-246}. The second daughter married into the Truells of neighbouring Clonmannon, though Edmund chose an English inheritance in Dorset over the Irish estate {q:246-252}. Eddie, \"the businesswoman of the family\", married late a Royal Engineers officer, \"reputed by the family to be the dullest man in the British army\" {q:254-260}.",
-      "The boys went to the army. Bunt served in India and, after the war, commanded troops at Archangel \"to keep it from falling into the hands of the Bolsheviks\" {q:362-364}. {ctx}A war-diary-based history records Lt-Col. W. A. T. B. Somerville DSO taking command of the 8th (Special) Battalion, Machine Gun Corps in April 1919; it landed at Archangel on 26 May 1919 {s:mgc-8bn}. Jim was a gunner who spent most of his career in India {q:366}.",
-      "Pat was captured \"in the retreat from Mons\" in August 1914. He escaped three times; the third time \"he found his way across Germany, across Holland, and to London\", where the War Office took a long time to believe him. He was awarded the Military Cross, but \"had a tic for the rest of his life, always looking to see if someone was following\" {q:440-450}. He was adventurous and charming, \"very unlike his brothers\" {q:442-444}.",
-      "Reginald was seventeen in 1914 and had \"never been outside Clermont really\" {q:348-350}. He reached the front in 1916, fought at Passchendaele, \"remained a second lieutenant for the entire duration of the war\" in the Royal Warwickshire Regiment, and ended up in Italy {q:356-362}. {ctx}The Third Battle of Ypres (Passchendaele) ran from July to November 1917 {s:wp-passchendaele}.",
-      "Afterwards, Bunt married Kitty Harrison of Castle Harrison and made a garden near Bantry; Jim married an English wife and lived in Gloucestershire; Pat became a doctor's gardener at Adderbury, near Oxford {q:370-378, 462-464}. \"Neither Pat nor my father married money\"; Bunt and Jim did {q:494}. All four brothers smoked, and all four died of cancer {q:394, 568-570}."
-    ],
-    "people": ["cecilia-somerville", "bunt", "jim", "mrs-truell", "eddie", "pat", "reginald-somerville", "kitty-harrison"]
-  },
-  {
-    "id": "kenya", "title": "Kenya, loss and a second marriage", "era": "1920 – 1937",
-    "lede": "An ox cart to Nanyuki, a bride from Laois, a death at sea, and a childhood friend found again.",
-    "body": [
-      "At about twenty-two, with no schooling and no profession, Reginald \"decided that he would go to Africa\". A company called \"Gunners Venture\", started by artillery officers after the war, gave him a job managing coffee plantations near {pl:nanyuki|Nanyuki}, \"about 120 miles north of Nairobi\" {q:496-500}. In 1920 he went up \"with an ox cart\"; a photograph shows him, \"virtually a schoolboy\", outside a thatched hut {q:502-504}.",
-      "{ctx}\"This is a time that East Africa was being opened up to European settlement\", as the narrator says {q:498}. Kenya became a Crown colony in 1920, and ex-officers were encouraged to take up land in the highlands around Mount Kenya, land that African communities regarded as theirs {s:wp-kenya-colony} {s:wp-nanyuki}.",
-      "Home on leave, he married {p:maud-moore|Maud Moore}, of a County Laois family, in 1928, and took her back to Kenya {q:496, 506-508}. Their daughter {p:juanita|Juanita} was born there in 1932. Two years later, travelling home to show the baby to the family, Maud died on the journey, \"so he arrived back in Ireland a widower\" {q:508-510}.",
-      "Staying at Clermont, he met again \"a childhood friend, who was the daughter of the Rector of Wicklow … not having met since they were children, and they got married, and they were my parents\": {p:honor-johnson|Honor Johnson} {q:512-514}. The narrator was born in 1937 {q:516}."
-    ],
-    "people": ["reginald-somerville", "maud-moore", "juanita", "honor-johnson", "rector-johnson", "narrator"]
-  },
-  {
-    "id": "end-of-clermont", "title": "The end of Clermont", "era": "1949 – today",
-    "lede": "Deaths in quick succession, a tax dispute between two countries, a family quarrel and a sale for £10,000.",
-    "body": [
-      "Under the terms of the will, Clermont was to go to the eldest son, Bunt, if he wanted it; if not, to Jim; and so on down {q:382}. \"What actually happened, to cut a long story short, is that everybody died in quick succession\": Pat in the 1940s, Margaret in 1949, Jim in 1950 after spending his last year at Clermont, and Bunt about two years after his mother {q:386, 550-552}.",
-      "Margaret's estate was complicated: \"she was wholly English … she derived all her money from the brewery in England. She lived in Ireland, and there was an argument between the Revenue in Ireland and the Revenue in England as to whether she was domiciled in England or in Ireland\" {q:548}. Administration stalled; \"nobody seemed to have very much cash\" {q:550}. Bunt, the executor, \"decided he would like to live there, but he died a matter of months afterwards\" {q:554}.",
-      "Aunt Eddie wanted Reginald to have the house, but he and Honor \"felt they could never afford it\". Eddie came close to suing Bunt's widow for his \"mess\" of the administration; \"peace talks\" divided the proceeds, half going to the rest of the family {q:558-562}. Clermont sold for \"a ridiculous sum now in retrospect, of 10,000 pounds\". It had no heating and was badly kept {q:564}. By the time it was finished, \"it was about 1950 … '52, '53\" {q:566}.",
-      "{ctx}Heritage records date the sale to about 1955. In 1956 the Religious of Christian Education opened a convent school there; it closed in the early 2000s, and the site later became a third-level campus linked to Carlow {s:wicklowheritage-clermont} {s:irishaesthete-clermont} {s:wp-rathnew}.",
-      "The narrator revisits it with mixed feelings: the beech avenue \"like a whole lot of soldiers\" is gone; the yard has been \"spoilt and pulled down and rebuilt\"; the land opposite is covered in houses and an Aldi; and \"the fabric of the old house … it's just going\", the mortar falling out around the basement {q:530-544}."
-    ],
-    "people": ["bunt", "jim", "eddie", "kitty-harrison", "margaret-hall-clinch", "reginald-somerville"]
-  },
-  {
-    "id": "kin", "title": "Kin, namesakes and the road ahead", "era": "",
-    "lede": "The Cork Somervilles, the Johnsons, a journalist who is not a cousin, and what remains to be found.",
-    "body": [
-      "Other Somervilles crop up. The interviewer's lecturer knew of \"the Somervilles of Cork\", who \"still live in Drishane House, down in Castletownshend\". These are a distinct, \"very naval\" family, \"further off related\"; the narrator has met the present owner and his sons {q:280-282, 472-474}. {ctx}Drishane was built around 1780 and is still the family's home; Edith Somerville, the novelist, lived there {s:drishane-southernstar}. The broadcaster Quentin Somerville, the narrator says, is \"not in our line, at least\" {q:176}.",
-      "On the maternal side the narrator's mother Honor was the daughter of the Rector of Wicklow; the interviewer's online tree takes the Johnsons back through a Samuel to a Zachariah (or Samuel the Elder) and a Frances Tench, all needing confirmation {q:518-524}.",
-      "The conversation ends with plans: to look through the family's papers together, to visit the Genealogical Office at the National Library, and to finish photographing the portraits that cousin Eliza began {q:46, 272-278, 478}. The open questions collected in this archive are the agenda for that work."
-    ],
-    "people": ["honor-johnson", "rector-johnson", "quentin-somerville"]
-  }
+ {
+  "id": "keepers",
+  "title": "The keepers of the record",
+  "era": "1850s – today",
+  "lede": "How a family's memory survived a burnt archive, a destroyed diary and ninety years of retelling.",
+  "body": [
+   "This archive begins with a conversation between a grandfather \"coming up to 90\" {q:50} {q:T2:25} and a grandchild with printouts from an online family tree. Two automatic transcripts of the recording survive. Transcript A (\"¶\" in citations) is the one from which the archive was first built; transcript B (\"B¶\") is a second, often clearer pass, added during an audit. They can be read side by side on the Compare page: where they agree, that agreement is evidence of what was said, and where they differ, both readings are kept.",
+   "The narrator is himself the heir of a long line of family historians, and he begins with them. \"Our interest in genealogy really began with my grandfather, whose name was Bellingham Arthur Somerville\" {q:2} {q:T2:1}. An RIC officer with a collector's temperament, he followed up every Somerville he saw in a newspaper and wrote notes on what he found, filling \"about six volumes\" {q:6-8} {q:T2:3-4}. Crucially, \"he was alive before the fire in the Four Courts. And therefore he had access to records which are no longer available\" {q:4} {q:T2:2}.",
+   "{ctx}On 30 June 1922, at the start of the Civil War, an explosion and fire destroyed the Public Record Office of Ireland beside the Four Courts, with nineteenth-century census returns, thousands of wills and deeds, and centuries of Church of Ireland parish registers {s:irishtimes-pro}. For Irish families, notes copied before 1922 are often the only surviving trace of documents that no longer exist {s:tcd-beyond2022}.",
+   "His eldest daughter, {p:cecilia-somerville|Cecilia}, \"took up her father's interest in genealogy … she was a very good genealogist\", active in the learned societies of Dublin {q:230-232} {q:T2:93-94}. The family also kept older material: an entry in {t:crisps-visitation|\"Crisp's\"} with the facsimile signatures of {p:captain-william-somerville|Captain William Somerville} and {p:eliza-bellingham|Eliza Bellingham} {q:124} {q:T2:54-55}; transcripts of Captain William's diary {q:132} {q:T2:59-60}; letters of Eliza and of her daughter {p:eliza-nelson|Eliza Nelson} in America {q:52} {q:166} {q:T2:69}; Bellingham Arthur's office and personal diaries {q:T2:133}; portraits and a miniature {q:26-28} {q:36} {q:44} {q:T2:13} {q:T2:18} {q:T2:22}.",
+   "Not everything survived. The diary has \"lots of blank spaces because parts of the diary were destroyed\": {p:eddie|Aunt Eddie} remembered, as a child, destroying papers after the deaths of the older generation in the 1890s {q:132-134} {q:T2:60-61}. \"Which is a great shame.\"",
+   "{int}This archive treats the recording as testimony: what a well-informed family historian remembered, often from documents he had read decades before. Where it can be checked, it proves remarkably accurate: the three Bellingham sisters and two brothers, Henry's death at Badajoz, the Louth Militia, the dormancy of the baronetcy in January 1929, the parliamentary record of the Youghal affair, Pat's Military Cross, and the years of death of his grandparents and uncles. Several details have been added from a compiled online genealogy that draws on the IGI, The Times and family trees. That compilation is secondary, and some of it may itself rest on this family's own research, so its dates are offered as leads, not proof. Where nothing can be checked, we say so."
+  ],
+  "people": [
+   "bellingham-arthur-somerville",
+   "cecilia-somerville",
+   "eddie",
+   "narrator",
+   "interviewer"
+  ]
+ },
+ {
+  "id": "origins",
+  "title": "Baronets and Ardrass",
+  "era": "1698 – c. 1800",
+  "lede": "A Lord Mayor's baronetcy, a second son's Kildare estate, and the military habit.",
+  "body": [
+   "The narrator traces the line to \"the first baronet\" {q:84}. {ctx}Sir James Somerville (c. 1698–1748), MP for Dublin City and Lord Mayor of Dublin in 1736–37, was created a baronet \"of Somerville, County Meath\" in February 1748, months before his death {s:wp-sir-james-somerville}. His eldest son Quaile succeeded him, and the title then passed from father to son through the senior line {s:wp-athlumney}.",
+   "The family descend instead from his second son. \"Captain William Somerville was the son of another William Somerville, known as Major William Somerville. And Major William Somerville was the second son of the first baronet. And he inherited an estate in County Kildare called Ardras, A-R-D-R-A-S-S. There was a large house and a lot of land\" {q:84-86} {q:T2:40-41}. As was usual, \"the lands were generally tenanted, leading to the agrarian problems in this country\" {q:86} {q:T2:42}. {ctx}Published sources confirm a second son, Major William, buried at St Audoen's, Dublin {s:wp-sir-james-somerville}. A compiled genealogy drawing on the Stirnet pedigree dates him 1720–1780, \"a Major in the Army\", and makes him by his second wife, Elizabeth Munroe, the father of William, born 1776 {s:winters-p66} {s:winters-p67}. The National Library holds a registered pedigree of \"the Somervilles of Ardrass, Celbridge\", beginning in 1752 {s:nli-ardrass}.",
+   "{pl:ardrass|Ardrass} did not stay with this branch. Captain William had an interest in the lands, half of which went into his marriage settlement, but \"certainly there's no record of him having [lived there]\" {q:88-90} {q:T2:42-43}. \"It's in Kildare near Celbridge … if you're going between Lucan and Celbridge, or anyway, the back road, there is a place called Ardras Lodge … The main house was pulled down in the 1950s\" after a large sale of contents, \"the fate of many country houses in this country\" {q:94-96} {q:T2:44-46}.",
+   "The senior line went on to public distinction. {ctx}Sir William Meredyth Somerville, 5th Baronet (1802–1873), sat for Drogheda, was Chief Secretary for Ireland through the Famine years 1847–52, and became Baron Athlumney {s:wp-1st-baron}. His son, the 2nd Baron, died childless on 8 January 1929; the peerages became extinct and the baronetcy dormant {s:wp-2nd-baron}. The narrator: \"the Somerville baronetcy became dormant when the then baronet died in January 1929 and it has been dormant ever since\" {q:174} {q:T2:73}.",
+   "\"I don't think I ever realised how much of a military family we were\", says the interviewer; the narrator lists Bellingham Arthur, Captain William and Major William, mostly in \"county regiments … the equivalent of the Territorials\" {q:470} {q:T2:182-183}."
+  ],
+  "people": [
+   "james-somerville-1bt",
+   "major-william-somerville",
+   "william-meredyth-somerville",
+   "james-somerville-2nd-baron"
+  ]
+ },
+ {
+  "id": "bellinghams",
+  "title": "The Bellinghams of Castle Bellingham",
+  "era": "1772 – 1856",
+  "lede": "Three sisters, two brothers, a French-Canadian bride, a death at Badajoz, and an estate lost to an uncle.",
+  "body": [
+   "\"A Captain William Somerville and a lady called Eliza Bellingham. And that is where the name Bellingham came in\" {q:20} {q:T2:10}. The Bellingham name has been carried by Somerville sons ever since, and the narrator's own grandfather was christened Bellingham Arthur {q:24-26} {q:T2:11-12}.",
+   "\"Eliza Bellingham was one of three sisters … They had two brothers\", brought up at {pl:castle-bellingham|Castle Bellingham} in Co. Louth {q:26-28} {q:T2:13-14}. {ctx}The published genealogy names them exactly: the children of Lt-Col. Henry Bellingham, a Louth Militia officer, and Elizabeth Tenison were Alan (c. 1773–1821), Elizabeth (1779–1839), Dorothea (c. 1780–1848), Henrietta Sophia (b. c. 1782) and Henry Tenison (1784–1812) {s:lf-bellingham}.",
+   "The elder brother, {p:alan-bellingham-1773|Alan}, was in the narrator's word \"unsuccessful\". As a young man he had been in Canada, \"because there was a cousin who was a regimental officer in Canada\" who gave family members \"a leg up\" {q:30-34} {q:T2:15-17}; he \"married a French Canadian lady called Monique Babet\", whose portrait still hangs \"in the drawing room in the other house\" {q:30} {q:36} {q:T2:15} {q:T2:18}. \"I'm going to use the word unstable … he was completely unable to maintain the estate. And he sold it, actually, to his uncle, who was the secretary of one of the Pitts … that Bellingham line took over Castle Bellingham\" {q:36-38} {q:T2:18-20}.",
+   "{ctx}Sir William Bellingham (c. 1756–1826) was private secretary to William Pitt the Younger and was made a baronet in 1796 {s:wp-sir-william-bellingham}. Alan married Monique, daughter of the Montreal fur trader Jacques Duperon Bâby, at Detroit in 1795; they separated in 1815; Alan let the estate to his uncle, and after Alan's death in 1821 Monique sold the freehold to Sir William, whose nephews' line then held Castle Bellingham until about 1956 {s:lf-bellingham} {s:wp-bellingham-bt}.",
+   "\"Allan and Monique went to live in England. Their marriage was not successful … Monique [Bâby] settled in the West Country, in Devonland, there's a very interesting booklet about her life, Seaside Town, and I'm trying to remember the name of it now\" {q:40-42} {q:T2:20-21}. {ctx}She settled at Lyme Regis in Dorset after the separation and died there in 1856; the Lyme Regis Museum has published an article on her {s:lf-bellingham}.",
+   "\"The other boy was Henry … the young army officer. And he was killed at the siege of Badajoz in Spain, in the Peninsular War\"; a miniature of him survives \"in the other house\" {q:44} {q:T2:22}. Years later his sister Eliza wrote that \"her brother Henry was killed on this day, so many years ago\" {q:52} {q:T2:25-26}. {ctx}Captain Henry Tenison Bellingham was killed in the storming of Badajoz on the night of 6 April 1812 {s:lf-bellingham}, one of the bloodiest assaults of Wellington's Peninsular campaign {s:wp-badajoz}. (The narrator wondered whether it might have been Waterloo {q:48} {q:T2:24}; that was three years later.)"
+  ],
+  "people": [
+   "eliza-bellingham",
+   "alan-bellingham-1773",
+   "monique-baby",
+   "henry-tenison-bellingham",
+   "dorothea-bellingham",
+   "sir-william-bellingham",
+   "henry-bellingham-ltcol"
+  ]
+ },
+ {
+  "id": "captain-william",
+  "title": "Captain William's household",
+  "era": "1800 – 1844",
+  "lede": "A soldier-diarist, ten children each born somewhere different, and a slow decline into Dublin lodgings.",
+  "body": [
+   "{p:captain-william-somerville|Captain William Somerville}, \"born in 1777, I think\", married Eliza Bellingham in 1800, when he was about 23 {q:60-62} {q:T2:30}. {ctx}The published Bellingham genealogy has the wedding at Roscrea on 30 August 1800 {s:lf-bellingham}; a compiled genealogy gives his birth as 3 March 1776 {s:winters-p67}. He had been \"certainly a regular officer as a young man\" (family tradition says the South or North Cork Light Infantry, though \"searches have been made in the military records\" without result), and \"later on, he was in the Louth, that's the County Louth Militia\" {q:54-58} {q:T2:27-29}.",
+   "They had ten children, \"eight boys and two girls\", \"every single one born at a different place. Most of them in Ireland, or what is Northern Ireland\" {q:62} {q:84} {q:T2:31} {q:T2:40}. In birth order, as a compiled genealogy lists them {s:winters-p67}, they were {p:william-henry-somerville|William Henry} (1802), {p:archibald-james-somerville|Archibald James} (1803), {p:john-churchill-somerville|John Churchill} (who died in infancy), {p:corry-somerville|Corry}, an {p:eliza-somerville-infant|Eliza} who died aged four, {p:bellingham-somerville|Bellingham}, an infant {p:tenison-somerville-1812|Tenison} who lived twelve days, a second {p:eliza-nelson|Eliza}, {p:tenison-alan-somerville|Tenison Alan} (1815), and {p:samuel-somerville|Samuel}, who died as a baby in 1820. The narrator names seven of the eight sons {q:102-126} {q:180-182} {q:T2:47-56} {q:T2:76-80} and explains the reused names: \"There were two Elizas … One died in infancy, and then there was frequently the habit to call another child of the same sex by the deceased child's name\" {q:170} {q:T2:71-72}.",
+   "\"Captain William kept a detailed diary, a personal diary. He entered it up every evening, except when he was away from home\" {q:132} {q:T2:59-60}. In the 1820s the family lived at {pl:cumry|Cumry}, C-U-M-R-Y, \"which I think was a small farm\" near Ballybay in Co. Monaghan {q:136} {q:T2:61-62}; then at \"another house called Farm, just called Farm, F-A-R-M, near Belturbet in County Cavan\"; then in Dublin, at Bayview Avenue or Crescent, \"which is now part of Clontarf\" {q:182-184} {q:T2:77-78}. {int}How long they were in Monaghan is unclear: transcript B has \"for 19 years\" {q:T2:51}, but transcript A's wording may instead refer to Archibald's age {q:110-112} ({qn:q-monaghan-years}).",
+   "The sons were not easy. William Henry, the eldest, \"was a ne'er-do-well. He was fond of the bottle\", always in trouble for failing to pay the rent on land he leased from the Brookes in Ulster {q:104-106} {q:T2:48}. Archibald James and Corry \"were fond of the women\" and fathered several illegitimate children, whose baptisms are marked as such in the registers {q:126-128} {q:178} {q:T2:56} {q:T2:75}. Corry married Lucinda Simmonton, who had worked in the Somerville household {q:178-180} {q:T2:75-76}. {ctx}A compiled genealogy has Corry dying in Cleveland, Ohio, in 1880 {s:winters-p67}.",
+   "Eliza died in 1839 {q:186} {q:T2:78}. \"The family then went into decline, by which I mean that there was no one except the injured Bellingham and Captain William left in Ireland.\" The two men gave up the Bayview house for lodgings north of the Liffey, \"just beside our office\", where \"Bellingham died in the autumn of 1844 and Captain William died in December 1844\" {q:196-200} {q:T2:81-82}."
+  ],
+  "people": [
+   "captain-william-somerville",
+   "eliza-bellingham",
+   "william-henry-somerville",
+   "corry-somerville",
+   "lucinda-simmonton",
+   "bellingham-somerville",
+   "samuel-somerville",
+   "tenison-somerville-1812"
+  ]
+ },
+ {
+  "id": "west-indies",
+  "title": "Flight to the West Indies, and little Archie",
+  "era": "1823 – 1871",
+  "lede": "A night journey to Dublin, a son gone to sea, a baby with a succession of wet nurses, and a question about a baronetcy.",
+  "body": [
+   "The best-remembered entry in Captain William's diary dates from February 1823. As the narrator recalls it: \"Eliza and I and Dorothea, Dorothea being Eliza's eldest sister, went to Dublin in the car, the night freezing and cold. Eliza and I returned, and the date is mentioned, about two or three weeks later. And we found that when we were away, our dear son Archibald had left home, spent a few days in Clonmel, and then taken ship on board the George and Thomas for the Barbados\" (transcript B {q:T2:63-65}). Transcript A preserves the same entry with garbles, and without the \"I\" in the Dublin party {q:142-150}.",
+   "{p:archibald-james-somerville|Archibald James}, then \"only a boy of 19\" {q:18} {q:T2:9}, \"had run away from home because he'd got a girl into the family way. And, of course, this brought shame on the family\" {q:16-18} {q:T2:8-9}. The girl is believed to have been {p:elizabeth-breakey|Elizabeth Brakey}, a servant: \"in some household\" in transcript A, \"in the Somerville household\" in transcript B {q:108-110} {q:T2:50-51}.",
+   "{int}His aunt Dorothea, who joined the Dublin trip, was married to the Clonmel banker William Riall {s:lf-bellingham}, so Archibald may have gone first to her household before finding a ship.",
+   "\"Later in that year, 1823, there is mention of a child. A couple of letters were received from Archibald James, one from Madeira, one from Barbados. And in one of these letters, he refers to the child as Archibald. From then on, the child is referred to in the diary as Little Archie\" {q:154-160} {q:T2:65-66}. Remarkably, Captain William and Eliza \"assumed responsibility for the child, which was unusual, because no responsibility is assumed for any of the other illegitimate children\". They paid for \"a succession of wet nurses\", and the baby was regularly \"brought out\" to Cumry from Ballybay {q:160-162} {q:T2:67-68}.",
+   "Was Archibald married? \"There is no record at that date of the marriage of Archibald\" {q:T2:68}; \"there is no record of that marriage, but it is constantly referred to by Archibald's sister\", Eliza Nelson, in her letters from America {q:168-172} {q:T2:69-72}. Yet the narrator says plainly, in both transcripts, that Archibald \"made the mistake of marrying that girl, whereas Corrie didn't\" {q:130} {q:T2:58}, while stressing that \"there is no conclusive proof\" that little Archie was their son {q:130} {q:T2:57-58}. {ctx}A compiled online genealogy adds two unverified details: a marriage of Archibald James Somerville to an Elizabeth Crawford on 30 November 1836, and a son, Bellingham Brooke Somerville, born in St Louis, Missouri, in 1852 {s:winters-p67} {s:winters-p68}. Whether this is a second marriage, or the same Elizabeth under another surname, is unknown ({qn:q-archibald-marriage}).",
+   "{int}The narrator then explains why it matters: \"the reason that this detail is of great interest is because the Somerville baronetcy became dormant when the then baronet died in January 1929\" {q:174} {q:T2:73}. A dormant baronetcy passes to the nearest legitimate male-line heir who can prove his claim. Archibald was the second son, and the narrator's line descends from a younger son, so legitimate male-line descendants of Archibald, if any exist, would stand ahead of it. The archive records this as the family's reason for interest, not as a claim ({qn:q-baronetcy-succession}).",
+   "Archibald later moved to Trinidad, where his brothers Tenison and Bellingham followed him; the narrator believes he died in 1871 {q:128} {q:194-196} {q:T2:57} {q:T2:79-80}."
+  ],
+  "people": [
+   "archibald-james-somerville",
+   "elizabeth-breakey",
+   "little-archie",
+   "eliza-nelson",
+   "dorothea-bellingham",
+   "elizabeth-crawford"
+  ]
+ },
+ {
+  "id": "tenison",
+  "title": "Tenison Alan: from the sea to the Castle",
+  "era": "c. 1810 – c. 1890",
+  "lede": "A cabin boy, a Trinidad sojourn, and a lifetime in the Constabulary secretariat at Dublin Castle.",
+  "body": [
+   "\"We descended from, I think, the fifth son … who was Tennyson Alan Somerville\" {q:100-102} {q:T2:47}. \"As a boy of 15, he went to sea. And he was at sea as, I don't know what, cabin boy … about five years from his boyhood until as a young man\" {q:14} {q:T2:6-7}. He then went to Trinidad, \"where his elder brother, Archibald James, had moved\" {q:194} {q:T2:79}. \"They were always looking for appointments, particularly in the West Indies\" {q:204} {q:T2:83}.",
+   "{int}His first name is transcribed \"Tennyson\" in both transcripts, the software's default spelling. It almost certainly honours his grandmother Elizabeth Tenison and his uncle Henry Tenison Bellingham, as \"Alan\" does his uncle Alan Bellingham {s:lf-bellingham}, and a compiled genealogy spells it Tenison {s:winters-p67}. On the order of the sons, the compiled list makes him the fifth son to survive infancy, which may be what the narrator meant by \"the fifth son, I think\".",
+   "Tenison \"had returned to Ireland in 1840 after the death of his mother in 1839\", and married {p:eliza-oconnor|Eliza O'Connor}, \"the daughter of a seaman who had had altogether three marriages\" {q:204-208} {q:T2:83-84}. He secured a post as an officer \"in the secretariat of the RIC\", with \"a flat and office in Dublin Castle\", the force's headquarters {q:208-210} {q:T2:85}. The narrator credits \"his cousin, Sir William Somerville … Chief Secretary of Ireland\" with the appointment {q:212-214} {q:T2:86-87}. {ctx}The IGI, as quoted in a compiled genealogy, records the marriage of Tenison Alan Somerville and Cecelia Eliza O'Connor at St Mary's, Dublin, on 6 November 1840, and the baptisms of their first two sons at St Paul's, Trinidad, in 1842 and 1845 {s:winters-p67} {s:winters-p68}.",
+   "{ctx}The force was then the Irish Constabulary; it became the Royal Irish Constabulary in 1867 {s:wp-ric}. Sir William Meredyth Somerville was Chief Secretary from July 1847 to February 1852 {s:wp-1st-baron}. {int}With the Trinidad baptisms, this suggests that Tenison went back to the West Indies after his marriage and joined the Constabulary several years later ({qn:q-tenison-appointment}).",
+   "\"He spent the rest of his life in the RIC. They moved out of the castle and they had a house in Linster Avenue, Rathmines. And they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" (transcript B {q:T2:87-88}; A has \"Livingston Avenue\" {q:216}). A compiled genealogy instead gives Tenison's death as 31 July 1895 ({qn:q-tenison-death}). In the narrator's summary he was \"a civil servant working in Dublin Castle. Well connected, but not moneyed, not landed\" {q:330-332} {q:T2:132}. The compiled genealogy lists six children: William Dennistoun, Tenison Alan (who died aged ten), Erina, {p:bellingham-arthur-somerville|Bellingham Arthur}, and twins Tenison Alan and Henry Bellingham {s:winters-p68}. The narrator mentions only Bellingham Arthur and an elder brother who \"likewise\" served in the RIC {q:12} {q:T2:6}, probably {p:william-dennistoun-somerville|William Dennistoun}."
+  ],
+  "people": [
+   "tenison-alan-somerville",
+   "eliza-oconnor",
+   "william-meredyth-somerville",
+   "william-dennistoun-somerville",
+   "erina-somerville"
+  ]
+ },
+ {
+  "id": "district-inspector",
+  "title": "The District Inspector",
+  "era": "1853 – 1916",
+  "lede": "Riots in the Fenian years, a death at Youghal, a brewer's daughter, and a house at Rathnew.",
+  "body": [
+   "{p:bellingham-arthur-somerville|Bellingham Arthur Somerville}, \"Fighting Atty\" as a boy {q:T2:12}, was born \"in the year of the Crimean War … I think it was 1856\" {q:2} {q:T2:1-2}; a compiled genealogy citing the IGI gives 17 November 1853 {s:winters-p68}. Like his father and brother he joined the RIC. \"One of his early stations was in Cork … most of his stations were in what is now Northern Ireland, Newtownards, all around there. But he was also in Limerick and Cork\" {q:290-294} {q:T2:116}. His first child was born at Newtownards in 1880 {s:winters-p68}. He \"seemed to have got a name\" for attending riots, the \"outrages\" of his diary, in the 1880s and 1890s, \"when the Fenians were at large\" {q:296-298} {q:T2:117-118}.",
+   "{sensitive}The narrator introduced the next story with a caution: \"This now is not for publication. Well, I'll let you use your own discretion, but be careful\", and \"Be careful with this … because I think it has had a great effect on the family\" {q:290} {q:304} {q:T2:115} {q:T2:119}. The family has decided to include it. The events are a matter of public record, and they are set out here in three layers: the family's account, the parliamentary record, and local history.",
+   "The family's account: a riot at Youghal \"got out of hand\", \"no doubt over fishing\" on the Blackwater; \"a detachment of RIC was sent by train from Cork to Youghal under the command of Captain Somerville\"; and \"some rioter called Hanlon or O'Hanlon\" was killed with a sabre. \"Captain Somerville and the man who did it were had up, relieved of their positions, suspended. And the whole thing went as far as Parliament in London.\" And then: \"Captain Somerville, while reinstated in due course, was never officially, what's the word? Acquitted? … I think that's correct to say that he was never formally acquitted. … It wasn't him that did [it] … He was in charge\" (transcript B {q:T2:118-127}; transcript A {q:312-322}, which garbles the last point).",
+   "{ctx}The parliamentary record. On 18 March 1887 the Commons heard about disturbances at Youghal, including an attack on the house of the local District Inspector, Kerin {s:hansard-1887b}. On 24 March an MP asked whether, \"as the inquest at Youghal terminated in a verdict of wilful murder against District Inspector Somerville and Constable Ward\", they would be tried at the Cork Assizes; both were then in custody, and another member pressed for their suspension from duty {s:hansard-1887}. On 10 May the government said that \"Sub-Inspector Summerville and Constable Ward, released on bail\", were on leave with pay and would \"return to duty on the expiration of their leave, as the Attorney General sees no grounds to advise a prosecution\" {s:hansard-1887c}.",
+   "{ctx}Local history. On 8 March 1887, during protests at Youghal over the arrest of Fr Daniel Keller, a curate believed to be a trustee of the {t:plan-of-campaign|Plan of Campaign} fund, the RIC charged a crowd with fixed bayonets. {p:patrick-hanlon|Patrick Hanlon}, a 30-year-old fisherman from Ballymacoda, was killed; the cause of death was registered as a \"wound inflicted by sword bayonet\". The Crown later entered a nolle prosequi, and the local history says both men were \"eventually acquitted\" {s:ballymacoda-1887}.",
+   "{int}The family's account matches the record on nearly every structural point: a detachment from outside Youghal (the local District Inspector was Kerin), a victim named Hanlon, a blade, the inquest and arrest, Parliament, and a return to duty without a trial. The narrator's \"never formally acquitted\" is more exact than the local history's \"acquitted\". The two differ on the cause (fishing, the narrator's own guess, rather than the Plan of Campaign) and the weapon (sabre rather than bayonet). The records name the officer only as District or Sub-Inspector Somerville; that he was Bellingham Arthur rests on the family's account, a strong but not documentary identification ({qn:q-youghal-identity}). The death of Patrick Hanlon, a young fisherman, deserves to be remembered in its own right.",
+   "With his health failing (\"something wrong with his foot or his leg\"; \"he certainly had a gout chair\"; perhaps \"rather like muscular dystrophy\") and \"a cloud over Bellingham Arthur and his career\", he asked for a transfer and was posted to Wicklow, \"in charge of Wicklow and Arklow … That's how the Somervilles got to Wicklow\". He remained a District Inspector and \"never made county inspector\" {q:324-336} {q:T2:128-134}.",
+   "He had married {p:margaret-hall-clinch|Margaret Hall Clinch}, co-heiress with her sister Rachel of Clinch's brewery {q:240} {q:328-330} {q:T2:95-96} {q:T2:130-131}. Her father sent barrels of beer to the officers' mess with the name Clinch burnt off, because his daughter was \"marrying trade\" {q:240} {q:T2:96}. {ctx}Clinch & Co.'s Eagle Brewery was in Witney, Oxfordshire {s:bhs-clinch}; a compiled genealogy dates the wedding to 27 August 1879 at St Mary's, Witney, and names Margaret's father William Clinch {s:winters-p68}. \"She had money, and Bellingham Arthur did not\" {q:330} {q:T2:132}.",
+   "Margaret's money made {pl:clermont|Clermont} possible. Bellingham Arthur rented places around Wicklow until Clermont, at Rathnew, came up for auction. Colonel Tottenham of Ashford, who it was alleged \"wanted to have neighbours that he approved of\", outbid him, then sold it to him at the price he had paid, \"immediately after the auction\" {q:572-580} {q:T2:227-231}. {ctx}A heritage summary credits the 1894 wings to \"B A Somerville\" {s:wicklowheritage-clermont}; a compiled genealogy records a daughter dying at Seaview House, Wicklow, in March 1895 {s:winters-p68}, so the year of the move is not settled.",
+   "He was, in his grandson's words, \"very snobbish … very low church\", and \"would have had a fit if he knew that any of his descendants married a Roman Catholic\". \"He never sent any of his children to school because schools were smutty places\" {q:338-346} {q:T2:134-136}. He died in 1916 \"of the flu that was then going around\"; the narrator \"always thought\" it was the Spanish flu but rightly doubts it, since that reached Ireland only in 1918 {q:10-12} {q:T2:4-5} {s:dcc-flu}. A compiled genealogy gives the date as 20 January 1916, at Clermont {s:winters-p68}."
+  ],
+  "people": [
+   "bellingham-arthur-somerville",
+   "patrick-hanlon",
+   "margaret-hall-clinch",
+   "colonel-tottenham"
+  ],
+  "sensitive": true
+ },
+ {
+  "id": "clermont-children",
+  "title": "The Clermont generation",
+  "era": "1880s – 1950",
+  "lede": "Seven children raised without school, five of them soldiers or soldiers' wives, all shaped by the Great War.",
+  "body": [
+   "Bellingham Arthur and Margaret had nine children; two died young {q:228} {q:T2:92}. The narrator lists them: {p:cecilia-somerville|Cecilia Eliza Bellingham} (Aunt Cecil), \"the eldest child\"; {p:bunt|William Arthur Tenison Bellingham} (\"Bunt\"), the eldest boy, born \"about 1884\"; {p:jim|James Aubrey Henry Bellingham} (Jim); {p:vere-somerville|Vere}, whose name transcript A garbles; {p:eddie|Edeline or Adeline} (\"Eddie\", \"Teddy\" or \"Tettie\"); {p:pat|Gualter Hugh Roger Bellingham} (\"Pat\" or \"Paddy\"); and the youngest, {p:reginald-somerville|Reginald Malcolm John}, the narrator's father {q:218-228} {q:T2:88-92}. {ctx}A compiled genealogy citing the IGI, The Times and the 1891 census supplies dates for most of them, and names one of the two who died young: {p:dorothy-somerville|Dorothy}, who died aged six in 1895 {s:winters-p68}.",
+   "None of them had a normal schooling: \"he never sent any of his children to school … So my father never went to school. Uncle Paddy, that's Pat … never went to school. Bunt and Jim did for a short while\" {q:344-346} {q:T2:136-137}. Cecil became a serious genealogist and in 1912 married her father's solicitor, Henry Rook, after an unsuitable first love for \"a sergeant in the army … not an officer\" {q:230-246} {q:T2:93-98}. Vere married into the Truells of neighbouring Clonmannon, though Edmund chose an English inheritance in Dorset over the Irish estate {q:246-252} {q:T2:98-101}. Eddie, \"the businesswoman of the family\", married late a Royal Engineers officer \"years older than Eddie\", \"reputed by the family to be the dullest man in the British army\" {q:254-260} {q:T2:101-103}.",
+   "The boys went to the army, \"going to Sandhurst or Woolwich, the two army colleges, when they were in their late teens\" {q:T2:137} {q:346}. Bunt served in India and, after the war, commanded troops at Archangel \"to keep it from falling into the hands of the Bolsheviks\" {q:362-364} {q:T2:144-145}. Jim was \"a gunner, Royal Artillery, and he spent most of his life in India\" {q:366} {q:T2:145}. {ctx}A war-diary-based history records \"Lt. Col. W A T B Somerville DSO (Royal Artillery)\" taking command of the 8th (Special) Battalion, Machine Gun Corps, in April 1919; it landed at Archangel on 26 May {s:mgc-8bn}. The initials are Bunt's, but a compiled genealogy calls Bunt a King's Own officer and Jim the DSO of the Royal Artillery {s:winters-p68} {s:winters-p69}, so which brother is meant needs checking ({qn:q-bunt-regiment}).",
+   "Pat (Gualter) \"had been to a military college before the war began\" and was commissioned into the Royal Warwickshire Regiment in 1913 {q:440} {q:T2:169} {s:gazette-1913}. \"In the retreat from Mons, Uncle Paddy was captured.\" \"He escaped three times. And the third time he got out and he found his way across Germany, across Holland and to London\", where the War Office \"wouldn't believe him for a long time\"; \"he got the MC\", but \"he had a tic for the rest of his life. Always looking to see if someone was following him\" {q:440-450} {q:T2:170-174}. He was adventurous and charming, \"very unlike his brothers\" {q:442-444} {q:T2:170-171}. {ctx}Other accounts, seen only in search results, describe nine escape attempts and Ströhen camp, and place his capture with the 2nd Battalion at Zonnebeke near Ypres in October 1914 {s:genealogist-pow} {s:clarke-sense-of-duty}; that battalion reached Belgium only in October {s:wp-royal-warwick} ({qn:q-pat-capture}).",
+   "Reginald was seventeen in 1914 and had barely been outside Clermont {q:348-350} {q:T2:138-139}. After \"an army training college up in Lincolnshire, I think\", he reached the front in 1916, fought at Passchendaele, \"remained a second lieutenant for the entire duration of the war\" in the Royal Warwickshire Regiment, and ended up in Italy, perhaps after transferring to the Gunners {q:356-362} {q:T2:140-143}. {ctx}The Third Battle of Ypres (Passchendaele) ran from 31 July to 10 November 1917 {s:wp-passchendaele}.",
+   "Afterwards Bunt married Kitty Harrison of Castle Harrison and made a garden near Bantry; Jim married an English wife and lived in Gloucestershire; Pat became a doctor's gardener at Adderbury, near Oxford {q:370-378} {q:462-464} {q:T2:146-148} {q:T2:180}. \"Neither Paddy nor my father married money … Uncle Bunt did, and Uncle Jim even more so\" {q:494} {q:T2:192}. All four brothers smoked, and all four died of cancer {q:394} {q:568-570} {q:T2:153} {q:T2:226}."
+  ],
+  "people": [
+   "cecilia-somerville",
+   "bunt",
+   "jim",
+   "vere-somerville",
+   "eddie",
+   "pat",
+   "reginald-somerville",
+   "kitty-harrison",
+   "dorothy-somerville"
+  ]
+ },
+ {
+  "id": "kenya",
+  "title": "Kenya, loss and a second marriage",
+  "era": "1920 – 1937",
+  "lede": "An ox cart to Nanyuki, a bride from Laois, a death at sea, and a childhood friend found again.",
+  "body": [
+   "After the war Reginald was \"22 or something, and the word was, what do we do with Reggie?\" He \"decided that he would go to Africa\". \"A company called Gunner's Venture … started by Gunner officers after the First World War who wanted a job\" gave him work helping \"manage coffee plantations up in a place called Nanyuki, which is about 120 miles north of Nairobi\"; he went up in 1920 \"with an ox and cart\" {q:496-502} {q:T2:192-195}. \"And then eventually his mother bought a farm\": a photograph shows him, \"virtually a schoolboy\", at a thatched hut. \"That was the farm. And he built it up\", \"a long way from Nanyuki\" {q:504} {q:T2:196-197}.",
+   "{ctx}\"It was a time that Africa, East Africa, was being opened up to European settlement\", as the narrator says {q:498} {q:T2:194}. Kenya became a Crown colony in 1920, and in the 1920s Kenyans objected to the reservation of the \"White Highlands\" for European settlers, especially British war veterans {s:wp-kenya-colony}.",
+   "Home on leave, \"he married a girl from Greystokes called Maudie Moore. She came from the County Laois family\", in 1928, and took her back to Kenya {q:496} {q:506-508} {q:T2:192} {q:T2:197}. Their daughter {p:juanita|Juanita} was born there in 1932. Two years later, travelling home to show the baby to the family, Maudie \"died on the journey. So he arrived back in Ireland as a widower\" {q:508-510} {q:T2:197-199}.",
+   "\"There was a European nanny, and it was alleged that she had her claws out for young Reggie\", then 38 {q:T2:199} {q:510}. \"But what actually happened was that he was staying at Clermont. And it so happened that a childhood friend, who was the daughter of the rector of Wicklow, was also on holiday. And they met, not having met since they were children. And they got married. And they were my parents\": {p:honor-johnson|Honor Johnson} {q:512-514} {q:T2:200-201}. The narrator was born in 1937 {q:516} {q:T2:201}."
+  ],
+  "people": [
+   "reginald-somerville",
+   "maud-moore",
+   "juanita",
+   "honor-johnson",
+   "rector-johnson",
+   "narrator"
+  ]
+ },
+ {
+  "id": "end-of-clermont",
+  "title": "The end of Clermont",
+  "era": "1949 – today",
+  "lede": "Deaths in quick succession, a tax dispute between two countries, a family quarrel and a sale for £10,000.",
+  "body": [
+   "\"The terms of the will of my grandparents was that it was to go to Uncle Bunt if he wanted it. If he didn't want it, it was to go to Uncle Jim, the second one. If he didn't want it, it was to go to Pat. If he didn't want it, it was to go to [Reggie]\" {q:T2:149-150} {q:382}. \"What actually happened, to cut a long story short, is that everybody died in quick succession\": Pat in the 1940s, Margaret in 1949, Jim in 1950 after spending his last year at Clermont (\"he's buried in Rathnew\"), and Bunt about two years after his mother {q:386-388} {q:550-552} {q:T2:150-151} {q:T2:218}. {ctx}A compiled genealogy citing The Times gives 1947, 1949, 1950 and 1951 for these four deaths {s:winters-p68} {s:winters-p69}.",
+   "Margaret's estate was complicated: \"she was wholly English. She derived all her money from the brewery in England. She lived in Ireland and there was an argument between the revenue in Ireland and the revenue in England as to whether she was domiciled in England or in Ireland\" {q:548} {q:T2:216-217}. Administration stalled; \"nobody seemed to have very much cash\" {q:550} {q:T2:217}. Bunt, \"the one who was entitled\", \"decided he would like to live there, but he died a matter of months afterwards\" {q:554} {q:T2:218-219}.",
+   "Aunt Eddie wanted Reginald to have the house, but he and Honor \"felt that they could never afford it\". Eddie came close to mounting \"a case against the widow for malpractice\" over Bunt's administration of the estate; \"peace talks\" divided the proceeds, half going to the rest of the family {q:558-562} {q:T2:220-223}. Clermont sold for \"a ridiculous sum now, in retrospect, of 10,000 pounds\": it had \"no central heating. It was badly kept. It had been empty for several years\" {q:564} {q:T2:224}. When? \"By the time it was all finished, it was about 1950\", and then a fragment that both transcripts garble (\"253\", \"2.53\") {q:566} {q:T2:224-225}, perhaps \"'52, '53\" ({qn:q-clermont-sale-date}).",
+   "{ctx}A heritage summary (seen only in search results) dates the sale to about 1955 {s:wicklowheritage-clermont}. In 1956 the Religious of Christian Education came to Ireland and opened a school at Clermont, which was due to close in 2004 {s:irishaesthete-clermont}; the site later became a third-level campus linked to Carlow {s:wp-rathnew}.",
+   "The narrator revisits it with mixed feelings: the beech trees, \"like a whole lot of soldiers\", are gone; \"the yard has all been spoilt and pulled down and rebuilt\"; the land opposite is covered in houses and an Aldi stands on Clermont land; and \"the fabric of the house, the old house, is just going\", the mortar falling out around the basement {q:530-544} {q:T2:209-214}."
+  ],
+  "people": [
+   "bunt",
+   "jim",
+   "eddie",
+   "kitty-harrison",
+   "margaret-hall-clinch",
+   "reginald-somerville"
+  ]
+ },
+ {
+  "id": "kin",
+  "title": "Kin, namesakes and the road ahead",
+  "era": "",
+  "lede": "The Cork Somervilles, the Johnsons, a journalist who is not a cousin, and what remains to be found.",
+  "body": [
+   "Other Somervilles crop up. The interviewer's lecturer knew of \"the Somervilles of Cork\", who \"still live in Drishane House, down in Castletownshend\". These are a distinct, \"very naval\" family, \"further off related\"; the narrator has met the present owner and his sons {q:280-282} {q:472-474} {q:T2:111-113} {q:T2:183-184}. {ctx}Drishane was built around 1780 and is still the family's home; Edith Somerville, the novelist, lived there {s:drishane-southernstar}. Asked about \"the Quentin Somerville debacle\", the narrator says he is \"not in our line, at least\" {q:176} {q:T2:74}.",
+   "On the maternal side, the narrator's mother Honor was the daughter of the Rector of Wicklow. Reading from the interviewer's online tree, the narrator confirms \"Philip was my grandfather\" and \"Samuel Johnson … my great-grandfather\"; the tree then takes the Johnsons back to a Zachariah or \"Samuel the Elder\" and a Frances Tench, all needing confirmation {q:518-524} {q:T2:202-206}.",
+   "The conversation ends with plans: to look through the family's papers together, to visit the Genealogical Office at the National Library, and to finish photographing the portraits that cousin Eliza began {q:46} {q:272-278} {q:478} {q:T2:23} {q:T2:107-110}. The open questions collected in this archive are the agenda for that work."
+  ],
+  "people": [
+   "honor-johnson",
+   "rector-johnson",
+   "quentin-somerville"
+  ]
+ }
 ]

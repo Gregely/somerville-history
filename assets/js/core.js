@@ -28,7 +28,18 @@
   SA.lines = {};
   for (const t of A.transcripts) for (const l of t.lines) SA.lines[`${t.id}:${l.n}`] = l;
   SA.readingsByLine = {};
-  for (const r of A.readings) (SA.readingsByLine[`T1:${r.line}`] = SA.readingsByLine[`T1:${r.line}`] || []).push(r);
+  for (const r of A.readings) { const k = `${r.t || "T1"}:${r.line}`; (SA.readingsByLine[k] = SA.readingsByLine[k] || []).push(r); }
+  // Transcript labels: A = the original working transcript, B = the companion.
+  SA.transcripts = Object.fromEntries(A.transcripts.map((t) => [t.id, t]));
+  SA.TLABEL = Object.fromEntries(A.transcripts.map((t, i) => [t.id, String.fromCharCode(65 + i)]));
+  // Parallel passages in the other transcript(s), from transcripts/alignment.json.
+  SA.parallel = function (key) {
+    const al = A.alignment;
+    if (!al) return [];
+    const [t, n] = key.split(":");
+    const other = al.pair.find((x) => x !== t);
+    return (((al.map || {})[t] || {})[n] || []).map((x) => `${other}:${x}`);
+  };
 
   // ---------- vocabularies ----------
   SA.STATUS = {
@@ -189,18 +200,27 @@
       return r ? { t: tid, a: +r[1], b: r[2] ? +r[2] : +r[1] } : null;
     }).filter(Boolean);
   };
+  // Transcript A citations read "¶148"; companion transcript B citations "B¶65".
   SA.citeLink = function (c) {
-    const label = c.a === c.b ? `¶${c.a}` : `¶${c.a}–${c.b}`;
-    return `<a class="cite-q" href="#/transcript/${c.t}:${c.a}" data-t="${c.t}" data-a="${c.a}" data-b="${c.b}" title="Transcript passage ${label.slice(1)}">${label}</a>`;
+    const pre = c.t === "T1" ? "" : SA.TLABEL[c.t] || c.t;
+    const label = c.a === c.b ? `${pre}¶${c.a}` : `${pre}¶${c.a}–${c.b}`;
+    const name = c.t === "T1" ? "transcript A" : `companion transcript ${pre}`;
+    return `<a class="cite-q${c.t === "T1" ? "" : " cite-b"}" href="#/transcript/${c.t}:${c.a}" data-t="${c.t}" data-a="${c.a}" data-b="${c.b}" title="${name}, paragraph ${label.replace(/^.*¶/, "")}">${label}</a>`;
   };
-  // keys like "T1:16" collapsed into ranges of consecutive paragraph numbers
+  // keys like "T1:16" collapsed into ranges of consecutive paragraphs, per transcript
   SA.keysToCites = function (keys) {
-    const nums = [...new Set(keys)].map((k) => +k.split(":")[1]).sort((a, b) => a - b);
+    const by = {};
+    for (const k of new Set(keys)) { const [t, n] = k.split(":"); (by[t] = by[t] || []).push(+n); }
     const out = [];
-    for (const n of nums) {
-      const last = out[out.length - 1];
-      // paragraphs are on odd/even lines separated by blanks; treat a gap of 2 as consecutive
-      if (last && n - last.b <= 2) last.b = n; else out.push({ t: "T1", a: n, b: n });
+    for (const t of Object.keys(by).sort()) {
+      const nums = by[t].sort((a, b) => a - b);
+      let cur = null;
+      for (const n of nums) {
+        // consecutive if no other paragraph lies between (blank lines don't count)
+        let gapFree = cur != null;
+        if (cur) for (let x = cur.b + 1; x < n; x++) if (SA.lines[`${t}:${x}`]) { gapFree = false; break; }
+        if (gapFree) cur.b = n; else { cur = { t, a: n, b: n }; out.push(cur); }
+      }
     }
     return out;
   };
@@ -273,7 +293,7 @@
   SA.refsOwnedBy = function (owner) {
     const keys = [];
     for (const k in A.refs) if (A.refs[k].includes(owner)) keys.push(k);
-    return keys.sort((a, b) => +a.split(":")[1] - +b.split(":")[1]);
+    return keys.sort((a, b) => a.split(":")[0].localeCompare(b.split(":")[0]) || +a.split(":")[1] - +b.split(":")[1]);
   };
   SA.mentionsOf = (owner) => (A.mentions[owner] || []);
   SA.eventsFor = (kind, id) => A.events.filter((e) => (kind === "p" ? e.people : e.places || []).includes(id) || (e.desc || "").includes(`{${kind}:${id}`));
@@ -324,7 +344,7 @@
   for (const q of A.questions) add("question", q.id, q.title, q.status, [], SA.plain(q.desc + " " + (q.next || "")), `#/questions?q=${q.id}`);
   for (const c of A.narrative) add("chapter", c.id, c.title, c.era, [], SA.plain(c.lede + " " + c.body.join(" ")), `#/story/${c.id}`);
   for (const s of A.sources) add("source", s.id, s.title, s.publisher, [], s.used || "", `#/sources?s=${s.id}`);
-  for (const t of A.transcripts) for (const l of t.lines) if (l.kind !== "withheld") add("passage", `${t.id}:${l.n}`, `¶${l.n}`, "", [], l.text, `#/transcript/${t.id}:${l.n}`);
+  for (const t of A.transcripts) for (const l of t.lines) if (l.kind !== "withheld") add("passage", `${t.id}:${l.n}`, `${SA.TLABEL[t.id]} ¶${l.n}`, "", [], l.text, `#/transcript/${t.id}:${l.n}`);
 
   SA.search = function (query, limit = 60) {
     const q = norm(query).trim();

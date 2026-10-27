@@ -1,86 +1,805 @@
 [
-  { "id": "q-archibald-marriage", "title": "Did Archibald James marry Elizabeth Breakey, and was little Archie their son?", "status": "open", "priority": "high",
-    "desc": "The narrator's central puzzle. The diary and Eliza Nelson's letters imply a marriage, but \"there is no record of that marriage\" {q:168-170}; that Archie was the son of Archibald and Elizabeth is \"believed, but not conclusively proven\" {q:108, 130}. The narrator connects it to the dormant baronetcy {q:174}.",
-    "alternatives": ["Married (perhaps irregularly or abroad) and Archie legitimate", "Not married; Archie illegitimate but acknowledged by his grandparents", "Archie the son of Archibald by another woman"],
-    "next": "Search Church of Ireland and Presbyterian registers for Ballybay/Monaghan 1822–24 and Barbados/Trinidad marriage registers; re-read the diary and Nelson letters; trace Archie's later life.",
-    "people": ["archibald-james-somerville", "elizabeth-breakey", "little-archie", "eliza-nelson"], "cite": [108, 130, 156, 160, 168, 170, 174] },
-  { "id": "q-eighth-son", "title": "Who was the eighth son of Captain William and Eliza?", "status": "open", "priority": "medium",
-    "desc": "Ten children, \"eight boys and two girls\" {q:84, 96}, but only seven sons are named: William Henry, Archibald James, John Churchill, Corry, Tenison Alan, Bellingham and Samuel. When the narrator lost the name of the brother after Archibald {q:112-114}, the interviewer supplied John Churchill from Crisp's {q:126}.",
-    "alternatives": ["Named in the Crisp's entry but not read out", "The count of eight is a slip"],
-    "next": "Read the full Crisp's (Visitation of Ireland) pedigree.", "people": ["unidentified-son", "captain-william-somerville"], "cite": [84, 96, 112, 126] },
-  { "id": "q-tenison-spelling", "title": "Tenison or Tennyson?", "status": "partly resolved", "priority": "medium",
-    "desc": "The transcript writes \"Tennyson\" throughout {q:14, 102}. Eliza Bellingham's mother was Elizabeth Tenison and her brother Henry Tenison Bellingham {s:lf-bellingham}, so Tenison is very probably the true spelling, and \"Alan\" echoes her brother Alan.",
-    "next": "Confirm from Constabulary records or his marriage entry.", "people": ["tenison-alan-somerville", "bunt"], "cite": [14, 102, 218] },
-  { "id": "q-tenison-appointment", "title": "When, and through whom, did Tenison get his Constabulary appointment?", "status": "open", "priority": "medium",
-    "desc": "Tenison returned in 1840 {q:204}; the narrator credits Sir William Somerville as Chief Secretary {q:212-214}, but Sir William held that office only from July 1847 {s:wp-1st-baron}. Either the appointment came later than the return, or it was obtained through Sir William's influence as an MP (from 1837) or Home Office minister (1846–47).",
-    "next": "RIC/Irish Constabulary officer registers (National Archives UK, HO 184) for Tenison's date of appointment.", "people": ["tenison-alan-somerville", "william-meredyth-somerville"], "cite": [204, 212, 214], "src": ["tna-ric"] },
-  { "id": "q-tenison-children", "title": "The other children of Tenison and Eliza O'Connor", "status": "open", "priority": "medium",
-    "desc": "Only Bellingham Arthur and an unnamed elder brother (also RIC) are mentioned {q:12}. The narrator moves straight from Tenison's household to Bellingham Arthur's children, listing \"again a number of children\" who are his uncles and aunts {q:216-218}. We read that list as Bellingham Arthur's family, because it ends with \"my father, Reginald\".",
-    "next": "Dublin civil and church registers (from 1845/1864) for children of Tenison Somerville.", "people": ["elder-brother-ric", "tenison-alan-somerville", "eliza-oconnor"], "cite": [12, 216, 218, 228] },
-  { "id": "q-youghal-identity", "title": "Is the 1887 \"District Inspector Somerville\" Bellingham Arthur?", "status": "partly resolved", "priority": "high",
-    "desc": "Hansard and local histories name only \"District Inspector Somerville\" {s:hansard-1887} {s:ballymacoda-1887}. The family story (RIC detachment from Cork to Youghal, a rioter named Hanlon killed with a blade, arrest, Parliament, no conviction) matches closely {q:312-322}. The narrator remembered the 1880s and \"Captain\" Somerville, and a fishing dispute.",
-    "next": "Cork Examiner / Freeman's Journal reports of the March 1887 inquest; RIC registers for D.I. Somerville's full name and stations.", "people": ["bellingham-arthur-somerville", "patrick-hanlon"], "cite": [290, 312, 316, 318, 320, 322] },
-  { "id": "q-captain-william-regiment", "title": "Captain William's regiments", "status": "open", "priority": "low",
-    "desc": "Family tradition: South Cork Light Infantry, \"allegedly\"; perhaps North Cork; \"searches have been made in the military records\" without success {q:54-56}. Later a militia officer (\"the Laos … country … militia\") {q:56}. We read this as the Louth Militia, his father-in-law's regiment {s:lf-bellingham}; Laois is the alternative.",
-    "alternatives": ["South Cork Militia (light infantry)", "North Cork Militia", "A regular regiment, later the Louth or Queen's County (Laois) Militia"],
-    "next": "Militia officer lists in the Army Lists c. 1795–1830.", "people": ["captain-william-somerville"], "cite": [54, 56, 58] },
-  { "id": "q-captain-william-born", "title": "Captain William: born 1776 or 1777?", "status": "open", "priority": "low",
-    "desc": "Narrator: 1777, \"I think\" {q:62}. Published Bellingham genealogy: 1776 {s:lf-bellingham}.", "people": ["captain-william-somerville"], "cite": [62] },
-  { "id": "q-sir-william-younger", "title": "Who was \"Sir William Somerville the younger\" at Ardrass?", "status": "open", "priority": "low",
-    "desc": "\"Sir William Somerville, the younger, inherited the house, Ardrass? … We don't know. I don't know. I suspect he did\" {q:90}. It is unclear whether this is a question from the interviewer, a different branch, or a confusion with Captain William.",
-    "next": "NLI Registered Pedigree of the Somervilles of Ardrass {s:nli-ardrass}.", "people": ["major-william-somerville", "captain-william-somerville"], "places": ["ardrass"], "cite": [88, 90] },
-  { "id": "q-castle-bellingham-sale", "title": "Who sold Castle Bellingham to Sir William: Alan or his widow?", "status": "partly resolved", "priority": "low",
-    "desc": "Narrator: Alan \"sold it, actually, to his uncle\" {q:36}. Published genealogy: Alan rented it to Sir William, and Monique sold the freehold by c. 1824, after Alan's death in 1821 {s:lf-bellingham}. Both agree that it passed to the uncle.",
-    "people": ["alan-bellingham-1773", "monique-baby", "sir-william-bellingham"], "cite": [36, 38] },
-  { "id": "q-canada-cousin", "title": "The cousin in Canada who gave family members \"a leg up\"", "status": "open", "priority": "low",
-    "desc": "\"There was a cousin … regiment … in Canada, and he appears in the records as … giving a leg up to a number of family members\"; \"one of the Bellinghams was a descendant of an early settler in Canada\" {q:30-34}. The transcript is badly garbled here (\"a regiment law for sale\"). Monique's family, the Bâbys, were early French settlers of Detroit, which may be what is meant.",
-    "people": ["alan-bellingham-1773", "monique-baby"], "cite": [30, 32, 34] },
-  { "id": "q-dorothea-eldest", "title": "Was Dorothea or Eliza the eldest sister?", "status": "open", "priority": "low",
-    "desc": "Narrator: \"Dorothea being Eliza's eldest sister\" {q:144}. Published genealogy: Elizabeth b. 1779, Dorothea b. c. 1780, though Dorothea married first (1798) {s:lf-bellingham}.", "people": ["dorothea-bellingham", "eliza-bellingham"], "cite": [28, 144] },
-  { "id": "q-clonmel", "title": "Where did Archibald spend \"a few days\" before sailing?", "status": "open", "priority": "low",
-    "desc": "Diary as remembered: \"spent a few days include Mal, and then took ship\" {q:148}. Best reading: Clonmel, where his aunt Dorothea Riall lived {s:lf-bellingham}. The port of embarkation is not stated.",
-    "alternatives": ["Clonmel", "Clones (Co. Monaghan)", "Cove (Cobh)"], "people": ["archibald-james-somerville"], "places": ["clonmel"], "cite": [148] },
-  { "id": "q-farm", "title": "The house called \"Farm\"", "status": "open", "priority": "low",
-    "desc": "\"Another house, called Farm, just called Farm … about Herbert, in County cotton\" {q:182}. Probably near Belturbet, Co. Cavan.", "places": ["farm-cavan"], "cite": [182] },
-  { "id": "q-cumry", "title": "Locate Cumry, Co. Monaghan", "status": "open", "priority": "medium",
-    "desc": "Spelled out by the narrator as C-U-M-R-Y {q:136}, near Ballybay {q:162}. Not yet found in townland indexes.",
-    "next": "Search townlands.ie and Griffith's Valuation for Ballybay parish.", "places": ["cumry"], "cite": [136, 162] },
-  { "id": "q-livingston", "title": "\"Livingston Avenue\", Rathmines", "status": "open", "priority": "low",
-    "desc": "Tenison and Eliza's later home {q:216}. No such street has been confirmed; it may be a mishearing.", "places": ["rathmines"], "cite": [216] },
-  { "id": "q-fighting-artie", "title": "Bellingham Arthur's boyhood nickname", "status": "open", "priority": "low",
-    "desc": "\"As a boy he was known as fighting atte … atte being Arthur\" {q:24}. Possibly \"Fighting Artie\"; unclear.", "people": ["bellingham-arthur-somerville"], "cite": [24] },
-  { "id": "q-truell-daughter", "title": "First name of the daughter who married Edmund Truell", "status": "open", "priority": "medium",
-    "desc": "Transcribed \"there to money\" {q:224}; the interviewer remarks that it is an unusual name.", "people": ["mrs-truell", "edmund-truell"], "cite": [224, 246, 250] },
-  { "id": "q-henry-rock", "title": "Henry Rock: surname spelling", "status": "open", "priority": "low",
-    "desc": "\"Henry Rock\" / \"Henry Oak\" {q:232-234}. Possibly Rooke. A 1912 Dublin marriage would settle it.", "people": ["henry-rock", "cecilia-somerville"], "cite": [232, 234, 246] },
-  { "id": "q-uncle-jordan", "title": "Aunt Eddie's husband: \"Uncle Jordan\"?", "status": "open", "priority": "low",
-    "desc": "{q:256-260}", "people": ["uncle-jordan", "eddie"], "cite": [256, 260] },
-  { "id": "q-bunt-regiment", "title": "Bunt's regiment: King's Own (Royal Lancaster) or Royal Artillery?", "status": "open", "priority": "medium",
-    "desc": "Narrator: Royal Lancaster Regiment in WWI {q:364}. A war-diary-based history lists \"Lt. Col. W A T B Somerville DSO (Royal Artillery)\" commanding the 8th (Special) Bn MGC in 1919 {s:mgc-8bn}. He may have changed regiments, or the narrator may have transposed Bunt's and Jim's (Jim was Royal Artillery {q:366}).",
-    "next": "Army Lists 1914–19; London Gazette DSO citation.", "people": ["bunt", "jim"], "cite": [362, 364, 366] },
-  { "id": "q-pat-capture", "title": "Pat's capture, camps and escape", "status": "open", "priority": "medium",
-    "desc": "Captured in the retreat from Mons; escaped at the third attempt; MC {q:442-450}. The family has photographs from the camps {q:452}. Battalion, camps and escape date are unknown. A published MC record for a different escaped Royal Warwickshire officer (Gualter Somerville) must not be confused with him.",
-    "next": "ICRC First World War prisoners archive; National Archives (UK) WO 339 officer file; London Gazette for the MC.", "people": ["pat"], "cite": [442, 446, 450, 452] },
-  { "id": "q-gunners-venture", "title": "\"Gunners Venture\" in Kenya", "status": "open", "priority": "low",
-    "desc": "{q:498-500} No independent record found yet under that name.", "people": ["reginald-somerville"], "places": ["nanyuki"], "cite": [498, 500] },
-  { "id": "q-green-desert", "title": "\"Green desert\" between Bantry and Glengarriff", "status": "open", "priority": "low",
-    "desc": "Where Bunt and Kitty's cottages and gardens were {q:374, 554}. The name is surely misheard.", "people": ["bunt", "kitty-harrison"], "places": ["bantry-glengarriff"], "cite": [374, 554] },
-  { "id": "q-jim-burial", "title": "Where is Uncle Jim buried?", "status": "open", "priority": "low",
-    "desc": "\"He's buried in Matthew\" {q:388}. Unidentified; possibly Rathnew or another Wicklow churchyard.", "people": ["jim"], "places": ["rathnew"], "cite": [388] },
-  { "id": "q-clermont-sale-date", "title": "When was Clermont sold?", "status": "open", "priority": "low",
-    "desc": "Narrator: settled \"about 1950 … '52, '53\" {q:566}. Heritage record: c. 1955; the religious order arrived in 1956 {s:wicklowheritage-clermont} {s:irishaesthete-clermont}.", "places": ["clermont"], "cite": [566] },
-  { "id": "q-kitty-ferguson", "title": "Was Kitty Harrison previously married to Alan Ferguson?", "status": "open", "priority": "low",
-    "desc": "\"She married. Or she hadn't married. An Australian … Alan Ferguson\" {q:374}.", "people": ["kitty-harrison", "alan-ferguson"], "cite": [374] },
-  { "id": "q-johnson-line", "title": "The Johnson ancestry", "status": "open", "priority": "medium",
-    "desc": "Comes mainly from the interviewer's Ancestry tree, read aloud in a confused passage {q:520-524}: the Rector of Wicklow (possibly Philip), his father Samuel, and Samuel's father Zachariah (or Samuel the Elder), with a Frances Tench. All unverified.",
-    "next": "Clergy of Dublin and Glendalough succession lists for the Rectors of Wicklow; Church of Ireland records.", "people": ["rector-johnson", "samuel-johnson", "zachariah-johnson", "frances-tench", "honor-johnson"], "cite": [512, 518, 520, 522, 524] },
-  { "id": "q-ancestry-williams", "title": "\"William P. … William J.\" in the online tree", "status": "open", "priority": "low",
-    "desc": "The interviewer reads out entries (\"Henry, son of William J … William P, who is father of William J … William Padlu?\") {q:118-120} that cannot be matched to anyone in the narrator's account.", "cite": [118, 120] },
-  { "id": "q-eddie-papers", "title": "Whose deaths prompted the destruction of the diary?", "status": "partly resolved", "priority": "low",
-    "desc": "\"Following the death of my great-grandparents, my aunt Eddie's parents, the end of the 19th century\" {q:134}. Eddie's parents died in 1916 and 1949; the narrator's great-grandparents (Tenison and Eliza, Eddie's grandparents) died before c. 1895 {q:216}. We read \"parents\" as a slip for \"grandparents\".", "people": ["eddie", "tenison-alan-somerville", "eliza-oconnor"], "cite": [134, 216] },
-  { "id": "q-recording-date", "title": "Date of the recording", "status": "partly resolved", "priority": "low",
-    "desc": "The file is labelled \"27 Oct\" with no year. Internal clues: the narrator, born 1937, is \"coming up to 90\" {q:50}, and it is half-term. This suggests 2026.", "cite": [50] },
-  { "id": "q-holdings", "title": "Where are the original papers?", "status": "open", "priority": "high",
-    "desc": "The recording refers to Bellingham Arthur's six volumes {q:6}, transcripts of Captain William's diary {q:132}, Eliza's letters {q:52}, the Nelson correspondence {q:166}, the Crisp's entry {q:124}, Bellingham Arthur's official and personal diaries {q:334}, portraits of Dorothea and Monique and a miniature of Henry {q:26-28, 36, 44}, Pat's camp photographs {q:452}, Reginald's Kenya photographs {q:504}, and Monique's booklet {q:42}. Cousin Eliza began photographing the portraits {q:46}. An inventory, with scans linked from this archive, is the most valuable next step.",
-    "cite": [6, 24, 42, 44, 46, 52, 124, 132, 166, 334, 452, 504] }
+ {
+  "id": "q-archibald-marriage",
+  "title": "Did Archibald James marry Elizabeth Breakey, and was little Archie their son?",
+  "status": "open",
+  "priority": "high",
+  "desc": "The narrator's central puzzle. The diary and Eliza Nelson's letters imply a marriage, but \"there is no record of that marriage\" {q:170} {q:T2:71}; the narrator says only that \"there is no record at that date\" (1823) {q:T2:68}, while affirming in both transcripts that Archibald \"made the mistake of marrying that girl\" {q:130} {q:T2:58}. That little Archie was the son of Archibald and Elizabeth Brakey is \"believed, but not conclusively proven\" {q:108} {q:T2:50}. A compiled genealogy adds a marriage of Archibald James Somerville to an Elizabeth Crawford on 30 November 1836, and a son Bellingham Brooke born in St Louis in 1852 {s:winters-p67} {s:winters-p68}; both details come from an online tree and the IGI and have not been checked. The narrator connects the question to the dormant baronetcy {q:174} {q:T2:73}.",
+  "alternatives": [
+   "Married to Elizabeth Brakey (perhaps irregularly or abroad); Archie legitimate",
+   "Not married to her; Archie acknowledged by his grandparents but illegitimate",
+   "The 1836 \"Elizabeth Crawford\" marriage is the same union, recorded later or under another surname",
+   "The 1836 marriage is to a different woman, a later family that settled in America"
+  ],
+  "next": "Church of Ireland and Presbyterian registers for Ballybay/Monaghan 1822–24; the original record behind the 1836 Crawford marriage; St Louis records for Bellingham Brooke Somerville; re-read the diary and the Nelson letters.",
+  "people": [
+   "archibald-james-somerville",
+   "elizabeth-breakey",
+   "elizabeth-crawford",
+   "little-archie",
+   "bellingham-brooke-somerville",
+   "eliza-nelson"
+  ],
+  "cite": [
+   108,
+   130,
+   156,
+   160,
+   168,
+   170,
+   174,
+   "T2:50",
+   "T2:58",
+   "T2:68",
+   "T2:70",
+   "T2:71",
+   "T2:73"
+  ]
+ },
+ {
+  "id": "q-eighth-son",
+  "title": "Who was the eighth son of Captain William and Eliza?",
+  "status": "partly resolved",
+  "priority": "medium",
+  "desc": "\"Eight boys and two girls\" {q:84, 96} {q:T2:40}, but only seven sons are named in the recording. A compiled genealogy (quoting an Ancestry tree) lists an eighth: Tenison, born 10 and died 22 August 1812 {s:winters-p67}. {int}This fits the narrator's account of names being reused after a child died, since the next son was Tenison Alan (1815). Still needs a baptism or burial record.",
+  "alternatives": [
+   "Named in the Crisp's entry but not read out",
+   "The count of eight is a slip"
+  ],
+  "next": "Find the 1812 baptism or burial; read the full Crisp's pedigree.",
+  "people": [
+   "tenison-somerville-1812",
+   "captain-william-somerville"
+  ],
+  "cite": [
+   84,
+   96,
+   112,
+   126,
+   "T2:40",
+   "T2:55"
+  ]
+ },
+ {
+  "id": "q-tenison-spelling",
+  "title": "Tenison or Tennyson?",
+  "status": "partly resolved",
+  "priority": "medium",
+  "desc": "Both transcripts write \"Tennyson\" {q:14} {q:T2:7}, the speech-to-text default for the spoken name, so they are no evidence of the spelling. Eliza Bellingham's mother was Elizabeth Tenison and her brother Henry Tenison Bellingham {s:lf-bellingham}, and a compiled genealogy uses \"Tenison Alan Somerville\" throughout {s:winters-p67}. Tenison is very probably right; an original record would confirm it.",
+  "next": "Confirm from Constabulary records or his marriage entry.",
+  "people": [
+   "tenison-alan-somerville",
+   "bunt"
+  ],
+  "cite": [
+   14,
+   102,
+   218,
+   "T2:7",
+   "T2:47",
+   "T2:88"
+  ]
+ },
+ {
+  "id": "q-tenison-appointment",
+  "title": "When, and through whom, did Tenison get his Constabulary appointment?",
+  "status": "open",
+  "priority": "medium",
+  "desc": "Tenison returned in 1840 {q:204} {q:T2:83}; the narrator credits Sir William Somerville as Chief Secretary {q:212-214} {q:T2:86-87}, but Sir William held that office only from July 1847 {s:wp-1st-baron}. A compiled genealogy records two of Tenison's sons baptised at St Paul's, Trinidad, in 1842 and 1845 {s:winters-p68}, which suggests he went back to the West Indies after his marriage (\"they were always looking for appointments, particularly in the West Indies\" {q:T2:83}) and joined the Constabulary later.",
+  "next": "RIC/Irish Constabulary officer registers (National Archives UK, HO 184) for Tenison's date of appointment.",
+  "people": [
+   "tenison-alan-somerville",
+   "william-meredyth-somerville"
+  ],
+  "cite": [
+   204,
+   212,
+   214,
+   "T2:83",
+   "T2:86",
+   "T2:87"
+  ],
+  "src": [
+   "tna-ric"
+  ]
+ },
+ {
+  "id": "q-tenison-children",
+  "title": "The other children of Tenison and Eliza O'Connor",
+  "status": "partly resolved",
+  "priority": "medium",
+  "desc": "The narrator mentions only Bellingham Arthur and an unnamed elder brother, also in the RIC {q:12} {q:T2:6}, and then moves straight to Bellingham Arthur's own children {q:216-218} {q:T2:88}. A compiled genealogy citing the IGI lists six children: William Dennistoun (1842), Tenison Alan (1845–55), Erina Bellingham (1852), Bellingham Arthur (1853), and twins Tenison Alan and Henry Bellingham (1859) {s:winters-p68}. {int}The elder brother in the RIC is probably William Dennistoun; unverified.",
+  "next": "RIC officers' registers (HO 184) for William Dennistoun Somerville; Dublin baptismal registers.",
+  "people": [
+   "william-dennistoun-somerville",
+   "tenison-alan-somerville",
+   "eliza-oconnor"
+  ],
+  "cite": [
+   12,
+   216,
+   218,
+   228,
+   "T2:6",
+   "T2:88"
+  ]
+ },
+ {
+  "id": "q-youghal-identity",
+  "title": "Is the 1887 \"District Inspector Somerville\" Bellingham Arthur?",
+  "status": "partly resolved",
+  "priority": "high",
+  "desc": "Hansard names only \"District Inspector Somerville\" (24 March 1887) and \"Sub-Inspector Summerville\" (10 May 1887) {s:hansard-1887} {s:hansard-1887c}; the local history gives no first name {s:ballymacoda-1887}. The family's story matches closely: an RIC detachment from Cork, a dead rioter named Hanlon, a blade, arrest, Parliament, and reinstatement without a formal acquittal {q:312-322} {q:T2:118-127}, which is just what the 10 May reply describes. The narrator remembered \"the 1880s\", \"Captain\" Somerville and a fishing dispute.",
+  "next": "RIC officers' registers (HO 184) for D.I. Somerville's full name and stations in 1887; Cork Examiner and Freeman's Journal reports of the March 1887 inquest; the July 1887 Cork Assizes report.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "patrick-hanlon"
+  ],
+  "cite": [
+   290,
+   312,
+   316,
+   318,
+   320,
+   322,
+   "T2:115",
+   "T2:118",
+   "T2:125",
+   "T2:126",
+   "T2:127"
+  ]
+ },
+ {
+  "id": "q-captain-william-regiment",
+  "title": "Captain William's regiments",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Family tradition: South Cork Light Infantry, \"allegedly\", or perhaps North Cork; \"searches have been made in the military records\" without success {q:54-56} {q:T2:27-28}. His later militia regiment is clear in transcript B, \"the Louth, that's the County Louth Militia\" {q:T2:29}, where A garbles it {q:56}; a compiled genealogy agrees {s:winters-p67}. The regular regiment remains unconfirmed.",
+  "alternatives": [
+   "South Cork Militia (light infantry)",
+   "North Cork Militia",
+   "A regular regiment of the line"
+  ],
+  "next": "Militia officer lists in the Army Lists c. 1795–1830.",
+  "people": [
+   "captain-william-somerville"
+  ],
+  "cite": [
+   54,
+   56,
+   58,
+   "T2:27",
+   "T2:28",
+   "T2:29"
+  ]
+ },
+ {
+  "id": "q-captain-william-born",
+  "title": "Captain William: born 1776 or 1777?",
+  "status": "open",
+  "priority": "low",
+  "desc": "Narrator: 1777, \"I think\" {q:62} {q:T2:30}. Published Bellingham genealogy: 1776 {s:lf-bellingham}; compiled genealogy: 3 March 1776 {s:winters-p67}.",
+  "people": [
+   "captain-william-somerville"
+  ],
+  "cite": [
+   62,
+   "T2:30"
+  ]
+ },
+ {
+  "id": "q-sir-william-younger",
+  "title": "Who was \"Sir William Somerville the younger\" at Ardrass?",
+  "status": "open",
+  "priority": "low",
+  "desc": "\"Sir William Somerville the Younger inherited the house. Ardras? We don't know. I don't know. I suspect he did. Ardras continued, not in the possession of the Somerville family\" {q:T2:44} {q:90}. It is unclear who \"Sir William the Younger\" is: perhaps a member of the senior (baronet) line, or a confusion with Captain William.",
+  "next": "NLI Registered Pedigree of the Somervilles of Ardrass {s:nli-ardrass}.",
+  "people": [
+   "major-william-somerville",
+   "captain-william-somerville"
+  ],
+  "places": [
+   "ardrass"
+  ],
+  "cite": [
+   88,
+   90,
+   "T2:42",
+   "T2:44"
+  ]
+ },
+ {
+  "id": "q-castle-bellingham-sale",
+  "title": "Who sold Castle Bellingham to Sir William: Alan or his widow?",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Narrator: Alan \"sold it, actually, to his uncle\" {q:36}. Published genealogy: Alan rented it to Sir William, and Monique sold the freehold by c. 1824, after Alan's death in 1821 {s:lf-bellingham}. Both agree that it passed to the uncle.",
+  "people": [
+   "alan-bellingham-1773",
+   "monique-baby",
+   "sir-william-bellingham"
+  ],
+  "cite": [
+   36,
+   38
+  ]
+ },
+ {
+  "id": "q-canada-cousin",
+  "title": "The cousin in Canada who gave family members \"a leg up\"",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Transcript B clarifies A's garbled \"regiment law for sale\": \"there was a cousin who was a regimental officer in Canada and he appears in the records as being, as giving a leg up to a number of family members\" {q:T2:15-16} {q:30-34}; and \"one of the Bellinghams was a descendant of an early settler in Canada\" {q:T2:17}. The cousin is not identified. Monique's family, the Bâbys, were early settlers of Detroit, which may be what is meant.",
+  "people": [
+   "alan-bellingham-1773",
+   "monique-baby"
+  ],
+  "cite": [
+   30,
+   32,
+   34,
+   "T2:15",
+   "T2:16",
+   "T2:17"
+  ]
+ },
+ {
+  "id": "q-dorothea-eldest",
+  "title": "Was Dorothea or Eliza the eldest sister?",
+  "status": "open",
+  "priority": "low",
+  "desc": "Narrator: \"Dorothea being Eliza's eldest sister\" {q:144} {q:T2:63-64}. Published genealogy: Elizabeth b. 1779, Dorothea b. c. 1780, though Dorothea married first (1798) {s:lf-bellingham}.",
+  "people": [
+   "dorothea-bellingham",
+   "eliza-bellingham"
+  ],
+  "cite": [
+   28,
+   144,
+   "T2:13",
+   "T2:63"
+  ]
+ },
+ {
+  "id": "q-clonmel",
+  "title": "Clonmel, and where Archibald took ship",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Transcript B settles the reading: he \"spent a few days in Clonmel, and then taken ship\" {q:T2:65}, where A has \"include Mal\" {q:148}. His aunt Dorothea Riall lived in Clonmel {s:lf-bellingham}. The port of embarkation (Clonmel is inland) is not stated.",
+  "alternatives": [
+   "Waterford",
+   "Cork (Cove)"
+  ],
+  "people": [
+   "archibald-james-somerville"
+  ],
+  "places": [
+   "clonmel"
+  ],
+  "cite": [
+   148,
+   "T2:65"
+  ]
+ },
+ {
+  "id": "q-farm",
+  "title": "The house called \"Farm\"",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Transcript B: \"another house called Farm, just called Farm, F-A-R-M, near Bell Turbot in County Cavan\" {q:T2:77}; A garbles the place {q:182}. Belturbet, Co. Cavan is now secure; the house itself has not been located.",
+  "places": [
+   "farm-cavan"
+  ],
+  "cite": [
+   182,
+   "T2:77"
+  ],
+  "next": "Griffith's Valuation and townland indexes around Belturbet."
+ },
+ {
+  "id": "q-cumry",
+  "title": "Locate Cumry, Co. Monaghan",
+  "status": "open",
+  "priority": "medium",
+  "desc": "Spelled out by the narrator as C-U-M-R-Y, which both transcripts preserve (B renders the word itself as \"Cymru\") {q:136} {q:T2:62}; near Ballybay {q:162} {q:T2:68}. Not yet found in townland indexes.",
+  "next": "Search townlands.ie and Griffith's Valuation for Ballybay parish.",
+  "places": [
+   "cumry"
+  ],
+  "cite": [
+   136,
+   162,
+   "T2:62",
+   "T2:68"
+  ]
+ },
+ {
+  "id": "q-livingston",
+  "title": "Tenison's Dublin address: \"Livingston\" or \"Leinster\" Avenue?",
+  "status": "open",
+  "priority": "low",
+  "desc": "Transcript A: \"Livingston Avenue. Breath of Hines\" {q:216}; transcript B: \"Linster Avenue. Brathmines\" {q:T2:87-88}. Leinster Road is in Rathmines {s:wp-rathmines}; Leinster Avenue is in North Strand, near the family's earlier home in Bayview Avenue {s:dublish-leinster-ave}.",
+  "places": [
+   "rathmines"
+  ],
+  "cite": [
+   216,
+   "T2:87",
+   "T2:88"
+  ],
+  "alternatives": [
+   "Leinster Road, Rathmines",
+   "Leinster Avenue, North Strand",
+   "Another street in Rathmines"
+  ],
+  "next": "Thom's Directory entries for T. A. Somerville, 1850–1895."
+ },
+ {
+  "id": "q-fighting-artie",
+  "title": "Bellingham Arthur's boyhood nickname",
+  "status": "resolved",
+  "priority": "low",
+  "desc": "Transcript B is clear: \"As a boy, he was known as Fighting Atty. Atty being Arthur\" {q:T2:12}; transcript A has \"fighting atte\" {q:24}. (\"Artie\" would sound the same.)",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "cite": [
+   24,
+   "T2:12"
+  ]
+ },
+ {
+  "id": "q-truell-daughter",
+  "title": "First name of the daughter who married Edmund Truell",
+  "status": "resolved",
+  "priority": "medium",
+  "desc": "Vere. Transcript B names her three times (\"Vere Demerly … the name Vere\"; \"Then the next sister, Vere. Vere married the second son\") {q:T2:89-90} {q:T2:98}; A garbles the name as \"there to money\" {q:224}. A compiled genealogy citing The Times gives Vere Frances de Merlie Bellingham Somerville (1890–1976), married 14 August 1912 {s:winters-p68}.",
+  "people": [
+   "vere-somerville",
+   "edmund-truell"
+  ],
+  "cite": [
+   224,
+   246,
+   250,
+   "T2:89",
+   "T2:90",
+   "T2:98"
+  ]
+ },
+ {
+  "id": "q-henry-rock",
+  "title": "Henry Rook: surname and relationship",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Transcript B: \"Henry Rook\"; A: \"Henry, Rock\" and \"Henry Oak\" {q:232-234} {q:T2:94}. Both transcripts break the sentence as \"who was actually her father. That's [Bellingham] Arthur's solicitor\", which must mean her father's solicitor, since he was \"years older\" and her husband. Rook (or Rooke) is the likeliest surname.",
+  "people": [
+   "henry-rock",
+   "cecilia-somerville"
+  ],
+  "cite": [
+   232,
+   234,
+   246,
+   "T2:94",
+   "T2:98"
+  ],
+  "next": "A 1912 Dublin marriage record."
+ },
+ {
+  "id": "q-uncle-jordan",
+  "title": "Aunt Eddie's husband: \"Uncle John\" or \"Uncle Jordan\"?",
+  "status": "open",
+  "priority": "low",
+  "desc": "Transcript A: \"Uncle Jordan\", \"stationed in India for that part of his career\" {q:256-260}; transcript B: \"Uncle John\", \"stationed in India for the whole of his career … years older than Eddie\" {q:T2:102-103}. A compiled genealogy notes a 1929 Times notice for Edeline {s:winters-p68}, perhaps her marriage.",
+  "people": [
+   "uncle-jordan",
+   "eddie"
+  ],
+  "cite": [
+   256,
+   260,
+   "T2:102",
+   "T2:103"
+  ],
+  "next": "The Times, 1929; Army Lists (Royal Engineers)."
+ },
+ {
+  "id": "q-bunt-regiment",
+  "title": "Who commanded at Archangel, and in which regiment?",
+  "status": "open",
+  "priority": "medium",
+  "desc": "Narrator: Bunt, \"in the Royal Lancaster Regiment\", commanded a troop sent to Archangel {q:364} {q:T2:144-145}; Jim was \"a gunner, Royal Artillery\" {q:366} {q:T2:145}. A war-diary-based history: \"Lt. Col. W A T B Somerville DSO (Royal Artillery)\" commanded the 8th (Special) Battalion MGC from 12 April 1919 {s:mgc-8bn}. A compiled genealogy citing The Times: Bunt a Lieutenant Colonel of the King's Own; Jim \"Lieutenant Colonel, DSO, Royal Artillery\" {s:winters-p68} {s:winters-p69}. Either the published commander's initials or his regiment and DSO are wrong, or Bunt transferred.",
+  "next": "Army Lists 1918–19; the London Gazette for the DSO citation; the 8th Bn MGC war diary (WO 95).",
+  "people": [
+   "bunt",
+   "jim"
+  ],
+  "cite": [
+   362,
+   364,
+   366,
+   "T2:144",
+   "T2:145"
+  ]
+ },
+ {
+  "id": "q-pat-capture",
+  "title": "Pat's capture, escapes and camps",
+  "status": "open",
+  "priority": "medium",
+  "desc": "Narrator: captured \"in the retreat from Mons\"; escaped three times, the third successfully, across Germany and Holland; MC {q:442-450} {q:T2:170-173}. The family has camp photographs and an \"article\" about the escape {q:452} {q:T2:173-175}. Other accounts: Captain Gualter Somerville, 2nd Bn Royal Warwickshire Regiment, Ströhen camp, nine escape attempts (TheGenealogist, search results) {s:genealogist-pow}; captured at Zonnebeke near Ypres in October 1914, escaped 1917 (an article based on interviews with the narrator) {s:clarke-sense-of-duty}; MC 1919 (IWM, search results) {s:iwm-gualter}. The 2nd Battalion arrived only in October 1914 {s:wp-royal-warwick}.",
+  "next": "National Archives (UK) WO 339 officer file; ICRC 1914–18 prisoner archive; London Gazette 1919 MC entry; the family's article and photographs.",
+  "people": [
+   "pat"
+  ],
+  "cite": [
+   442,
+   446,
+   450,
+   452,
+   "T2:170",
+   "T2:172",
+   "T2:173",
+   "T2:175"
+  ]
+ },
+ {
+  "id": "q-gunners-venture",
+  "title": "\"Gunners Venture\" in Kenya",
+  "status": "open",
+  "priority": "low",
+  "desc": "\"A company called Gunner's Venture … started by Gunner officers after the First World War who wanted a job\" {q:T2:193} {q:498-500}. No independent record found yet under that name.",
+  "people": [
+   "reginald-somerville"
+  ],
+  "places": [
+   "nanyuki"
+  ],
+  "cite": [
+   498,
+   500,
+   "T2:193",
+   "T2:194"
+  ]
+ },
+ {
+  "id": "q-green-desert",
+  "title": "\"Green desert\" near Bantry",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Both transcripts hear \"Green desert\" {q:374} {q:T2:147}. A compiled genealogy citing The Times gives Bunt's death at Reendesert Lodge, Bantry {s:winters-p69}, so the place is evidently Reendesert. Still to check: the Times notice itself and the house's location.",
+  "people": [
+   "bunt",
+   "kitty-harrison"
+  ],
+  "places": [
+   "bantry-glengarriff"
+  ],
+  "cite": [
+   374,
+   554,
+   "T2:147",
+   "T2:219"
+  ]
+ },
+ {
+  "id": "q-jim-burial",
+  "title": "Where is Uncle Jim buried?",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Transcript B: \"he's buried in Rathnew\" {q:T2:151}; transcript A: \"buried in Matthew\" {q:388}. Rathnew is the likelier reading; the grave has not been located.",
+  "people": [
+   "jim"
+  ],
+  "places": [
+   "rathnew"
+  ],
+  "cite": [
+   388,
+   "T2:151"
+  ],
+  "next": "Rathnew (Church of Ireland) burial register, 1950."
+ },
+ {
+  "id": "q-clermont-sale-date",
+  "title": "When was Clermont sold?",
+  "status": "open",
+  "priority": "low",
+  "desc": "\"By the time it was all finished, it was about 1950\", followed by a fragment both transcripts garble: \"253\" (A) and \"2.53\" (B) {q:566} {q:T2:224-225}. Perhaps \"'52, '53\", but that is a reading, not a fact. A heritage summary gives c. 1955 and the religious order came in 1956 {s:wicklowheritage-clermont} {s:irishaesthete-clermont}.",
+  "places": [
+   "clermont"
+  ],
+  "cite": [
+   566,
+   "T2:224",
+   "T2:225"
+  ]
+ },
+ {
+  "id": "q-kitty-ferguson",
+  "title": "Was Kitty Harrison previously married to Alan Ferguson?",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "\"She married, or she had married, an Australian called Alan Ferguson\" {q:374} {q:T2:146-147}. A compiled genealogy citing The Times confirms a marriage to Alan Campbell Ferguson before 1920 and to Bunt about 1925 {s:winters-p69}. Whether Ferguson died or the marriage ended in divorce is not recorded.",
+  "people": [
+   "kitty-harrison",
+   "alan-ferguson"
+  ],
+  "cite": [
+   374,
+   "T2:146",
+   "T2:147"
+  ]
+ },
+ {
+  "id": "q-johnson-line",
+  "title": "The Johnson ancestry",
+  "status": "open",
+  "priority": "medium",
+  "desc": "From the interviewer's Ancestry tree, read aloud: Honor's father Philip (the Rector of Wicklow), whom the narrator confirms (\"Philip was my grandfather\" {q:T2:203}); his father Samuel Johnson, also confirmed {q:T2:203}; then \"Zachariah\" or \"Samuel the Elder\", and a Frances Tench, both unconfirmed {q:520-524} {q:T2:203-206}.",
+  "next": "Clergy of Dublin and Glendalough succession lists for the Rectors of Wicklow; Church of Ireland records.",
+  "people": [
+   "rector-johnson",
+   "samuel-johnson",
+   "zachariah-johnson",
+   "frances-tench",
+   "honor-johnson"
+  ],
+  "cite": [
+   512,
+   518,
+   520,
+   522,
+   524,
+   "T2:200",
+   "T2:203",
+   "T2:205",
+   "T2:206"
+  ]
+ },
+ {
+  "id": "q-ancestry-williams",
+  "title": "\"William P. … William J.\" in the online tree",
+  "status": "open",
+  "priority": "low",
+  "desc": "The interviewer reads out entries (\"William Henry, son of William J … I have William P, who is father of William J. William P being William Padlew\") {q:118-120} {q:T2:53} that cannot be matched to anyone in the narrator's account.",
+  "cite": [
+   118,
+   120,
+   "T2:53"
+  ]
+ },
+ {
+  "id": "q-eddie-papers",
+  "title": "Whose deaths prompted the destruction of the diary?",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Both transcripts agree on the wording: \"following the death of my great-grandparents, that's my Aunt Eddie's parents, the end of the 19th century\" {q:134} {q:T2:60-61}. So this is a slip in the testimony, not a transcription error. Eddie's parents died in 1916 and 1949; the narrator's great-grandparents (Tenison and Eliza, Eddie's grandparents) died around 1890–95 {q:T2:88}. We read \"parents\" as \"grandparents\".",
+  "people": [
+   "eddie",
+   "tenison-alan-somerville",
+   "eliza-oconnor"
+  ],
+  "cite": [
+   134,
+   216,
+   "T2:60",
+   "T2:61",
+   "T2:88"
+  ]
+ },
+ {
+  "id": "q-recording-date",
+  "title": "Date of the recording",
+  "status": "partly resolved",
+  "priority": "low",
+  "desc": "Transcript A's file is labelled \"27 Oct at 16-17\"; transcript B's file is stamped \"2026-10-27 19.50.34\". The narrator, born 1937, is \"coming up to 90\" {q:50} {q:T2:25}. Everything points to 27 October 2026, but file timestamps record when the files were made, not necessarily the conversation.",
+  "cite": [
+   50,
+   "T2:25"
+  ]
+ },
+ {
+  "id": "q-holdings",
+  "title": "Where are the original papers?",
+  "status": "open",
+  "priority": "high",
+  "desc": "The recording refers to Bellingham Arthur's six volumes {q:6} {q:T2:3}; his office and personal diaries, which the narrator owns {q:T2:133}; transcripts of Captain William's diary {q:132} {q:T2:59-60}; Eliza's letter about Henry {q:52} {q:T2:25-26}; the Nelson correspondence {q:166} {q:T2:69}; the Crisp's entry {q:124} {q:T2:54-55}; portraits of Dorothea and Monique and a miniature of Henry {q:26-28} {q:36} {q:44} {q:T2:13} {q:T2:18} {q:T2:22}; Pat's camp photographs and an article about his escape {q:452} {q:T2:173-175}; Reginald's Kenya photographs {q:504} {q:T2:196}; and Monique's booklet {q:42} {q:T2:21}. Cousin Eliza began photographing the portraits {q:46} {q:T2:23}. An inventory, with scans linked from this archive, is the most valuable next step.",
+  "cite": [
+   6,
+   42,
+   44,
+   46,
+   52,
+   124,
+   132,
+   166,
+   334,
+   452,
+   504,
+   "T2:3",
+   "T2:21",
+   "T2:23",
+   "T2:54",
+   "T2:133",
+   "T2:173",
+   "T2:196"
+  ]
+ },
+ {
+  "id": "q-monaghan-years",
+  "title": "\"For 19 years\": the family's time in Monaghan, or Archibald's age?",
+  "status": "open",
+  "priority": "low",
+  "desc": "Transcript B: \"At the time, Captain William and Eliza were living in County Monaghan for 19 years\" {q:T2:51}. Transcript A: \"At the time. Captain, William and Eliza. Were living. About 19 years. Archibald James. And, Next brother\" {q:110-112}, which could mean Archibald was about 19 (as he was in 1823 {q:T2:9}). Without the audio, both readings remain.",
+  "people": [
+   "captain-william-somerville",
+   "archibald-james-somerville"
+  ],
+  "places": [
+   "cumry"
+  ],
+  "cite": [
+   110,
+   112,
+   "T2:9",
+   "T2:51"
+  ]
+ },
+ {
+  "id": "q-brakey-household",
+  "title": "Whose servant was Elizabeth Brakey?",
+  "status": "open",
+  "priority": "medium",
+  "desc": "Transcript A: \"a servant girl in some household\" {q:110}; transcript B: \"a servant girl in the Somerville household\" {q:T2:51}. The difference matters to how the family story is told, and only the audio could settle it.",
+  "people": [
+   "elizabeth-breakey",
+   "archibald-james-somerville"
+  ],
+  "cite": [
+   110,
+   "T2:51"
+  ]
+ },
+ {
+  "id": "q-tenison-death",
+  "title": "When did Tenison Alan Somerville die, and who died first?",
+  "status": "open",
+  "priority": "medium",
+  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88}; A is garbled (\"about 189…\") {q:216}. A compiled genealogy gives Tenison's death as 31 July 1895 {s:winters-p67} and none for his wife. Either the narrator's order of deaths or the online date is wrong.",
+  "next": "GRO death index (Dublin), 1888–1896, for Tenison and Cecelia Eliza Somerville.",
+  "people": [
+   "tenison-alan-somerville",
+   "eliza-oconnor"
+  ],
+  "cite": [
+   216,
+   "T2:88"
+  ]
+ },
+ {
+  "id": "q-ba-birth",
+  "title": "Bellingham Arthur's birth: 1853 or 1856?",
+  "status": "open",
+  "priority": "medium",
+  "desc": "Narrator: \"born in 18… It's the year of the Crimean War, anyway. I think it was 1856\" {q:T2:1-2} {q:2}. IGI, via a compiled genealogy: born 17 November 1853, baptised in Dublin 16 June 1854 {s:winters-p68}. The Crimean War (1853–56) fits both years.",
+  "next": "The 1854 Dublin baptismal register; RIC officer register (which records date of birth).",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "cite": [
+   2,
+   "T2:1",
+   "T2:2"
+  ]
+ },
+ {
+  "id": "q-clinch-rachel",
+  "title": "Rachel: Margaret's sister or her mother?",
+  "status": "open",
+  "priority": "low",
+  "desc": "The narrator: Margaret's elder sister and co-heiress was \"Rachel\" {q:330} {q:T2:131}. A compiled genealogy names Margaret's mother as Rachel Hall Wright {s:winters-p68}. Both could be true.",
+  "people": [
+   "rachel-clinch",
+   "rachel-hall-wright",
+   "margaret-hall-clinch"
+  ],
+  "cite": [
+   330,
+   "T2:131"
+  ]
+ },
+ {
+  "id": "q-kenya-farm",
+  "title": "Where was Reginald's Kenya farm?",
+  "status": "open",
+  "priority": "low",
+  "desc": "\"Eventually his mother bought a farm … a thatched hut … he built it up\"; transcript B adds \"a long way from Nanyuki\" {q:T2:196-197}, where A has \"Long way from UK\" {q:504}.",
+  "people": [
+   "reginald-somerville"
+  ],
+  "places": [
+   "kenya",
+   "nanyuki"
+  ],
+  "cite": [
+   504,
+   "T2:196",
+   "T2:197"
+  ]
+ },
+ {
+  "id": "q-maudie-origin",
+  "title": "Maudie Moore: \"from Greystokes\"?",
+  "status": "open",
+  "priority": "low",
+  "desc": "Transcript B: \"he married a girl from Greystokes called Maudie Moore. She came from the County Laois family\" {q:T2:197}; A: \"grace studs … Morde Moore … County leash family\" {q:506-508}. Greystones, Co. Wicklow is a guess, and her formal first name is not recorded.",
+  "next": "The 1928 marriage record (Ireland or Kenya); Kenya Gazette notices.",
+  "people": [
+   "maud-moore",
+   "reginald-somerville"
+  ],
+  "places": [
+   "greystones",
+   "laois"
+  ],
+  "cite": [
+   506,
+   508,
+   "T2:197"
+  ]
+ },
+ {
+  "id": "q-flu-1916",
+  "title": "What killed Bellingham Arthur in 1916?",
+  "status": "open",
+  "priority": "low",
+  "desc": "\"He died, unfortunately, in 1916 of the flu that was then going around in the First World War\"; asked if it was the Spanish flu, the narrator says \"I always thought that he died of the Spanish flu, but … was that just after the First World War?\" {q:10-12} {q:T2:4-5}. The 1918–19 pandemic came later {s:dcc-flu}, so it was not the Spanish flu as usually dated. What illness it was (influenza or something else) is unconfirmed. A compiled genealogy gives the date of death as 20 January 1916 {s:winters-p68}.",
+  "next": "The civil death certificate (Rathnew/Wicklow registration district, January 1916).",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "cite": [
+   10,
+   12,
+   "T2:4",
+   "T2:5"
+  ]
+ },
+ {
+  "id": "q-baronetcy-succession",
+  "title": "Who, if anyone, is heir to the dormant Somerville baronetcy?",
+  "status": "open",
+  "priority": "medium",
+  "desc": "The baronetcy became dormant when the 2nd Baron Athlumney died childless on 8 January 1929 {q:174} {q:T2:73} {s:wp-2nd-baron}. The narrator raises it to explain why Archibald's marriage matters {q:174} {q:T2:73}. This archive does not assess any claim. A claimant must prove legitimate male-line descent from a baronet, so the open points include: whether the senior line (from Quaile) has any surviving male heirs; whether Major William was a son of the 1st Baronet, as the narrator and a compiled genealogy say {s:winters-p66}; whether Archibald James was lawfully married and has male-line descendants (the 1852 St Louis birth of Bellingham Brooke Somerville is one lead {s:winters-p68}); and the male lines of Corry, Tenison Alan and his sons.",
+  "people": [
+   "james-somerville-2nd-baron",
+   "major-william-somerville",
+   "archibald-james-somerville",
+   "little-archie",
+   "bellingham-brooke-somerville",
+   "tenison-alan-somerville"
+  ],
+  "cite": [
+   174,
+   "T2:73"
+  ]
+ },
+ {
+  "id": "q-reginald-birth",
+  "title": "Reginald's birth year",
+  "status": "open",
+  "priority": "low",
+  "desc": "Both transcripts: \"My father was 17 when the Great War started in 1914\" {q:348} {q:T2:138}, and \"He was 38 at the time\" (about 1934) {q:510} {q:T2:199}. Those imply 1896–97, but no record has been found.",
+  "people": [
+   "reginald-somerville"
+  ],
+  "cite": [
+   348,
+   510,
+   "T2:138",
+   "T2:199"
+  ]
+ }
 ]
