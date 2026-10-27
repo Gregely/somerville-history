@@ -18,7 +18,7 @@
     if (!facts || !facts.length) return "";
     return `<table class="facts"><thead><tr><th scope="col">Fact</th><th scope="col">Detail</th><th scope="col">Evidence</th></tr></thead><tbody>${facts.map((f) => `
       <tr><th scope="row">${esc(f.label)}</th>
-        <td>${SA.inline(f.value)}${f.note ? `<div class="note">${SA.inline(f.note)}</div>` : ""}</td>
+        <td>${SA.inline(f.value)}${f.narrator ? `<div class="note narrator"><b>❝ Narrator's account:</b> ${SA.inline(f.narrator)}</div>` : ""}${f.note ? `<div class="note">${SA.inline(f.note)}</div>` : ""}</td>
         <td class="ev">${SA.badge(f.status, f.conf)}<div class="cites">${SA.citeList(f.cite)} ${(f.src || []).map(SA.sourceLink).join(" ")}</div></td></tr>`).join("")}</tbody></table>`;
   }
   function passageList(keys, query) {
@@ -191,7 +191,7 @@
     const line = SA.lineOfDescent(id);
     const events = SA.eventsFor("p", id), qs = SA.questionsFor("p", id), terms = SA.termsFor("p", id), chs = SA.chaptersFor("p", id);
     const tree = SA.treeOf(id);
-    const lifeFact = (k, label) => p[k] ? `<div class="lifefact"><span class="lbl">${label}</span> <b>${esc(p[k].display)}</b> ${SA.badge(p[k].status, p[k].conf)} ${SA.citeList(p[k].cite)} ${(p[k].src || []).map(SA.sourceLink).join(" ")}${p[k].note ? `<div class="note">${esc(p[k].note)}</div>` : ""}</div>` : "";
+    const lifeFact = (k, label) => p[k] ? `<div class="lifefact"><span class="lbl">${label}</span> <b>${esc(p[k].display)}</b> ${SA.badge(p[k].status, p[k].conf)} ${SA.citeList(p[k].cite)} ${(p[k].src || []).map(SA.sourceLink).join(" ")}${p[k].narrator ? `<div class="note narrator"><b>❝ Narrator's account:</b> ${SA.inline(p[k].narrator)}</div>` : ""}${p[k].note ? `<div class="note">${esc(p[k].note)}</div>` : ""}</div>` : "";
     main.innerHTML = `
       <article class="profile">
         <header class="profile-head fam-${p.family}">
@@ -541,7 +541,7 @@
     const list = A.questions.slice().sort((a, b) => order[a.priority] - order[b.priority]);
     main.innerHTML = `
       <header class="page-head"><p class="kicker">Research agenda</p><h1>Open questions</h1><p class="lede">Ambiguities, contradictions and gaps. Each records what was said, the possible readings, and where to look next. Please add answers as they are found.</p></header>
-      <div class="filters"><div class="seg" role="group" aria-label="Status"><button data-s="" aria-pressed="true">All</button><button data-s="open" aria-pressed="false">Open</button><button data-s="partly resolved" aria-pressed="false">Partly resolved</button></div></div>
+      <div class="filters"><div class="seg" role="group" aria-label="Status"><button data-s="" aria-pressed="true">All</button><button data-s="open" aria-pressed="false">Open</button><button data-s="partly resolved" aria-pressed="false">Partly resolved</button><button data-s="resolved" aria-pressed="false">Resolved</button></div></div>
       <div class="questions">${list.map((q) => `
         <article class="question pr-${q.priority}" id="q-${q.id}" data-status="${esc(q.status)}">
           <header><span class="qstatus qs-${q.status.replace(/\s/g, "-")}">${esc(q.status)}</span><span class="prio">${esc(q.priority)} priority</span></header>
@@ -598,7 +598,8 @@
           <p>Every person, place, event and term was extracted by reading the whole transcript, resolving the speech-to-text errors from context (for example “Bellinger Martha” as <i>Bellingham Arthur</i>, “Whitflow” as <i>Wicklow</i>, “badayos” as <i>Badajoz</i>). These readings are shown in the transcript itself and graded by confidence.</p>
           <p>References to the same person were merged only when the context made it clear (for instance, “Bunt”, “Bundt” and “Uncle buns” are William Arthur Tenison Bellingham Somerville). People who are mentioned but not named have placeholder entries rather than invented names.</p>
           <p>Where the two transcripts disagree, the more plausible reading is shown with a confidence label, and the alternative is kept in the reading note or an open question. No audio was available. Where they agree on a wording, that is treated as evidence of what was said, even when the wording is itself a slip (for example “my aunt Eddie's parents”).</p>
-          <p>Where the narrator's account could be checked, we looked for published sources, preferring primary records (Hansard), then scholarly and heritage databases, then reference works. External facts are always shown separately from family testimony and numbered below. Where they disagree, both versions are kept and the conflict is flagged.</p>
+          <p>Where the narrator's account could be checked, we looked for published sources, preferring primary records (Hansard), then scholarly and heritage databases, then reference works. External facts are always shown separately from family testimony and numbered below. Where a primary record or well-supported published research contradicts the narrator, the archive's conclusion follows the documentary evidence, and his own account is still shown beside it (“Narrator's account”) with the source and the reasoning, so his testimony is never silently replaced. Where the evidence is not decisive, both versions are kept and the conflict is flagged.</p>
+          <p>A few identifications were supplied by the family in 2026 rather than said in the recording (for example the names of the narrator's children); they carry the label “Family information”.</p>
           <p>Nothing has been added to fill gaps. Dates the narrator did not give are left blank or marked as estimates.</p>
         </section>
         <section><h2>Evidence labels</h2>${legend()}</section>
@@ -639,7 +640,7 @@
     main.innerHTML = `
       <article class="profile narrow prose">
         <header class="profile-head"><p class="kicker">About</p><h1>About this archive</h1></header>
-        <p class="lede">This site preserves a recorded conversation in which Grandpa told a grandchild what he knows about the Somerville family, organised so that people now and later can explore it, check it and add to it.</p>
+        <p class="lede">This site preserves a recorded conversation in which Grandpa, William Somerville (born 1937), told his grandson Gergely what he knows about the Somerville family, organised so that people now and later can explore it, check it and add to it.</p>
         <h2>What is here</h2>
         <ul>
           <li><b>Story</b>: a narrative in eleven chapters, with testimony, interpretation and published history clearly distinguished.</li>
@@ -649,7 +650,7 @@
           <li><b>Transcripts</b>: two independent speech-to-text transcripts of the same conversation (A, the original, and B, a companion), with readings of misheard words, links between parallel passages, and a side-by-side <a href="#/compare">comparison</a>.</li>
         </ul>
         <h2>Privacy and discretion</h2>
-        <p>Both transcripts are published complete, exactly as received, and can be downloaded as text files from the transcript pages. Passages of everyday conversation are marked as asides, shown by default, and can be hidden to keep to the history. Living people are mentioned only where they bear on the history, with no personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
+        <p>Both transcripts are published complete, exactly as received, and can be downloaded as text files from the transcript pages. Passages of everyday conversation are marked as asides, shown by default, and can be hidden to keep to the history. The narrator, William Somerville, and his immediate family are named, as confirmed by the family in 2026; profiles of living people record their place in the family rather than personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
         <h2>Limitations</h2>
         <ul>
           <li>Both transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle their disagreements; some passages are garbled beyond recovery in both.</li>

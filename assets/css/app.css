@@ -19,6 +19,7 @@
   --st-inferred: #9a6a12;
   --st-record: #2c5282;
   --st-conflict: #9b2c2c;
+  --st-family: #6b46a3;
   --fam-somerville: #7a2e2a;
   --fam-bellingham: #2f5d50;
   --fam-clinch: #9a7128;
@@ -45,7 +46,7 @@
     --paper: #181614; --paper-2: #211e1b; --card: #23201c; --ink: #ece4d6; --ink-2: #d4c9b8; --muted: #a39686;
     --line: #3a342d; --line-2: #4a423a; --accent: #d68b7e; --accent-ink: #1b1513; --green: #86c2ae; --gold: #d8b36a;
     --blue: #92b6e6; --red: #e7948d; --violet: #b6a6e3;
-    --st-testimony: #86c2ae; --st-inferred: #e0b25c; --st-record: #92b6e6; --st-conflict: #e7948d;
+    --st-testimony: #86c2ae; --st-inferred: #e0b25c; --st-record: #92b6e6; --st-conflict: #e7948d; --st-family: #c3a6ee;
     --fam-somerville: #d68b7e; --fam-bellingham: #86c2ae; --fam-clinch: #d8b36a; --fam-johnson: #92b6e6; --fam-truell: #b6a6e3; --fam-other: #a39686;
     --ctx-bg: #1e2830; --ctx-line: #3d5468; --int-bg: #2c2618; --int-line: #6b5627; --sens-bg: #2e1f1d; --sens-line: #6d3c36; --mark: #5a4a1c;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25);
@@ -56,7 +57,7 @@
   --paper: #181614; --paper-2: #211e1b; --card: #23201c; --ink: #ece4d6; --ink-2: #d4c9b8; --muted: #a39686;
   --line: #3a342d; --line-2: #4a423a; --accent: #d68b7e; --accent-ink: #1b1513; --green: #86c2ae; --gold: #d8b36a;
   --blue: #92b6e6; --red: #e7948d; --violet: #b6a6e3;
-  --st-testimony: #86c2ae; --st-inferred: #e0b25c; --st-record: #92b6e6; --st-conflict: #e7948d;
+  --st-testimony: #86c2ae; --st-inferred: #e0b25c; --st-record: #92b6e6; --st-conflict: #e7948d; --st-family: #c3a6ee;
   --fam-somerville: #d68b7e; --fam-bellingham: #86c2ae; --fam-clinch: #d8b36a; --fam-johnson: #92b6e6; --fam-truell: #b6a6e3; --fam-other: #a39686;
   --ctx-bg: #1e2830; --ctx-line: #3d5468; --int-bg: #2c2618; --int-line: #6b5627; --sens-bg: #2e1f1d; --sens-line: #6d3c36; --mark: #5a4a1c;
   --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25);
@@ -157,6 +158,9 @@ main.full { max-width: none; padding: 0; }
 .st-inferred { color: var(--st-inferred); }
 .st-record { color: var(--st-record); }
 .st-conflict { color: var(--st-conflict); }
+.st-family { color: var(--st-family); }
+.note.narrator { border-left: 2px solid var(--st-testimony); padding-left: .5rem; }
+.note.narrator b { color: var(--st-testimony); font-weight: 600; }
 .st-sensitive { color: var(--red); }
 .st-plain { color: var(--ink-2); }
 .conf { display: inline-flex; gap: 2px; align-items: flex-end; }

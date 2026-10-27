@@ -77,11 +77,11 @@
  },
  {
   "id": "ev-capt-william-born",
-  "year": 1777,
-  "display": "1776/77",
+  "year": 1776,
+  "display": "3 Mar 1776",
   "kind": "family",
   "title": "Captain William Somerville born",
-  "desc": "The narrator: \"he was born in 1777, I think\" {q:62} {q:T2:30}; the published Bellingham genealogy gives 1776 {s:lf-bellingham}, and a compiled genealogy 3 March 1776 {s:winters-p67}.",
+  "desc": "Born 3 March 1776, according to a compiled genealogy; the published Bellingham genealogy also gives 1776 {s:winters-p67} {s:lf-bellingham}. The narrator: \"born in 1777, I think\" {q:62} {q:T2:30}.",
   "people": [
    "captain-william-somerville"
   ],
@@ -89,12 +89,14 @@
    62,
    "T2:30"
   ],
-  "status": "conflict",
+  "status": "record",
   "conf": "medium",
   "src": [
    "lf-bellingham",
    "winters-p67"
-  ]
+  ],
+  "month": 3,
+  "day": 3
  },
  {
   "id": "ev-eliza-born",
@@ -562,10 +564,10 @@
  {
   "id": "ev-ba-born",
   "year": 1853,
-  "display": "1853 or 1856",
+  "display": "17 Nov 1853",
   "kind": "family",
   "title": "Bellingham Arthur Somerville born",
-  "desc": "The narrator: \"He was born in 18… It's the year of the Crimean War, anyway. I think it was 1856\" {q:2} {q:T2:1-2}. The IGI, as quoted in a compiled genealogy, gives 17 November 1853, with baptism in Dublin on 16 June 1854 {s:winters-p68}. The Crimean War (1853–56) fits either year.",
+  "desc": "Born 17 November 1853 and baptised in Dublin on 16 June 1854, according to the IGI as quoted in a compiled genealogy {s:winters-p68}; his RIC enlistment age and 1891 census age agree. The narrator remembered \"the year of the Crimean War … I think it was 1856\" {q:2} {q:T2:1-2}; the war began in 1853.",
   "people": [
    "bellingham-arthur-somerville",
    "tenison-alan-somerville",
@@ -576,11 +578,13 @@
    "T2:1",
    "T2:2"
   ],
-  "status": "conflict",
-  "conf": "medium",
+  "status": "record",
+  "conf": "high",
   "src": [
    "winters-p68"
-  ]
+  ],
+  "month": 11,
+  "day": 17
  },
  {
   "id": "ev-monique-dies",
@@ -668,7 +672,7 @@
   "kind": "family",
   "sensitive": true,
   "title": "The Youghal riot: Patrick Hanlon killed",
-  "desc": "Family account: a riot at Youghal \"got out of hand\"; RIC were sent by train from Cork \"under the command of Captain Somerville\"; \"some rioter called Hanlon or O'Hanlon\" was killed with a sabre; Somerville and the man responsible were \"had up\", suspended, the matter \"went as far as Parliament\", and he was reinstated but, in the narrator's words, \"never formally acquitted\" {q:312-322} {q:T2:118-127}. Local history: Patrick Hanlon, a 30-year-old fisherman from Ballymacoda, was killed on 8 March 1887 by a sword bayonet when the RIC charged a crowd protesting at the arrest of Fr Daniel Keller (a Plan of Campaign case); the coroner's jury found wilful murder against District Inspector Somerville and Constable Garrett Ward, who were held in Cork; the Crown entered a nolle prosequi {s:ballymacoda-1887}. Hansard: the wilful-murder verdict and custody (24 March) {s:hansard-1887}; on 10 May, \"Sub-Inspector Summerville\" and Ward on bail, on leave with pay, to return to duty, as the Attorney General saw \"no grounds to advise a prosecution\" {s:hansard-1887c}. {int}The records give only the surname; identifying the officer as Bellingham Arthur rests on the family's account. The narrator advised caution in telling this story {q:290} {q:T2:115}; the family has decided to include it.",
+  "desc": "Family account: a riot at Youghal \"got out of hand\"; RIC were sent by train from Cork \"under the command of Captain Somerville\"; \"some rioter called Hanlon or O'Hanlon\" was killed with a sabre; Somerville and the man responsible were \"had up\", suspended, the matter \"went as far as Parliament\", and he was reinstated but, in the narrator's words, \"never formally acquitted\" {q:312-322} {q:T2:118-127}. Local history: Patrick Hanlon, a 30-year-old fisherman from Ballymacoda, was killed on 8 March 1887 by a sword bayonet when the RIC charged a crowd protesting at the arrest of Fr Daniel Keller (a Plan of Campaign case); the coroner's jury found wilful murder against District Inspector Somerville and Constable Garrett Ward, who were held in Cork; the Crown entered a nolle prosequi {s:ballymacoda-1887}. Hansard: the wilful-murder verdict and custody (24 March) {s:hansard-1887}; on 10 May, \"Sub-Inspector Summerville\" and Ward on bail, on leave with pay, to return to duty, as the Attorney General saw \"no grounds to advise a prosecution\" {s:hansard-1887c}. {int}The records give only the surname, but the officer is identified as Bellingham Arthur Somerville on the combined evidence: a serving RIC officer of that rank (joined 1872; a retired District Inspector by 1891) {s:winters-p68}, an outsider rather than the local inspector {s:hansard-1887b}, and a family account that matches the records point by point ({qn:q-youghal-identity}). The narrator advised caution in telling this story {q:290} {q:T2:115}; the family has decided to include it.",
   "people": [
    "bellingham-arthur-somerville",
    "patrick-hanlon"
@@ -695,7 +699,11 @@
   "src": [
    "ballymacoda-1887",
    "hansard-1887",
-   "hansard-1887c"
+   "hansard-1887c",
+   "hansard-1887b",
+   "hansard-1887-mar31",
+   "hansard-1887-apr4",
+   "winters-p68"
   ],
   "status": "record",
   "conf": "high"
@@ -733,7 +741,7 @@
   "display": "by 1894",
   "kind": "family",
   "title": "Bellingham Arthur acquires Clermont",
-  "desc": "Colonel Tottenham buys Clermont at auction and sells it on at cost to Bellingham Arthur, the underbidder {q:574-580} {q:T2:228-231}. A heritage summary (seen only in search results) dates the house's wings to 1894, for \"B A Somerville\" {s:wicklowheritage-clermont}. A compiled genealogy records his daughter Dorothy dying at Seaview House, Wicklow, in March 1895 {s:winters-p68}, so the exact year of the move is uncertain.",
+  "desc": "Colonel Tottenham buys Clermont at auction and sells it on at cost to Bellingham Arthur, the underbidder {q:574-580} {q:T2:228-231}. A heritage summary (seen only in search results) dates the house's wings to 1894, for \"B A Somerville\" {s:wicklowheritage-clermont}. A compiled genealogy records his daughter Dorothy dying at Seaview House, Wicklow, in March 1895 {s:winters-p68}, so the exact year of the move is uncertain. {ctx}The National Library's list of the Rooke Papers confirms the purchase in the mid-1890s from Col. Charles George Tottenham of Ballycurry {s:nli-rooke}; the 1894 wings were designed by Sir Thomas Drew {s:dia-clermont}.",
   "people": [
    "bellingham-arthur-somerville",
    "colonel-tottenham",
@@ -750,7 +758,9 @@
   ],
   "src": [
    "wicklowheritage-clermont",
-   "winters-p68"
+   "winters-p68",
+   "nli-rooke",
+   "dia-clermont"
   ],
   "status": "testimony",
   "conf": "high"
@@ -808,10 +818,10 @@
  {
   "id": "ev-cecil-marries",
   "year": 1912,
-  "display": "1912",
+  "display": "11 Apr 1912",
   "kind": "family",
-  "title": "Cecilia Somerville marries Henry Rook",
-  "desc": "\"She finally married in 1912\" {q:246} {q:T2:98}.",
+  "title": "Cecilia Somerville marries Henry Rooke",
+  "desc": "Cecilia Eliza Margaret Bellingham Somerville marries Henry Rooke, solicitor, her father's solicitor and many years her senior {s:nli-rooke} {q:232-234} {q:T2:94} {q:T2:98}.",
   "people": [
    "cecilia-somerville",
    "henry-rock"
@@ -822,17 +832,22 @@
    "T2:94",
    "T2:98"
   ],
-  "status": "testimony",
-  "conf": "high"
+  "status": "record",
+  "conf": "high",
+  "month": 4,
+  "day": 11,
+  "src": [
+   "nli-rooke"
+  ]
  },
  {
   "id": "ev-mons",
   "year": 1914,
-  "month": 8,
+  "month": 10,
   "day": 23,
-  "display": "1914",
+  "display": "Oct 1914",
   "kind": "family",
-  "title": "Pat taken prisoner (1914)",
+  "title": "Pat taken prisoner near Ypres (Oct 1914)",
   "desc": "The narrator: \"in the retreat from Mons, Uncle Paddy was captured\" {q:440-442} {q:T2:170}. The BEF fought at Mons on 23 August 1914 and then fell back {s:wp-mons} {s:wp-great-retreat}. Other accounts (a family-derived article; prisoner records seen only in search results) place his capture with the 2nd Battalion at Zonnebeke near Ypres in October 1914 {s:clarke-sense-of-duty} {s:genealogist-pow}; the 2nd Battalion landed at Zeebrugge that month {s:wp-royal-warwick}. See {qn:q-pat-capture}.",
   "people": [
    "pat"
@@ -845,7 +860,7 @@
    442,
    "T2:170"
   ],
-  "status": "conflict",
+  "status": "record",
   "conf": "medium",
   "src": [
    "wp-mons",
@@ -977,8 +992,8 @@
   "day": 26,
   "display": "Apr–May 1919",
   "kind": "family",
-  "title": "Archangel, 1919: Bunt (or Jim?) commands troops",
-  "desc": "The narrator: Bunt \"commanded a troop that was sent to Archangel … to keep it from falling into the hands of the Bolsheviks\" {q:364} {q:T2:144-145}. A war-diary-based history: \"Lt. Col. W A T B Somerville DSO (Royal Artillery)\" commanded the 8th (Special) Battalion, Machine Gun Corps, from 12 April 1919, and the battalion landed at Archangel on 26 May {s:mgc-8bn} {s:wp-north-russia}. The initials are Bunt's, but a compiled genealogy calls Bunt a King's Own officer and Jim the DSO of the Royal Artillery {s:winters-p68} {s:winters-p69}. See {qn:q-bunt-regiment}.",
+  "title": "Archangel, 1919: Bunt commands the 8th (Special) Battalion, MGC",
+  "desc": "Lt-Col. W. A. T. B. Somerville DSO, Bunt, takes command of the 8th (Special) Battalion, Machine Gun Corps on 12 April 1919; it lands at Archangel on 26 May {s:mgc-8bn}. The narrator: Bunt \"commanded a troop that was sent to Archangel\" {q:362-364} {q:T2:144-145}. The battalion history's \"(Royal Artillery)\" is judged a confusion with his brother Jim; Bunt was a King's Own officer {s:winters-p69} {s:kingsown-1914}.",
   "people": [
    "bunt",
    "jim"
@@ -996,7 +1011,7 @@
    "winters-p68",
    "winters-p69"
   ],
-  "status": "conflict",
+  "status": "record",
   "conf": "medium"
  },
  {
@@ -1191,7 +1206,7 @@
   "year": 1937,
   "display": "1937",
   "kind": "family",
-  "title": "The narrator is born",
+  "title": "William Somerville, the narrator, is born",
   "desc": "{q:516}",
   "people": [
    "narrator",
@@ -1641,12 +1656,12 @@
  },
  {
   "id": "ev-tenison-dies",
-  "year": 1890,
+  "year": 1895,
   "approx": true,
-  "display": "c. 1890 or 1895",
+  "display": "31 Jul 1895",
   "kind": "family",
   "title": "Tenison Alan Somerville dies",
-  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88} (A: \"about 189…\" {q:216}). A compiled genealogy gives 31 July 1895 for Tenison {s:winters-p67}. See {qn:q-tenison-death}.",
+  "desc": "Tenison Alan Somerville died on 31 July 1895, according to the IGI as quoted in a compiled genealogy {s:winters-p67}. The narrator thought he \"died first … about 1890. Early 1890s\", and his wife \"about 1895\" {q:T2:88}; the order of their deaths is still open ({qn:q-tenison-death}).",
   "people": [
    "tenison-alan-somerville",
    "eliza-oconnor"
@@ -1661,8 +1676,10 @@
   "src": [
    "winters-p67"
   ],
-  "status": "conflict",
-  "conf": "low"
+  "status": "record",
+  "conf": "medium",
+  "month": 7,
+  "day": 31
  },
  {
   "id": "ev-vere-marries",
@@ -1835,5 +1852,122 @@
   ],
   "status": "testimony",
   "conf": "high"
+ },
+ {
+  "id": "ev-ba-joins-ric",
+  "year": 1872,
+  "display": "1872",
+  "kind": "family",
+  "title": "Bellingham Arthur joins the RIC, aged 18",
+  "desc": "He enlisted as an officer in the Royal Irish Constabulary in 1872, aged 18, according to the RIC records on Ancestry as quoted in a compiled genealogy {s:winters-p68}. Like his father and elder brother, as the narrator says {q:12} {q:T2:6}.",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "places": [],
+  "cite": [
+   12,
+   "T2:6"
+  ],
+  "src": [
+   "winters-p68"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-ric-ranks-1883",
+  "year": 1883,
+  "month": 10,
+  "day": 1,
+  "display": "1 Oct 1883",
+  "kind": "context",
+  "title": "RIC sub-inspectors restyled district inspectors",
+  "desc": "Under the Constabulary and Police (Ireland) Act 1883, sub-inspectors became district inspectors {s:ukpga-1883-s12}. This is why the 1887 Youghal records call the same officer both \"Sub-Inspector\" and \"District Inspector\" Somerville.",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "places": [],
+  "src": [
+   "ukpga-1883-s12"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-1891-census",
+  "year": 1891,
+  "month": 4,
+  "day": 5,
+  "display": "5 Apr 1891",
+  "kind": "family",
+  "title": "1891 census: Bellingham Arthur a retired District Inspector, at Witney",
+  "desc": "The family is enumerated at Church Green, Witney, with Margaret's parents William and Rachel H. Clinch; Bellingham Arthur, 36, is \"Retired D. I. R. I. Constabulary\"; the children present are Cecelia, William A. B. (Bunt), James A. H. B. (Jim), Dorothy and the baby Vere {s:winters-p68}. {int}His career therefore ended by early 1891, a few years after Youghal and the transfer to Wicklow that the narrator describes {q:324-328} {q:T2:128-130}.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "margaret-hall-clinch",
+   "cecilia-somerville",
+   "bunt",
+   "jim",
+   "dorothy-somerville",
+   "vere-somerville"
+  ],
+  "places": [
+   "witney"
+  ],
+  "cite": [
+   324,
+   326,
+   328,
+   "T2:128",
+   "T2:129",
+   "T2:130"
+  ],
+  "src": [
+   "winters-p68"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-pedigree-1955",
+  "year": 1955,
+  "month": 2,
+  "display": "Feb 1955",
+  "kind": "family",
+  "title": "Cecil B. Rooke registers the Somerville pedigree",
+  "desc": "Cecilia (Mrs Rooke) registers the Somerville and Rooke pedigrees at the Genealogical Office of Ireland, as G.O. MS 182A (Somerville, pp. 119–130); her supporting notes are at the National Library {s:nli-rooke}. {int}This is probably the registered pedigree the narrator refers to.",
+  "people": [
+   "cecilia-somerville"
+  ],
+  "places": [
+   "genealogical-office"
+  ],
+  "src": [
+   "nli-rooke"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-ferguson-dies",
+  "year": 1920,
+  "month": 9,
+  "day": 21,
+  "display": "21 Sep 1920",
+  "kind": "family",
+  "title": "Alan Campbell Ferguson, Kitty's first husband, dies",
+  "desc": "He dies at Seaview, Isle of Wight; Reendesert Lodge, Bantry, is among his residences (The Times, via a compiled genealogy) {s:winters-p69}. Kitty later marries Bunt.",
+  "people": [
+   "alan-ferguson",
+   "kitty-harrison"
+  ],
+  "places": [
+   "bantry-glengarriff"
+  ],
+  "src": [
+   "winters-p69"
+  ],
+  "status": "record",
+  "conf": "medium"
  }
 ]

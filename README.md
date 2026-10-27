@@ -1,17 +1,17 @@
 # The Somerville Family Archive
 
-An interactive, interconnected family-history archive built from a recorded conversation in which Grandpa (born 1937) told a grandchild what he knows about the Somerville family. Two independent speech-to-text transcripts of the same recording survive. **Both are published complete, exactly as received**, including the everyday conversation around the history; the archive cites both and lets you compare them side by side. It turns those imperfect transcripts into something future generations can explore, check and extend:
+An interactive, interconnected family-history archive built from a recorded conversation in which Grandpa, **William Somerville** (born 1937), told his grandson **Gergely Somerville** what he knows about the Somerville family. Two independent speech-to-text transcripts of the same recording survive. **Both are published complete, exactly as received**, including the everyday conversation around the history; the archive cites both and lets you compare them side by side. It turns those imperfect transcripts into something future generations can explore, check and extend:
 
 - **Story**: an 11-chapter historical narrative, from the 1748 baronetcy to the sale of Clermont, with family testimony, our interpretations and published history visibly distinguished.
 - **Family tree**: an interactive SVG chart (pan, zoom, pinch, collapse branches, click for details) of the Somervilles and related families (Bellingham, Clinch, Johnson, Truell, O'Connor and others), with the narrator's line of descent highlighted, plus an accessible outline view.
-- **People**: 85 profiles, including a few placeholders for people known to exist but not named. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
+- **People**: 88 profiles, including the narrator's own immediate family, including a few placeholders for people known to exist but not named. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
 - **Places**: 64 places on a map (Leaflet/OpenStreetMap), from Cumry and Castle Bellingham to Trinidad, Archangel and Nanyuki.
-- **Timeline**: 79 events, with family events and wider history side by side, grouped by era.
+- **Timeline**: 84 events, with family events and wider history side by side, grouped by era.
 - **Glossary**: 66 terms covering RIC ranks, militia, dormant titles, expressions, surnames and nicknames.
-- **Open questions**: 43 documented ambiguities and contradictions, each with alternatives and next research steps.
+- **Open questions**: a register of 43 ambiguities and contradictions (13 resolved, 13 partly resolved, 17 open), each with the evidence, the reasoning and the next research steps.
 - **Transcripts**: both versions of the conversation (A, the original working transcript; B, the companion), with 283 inline "readings" of misheard words (e.g. *"Whitflow"* → Wicklow, *"badayos"* → Badajoz, *"Green desert"* → Reendesert), each with a confidence level and, where useful, a note on how the other transcript heard it. Chips show which entries cite each passage, and every paragraph links to its parallel in the other transcript.
 - **Compare**: transcripts A and B side by side, paragraph by paragraph (`#/compare`), so any reading can be checked against both.
-- **Sources**: 62 external sources, each marked as read directly, partly read, or known only from a search result, with the date checked.
+- **Sources**: 70 external sources, each marked as read directly, partly read, or known only from a search result, with the date checked.
 - **Search**: one search box over everything, including transcript misspellings and near-misses (try *bellendrum*, *Bunt*, *Tete*, *Whitflow*, *Gualter*).
 
 ## Running it
@@ -42,7 +42,10 @@ They are two machine transcriptions of one recording, not two interviews: B is o
 | ❝ **Testimony** | Said in the recording (Grandpa's memory, often of documents he read long ago) |
 | ◇ **Interpretation** | Our reading: resolving a misheard word, merging references, inferring a relationship or date |
 | ▤ **Published record** | From an external source, with a numbered citation |
-| ⚑ **Conflict** | The recording and published sources disagree; both are kept |
+| ⚑ **Conflict** | The recording and published sources disagree and the evidence is not decisive; both are kept |
+| ✎ **Family information** | Supplied by the family in 2026, not said in the recording (e.g. the names of the narrator's children) |
+
+**When records contradict the narrator.** Where a primary record or well-supported published research contradicts Grandpa's recollection, the archive's conclusion follows the documentary evidence, and his own words are shown beside it as *❝ Narrator's account*, with the source and the reasoning in a note. His testimony is never silently replaced; the transcripts remain the primary source for what he said. In the data this is the optional `narrator` field on a fact or a birth or death date.
 
 Each label also carries a high, medium or low confidence level. `¶n` links go to paragraph *n* of transcript A and `B¶n` to paragraph *n* of transcript B, numbered by line of each original file. `[n]` links go to external source *n*. Facts taken from compiled genealogies (for example the Winters family pages) are labelled as published records but described as compiled, secondary evidence, not as original registers.
 
@@ -114,16 +117,16 @@ Several of Grandpa's memories were confirmed, and in places sharpened, by publis
 - **The Bellinghams**: a published genealogy of the Bellinghams of Castle Bellingham lists exactly the family he described: Elizabeth (Eliza) Bellingham (1779–1839), who married Capt. William Somerville of Ardrass on 30 Aug 1800, her sisters Dorothea and Henrietta Sophia, her brother Alan, who married the French-Canadian **Monique Bâby** (the transcripts' *Babet/Babé*; the forgotten "seaside town in the West Country" is **Lyme Regis**), and her brother **Henry Tenison Bellingham**, killed at **Badajoz on 6 April 1812**.
 - **Tenison, not Tennyson**: the name comes from Eliza's mother, Elizabeth Tenison, and a compiled genealogy spells it Tenison throughout. Both transcripts write "Tennyson" because that is the default spelling of the sound.
 - **The dormant baronetcy**: the 2nd Baron Athlumney died on **8 January 1929**, exactly as remembered. "Cousin Sir William" was **Sir William Meredyth Somerville**, Chief Secretary for Ireland 1847–52.
-- **Youghal, 1887**: Hansard (24 March 1887) records the inquest verdict of wilful murder against "District Inspector Somerville and Constable Ward" after the death of fisherman **Patrick Hanlon** on 8 March 1887. On 10 May the government said "Sub-Inspector Summerville and Constable Ward" would return to duty because the Attorney General saw no grounds to prosecute. That matches the narrator's careful "never formally acquitted" (clearest in transcript B) better than the local history's "eventually acquitted".
-- **Archangel**: "Lt. Col. W A T B Somerville DSO" (Uncle Bunt's initials) commanded the 8th (Special) Battalion, Machine Gun Corps, from April 1919. But that history calls him Royal Artillery, and a compiled genealogy gives the RA and the DSO to his brother Jim, so this is kept as a conflict.
-- **Clermont**: heritage records credit the 1894 wings to "B A Somerville" (Bellingham Arthur).
+- **Youghal, 1887**: Hansard (24 March 1887) records the inquest verdict of wilful murder against "District Inspector Somerville and Constable Ward" after the death of fisherman **Patrick Hanlon** on 8 March 1887. On 10 May the government said "Sub-Inspector Summerville and Constable Ward" would return to duty because the Attorney General saw no grounds to prosecute. That matches the narrator's careful "never formally acquitted" (clearest in transcript B) better than the local history's "eventually acquitted". The officer is identified as Bellingham Arthur (see *Final refinement* below).
+- **Archangel**: "Lt. Col. W A T B Somerville DSO" (Uncle Bunt's initials) commanded the 8th (Special) Battalion, Machine Gun Corps, from April 1919, as the narrator said. That history's "(Royal Artillery)" is judged a confusion with his gunner brother Jim: Bunt was a King's Own officer, as the narrator also said.
+- **Clermont**: bought in the mid-1890s from Col. Charles George Tottenham of Ballycurry (National Library of Ireland); wings added in 1894 for B. A. Somerville by Sir Thomas Drew (Dictionary of Irish Architects).
 
 ### Corrections made in the audit against transcript B (October 2026)
 
 - **"Fighting Atty"** (Atty = Arthur) was Bellingham Arthur's boyhood name (B¶12). RIC garbles such as "the right Irish Construction" and "Royal Irish Conservatory" are recorded as readings; the RUC appears only as the later Northern force (new glossary entry).
 - **Uncle Pat was Gualter Hugh Roger Bellingham Somerville.** The archive had wrongly said that the Gualter Somerville in published records was a different man. "Pat", "Paddy" and "Patrick" are kept as the names the family used.
 - **Vere** (Vere Frances de Merlie Somerville) is the daughter who married Edmund Truell of Clonmannon in 1912; A's "there to money" was her name.
-- **Henry Rook** (B; A has "Rock"/"Oak") was Bellingham Arthur's solicitor and Cecilia's husband, not her father. Both transcripts break the sentence in a way that reads "her father", which is kept as a transcription problem, not a fact.
+- **Henry Rooke** (heard as Rook in B, "Rock"/"Oak" in A) was Bellingham Arthur's solicitor and Cecilia's husband, not her father. Both transcripts break the sentence in a way that reads "her father"; this is kept as a transcription problem, not a fact. The spelling Rooke was later confirmed from the National Library's Rooke Papers.
 - **"Green desert"** near Bantry is **Reendesert**, Bunt's home. **"Bell Turbot"** is Belturbet, Co. Cavan (the house "Farm" itself is still unlocated). **Clonmel** and the **Louth Militia** are confirmed by B.
 - **Eddie / Teddy / Tettie** and **Maudie Moore** are kept as variants; Maudie's "Greystokes" may be Greystones (a reading, not a fact).
 - **The eighth son**: a compiled genealogy gives an infant Tenison (1812) who lived twelve days; recorded as probable.
@@ -132,27 +135,38 @@ Several of Grandpa's memories were confirmed, and in places sharpened, by publis
 - **The sale of Clermont**: "about 1950 … 2.53" is kept as a garbled fragment ("'52, '53"?), not a date.
 - The new quotation checker, which tests every quotation against the paragraphs cited for it, found two quotations with no supporting citation; both were fixed.
 
+### Final refinement (October 2026)
+
+Open questions were re-examined against primary records and well-supported published research. Resolved:
+
+- **Youghal, 1887: District Inspector Somerville was Bellingham Arthur Somerville.** Hansard gives only the surname, under both ranks: sub-inspectors had been restyled district inspectors by the Constabulary and Police (Ireland) Act 1883. The identification combines four strands. (1) Bellingham Arthur was a serving RIC officer of that rank: he joined in 1872, aged 18, and the 1891 census describes him as a "Retired D. I. R. I. Constabulary". (2) Dr Ronayne's letter, read in the Commons, shows the officer was a "young officer, Mr. Somerville" from outside, not the local inspector, Kerin; this matches the family's detachment "from Cork". (3) The family's account, independent of Hansard, matches the inquest, arrest, Parliament and return to duty without a trial. (4) The family links the affair to his transfer to Wicklow, and his career ended by 1891. *Limitations:* no surviving document seen names him in full in connection with Youghal, and his RIC service register (HO 184) has not been examined.
+- **Bellingham Arthur's birth: 17 November 1853** (baptised in Dublin in June 1854; his RIC and census ages agree), not the narrator's "1856, I think".
+- **Captain William's birth: 3 March 1776** (two published genealogies agree), not "1777, I think".
+- **Henry Rooke**, not Rook: a solicitor, son of Archdeacon Henry Rooke of Wicklow, who married Cecilia on 11 April 1912 and died in 1942. Cecilia, as **Cecil B. Rooke** (1880–1973), registered the Somerville pedigree at the Genealogical Office in 1955 (G.O. MS 182A). Her papers, including extracts of Somerville wills her father made before the 1922 fire, are in the National Library's Rooke Papers.
+- **Bunt: King's Own (Royal Lancaster)**, the commander at Archangel. **Tenison**, not Tennyson. **Cumry** is the townland Na Comraigh in Aghnamullen parish, near Ballybay, spelled exactly as the narrator spelled it. **Reendesert Lodge** was Kitty's home with her first husband, **Alan Campbell Ferguson** (d. 1920), so she was his widow. The sale of **Castle Bellingham** was completed by Alan's widow. The **recording date** is adopted as 27 October 2026.
+- Partly resolved: **Pat** was probably captured in October 1914 near Zonnebeke, with the 2nd Battalion, not "in the retreat from Mons". **Tenison Alan** died on 31 July 1895, but who died first is still open. **Gunners' Venture Ltd** existed: a 17,000-acre farm near Nanyuki owned by ex-artillery officers. A **Rachel Clinch** was Margaret's mother; a sister of that name is unconfirmed. Some of the **papers** are located: the NLI's Rooke Papers and G.O. MS 182A, and in 1998 the library noted that "the Somerville Papers" were with Mr William Somerville.
+- **The narrator's family** is now identified, with relationships confirmed by the family: William Somerville (b. 1937), son of Reginald Somerville and Honor Johnson; his sister Juanita (b. 1932, strictly a half-sister); his sons James, Charles and Edward; and his grandson Gergely, Charles's son, the interviewer. All of them are in the tree and the profiles. The existing records for the narrator, the interviewer and Juanita were updated rather than duplicated.
+
 ### Source checks
 
-Every external source was re-checked against the specific claim it supports, and its `used` note was rewritten to say exactly that. 50 sources were read directly, one only partly (a *London Gazette* page), and 11 are known only from search results, because their sites block automated access: the three Wicklow Heritage pages, Agriland, Landed Estates, the NLI catalogue, IWM Lives of the First World War, the Great War Forum, TheGenealogist, a Clarke article and a Dublin street site. These are marked "search result only" on the Sources page and should be read by a person before being relied on. The Clarke article is based on interviews with the narrator, so it is not independent corroboration of his account. New sources include the Hansard reply of 10 May 1887 and four pages of a compiled genealogy, which are treated as secondary.
+Every external source was re-checked against the specific claim it supports, and its `used` note was rewritten to say exactly that. 56 sources were read directly, one only partly (a *London Gazette* page), and 13 are known only from search results, because their sites block automated access or were unavailable: the three Wicklow Heritage pages, Agriland, Landed Estates, the NLI catalogue record, IWM Lives of the First World War, the Great War Forum, TheGenealogist, a Clarke article, a Dublin street site, a study of Nanyuki in the 1920s and the King's Own museum. The Irish census and civil-registration sites were also unreachable by automated access, so the 1901/1911 census and civil death records remain to be checked by hand. These are marked "search result only" on the Sources page and should be read by a person before being relied on. The Clarke article is based on interviews with the narrator, so it is not independent corroboration of his account. New sources include the Hansard reports of 31 March, 4 April and 10 May 1887, the 1883 Act, the National Library of Ireland's descriptive list of the Rooke Papers, the Dictionary of Irish Architects, Logainm and four pages of a compiled genealogy (treated as secondary, though it quotes primary records such as the 1891 census and The Times).
 
 ## Unresolved questions (summary)
 
-The full list (43, of which 2 are resolved and 15 partly resolved), with readings and next steps, is on the site's **Open questions** page (`data/questions.json`). The most important are:
+The full register (43 questions: 13 resolved, 13 partly resolved, 17 open), with the evidence, reasoning and next steps, is on the site's **Open questions** page (`data/questions.json`). The most important genuine uncertainties are:
 
 1. **Parentage and marriages.** Did Archibald James marry Elizabeth Breakey (Brakey), and was "little Archie" (b. 1823) their son? A compiled genealogy instead records his marriage to an Elizabeth Crawford in 1836; whether she is the same woman is unknown. Whose servant was Elizabeth Brakey? Is "for 19 years" the family's time in Monaghan or Archibald's age?
 2. **The dormant baronetcy.** The archive does not assess any claim. Open points include surviving male heirs of the senior line, Major William's parentage and the lawfulness of Archibald James's marriage.
-3. Is the 1887 "District Inspector Somerville" documentably Bellingham Arthur? The match is strong but rests on the family story.
-4. Bellingham Arthur's birth (1853 or 1856) and his cause of death in 1916; Tenison Alan's death (c. 1890 or 1895) and Dublin address.
-5. Bunt and Jim: who commanded at Archangel, and in which regiment; Pat's capture, camps and Military Cross; "Gunners Venture" and the location of Reginald's Kenya farm.
-6. Unidentified places: Cumry (Co. Monaghan), the house "Farm" near Belturbet, Jim's burial place.
-7. Rachel Clinch: Margaret's sister or her mother? Maudie Moore's origin. The Johnson ancestry, which comes only from an unverified online tree.
-8. Where are the original papers now? (Bellingham Arthur's six volumes, Captain William's diary transcripts, the Nelson letters, portraits, Pat's camp photographs.) An inventory with scans is the most valuable next step.
+3. What Bellingham Arthur died of in January 1916 (influenza, but not the 1918 pandemic): the civil death record has not been read.
+4. Pat's escapes, camps and Military Cross, and the London Gazette entries for Bunt's DSO and Pat's MC; whether Jim also held the DSO.
+5. Places still unlocated: the farm within Cumry, the house "Farm" near Belturbet, Tenison's Dublin address, Reginald's Kenya farm, Jim's grave.
+6. Rachel Clinch as Margaret's sister; Maudie Moore's origin; Reginald's exact birth date; the Johnson ancestry, which comes only from an unverified online tree; Aunt Eddie's husband; who "Sir William the younger" was (G.O. MS 182A should answer this).
+7. An inventory of the papers in the narrator's keeping, and a reading of the registered pedigree, are the most valuable next steps.
 
 ## Limitations
 
 - Both transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle disagreements. Some passages are unrecoverable in both, and every reading of a garbled word is an interpretation (all are shown and graded).
-- Most family details rest on one person's memory and have not yet been checked against civil or church registers, RIC service records or wills. External research so far covers the points cited on the Sources page.
-- Map positions marked "approximate" are best guesses; Cumry and "Farm" are placed at their nearest identified towns.
+- Many family details still rest on one person's memory. Civil and church registers, the 1901/1911 Irish census and RIC service records have not yet been read directly, because those sites block automated access; several dates come from a compiled genealogy quoting the IGI, the 1891 census and The Times.
+- Map positions marked "approximate" are best guesses; "Farm" is placed at Belturbet. Cumry is now placed at its townland.
 - The tree uses a simple layout that is wide rather than compact; the outline view is easier on small screens.
 - The recording is dated 27 October 2026 from transcript B's file name.

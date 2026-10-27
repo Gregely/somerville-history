@@ -63,10 +63,10 @@
  {
   "id": "q-tenison-spelling",
   "title": "Tenison or Tennyson?",
-  "status": "partly resolved",
+  "status": "resolved",
   "priority": "medium",
-  "desc": "Both transcripts write \"Tennyson\" {q:14} {q:T2:7}, the speech-to-text default for the spoken name, so they are no evidence of the spelling. Eliza Bellingham's mother was Elizabeth Tenison and her brother Henry Tenison Bellingham {s:lf-bellingham}, and a compiled genealogy uses \"Tenison Alan Somerville\" throughout {s:winters-p67}. Tenison is very probably right; an original record would confirm it.",
-  "next": "Confirm from Constabulary records or his marriage entry.",
+  "desc": "Both transcripts write \"Tennyson\" {q:14} {q:T2:7}, the speech-to-text default for the spoken name, so they are no evidence of the spelling. Eliza Bellingham's mother was Elizabeth Tenison and her brother Henry Tenison Bellingham {s:lf-bellingham}, and a compiled genealogy uses \"Tenison Alan Somerville\" throughout {s:winters-p67}. Tenison is very probably right; an original record would confirm it. Resolved: Tenison. The Times notice of Bellingham Arthur's death (1916) calls him the son of \"the late Tenison Alan Somerville\" (via {s:winters-p68}), and Cecil B. Rooke's papers file the family under \"Tenison\" {s:nli-rooke}.",
+  "next": "",
   "people": [
    "tenison-alan-somerville",
    "bunt"
@@ -126,11 +126,11 @@
  },
  {
   "id": "q-youghal-identity",
-  "title": "Is the 1887 \"District Inspector Somerville\" Bellingham Arthur?",
-  "status": "partly resolved",
+  "title": "Is the 1887 \"District Inspector Somerville\" Bellingham Arthur? (Resolved: yes)",
+  "status": "resolved",
   "priority": "high",
-  "desc": "Hansard names only \"District Inspector Somerville\" (24 March 1887) and \"Sub-Inspector Summerville\" (10 May 1887) {s:hansard-1887} {s:hansard-1887c}; the local history gives no first name {s:ballymacoda-1887}. The family's story matches closely: an RIC detachment from Cork, a dead rioter named Hanlon, a blade, arrest, Parliament, and reinstatement without a formal acquittal {q:312-322} {q:T2:118-127}, which is just what the 10 May reply describes. The narrator remembered \"the 1880s\", \"Captain\" Somerville and a fishing dispute.",
-  "next": "RIC officers' registers (HO 184) for D.I. Somerville's full name and stations in 1887; Cork Examiner and Freeman's Journal reports of the March 1887 inquest; the July 1887 Cork Assizes report.",
+  "desc": "Hansard names only \"District Inspector Somerville\" (24 March 1887) and \"Sub-Inspector Summerville\" (10 May 1887) {s:hansard-1887} {s:hansard-1887c}; the local history gives no first name {s:ballymacoda-1887}. The family's story matches closely: an RIC detachment from Cork, a dead rioter named Hanlon, a blade, arrest, Parliament, and reinstatement without a formal acquittal {q:312-322} {q:T2:118-127}, which is just what the 10 May reply describes. The narrator remembered \"the 1880s\", \"Captain\" Somerville and a fishing dispute. {int}Resolved: the officer was Bellingham Arthur Somerville. The evidence: (1) he was a serving RIC officer of exactly that rank: he joined in 1872, aged 18, and was a \"Retired D. I. R. I. Constabulary\" at the 1891 census {s:winters-p68}; the rank had been renamed from sub-inspector in 1883, which explains the two titles {s:ukpga-1883-s12}. (2) Ronayne's letter shows the officer was a \"young officer\" from outside, not the local District Inspector, Kerin {s:hansard-1887b}, matching the family's detachment \"from Cork\". (3) The family's account, independent of Hansard, matches every structural point, including the outcome the 10 May reply describes. (4) The family links the affair to his transfer to Wicklow, after which his career soon ended. Limitations: no surviving document seen gives the officer's first name, and the RIC service register (HO 184) has not been examined; the identification is therefore circumstantial but strong, and would be overturned only if another RIC officer named Somerville were found serving in Co. Cork in 1887.",
+  "next": "Optional confirmation: RIC officers' register (National Archives UK, HO 184) for Bellingham Arthur Somerville's stations in 1887; Cork Examiner reports of the inquest.",
   "people": [
    "bellingham-arthur-somerville",
    "patrick-hanlon"
@@ -176,24 +176,25 @@
  {
   "id": "q-captain-william-born",
   "title": "Captain William: born 1776 or 1777?",
-  "status": "open",
+  "status": "resolved",
   "priority": "low",
-  "desc": "Narrator: 1777, \"I think\" {q:62} {q:T2:30}. Published Bellingham genealogy: 1776 {s:lf-bellingham}; compiled genealogy: 3 March 1776 {s:winters-p67}.",
+  "desc": "Narrator: 1777, \"I think\" {q:62} {q:T2:30}. Published Bellingham genealogy: 1776 {s:lf-bellingham}; compiled genealogy: 3 March 1776 {s:winters-p67}. Resolved in favour of the published genealogies, which agree on 1776 (3 March 1776 in the compiled genealogy). The narrator's \"1777, I think\" is kept as his recollection.",
   "people": [
    "captain-william-somerville"
   ],
   "cite": [
    62,
    "T2:30"
-  ]
+  ],
+  "next": ""
  },
  {
   "id": "q-sir-william-younger",
   "title": "Who was \"Sir William Somerville the younger\" at Ardrass?",
   "status": "open",
   "priority": "low",
-  "desc": "\"Sir William Somerville the Younger inherited the house. Ardras? We don't know. I don't know. I suspect he did. Ardras continued, not in the possession of the Somerville family\" {q:T2:44} {q:90}. It is unclear who \"Sir William the Younger\" is: perhaps a member of the senior (baronet) line, or a confusion with Captain William.",
-  "next": "NLI Registered Pedigree of the Somervilles of Ardrass {s:nli-ardrass}.",
+  "desc": "\"Sir William Somerville the Younger inherited the house. Ardras? We don't know. I don't know. I suspect he did. Ardras continued, not in the possession of the Somerville family\" {q:T2:44} {q:90}. It is unclear who \"Sir William the Younger\" is: perhaps a member of the senior (baronet) line, or a confusion with Captain William. The registered Somerville pedigree compiled by Cecil B. Rooke (G.O. MS 182A, 1955) should answer this {s:nli-rooke}.",
+  "next": "Read G.O. MS 182A, pp. 119–130.",
   "people": [
    "major-william-somerville",
    "captain-william-somerville"
@@ -211,9 +212,9 @@
  {
   "id": "q-castle-bellingham-sale",
   "title": "Who sold Castle Bellingham to Sir William: Alan or his widow?",
-  "status": "partly resolved",
+  "status": "resolved",
   "priority": "low",
-  "desc": "Narrator: Alan \"sold it, actually, to his uncle\" {q:36}. Published genealogy: Alan rented it to Sir William, and Monique sold the freehold by c. 1824, after Alan's death in 1821 {s:lf-bellingham}. Both agree that it passed to the uncle.",
+  "desc": "Narrator: Alan \"sold it, actually, to his uncle\" {q:36}. Published genealogy: Alan rented it to Sir William, and Monique sold the freehold by c. 1824, after Alan's death in 1821 {s:lf-bellingham}. Both agree that it passed to the uncle. Resolved in favour of the published genealogy: Alan first let Castle Bellingham to his uncle, and the freehold was sold by his widow Monique after his death in 1821, by about 1824 {s:lf-bellingham}. The narrator's \"he sold it, actually, to his uncle\" is right about the buyer, simplified about the seller.",
   "people": [
    "alan-bellingham-1773",
    "monique-baby",
@@ -222,7 +223,8 @@
   "cite": [
    36,
    38
-  ]
+  ],
+  "next": ""
  },
  {
   "id": "q-canada-cousin",
@@ -299,10 +301,10 @@
  {
   "id": "q-cumry",
   "title": "Locate Cumry, Co. Monaghan",
-  "status": "open",
+  "status": "resolved",
   "priority": "medium",
-  "desc": "Spelled out by the narrator as C-U-M-R-Y, which both transcripts preserve (B renders the word itself as \"Cymru\") {q:136} {q:T2:62}; near Ballybay {q:162} {q:T2:68}. Not yet found in townland indexes.",
-  "next": "Search townlands.ie and Griffith's Valuation for Ballybay parish.",
+  "desc": "Spelled out by the narrator as C-U-M-R-Y, which both transcripts preserve (B renders the word itself as \"Cymru\") {q:136} {q:T2:62}; near Ballybay {q:162} {q:T2:68}. Not yet found in townland indexes. Resolved: Cumry (Na Comraigh) is a townland in Aghnamullen parish, barony of Cremorne, near Ballybay {s:logainm-cumry}. The narrator's spelling is the official one. Which farm in the townland the family held is still unknown.",
+  "next": "Griffith's Valuation (1858–60) and earlier tithe records for Cumry, to find the farm.",
   "places": [
    "cumry"
   ],
@@ -369,10 +371,10 @@
  },
  {
   "id": "q-henry-rock",
-  "title": "Henry Rook: surname and relationship",
-  "status": "partly resolved",
+  "title": "Henry Rook or Rooke: surname and relationship",
+  "status": "resolved",
   "priority": "low",
-  "desc": "Transcript B: \"Henry Rook\"; A: \"Henry, Rock\" and \"Henry Oak\" {q:232-234} {q:T2:94}. Both transcripts break the sentence as \"who was actually her father. That's [Bellingham] Arthur's solicitor\", which must mean her father's solicitor, since he was \"years older\" and her husband. Rook (or Rooke) is the likeliest surname.",
+  "desc": "Transcript B: \"Henry Rook\"; A: \"Henry, Rock\" and \"Henry Oak\" {q:232-234} {q:T2:94}. Both transcripts break the sentence as \"who was actually her father. That's [Bellingham] Arthur's solicitor\", which must mean her father's solicitor, since he was \"years older\" and her husband. Rook (or Rooke) is the likeliest surname. Resolved: Henry Rooke, solicitor, eldest son of Archdeacon Henry Rooke of Wicklow, married Cecilia Eliza Margaret Bellingham Somerville, daughter of Bellingham Arthur Somerville of Clermont, on 11 April 1912; he died in 1942 {s:nli-rooke}. He was her husband and her father's solicitor, never her father.",
   "people": [
    "henry-rock",
    "cecilia-somerville"
@@ -384,7 +386,7 @@
    "T2:94",
    "T2:98"
   ],
-  "next": "A 1912 Dublin marriage record."
+  "next": ""
  },
  {
   "id": "q-uncle-jordan",
@@ -406,11 +408,11 @@
  },
  {
   "id": "q-bunt-regiment",
-  "title": "Who commanded at Archangel, and in which regiment?",
-  "status": "open",
+  "title": "Who commanded at Archangel, and in which regiment? (Resolved: Bunt, King's Own)",
+  "status": "resolved",
   "priority": "medium",
-  "desc": "Narrator: Bunt, \"in the Royal Lancaster Regiment\", commanded a troop sent to Archangel {q:364} {q:T2:144-145}; Jim was \"a gunner, Royal Artillery\" {q:366} {q:T2:145}. A war-diary-based history: \"Lt. Col. W A T B Somerville DSO (Royal Artillery)\" commanded the 8th (Special) Battalion MGC from 12 April 1919 {s:mgc-8bn}. A compiled genealogy citing The Times: Bunt a Lieutenant Colonel of the King's Own; Jim \"Lieutenant Colonel, DSO, Royal Artillery\" {s:winters-p68} {s:winters-p69}. Either the published commander's initials or his regiment and DSO are wrong, or Bunt transferred.",
-  "next": "Army Lists 1918–19; the London Gazette for the DSO citation; the 8th Bn MGC war diary (WO 95).",
+  "desc": "Narrator: Bunt, \"in the Royal Lancaster Regiment\", commanded a troop sent to Archangel {q:364} {q:T2:144-145}; Jim was \"a gunner, Royal Artillery\" {q:366} {q:T2:145}. A war-diary-based history: \"Lt. Col. W A T B Somerville DSO (Royal Artillery)\" commanded the 8th (Special) Battalion MGC from 12 April 1919 {s:mgc-8bn}. A compiled genealogy citing The Times: Bunt a Lieutenant Colonel of the King's Own; Jim \"Lieutenant Colonel, DSO, Royal Artillery\" {s:winters-p68} {s:winters-p69}. Either the published commander's initials or his regiment and DSO are wrong, or Bunt transferred. Resolved: the commander at Archangel was Bunt, and his regiment was the King's Own (Royal Lancaster), as the narrator said. The initials W. A. T. B. are his alone; The Times (via a compiled genealogy) makes him a Lieutenant Colonel of the King's Own {s:winters-p69}; King's Own sources (seen in search results) name him as adjutant of the 1st Battalion and as \"Captain W A T Somerville DSO\" {s:kingsown-1914}. The battalion history's \"(Royal Artillery)\" is judged a confusion with his brother Jim. Still unconfirmed: the date and citation of Bunt's DSO, and whether Jim also held one.",
+  "next": "The London Gazette for Bunt's DSO; the King's Own regimental history.",
   "people": [
    "bunt",
    "jim"
@@ -426,9 +428,9 @@
  {
   "id": "q-pat-capture",
   "title": "Pat's capture, escapes and camps",
-  "status": "open",
+  "status": "partly resolved",
   "priority": "medium",
-  "desc": "Narrator: captured \"in the retreat from Mons\"; escaped three times, the third successfully, across Germany and Holland; MC {q:442-450} {q:T2:170-173}. The family has camp photographs and an \"article\" about the escape {q:452} {q:T2:173-175}. Other accounts: Captain Gualter Somerville, 2nd Bn Royal Warwickshire Regiment, Ströhen camp, nine escape attempts (TheGenealogist, search results) {s:genealogist-pow}; captured at Zonnebeke near Ypres in October 1914, escaped 1917 (an article based on interviews with the narrator) {s:clarke-sense-of-duty}; MC 1919 (IWM, search results) {s:iwm-gualter}. The 2nd Battalion arrived only in October 1914 {s:wp-royal-warwick}.",
+  "desc": "Narrator: captured \"in the retreat from Mons\"; escaped three times, the third successfully, across Germany and Holland; MC {q:442-450} {q:T2:170-173}. The family has camp photographs and an \"article\" about the escape {q:452} {q:T2:173-175}. Other accounts: Captain Gualter Somerville, 2nd Bn Royal Warwickshire Regiment, Ströhen camp, nine escape attempts (TheGenealogist, search results) {s:genealogist-pow}; captured at Zonnebeke near Ypres in October 1914, escaped 1917 (an article based on interviews with the narrator) {s:clarke-sense-of-duty}; MC 1919 (IWM, search results) {s:iwm-gualter}. The 2nd Battalion arrived only in October 1914 {s:wp-royal-warwick}. Partly resolved: the archive now follows the records on place and date. Prisoner-of-war records and an article drawing on his debriefing report place his capture at Zonnebeke, near Ypres, in October 1914, with the 2nd Battalion, which reached Belgium only that month and was never at Mons. The narrator's \"retreat from Mons\" is kept as his recollection. Still to confirm from the originals: the number of escapes (three in the family account, nine in the records), the camps, and the MC entry in the London Gazette.",
   "next": "National Archives (UK) WO 339 officer file; ICRC 1914–18 prisoner archive; London Gazette 1919 MC entry; the family's article and photographs.",
   "people": [
    "pat"
@@ -447,9 +449,9 @@
  {
   "id": "q-gunners-venture",
   "title": "\"Gunners Venture\" in Kenya",
-  "status": "open",
+  "status": "partly resolved",
   "priority": "low",
-  "desc": "\"A company called Gunner's Venture … started by Gunner officers after the First World War who wanted a job\" {q:T2:193} {q:498-500}. No independent record found yet under that name.",
+  "desc": "\"A company called Gunner's Venture … started by Gunner officers after the First World War who wanted a job\" {q:T2:193} {q:498-500}. No independent record found yet under that name. Partly resolved: the company existed. A scholarly article on Nanyuki in the 1920s (seen only in search results) describes Gunners' Venture Limited as a farm of about 17,000 acres near Nanyuki, with a sawmill, owned by ex-artillery officers {s:paice-nanyuki}, just as the narrator described it (\"started by Gunner officers after the First World War\"). Reginald's role there, and whether it grew coffee, are unconfirmed.",
   "people": [
    "reginald-somerville"
   ],
@@ -461,14 +463,15 @@
    500,
    "T2:193",
    "T2:194"
-  ]
+  ],
+  "next": "Read the article directly; Kenya Gazette company notices."
  },
  {
   "id": "q-green-desert",
   "title": "\"Green desert\" near Bantry",
-  "status": "partly resolved",
+  "status": "resolved",
   "priority": "low",
-  "desc": "Both transcripts hear \"Green desert\" {q:374} {q:T2:147}. A compiled genealogy citing The Times gives Bunt's death at Reendesert Lodge, Bantry {s:winters-p69}, so the place is evidently Reendesert. Still to check: the Times notice itself and the house's location.",
+  "desc": "Both transcripts hear \"Green desert\" {q:374} {q:T2:147}. A compiled genealogy citing The Times gives Bunt's death at Reendesert Lodge, Bantry {s:winters-p69}, so the place is evidently Reendesert. Still to check: the Times notice itself and the house's location. Resolved: Reendesert Lodge, Bantry. Both Bunt's death notice and Alan Ferguson's (The Times, via a compiled genealogy) name it {s:winters-p69}; it was the Fergusons' home before Kitty married Bunt.",
   "people": [
    "bunt",
    "kitty-harrison"
@@ -481,7 +484,8 @@
    554,
    "T2:147",
    "T2:219"
-  ]
+  ],
+  "next": ""
  },
  {
   "id": "q-jim-burial",
@@ -519,9 +523,9 @@
  {
   "id": "q-kitty-ferguson",
   "title": "Was Kitty Harrison previously married to Alan Ferguson?",
-  "status": "partly resolved",
+  "status": "resolved",
   "priority": "low",
-  "desc": "\"She married, or she had married, an Australian called Alan Ferguson\" {q:374} {q:T2:146-147}. A compiled genealogy citing The Times confirms a marriage to Alan Campbell Ferguson before 1920 and to Bunt about 1925 {s:winters-p69}. Whether Ferguson died or the marriage ended in divorce is not recorded.",
+  "desc": "\"She married, or she had married, an Australian called Alan Ferguson\" {q:374} {q:T2:146-147}. A compiled genealogy citing The Times confirms a marriage to Alan Campbell Ferguson before 1920 and to Bunt about 1925 {s:winters-p69}. Whether Ferguson died or the marriage ended in divorce is not recorded. Resolved: Alan Campbell Ferguson died on 21 September 1920 at Seaview, Isle of Wight, so Kitty was his widow; Reendesert Lodge was among his residences (The Times, via a compiled genealogy) {s:winters-p69}.",
   "people": [
    "kitty-harrison",
    "alan-ferguson"
@@ -530,7 +534,8 @@
    374,
    "T2:146",
    "T2:147"
-  ]
+  ],
+  "next": ""
  },
  {
   "id": "q-johnson-line",
@@ -592,20 +597,21 @@
  {
   "id": "q-recording-date",
   "title": "Date of the recording",
-  "status": "partly resolved",
+  "status": "resolved",
   "priority": "low",
-  "desc": "Transcript A's file is labelled \"27 Oct at 16-17\"; transcript B's file is stamped \"2026-10-27 19.50.34\". The narrator, born 1937, is \"coming up to 90\" {q:50} {q:T2:25}. Everything points to 27 October 2026, but file timestamps record when the files were made, not necessarily the conversation.",
+  "desc": "Transcript A's file is labelled \"27 Oct at 16-17\"; transcript B's file is stamped \"2026-10-27 19.50.34\". The narrator, born 1937, is \"coming up to 90\" {q:50} {q:T2:25}. Everything points to 27 October 2026, but file timestamps record when the files were made, not necessarily the conversation. Resolved as far as the evidence allows: the speakers are now identified as William Somerville and his grandson Gergely (family information), both transcript files are stamped 27 October 2026, and nothing in the recording contradicts that date, so it is adopted.",
   "cite": [
    50,
    "T2:25"
-  ]
+  ],
+  "next": ""
  },
  {
   "id": "q-holdings",
   "title": "Where are the original papers?",
-  "status": "open",
+  "status": "partly resolved",
   "priority": "high",
-  "desc": "The recording refers to Bellingham Arthur's six volumes {q:6} {q:T2:3}; his office and personal diaries, which the narrator owns {q:T2:133}; transcripts of Captain William's diary {q:132} {q:T2:59-60}; Eliza's letter about Henry {q:52} {q:T2:25-26}; the Nelson correspondence {q:166} {q:T2:69}; the Crisp's entry {q:124} {q:T2:54-55}; portraits of Dorothea and Monique and a miniature of Henry {q:26-28} {q:36} {q:44} {q:T2:13} {q:T2:18} {q:T2:22}; Pat's camp photographs and an article about his escape {q:452} {q:T2:173-175}; Reginald's Kenya photographs {q:504} {q:T2:196}; and Monique's booklet {q:42} {q:T2:21}. Cousin Eliza began photographing the portraits {q:46} {q:T2:23}. An inventory, with scans linked from this archive, is the most valuable next step.",
+  "desc": "The recording refers to Bellingham Arthur's six volumes {q:6} {q:T2:3}; his office and personal diaries, which the narrator owns {q:T2:133}; transcripts of Captain William's diary {q:132} {q:T2:59-60}; Eliza's letter about Henry {q:52} {q:T2:25-26}; the Nelson correspondence {q:166} {q:T2:69}; the Crisp's entry {q:124} {q:T2:54-55}; portraits of Dorothea and Monique and a miniature of Henry {q:26-28} {q:36} {q:44} {q:T2:13} {q:T2:18} {q:T2:22}; Pat's camp photographs and an article about his escape {q:452} {q:T2:173-175}; Reginald's Kenya photographs {q:504} {q:T2:196}; and Monique's booklet {q:42} {q:T2:21}. Cousin Eliza began photographing the portraits {q:46} {q:T2:23}. An inventory, with scans linked from this archive, is the most valuable next step. Partly resolved: some of the papers can now be located. (1) Cecil B. Rooke's own Somerville research (notebooks, will and parish-register extracts partly copied by Bellingham Arthur, letters from her brother Reg and sister-in-law Vere, the supporting notes for the 1955 pedigree) is in the National Library of Ireland's Rooke Papers, Ms. 33,584–33,601. (2) The registered Somerville pedigree is G.O. MS 182A, pp. 119–130, at the National Library. (3) In 1998 the library noted that \"The Somerville Papers are now in the possession of Mr. William Somerville\", the narrator {s:nli-rooke}. An inventory of what the narrator holds is still the most valuable next step.",
   "cite": [
    6,
    42,
@@ -625,7 +631,8 @@
    "T2:133",
    "T2:173",
    "T2:196"
-  ]
+  ],
+  "next": "Inventory and scan the papers in the narrator's keeping; consult NLI Ms. 33,586 and G.O. MS 182A."
  },
  {
   "id": "q-monaghan-years",
@@ -665,9 +672,9 @@
  {
   "id": "q-tenison-death",
   "title": "When did Tenison Alan Somerville die, and who died first?",
-  "status": "open",
+  "status": "partly resolved",
   "priority": "medium",
-  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88}; A is garbled (\"about 189…\") {q:216}. A compiled genealogy gives Tenison's death as 31 July 1895 {s:winters-p67} and none for his wife. Either the narrator's order of deaths or the online date is wrong.",
+  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88}; A is garbled (\"about 189…\") {q:216}. A compiled genealogy gives Tenison's death as 31 July 1895 {s:winters-p67} and none for his wife. Either the narrator's order of deaths or the online date is wrong. Partly resolved: the archive adopts 31 July 1895 (IGI, via the compiled genealogy) for Tenison's death, rather than the narrator's \"about 1890\". Whether he or his wife died first is still open, since no record of her death has been found.",
   "next": "GRO death index (Dublin), 1888–1896, for Tenison and Cecelia Eliza Somerville.",
   "people": [
    "tenison-alan-somerville",
@@ -681,10 +688,10 @@
  {
   "id": "q-ba-birth",
   "title": "Bellingham Arthur's birth: 1853 or 1856?",
-  "status": "open",
+  "status": "resolved",
   "priority": "medium",
-  "desc": "Narrator: \"born in 18… It's the year of the Crimean War, anyway. I think it was 1856\" {q:T2:1-2} {q:2}. IGI, via a compiled genealogy: born 17 November 1853, baptised in Dublin 16 June 1854 {s:winters-p68}. The Crimean War (1853–56) fits both years.",
-  "next": "The 1854 Dublin baptismal register; RIC officer register (which records date of birth).",
+  "desc": "Narrator: \"born in 18… It's the year of the Crimean War, anyway. I think it was 1856\" {q:T2:1-2} {q:2}. IGI, via a compiled genealogy: born 17 November 1853, baptised in Dublin 16 June 1854 {s:winters-p68}. The Crimean War (1853–56) fits both years. Resolved in favour of the records: 17 November 1853. A baptism in June 1854 rules out 1856, and his RIC enlistment age (18 in 1872) and 1891 census age (36) agree with 1853 {s:winters-p68}. The narrator's \"1856\" is kept as his recollection; the Crimean War, which he used to date it, began in 1853.",
+  "next": "",
   "people": [
    "bellingham-arthur-somerville"
   ],
@@ -697,9 +704,9 @@
  {
   "id": "q-clinch-rachel",
   "title": "Rachel: Margaret's sister or her mother?",
-  "status": "open",
+  "status": "partly resolved",
   "priority": "low",
-  "desc": "The narrator: Margaret's elder sister and co-heiress was \"Rachel\" {q:330} {q:T2:131}. A compiled genealogy names Margaret's mother as Rachel Hall Wright {s:winters-p68}. Both could be true.",
+  "desc": "The narrator: Margaret's elder sister and co-heiress was \"Rachel\" {q:330} {q:T2:131}. A compiled genealogy names Margaret's mother as Rachel Hall Wright {s:winters-p68}. Both could be true. Partly resolved: the 1891 census at Witney lists Margaret's mother as Rachel H. Clinch, aged 64, with her husband William Clinch (70, banker and brewer) {s:winters-p68}. So a Rachel Clinch certainly existed in the right household: Margaret's mother. Whether Margaret also had a sister Rachel who shared the inheritance, as the narrator says, is unconfirmed; he may have conflated mother and sister.",
   "people": [
    "rachel-clinch",
    "rachel-hall-wright",
@@ -807,7 +814,7 @@
   "title": "The Hungarian family: the gulag story",
   "status": "open",
   "priority": "low",
-  "desc": "Not Somerville history, but part of the recording. Near the end the interviewer describes the other side of their own family: a mother who is the last authority on it, a grandfather Miklós, and a great-grandmother who died about 2010 in a flat in Eger, Hungary. She \"always told these stories about her husband … him being sent to a gulag, and apparently escaping\", but \"no one really knows if the story was true\" {q:588-598} {q:T2:235-240}. It is recorded here as her story, as the interviewer reported it; nothing in it has been checked.",
+  "desc": "Not Somerville history, but part of the recording. Near the end the interviewer, Gergely Somerville, describes his mother's side of the family: a mother who is the last authority on it, a grandfather Miklós, and a great-grandmother who died about 2010 in a flat in Eger, Hungary. She \"always told these stories about her husband … him being sent to a gulag, and apparently escaping\", but \"no one really knows if the story was true\" {q:588-598} {q:T2:235-240}. It is recorded here as her story, as Gergely reported it; nothing in it has been checked.",
   "people": [
    "interviewer"
   ],

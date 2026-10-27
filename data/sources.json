@@ -128,7 +128,7 @@
   "url": "https://api.parliament.uk/historic-hansard/commons/1887/mar/18/crime-and-outrage-ireland-the",
   "type": "primary",
   "reliability": "Primary parliamentary record.",
-  "used": "Disturbances at Youghal, early March 1887: a lighted tar barrel thrown at the door of the (local) District Inspector's house; the question names him as Inspector Kerin.",
+  "used": "Disturbances at Youghal, early March 1887: a lighted tar barrel thrown at the door of the (local) District Inspector's house; the question names him as Inspector Kerin. The question quotes Dr Charles Ronayne, J.P.: \"a young officer, Mr. Somerville, who assumed the responsibility of having ordered the charge\"; Ronayne's letter was addressed to \"Mr. Kerin, the District Inspector of Youghal\", so Somerville was not the local officer.",
   "checked": "2026-10-27",
   "access": "direct"
  },
@@ -206,7 +206,7 @@
   "url": "https://bloodysunday.co.uk/murdered-men/angliss/russia/8bn-mgc.html",
   "type": "military history",
   "reliability": "Independent researcher using war diaries.",
-  "used": "States the 8th (Special) Battalion, Machine Gun Corps was 'under the command of Lt. Col. W A T B Somerville DSO (Royal Artillery) from 12th April 1919'; arrived Archangel 26 May 1919. Note: a compiled genealogy describes Bunt as King's Own and his brother James as 'Lieutenant Colonel, DSO, Royal Artillery', so this attribution needs checking against the Army List.",
+  "used": "States the 8th (Special) Battalion, Machine Gun Corps was 'under the command of Lt. Col. W A T B Somerville DSO (Royal Artillery) from 12th April 1919'; arrived Archangel 26 May 1919. The initials are Bunt's alone. The archive judges \"(Royal Artillery)\" a slip, probably a confusion with his brother Jim, a gunner: The Times (via a compiled genealogy) and King's Own sources make Bunt a King's Own officer.",
   "checked": "2026-10-27",
   "access": "direct"
  },
@@ -560,7 +560,7 @@
   "url": "https://winters-online.net/bishopmeredith/g1/p67.htm",
   "type": "compiled genealogy",
   "reliability": "Compiled online genealogy; the children's dates come from an Ancestry OneWorldTree titled 'Bellingham Arthur Somerville' (user-contributed), others from Stirnet, a Bellingham genealogy and the IGI. Treat as leads, not proof.",
-  "used": "Capt. William Somerville (3 Mar 1776–19 Dec 1844), captain in the Louth Militia, of Ardrass; Eliza Bellingham (b. 5 Sep 1779, Thomastown, Co. Louth; d. 16 Dec 1839); their ten children with dates (William Henry 1802; Archibald James 1803; John Churchill 1804–05; Corry 1806–80; Eliza 1808–12; Bellingham Arthur 1810–1845/44; Tenison 1812; Eliza 1813; Tenison Alan 1815–95; Samuel Riall 1820); marriages of William Henry (Henrietta Ryers, 1832), Archibald James (Elizabeth Crawford, 1836), Corry (Lucinda Simmonton, 1834) and Tenison Alan (Cecelia Eliza O'Connor, 1840).",
+  "used": "Capt. William Somerville (3 Mar 1776–19 Dec 1844), captain in the Louth Militia, of Ardrass; Eliza Bellingham (b. 5 Sep 1779, Thomastown, Co. Louth; d. 16 Dec 1839); their ten children with dates (William Henry 1802; Archibald James 1803; John Churchill 1804–05; Corry 1806–80; Eliza 1808–12; Bellingham Arthur 1810–1845/44; Tenison 1812; Eliza 1813; Tenison Alan 1815–95; Samuel Riall 1820); marriages of William Henry (Henrietta Ryers, 1832), Archibald James (Elizabeth Crawford, 1836), Corry (Lucinda Simmonton, 1834) and Tenison Alan (Cecelia Eliza O'Connor, 1840). Tenison Alan's death on 31 July 1895 is cited to the IGI; Captain William's birth (3 March 1776) to Stirnet.",
   "access": "direct",
   "checked": "2026-10-27"
  },
@@ -571,7 +571,7 @@
   "url": "https://winters-online.net/bishopmeredith/g1/p68.htm",
   "type": "compiled genealogy",
   "reliability": "Compiled online genealogy citing the IGI, The Times (1895–1976), RIC records on Ancestry, the 1891 census and the NIAH. Secondary; dates should be checked against the cited originals.",
-  "used": "Children of Tenison Alan and Cecelia Eliza O'Connor (William Dennistoun 1842 and Tenison Alan 1845, both baptised in Trinidad; Erina Bellingham 1852; Bellingham Arthur 17 Nov 1853; twins Tenison Alan and Henry Bellingham 1859); Bellingham Arthur (d. 20 Jan 1916 at Clermont) m. Margaret Hall Clinch at Witney, 27 Aug 1879; Margaret (16 Jul 1859–5 Jul 1949), daughter of William Clinch and Rachel Hall Wright; their children with dates, including Dorothy (1888–95), Vere Frances de Merlie (1890–1976, m. Edmund Gray Stuart Truell 1912), Gaulter Hugh Rodger (1894–1947, m. Heather Edith Baker 1925), Edeline Botelier Marjorie, and James (Lt-Col, DSO, RA; m. Margaret Lucy Starkey 1927; d. 13 Apr 1950 at Clermont). Also Archibald James's son Bellingham Brooke Somerville, b. 1852 St Louis, Missouri (IGI).",
+  "used": "Children of Tenison Alan and Cecelia Eliza O'Connor (William Dennistoun 1842 and Tenison Alan 1845, both baptised in Trinidad; Erina Bellingham 1852; Bellingham Arthur 17 Nov 1853; twins Tenison Alan and Henry Bellingham 1859); Bellingham Arthur (d. 20 Jan 1916 at Clermont) m. Margaret Hall Clinch at Witney, 27 Aug 1879; Margaret (16 Jul 1859–5 Jul 1949), daughter of William Clinch and Rachel Hall Wright; their children with dates, including Dorothy (1888–95), Vere Frances de Merlie (1890–1976, m. Edmund Gray Stuart Truell 1912), Gaulter Hugh Rodger (1894–1947, m. Heather Edith Baker 1925), Edeline Botelier Marjorie, and James (Lt-Col, DSO, RA; m. Margaret Lucy Starkey 1927; d. 13 Apr 1950 at Clermont). Also Archibald James's son Bellingham Brooke Somerville, b. 1852 St Louis, Missouri (IGI). Also: Bellingham Arthur enlisted in the RIC in 1872, aged 18 (Ancestry RIC records), and at the 1891 census was at Church Green, Witney, aged 36, \"Retired D. I. R. I. Constabulary\", with his wife, children and parents-in-law William Clinch (70, banker and brewer) and Rachel H. Clinch (64); The Times (22 Jan 1916) calls him the 4th son of the late Tenison Alan Somerville.",
   "access": "direct",
   "checked": "2026-10-27"
  },
@@ -582,7 +582,7 @@
   "url": "https://winters-online.net/bishopmeredith/g1/p69.htm",
   "type": "compiled genealogy",
   "reliability": "Compiled online genealogy citing The Times (1924–1962) and the 1891 census. Secondary.",
-  "used": "W. A. T. B. Somerville (c. 1883–13 Feb 1951, at Reendesert Lodge, Bantry), Lieutenant Colonel, King's Own Regiment; director of Clinch & Co in 1950; married c. 1925 Amy Kathleen, who had earlier married Alan Campbell Ferguson (before 1920) and died in 1962.",
+  "used": "W. A. T. B. Somerville (c. 1883–13 Feb 1951, at Reendesert Lodge, Bantry), Lieutenant Colonel, King's Own Regiment; director of Clinch & Co in 1950; married c. 1925 Amy Kathleen, who had earlier married Alan Campbell Ferguson (before 1920) and died in 1962. Alan Campbell Ferguson died 21 Sep 1920 at Seaview, Isle of Wight (The Times); his residences included Reendesert Lodge, Bantry. Bunt: Lt-Col., King's Own Regiment (The Times, 8 May 1950).",
   "access": "direct",
   "checked": "2026-10-27"
  },
@@ -684,5 +684,101 @@
   "used": "Leinster Avenue is in North Strand, Dublin 3 (near Bayview Avenue), not in Rathmines.",
   "access": "search-only",
   "checked": "2026-10-27"
+ },
+ {
+  "id": "hansard-1887-mar31",
+  "title": "Crime and Outrage (Ireland): Death of Hanlon; arrest of Sub-Inspector Somerville and Constable Ward",
+  "publisher": "Hansard, House of Commons, 31 March 1887",
+  "year": "1887",
+  "url": "https://api.parliament.uk/historic-hansard/commons/1887/mar/31/crime-and-outrage-ireland-death-of",
+  "type": "primary record",
+  "reliability": "Official parliamentary report (primary).",
+  "used": "\"Sub-Inspector Somerville and Constable Ward\", \"in custody charged with wilful murder\", released on bail; the Attorney General had consented to bail. Gives no first name or station.",
+  "checked": "2026-10-27",
+  "access": "direct"
+ },
+ {
+  "id": "hansard-1887-apr4",
+  "title": "Crime and Outrage (Ireland): Death of Hanlon; arrest of Sub-Inspector Somerville and Constable Ward",
+  "publisher": "Hansard, House of Commons, 4 April 1887",
+  "year": "1887",
+  "url": "https://api.parliament.uk/historic-hansard/commons/1887/apr/04/crime-and-outrage-ireland-death-of",
+  "type": "primary record",
+  "reliability": "Official parliamentary report (primary).",
+  "used": "\"District-Inspector Somerville and Constable Garrett Ward, against whom a Coroner's jury at Youghal returned a verdict of wilful murder\"; the Attorney General would not proceed on the coroner's inquisition. Uses both ranks (heading \"Sub-Inspector\", question \"District-Inspector\").",
+  "checked": "2026-10-27",
+  "access": "direct"
+ },
+ {
+  "id": "ukpga-1883-s12",
+  "title": "Constabulary and Police (Ireland) Act 1883, section 12: Change of designations of certain ranks",
+  "publisher": "legislation.gov.uk (The National Archives)",
+  "year": "1883",
+  "url": "https://www.legislation.gov.uk/ukpga/Vict/46-47/14/section/12/enacted",
+  "type": "primary record",
+  "reliability": "Statute as enacted (primary).",
+  "used": "After 1 October 1883 RIC sub-inspectors were \"styled district inspectors\", which explains why the 1887 records call the same officer both Sub-Inspector and District Inspector.",
+  "checked": "2026-10-27",
+  "access": "direct"
+ },
+ {
+  "id": "nli-rooke",
+  "title": "The Rooke Papers: a descriptive list (Collection List No. 48)",
+  "publisher": "National Library of Ireland; compiled by Brigid Clesham, archivist",
+  "year": "1998",
+  "url": "https://www.nli.ie/sites/default/files/2022-12/rooke.pdf",
+  "type": "archive catalogue",
+  "reliability": "Archival finding aid describing original documents (birth and marriage certificates, letters, registered pedigrees); strong secondary evidence for what the documents say.",
+  "used": "On 11 April 1912 Henry Rooke, solicitor, eldest son of Archdeacon Henry Rooke (rector of Wicklow 1873–1906), married Cecilia Eliza Margaret Bellingham Somerville, daughter of Bellingham Arthur Somerville of Clermont; she signed herself Cecil B. Rooke (1880–1973), extracted wills at the Public Record Office in 1912 and registered the Somerville and Rooke pedigrees at the Genealogical Office in February 1955 (G.O. MS 182A, Somerville pp. 119–130); Henry Rooke died in 1942; four children, including Col. H. T. B. B. (Tommy) Rooke and Dorothy Rooke. Clermont was bought by B. A. Somerville in the mid-1890s from Col. Charles George Tottenham of Ballycurry. B. A. Somerville copied many Somerville wills in the Public Record Office in the late 19th century (Ms. 33,586); \"The Somerville Papers are now in the possession of Mr. William Somerville\" (1998). Letters from Reg Somerville at Clermont (1946) and from Vere (1955).",
+  "checked": "2026-10-27",
+  "access": "direct"
+ },
+ {
+  "id": "dia-clermont",
+  "title": "Clermont, Co. Wicklow (works entries)",
+  "publisher": "Dictionary of Irish Architects 1720–1940 (Irish Architectural Archive)",
+  "year": "",
+  "url": "https://dia.ie/works/view/1582/building/CO.+WICKLOW%2C+CLERMONT",
+  "type": "reference database",
+  "reliability": "Scholarly reference database citing contemporary sources.",
+  "used": "1894: flanking wings and bathroom extension for B. A. Somerville, architect Sir Thomas Drew (Wicklow Newsletter, 4 Aug 1894); cites a typescript, \"Early recollections of Clermont\", by Mrs C. E. M. B. Rooke (Cecilia).",
+  "checked": "2026-10-27",
+  "access": "direct"
+ },
+ {
+  "id": "logainm-cumry",
+  "title": "Cumry / Na Comraigh",
+  "publisher": "Logainm.ie, Placenames Database of Ireland",
+  "year": "",
+  "url": "https://www.logainm.ie/en/39936",
+  "type": "reference database",
+  "reliability": "Official placenames database (authoritative for location and historical spellings).",
+  "used": "Cumry is a townland in Aghnamullen civil parish, barony of Cremorne, Co. Monaghan (54.1142, -6.9407), near Ballybay; recorded as Cumrys, Cummrys and Cumrey in the 18th–19th centuries.",
+  "checked": "2026-10-27",
+  "access": "direct"
+ },
+ {
+  "id": "paice-nanyuki",
+  "title": "Paice's place: race and politics in Nanyuki District, Kenya, in the 1920s",
+  "publisher": "Journal article, reproduced by The Free Library",
+  "year": "",
+  "url": "https://www.thefreelibrary.com/Paice's+place:+race+and+politics+in+Nanyuki+District,+Kenya,+in+the...-a015599376",
+  "type": "scholarly article",
+  "reliability": "Scholarly article; known here only from search results, as the page blocks automated access.",
+  "used": "Search summary: Gunners' Venture Limited was a farm of about 17,000 acres near Nanyuki, with a sawmill, owned by a former artillery officer and four other ex-artillery officers, in the context of the post-1919 soldier-settlement scheme.",
+  "checked": "2026-10-27",
+  "access": "search-only"
+ },
+ {
+  "id": "kingsown-1914",
+  "title": "1st Battalion, King's Own Royal Lancaster Regiment, 1914 (photograph gallery); and a Great War Forum thread on the regiment",
+  "publisher": "King's Own Royal Regiment Museum, Lancaster; Great War Forum",
+  "year": "",
+  "url": "http://www.kingsownmuseum.com/gallerywwone025.htm",
+  "type": "museum / forum",
+  "reliability": "Known here only from search results (the museum site was unavailable and the forum blocks automated access).",
+  "used": "Search summaries: a museum caption names \"Captain W A T Somerville DSO\"; a forum account of the 1st Battalion's fighting at Haucourt names Lieutenant W. A. T. B. Somerville as adjutant.",
+  "checked": "2026-10-27",
+  "access": "search-only"
  }
 ]

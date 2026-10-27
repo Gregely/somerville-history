@@ -1,8 +1,8 @@
 [
  {
   "id": "narrator",
-  "name": "The narrator",
-  "fullName": "The narrator (Grandpa)",
+  "name": "William Somerville",
+  "fullName": "William Somerville (the narrator, \"Grandpa\")",
   "sex": "m",
   "living": true,
   "family": "somerville",
@@ -20,14 +20,28 @@
    ]
   },
   "aliases": [
-   "Grandpa"
+   "Grandpa",
+   "the narrator",
+   "William"
   ],
-  "summary": "The family historian whose recorded conversation is the foundation of this archive. Son of {p:reginald-somerville|Reginald Somerville} and {p:honor-johnson|Honor Johnson}; born 1937; \"coming up to 90\" at the time of recording.",
+  "summary": "The narrator: William Somerville, born 1937, the family historian whose recorded conversation is the foundation of this archive. Son of {p:reginald-somerville|Reginald Somerville} and {p:honor-johnson|Honor Johnson}; brother of {p:juanita|Juanita}; father of {p:james-somerville|James}, {p:charles-somerville|Charles} and {p:edward-somerville|Edward}; grandfather of the interviewer, {p:interviewer|Gergely}.",
   "bio": [
-   "A living person, so only what bears on the archive is recorded here. He was born in 1937 {q:516}, the son of Reginald Somerville's second marriage {q:512-514}, and describes himself as \"coming up to 90\" and his memory as \"sadly failing\" {q:50}, though the recording shows a remarkable command of six generations of detail.",
-   "He inherited the family's genealogical habit from his grandfather {p:bellingham-arthur-somerville|Bellingham Arthur Somerville} {q:2} and his aunt {p:cecilia-somerville|Cecilia} {q:230}, and refers to documents still in the family's keeping: transcriptions of {p:captain-william-somerville|Captain William}'s diary, letters, an entry in {t:crisps-visitation|Crisp's}, portraits, and photographs of Pat's prison camp {q:124, 132, 452}. He also has Bellingham Arthur's office diary and personal diary (transcript B: \"I'm fortunate enough to have both his office diary and his personal diary\" {q:T2:133}; A hears \"Unfortunate enough\" {q:334}), and refers to an article about Pat's escape {q:T2:173}."
+   "William Somerville, the narrator, was born in 1937 {q:516}, the son of Reginald Somerville's second marriage {q:512-514}, and describes himself as \"coming up to 90\" and his memory as \"sadly failing\" {q:50}, though the recording shows a remarkable command of six generations of detail.",
+   "{int}The recording itself never states his full name, though the interviewer seems to address him as William (\"There you go, William\" {q:T2:203}). His identity and immediate family (his sister Juanita; his sons James, Charles and Edward; his grandson Gergely, the interviewer, son of Charles) were confirmed by the family in 2026. Names heard in the everyday conversation fit: a James, with Holly, receives his personal-alarm alerts {q:T2:32-39}, and \"Charles is back\" {q:T2:120-122}.",
+   "He inherited the family's genealogical habit from his grandfather {p:bellingham-arthur-somerville|Bellingham Arthur Somerville} {q:2} and his aunt {p:cecilia-somerville|Cecilia} {q:230}, and refers to documents still in the family's keeping: transcriptions of {p:captain-william-somerville|Captain William}'s diary, letters, an entry in {t:crisps-visitation|Crisp's}, portraits, and photographs of Pat's prison camp {q:124, 132, 452}. He also has Bellingham Arthur's office diary and personal diary (transcript B: \"I'm fortunate enough to have both his office diary and his personal diary\" {q:T2:133}; A hears \"Unfortunate enough\" {q:334}), and refers to an article about Pat's escape {q:T2:173}.",
+   "{ctx}The National Library of Ireland's list of the Rooke Papers (1998) notes that the Somerville Papers, the research of Bellingham Arthur Somerville that his daughter Cecil B. Rooke used, \"are now in the possession of Mr. William Somerville\" {s:nli-rooke}. {int}This is almost certainly the narrator, who speaks of owning Bellingham Arthur's diaries {q:T2:133}."
   ],
   "facts": [
+   {
+    "label": "Name",
+    "value": "William Somerville",
+    "status": "family",
+    "conf": "high",
+    "cite": [
+     "T2:203"
+    ],
+    "note": "Confirmed by the family (2026); the interviewer addresses him as \"William\" in transcript B."
+   },
    {
     "label": "Born",
     "value": "1937",
@@ -38,12 +52,58 @@
     ]
    },
    {
+    "label": "Parents",
+    "value": "Reginald Somerville and Honor Johnson (Reginald's second marriage)",
+    "status": "testimony",
+    "conf": "high",
+    "cite": [
+     512,
+     514,
+     516
+    ]
+   },
+   {
+    "label": "Sister",
+    "value": "{p:juanita|Juanita Somerville}, born 1932 (strictly a half-sister, from Reginald's first marriage)",
+    "status": "testimony",
+    "conf": "high",
+    "cite": [
+     508,
+     "T2:198"
+    ]
+   },
+   {
+    "label": "Children",
+    "value": "{p:james-somerville|James}, {p:charles-somerville|Charles} and {p:edward-somerville|Edward} Somerville",
+    "status": "family",
+    "conf": "high"
+   },
+   {
+    "label": "Grandson",
+    "value": "{p:interviewer|Gergely Somerville}, son of Charles, who recorded the conversation",
+    "status": "family",
+    "conf": "high"
+   },
+   {
     "label": "Age at recording",
     "value": "\"Coming up to 90\"",
     "status": "testimony",
     "conf": "high",
     "cite": [
-     50
+     50,
+     "T2:25"
+    ]
+   },
+   {
+    "label": "Family papers",
+    "value": "Holds the Somerville Papers, including Bellingham Arthur's office and personal diaries",
+    "status": "inferred",
+    "conf": "high",
+    "cite": [
+     "T2:133"
+    ],
+    "src": [
+     "nli-rooke"
     ]
    }
   ],
@@ -53,19 +113,31 @@
  },
  {
   "id": "interviewer",
-  "name": "The interviewer",
-  "fullName": "The interviewer (a grandchild of the narrator)",
-  "sex": "u",
+  "name": "Gergely Somerville",
+  "fullName": "Gergely Somerville (the interviewer)",
+  "sex": "m",
   "living": true,
   "family": "somerville",
   "category": "family",
-  "parents": [],
-  "aliases": [],
-  "summary": "A grandchild of the narrator who recorded the conversation and had already done online research on Ancestry.",
+  "parents": [
+   "charles-somerville"
+  ],
+  "aliases": [
+   "the interviewer",
+   "Gergely"
+  ],
+  "summary": "The interviewer: the narrator's grandson, son of {p:charles-somerville|Charles Somerville}, who recorded the conversation and had already begun research on Ancestry.",
   "bio": [
-   "The interviewer brought printouts from an online family tree on Ancestry {q:114-120, 518-524} and asks many of the clarifying questions in the transcript. Details of this living person are deliberately not recorded. The exact parentage link to the narrator is not spelled out in the recording, so the interviewer is not placed in the tree."
+   "Gergely Somerville, the narrator's grandson and the son of {p:charles-somerville|Charles Somerville}, recorded the conversation (relationships confirmed by the family in 2026). He brought printouts from an online family tree on Ancestry {q:114-120, 518-524} and asks many of the clarifying questions in the transcript.",
+   "On his mother's side his family is Hungarian: he speaks of his grandfather Miklós and of a great-grandmother in Eger, whose story of her husband's escape from a gulag is recorded as an open question {q:568} {q:588-598} {q:T2:225} {q:T2:235-240} ({qn:q-hungarian-family})."
   ],
   "facts": [
+   {
+    "label": "Relationship",
+    "value": "Grandson of the narrator; son of {p:charles-somerville|Charles Somerville}",
+    "status": "family",
+    "conf": "high"
+   },
    {
     "label": "Prior research",
     "value": "Ancestry online tree (\"pretty basic information … names and birth and death dates\")",
@@ -616,8 +688,8 @@
    }
   ],
   "born": {
-   "display": "1776/1777",
-   "status": "conflict",
+   "display": "3 Mar 1776",
+   "status": "record",
    "conf": "medium",
    "cite": [
     62,
@@ -627,7 +699,8 @@
     "lf-bellingham",
     "winters-p67"
    ],
-   "note": "Narrator (both transcripts): 1777, \"I think\". Published Bellingham genealogy: 1776; compiled genealogy: 3 March 1776."
+   "narrator": "\"born in 1777, I think\" {q:62} {q:T2:30}.",
+   "note": "The published Bellingham genealogy (1776) and a compiled genealogy (3 March 1776) agree, so 1776 is preferred to the narrator's tentative 1777."
   },
   "died": {
    "display": "Dec 1844, Dublin",
@@ -664,8 +737,8 @@
   "facts": [
    {
     "label": "Born",
-    "value": "1777 (narrator, \"I think\") / 3 March 1776 (compiled genealogy)",
-    "status": "conflict",
+    "value": "3 March 1776",
+    "status": "record",
     "conf": "medium",
     "cite": [
      62,
@@ -674,7 +747,8 @@
     "src": [
      "lf-bellingham",
      "winters-p67"
-    ]
+    ],
+    "narrator": "1777, \"I think\"."
    },
    {
     "label": "Regular officer",
@@ -1586,9 +1660,9 @@
    "note": "From an Ancestry family tree quoted in a compiled genealogy; earlier estimate from testimony c. 1805–15."
   },
   "died": {
-   "display": "c. 1890 / 1895",
-   "status": "conflict",
-   "conf": "low",
+   "display": "31 Jul 1895",
+   "status": "record",
+   "conf": "medium",
    "cite": [
     216,
     "T2:88"
@@ -1596,7 +1670,8 @@
    "src": [
     "winters-p67"
    ],
-   "note": "Narrator (B): \"he died first. I think about 1890. Early 1890s. She died about 1895\". Compiled genealogy: Tenison died 31 July 1895."
+   "narrator": "\"He died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88}.",
+   "note": "Date from the IGI as quoted in a compiled genealogy, preferred to the narrator's estimate. Whether he or his wife died first is still open, because no record of her death has been found."
   },
   "aliases": [
    "Tennyson Allen Somerville",
@@ -2192,18 +2267,14 @@
    }
   ],
   "born": {
-   "display": "1856 (narrator) / 1853 (records)",
-   "status": "conflict",
-   "conf": "medium",
-   "cite": [
-    2,
-    "T2:1",
-    "T2:2"
-   ],
+   "display": "17 Nov 1853",
+   "status": "record",
+   "conf": "high",
    "src": [
     "winters-p68"
    ],
-   "note": "Narrator: \"born in 18… It's the year of the Crimean War, anyway. I think it was 1856\". IGI via a compiled genealogy: born 17 November 1853, baptised in Dublin 16 June 1854."
+   "narrator": "\"It's the year of the Crimean War, anyway. I think it was 1856\" {q:2} {q:T2:1-2}.",
+   "note": "Baptised in Dublin on 16 June 1854 (IGI); enlisted in the RIC in 1872 aged 18; aged 36 at the 1891 census. A baptism in 1854 rules out 1856. The Crimean War (1853–56) began in his birth year, which is probably what the narrator remembered."
   },
   "died": {
    "display": "1916 (20 Jan, at Clermont)",
@@ -2243,22 +2314,22 @@
   ],
   "summary": "The narrator's grandfather and the family's first genealogist: an RIC officer at the centre of the 1887 Youghal riot inquiry, later District Inspector at Wicklow and builder-owner of Clermont.",
   "bio": [
-   "\"Our interest in genealogy really began with my grandfather, whose name was Bellingham Arthur Somerville. He was born in 18… It's the year of the Crimean War, anyway. I think it was 1856. And he died in 1916\" (transcript B {q:T2:1-2}; A {q:2}). \"He was alive before the fire in the Four Courts and therefore he had access to records which are no longer available\" {q:4} {q:T2:2}; \"an avid collector of records about anybody with whom the Somerville family are connected\", he filled \"about six volumes\", following up newspaper notices and writing notes on them {q:6-8} {q:T2:3-4}. \"As a boy, he was known as Fighting Atty. Atty being Arthur. And sometimes you see him being written as Arthur Bellingham Somerville. But it is actually Bellingham Arthur Somerville\" (transcript B {q:T2:11-12}; A garbles the nickname as \"fighting atte\" {q:24-26}).",
-   "Like his father and his elder brother he served in the RIC {q:12} {q:T2:6}. Early stations were in Cork and Limerick, but \"most of his stations were in what is now Northern Ireland, Newtownards, all around there\" (B {q:T2:116}; A \"uternards\" {q:294}). He had \"a name for attending riots\", the \"outrages\" of his diary, in the 1880s and 1890s \"when the Fenians were at large\" {q:290-298} {q:T2:117-118}. {ctx}His eldest child, Cecilia, was born at Newtownards on 9 October 1880, according to a compiled genealogy citing the IGI {s:winters-p68}, which supports a posting there around 1880.",
+   "\"Our interest in genealogy really began with my grandfather, whose name was Bellingham Arthur Somerville. He was born in 18… It's the year of the Crimean War, anyway. I think it was 1856. And he died in 1916\" (transcript B {q:T2:1-2}; A {q:2}). {ctx}The records give 17 November 1853: he was baptised in Dublin in June 1854, joined the RIC aged 18 in 1872 and was 36 at the 1891 census {s:winters-p68}. The archive therefore uses 1853; the narrator's 1856 is kept as his recollection (the Crimean War began in 1853). \"He was alive before the fire in the Four Courts and therefore he had access to records which are no longer available\" {q:4} {q:T2:2}; \"an avid collector of records about anybody with whom the Somerville family are connected\", he filled \"about six volumes\", following up newspaper notices and writing notes on them {q:6-8} {q:T2:3-4}. \"As a boy, he was known as Fighting Atty. Atty being Arthur. And sometimes you see him being written as Arthur Bellingham Somerville. But it is actually Bellingham Arthur Somerville\" (transcript B {q:T2:11-12}; A garbles the nickname as \"fighting atte\" {q:24-26}).",
+   "Like his father and his elder brother he served in the RIC {q:12} {q:T2:6}. Early stations were in Cork and Limerick, but \"most of his stations were in what is now Northern Ireland, Newtownards, all around there\" (B {q:T2:116}; A \"uternards\" {q:294}). He had \"a name for attending riots\", the \"outrages\" of his diary, in the 1880s and 1890s \"when the Fenians were at large\" {q:290-298} {q:T2:117-118}. {ctx}His eldest child, Cecilia, was born at Newtownards on 9 October 1880, according to a compiled genealogy citing the IGI {s:winters-p68}, which supports a posting there around 1880. {ctx}Records fill out his career: he joined the RIC in 1872, aged 18, and by the census of April 1891, when the family was staying with his Clinch parents-in-law at Witney, he was a \"Retired D. I. R. I. Constabulary\" {s:winters-p68}.",
    "{sensitive}The narrator prefaced the next story with \"This now is not for publication. Well, I'll let you use your own discretion, but be careful\" {q:290} {q:T2:115}, adding \"Be careful with this … because I think it has had a great effect on the family. I'll explain why in a minute\" {q:304} {q:T2:119}. The family has chosen to include it.",
    "The family's account: a riot at Youghal \"got out of hand\", \"no doubt over fishing\"; \"a detachment of RIC was sent by train from Cork to Youghal under the command of Captain Somerville\"; \"some rioter called Hanlon or O'Hanlon was [cut] with a sabre and killed\"; \"Captain Somerville and the man who did it were had up, relieved of their positions, suspended. And the whole thing went as far as Parliament in London\". \"Captain Somerville, while reinstated in due course, was never officially … acquitted … I think that's correct to say that he was never formally acquitted. … It wasn't him that did [it] … he was in charge\" (transcript B {q:T2:123-127}; A {q:312-322}, which garbles the last point as \"there is no great formally accredited\").",
    "{ctx}What the records establish: Hansard shows disturbances at Youghal in early March 1887, when the house of the local District Inspector, Kerin, was attacked {s:hansard-1887b}; an inquest verdict of wilful murder against \"District Inspector Somerville and Constable Ward\", both in custody (24 March 1887) {s:hansard-1887}; and, on 10 May 1887, that \"Sub-Inspector Summerville and Constable Ward, released on bail\", were on leave of absence with pay and would \"return to duty on the expiration of their leave, as the Attorney General sees no grounds to advise a prosecution\" {s:hansard-1887c}. A local history adds that the dead man was Patrick Hanlon, a 30-year-old fisherman from Ballymacoda, killed on 8 March 1887 by a sword bayonet during protests over the arrest of Fr Daniel Keller (a Plan of Campaign case), and that the Crown entered a nolle prosequi; it describes the two men as \"eventually acquitted\" {s:ballymacoda-1887}.",
-   "{int}The family's \"reinstated, but never formally acquitted\" matches the parliamentary record (no prosecution, return to duty) better than the local history's \"acquitted\". The fishing explanation is the narrator's own guess (\"no doubt\"); the weapon was a bayonet, not a sabre; and the parliamentary record names the officer only as District or Sub-Inspector Somerville. That he was Bellingham Arthur rests on the family's account: a strong match, but not proven by any record we have seen ({qn:q-youghal-identity}). The death of Patrick Hanlon deserves to be remembered in its own right.",
+   "{int}Who was \"District Inspector Somerville\"? The parliamentary record names the officer only by surname, as District Inspector or Sub-Inspector (the rank had been renamed in 1883, which is why both titles appear) {s:hansard-1887} {s:hansard-1887c} {s:ukpga-1883-s12}. The archive identifies him as Bellingham Arthur, on the combined evidence: he was a serving RIC officer of exactly that rank, having joined in 1872 and being a retired District Inspector by 1891 {s:winters-p68}; the officer at Youghal was a \"young officer\" from outside, not the local District Inspector, Kerin {s:hansard-1887b}; and the family's account, handed down independently of Hansard, matches the records point by point: a detachment from Cork, a dead man named Hanlon, a blade, the officer and the constable \"had up\", Parliament, and reinstatement without a trial, which is exactly what the Attorney General's decision of May 1887 amounted to. The family also connects the affair with his transfer to Wicklow. The limits: no surviving document we have seen gives the officer's first name, and his service register has not been examined, so the identification rests on circumstantial and family evidence rather than a single naming record. Where the family's account differs from the records, the records are preferred: the weapon was a bayonet, not a sabre, and the dispute was over the Plan of Campaign, not fishing (\"no doubt over fishing\" was the narrator's own guess). The death of Patrick Hanlon deserves to be remembered in its own right.",
    "With his health poor (\"something wrong with his foot or his leg\"; asked whether it was gout, \"Probably, yes. He certainly had a gout chair\"; perhaps \"rather like muscular dystrophy\") and a cloud over his career, he applied for a transfer and \"was transferred to Wicklow … he was then in charge of Wicklow and Arklow. Was that how the Somervilles got to Wicklow? That's how the Somervilles got to Wicklow\" {q:324-326} {q:T2:128-129} {q:T2:133-134}. He was a District Inspector and \"never made county inspector\" {q:328} {q:T2:130}. His office and personal diaries, which the narrator owns, show \"far too many absences … on leave for a day or so and … owing to illness\" {q:T2:133}. He married {p:margaret-hall-clinch|Margaret Hall Clinch}, co-heiress of Clinch's brewery, whose father sent barrels of beer to the officers' mess with the name Clinch burnt out, because his daughter was \"marrying trade\" {q:240} {q:328-330} {q:T2:95-96}. {ctx}A compiled genealogy dates the wedding to 27 August 1879 at St Mary's, Witney {s:winters-p68}.",
-   "He rented houses around Wicklow, where the younger children were born, then acquired {pl:clermont|Clermont} at Rathnew: Colonel Tottenham, who (it was alleged) \"wanted to have neighbours that he approved of\", outbid him at auction and then sold it to him at the price he had paid; he \"took on the repairs and the extensions\" and \"built the gardens\" {q:572-580} {q:T2:227-231}. {ctx}A heritage record (seen only in search results) credits the 1894 wings at Clermont to \"B A Somerville\" {s:wicklowheritage-clermont}. A compiled genealogy records that his daughter Dorothy died in March 1895 at \"Seaview House, Wicklow\" {s:winters-p68}, so the exact year of the move to Clermont is unsettled.",
+   "He rented houses around Wicklow, where the younger children were born, then acquired {pl:clermont|Clermont} at Rathnew: Colonel Tottenham, who (it was alleged) \"wanted to have neighbours that he approved of\", outbid him at auction and then sold it to him at the price he had paid; he \"took on the repairs and the extensions\" and \"built the gardens\" {q:572-580} {q:T2:227-231}. {ctx}The National Library's list of the Rooke Papers confirms that he bought Clermont in the mid-1890s from Colonel Charles George Tottenham of Ballycurry {s:nli-rooke}, and the Dictionary of Irish Architects records flanking wings and a bathroom extension built for \"B.A. Somerville\" in 1894 to designs by Sir Thomas Drew {s:dia-clermont}. A compiled genealogy records that his daughter Dorothy died in March 1895 at \"Seaview House, Wicklow\" {s:winters-p68}, so the family may not have moved in until the works were finished.",
    "The narrator calls him \"very snobbish\" and \"very Low Church\"; he \"would have had a fit if he knew that any of his descendants married a Roman Catholic\", and \"he never sent any of his children to school because schools were smutty places\" (B {q:T2:134-136}; A \"smarty places\" {q:338-344}). He died in 1916 \"of the flu that was then going around\"; the narrator \"always thought\" it was the Spanish flu but doubts it, since that came at the end of the war {q:10-12} {q:T2:4-5}. {ctx}The compiled genealogy gives his death as 20 January 1916 at Clermont {s:winters-p68}; the influenza pandemic reached Ireland only in 1918 {s:dcc-flu}."
   ],
   "facts": [
    {
     "label": "Born",
-    "value": "1856 (narrator, \"I think\") / 17 November 1853 (IGI via compiled genealogy)",
-    "status": "conflict",
-    "conf": "medium",
+    "value": "17 November 1853 (baptised Dublin, 16 June 1854)",
+    "status": "record",
+    "conf": "high",
     "cite": [
      2,
      "T2:1",
@@ -2267,7 +2338,8 @@
     "src": [
      "winters-p68"
     ],
-    "note": "The narrator links it to the Crimean War (1853–56), which fits either year."
+    "note": "Records preferred: the IGI baptism, the RIC enlistment age (18 in 1872) and the 1891 census age (36) all point to 1853–54, and a baptism in 1854 rules out 1856.",
+    "narrator": "\"I think it was 1856\", \"the year of the Crimean War\"."
    },
    {
     "label": "Died",
@@ -2324,21 +2396,65 @@
     ]
    },
    {
+    "label": "RIC service (records)",
+    "value": "Joined the RIC in 1872, aged 18; a retired District Inspector by April 1891",
+    "status": "record",
+    "conf": "high",
+    "src": [
+     "winters-p68",
+     "ukpga-1883-s12"
+    ],
+    "note": "Enlistment from the RIC records on Ancestry, as quoted in a compiled genealogy; the 1891 census (Church Green, Witney) describes him as \"Retired D. I. R. I. Constabulary\". Sub-inspectors were restyled district inspectors in October 1883."
+   },
+   {
     "label": "Youghal riot (records)",
     "value": "8 March 1887: Patrick Hanlon killed; wilful-murder verdict against D.I. Somerville and Constable Ward; no prosecution; returned to duty",
     "status": "record",
     "conf": "high",
     "src": [
+     "hansard-1887b",
      "hansard-1887",
+     "hansard-1887-mar31",
+     "hansard-1887-apr4",
      "hansard-1887c",
      "ballymacoda-1887"
     ],
-    "note": "The records give only the surname, so identifying this officer as Bellingham Arthur rests on the family's account."
+    "note": "The parliamentary records give only the surname; see \"Youghal identification\" for why the officer is identified as Bellingham Arthur."
+   },
+   {
+    "label": "Youghal identification",
+    "value": "The \"District Inspector Somerville\" of the 1887 Youghal records was Bellingham Arthur Somerville",
+    "status": "inferred",
+    "conf": "high",
+    "cite": [
+     312,
+     316,
+     318,
+     320,
+     322,
+     324,
+     326,
+     "T2:118",
+     "T2:123",
+     "T2:125",
+     "T2:126",
+     "T2:127",
+     "T2:128",
+     "T2:129"
+    ],
+    "src": [
+     "winters-p68",
+     "hansard-1887b",
+     "hansard-1887",
+     "hansard-1887c",
+     "ukpga-1883-s12"
+    ],
+    "note": "Resolved from the combined evidence: he was a serving RIC officer of the right rank (joined 1872, a retired District Inspector by 1891); the officer at Youghal was an outsider, not the local inspector; and the family's independent account matches the records in detail (a detachment from Cork under \"Captain Somerville\", Hanlon killed with a blade, arrest, Parliament, return to duty without a trial). Limitation: no surviving document seen names him in full in connection with Youghal, and his RIC service register (HO 184) has not been examined."
    },
    {
     "label": "Clermont",
-    "value": "Bought from Colonel Tottenham at auction price; added wings (1894)",
-    "status": "testimony",
+    "value": "Bought in the mid-1890s from Col. Charles George Tottenham of Ballycurry, at the price Tottenham had paid at auction; wings added in 1894 by Sir Thomas Drew",
+    "status": "record",
     "conf": "high",
     "cite": [
      574,
@@ -2346,6 +2462,8 @@
      580
     ],
     "src": [
+     "nli-rooke",
+     "dia-clermont",
      "wicklowheritage-clermont"
     ]
    },
@@ -2396,6 +2514,19 @@
     ],
     "src": [
      "winters-p68"
+    ]
+   },
+   {
+    "label": "Genealogical research",
+    "value": "Copied many Somerville wills in the Public Record Office in the late 19th century, before its destruction in 1922",
+    "status": "record",
+    "conf": "high",
+    "cite": [
+     4,
+     6
+    ],
+    "src": [
+     "nli-rooke"
     ]
    }
   ],
@@ -2696,8 +2827,8 @@
  },
  {
   "id": "cecilia-somerville",
-  "name": "Cecilia Somerville (Aunt Cecil)",
-  "fullName": "Cecilia Eliza (Margaret) Bellingham Somerville, Mrs Henry Rook",
+  "name": "Cecilia Somerville (Aunt Cecil, Mrs Rooke)",
+  "fullName": "Cecilia Eliza Margaret Bellingham Somerville (\"Cecil B. Rooke\"), Mrs Henry Rooke",
   "sex": "f",
   "family": "somerville",
   "category": "family",
@@ -2709,31 +2840,36 @@
   "spouses": [
    {
     "id": "henry-rock",
-    "date": "1912",
-    "status": "testimony",
+    "date": "11 Apr 1912",
+    "status": "record",
     "conf": "high",
     "cite": [
      232,
      246,
      "T2:94",
      "T2:98"
+    ],
+    "src": [
+     "nli-rooke"
     ]
    }
   ],
   "aliases": [
    "Aunt Cecil",
    "Cecil",
+   "Cecil B. Rooke",
+   "Mrs Rooke",
    "Cecilia Eliza Bellingham"
   ],
   "variants": [
    "Cecilia Eliza Bellinger",
    "Dallas, girl"
   ],
-  "summary": "Eldest child of Bellingham Arthur; an accomplished genealogist active in Dublin's learned societies; married in 1912 her father's solicitor, Henry Rook.",
+  "summary": "Eldest child of Bellingham Arthur (1880–1973); a serious genealogist who, as Cecil B. Rooke, registered the Somerville pedigree at the Genealogical Office in 1955; married in 1912 her father's solicitor, Henry Rooke.",
   "bio": [
    "\"Cecilia Eliza Bellingham: that was my aunt Cecil. She was the eldest person, the eldest child\" {q:218}. \"She took up her father's interest in genealogy … she was a very good genealogist. It was by no means confined to the Somerville family. She was a member of all sorts of learned societies in Dublin\" {q:230-232}.",
-   "She married a solicitor, {p:henry-rock|Henry Rook}, her father's solicitor and \"years older\": \"Uncle Henry\" {q:232-234} {q:T2:94}. He \"was not her first love. Her first love was a sergeant in the army. And that was not appropriate … he was not an officer\" {q:T2:94-95}. \"Cecil was of marriageable age at the beginning of the century. She finally married in 1912\" {q:T2:97-98} {q:246}.",
-   "{int}Transcript A loses the \"not\" (\"He was an officer. Okay.\" {q:236}); transcript B (\"he was not an officer\") makes the point clear. {ctx}A compiled genealogy gives her birth as 9 October 1880 at Newtownards, Co. Down, under the names Cecelia Eliza Margaret Bellingham Somerville, and records her as staying with her Clinch grandfather in Witney at the 1891 census {s:winters-p68}. It records her sister Vere's wedding in August 1912; Cecil's own 1912 marriage comes from the testimony alone."
+   "She married a solicitor, {p:henry-rock|Henry Rooke} (heard as \"Henry Rook\"), her father's solicitor and \"years older\": \"Uncle Henry\" {q:232-234} {q:T2:94}. He \"was not her first love. Her first love was a sergeant in the army. And that was not appropriate … he was not an officer\" {q:T2:94-95}. \"Cecil was of marriageable age at the beginning of the century. She finally married in 1912\" {q:T2:97-98} {q:246}.",
+   "{int}Transcript A loses the \"not\" (\"He was an officer. Okay.\" {q:236}); transcript B (\"he was not an officer\") makes the point clear. {ctx}The documents bear the narrator out. The National Library of Ireland holds her papers among the Rooke Papers: she married Henry Rooke, solicitor, on 11 April 1912; \"Cecil B. Rooke [as she always signed herself] was already a keen genealogist\"; in the first year of her marriage she extracted wills and marriage licences in the Public Record Office at the Four Courts, whose originals were destroyed in 1922; and in February 1955 she registered the Somerville pedigree at the Genealogical Office (G.O. MS 182A, pp. 119–130). She built on her father's research, and lived until 1973 {s:nli-rooke}. She also wrote \"Early recollections of Clermont\" {s:dia-clermont}. A compiled genealogy gives her birth as 9 October 1880 at Newtownards {s:winters-p68}."
   ],
   "facts": [
    {
@@ -2758,15 +2894,19 @@
    },
    {
     "label": "Marriage",
-    "value": "1912, to Henry Rook, solicitor",
-    "status": "testimony",
+    "value": "11 April 1912, to Henry Rooke, solicitor",
+    "status": "record",
     "conf": "high",
     "cite": [
      232,
      246,
      "T2:94",
      "T2:98"
-    ]
+    ],
+    "src": [
+     "nli-rooke"
+    ],
+    "narrator": "\"She finally married in 1912\" a solicitor, \"Henry Rook\" (B) or \"Henry, Rock\" (A)."
    },
    {
     "label": "Born",
@@ -2777,6 +2917,16 @@
      "winters-p68"
     ],
     "note": "compiled genealogy; not checked against the original registers"
+   },
+   {
+    "label": "Genealogical work",
+    "value": "Signed herself Cecil B. Rooke; extracted wills and licences at the Public Record Office in 1912, before its destruction; registered the Somerville and Rooke pedigrees at the Genealogical Office in Feb 1955 (G.O. MS 182A); wrote \"Early recollections of Clermont\"",
+    "status": "record",
+    "conf": "high",
+    "src": [
+     "nli-rooke",
+     "dia-clermont"
+    ]
    }
   ],
   "places": [
@@ -2792,12 +2942,20 @@
     "winters-p68"
    ],
    "note": "IGI via a compiled genealogy, which gives her names as Cecelia Eliza Margaret Bellingham."
+  },
+  "died": {
+   "display": "1973",
+   "status": "record",
+   "conf": "high",
+   "src": [
+    "nli-rooke"
+   ]
   }
  },
  {
   "id": "henry-rock",
-  "name": "Henry Rook (Uncle Henry)",
-  "fullName": "Henry Rook (spelling: Rook / Rooke / Rock)",
+  "name": "Henry Rooke (Uncle Henry)",
+  "fullName": "Henry Rooke, solicitor (Rooke and Rooke, Dublin)",
   "sex": "m",
   "family": "somerville",
   "category": "in-law",
@@ -2805,6 +2963,7 @@
   "aliases": [
    "Uncle Henry",
    "Henry Rooke",
+   "Henry Rook",
    "Henry Rock"
   ],
   "variants": [
@@ -2813,10 +2972,10 @@
    "Rooke",
    "Henry Rook"
   ],
-  "summary": "Solicitor to Bellingham Arthur Somerville, many years older than Cecilia, whom he married in 1912.",
+  "summary": "Dublin solicitor of the family firm Rooke and Rooke, eldest son of Archdeacon Henry Rooke of Wicklow; he married Cecilia Somerville on 11 April 1912 and died in 1942.",
   "bio": [
    "\"She married a solicitor called Henry Rook, who was actually her father['s] — that's Bellingham Arthur's — solicitor. And years older\" (transcript B {q:T2:94}; transcript A: \"Henry, Rock. Who is actually? Her father, that's Benjamin Arthur's, solicitor\" {q:232}, and \"Henry Oak. Uncle Henry\" {q:234}).",
-   "{int}Both transcripts break the sentence after \"her father\", which could be misread as making him her father. The rest of the sentence (\"that's Bellingham Arthur's solicitor … years older\") shows that he was her father's solicitor, many years older than her. The surname is heard as Rook (B) and Rock or Oak (A); Rooke is another possible spelling. A 1912 Dublin marriage record would settle it ({qn:q-henry-rock})."
+   "{int}Both transcripts break the sentence after \"her father\", which could be misread as making him her father. The rest of the sentence shows that he was her father's solicitor, many years older than her. {ctx}The spelling is Rooke: the National Library's list of the Rooke Papers records that \"On 11 April 1912 Henry Rooke, solicitor married Cecilia Eliza Margaret Bellingham Somerville, daughter of Bellingham Arthur Somerville of Clermont\". He was the eldest son of Archdeacon Henry Rooke, rector of Wicklow, worked in the family firm of Rooke and Rooke, and died in 1942 {s:nli-rooke}."
   ],
   "facts": [
    {
@@ -2831,19 +2990,40 @@
    },
    {
     "label": "Surname",
-    "value": "Rook (B); Rock / Oak (A); possibly Rooke",
-    "status": "inferred",
-    "conf": "medium",
+    "value": "Rooke",
+    "status": "record",
+    "conf": "high",
     "cite": [
      232,
      234,
      "T2:94"
+    ],
+    "src": [
+     "nli-rooke"
+    ],
+    "narrator": "Heard as \"Rook\" (B) and \"Rock\" / \"Oak\" (A)."
+   },
+   {
+    "label": "Family",
+    "value": "Eldest son of Archdeacon Henry Rooke (rector of Wicklow 1873–1906) and Katherine Lloyd; four children with Cecilia, including Col. H. T. B. B. (Tommy) Rooke and Dorothy Rooke",
+    "status": "record",
+    "conf": "high",
+    "src": [
+     "nli-rooke"
     ]
    }
   ],
   "places": [
    "dublin"
-  ]
+  ],
+  "died": {
+   "display": "1942",
+   "status": "record",
+   "conf": "high",
+   "src": [
+    "nli-rooke"
+   ]
+  }
  },
  {
   "id": "bunt",
@@ -2920,7 +3100,7 @@
   "summary": "Eldest son: a regular soldier who served in India, commanded troops at Archangel in 1919, married Kitty Harrison and gardened in West Cork; he died within months of deciding to take on Clermont.",
   "bio": [
    "\"William Arthur Tenison Bellingham Somerville. That's my uncle Bunt … He was the eldest boy in the family\" {q:218}, born \"about 1884\" {q:264}. He went to school only briefly and followed a normal army career via {t:sandhurst|Sandhurst} {q:346}. \"Bunt was in India. In the First World War he was in the Royal Lancaster Regiment, and at the time of the revolutions in Russia he commanded a troop that was sent to Archangel, in the very north of Russia, to keep it from falling into the hands of the Bolsheviks\" {q:362-364}.",
-   "{ctx}A history of the 8th (Special) Battalion, Machine Gun Corps says it was \"under the command of Lt. Col. W A T B Somerville DSO (Royal Artillery) from 12th April 1919\"; the battalion landed at Archangel on 26 May 1919 {s:mgc-8bn}. The initials are Bunt's. But a compiled genealogy describes Bunt as a Lieutenant Colonel of the King's Own (as the narrator says) and his brother Jim as \"Lieutenant Colonel, DSO, Royal Artillery\" {s:winters-p69} {s:winters-p68}. So this source either confirms the narrator's Archangel story with a slip in the regiment, or conflates the two brothers. It needs checking against the Army List ({qn:q-bunt-regiment}).",
+   "{ctx}The record confirms the narrator. A history of the 8th (Special) Battalion, Machine Gun Corps says it was \"under the command of Lt. Col. W A T B Somerville DSO\" from 12 April 1919, and the battalion landed at Archangel on 26 May 1919 {s:mgc-8bn}. The initials are Bunt's alone. The same history calls him Royal Artillery, but The Times, quoted in a compiled genealogy, describes him as a Lieutenant Colonel of the King's Own {s:winters-p69}, and King's Own sources seen in search results name \"Captain W A T Somerville DSO\" and Lieutenant W. A. T. B. Somerville as adjutant of the 1st Battalion {s:kingsown-1914}. {int}So the archive concludes that Bunt was the King's Own officer of the narrator's account and the commander at Archangel, and that \"Royal Artillery\" confuses him with his brother Jim, the gunner. Whether Jim also held the DSO, as one notice says {s:winters-p68}, is unconfirmed.",
    "He \"was said to have fallen in love with an Indian Maharani … They did not get married\" {q:370} {q:T2:145-146}. He married {p:kitty-harrison|Kathleen \"Kitty\" Harrison} of Castle Harrison, Co. Cork, and they lived near Bantry, between Bantry and Glengarriff, at a place both transcripts hear as \"Green desert\", with \"wonderful gardens\" {q:370-376} {q:554} {q:T2:146-147} {q:T2:219}. Both he and Jim \"married money\" {q:494} {q:T2:192}. {ctx}A compiled genealogy, citing The Times, records his death on 13 February 1951 at Reendesert Lodge, Bantry, and lists him as a director of Clinch & Co in 1950 {s:winters-p69}. \"Green desert\" is evidently Reendesert.",
    "Under his parents' wills Clermont \"was to go to Uncle Bunt if he wanted it. If he didn't want it, it was to go to Uncle Jim, the second one. If he didn't want it, it was to go to Pat. If he didn't want it, it was to go to [Reggie]\" {q:T2:149-150} {q:382}. As executor of his mother's estate he was later accused by Aunt Eddie of making \"a mess of administering\" it {q:560-562} {q:T2:221-222}. \"It was always assumed that he wouldn't want to live there, because he had a lovely place down in West Cork … But no, he wanted to … But he died\", a matter of months afterwards, two years after his mother {q:552-556} {q:T2:218-219}. He, like all his brothers, died of cancer {q:394} {q:T2:153}. {int}\"And he hadn't any\" {q:T2:220} probably means he had no children; the compiled genealogy lists none."
   ],
@@ -2936,8 +3116,8 @@
    },
    {
     "label": "Army",
-    "value": "India; WWI in the (King's Own) Royal Lancaster Regiment",
-    "status": "testimony",
+    "value": "Regular officer, King's Own (Royal Lancaster Regiment); adjutant of the 1st Battalion early in the war; DSO; as Lt-Col., commanded the 8th (Special) Battalion, Machine Gun Corps, at Archangel from April 1919",
+    "status": "record",
     "conf": "medium",
     "cite": [
      362,
@@ -2945,9 +3125,12 @@
      "T2:144"
     ],
     "src": [
-     "winters-p69"
+     "winters-p69",
+     "mgc-8bn",
+     "kingsown-1914"
     ],
-    "note": "A compiled genealogy: Lieutenant Colonel, King's Own Regiment."
+    "note": "The narrator's regiment is confirmed by The Times (via a compiled genealogy) and by King's Own sources seen in search results. The battalion history's \"(Royal Artillery)\" is judged a slip, probably a conflation with his brother Jim, a gunner; the initials W. A. T. B. are unique to Bunt.",
+    "narrator": "\"In the First World War he was in the Royal Lancaster Regiment … he commanded a troop that was sent to Archangel\""
    },
    {
     "label": "Archangel",
@@ -3047,7 +3230,7 @@
     "src": [
      "winters-p69"
     ],
-    "note": "Her earlier marriage; the narrator: \"She married, or she had married, an Australian called Alan Ferguson\"."
+    "note": "Her earlier marriage, ended by Ferguson's death on 21 September 1920 (The Times, via a compiled genealogy). The narrator: \"She married, or she had married, an Australian called Alan Ferguson\"."
    }
   ],
   "aliases": [
@@ -3056,11 +3239,11 @@
    "Amy Kathleen",
    "Bunt's widow"
   ],
-  "summary": "Eldest daughter of the Harrisons of Castle Harrison, Co. Cork; previously married to an Australian, Alan Ferguson; Bunt's wife and widow.",
+  "summary": "Eldest daughter of the Harrisons of Castle Harrison, Co. Cork; widow of the Australian Alan Campbell Ferguson (d. 1920), with whom she had lived at Reendesert; Bunt's wife and widow.",
   "bio": [
    "\"He married a lady from County Cork called Kitty Kathleen Harrison from Castle Harrison. She was the eldest of that. She married, or she had married, an Australian called Alan Ferguson, who owned sheep stations in Australia, and did up two cottages near Bantry, an area called Green Desert\" (transcript B {q:T2:146-147}; A {q:370-374}). By the time she married Bunt \"she was beyond childbearing age\" {q:376} {q:T2:147}.",
    "As Bunt's widow she faced Aunt Eddie's threatened case over the administration of the estate; after \"peace talks\" half the proceeds of Clermont went to the rest of the family, \"and so Uncle Bunt's widow only got half the money\" {q:560-562}.",
-   "{ctx}A compiled genealogy citing The Times names her Amy Kathleen; records her earlier marriage, before 1920, to Alan Campbell Ferguson and her marriage to Bunt about 1925 (announced December 1924); and gives her death in 1962 {s:winters-p69}. {int}Who \"did up two cottages\" {q:374} {q:T2:147} (she, Ferguson, or Bunt) is grammatically unclear in both transcripts; Bunt's \"lovely place down in West Cork … near where his wife came from\" {q:T2:219} was Reendesert."
+   "{ctx}A compiled genealogy citing The Times names her Amy Kathleen; records her earlier marriage, before 1920, to Alan Campbell Ferguson and her marriage to Bunt about 1925 (announced December 1924); and gives her death in 1962 {s:winters-p69}. Ferguson died on 21 September 1920, and Reendesert Lodge, Bantry, was among his residences {s:winters-p69}: so she was his widow, and Reendesert was the Fergusons' home before it was Bunt's. {int}Who \"did up two cottages\" {q:374} {q:T2:147} (she, Ferguson, or Bunt) is grammatically unclear in both transcripts; Bunt's \"lovely place down in West Cork … near where his wife came from\" {q:T2:219} was Reendesert."
   ],
   "facts": [
    {
@@ -3127,7 +3310,16 @@
   "facts": [],
   "places": [
    "australia"
-  ]
+  ],
+  "died": {
+   "display": "21 Sep 1920, Seaview, Isle of Wight",
+   "status": "record",
+   "conf": "medium",
+   "src": [
+    "winters-p69"
+   ],
+   "note": "The Times, 24 Sep 1920, via a compiled genealogy."
+  }
  },
  {
   "id": "jim",
@@ -3728,7 +3920,7 @@
    "Penny",
    "Uncle Petty"
   ],
-  "summary": "Captured in the retreat from Mons in 1914, he escaped from German captivity at the third attempt, reached London across Holland and was awarded the Military Cross; later a gardener near Oxford.",
+  "summary": "Taken prisoner in October 1914 near Ypres (the narrator remembered the retreat from Mons), he escaped from German captivity, reached London across Holland and was awarded the Military Cross; later a gardener near Oxford.",
   "bio": [
    "\"And then there was Pat. He was Galter, Hugh, Roger, Bellingham, [Somerville]. Where did Pat come from?\" (transcript B {q:T2:91}; transcript A: \"Gotta Hugh Roger Bellinger and somehow\" {q:228}). \"His next brother up, Pat or Paddy, or [Gualter], I always called him. We as a family have always called him Paddy, but he was known as Pat because he was the Irishman in the regiment\" {q:T2:142} {q:360}. Like Reginald he never went to school, but he had been to military college before 1914 {q:346} {q:440} {q:T2:137} {q:T2:169}.",
    "{ctx}The London Gazette of 4 February 1913 lists \"Gualter Hugh Rodger Bellingham Somerville\" under the Royal Warwickshire Regiment {s:gazette-1913}. Transcript A's \"Gotta\" and B's \"Galter\" and \"Coulter\" are therefore his first name, Gualter. (An earlier version of this archive wrongly treated a published record of an escaped officer called Gualter Somerville as a different man.)",
@@ -3777,17 +3969,20 @@
    },
    {
     "label": "Captured",
-    "value": "\"In the retreat from Mons\" (narrator) / Zonnebeke, October 1914 (family-derived article)",
-    "status": "conflict",
+    "value": "October 1914, near Zonnebeke (Ypres), with the 2nd Battalion, Royal Warwickshire Regiment (probable)",
+    "status": "record",
     "conf": "medium",
     "cite": [
      442,
      "T2:170"
     ],
     "src": [
+     "genealogist-pow",
      "clarke-sense-of-duty",
      "wp-royal-warwick"
-    ]
+    ],
+    "narrator": "\"In the retreat from Mons, Uncle Paddy was captured\" {q:442} {q:T2:170}.",
+    "note": "Prisoner-of-war records and an article drawing on his debriefing report (both seen only in search results) place the capture at Zonnebeke in October 1914; the 2nd Battalion landed in Belgium only that month and was not at Mons. Preferred to the narrator's \"retreat from Mons\", but the underlying records still need to be read directly."
    },
    {
     "label": "Escapes",
@@ -4216,14 +4411,16 @@
    ]
   },
   "aliases": [
-   "half-sister"
+   "half-sister",
+   "sister",
+   "Juanita"
   ],
   "variants": [
    "Bonita"
   ],
-  "summary": "The narrator's half-sister, born in Kenya in 1932. Possibly living, so no further details are recorded.",
+  "summary": "The narrator's sister (strictly his half-sister, the daughter of Reginald's first marriage, to Maudie Moore), born in Kenya in 1932.",
   "bio": [
-   "\"In 1932, four years later, my half-sister was born, Juanita\" {q:508}. As a baby she was brought home to Ireland on the voyage during which her mother died {q:508-510}."
+   "\"In 1932, four years later, my half-sister was born, Juanita\" {q:508}. As a baby she was brought home to Ireland on the voyage during which her mother died {q:508-510}. The family describes her as the narrator's sister."
   ],
   "facts": [
    {
@@ -4233,6 +4430,16 @@
     "conf": "high",
     "cite": [
      508
+    ]
+   },
+   {
+    "label": "Relationship",
+    "value": "Sister of the narrator (half-sister: same father, Reginald; mother Maudie Moore)",
+    "status": "testimony",
+    "conf": "high",
+    "cite": [
+     508,
+     "T2:198"
     ]
    }
   ],
@@ -5664,6 +5871,100 @@
      "winters-p68",
      "iwm-gualter"
     ]
+   }
+  ],
+  "places": []
+ },
+ {
+  "id": "james-somerville",
+  "name": "James Somerville",
+  "fullName": "James Somerville",
+  "sex": "m",
+  "living": true,
+  "family": "somerville",
+  "category": "family",
+  "parents": [
+   "narrator"
+  ],
+  "aliases": [
+   "James"
+  ],
+  "summary": "A son of the narrator, {p:narrator|William Somerville}.",
+  "bio": [
+   "James Somerville is a son of the narrator, William Somerville, as confirmed by the family in 2026. {int}He is probably the James mentioned in the everyday conversation: with Holly he receives the narrator's personal-alarm alerts, and it was \"James's idea\" {q:T2:32-39}; a portrait of Eliza Bellingham's eldest sister hangs \"in James and Holly's bedroom\" {q:T2:13}."
+  ],
+  "facts": [
+   {
+    "label": "Parent",
+    "value": "{p:narrator|William Somerville} (the narrator)",
+    "status": "family",
+    "conf": "high"
+   },
+   {
+    "label": "In the recording",
+    "value": "Probably the James of the personal-alarm alerts",
+    "status": "inferred",
+    "conf": "medium",
+    "cite": [
+     "T2:13",
+     "T2:32-39"
+    ]
+   }
+  ],
+  "places": []
+ },
+ {
+  "id": "charles-somerville",
+  "name": "Charles Somerville",
+  "fullName": "Charles Somerville",
+  "sex": "m",
+  "living": true,
+  "family": "somerville",
+  "category": "family",
+  "parents": [
+   "narrator"
+  ],
+  "aliases": [
+   "Charles"
+  ],
+  "summary": "A son of the narrator, {p:narrator|William Somerville}.",
+  "bio": [
+   "Charles Somerville is a son of the narrator, William Somerville, as confirmed by the family in 2026. He is the father of the interviewer, {p:interviewer|Gergely Somerville}. {int}\"Charles is back\" in the everyday conversation {q:T2:120-122} {q:T2:160} probably refers to him."
+  ],
+  "facts": [
+   {
+    "label": "Parent",
+    "value": "{p:narrator|William Somerville} (the narrator)",
+    "status": "family",
+    "conf": "high"
+   }
+  ],
+  "places": []
+ },
+ {
+  "id": "edward-somerville",
+  "name": "Edward Somerville",
+  "fullName": "Edward Somerville",
+  "sex": "m",
+  "living": true,
+  "family": "somerville",
+  "category": "family",
+  "parents": [
+   "narrator"
+  ],
+  "aliases": [
+   "Edward"
+  ],
+  "summary": "A son of the narrator, {p:narrator|William Somerville}.",
+  "bio": [
+   "Edward Somerville is a son of the narrator, William Somerville, as confirmed by the family in 2026. {int}An Edward is mentioned in the everyday conversation (\"Edward Alexander accompanied me to London\" {q:T2:37}); whether that is this Edward, or two grandchildren, is not clear from the recording."
+  ],
+  "facts": [
+   {
+    "label": "Parent",
+    "value": "{p:narrator|William Somerville} (the narrator)",
+    "status": "family",
+    "conf": "high"
    }
   ],
   "places": []

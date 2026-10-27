@@ -292,12 +292,14 @@
   "type": "house",
   "region": "Co. Monaghan",
   "coords": [
-   54.13,
-   -6.9
+   54.1142,
+   -6.9407
   ],
-  "approx": true,
+  "approx": false,
   "aliases": [
-   "Cumry"
+   "Cumry",
+   "Na Comraigh",
+   "Cumrey"
   ],
   "variants": [
    "comray",
@@ -309,13 +311,13 @@
    "C-U-M-R-Y"
   ],
   "ident": {
-   "status": "testimony",
-   "conf": "medium"
+   "status": "record",
+   "conf": "high"
   },
-  "summary": "A small farm near Ballybay, Co. Monaghan, where Captain William and Eliza lived in the 1820s and where little Archie was \"brought out\".",
+  "summary": "A townland (Na Comraigh) in Aghnamullen parish, near Ballybay, Co. Monaghan, where Captain William and Eliza lived in the 1820s and where little Archie was \"brought out\".",
   "body": [
    "\"They lived, as I said, in County Monaghan, at a place called Cumry, C-U-M-R-Y\" {q:136}. Transcript B has the speech-to-text software substitute the Welsh word: \"at a place called Cymru, C-U-M-R-Y, C-U-M-R-Y, which I think was a small farm. I don't think it was a Bellingham property, although the Bellinghams did have property in County Monaghan\" {q:T2:62}. Both transcripts preserve the same spelled-out letters. Little Archie was \"brought out\" to Cumry from Ballybay {q:162} {q:T2:67-68}, and the youngest son Samuel died there {q:182} {q:T2:77}.",
-   "{int}The townland has not yet been located on a map; the marker is placed at Ballybay, \"the local town\". See {qn:q-cumry}."
+   "{ctx}Cumry is a real townland: Na Comraigh, in the civil parish of Aghnamullen, barony of Cremorne, close to Ballybay, recorded in the 18th and 19th centuries as Cumrys, Cummrys and Cumrey {s:logainm-cumry}. The narrator's spelling, C-U-M-R-Y, is exactly the modern official form. The farm the family occupied within it has not been identified."
   ]
  },
  {

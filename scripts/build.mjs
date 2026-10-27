@@ -124,12 +124,12 @@ function checkMarkup(str, ctx, owner) {
 function checkFacts(facts, ctx, owner) {
   for (const f of facts || []) {
     const fctx = `${ctx} fact "${f.label}"`;
-    if (!["testimony", "inferred", "record", "conflict"].includes(f.status)) err(`${fctx}: bad status ${f.status}`);
+    if (!["testimony", "inferred", "record", "conflict", "family"].includes(f.status)) err(`${fctx}: bad status ${f.status}`);
     if (!["high", "medium", "low"].includes(f.conf)) err(`${fctx}: bad confidence ${f.conf}`);
     f.cite = (f.cite || []).flatMap((c) => expandCite(c, fctx));
     addBackref(f.cite, owner);
     for (const s of f.src || []) if (!has("s", s)) err(`${fctx}: unknown source ${s}`);
-    if (!f.cite.length && !(f.src || []).length && f.status !== "inferred") warn(`${fctx}: no supporting passage or source`);
+    if (!f.cite.length && !(f.src || []).length && !["inferred", "family"].includes(f.status)) warn(`${fctx}: no supporting passage or source`);
   }
 }
 const normCites = (arr, ctx, owner) => {
