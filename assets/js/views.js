@@ -560,6 +560,43 @@
     if (params.q) { const el = main.querySelector(`#q-${CSS.escape(params.q)}`); if (el) { el.classList.add("target"); setTimeout(() => el.scrollIntoView({ block: "center" }), 30); } }
   };
 
+  // ---------- incorrect information ----------
+  const VERDICT = { corrected: ["Corrected", "Contradicted by stronger evidence"], probable: ["Probably incorrect", "Better-supported evidence disagrees; a gap remains"] };
+  const KIND = { primary: "Primary record", secondary: "Secondary source", context: "Context" };
+  V.corrections = function (main, params) {
+    const list = A.corrections || [];
+    const n = (v) => list.filter((c) => c.verdict === v).length;
+    main.innerHTML = `
+      <header class="page-head"><p class="kicker">Testimony checked against the record</p><h1>Incorrect information</h1>
+        <p class="lede">Places where something Grandpa said in the recording is contradicted by stronger documentary evidence. Each entry keeps his words, with the transcript reference, beside the best-supported conclusion and the sources behind it.</p></header>
+      <div class="callout callout-int narrow-callout"><div class="callout-label">What this page corrects</div>
+        <p>It corrects the <b>factual claim</b>, not the record of what he remembered or said. His words stay exactly as recorded in both transcripts, and the rest of the archive still shows them wherever they appear. Most entries are dates he gave as approximate (“I think”, “about”), or family stories passed down to him. Their order of events is usually right.</p>
+        <p class="small">Only genuine contradictions are listed. Uncertainties and open questions are on the <a href="#/questions">Open questions</a> page; misheard words are handled as readings in the transcripts; and claims contradicted only by the family's private tree are not listed (see the <a href="https://github.com/Gregely/somerville-history/blob/claude/family-history-archive-nwmc6d/research/evidence-audit-2026-10.md">evidence audit</a>).</p></div>
+      <div class="filters"><div class="seg" role="group" aria-label="Verdict"><button data-v="" aria-pressed="true">All ${list.length}</button><button data-v="corrected" aria-pressed="false">Corrected ${n("corrected")}</button><button data-v="probable" aria-pressed="false">Probably incorrect ${n("probable")}</button></div></div>
+      <div class="corrections">${list.map((c) => `
+        <article class="correction v-${c.verdict}" id="c-${c.id}" data-v="${c.verdict}">
+          <header><span class="vbadge vb-${c.verdict}" title="${esc(VERDICT[c.verdict][1])}">${esc(VERDICT[c.verdict][0])}</span><span class="ckind">${esc(c.kind || "")}</span></header>
+          <h2>${esc(c.title)}</h2>
+          <div class="cgrid">
+            <section class="csaid"><h3>❝ What he said</h3><blockquote>${SA.inline(c.said)}</blockquote>${c.hedge ? `<p class="small muted">${SA.inline(c.hedge)}</p>` : ""}${c.alsoSaid ? `<p class="small">${SA.inline(c.alsoSaid)}</p>` : ""}</section>
+            <section class="cfact"><h3>▤ Best-supported conclusion</h3><p>${SA.inline(c.conclusion)}</p></section>
+          </div>
+          <h3>Why they differ</h3><p>${SA.inline(c.explanation)}</p>
+          <h3>Evidence</h3>
+          <ul class="cevidence">${c.evidence.map((ev) => { const s = SA.sources[ev.src]; return `
+            <li><span class="ekind ek-${ev.kind}">${esc(KIND[ev.kind])}</span> ${SA.sourceLink(ev.src)} ${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)} ↗</a>` : esc(s.title)} <span class="muted small">· ${esc(s.publisher)}</span>
+              <div class="small">${esc(ev.claim)}</div><div class="small muted">${esc(ev.inspected)}</div></li>`; }).join("")}</ul>
+          ${c.remaining ? `<p class="small"><b>Still open:</b> ${SA.inline(c.remaining)}</p>` : ""}
+          <div class="chips">${(c.people || []).map((x) => SA.chip(`p:${x}`)).join("")}${(c.events || []).map((x) => SA.chip(`e:${x}`)).join("")}</div>
+        </article>`).join("")}</div>`;
+    main.querySelector(".seg").addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      main.querySelectorAll(".seg button").forEach((x) => x.setAttribute("aria-pressed", x === b));
+      main.querySelectorAll(".correction").forEach((el) => (el.hidden = b.dataset.v && el.dataset.v !== b.dataset.v));
+    });
+    if (params.c) { const el = main.querySelector(`#c-${CSS.escape(params.c)}`); if (el) { el.classList.add("target"); setTimeout(() => el.scrollIntoView({ block: "center" }), 30); } }
+  };
+
   // ---------- sources ----------
   let sourceUse = null;
   function computeSourceUse() {
@@ -575,6 +612,7 @@
     A.glossary.forEach((t) => scan(t, `t:${t.id}`));
     A.questions.forEach((q) => scan(q, `qn:${q.id}`));
     A.narrative.forEach((c) => scan(c, `ch:${c.id}`));
+    (A.corrections || []).forEach((c) => (c.evidence || []).forEach((ev) => (use[ev.src] = use[ev.src] || new Set()).add(`ic:${c.id}`)));
     return use;
   }
   const ACCESS_SHORT = { direct: "read directly", partial: "partly read", "search-only": "search result only", private: "private family file" };
@@ -619,7 +657,7 @@
   };
 
   // ---------- search ----------
-  const TYPE_NAMES = { person: "People", place: "Places", term: "Glossary", event: "Timeline", chapter: "Story", question: "Open questions", source: "Sources", passage: "Transcript passages" };
+  const TYPE_NAMES = { person: "People", place: "Places", term: "Glossary", event: "Timeline", chapter: "Story", question: "Open questions", correction: "Incorrect information", source: "Sources", passage: "Transcript passages" };
   V.search = function (main, params) {
     const q = params.q || "";
     const res = SA.search(q, 200);
@@ -645,6 +683,7 @@
         <h2>What is here</h2>
         <ul>
           <li><b>Story</b>: a narrative in eleven chapters, with testimony, interpretation and published history clearly distinguished.</li>
+          <li><b>Incorrect information</b>: the places where Grandpa's testimony is contradicted by stronger documentary evidence, with his words, the best-supported conclusion and the sources side by side. It corrects the facts, not the record of what he said.</li>
           <li><b>Tree</b>: the Somervilles and five related families, drawn from structured parent and partner links.</li>
           <li><b>People, Places, Glossary, Timeline</b>: directories that link to each other and to the transcript.</li>
           <li><b>Open questions</b>: everything uncertain or contradictory, with suggested next steps.</li>

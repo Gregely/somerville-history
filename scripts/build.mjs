@@ -32,6 +32,7 @@ const data = {
   questions: readJSON("data/questions.json"),
   readings: readJSON("data/readings.json"),
   narrative: readJSON("data/narrative.json"),
+  corrections: readJSON("data/corrections.json"),
 };
 const manifest = readJSON("transcripts/transcripts.json");
 const alignment = fs.existsSync(path.join(root, "transcripts/alignment.json")) ? readJSON("transcripts/alignment.json") : null;
@@ -89,7 +90,7 @@ const ids = {};
 for (const [kind, list, key] of [
   ["p", data.people, "id"], ["pl", data.places, "id"], ["e", data.events, "id"],
   ["t", data.glossary, "id"], ["s", data.sources, "id"], ["qn", data.questions, "id"],
-  ["ch", data.narrative, "id"],
+  ["ch", data.narrative, "id"], ["ic", data.corrections, "id"],
 ]) {
   ids[kind] = new Set();
   for (const item of list) {
@@ -211,6 +212,23 @@ for (const q of data.questions) {
   checkMarkup(q.desc, `${ctx} desc`, owner);
   checkMarkup(q.next, `${ctx} next`, owner);
 }
+// ---------- corrections ("Incorrect information") ----------
+for (const c of data.corrections) {
+  const ctx = `correction ${c.id}`, owner = `ic:${c.id}`;
+  if (!["corrected", "probable"].includes(c.verdict)) err(`${ctx}: verdict must be corrected | probable`);
+  for (const id of c.people || []) if (!has("p", id)) err(`${ctx}: unknown person ${id}`);
+  for (const id of c.events || []) if (!has("e", id)) err(`${ctx}: unknown event ${id}`);
+  if (!/\{q:/.test(c.said || "")) err(`${ctx}: "said" must quote the testimony with a transcript citation`);
+  if (!(c.evidence || []).length) err(`${ctx}: no evidence`);
+  for (const ev of c.evidence || []) {
+    if (!has("s", ev.src)) err(`${ctx}: unknown source ${ev.src}`);
+    if (!["primary", "secondary", "context"].includes(ev.kind)) err(`${ctx}: evidence ${ev.src} kind must be primary | secondary | context`);
+    if (!ev.inspected) err(`${ctx}: evidence ${ev.src} must say whether it was inspected`);
+    if (ev.src === "family-tree-2026") err(`${ctx}: the family tree alone cannot refute testimony`);
+  }
+  if (!(c.evidence || []).some((ev) => ev.kind !== "context")) err(`${ctx}: needs evidence beyond context`);
+  for (const k of ["said", "conclusion", "explanation", "remaining", "alsoSaid", "hedge"]) checkMarkup(c[k], `${ctx} ${k}`, owner);
+}
 // ---------- narrative ----------
 for (const ch of data.narrative) {
   const ctx = `chapter ${ch.id}`, owner = `ch:${ch.id}`;
@@ -303,7 +321,7 @@ const scan = (obj, ctx) => {
   if (Array.isArray(obj)) return obj.forEach((x, i) => scan(x, ctx));
   if (obj && typeof obj === "object") for (const [k, v] of Object.entries(obj)) if (!["cite", "src", "id", "url"].includes(k)) scan(v, ctx);
 };
-for (const [kind, list] of Object.entries({ people: data.people, places: data.places, events: data.events, glossary: data.glossary, questions: data.questions, narrative: data.narrative }))
+for (const [kind, list] of Object.entries({ people: data.people, places: data.places, events: data.events, glossary: data.glossary, questions: data.questions, narrative: data.narrative, corrections: data.corrections }))
   for (const item of list) scan(item, `${kind}/${item.id}`);
 if (QUOTE_REPORT) for (const q of quoteIssues) console.warn(`⚠ quote ${q}`);
 else if (quoteIssues.length) warn(`${quoteIssues.length} quotation(s) with weak overlap with their cited passages (run with --quotes to list)`);

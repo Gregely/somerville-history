@@ -12,6 +12,7 @@ An interactive, interconnected family-history archive built from a recorded conv
 - **Transcripts**: both versions of the conversation (A, the original working transcript; B, the companion), with 283 inline "readings" of misheard words (e.g. *"Whitflow"* → Wicklow, *"badayos"* → Badajoz, *"Green desert"* → Reendesert), each with a confidence level and, where useful, a note on how the other transcript heard it. Chips show which entries cite each passage, and every paragraph links to its parallel in the other transcript.
 - **Compare**: transcripts A and B side by side, paragraph by paragraph (`#/compare`), so any reading can be checked against both.
 - **Sources**: 72 sources, including the family's private Ancestry tree (cited, never published), each marked as read directly, partly read, or known only from a search result, with the date checked.
+- **Incorrect information**: a separate tab (`#/corrections`) listing the 10 places where Grandpa's testimony is contradicted by stronger documentary evidence. Each entry shows his words with transcript references, the best-supported conclusion, why they differ, and the evidence: primary or secondary, with links, and whether it was read directly. It corrects the factual claim, not the record of what he said, and marks entries as *Corrected* (3) or *Probably incorrect* (7).
 - **Search**: one search box over everything, including transcript misspellings and near-misses (try *bellendrum*, *Bunt*, *Tete*, *Whitflow*, *Gualter*).
 
 ## Running it
@@ -67,6 +68,7 @@ data/sources.json           external sources (numbered in the order listed)
 data/questions.json         unresolved questions and research leads
 data/readings.json          interpretations of misheard phrases in the transcript
 data/narrative.json         story chapters
+data/corrections.json       "Incorrect information": testimony contradicted by stronger evidence
 transcripts/transcripts.json  transcript manifest (id, role, file, sha256 of the original, aside ranges)
 transcripts/interview-01.txt            transcript A, complete, byte-for-byte as received
 transcripts/interview-01-companion.txt  transcript B, complete, byte-for-byte as received
@@ -87,6 +89,14 @@ tests/smoke.cjs             headless browser smoke test (Playwright)
    - start a paragraph with `{ctx}` (wider history), `{int}` (our interpretation) or `{sensitive}` (handle with discretion) to style it as a labelled box. Used mid-paragraph, the same markers produce an inline labelled note.
 2. Facts take `status` (`testimony` | `inferred` | `record` | `conflict`), `conf` (`high` | `medium` | `low`), `cite` (transcript paragraphs) and `src` (source ids).
 3. Run `node scripts/build.mjs`. It checks every cross-reference, citation, parent link and transcript reading, refuses to write the bundle if anything is broken, and otherwise regenerates `assets/js/archive-data.js`. It also checks that quoted words appear in the paragraphs cited for them (or their parallels in the other transcript); `node scripts/build.mjs --check --quotes` lists every doubtful quotation. Then run `node scripts/repo-check.mjs` (see below). CI (`.github/workflows/validate.yml`) runs the same checks and fails if the committed bundle is stale.
+
+**Adding an entry to Incorrect information** (`data/corrections.json`): include a claim only when stronger documentary evidence actually contradicts the testimony. Do not add mere uncertainties, misheard words, or claims contradicted only by the family's private tree. Each entry needs:
+- `said`: his words, with `{q:…}` citations; the build checks the quotation against the cited paragraphs.
+- `conclusion` and `explanation`.
+- `verdict`: `corrected` | `probable`.
+- `evidence`: entries of the form `{src, kind: primary | secondary | context, inspected, claim}`, where `inspected` says honestly whether the record itself was seen.
+
+The build rejects an entry with no citation, no evidence beyond context, or only the private family tree as evidence.
 
 **Adding a new recording:** put the transcript file, unchanged, in `transcripts/`, add an entry to `transcripts/transcripts.json` with a new id (`T3`, …), its `file`, its `sha256` (`sha256sum transcripts/<file>`) and any `asides` ranges, and cite it as `{q:T3:15}`. Mark off-topic conversation as asides rather than removing it. If it is another transcript of an existing recording, extend `scripts/align.py`. Paragraph numbers are always line numbers of the file, so never re-wrap a transcript after citing it. If a transcript file is ever corrected deliberately, update its `sha256`; the build refuses a file that no longer matches.
 

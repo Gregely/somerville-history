@@ -1,0 +1,167 @@
+[
+ {
+  "id": "ic-ba-birth",
+  "title": "Bellingham Arthur Somerville's year of birth",
+  "verdict": "corrected",
+  "people": ["bellingham-arthur-somerville"],
+  "events": ["ev-ba-born"],
+  "kind": "Remembered date (family knowledge, not eyewitness)",
+  "hedge": "He was unsure: \"I think\".",
+  "said": "\"He was born in 18… It's the year of the Crimean War, anyway. I think it was 1856. And he died in 1916\" (transcript B {q:T2:1-2}; transcript A {q:2}).",
+  "conclusion": "Born on 17 November 1853 and baptised in Dublin on 16 June 1854.",
+  "explanation": "A baptism in June 1854 cannot precede a birth in 1856. Two further records quoted by the same compiler agree with 1853–54: he enlisted in the RIC in 1872 aged 18, and he was 36 at the census of April 1891. The Crimean War, by which he dated the birth, ran from 1853 to 1856, so it began in the actual year of birth.",
+  "evidence": [
+   {"src": "winters-p68", "kind": "secondary", "inspected": "Read directly. The records it quotes (the IGI baptism index, the 1891 census and the RIC records on Ancestry) were not inspected.", "claim": "Born 17 Nov 1853, baptised Dublin 16 Jun 1854 (IGI); enlisted in the RIC in 1872 aged 18; aged 36 at Witney in the 1891 census."}
+  ]
+ },
+ {
+  "id": "ic-spanish-flu",
+  "title": "Bellingham Arthur's death \"of the Spanish flu\"",
+  "verdict": "corrected",
+  "people": ["bellingham-arthur-somerville"],
+  "events": ["ev-ba-dies", "ev-flu"],
+  "kind": "Family belief, which he questioned himself",
+  "hedge": "He doubted it as he spoke: \"was that just after the First World War?\"",
+  "said": "\"He died, unfortunately, in 1916 of the flu that was then going around in the First World War.\" Asked whether it was the Spanish flu: \"I always thought that he died of the Spanish flu, but the Spanish flu, I think, was that just after the First World War? … But he died in 1916, in the middle of the war\" (transcript B {q:T2:4-5}; transcript A {q:10-12}).",
+  "conclusion": "He died on 20 January 1916. Whatever the illness, it was not the influenza pandemic usually called the Spanish flu, which reached Ireland in June 1918.",
+  "explanation": "The family's belief that it was the Spanish flu cannot be right, because the pandemic came more than two years after his death. His own date (1916) and his own doubt were correct. What he actually died of is still unknown.",
+  "evidence": [
+   {"src": "dcc-flu", "kind": "secondary", "inspected": "Read directly.", "claim": "The pandemic came to Ireland in three waves: June–July 1918, October–November 1918 and February–spring 1919."},
+   {"src": "winters-p68", "kind": "secondary", "inspected": "Read directly. The death notice it quotes (The Times, 22 Jan 1916) was not inspected.", "claim": "Died 20 January 1916 at Clermont."}
+  ],
+  "remaining": "The cause of death needs the civil death certificate (Rathdrum district, January 1916); see {qn:q-flu-1916}."
+ },
+ {
+  "id": "ic-youghal-cause",
+  "title": "The cause of the Youghal riot, 1887",
+  "verdict": "probable",
+  "people": ["bellingham-arthur-somerville", "patrick-hanlon"],
+  "events": ["ev-youghal-1887", "ev-plan-of-campaign"],
+  "kind": "His own explanation of a family story (\"no doubt\")",
+  "hedge": "Offered as an assumption: \"no doubt over fishing\".",
+  "said": "\"Where the river Blackwater goes into the sea and they have fishing rights and all sorts of things … and there was a riot, no doubt, over fishing\" (transcript B {q:T2:124}; transcript A {q:314}).",
+  "conclusion": "The disturbances followed the arrest warrant for Fr Daniel Keller, a curate believed to be a trustee of the Plan of Campaign fund: the land agitation, not fishing rights.",
+  "explanation": "The narrator guessed at a cause for a story told to him; the published local history ties the riot to the Plan of Campaign case. The rest of his account (a riot at Youghal, a man named Hanlon killed, an arrest, Parliament) is confirmed, and the officer is identified as his grandfather.",
+  "evidence": [
+   {"src": "ballymacoda-1887", "kind": "secondary", "inspected": "Read directly (a local history drawing on contemporary reports).", "claim": "Protests at the arrest of Fr Daniel Keller in the Plan of Campaign case; the RIC charged the crowd on 8 March 1887 and Patrick Hanlon was killed."},
+   {"src": "hansard-1887b", "kind": "primary", "inspected": "Read directly.", "claim": "Disturbances at Youghal in early March 1887 (it confirms the disturbances, not their cause)."},
+   {"src": "wp-plan-of-campaign", "kind": "context", "inspected": "Read directly.", "claim": "The tenants' rent campaign of 1886–91."}
+  ],
+  "remaining": "No primary record of the cause (a contemporary newspaper or the inquest report) has been read."
+ },
+ {
+  "id": "ic-youghal-weapon",
+  "title": "The weapon that killed Patrick Hanlon",
+  "verdict": "probable",
+  "people": ["patrick-hanlon", "bellingham-arthur-somerville"],
+  "events": ["ev-youghal-1887"],
+  "kind": "Family story (not eyewitness)",
+  "said": "\"Some rioter called Hanlon or O'Hanlon was [cut] with a sabre and killed\" (transcript B {q:T2:125}; transcript A {q:318-320}).",
+  "conclusion": "Hanlon was killed with a bayonet. The police charged with fixed bayonets, and his death was registered as a \"wound inflicted by sword bayonet\".",
+  "explanation": "A sword bayonet is a long blade fixed to a rifle, so the family's \"sabre\" is an understandable simplification, but the weapon was a bayonet, used by a constable.",
+  "evidence": [
+   {"src": "ballymacoda-1887", "kind": "secondary", "inspected": "Read directly. The civil death registration it quotes was not inspected.", "claim": "The RIC charged with fixed bayonets; the cause of death was registered as a \"wound inflicted by sword bayonet\"."}
+  ],
+  "remaining": "The civil death register entry for Patrick Hanlon (Youghal district, March 1887) would confirm the wording."
+ },
+ {
+  "id": "ic-pat-capture",
+  "title": "Where and when Uncle Pat was captured",
+  "verdict": "probable",
+  "people": ["pat"],
+  "events": ["ev-mons"],
+  "kind": "Remembered family story",
+  "said": "\"The expeditionary force took a beating. And in the retreat from Mons, Uncle Paddy was captured\" (transcript B {q:T2:170}; transcript A {q:442}).",
+  "conclusion": "He was probably taken prisoner in October 1914 near Zonnebeke, east of Ypres, serving with the 2nd Battalion, Royal Warwickshire Regiment. That battalion was not at Mons.",
+  "explanation": "The retreat from Mons (late August to early September 1914) involved the regiment's 1st Battalion. The 2nd Battalion landed at Zeebrugge only in October 1914 and fought round Ypres. Sources seen only in search results place Pat in the 2nd Battalion and his capture at Zonnebeke in October.",
+  "evidence": [
+   {"src": "wp-royal-warwick", "kind": "secondary", "inspected": "Read directly.", "claim": "The 1st Battalion was in the retreat from Mons; the 2nd Battalion landed at Zeebrugge in October 1914."},
+   {"src": "gazette-1913", "kind": "primary", "inspected": "Partly read.", "claim": "Gualter Somerville was appointed to the Royal Warwickshire Regiment in 1913 (no battalion given)."},
+   {"src": "genealogist-pow", "kind": "secondary", "inspected": "Search result only; not inspected.", "claim": "Prisoner-of-war records: 2nd Battalion, Royal Warwickshire Regiment."},
+   {"src": "clarke-sense-of-duty", "kind": "secondary", "inspected": "Search result only; not inspected. Partly based on interviews with the narrator, so not fully independent.", "claim": "Captured at Zonnebeke, near Ypres, in October 1914."},
+   {"src": "wp-mons", "kind": "context", "inspected": "Read directly.", "claim": "The Battle of Mons was fought on 23 August 1914."}
+  ],
+  "remaining": "The battalion and place of capture rest on sources not directly inspected. If he served with the 1st Battalion, the narrator would be right. His officer's file (WO 339) or the ICRC prisoner records would settle it; see {qn:q-pat-capture}."
+ },
+ {
+  "id": "ic-captain-william-born",
+  "title": "Captain William Somerville's year of birth",
+  "verdict": "probable",
+  "people": ["captain-william-somerville"],
+  "events": ["ev-capt-william-born"],
+  "kind": "Remembered date (family knowledge)",
+  "hedge": "He was unsure: \"I think\".",
+  "said": "\"He was born in 1777, I think. Yes, I should make him 23\" [at his marriage in 1800] (transcript A {q:62}; transcript B {q:T2:30}).",
+  "conclusion": "Born in 1776 (3 March 1776 according to Stirnet); he was 24 at his marriage in August 1800.",
+  "explanation": "Two independently compiled genealogies agree on 1776. No baptism record has been seen, so this rests on secondary sources.",
+  "evidence": [
+   {"src": "lf-bellingham", "kind": "secondary", "inspected": "Read directly (published genealogy).", "claim": "Capt. William Somerville (1776–1844), married at Roscrea on 30 August 1800."},
+   {"src": "winters-p67", "kind": "secondary", "inspected": "Read directly. Its source, Stirnet (subscription), was not inspected.", "claim": "Born 3 March 1776."}
+  ],
+  "remaining": "Another family source gives 17 March; the day is uncertain, the year is not."
+ },
+ {
+  "id": "ic-tenison-death",
+  "title": "When Tenison Alan Somerville died",
+  "verdict": "probable",
+  "people": ["tenison-alan-somerville", "eliza-oconnor"],
+  "events": ["ev-tenison-dies"],
+  "kind": "Remembered date (family knowledge)",
+  "hedge": "Approximate: \"I think about 1890\".",
+  "said": "\"They lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" (transcript B {q:T2:88}; transcript A {q:216}).",
+  "conclusion": "Tenison Alan Somerville died on 31 July 1895.",
+  "explanation": "The date comes from the IGI, as quoted by a compiled genealogy, and puts his death about five years later than the narrator thought. Whether he died before his wife, as the narrator says, cannot yet be tested, because no record of her death has been examined.",
+  "evidence": [
+   {"src": "winters-p67", "kind": "secondary", "inspected": "Read directly. The IGI entry it cites was not inspected.", "claim": "Tenison Alan Somerville died 31 July 1895."}
+  ],
+  "remaining": "His civil death registration (Dublin, 1895) would confirm the date; see {qn:q-tenison-death}. A date for his wife's death given only in the family's tree is not used here."
+ },
+ {
+  "id": "ic-bunt-born",
+  "title": "Uncle Bunt's year of birth",
+  "verdict": "probable",
+  "people": ["bunt"],
+  "events": ["ev-bunt-born"],
+  "kind": "Remembered date",
+  "hedge": "Approximate: \"about 1884\".",
+  "said": "\"Then the boys, Bunt. Bunt was born in about 1884\" (transcript B {q:T2:103}; transcript A {q:264}).",
+  "conclusion": "Born in 1882 or early 1883, not 1884.",
+  "explanation": "Two independent records, both quoted by the same compiler, agree. At the census of 5 April 1891 he was 8, so he was born between April 1882 and April 1883. At his death on 13 February 1951 he was 68, so he was born between February 1882 and February 1883. The family's tree gives 8 August 1882, which fits both, but it is not relied on here.",
+  "evidence": [
+   {"src": "winters-p68", "kind": "secondary", "inspected": "Read directly. The 1891 census return it quotes was not inspected.", "claim": "William A. B., aged 8, in the household at Witney, 1891."},
+   {"src": "winters-p69", "kind": "secondary", "inspected": "Read directly. The death notice it quotes (The Times, 16 Feb 1951) was not inspected.", "claim": "Died 13 February 1951 at Reendesert Lodge, Bantry, aged 68."}
+  ]
+ },
+ {
+  "id": "ic-castle-bellingham",
+  "title": "Who sold Castle Bellingham",
+  "verdict": "probable",
+  "people": ["alan-bellingham-1773", "sir-william-bellingham", "monique-baby"],
+  "events": ["ev-castle-bellingham-sold"],
+  "kind": "Family tradition",
+  "said": "\"He was completely unable to maintain the estate. And he sold it, actually, to his uncle\" (transcript B {q:T2:19}; transcript A {q:36}).",
+  "conclusion": "Alan Bellingham let Castle Bellingham to his uncle, Sir William Bellingham. The freehold was sold to Sir William by Alan's widow, Monique, after Alan's death in 1821, by about 1824.",
+  "explanation": "The buyer in his account is right, but the seller is not: Alan only let the house; the sale came after his death.",
+  "evidence": [
+   {"src": "lf-bellingham", "kind": "secondary", "inspected": "Read directly (published genealogy with footnoted sources).", "claim": "Castle Bellingham was let to Sir William Bellingham, and the freehold was sold by Alan's widow by about 1824."}
+  ],
+  "remaining": "Registry of Deeds memorials (Dublin) for the sale would confirm it; see {qn:q-castle-bellingham-sale}."
+ },
+ {
+  "id": "ic-eddie-parents",
+  "title": "Whose deaths led Aunt Eddie to destroy the diary",
+  "verdict": "corrected",
+  "people": ["eddie", "bellingham-arthur-somerville", "margaret-hall-clinch", "tenison-alan-somerville"],
+  "events": ["ev-ba-dies", "ev-margaret-dies", "ev-tenison-dies"],
+  "kind": "Remembered conversation (Aunt Eddie's account, as he recalled it)",
+  "said": "\"She as a child remembered destroying these papers following the death of my great-grandparents, that's my Aunt Eddie's parents, the end of the 19th century\" (transcript B {q:T2:60-61}; transcript A {q:134}).",
+  "conclusion": "Aunt Eddie's parents died in 1916 and 1949, not at the end of the 19th century. The deaths at the end of the century were those of her grandparents (Tenison Alan, d. 1895), who were the narrator's great-grandparents.",
+  "explanation": "Both transcripts have the same words, so this is a slip in the telling, not a transcription error. His own testimony elsewhere gives the 1916 and 1949 deaths. \"My great-grandparents\" is probably what he meant, and the archive reads it that way.",
+  "evidence": [
+   {"src": "winters-p68", "kind": "secondary", "inspected": "Read directly. The Times notices it quotes were not inspected.", "claim": "Bellingham Arthur died 20 Jan 1916; Margaret died 5 Jul 1949."},
+   {"src": "winters-p67", "kind": "secondary", "inspected": "Read directly.", "claim": "Tenison Alan Somerville died 31 Jul 1895."}
+  ],
+  "alsoSaid": "His own dates for her parents' deaths: 1916 {q:T2:2} and 1949 {q:T2:150}.",
+  "remaining": "See {qn:q-eddie-papers}."
+ }
+]

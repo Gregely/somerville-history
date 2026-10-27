@@ -23,6 +23,7 @@
   SA.terms = byId(A.glossary);
   SA.sources = byId(A.sources);
   SA.questions = byId(A.questions);
+  SA.corrections = byId(A.corrections || []);
   SA.chapters = byId(A.narrative);
   SA.sourceNo = Object.fromEntries(A.sources.map((s, i) => [s.id, i + 1]));
   SA.lines = {};
@@ -310,11 +311,12 @@
     if (k === "e") return SA.events[id] && SA.events[id].title;
     if (k === "qn") return SA.questions[id] && SA.questions[id].title;
     if (k === "ch") return SA.chapters[id] && SA.chapters[id].title;
+    if (k === "ic") return SA.corrections[id] && `Correction: ${SA.corrections[id].title}`;
     return id;
   };
   SA.entityHref = function (ref) {
     const [k, ...rest] = ref.split(":"); const id = rest.join(":");
-    return { p: `#/person/${id}`, pl: `#/place/${id}`, t: `#/term/${id}`, e: `#/timeline?e=${id}`, qn: `#/questions?q=${id}`, ch: `#/story/${id}` }[k] || "#/";
+    return { p: `#/person/${id}`, pl: `#/place/${id}`, t: `#/term/${id}`, e: `#/timeline?e=${id}`, qn: `#/questions?q=${id}`, ch: `#/story/${id}`, ic: `#/corrections?c=${id}` }[k] || "#/";
   };
   SA.chip = (ref) => {
     const k = ref.split(":")[0];
@@ -343,6 +345,7 @@
   for (const t of A.glossary) add("term", t.id, t.term, t.category, [...(t.aliases || []), ...(t.variants || [])], SA.plain(t.def), `#/term/${t.id}`);
   for (const e of A.events) add("event", e.id, e.title, e.display, [], SA.plain(e.desc), `#/timeline?e=${e.id}`);
   for (const q of A.questions) add("question", q.id, q.title, q.status, [], SA.plain(q.desc + " " + (q.next || "")), `#/questions?q=${q.id}`);
+  for (const c of A.corrections || []) add("correction", c.id, c.title, c.verdict === "corrected" ? "corrected" : "probably incorrect", [], SA.plain([c.said, c.conclusion, c.explanation].join(" ")), `#/corrections?c=${c.id}`);
   for (const c of A.narrative) add("chapter", c.id, c.title, c.era, [], SA.plain(c.lede + " " + c.body.join(" ")), `#/story/${c.id}`);
   for (const s of A.sources) add("source", s.id, s.title, s.publisher, [], s.used || "", `#/sources?s=${s.id}`);
   for (const t of A.transcripts) for (const l of t.lines) add("passage", `${t.id}:${l.n}`, `${SA.TLABEL[t.id]} ¶${l.n}`, "", [], l.text, `#/transcript/${t.id}:${l.n}`);

@@ -19,6 +19,7 @@
     [/^\/transcript\/?([^/]*)$/, (m) => V.transcript(main, m[1]), "Transcript", "transcript"],
     [/^\/compare\/?$/, (m, p) => V.compare(main, p), "Compare transcripts", "transcript"],
     [/^\/questions\/?$/, (m, p) => V.questions(main, p), "Open questions", "questions"],
+    [/^\/corrections\/?$/, (m, p) => V.corrections(main, p), "Incorrect information", "corrections"],
     [/^\/sources\/?$/, (m, p) => V.sources(main, p), "Sources", "sources"],
     [/^\/search\/?$/, (m, p) => V.search(main, p), "Search"],
     [/^\/about\/?$/, () => V.about(main), "About", "about"],
@@ -46,7 +47,7 @@
       document.title = (t && t !== "Home" ? `${t} · ` : "") + "Somerville Family Archive";
       document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("cur", a.dataset.nav === nav));
       document.body.classList.remove("nav-open");
-      if (!params.e && !params.q && !params.s && !params.at && !/^\/transcript\/.+:/.test(path) && !/^\/tree/.test(path)) window.scrollTo(0, 0);
+      if (!params.e && !params.q && !params.s && !params.c && !params.at && !/^\/transcript\/.+:/.test(path) && !/^\/tree/.test(path)) window.scrollTo(0, 0);
       main.focus({ preventScroll: true });
       return;
     }
@@ -58,7 +59,7 @@
   const input = document.getElementById("q");
   const drop = document.getElementById("q-results");
   let sel = -1, items = [];
-  const TYPE = { person: "Person", place: "Place", term: "Term", event: "Event", chapter: "Story", question: "Question", source: "Source", passage: "Transcript" };
+  const TYPE = { person: "Person", place: "Place", term: "Term", event: "Event", chapter: "Story", question: "Question", correction: "Correction", source: "Source", passage: "Transcript" };
   const excerpt = (l) => esc(l.text.length > 360 ? l.text.slice(0, 360) + "…" : l.text);
   function showDrop() {
     const q = input.value.trim();
