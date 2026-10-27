@@ -59,7 +59,7 @@
   const drop = document.getElementById("q-results");
   let sel = -1, items = [];
   const TYPE = { person: "Person", place: "Place", term: "Term", event: "Event", chapter: "Story", question: "Question", source: "Source", passage: "Transcript" };
-  const excerpt = (l) => (l.kind === "withheld" ? `<em>${esc(l.text)}</em>` : esc(l.text.length > 360 ? l.text.slice(0, 360) + "…" : l.text));
+  const excerpt = (l) => esc(l.text.length > 360 ? l.text.slice(0, 360) + "…" : l.text);
   function showDrop() {
     const q = input.value.trim();
     if (!q) { drop.hidden = true; return; }

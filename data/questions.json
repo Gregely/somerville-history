@@ -801,5 +801,20 @@
    "T2:138",
    "T2:199"
   ]
+ },
+ {
+  "id": "q-hungarian-family",
+  "title": "The Hungarian family: the gulag story",
+  "status": "open",
+  "priority": "low",
+  "desc": "Not Somerville history, but part of the recording. Near the end the interviewer describes the other side of their own family: a mother who is the last authority on it, a grandfather Miklós, and a great-grandmother who died about 2010 in a flat in Eger, Hungary. She \"always told these stories about her husband … him being sent to a gulag, and apparently escaping\", but \"no one really knows if the story was true\" {q:588-598} {q:T2:235-240}. It is recorded here as her story, as the interviewer reported it; nothing in it has been checked.",
+  "people": [
+   "interviewer"
+  ],
+  "next": "Family papers and relatives' recollections, to establish the great-grandfather's name and the approximate date; with those, Hungarian archives.",
+  "cite": [
+   "588-598",
+   "T2:235-240"
+  ]
  }
 ]

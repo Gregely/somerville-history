@@ -1,6 +1,6 @@
 # The Somerville Family Archive
 
-An interactive, interconnected family-history archive built from a recorded conversation in which Grandpa (born 1937) told a grandchild what he knows about the Somerville family. Two independent speech-to-text transcripts of the same recording survive; the archive cites both and lets you compare them side by side. It turns those imperfect transcripts into something future generations can explore, check and extend:
+An interactive, interconnected family-history archive built from a recorded conversation in which Grandpa (born 1937) told a grandchild what he knows about the Somerville family. Two independent speech-to-text transcripts of the same recording survive. **Both are published complete, exactly as received**, including the everyday conversation around the history; the archive cites both and lets you compare them side by side. It turns those imperfect transcripts into something future generations can explore, check and extend:
 
 - **Story**: an 11-chapter historical narrative, from the 1748 baronetcy to the sale of Clermont, with family testimony, our interpretations and published history visibly distinguished.
 - **Family tree**: an interactive SVG chart (pan, zoom, pinch, collapse branches, click for details) of the Somervilles and related families (Bellingham, Clinch, Johnson, Truell, O'Connor and others), with the narrator's line of descent highlighted, plus an accessible outline view.
@@ -8,8 +8,8 @@ An interactive, interconnected family-history archive built from a recorded conv
 - **Places**: 64 places on a map (Leaflet/OpenStreetMap), from Cumry and Castle Bellingham to Trinidad, Archangel and Nanyuki.
 - **Timeline**: 79 events, with family events and wider history side by side, grouped by era.
 - **Glossary**: 66 terms covering RIC ranks, militia, dormant titles, expressions, surnames and nicknames.
-- **Open questions**: 42 documented ambiguities and contradictions, each with alternatives and next research steps.
-- **Transcripts**: both versions of the conversation (A, the original working transcript; B, the companion), with 276 inline "readings" of misheard words (e.g. *"Whitflow"* → Wicklow, *"badayos"* → Badajoz, *"Green desert"* → Reendesert), each with a confidence level and, where useful, a note on how the other transcript heard it. Chips show which entries cite each passage, and every paragraph links to its parallel in the other transcript.
+- **Open questions**: 43 documented ambiguities and contradictions, each with alternatives and next research steps.
+- **Transcripts**: both versions of the conversation (A, the original working transcript; B, the companion), with 283 inline "readings" of misheard words (e.g. *"Whitflow"* → Wicklow, *"badayos"* → Badajoz, *"Green desert"* → Reendesert), each with a confidence level and, where useful, a note on how the other transcript heard it. Chips show which entries cite each passage, and every paragraph links to its parallel in the other transcript.
 - **Compare**: transcripts A and B side by side, paragraph by paragraph (`#/compare`), so any reading can be checked against both.
 - **Sources**: 62 external sources, each marked as read directly, partly read, or known only from a search result, with the date checked.
 - **Search**: one search box over everything, including transcript misspellings and near-misses (try *bellendrum*, *Bunt*, *Tete*, *Whitflow*, *Gualter*).
@@ -22,14 +22,14 @@ There is no build step needed to view it. Open `index.html` in a browser, or ser
 python3 -m http.server 8765      # then visit http://localhost:8765
 ```
 
-Everything except the map tiles and web fonts works offline. It can also be published as-is with GitHub Pages (see *Privacy* below before doing so).
+Everything except the map tiles and web fonts works offline. It can also be published as-is with GitHub Pages (the family has decided that the whole archive is public; see *A complete public archive* below).
 
 ## The two transcripts
 
 | | Transcript A (original) | Transcript B (companion) |
 |---|---|---|
-| File received | `27 Oct at 16-17.txt` | `+353 85 ••• •••• - 2026-10-27 19.50.34.txt` (phone number masked) |
-| Public copy | `transcripts/interview-01.txt` | `transcripts/interview-01-companion.txt` |
+| File received | `27 Oct at 16-17.txt` | `+353 85 ••• •••• - 2026-10-27 19.50.34.txt` (phone number in the file name masked) |
+| Published file (complete) | `transcripts/interview-01.txt` | `transcripts/interview-01-companion.txt` |
 | Cited as | `¶n` | `B¶n` |
 | Paragraphs | 304 (lines 1–607, every other line) | 243 |
 
@@ -64,16 +64,13 @@ data/sources.json           external sources (numbered in the order listed)
 data/questions.json         unresolved questions and research leads
 data/readings.json          interpretations of misheard phrases in the transcript
 data/narrative.json         story chapters
-transcripts/transcripts.json  transcript manifest (id, role, files, aside ranges)
-transcripts/interview-01.txt            public copy of transcript A (see Privacy)
-transcripts/interview-01-companion.txt  public copy of transcript B
-transcripts/redactions.json what is withheld, by line number and offset only
+transcripts/transcripts.json  transcript manifest (id, role, file, sha256 of the original, aside ranges)
+transcripts/interview-01.txt            transcript A, complete, byte-for-byte as received
+transcripts/interview-01-companion.txt  transcript B, complete, byte-for-byte as received
 transcripts/alignment.json  GENERATED A↔B paragraph alignment
-transcripts/private/        the unredacted originals (git-ignored, never committed)
 scripts/build.mjs           validator + bundler (+ quotation checker)
-scripts/redact.py           produces the public transcripts from the originals
 scripts/align.py            regenerates the A↔B alignment
-scripts/privacy-check.mjs   scans every public file for withheld wording and phone numbers
+scripts/repo-check.mjs      final check: no credentials, transcripts complete and fully bundled
 tests/smoke.cjs             headless browser smoke test (Playwright)
 ```
 
@@ -85,22 +82,30 @@ tests/smoke.cjs             headless browser smoke test (Playwright)
    - `{s:source-id}` cites an external source. Each source has `access` (`direct` | `partial` | `search-only`) and a `checked` date; say in `used` exactly what the source supports.
    - start a paragraph with `{ctx}` (wider history), `{int}` (our interpretation) or `{sensitive}` (handle with discretion) to style it as a labelled box. Used mid-paragraph, the same markers produce an inline labelled note.
 2. Facts take `status` (`testimony` | `inferred` | `record` | `conflict`), `conf` (`high` | `medium` | `low`), `cite` (transcript paragraphs) and `src` (source ids).
-3. Run `node scripts/build.mjs`. It checks every cross-reference, citation, parent link and transcript reading, refuses to write the bundle if anything is broken, and otherwise regenerates `assets/js/archive-data.js`. It also checks that quoted words appear in the paragraphs cited for them (or their parallels in the other transcript); `node scripts/build.mjs --check --quotes` lists every doubtful quotation. `node scripts/privacy-check.mjs` checks the public copy (see Privacy). CI (`.github/workflows/validate.yml`) runs the checks and fails if the committed bundle is stale.
+3. Run `node scripts/build.mjs`. It checks every cross-reference, citation, parent link and transcript reading, refuses to write the bundle if anything is broken, and otherwise regenerates `assets/js/archive-data.js`. It also checks that quoted words appear in the paragraphs cited for them (or their parallels in the other transcript); `node scripts/build.mjs --check --quotes` lists every doubtful quotation. Then run `node scripts/repo-check.mjs` (see below). CI (`.github/workflows/validate.yml`) runs the same checks and fails if the committed bundle is stale.
 
-**Adding a new recording:** put the unredacted original in `transcripts/private/`, add its withheld passages to `transcripts/redactions.json` (line numbers and character offsets only, never wording), run `python3 -I scripts/redact.py` to write the public copy, add an entry to `transcripts/transcripts.json` with a new id (`T3`, …), and cite it as `{q:T3:15}`. If it is another transcript of an existing recording, extend `scripts/align.py`. Paragraph numbers are always line numbers of the file, so never re-wrap a transcript after citing it.
+**Adding a new recording:** put the transcript file, unchanged, in `transcripts/`, add an entry to `transcripts/transcripts.json` with a new id (`T3`, …), its `file`, its `sha256` (`sha256sum transcripts/<file>`) and any `asides` ranges, and cite it as `{q:T3:15}`. Mark off-topic conversation as asides rather than removing it. If it is another transcript of an existing recording, extend `scripts/align.py`. Paragraph numbers are always line numbers of the file, so never re-wrap a transcript after citing it. If a transcript file is ever corrected deliberately, update its `sha256`; the build refuses a file that no longer matches.
 
-## Privacy and discretion
+## A complete public archive
 
-**This repository is public.** Decisions taken:
+**This repository is public, and so is everything in it.** The family has decided to publish the whole archive:
 
-- The committed transcripts leave out personal, domestic and third-party asides: in A, 28 whole paragraphs and parts of 7 more; in B, 25 whole paragraphs and parts of 9 more. Each is replaced by a marker (*"Passage withheld from the public copy: personal or domestic aside"*) so line numbers, and therefore citations, are unchanged. **No family-history content was withheld.** The audit restored the family-history parts of two paragraphs of A (¶304, ¶310) that had been withheld in full.
-- What is withheld is recorded in `transcripts/redactions.json` by line number and character offset only, with generic reasons, so the configuration itself reveals nothing. `scripts/redact.py` refuses to run if an original has changed. The originals are in `transcripts/private/` (git-ignored); `node scripts/build.mjs --private` builds a complete local copy into `private-build/` (also git-ignored) for family use.
-- `node scripts/privacy-check.mjs` scans every committed file (bundle, data, README, public transcripts, scripts) for any six-word run of withheld wording, for phone numbers, and for text in the redaction config. The wording scan needs the private originals, so run it locally before pushing; CI runs the other checks.
-- Transcript B's file name contains a phone number; it is masked wherever the file name is shown.
-- Near the end of the recording, the interviewer tells a story about a relative on another side of their own family, not the Somervilles. It is unverified even in the telling, so it is kept only in the private copy: it is withheld from both public transcripts and used nowhere in the archive.
-- Living people (the narrator, the interviewer, relatives named in passing) get no personal details.
+- Both transcripts are published in full, exactly as received: the family history and the conversation around it, including personal and domestic asides and the interviewer's recollections of their Hungarian family (recorded as an attributed, unverified story in the open questions). Nothing is redacted, and there is no separate private build.
+- Everyday conversation is marked as **asides** in `transcripts/transcripts.json`. Asides are shown by default; readers can untick *Asides* on the transcript and compare pages to keep to the history. They are searchable like everything else.
+- Each transcript page links to its plain-text file for download.
+- The only thing not reproduced is the phone number in transcript B's file name, which is masked where the name is shown. It is not part of the transcript.
 - **Youghal, 1887.** Grandpa said: *"This now is not for publication … I'll let you use your own discretion, but be careful."* The family has decided to publish it. The archive keeps his caution visible and sets out the story in three separate layers: the family's account, Hansard, and local history. It names the officer as Bellingham Arthur only as the family's identification, since the records give only "District Inspector Somerville" and "Sub-Inspector Summerville". Patrick Hanlon, who died, is treated with respect.
-- Some disparaging local hearsay in the transcripts (about Rathnew) is kept verbatim in the transcripts but not repeated elsewhere.
+- Editorial choices, not exclusions: profiles of living people record only their place in the family (what they said is all in the transcripts), and some disparaging local hearsay about Rathnew is left in the transcripts rather than repeated in the narrative.
+
+### Repository checks
+
+`node scripts/repo-check.mjs` (also run in CI) confirms that:
+
+1. no committed file contains credentials (API keys, access tokens, private keys, password assignments). Family history, names and anecdotes are not treated as secrets;
+2. each transcript matches the sha256 of the original recorded in `transcripts/transcripts.json` and carries no redaction marker;
+3. every paragraph of both transcripts appears, unaltered, in the committed bundle the site loads.
+
+`tests/smoke.cjs` additionally opens the transcript and compare pages in a browser and checks that previously withheld passages are visible.
 
 ## Key findings from checking the testimony
 
@@ -133,7 +138,7 @@ Every external source was re-checked against the specific claim it supports, and
 
 ## Unresolved questions (summary)
 
-The full list (42, of which 2 are resolved and 15 partly resolved), with readings and next steps, is on the site's **Open questions** page (`data/questions.json`). The most important are:
+The full list (43, of which 2 are resolved and 15 partly resolved), with readings and next steps, is on the site's **Open questions** page (`data/questions.json`). The most important are:
 
 1. **Parentage and marriages.** Did Archibald James marry Elizabeth Breakey (Brakey), and was "little Archie" (b. 1823) their son? A compiled genealogy instead records his marriage to an Elizabeth Crawford in 1836; whether she is the same woman is unknown. Whose servant was Elizabeth Brakey? Is "for 19 years" the family's time in Monaghan or Archibald's age?
 2. **The dormant baronetcy.** The archive does not assess any claim. Open points include surviving male heirs of the senior line, Major William's parentage and the lawfulness of Archibald James's marriage.
@@ -146,7 +151,7 @@ The full list (42, of which 2 are resolved and 15 partly resolved), with reading
 
 ## Limitations
 
-- Both sources are automatic speech-to-text with no speaker labels, and no audio was available to settle disagreements. Some passages are unrecoverable in both, and every reading of a garbled word is an interpretation (all are shown and graded).
+- Both transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle disagreements. Some passages are unrecoverable in both, and every reading of a garbled word is an interpretation (all are shown and graded).
 - Most family details rest on one person's memory and have not yet been checked against civil or church registers, RIC service records or wills. External research so far covers the points cited on the Sources page.
 - Map positions marked "approximate" are best guesses; Cumry and "Farm" are placed at their nearest identified towns.
 - The tree uses a simple layout that is wide rather than compact; the outline view is easier on small screens.

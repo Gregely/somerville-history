@@ -457,7 +457,6 @@ path.mk-approx { stroke-dasharray: 3 2; }
 .tp .refs { grid-column: 2; display: flex; flex-wrap: wrap; gap: .25rem; }
 .tp .refs .chip { font-size: .72rem; padding: .1rem .45rem; }
 .tp.target { background: color-mix(in srgb, var(--mark) 55%, transparent); }
-.tp.k-withheld .tx { color: var(--muted); font-size: .9rem; }
 .tp.k-aside { display: none; }
 .show-asides .tp.k-aside { display: grid; opacity: .7; }
 .tp.k-aside.target { display: grid; }

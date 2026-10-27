@@ -344,7 +344,7 @@
   for (const q of A.questions) add("question", q.id, q.title, q.status, [], SA.plain(q.desc + " " + (q.next || "")), `#/questions?q=${q.id}`);
   for (const c of A.narrative) add("chapter", c.id, c.title, c.era, [], SA.plain(c.lede + " " + c.body.join(" ")), `#/story/${c.id}`);
   for (const s of A.sources) add("source", s.id, s.title, s.publisher, [], s.used || "", `#/sources?s=${s.id}`);
-  for (const t of A.transcripts) for (const l of t.lines) if (l.kind !== "withheld") add("passage", `${t.id}:${l.n}`, `${SA.TLABEL[t.id]} ¶${l.n}`, "", [], l.text, `#/transcript/${t.id}:${l.n}`);
+  for (const t of A.transcripts) for (const l of t.lines) add("passage", `${t.id}:${l.n}`, `${SA.TLABEL[t.id]} ¶${l.n}`, "", [], l.text, `#/transcript/${t.id}:${l.n}`);
 
   SA.search = function (query, limit = 60) {
     const q = norm(query).trim();

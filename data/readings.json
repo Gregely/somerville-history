@@ -2026,5 +2026,56 @@
   "reading": "(a slip: the Burning of Cork was in the War of Independence)",
   "conf": "medium",
   "link": "e:ev-burning-cork"
+ },
+ {
+  "line": 594,
+  "phrase": "Edgar",
+  "reading": "Eger, Hungary",
+  "conf": "high",
+  "note": "Transcript B has \"Eger\" (B¶238)."
+ },
+ {
+  "line": 568,
+  "phrase": "my meatloaf",
+  "reading": "my Miklós (the interviewer's Hungarian grandfather)",
+  "conf": "high",
+  "note": "Transcript B: \"my Miklós, my Hungarian grandfather\" (B¶225)."
+ },
+ {
+  "line": 308,
+  "phrase": "hunger it",
+  "reading": "Hungary",
+  "conf": "high",
+  "note": "Transcript B: \"going to Hungary tomorrow\" (B¶121)."
+ },
+ {
+  "line": 306,
+  "phrase": "Charles's battles",
+  "reading": "Charles is back",
+  "conf": "medium",
+  "note": "Transcript B: \"No, Charles is back\" (B¶120)."
+ },
+ {
+  "line": 434,
+  "phrase": "A Ryan aeroplane",
+  "reading": "a Ryanair plane",
+  "conf": "high",
+  "note": "Transcript B: \"any old Ryanair plane\" (B¶167)."
+ },
+ {
+  "t": "T2",
+  "line": 166,
+  "phrase": "Orion airplane",
+  "reading": "Ryanair plane",
+  "conf": "high",
+  "note": "The next paragraph has \"Ryanair plane\"."
+ },
+ {
+  "t": "T2",
+  "line": 184,
+  "phrase": "Hedford",
+  "reading": "probably Headfort, the preparatory school at Kells, Co. Meath",
+  "conf": "medium",
+  "note": "A reading of the sound, not confirmed."
  }
 ]

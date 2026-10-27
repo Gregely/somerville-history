@@ -26,7 +26,7 @@
     return `<ol class="passages">${keys.map((k) => {
       const l = SA.lines[k];
       if (!l) return "";
-      const text = l.kind === "withheld" ? `<em class="muted">${esc(l.text)}</em>` : query ? SA.snippet(l.text, query, 260) : esc(l.text.length > 300 ? l.text.slice(0, 300) + "…" : l.text);
+      const text = query ? SA.snippet(l.text, query, 260) : esc(l.text.length > 300 ? l.text.slice(0, 300) + "…" : l.text);
       const t = k.split(":")[0];
       return `<li><a class="pn" href="#/transcript/${k}">${t === "T1" ? "" : SA.TLABEL[t]}¶${l.n}</a><span>${text}</span></li>`;
     }).join("")}</ol>`;
@@ -97,7 +97,7 @@
           <h2>Most important open questions</h2>
           ${questionItems(A.questions.filter((q) => q.priority === "high"))}
           <p><a href="#/questions">All ${A.questions.length} questions →</a></p>
-          <div class="callout callout-sensitive"><div class="callout-label">A note on privacy</div><p>The public copy of the transcript leaves out personal and domestic asides. Living relatives are named only where they matter to the family history, and no details about them are recorded. Grandpa asked for discretion about the 1887 Youghal story; it is told here as a matter of public record. See <a href="#/about">About this archive</a>.</p></div>
+          <div class="callout callout-sensitive"><div class="callout-label">The complete record</div><p>Both transcripts are published in full, including the everyday conversation around the history. Grandpa asked for discretion about the 1887 Youghal story; the family has decided to include it, with the family account, the parliamentary record and local history kept separate. See <a href="#/about">About this archive</a>.</p></div>
         </div>
       </section>`;
   };
@@ -431,7 +431,7 @@
     return out + esc(l.text.slice(pos));
   }
   SA.markReadings = markReadings;
-  const paraText = (l, tid) => (l.kind === "withheld" ? `<em>${esc(l.text)}</em>` : markReadings(l, tid));
+  const paraText = (l, tid) => markReadings(l, tid);
   const parallelLinks = (key) => {
     const par = SA.parallel(key);
     if (!par.length) return "";
@@ -445,19 +445,18 @@
         <div class="filters sticky">
           <input type="search" class="grow" placeholder="Search the transcript…" data-f="q" aria-label="Search the transcript" />
           <label class="tog"><input type="checkbox" data-f="readings" checked /> Readings of misheard words</label>
-          <label class="tog"><input type="checkbox" data-f="asides" /> Domestic asides</label>
+          <label class="tog" title="Untick to hide the everyday conversation and keep to the family history"><input type="checkbox" data-f="asides" checked /> Asides</label>
           ${extra}<span class="tcount small muted"></span>
         </div>`;
   V.transcript = function (main, target) {
     const [tidRaw, n] = (target || "").split(":");
     const t = SA.transcripts[tidRaw] || A.transcripts[0];
-    const withheld = t.lines.filter((l) => l.kind === "withheld").length;
     main.innerHTML = `
       <div class="transcript-layout">
         <header class="page-head"><p class="kicker">Primary source · transcript ${SA.TLABEL[t.id]}</p><h1>${esc(t.title)}</h1>
           ${transcriptTabs(t.id)}
           <p class="lede">${esc(t.origin)}</p>
-          <p class="small">Recorded ${esc(t.date)}. Source file: <code>${esc(t.sourceFile || "")}</code>. Paragraph numbers (¶) are line numbers of that file; citations in this archive point to them (transcript A as “¶n”, transcript B as “B¶n”). ${A.private ? "<b>Private build: full unredacted text.</b>" : `Personal, domestic and third-party asides are withheld from this public copy (${withheld} whole passages, plus marked fragments); the numbering is unchanged.`}</p>
+          <p class="small">Recorded ${esc(t.date)}. Source file: <code>${esc(t.sourceFile || "")}</code>. Paragraph numbers (¶) are line numbers of that file; citations in this archive point to them (transcript A as “¶n”, transcript B as “B¶n”). This is the complete transcript as received; the everyday conversation around the history is marked as asides. <a href="${esc(t.file)}" download>Download the full text (.txt)</a>.</p>
         </header>
         ${filterBar()}
         <div class="transcript"></div>
@@ -515,7 +514,7 @@
         return `<div class="cp" id="c-${tb}-${n}"><a class="pn" href="#/transcript/${tb}:${n}">${SA.TLABEL[tb]}¶${n}</a><div class="tx">${paraText(l, tb)}</div></div>`;
       }).join("");
       const kinds = [...blk.a.map((n) => kindOf(ta, n)), ...blk.b.map((n) => kindOf(tb, n))];
-      const kind = kinds.every((k) => k !== "text") ? (kinds.includes("withheld") && kinds.every((k) => k === "withheld") ? "withheld" : "aside") : "text";
+      const kind = kinds.every((k) => k !== "text") ? "aside" : "text";
       return `<div class="crow k-${kind}" data-a="${blk.a.join(" ")}" data-b="${blk.b.join(" ")}"><div class="ccol">${left}</div><div class="ccol">${right}</div></div>`;
     }).join("");
     main.innerHTML = `
@@ -650,7 +649,7 @@
           <li><b>Transcripts</b>: two independent speech-to-text transcripts of the same conversation (A, the original, and B, a companion), with readings of misheard words, links between parallel passages, and a side-by-side <a href="#/compare">comparison</a>.</li>
         </ul>
         <h2>Privacy and discretion</h2>
-        <p>The public copies of the transcripts omit personal, domestic and third-party asides (marked where they occur); no family-history content has been removed. The full originals are kept outside the published site. Living people are mentioned only where they bear on the history, with no personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
+        <p>Both transcripts are published complete, exactly as received, and can be downloaded as text files from the transcript pages. Passages of everyday conversation are marked as asides, shown by default, and can be hidden to keep to the history. Living people are mentioned only where they bear on the history, with no personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
         <h2>Limitations</h2>
         <ul>
           <li>Both transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle their disagreements; some passages are garbled beyond recovery in both.</li>

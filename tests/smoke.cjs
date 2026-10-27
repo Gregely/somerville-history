@@ -21,6 +21,15 @@ const { chromium } = require('playwright');
       const name = (tag + '-' + (r || 'home')).replace(/[^a-z0-9-]+/gi, '_');
       if (out && ['', 'tree', 'person/bellingham-arthur-somerville', 'places', 'timeline', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'story/west-indies', 'people'].includes(r)) await page.screenshot({ path: `${out}/${name}.png` });
     }
+    // the complete transcripts are published: no redaction markers, and
+    // passages once withheld are visible on the transcript and compare pages
+    for (const [r, want] of [['transcript/T1:596', 'sent to a gulag'], ['transcript/T2:238', 'small flat in Eger'], ['transcript/T1:70', 'district nurse'], ['compare?at=T1:596', 'sent to a gulag']]) {
+      await page.goto('http://127.0.0.1:8765/#/' + r, { waitUntil: 'networkidle' });
+      await page.waitForTimeout(400);
+      const body = await page.evaluate(() => document.querySelector('main').innerText);
+      if (/withheld from the public copy|withheld…/i.test(body)) errs.push(`${tag} ${r}: redaction marker shown`);
+      if (!body.includes(want)) errs.push(`${tag} ${r}: expected text "${want}" not visible`);
+    }
     console.log(tag, errs.length ? errs.join('\n') : 'no errors');
     if (errs.length) process.exitCode = 1;
     await page.close();

@@ -14,5 +14,5 @@ jobs:
         run: |
           node scripts/build.mjs
           git diff --quiet -- assets/js/archive-data.js || { echo "assets/js/archive-data.js is stale: run node scripts/build.mjs and commit"; exit 1; }
-      - name: Check the public copy for withheld material and phone numbers
-        run: node scripts/privacy-check.mjs
+      - name: Check for credentials and confirm the transcripts are complete
+        run: node scripts/repo-check.mjs

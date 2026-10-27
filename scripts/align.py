@@ -5,9 +5,7 @@
 Both transcripts are word-aligned with difflib; each paragraph is then mapped
 to the paragraph(s) of the other transcript that its matched words fall in.
 Paragraphs are grouped into "blocks" (connected, order-preserving groups)
-for the side-by-side comparison view. Only paragraph numbers are written,
-never text, so the output is safe to publish even when computed from the
-private originals (which give a better alignment than the redacted copies).
+for the side-by-side comparison view. Only paragraph numbers are written.
 """
 import difflib
 import json
@@ -18,11 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def load(entry):
-    for key in ("privateFile", "file"):
-        path = os.path.join(ROOT, entry.get(key) or "")
-        if entry.get(key) and os.path.exists(path):
-            return open(path, encoding="utf-8").read().split("\n"), key
-    raise FileNotFoundError(entry["id"])
+    return open(os.path.join(ROOT, entry["file"]), encoding="utf-8").read().split("\n"), "file"
 
 
 def words(lines):

@@ -4,7 +4,6 @@
     "title": "Transcript A: the original working transcript",
     "date": "27 October 2026 (recording date inferred; see Open questions)",
     "file": "transcripts/interview-01.txt",
-    "privateFile": "transcripts/private/interview-01.original.txt",
     "origin": "Automatic speech-to-text transcript of a recorded conversation between the narrator and a grandchild, the transcript from which this archive was first built. Speakers are not labelled; one paragraph per line, separated by blank lines, so paragraph numbers are odd line numbers.",
     "asides": [
       [
@@ -33,7 +32,8 @@
       ]
     ],
     "sourceFile": "27 Oct at 16-17.txt",
-    "role": "original"
+    "role": "original",
+    "sha256": "b8638b44c5365baf121a5d773f1bd5e1c4a47668b4840e397d6a3839634a00b6"
   },
   {
     "id": "T2",
@@ -42,8 +42,7 @@
     "role": "companion",
     "date": "27 October 2026 (file timestamp 19.50.34)",
     "file": "transcripts/interview-01-companion.txt",
-    "privateFile": "transcripts/private/interview-01-companion.original.txt",
-    "origin": "A second, independent speech-to-text pass over the same recording, added during the audit. Often clearer on names (Clonmel, Louth Militia, Fighting Atty, Vere, Galter, Rathnew), but not infallible: it has its own errors (“RUC”, “Royal Irish Conservatory”, “Yall”, “York”). The original file name contained a phone number, which is masked here. No audio was available to settle differences between the transcripts.",
+    "origin": "A second, independent speech-to-text pass over the same recording, added during the audit. Often clearer on names (Clonmel, Louth Militia, Fighting Atty, Vere, Galter, Rathnew), but not infallible: it has its own errors (“RUC”, “Royal Irish Conservatory”, “Yall”, “York”). No audio was available to settle differences between the transcripts. The phone number in the original file name is masked here; it is not part of the transcript.",
     "asides": [
       [
         32,
@@ -69,6 +68,7 @@
         185,
         190
       ]
-    ]
+    ],
+    "sha256": "22445a92d2fe859883a056479be6352b5a4be2f87eec8c8ab828eef2f83fd924"
   }
 ]

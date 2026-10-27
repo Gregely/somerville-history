@@ -256,7 +256,7 @@
           <rect class="bar" width="5" height="${H - 16}" x="0" y="8" rx="2"/>
           <text class="nm" x="14" y="${lines.length > 1 ? 22 : 30}">${lines.map((l, i) => `<tspan x="14" dy="${i ? 16 : 0}">${esc(l)}</tspan>`).join("")}</text>
           <text class="lf" x="14" y="${H - 12}">${esc(life || (p.placeholder ? "name not recorded" : p.living ? "living" : "dates unknown"))}</text>
-          ${p.living || p.possiblyLiving ? `<circle class="lv" cx="${W - 12}" cy="${H - 16}" r="4"><title>Living or possibly living: details withheld</title></circle>` : ""}
+          ${p.living || p.possiblyLiving ? `<circle class="lv" cx="${W - 12}" cy="${H - 16}" r="4"><title>Living or possibly living</title></circle>` : ""}
           ${extra}
         </g>`;
       }
