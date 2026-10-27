@@ -1,0 +1,4 @@
+transcripts/private/
+node_modules/
+.DS_Store
+private-build/

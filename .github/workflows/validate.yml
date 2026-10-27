@@ -1,0 +1,16 @@
+name: Validate archive data
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check every link, citation and transcript reading
+        run: node scripts/build.mjs --check
+      - name: Ensure the committed bundle is up to date
+        run: |
+          node scripts/build.mjs
+          git diff --quiet -- assets/js/archive-data.js || { echo "assets/js/archive-data.js is stale: run node scripts/build.mjs and commit"; exit 1; }

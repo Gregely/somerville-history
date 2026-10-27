@@ -1,0 +1,11 @@
+[
+  {
+    "id": "T1",
+    "title": "Conversation with Grandpa about the Somerville family",
+    "date": "27 October (year not recorded; probably 2026)",
+    "file": "transcripts/interview-01.txt",
+    "privateFile": "transcripts/private/interview-01.original.txt",
+    "origin": "Automatic speech-to-text transcript of a recorded conversation between the narrator and a grandchild. Speakers are not labelled and the software frequently mis-hears names.",
+    "asides": [[64, 81], [304, 310], [390, 438], [476, 490], [588, 598]]
+  }
+]

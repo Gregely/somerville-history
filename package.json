@@ -1,0 +1,12 @@
+{
+  "name": "somerville-family-archive",
+  "private": true,
+  "description": "Interactive family-history archive built from a recorded conversation.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "build:private": "node scripts/build.mjs --private",
+    "serve": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "test": "node tests/smoke.cjs"
+  }
+}
