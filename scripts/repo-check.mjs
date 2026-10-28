@@ -5,9 +5,11 @@
 // 1. No committed file contains credentials: API keys, access tokens, private
 //    keys or password assignments. Family history, names and anecdotes are
 //    not secrets and are not checked for.
-// 2. The published transcripts are complete: each matches the checksum of the
-//    original recorded in transcripts/transcripts.json, carries no redaction
-//    marker, and every paragraph appears in full in the committed bundle.
+// 2. The published transcripts are complete: each matches the checksum
+//    recorded in transcripts/transcripts.json, carries no redaction marker,
+//    and every paragraph appears in full in the committed bundle. The only
+//    permitted change from the file as received is a masked credential (a PIN
+//    spoken aloud), listed under "masked" in the manifest.
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -30,6 +32,7 @@ const SECRETS = [
   ["Slack token", /\bxox[abprs]-[A-Za-z0-9-]{10,}\b/],
   ["Stripe key", /\b[rs]k_live_[A-Za-z0-9]{20,}\b/],
   ["JSON web token", /\beyJ[A-Za-z0-9_-]{10,}\.eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\b/],
+  ["spoken PIN or passcode", /\b(?:pin|passcode|pass code) (?:is|was) \d{4,}\b/i],
   ["credential assignment", /\b(?:password|passwd|secret|api[_-]?key|access[_-]?token|auth[_-]?token)\s*[:=]\s*["'][^"'\s]{6,}["']/i],
 ];
 const files = execFileSync("git", ["ls-files", "-co", "--exclude-standard"], { cwd: root, encoding: "utf8" })
@@ -54,6 +57,7 @@ for (const t of manifest) {
   else if (sha !== t.sha256) fail(`${t.id}: ${t.file} does not match the recorded original`);
   const text = bytes.toString("utf8");
   if (/\[Passage withheld|withheld…\]/.test(text)) fail(`${t.id}: ${t.file} contains a redaction marker`);
+  for (const m of t.masked || []) if (!(text.split("\n")[m.line - 1] || "").includes(m.replacement)) fail(`${t.id}:${m.line}: masked credential not in place`);
   const b = bundled[t.id];
   if (!b) { fail(`${t.id}: missing from the bundle`); continue; }
   const lines = text.replace(/\r\n/g, "\n").split("\n").map((s, i) => [i + 1, s]).filter(([, s]) => s.trim());
@@ -67,4 +71,4 @@ if (problems.length) {
   console.error(`✗ Repository check failed (${problems.length}):\n  ` + problems.join("\n  "));
   process.exit(1);
 }
-console.log(`✓ Repository check passed: ${files.length} files scanned, no credentials; ${manifest.length} transcripts match their originals and all ${paras} paragraphs are in the published bundle.`);
+console.log(`✓ Repository check passed: ${files.length} files scanned, no credentials; ${manifest.length} transcripts match their recorded checksums and all ${paras} paragraphs are in the published bundle.`);

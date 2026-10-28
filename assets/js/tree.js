@@ -12,7 +12,7 @@
   // Family trees. `stop` people are shown but their descendants continue in another tree.
   SA.TREES = [
     { id: "somerville", label: "Somerville", root: "james-somerville-1bt", stop: {}, anchor: "captain-william-somerville" },
-    { id: "bellingham", label: "Bellingham of Castle Bellingham", root: "alan-bellingham-1709", stop: { "eliza-bellingham": "somerville" } },
+    { id: "bellingham", label: "Bellingham of Castle Bellingham", root: "thomas-bellingham", stop: { "eliza-bellingham": "somerville" }, anchor: "henry-bellingham-ltcol" },
     { id: "clinch", label: "Clinch (brewers of Witney)", root: "mr-clinch", stop: { "margaret-hall-clinch": "somerville" } },
     { id: "johnson", label: "Johnson (maternal)", root: "zachariah-johnson", stop: { "honor-johnson": "somerville" } },
     { id: "truell", label: "Truell of Clonmannon", root: "truell-of-clonmannon", stop: {} },

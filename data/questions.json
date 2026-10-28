@@ -4,7 +4,7 @@
   "title": "Did Archibald James marry Elizabeth Breakey, and was little Archie their son?",
   "status": "open",
   "priority": "high",
-  "desc": "The narrator's central puzzle. The diary and Eliza Nelson's letters imply a marriage, but \"there is no record of that marriage\" {q:170} {q:T2:71}; the narrator says only that \"there is no record at that date\" (1823) {q:T2:68}, while affirming in both transcripts that Archibald \"made the mistake of marrying that girl\" {q:130} {q:T2:58}. That little Archie was the son of Archibald and Elizabeth Brakey is \"believed, but not conclusively proven\" {q:108} {q:T2:50}. A compiled genealogy adds a marriage of Archibald James Somerville to an Elizabeth Crawford on 30 November 1836, and a son Bellingham Brooke born in St Louis in 1852 {s:winters-p67} {s:winters-p68}; both details come from an online tree and the IGI and have not been checked. The narrator connects the question to the dormant baronetcy {q:174} {q:T2:73}.",
+  "desc": "The narrator's central puzzle. The diary and Eliza Nelson's letters imply a marriage, but \"there is no record of that marriage\" {q:170} {q:T2:71}; the narrator says only that \"there is no record at that date\" (1823) {q:T2:68}, while affirming in both transcripts that Archibald \"made the mistake of marrying that girl\" {q:130} {q:T2:58}. That little Archie was the son of Archibald and Elizabeth Brakey is \"believed, but not conclusively proven\" {q:108} {q:T2:50}. A compiled genealogy adds a marriage of Archibald James Somerville to an Elizabeth Crawford on 30 November 1836, and a son Bellingham Brooke born in St Louis in 1852 {s:winters-p67} {s:winters-p68}; both details come from an online tree and the IGI and have not been checked. The narrator connects the question to the dormant baronetcy {q:174} {q:T2:73}. The second recording adds the narrator's fuller account: Archibald \"got a family girl, a village girl from Monaghan named Brakey into the family way and subsequently married that girl. We can find no record of the marriage … only in family correspondence\" {q:T3:132-133}; he \"lived in Trinidad from … 1823 … till 1835\", came home, and \"in 1836 … married, in a church, somebody of his own class, a lady called Elizabeth Crawford\", a marriage the narrator regards as bigamous because the first wife \"was still alive at the time\" {q:T3:133-135}. {ctx}The family's 1897 pedigree, sent in by Bellingham Arthur, records Archibald's birth at Kilkenny (13 May 1803) and death (7 February 1871), and neither marriage {s:visitation-1897}.",
   "alternatives": [
    "Married to Elizabeth Brakey (perhaps irregularly or abroad); Archie legitimate",
    "Not married to her; Archie acknowledged by his grandparents but illegitimate",
@@ -33,20 +33,25 @@
    "T2:68",
    "T2:70",
    "T2:71",
-   "T2:73"
+   "T2:73",
+   "T3:132",
+   "T3:133",
+   "T3:134",
+   "T3:135",
+   "T3:136"
   ]
  },
  {
   "id": "q-eighth-son",
   "title": "Who was the eighth son of Captain William and Eliza?",
-  "status": "partly resolved",
+  "status": "resolved",
   "priority": "medium",
-  "desc": "\"Eight boys and two girls\" {q:84, 96} {q:T2:40}, but only seven sons are named in the recording. A compiled genealogy (quoting an Ancestry tree) lists an eighth: Tenison, born 10 and died 22 August 1812 {s:winters-p67}. {int}This fits the narrator's account of names being reused after a child died, since the next son was Tenison Alan (1815). Still needs a baptism or burial record.",
+  "desc": "\"Eight boys and two girls\" {q:84, 96} {q:T2:40}, but only seven sons are named in the recording. A compiled genealogy (quoting an Ancestry tree) lists an eighth: Tenison, born 10 and died 22 August 1812 {s:winters-p67}. {int}This fits the narrator's account of names being reused after a child died, since the next son was Tenison Alan (1815). Still needs a baptism or burial record. Resolved. The family's 1897 pedigree lists all ten children, eight of them sons: William Henry, Archibald James, John Churchill, Corry, Bellingham, Tenison (born at Newry 10 August, died 22 August 1812), Tenison Alan and Samuel Riall {s:visitation-1897}. The family Bible, as read in the second recording, has the same Tenison: \"Tennyson born at Newry that's not Tennyson Allen that's Tennyson he died 12 days later\" {q:T3:32}.",
   "alternatives": [
    "Named in the Crisp's entry but not read out",
    "The count of eight is a slip"
   ],
-  "next": "Find the 1812 baptism or burial; read the full Crisp's pedigree.",
+  "next": "",
   "people": [
    "tenison-somerville-1812",
    "captain-william-somerville"
@@ -57,7 +62,10 @@
    112,
    126,
    "T2:40",
-   "T2:55"
+   "T2:55",
+   "T3:30",
+   "T3:31",
+   "T3:32"
   ]
  },
  {
@@ -106,14 +114,17 @@
  {
   "id": "q-tenison-children",
   "title": "The other children of Tenison and Eliza O'Connor",
-  "status": "partly resolved",
+  "status": "resolved",
   "priority": "medium",
-  "desc": "The narrator mentions only Bellingham Arthur and an unnamed elder brother, also in the RIC {q:12} {q:T2:6}, and then moves straight to Bellingham Arthur's own children {q:216-218} {q:T2:88}. A compiled genealogy citing the IGI lists six children: William Dennistoun (1842), Tenison Alan (1845–55), Erina Bellingham (1852), Bellingham Arthur (1853), Tenison Alan (1859) and Henry Bellingham (1859 or 1848) {s:winters-p68}. {int}The elder brother in the RIC is probably William Dennistoun; unverified. Audit, Oct 2026: the family tree dates Henry Bellingham Somerville's birth to 23 December 1848, not 1859; The Times's description of Bellingham Arthur as the fourth son favours 1848. It also records Erina as dying unmarried at Doncaster in 1927, against the compiled genealogy's 1883 marriage to Thomas Forster Woulfe {s:family-tree-2026}. Both conflicts are shown on the profiles.",
-  "next": "RIC officers' registers (HO 184) for William Dennistoun Somerville; Dublin baptismal registers.",
+  "desc": "The narrator mentions only Bellingham Arthur and an unnamed elder brother, also in the RIC {q:12} {q:T2:6}, and then moves straight to Bellingham Arthur's own children {q:216-218} {q:T2:88}. A compiled genealogy citing the IGI lists six children: William Dennistoun (1842), Tenison Alan (1845–55), Erina Bellingham (1852), Bellingham Arthur (1853), Tenison Alan (1859) and Henry Bellingham (1859 or 1848) {s:winters-p68}. {int}The archive at first guessed that the elder brother in the RIC was William Dennistoun (see the resolution below). Audit, Oct 2026: the family tree dates Henry Bellingham Somerville's birth to 23 December 1848, not 1859; The Times's description of Bellingham Arthur as the fourth son favours 1848. It also records Erina as dying unmarried at Doncaster in 1927, against the compiled genealogy's 1883 marriage to Thomas Forster Woulfe {s:family-tree-2026}. Both conflicts are shown on the profiles. Resolved by the family's own pedigree, printed in 1897 {s:visitation-1897}: William Dennistoun (born Trinidad, 8 June 1842), Tenison Alan (Trinidad, 22 February 1845 – 13 April 1855), Henry Bellingham (Dublin, 23 December 1848; \"an officer in the Royal Irish Constabulary\"; married Mary Dyas 1880; one daughter, Elizabeth Mary), Erina Bellingham (Dublin, 30 July 1852; married 1883 the Rev. Thomas Forster Rolfe, not \"Woulfe\"), Bellingham Arthur (17 November 1853) and Tenison Alan (Dublin, 28 July 1859). There were no twins: the compiled genealogy's 1859 date for Henry is wrong. The \"elder brother\" in the RIC was therefore Henry, as the second recording confirms (\"Bellingham Arthur's elder brother was called Henry Bellingham\"; his daughter's confirmation of arms calls him \"District Inspector, Royal Irish Constabulary\") {q:T3:77} {q:T3:81}, not William Dennistoun, who, the narrator says, could not speak {q:T3:19-21}.",
+  "next": "Optional: the RIC officers' register (HO 184) for Henry Bellingham Somerville.",
   "people": [
    "william-dennistoun-somerville",
    "tenison-alan-somerville",
-   "eliza-oconnor"
+   "eliza-oconnor",
+   "henry-bellingham-somerville-1859",
+   "erina-somerville",
+   "tenison-alan-somerville-1859"
   ],
   "cite": [
    12,
@@ -121,7 +132,10 @@
    218,
    228,
    "T2:6",
-   "T2:88"
+   "T2:88",
+   "T3:19",
+   "T3:77",
+   "T3:81"
   ]
  },
  {
@@ -129,7 +143,7 @@
   "title": "Is the 1887 \"District Inspector Somerville\" Bellingham Arthur? (Resolved: yes)",
   "status": "resolved",
   "priority": "high",
-  "desc": "Hansard names only \"District Inspector Somerville\" (24 March 1887) and \"Sub-Inspector Summerville\" (10 May 1887) {s:hansard-1887} {s:hansard-1887c}; the local history gives no first name {s:ballymacoda-1887}. The family's story matches closely: an RIC detachment from Cork, a dead rioter named Hanlon, a blade, arrest, Parliament, and reinstatement without a formal acquittal {q:312-322} {q:T2:118-127}, which is just what the 10 May reply describes. The narrator remembered \"the 1880s\", \"Captain\" Somerville and a fishing dispute. {int}Resolved: the officer was Bellingham Arthur Somerville. The evidence: (1) he was a serving RIC officer of exactly that rank: he joined in 1872, aged 18, and was a \"Retired D. I. R. I. Constabulary\" at the 1891 census {s:winters-p68}; the rank had been renamed from sub-inspector in 1883, which explains the two titles {s:ukpga-1883-s12}. (2) Ronayne's letter shows the officer was a \"young officer\" from outside, not the local District Inspector, Kerin {s:hansard-1887b}, matching the family's detachment \"from Cork\". (3) The family's account, independent of Hansard, matches every structural point, including the outcome the 10 May reply describes. (4) The family links the affair to his transfer to Wicklow, after which his career soon ended. Limitations: no surviving document seen gives the officer's first name, and the RIC service register (HO 184) has not been examined; the identification is therefore circumstantial but strong, and would be overturned only if another RIC officer named Somerville were found serving in Co. Cork in 1887. {ctx}Audit, Oct 2026: the family's Ancestry tree places two of his children's births at Queenstown, Co. Cork, in 1884 and 1885 and a death there in December 1887, which would put him in east Cork throughout the Youghal affair {s:family-tree-2026}. Uncited, but independent of the recording; the Cork civil registers would confirm it.",
+  "desc": "Hansard names only \"District Inspector Somerville\" (24 March 1887) and \"Sub-Inspector Summerville\" (10 May 1887) {s:hansard-1887} {s:hansard-1887c}; the local history gives no first name {s:ballymacoda-1887}. The family's story matches closely: an RIC detachment from Cork, a dead rioter named Hanlon, a blade, arrest, Parliament, and reinstatement without a formal acquittal {q:312-322} {q:T2:118-127}, which is just what the 10 May reply describes. The narrator remembered \"the 1880s\", \"Captain\" Somerville and a fishing dispute. {int}Resolved: the officer was Bellingham Arthur Somerville. The evidence: (1) he was a serving RIC officer of exactly that rank: he joined in 1872, aged 18, and was a \"Retired D. I. R. I. Constabulary\" at the 1891 census {s:winters-p68}; the rank had been renamed from sub-inspector in 1883, which explains the two titles {s:ukpga-1883-s12}. (2) Ronayne's letter shows the officer was a \"young officer\" from outside, not the local District Inspector, Kerin {s:hansard-1887b}, matching the family's detachment \"from Cork\". (3) The family's account, independent of Hansard, matches every structural point, including the outcome the 10 May reply describes. (4) The family links the affair to his transfer to Wicklow, after which his career soon ended. Limitations: no surviving document seen gives the officer's first name, and the RIC service register (HO 184) has not been examined; the identification is therefore circumstantial but strong, and would be overturned only if another RIC officer named Somerville were found serving in Co. Cork in 1887. {ctx}Audit, Oct 2026: the family's Ancestry tree places two of his children's births at Queenstown, Co. Cork, in 1884 and 1885 and a death there in December 1887, which would put him in east Cork throughout the Youghal affair {s:family-tree-2026}. The family's own 1897 pedigree confirms these births and the death \"at Merville, Queenstown\" {s:visitation-1897}. On 8 September 1887 the Attorney General told the Commons that a nolle prosequi had been entered at the Cork Assizes in \"the Queen v. Sub-Inspector Somerville and Constable Ward\" {s:hansard-1887-sep8}. In the second recording, the narrator's written profile of his grandfather, read with the interviewer, describes him as \"arrested by D.I. Kellen of yore [Kerin of Youghal]\" and \"lodged in the county jail … with Constable Ward\" {q:T3:163-164}.",
   "next": "Optional confirmation: RIC officers' register (National Archives UK, HO 184) for Bellingham Arthur Somerville's stations in 1887; Cork Examiner reports of the inquest.",
   "people": [
    "bellingham-arthur-somerville",
@@ -146,7 +160,10 @@
    "T2:118",
    "T2:125",
    "T2:126",
-   "T2:127"
+   "T2:127",
+   "T3:163",
+   "T3:164",
+   "T3:165"
   ]
  },
  {
@@ -175,18 +192,19 @@
  },
  {
   "id": "q-captain-william-born",
-  "title": "Captain William: born 1776 or 1777?",
+  "title": "Captain William: born 1776, 1777 or 1778?",
   "status": "resolved",
   "priority": "low",
-  "desc": "Narrator: 1777, \"I think\" {q:62} {q:T2:30}. Published Bellingham genealogy: 1776 {s:lf-bellingham}; compiled genealogy: 3 March 1776 {s:winters-p67}. Resolved in favour of the published genealogies, which agree on 1776 (3 March 1776 in the compiled genealogy). The narrator's \"1777, I think\" is kept as his recollection. Audit, Oct 2026: the year 1776 stands; the day is disputed (3 March, Stirnet; 17 March, the family tree).",
+  "desc": "Narrator, first recording: 1777, \"I think\" {q:62} {q:T2:30}. Published genealogies: 1776 {s:lf-bellingham}; 3 March 1776 (Stirnet, quoted in a compiled genealogy) {s:winters-p67}; the family tree, 17 March. In the second recording the narrator read the family Bible's entry, heard as \"born on the 7th of March, 1778\" {q:T3:28}. Resolved: the family's own pedigree, printed in 1897 from the family's records, gives \"born 7 March, bapt. at St. Thomas', Dublin, 11 March 1776\" {s:visitation-1897}. The Bible's day agrees; its year, as heard, is probably a slip in the reading or the transcription, and the narrator's 1777 is a year out ({qn:q-family-bible}).",
   "people": [
    "captain-william-somerville"
   ],
   "cite": [
    62,
-   "T2:30"
+   "T2:30",
+   "T3:28"
   ],
-  "next": ""
+  "next": "Optional: the St Thomas' baptism register, and a photograph of the Bible page."
  },
  {
   "id": "q-sir-william-younger",
@@ -231,7 +249,7 @@
   "title": "The cousin in Canada who gave family members \"a leg up\"",
   "status": "partly resolved",
   "priority": "low",
-  "desc": "Transcript B clarifies A's garbled \"regiment law for sale\": \"there was a cousin who was a regimental officer in Canada and he appears in the records as being, as giving a leg up to a number of family members\" {q:T2:15-16} {q:30-34}; and \"one of the Bellinghams was a descendant of an early settler in Canada\" {q:T2:17}. The cousin is not identified. Monique's family, the Bâbys, were early settlers of Detroit, which may be what is meant.",
+  "desc": "Transcript B clarifies A's garbled \"regiment law for sale\": \"there was a cousin who was a regimental officer in Canada and he appears in the records as being, as giving a leg up to a number of family members\" {q:T2:15-16} {q:30-34}; and \"one of the Bellinghams was a descendant of an early settler in Canada\" {q:T2:17}. The cousin is not identified. Monique's family, the Bâbys, were early settlers of Detroit, which may be what is meant. In the second recording the narrator calls the family tree of Corry Somerville's descendants \"the Canadian family\" {q:T3:177-178}, although Corry settled at Rochester, New York; whether this is connected with the cousin in Canada is not clear.",
   "people": [
    "alan-bellingham-1773",
    "monique-baby"
@@ -242,15 +260,17 @@
    34,
    "T2:15",
    "T2:16",
-   "T2:17"
+   "T2:17",
+   "T3:177",
+   "T3:178"
   ]
  },
  {
   "id": "q-dorothea-eldest",
   "title": "Was Dorothea or Eliza the eldest sister?",
-  "status": "open",
+  "status": "resolved",
   "priority": "low",
-  "desc": "Narrator: \"Dorothea being Eliza's eldest sister\" {q:144} {q:T2:63-64}. Published genealogy: Elizabeth b. 1779, Dorothea b. c. 1780, though Dorothea married first (1798) {s:lf-bellingham}.",
+  "desc": "Narrator: \"Dorothea being Eliza's eldest sister\" {q:144} {q:T2:63-64}. Published genealogy: Elizabeth b. 1779, Dorothea b. c. 1780, though Dorothea married first (1798) {s:lf-bellingham}. Resolved in the narrator's favour. The family Bible, as read in the second recording, calls Eliza \"II[nd] daughter to Colonel Bellingham\" {q:T3:28-29}, and the family's 1897 pedigree \"Elizabeth, 2nd dau. of Colonel Henry Bellingham\" {s:visitation-1897}; the narrator repeats that Dorothea was \"the eldest of the three girls\" {q:T3:236}. Dorothea's published birth year, c. 1780, is only an estimate.",
   "people": [
    "dorothea-bellingham",
    "eliza-bellingham"
@@ -259,8 +279,12 @@
    28,
    144,
    "T2:13",
-   "T2:63"
-  ]
+   "T2:63",
+   "T3:28",
+   "T3:29",
+   "T3:236"
+  ],
+  "next": ""
  },
  {
   "id": "q-clonmel",
@@ -320,14 +344,15 @@
   "title": "Tenison's Dublin address: \"Livingston\" or \"Leinster\" Avenue?",
   "status": "open",
   "priority": "low",
-  "desc": "Transcript A: \"Livingston Avenue. Breath of Hines\" {q:216}; transcript B: \"Linster Avenue. Brathmines\" {q:T2:87-88}. Leinster Road is in Rathmines {s:wp-rathmines}; Leinster Avenue is in North Strand, near the family's earlier home in Bayview Avenue {s:dublish-leinster-ave}.",
+  "desc": "Transcript A: \"Livingston Avenue. Breath of Hines\" {q:216}; transcript B: \"Linster Avenue. Brathmines\" {q:T2:87-88}. Leinster Road is in Rathmines {s:wp-rathmines}; Leinster Avenue is in North Strand, near the family's earlier home in Bayview Avenue {s:dublish-leinster-ave}. The family Bible, as read in the second recording, places Eliza's death in 1839 \"at Bayview Avenue in the City of Dublin\" {q:T3:29}, a few streets from Leinster Avenue.",
   "places": [
    "rathmines"
   ],
   "cite": [
    216,
    "T2:87",
-   "T2:88"
+   "T2:88",
+   "T3:29"
   ],
   "alternatives": [
    "Leinster Road, Rathmines",
@@ -600,10 +625,12 @@
   "title": "Date of the recording",
   "status": "resolved",
   "priority": "low",
-  "desc": "Transcript A's file is labelled \"27 Oct at 16-17\"; transcript B's file is stamped \"2026-10-27 19.50.34\". The narrator, born 1937, is \"coming up to 90\" {q:50} {q:T2:25}. Everything points to 27 October 2026, but file timestamps record when the files were made, not necessarily the conversation. Resolved as far as the evidence allows: the speakers are now identified as William Somerville and his grandson Gergely (family information), both transcript files are stamped 27 October 2026, and nothing in the recording contradicts that date, so it is adopted.",
+  "desc": "Transcript A's file is labelled \"27 Oct at 16-17\"; transcript B's file is stamped \"2026-10-27 19.50.34\". The narrator, born 1937, is \"coming up to 90\" {q:50} {q:T2:25}. Everything points to 27 October 2026, but file timestamps record when the files were made, not necessarily the conversation. Resolved as far as the evidence allows: the speakers are now identified as William Somerville and his grandson Gergely (family information), both transcript files are stamped 27 October 2026, and nothing in the recording contradicts that date, so it is adopted. A second conversation (transcript C) was recorded the next day: its file is named \"28\", and the narrator refers back to what he \"mentioned yesterday\" {q:T3:8} {q:T3:17}. It is dated 28 October 2026.",
   "cite": [
    50,
-   "T2:25"
+   "T2:25",
+   "T3:8",
+   "T3:17"
   ],
   "next": ""
  },
@@ -612,7 +639,7 @@
   "title": "Where are the original papers?",
   "status": "partly resolved",
   "priority": "high",
-  "desc": "The recording refers to Bellingham Arthur's six volumes {q:6} {q:T2:3}; his office and personal diaries, which the narrator owns {q:T2:133}; transcripts of Captain William's diary {q:132} {q:T2:59-60}; Eliza's letter about Henry {q:52} {q:T2:25-26}; the Nelson correspondence {q:166} {q:T2:69}; the Crisp's entry {q:124} {q:T2:54-55}; portraits of Dorothea and Monique and a miniature of Henry {q:26-28} {q:36} {q:44} {q:T2:13} {q:T2:18} {q:T2:22}; Pat's camp photographs and an article about his escape {q:452} {q:T2:173-175}; Reginald's Kenya photographs {q:504} {q:T2:196}; and Monique's booklet {q:42} {q:T2:21}. Cousin Eliza began photographing the portraits {q:46} {q:T2:23}. An inventory, with scans linked from this archive, is the most valuable next step. Partly resolved: some of the papers can now be located. (1) Cecil B. Rooke's own Somerville research (notebooks, will and parish-register extracts partly copied by Bellingham Arthur, letters from her brother Reg and sister-in-law Vere, the supporting notes for the 1955 pedigree) is in the National Library of Ireland's Rooke Papers, Ms. 33,584–33,601. (2) The registered Somerville pedigree is G.O. MS 182A, pp. 119–130, at the National Library. (3) In 1998 the library noted that \"The Somerville Papers are now in the possession of Mr. William Somerville\", the narrator {s:nli-rooke}. An inventory of what the narrator holds is still the most valuable next step.",
+  "desc": "The recording refers to Bellingham Arthur's six volumes {q:6} {q:T2:3}; his office and personal diaries, which the narrator owns {q:T2:133}; transcripts of Captain William's diary {q:132} {q:T2:59-60}; Eliza's letter about Henry {q:52} {q:T2:25-26}; the Nelson correspondence {q:166} {q:T2:69}; the Crisp's entry {q:124} {q:T2:54-55}; portraits of Dorothea and Monique and a miniature of Henry {q:26-28} {q:36} {q:44} {q:T2:13} {q:T2:18} {q:T2:22}; Pat's camp photographs and an article about his escape {q:452} {q:T2:173-175}; Reginald's Kenya photographs {q:504} {q:T2:196}; and Monique's booklet {q:42} {q:T2:21}. Cousin Eliza began photographing the portraits {q:46} {q:T2:23}. An inventory, with scans linked from this archive, is the most valuable next step. Partly resolved: some of the papers can now be located. (1) Cecil B. Rooke's own Somerville research (notebooks, will and parish-register extracts partly copied by Bellingham Arthur, letters from her brother Reg and sister-in-law Vere, the supporting notes for the 1955 pedigree) is in the National Library of Ireland's Rooke Papers, Ms. 33,584–33,601. (2) The registered Somerville pedigree is G.O. MS 182A, pp. 119–130, at the National Library. (3) In 1998 the library noted that \"The Somerville Papers are now in the possession of Mr. William Somerville\", the narrator {s:nli-rooke}. An inventory of what the narrator holds is still the most valuable next step. The second recording (transcript C) shows much of what the narrator holds: the family Bible, with an envelope containing a page of Captain William's original record, Tenison Alan's copy of 1850 and his record of his own children {q:T3:25-34}; Bellingham Arthur's notebooks {q:T3:4-11}; the family's copy of the Visitation of Ireland, with handwritten additions {q:T3:13-24}; Lily Somerville's confirmation of arms of 1924, with its seal {q:T3:76-87}; a 1929 newspaper cutting {q:T3:88-96}; the sales brochure of Somerville House {q:T3:101}; the pedigree rolls of the 1950s and a family tree of Corry's descendants {q:T3:177-188}; \"three volumes of the history of the Somervilles\", bought by Reginald at auction (probably The Memorie of the Somervilles, published in 1815 {s:wp-lord-somerville}) {q:T3:255-256}; and the portraits and miniatures at the other house {q:T3:236-275}. The interviewer photographed many of them {q:T3:12} {q:T3:14} {q:T3:87} {q:T3:96} {q:T3:233}, and the narrator's typed profiles were copied to him {q:T3:150-175} {q:T3:193-194}.",
   "cite": [
    6,
    42,
@@ -631,9 +658,18 @@
    "T2:54",
    "T2:133",
    "T2:173",
-   "T2:196"
+   "T2:196",
+   "T3:4",
+   "T3:13",
+   "T3:25",
+   "T3:34",
+   "T3:79",
+   "T3:96",
+   "T3:184",
+   "T3:188",
+   "T3:255"
   ],
-  "next": "Inventory and scan the papers in the narrator's keeping; consult NLI Ms. 33,586 and G.O. MS 182A."
+  "next": "Transcribe the interviewer's photographs of the Bible pages, the confirmation of arms and the cutting; inventory and scan the rest; consult G.O. MS 182A and the Grants and Confirmations register, vol. M."
  },
  {
   "id": "q-monaghan-years",
@@ -675,8 +711,8 @@
   "title": "When did Tenison Alan Somerville die, and who died first?",
   "status": "partly resolved",
   "priority": "medium",
-  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88}; A is garbled (\"about 189…\") {q:216}. A compiled genealogy gives Tenison's death as 31 July 1895 {s:winters-p67} and none for his wife. Either the narrator's order of deaths or the online date is wrong. Partly resolved: the archive adopts 31 July 1895 (IGI, via the compiled genealogy) for Tenison's death, rather than the narrator's \"about 1890\". Whether he or his wife died first is still open, since no record of her death has been found. Audit, Oct 2026: the family tree gives Eliza (Cecilia Eliza Priscilla) O'Connor's death as 31 December 1898 at Rathmines {s:family-tree-2026}. If right, the narrator's order (Tenison first) is correct and both his dates are early. Uncited.",
-  "next": "Civil death register, Rathmines, December 1898.",
+  "desc": "Transcript B: \"they lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" {q:T2:88}; A is garbled (\"about 189…\") {q:216}. A compiled genealogy gives Tenison's death as 31 July 1895 {s:winters-p67} and none for his wife. Either the narrator's order of deaths or the online date is wrong. Partly resolved: the archive adopts 31 July 1895 (IGI, via the compiled genealogy) for Tenison's death, rather than the narrator's \"about 1890\". Whether he or his wife died first is still open, since no record of her death has been found. Audit, Oct 2026: the family tree gives Eliza (Cecilia Eliza Priscilla) O'Connor's death as 31 December 1898 at Rathmines {s:family-tree-2026}. If right, the narrator's order (Tenison first) is correct and both his dates are early. Uncited. The family's 1897 pedigree confirms 31 July 1895, with his burial in Mount Jerome Cemetery on 3 August and probate of his will on 20 September 1895 {s:visitation-1897}; the date is now secure. Whether his wife died after him remains open.",
+  "next": "Civil death register, Rathmines, December 1898 (for Eliza).",
   "people": [
    "tenison-alan-somerville",
    "eliza-oconnor"
@@ -707,7 +743,7 @@
   "title": "Rachel: Margaret's sister or her mother?",
   "status": "partly resolved",
   "priority": "low",
-  "desc": "The narrator: Margaret's elder sister and co-heiress was \"Rachel\" {q:330} {q:T2:131}. A compiled genealogy names Margaret's mother as Rachel Hall Wright {s:winters-p68}. Both could be true. Partly resolved: the 1891 census at Witney lists Margaret's mother as Rachel H. Clinch, aged 64, with her husband William Clinch (70, banker and brewer) {s:winters-p68}. So a Rachel Clinch certainly existed in the right household: Margaret's mother. Whether Margaret also had a sister Rachel who shared the inheritance, as the narrator says, is unconfirmed; he may have conflated mother and sister. Audit, Oct 2026: the family tree records only Margaret as a child of William Clinch and Rachel Hall Wright, and dates their deaths to 1891 and 1894 {s:family-tree-2026}; William Clinch's will (probate 1891) would settle the inheritance.",
+  "desc": "The narrator: Margaret's elder sister and co-heiress was \"Rachel\" {q:330} {q:T2:131}. A compiled genealogy names Margaret's mother as Rachel Hall Wright {s:winters-p68}. Both could be true. Partly resolved: the 1891 census at Witney lists Margaret's mother as Rachel H. Clinch, aged 64, with her husband William Clinch (70, banker and brewer) {s:winters-p68}. So a Rachel Clinch certainly existed in the right household: Margaret's mother. Whether Margaret also had a sister Rachel who shared the inheritance, as the narrator says, is unconfirmed; he may have conflated mother and sister. Audit, Oct 2026: the family tree records only Margaret as a child of William Clinch and Rachel Hall Wright, and dates their deaths to 1891 and 1894 {s:family-tree-2026}; William Clinch's will (probate 1891) would settle the inheritance. The family's 1897 pedigree calls Margaret \"2nd dau. of William Clinch of The Elms, Witney, by Rachel Hall his wife, dau. of John Wright\" {s:visitation-1897}: her mother was Rachel, and there was an elder daughter, which supports the narrator's account of a sister who shared the inheritance, though the pedigree does not name her.",
   "people": [
    "rachel-clinch",
    "rachel-hall-wright",
@@ -780,27 +816,67 @@
   "id": "q-baronetcy-succession",
   "title": "Who, if anyone, is heir to the dormant Somerville baronetcy?",
   "status": "open",
-  "priority": "medium",
-  "desc": "The baronetcy became dormant when the 2nd Baron Athlumney died childless on 8 January 1929 {q:174} {q:T2:73} {s:wp-2nd-baron}. The narrator raises it to explain why Archibald's marriage matters {q:174} {q:T2:73}. This archive does not assess any claim. A claimant must prove legitimate male-line descent from a baronet, so the open points include: whether the senior line (from Quaile) has any surviving male heirs; whether Major William was a son of the 1st Baronet, as the narrator and a compiled genealogy say {s:winters-p66}; whether Archibald James was lawfully married and has male-line descendants (the 1852 St Louis birth of Bellingham Brooke Somerville is one lead {s:winters-p68}); and the male lines of Corry, Tenison Alan and his sons.",
+  "priority": "high",
+  "desc": "The baronetcy became dormant when the 2nd Baron Athlumney, the 6th Baronet, died childless on 8 January 1929 {q:174} {q:T2:73} {s:wp-2nd-baron} {s:wp-somerville-baronets}; the press then reported that \"Major William A.T.B. Somerville\" (Bunt) was \"heir to the baronetcy\" {q:T3:92-93}. The narrator's family claim it as the senior surviving male line from Major William, second son of the 1st Baronet. His father \"started to make\" the claim in the 1950s–60s, and he is now pursuing it with the College of Arms, where the pursuivant handling it \"was optimistic\" {q:T3:71-72} {q:T3:139-140} {q:T3:188-189}. This archive does not decide the claim; it sets out the evidence for each branch. (1) The senior line, from Quaile, ended in 1929 {s:wp-somerville-baronets}. (2) Major William's only son was Captain William {s:visitation-1897}. (3) Captain William's eldest son, William Henry, \"died s.p. in 1847\", without children {s:visitation-1897}. (4) Archibald James, the second son, is the crux. The narrator holds that he married Elizabeth Brakey about 1823, that his 1836 church marriage to Elizabeth Crawford was therefore bigamous, and that the \"American Somervilles\" descended from it are illegitimate {q:T3:132-136} {q:T3:142-144}. But there is \"no record of the marriage … only in family correspondence\" {q:T3:132-133}, and the family's own 1897 pedigree records no marriage or children for him {s:visitation-1897}. {int}The argument cuts both ways: if the first marriage cannot be proved, the second cannot be shown to be bigamous, and the Crawford line (Bellingham Brooke Somerville, born at St Louis in 1852 {s:winters-p68}) would rank first; if it can be proved, and little Archie was born in wedlock and left sons, his line would rank first instead ({qn:q-archibald-marriage}). (5) Corry, the fourth son: the narrator found that he married Lucinda in Dublin, and that his only son, William Bellingham Somerville, died childless {q:T3:178-181} ({qn:q-corry-line}). (6) John Churchill, Tenison and Samuel Riall died as infants, and Bellingham (1810–44) left no recorded children {s:visitation-1897}. (7) Tenison Alan, the seventh son: his eldest son William Dennistoun is not known to have married; Tenison Alan (1845) died a child; Henry Bellingham had only a daughter, Lily {q:T3:77} {s:visitation-1897}; then comes Bellingham Arthur, whose younger brother Tenison Alan (1859) ranks after him. Of Bellingham Arthur's sons, Bunt, Jim and Pat had no sons, the narrator says, so the line passes to Reginald, the youngest, and to the narrator {q:T3:72}. After him: \"If I die, James is the next heir … Then it goes to Charles\" {q:T3:73}. In the latest Debrett's, on the advice of a professional genealogist, an American descendant (\"John Somerville in Texas\") is described as \"probably\" the baronet {q:T3:131} {q:T3:137}. The narrator calls him the sixth baronet; since the 2nd Baron was the 6th, a successor would be the 7th {s:wp-somerville-baronets}. To be recognised, a claim must be proved for entry on the Official Roll of the Baronetage {s:wp-official-roll}.",
   "people": [
    "james-somerville-2nd-baron",
    "major-william-somerville",
    "archibald-james-somerville",
    "little-archie",
    "bellingham-brooke-somerville",
-   "tenison-alan-somerville"
+   "tenison-alan-somerville",
+   "narrator",
+   "reginald-somerville",
+   "bunt",
+   "corry-somerville",
+   "corry-son-william",
+   "william-henry-somerville",
+   "elizabeth-crawford",
+   "henry-bellingham-somerville-1859",
+   "william-dennistoun-somerville"
   ],
   "cite": [
    174,
-   "T2:73"
-  ]
+   "T2:73",
+   "T3:70",
+   "T3:71",
+   "T3:72",
+   "T3:73",
+   "T3:92",
+   "T3:93",
+   "T3:131",
+   "T3:132",
+   "T3:133",
+   "T3:134",
+   "T3:135",
+   "T3:136",
+   "T3:137",
+   "T3:138",
+   "T3:139",
+   "T3:140",
+   "T3:142",
+   "T3:143",
+   "T3:144",
+   "T3:178",
+   "T3:179",
+   "T3:180",
+   "T3:181",
+   "T3:188",
+   "T3:189"
+  ],
+  "alternatives": [
+   "The narrator's line (Tenison Alan, Bellingham Arthur, Reginald) is senior, if Archibald James left no legitimate male line and William Dennistoun had no sons",
+   "Archibald James's American descendants by Elizabeth Crawford are senior, if no earlier marriage can be proved",
+   "Little Archie's line is senior, if Archibald married Elizabeth Brakey before his birth and the line continued"
+  ],
+  "next": "The College of Arms file (Rouge Dragon Pursuivant); the latest and penultimate editions of Debrett's; William Dennistoun Somerville's marriage, if any; the 1836 Crawford marriage record and Bellingham Brooke Somerville's descendants; the Dublin marriage of Corry and Lucinda (about 1834)."
  },
  {
   "id": "q-reginald-birth",
   "title": "Reginald's birth year",
-  "status": "partly resolved",
+  "status": "resolved",
   "priority": "low",
-  "desc": "Both transcripts: \"My father was 17 when the Great War started in 1914\" {q:348} {q:T2:138}, and \"He was 38 at the time\" (about 1934) {q:510} {q:T2:199}. Those imply 1896–97, but no record has been found. Audit, Oct 2026: the family tree cites a civil birth registration in 1897, Rathdrum district (which includes Clermont), and the 1901 and 1911 censuses {s:family-tree-2026}. 1897 is adopted as probable.",
+  "desc": "Both transcripts: \"My father was 17 when the Great War started in 1914\" {q:348} {q:T2:138}, and \"He was 38 at the time\" (about 1934) {q:510} {q:T2:199}. Those imply 1896–97, but no record has been found. Audit, Oct 2026: the family tree cites a civil birth registration in 1897, Rathdrum district (which includes Clermont), and the 1901 and 1911 censuses {s:family-tree-2026}. 1897 is adopted as probable. Resolved: the printed additions to the family's pedigree record \"Reginald Malcolm John Bellingham Somerville, born at Clermont 14 February 1897\" {s:visitation-additions}, and in the second recording the narrator reads the same date from the family's copy, where his father had written in his own entry {q:T3:14} {q:T3:24}.",
   "people": [
    "reginald-somerville"
   ],
@@ -808,9 +884,11 @@
    348,
    510,
    "T2:138",
-   "T2:199"
+   "T2:199",
+   "T3:14",
+   "T3:24"
   ],
-  "next": "The civil birth register entry (day and place)."
+  "next": ""
  },
  {
   "id": "q-hungarian-family",
@@ -825,6 +903,192 @@
   "cite": [
    "588-598",
    "T2:235-240"
+  ]
+ },
+ {
+  "id": "q-family-bible",
+  "title": "The family Bible: what exactly does it record?",
+  "status": "open",
+  "priority": "high",
+  "desc": "The narrator keeps the family Bible in which Captain William \"entered in all his ten children here … As they were born or baptized\" {q:T3:26-27}, with an envelope holding a page of the original record, Tenison Alan's copy of 1850 and his record of his own children {q:T3:34}. In the second recording he read some entries aloud {q:T3:28-32}. Most agree with the family's printed pedigree of 1897 {s:visitation-1897}: Captain William's day of birth (7 March), the marriage on 30 August 1800, Eliza as \"2nd daughter\", the first Eliza's birth on 1 February 1808, and births at Lucan, Newry and Dundalk. Three dates, as heard, do not: Captain William's year (\"1778\"; the pedigree has 1776), Eliza's birth (\"the 8th of September 1772\"; the pedigree has 5 September 1779, and her parents married only in June 1772) and her death (\"the 18th of December 1839\"; the pedigree has the 16th). The Bible also has the first Eliza dying \"at Warren Point … on the 13th of June, 1812\" {q:T3:31}, where the pedigree has 13 January ({qn:q-eliza-infant-death}). {int}With only one machine transcript, a misheard number cannot be told from a misread one; and the 1897 pedigree may itself follow Tenison Alan's 1850 copy rather than the original page. The interviewer photographed pages as they talked {q:T3:27}; a transcription from the photographs would settle these points.",
+  "alternatives": [
+   "The transcript misheard the numbers",
+   "The narrator misread the handwriting",
+   "The Bible and the 1897 pedigree genuinely differ (the pedigree may follow Tenison Alan's copy)"
+  ],
+  "next": "Transcribe the Bible pages and the 1850 copy from the interviewer's photographs, and compare them with the 1897 pedigree.",
+  "people": [
+   "captain-william-somerville",
+   "eliza-bellingham",
+   "eliza-somerville-infant",
+   "tenison-alan-somerville"
+  ],
+  "cite": [
+   "T3:25",
+   "T3:26",
+   "T3:27",
+   "T3:28",
+   "T3:29",
+   "T3:30",
+   "T3:31",
+   "T3:32",
+   "T3:34"
+  ]
+ },
+ {
+  "id": "q-arms-1924",
+  "title": "The confirmation of arms: when, and on what evidence?",
+  "status": "partly resolved",
+  "priority": "medium",
+  "desc": "The narrator: \"In our case, our family's case, there wasn't a formal grant of arms, but there was a confirmation of arms\", obtained by Lily Somerville \"in the 1930s, I think it was\" {q:T3:76-78}. He read the original aloud: Sir Nevile Wilkinson, Ulster King of Arms, confirms to \"Elizabeth Mary Somerville … only child of Henry Bellingham Somerville\" and to \"the descendants of the Major Somerville in His Majesty's Army\" arms \"long used and borne\" by the family but not recorded {q:T3:80-85}. Partly resolved: the National Library's catalogue of the Genealogical Office register (\"Grants and Confirmations of Arms\", vol. M, 1920–29, fol. 44) dates the confirmation 2 April 1924 {s:nli-arms-1924}, a description known here only from search results. The arms are those printed with the family's pedigree in 1897, where, unlike the next pedigree in the volume, they are not described as \"on record in the Ulster Office\" {s:visitation-1897}. Open: what evidence of use was submitted, and whether the 1924 grant adds a mark of difference for Major William's line.",
+  "next": "Read vol. M, fol. 44, at the National Library, and the date on the original letters patent.",
+  "people": [
+   "elizabeth-mary-somerville",
+   "henry-bellingham-somerville-1859",
+   "major-william-somerville"
+  ],
+  "cite": [
+   "T3:76",
+   "T3:77",
+   "T3:78",
+   "T3:79",
+   "T3:80",
+   "T3:81",
+   "T3:82",
+   "T3:83",
+   "T3:84",
+   "T3:85",
+   "T3:86"
+  ]
+ },
+ {
+  "id": "q-corry-line",
+  "title": "Corry Somerville's marriage and descendants",
+  "status": "partly resolved",
+  "priority": "high",
+  "desc": "Corry matters to the baronetcy because he was older than Tenison Alan. In the first recording the narrator spoke of his illegitimate children and of his marriage to Lucinda, who had worked in the household {q:126-130} {q:178-180} {q:T2:56} {q:T2:75-76}. In the second he reports his own recent research: \"I found … that he did marry Lucinda. And so all his children were legitimate. He only had one son, William Bellingham Somerville. And he died without any children. So the male line of Corrie died with him\"; \"Corrie and Lucinda were married in Dublin before they went west to America … to Rochester and New York\"; the rest of the family \"consisted of daughters\" {q:T3:178-181}. The question was first raised by the Garter King of Arms in the 1950s or 1960s {q:T3:180}. {ctx}A compiled genealogy dates the marriage to 16 May 1834 and Corry's death to 12 January 1880 at Cleveland, Ohio {s:winters-p67}; the family's 1897 pedigree has \"died in America 20 January 1879\" and records no marriage or children {s:visitation-1897}. Partly resolved: the narrator's finding removes Corry's line from the succession if the son's death without issue is documented.",
+  "next": "The Dublin marriage record (about 1834); Corry's death record (1879 or 1880); William Bellingham Somerville's death; the family tree of Corry's descendants in the narrator's keeping.",
+  "people": [
+   "corry-somerville",
+   "lucinda-simmonton",
+   "corry-son-william"
+  ],
+  "places": [
+   "rochester",
+   "cleveland"
+  ],
+  "cite": [
+   126,
+   128,
+   178,
+   180,
+   "T2:75",
+   "T3:177",
+   "T3:178",
+   "T3:179",
+   "T3:180",
+   "T3:181",
+   "T3:188"
+  ]
+ },
+ {
+  "id": "q-tenison-judge",
+  "title": "Was Eliza Bellingham's mother the granddaughter of Judge Tennison?",
+  "status": "partly resolved",
+  "priority": "medium",
+  "desc": "Showing a portrait, the narrator says: \"That is Judge Tennyson. And his granddaughter was the mother of Eliza Bellingham\" {q:T3:274}. Eliza's mother, Elizabeth Tenison (c. 1750–1814), was \"dau. of Richard Tenison of Thomastown, co. Louth\" {s:visitation-1897} {s:lf-bellingham}. {ctx}Thomas Tennison (1707–1779), MP for Dunleer and a judge of the Common Pleas, had \"one son, Richard, who predeceased his father by 20 years, leaving at least one daughter but no son\" {s:wp-thomas-tennison}. {int}Partly resolved: a Richard Tenison of Co. Louth who died about 1759 leaving a daughter fits Elizabeth well, and supports the narrator; but no document seen names the daughter. It also corrects the family's online tree, which had made her the daughter of a Richard Tenison who died in 1725.",
+  "next": "Judge Tennison's will (1779) or his son Richard's; Kingsley's sources for Elizabeth Tenison.",
+  "people": [
+   "elizabeth-tenison",
+   "richard-tenison",
+   "thomas-tennison"
+  ],
+  "cite": [
+   "T3:274"
+  ]
+ },
+ {
+  "id": "q-wicked-alan",
+  "title": "Who was \"Wicked Alan\"?",
+  "status": "open",
+  "priority": "low",
+  "desc": "A portrait at the family house is labelled on the back, as read aloud, \"Wicked Alan, son of Henry Bellingham\" and \"probably\" {q:T3:273-274}. {ctx}Two Alans were sons of a Henry Bellingham: {p:alan-bellingham-1709|Alan} (1709–96), son of Henry Bellingham, MP for Dundalk, and {p:alan-bellingham-1773|Alan} (c. 1773–1821), son of Lt-Col. Henry, whom the narrator described as \"unsuccessful\" and \"unstable\" and who lost Castle Bellingham {q:28-30} {s:lf-bellingham}. Kingsley calls neither of them wicked. A third, Alan Bellingham (1656–93) of the English Levens line, was \"an ingenious but unhappy young man\" who ran up debts {s:lf-bellingham}.",
+  "alternatives": [
+   "Alan Bellingham (c. 1773–1821), Eliza's brother",
+   "Alan Bellingham (1709–96), Eliza's grandfather"
+  ],
+  "next": "Examine the portrait's label and costume; family letters mentioning \"Wicked Alan\".",
+  "people": [
+   "alan-bellingham-1773",
+   "alan-bellingham-1709"
+  ],
+  "cite": [
+   28,
+   30,
+   "T3:271",
+   "T3:273",
+   "T3:274"
+  ]
+ },
+ {
+  "id": "q-eliza-infant-death",
+  "title": "When and where did the first Eliza die?",
+  "status": "open",
+  "priority": "low",
+  "desc": "The family Bible, as read aloud: \"February 1st, 1808 … died at Warren Point near Newry on landing from Liverpool on the 13th of June, 1812, buried in Clonallan churchyard\" {q:T3:31}. The 1897 pedigree: born at Athboy 1 February 1808, \"died 13 January 1812\" {s:visitation-1897}. A compiled genealogy: 13 June 1812 {s:winters-p67}. {int}June fits the family's movements: her brother Tenison was born at Newry, a few miles from Warrenpoint, that August {s:visitation-1897}.",
+  "next": "Clonallan burial register, 1812.",
+  "people": [
+   "eliza-somerville-infant"
+  ],
+  "places": [
+   "warrenpoint",
+   "athboy"
+  ],
+  "cite": [
+   "T3:31"
+  ]
+ },
+ {
+  "id": "q-quentin",
+  "title": "Who is the Quentin Somerville of \"the Quentin Somerville debacle\"?",
+  "status": "resolved",
+  "priority": "low",
+  "desc": "In the first recording the interviewer asked about \"the Quentin Somerville debacle\"; the narrator said only \"He's not a Somerville at all … Not in our line, at least\" {q:176} {q:T2:74}. Resolved by the second recording and the published record: Sir Quentin Agnew-Somerville (1929–2010), son of Sir Peter Agnew and Enid Boan, who under the will of his uncle by marriage, the 2nd Baron Athlumney, inherited the Somerville estate in Co. Meath and took the name Somerville in 1950 {q:T3:110-116} {s:wp-agnew-somerville}. The \"debacle\" is presumably the loss of Somerville to a family that \"wasn't even an illegitimate Somerville\" {q:T3:112}, and its later sale.",
+  "next": "",
+  "people": [
+   "quentin-somerville",
+   "james-somerville-2nd-baron",
+   "enid-boan",
+   "peter-agnew"
+  ],
+  "cite": [
+   176,
+   "T2:74",
+   "T3:110",
+   "T3:111",
+   "T3:112",
+   "T3:113",
+   "T3:114",
+   "T3:115",
+   "T3:116"
+  ]
+ },
+ {
+  "id": "q-freedom",
+  "title": "Which Bellingham was given the freedom of Dublin?",
+  "status": "resolved",
+  "priority": "low",
+  "desc": "Reading the family's pedigree, the narrator says \"Bellingham also got the freedom of the city of Dublin\", and adds that it could be had by descent {q:T3:17-18}. Resolved: the 1897 pedigree records four admissions to the Freedom of the City of Dublin: Captain William and his son Bellingham on 10 January 1842, Tenison Alan on 18 July 1883 and Bellingham Arthur on 19 May 1893 {s:visitation-1897}.",
+  "next": "",
+  "people": [
+   "bellingham-somerville",
+   "bellingham-arthur-somerville",
+   "captain-william-somerville",
+   "tenison-alan-somerville"
+  ],
+  "cite": [
+   "T3:17",
+   "T3:18"
   ]
  }
 ]

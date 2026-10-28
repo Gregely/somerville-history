@@ -8,9 +8,10 @@
   "kind": "Remembered date (family knowledge, not eyewitness)",
   "hedge": "He was unsure: \"I think\".",
   "said": "\"He was born in 18… It's the year of the Crimean War, anyway. I think it was 1856. And he died in 1916\" (transcript B {q:T2:1-2}; transcript A {q:2}).",
-  "conclusion": "Born on 17 November 1853 and baptised in Dublin on 16 June 1854.",
+  "conclusion": "Born in Dublin on 17 November 1853 and baptised at St Thomas', Dublin, on 16 June 1854.",
   "explanation": "A baptism in June 1854 cannot precede a birth in 1856. Two further records quoted by the same compiler agree with 1853–54: he enlisted in the RIC in 1872 aged 18, and he was 36 at the census of April 1891. The Crimean War, by which he dated the birth, ran from 1853 to 1856, so it began in the actual year of birth.",
   "evidence": [
+   {"src": "visitation-1897", "kind": "secondary", "inspected": "Read directly (page image of the pedigree he himself supplied).", "claim": "\"Born in Dublin 17 November 1853, bapt. at St. Thomas', Dublin, 16 June 1854\"."},
    {"src": "winters-p68", "kind": "secondary", "inspected": "Read directly. The records it quotes (the IGI baptism index, the 1891 census and the RIC records on Ancestry) were not inspected.", "claim": "Born 17 Nov 1853, baptised Dublin 16 Jun 1854 (IGI); enlisted in the RIC in 1872 aged 18; aged 36 at Witney in the 1891 census."}
   ]
  },
@@ -47,7 +48,8 @@
    {"src": "hansard-1887b", "kind": "primary", "inspected": "Read directly.", "claim": "Disturbances at Youghal in early March 1887 (it confirms the disturbances, not their cause)."},
    {"src": "wp-plan-of-campaign", "kind": "context", "inspected": "Read directly.", "claim": "The tenants' rent campaign of 1886–91."}
   ],
-  "remaining": "No primary record of the cause (a contemporary newspaper or the inquest report) has been read."
+  "remaining": "No primary record of the cause (a contemporary newspaper or the inquest report) has been read.",
+  "alsoSaid": "In the second recording the narrator's own written profile, read with the interviewer, gives the cause as \"a protest over someone's arrest … Daniel Keller. It was about land … land agitation\" {q:T3:165}: his later research agrees with the correction."
  },
  {
   "id": "ic-youghal-weapon",
@@ -62,7 +64,8 @@
   "evidence": [
    {"src": "ballymacoda-1887", "kind": "secondary", "inspected": "Read directly. The civil death registration it quotes was not inspected.", "claim": "The RIC charged with fixed bayonets; the cause of death was registered as a \"wound inflicted by sword bayonet\"."}
   ],
-  "remaining": "The civil death register entry for Patrick Hanlon (Youghal district, March 1887) would confirm the wording."
+  "remaining": "The civil death register entry for Patrick Hanlon (Youghal district, March 1887) would confirm the wording.",
+  "alsoSaid": "In the second recording, reading the narrator's written profile of his grandfather, the interviewer says \"it was a bayonet. I found that out as well\", and the narrator agrees: \"Yes, it was a bayonet\" {q:T3:165}."
  },
  {
   "id": "ic-pat-capture",
@@ -86,32 +89,35 @@
  {
   "id": "ic-captain-william-born",
   "title": "Captain William Somerville's year of birth",
-  "verdict": "probable",
+  "verdict": "corrected",
   "people": ["captain-william-somerville"],
   "events": ["ev-capt-william-born"],
   "kind": "Remembered date (family knowledge)",
   "hedge": "He was unsure: \"I think\".",
   "said": "\"He was born in 1777, I think. Yes, I should make him 23\" [at his marriage in 1800] (transcript A {q:62}; transcript B {q:T2:30}).",
-  "conclusion": "Born in 1776 (3 March 1776 according to Stirnet); he was 24 at his marriage in August 1800.",
-  "explanation": "Two independently compiled genealogies agree on 1776. No baptism record has been seen, so this rests on secondary sources.",
+  "conclusion": "Born on 7 March 1776 and baptised at St Thomas', Dublin, on 11 March 1776; he was 24 at his marriage in August 1800.",
+  "explanation": "The family's own pedigree, printed in 1897 from the family's records, gives the day of birth and of baptism; two independently compiled genealogies agree on the year 1776. The narrator's \"1777, I think\" was a year out.",
   "evidence": [
+   {"src": "visitation-1897", "kind": "secondary", "inspected": "Read directly (page image of the printed pedigree). The baptism register it quotes was not inspected.", "claim": "\"Born 7 March, bapt. at St. Thomas', Dublin, 11 March 1776\"."},
    {"src": "lf-bellingham", "kind": "secondary", "inspected": "Read directly (published genealogy).", "claim": "Capt. William Somerville (1776–1844), married at Roscrea on 30 August 1800."},
    {"src": "winters-p67", "kind": "secondary", "inspected": "Read directly. Its source, Stirnet (subscription), was not inspected.", "claim": "Born 3 March 1776."}
   ],
-  "remaining": "Another family source gives 17 March; the day is uncertain, the year is not."
+  "remaining": "The St Thomas' baptism register, if it survives, would be primary proof. Stirnet's 3 March and the family tree's 17 March are wrong on the day.",
+  "alsoSaid": "Reading the family Bible in the second recording, he was heard as saying \"born on the 7th of March, 1778\" {q:T3:28}: the day agrees with the records, the year does not ({qn:q-family-bible})."
  },
  {
   "id": "ic-tenison-death",
   "title": "When Tenison Alan Somerville died",
-  "verdict": "probable",
+  "verdict": "corrected",
   "people": ["tenison-alan-somerville", "eliza-oconnor"],
   "events": ["ev-tenison-dies"],
   "kind": "Remembered date (family knowledge)",
   "hedge": "Approximate: \"I think about 1890\".",
   "said": "\"They lived there until he died first. I think about 1890. Early 1890s. She died about 1895\" (transcript B {q:T2:88}; transcript A {q:216}).",
-  "conclusion": "Tenison Alan Somerville died on 31 July 1895.",
-  "explanation": "The date comes from the IGI, as quoted by a compiled genealogy, and puts his death about five years later than the narrator thought. Whether he died before his wife, as the narrator says, cannot yet be tested, because no record of her death has been examined.",
+  "conclusion": "Tenison Alan Somerville died on 31 July 1895 and was buried in Mount Jerome Cemetery on 3 August 1895.",
+  "explanation": "The family's pedigree, printed in 1897 from information his son supplied two years after the death, gives the death, the burial and the probate of his will (20 September 1895); the IGI, as quoted by a compiled genealogy, agrees. The narrator's \"about 1890\" was five years early. Whether he died before his wife, as the narrator says, cannot yet be tested.",
   "evidence": [
+   {"src": "visitation-1897", "kind": "secondary", "inspected": "Read directly (page image of the printed pedigree).", "claim": "\"Died 31 July, bur. in Mount Jerome Cemetery, Dublin, 3 August 1895. Will dated 11 April 1893, proved at Dublin 20 September 1895\"."},
    {"src": "winters-p67", "kind": "secondary", "inspected": "Read directly. The IGI entry it cites was not inspected.", "claim": "Tenison Alan Somerville died 31 July 1895."}
   ],
   "remaining": "His civil death registration (Dublin, 1895) would confirm the date; see {qn:q-tenison-death}. A date for his wife's death given only in the family's tree is not used here."
@@ -119,15 +125,16 @@
  {
   "id": "ic-bunt-born",
   "title": "Uncle Bunt's year of birth",
-  "verdict": "probable",
+  "verdict": "corrected",
   "people": ["bunt"],
   "events": ["ev-bunt-born"],
   "kind": "Remembered date",
   "hedge": "Approximate: \"about 1884\".",
   "said": "\"Then the boys, Bunt. Bunt was born in about 1884\" (transcript B {q:T2:103}; transcript A {q:264}).",
-  "conclusion": "Born in 1882 or early 1883, not 1884.",
-  "explanation": "Two independent records, both quoted by the same compiler, agree. At the census of 5 April 1891 he was 8, so he was born between April 1882 and April 1883. At his death on 13 February 1951 he was 68, so he was born between February 1882 and February 1883. The family's tree gives 8 August 1882, which fits both, but it is not relied on here.",
+  "conclusion": "Born at Newtownards on 8 August 1882 and baptised at St Audoen's, Dublin, on 27 May 1883.",
+  "explanation": "The family's pedigree, printed in 1897 from information his father supplied, gives the date of birth and of baptism. Two independent ages quoted by a compiler agree with it: 8 at the census of April 1891, and 68 at his death on 13 February 1951. The family's tree also gives 8 August 1882.",
   "evidence": [
+   {"src": "visitation-1897", "kind": "secondary", "inspected": "Read directly (page image of the printed pedigree). The baptism register was not inspected.", "claim": "\"Born at Newtownards 8 Aug. 1882, bapt. at St. Audoen's, Dublin, 27 May 1883\"."},
    {"src": "winters-p68", "kind": "secondary", "inspected": "Read directly. The 1891 census return it quotes was not inspected.", "claim": "William A. B., aged 8, in the household at Witney, 1891."},
    {"src": "winters-p69", "kind": "secondary", "inspected": "Read directly. The death notice it quotes (The Times, 16 Feb 1951) was not inspected.", "claim": "Died 13 February 1951 at Reendesert Lodge, Bantry, aged 68."}
   ]
@@ -163,5 +170,69 @@
   ],
   "alsoSaid": "His own dates for her parents' deaths: 1916 {q:T2:2} and 1949 {q:T2:150}.",
   "remaining": "See {qn:q-eddie-papers}."
+ },
+ {
+  "id": "ic-arms-date",
+  "title": "When Lily Somerville obtained the confirmation of arms",
+  "verdict": "probable",
+  "people": ["elizabeth-mary-somerville"],
+  "events": ["ev-arms-1924"],
+  "kind": "Remembered date",
+  "hedge": "He was unsure: \"I think it was\".",
+  "said": "\"She was interested in family affairs. And in the 1930s, I think it was, she … got a confirmation of arms\" (transcript C {q:T3:77-78}).",
+  "conclusion": "The confirmation is dated 2 April 1924.",
+  "explanation": "The National Library's catalogue of the Genealogical Office register of grants and confirmations dates the Somerville confirmation to 2 April 1924, in the volume for 1920–29. Sir Nevile Wilkinson, who signed the original the narrator read aloud, was Ulster King of Arms from 1908 to 1940, which fits either date.",
+  "evidence": [
+   {"src": "nli-arms-1924", "kind": "secondary", "inspected": "Not inspected: known from the catalogue entry as shown in search results; the catalogue blocks automated access.", "claim": "Confirmation of arms to the descendants of Major William Somerville and to Elizabeth Mary Somerville of Morehampton Road, 2 April 1924 (vol. M, 1920–29, fol. 44)."},
+   {"src": "wp-ulster-king-of-arms", "kind": "context", "inspected": "Read directly.", "claim": "Wilkinson was Ulster King of Arms from 1908 to 1940."}
+  ],
+  "remaining": "Read the register (vol. M, fol. 44) and the date on the original letters patent ({qn:q-arms-1924})."
+ },
+ {
+  "id": "ic-college-of-arms",
+  "title": "Who founded the College of Arms",
+  "verdict": "corrected",
+  "kind": "General knowledge (an aside)",
+  "said": "\"It's an organisation set up by Henry II. I mean, it goes back to the yonks and yonks\" (transcript C {q:T3:42}).",
+  "conclusion": "The College of Arms was incorporated by royal charter of Richard III on 2 March 1484.",
+  "explanation": "The College is very old, as he says, but it dates from the reign of Richard III, three centuries after Henry II; it was re-chartered in 1555. The office of Rouge Dragon Pursuivant, which now handles his claim, dates from Henry VII.",
+  "evidence": [
+   {"src": "wp-college-of-arms", "kind": "secondary", "inspected": "Read directly.", "claim": "Founded by royal charter of Richard III, 2 March 1484; re-chartered 1555."},
+   {"src": "wp-rouge-dragon", "kind": "context", "inspected": "Read directly.", "claim": "Rouge Dragon Pursuivant instituted by Henry VII in 1485."}
+  ],
+  "people": [],
+  "events": []
+ },
+ {
+  "id": "ic-agnew-marriage",
+  "title": "Whether Lady Athlumney's sister had married when Lord Athlumney died",
+  "verdict": "probable",
+  "people": ["enid-boan", "quentin-somerville", "james-somerville-2nd-baron"],
+  "events": ["ev-quentin-name"],
+  "kind": "Family account of a will",
+  "said": "\"At the time of his death, his wife's sister hadn't any children. She hadn't actually married. But subsequently, she did marry\" (transcript C {q:T3:111-112}).",
+  "conclusion": "Lady Athlumney's sister, Enid Boan, had married Peter Agnew in 1928, before Lord Athlumney died in January 1929. She had no child yet: their son Quentin was born on 8 March 1929.",
+  "explanation": "The narrator is right that there was no child when the will took effect, since Quentin was born two months later; but the marriage had already taken place. It does not affect his account of the will, under which Quentin inherited Somerville and took the name in 1950.",
+  "evidence": [
+   {"src": "wp-peter-agnew", "kind": "secondary", "inspected": "Read directly.", "claim": "Married in 1928 Enid Frances Boan, daughter of Henry Boan of Perth; their only son, Sir Quentin Agnew-Somerville."},
+   {"src": "wp-agnew-somerville", "kind": "secondary", "inspected": "Read directly.", "claim": "Sir Quentin Charles Agnew-Somerville, born 8 March 1929; took the name Somerville in 1950 under the will of his uncle by marriage, the 2nd Baron Athlumney."},
+   {"src": "wp-2nd-baron", "kind": "context", "inspected": "Read directly.", "claim": "Lord Athlumney died on 8 January 1929."}
+  ],
+  "remaining": "Whether Enid was the elder sister, as the narrator implies, has not been checked."
+ },
+ {
+  "id": "ic-thomas-bellingham-wife",
+  "title": "The name of Colonel Thomas Bellingham's wife",
+  "verdict": "probable",
+  "people": ["abigail-handcock", "thomas-bellingham"],
+  "events": ["ev-boyne-guide"],
+  "kind": "Identification of a portrait",
+  "said": "\"That's a woman called Anna, who married Colonel Thomas Bellingham\" (transcript C {q:T3:238}).",
+  "conclusion": "Colonel Thomas Bellingham married Abigail, daughter of William Handcock of Twyford, in 1671. Anne was the name of one of their daughters.",
+  "explanation": "Kingsley's well-sourced Bellingham genealogy names his wife as Abigail and lists a daughter Anne (c. 1680–1758). Either the portrait shows Abigail under a misremembered name, or it shows the daughter, Anne, taken for her mother.",
+  "evidence": [
+   {"src": "lf-bellingham", "kind": "secondary", "inspected": "Read directly (published genealogy).", "claim": "Thomas Bellingham (c. 1646–1721) married in 1671 Abigail (c. 1650–1721), daughter of William Handcock of Twyford; their children included Anne (c. 1680–1758)."}
+  ],
+  "remaining": "A label on the portrait, if there is one, may show whom it represents."
  }
 ]

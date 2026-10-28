@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 (async () => {
   const browser = await chromium.launch();
   const out = process.argv[2] || null;
-  const routes = ['', 'story', 'story/west-indies', 'story/district-inspector', 'tree', 'tree/bellingham', 'tree/somerville?focus=reginald-somerville', 'people', 'person/bellingham-arthur-somerville', 'person/tenison-alan-somerville', 'person/narrator', 'person/interviewer', 'person/charles-somerville', 'tree/somerville?focus=interviewer', 'place/cumry', 'person/alan-everard-somerville', 'person/rector-johnson', 'person/william-abraham-johnson', 'sources?s=family-tree-2026', 'person/tenison-somerville-1812', 'person/pat', 'person/vere-somerville', 'places', 'place/clermont', 'timeline', 'timeline?e=ev-youghal-1887', 'glossary', 'term/ric', 'transcript', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'questions', 'questions?q=q-bunt-regiment', 'corrections', 'corrections?c=ic-pat-capture', 'search?q=sabre', 'sources', 'search?q=bellendrum', 'search?q=Bunt', 'search?q=Tenison', 'search?q=Reendesert', 'about'];
+  const routes = ['', 'story', 'story/west-indies', 'story/district-inspector', 'tree', 'tree/bellingham', 'tree/somerville?focus=reginald-somerville', 'people', 'person/bellingham-arthur-somerville', 'person/tenison-alan-somerville', 'person/narrator', 'person/interviewer', 'person/charles-somerville', 'tree/somerville?focus=interviewer', 'place/cumry', 'person/alan-everard-somerville', 'person/rector-johnson', 'person/william-abraham-johnson', 'sources?s=family-tree-2026', 'person/tenison-somerville-1812', 'person/pat', 'person/vere-somerville', 'places', 'place/clermont', 'timeline', 'timeline?e=ev-youghal-1887', 'glossary', 'term/ric', 'transcript', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'questions', 'questions?q=q-bunt-regiment', 'corrections', 'corrections?c=ic-pat-capture', 'search?q=sabre', 'sources', 'search?q=bellendrum', 'search?q=Bunt', 'search?q=Tenison', 'search?q=Reendesert', 'about', 'transcript/T3', 'transcript/T3:81', 'story/arms-and-claim', 'person/elizabeth-mary-somerville', 'person/quentin-somerville', 'person/henry-bellingham-somerville-1859', 'person/thomas-tennison', 'tree/bellingham?focus=thomas-bellingham', 'place/queenstown', 'questions?q=q-family-bible', 'corrections?c=ic-arms-date', 'term/confirmation-of-arms', 'sources?s=visitation-1897', 'search?q=Athlumney', 'search?q=Choyce'];
   for (const [w, h, tag] of [[1366, 900, 'd'], [390, 844, 'm']]) {
     const page = await browser.newPage({ viewport: { width: w, height: h } });
     const errs = [];
@@ -30,6 +30,16 @@ const { chromium } = require('playwright');
       if (/withheld from the public copy|withheld…/i.test(body)) errs.push(`${tag} ${r}: redaction marker shown`);
       if (!body.includes(want)) errs.push(`${tag} ${r}: expected text "${want}" not visible`);
     }
+    // transcript C: published complete except the masked PIN, cited as "C¶n"
+    await page.goto('http://127.0.0.1:8765/#/transcript/T3:43', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(400);
+    const t3 = await page.evaluate(() => document.querySelector('main').innerText);
+    if (!t3.includes('[PIN removed]') || /pin is \d{4}/i.test(t3)) errs.push(`${tag} transcript/T3:43: PIN not masked`);
+    if (!t3.includes('Bellingham Arthur\'s elder brother was called Henry')) errs.push(`${tag} transcript/T3: passage missing`);
+    await page.goto('http://127.0.0.1:8765/#/person/elizabeth-mary-somerville', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(400);
+    const cites = await page.evaluate(() => [...document.querySelectorAll('main a.cite-q')].map((a) => a.textContent));
+    if (!cites.some((c) => /^C¶\d/.test(c))) errs.push(`${tag} person/elizabeth-mary-somerville: no C¶ citation links`);
     console.log(tag, errs.length ? errs.join('\n') : 'no errors');
     if (errs.length) process.exitCode = 1;
     await page.close();

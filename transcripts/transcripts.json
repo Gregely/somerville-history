@@ -70,5 +70,89 @@
       ]
     ],
     "sha256": "22445a92d2fe859883a056479be6352b5a4be2f87eec8c8ab828eef2f83fd924"
+  },
+  {
+    "id": "T3",
+    "title": "Transcript C: the second recording (28 October 2026)",
+    "role": "second",
+    "date": "28 October 2026 (the day after the first recording: \"I've mentioned yesterday Eliza\", C¶8; file name \"28.txt\")",
+    "file": "transcripts/interview-02.txt",
+    "sourceFile": "28.txt",
+    "origin": "Automatic speech-to-text transcript of a second recorded conversation between the narrator and the interviewer, made the next day, first in the narrator's study and then at a neighbouring family house, while the two looked through the family's papers (the family Bible, Bellingham Arthur's genealogical notebooks, the family's annotated copy of the Visitation of Ireland, the 1924 confirmation of arms, a 1929 newspaper cutting and the pedigree rolls of the 1950s) and its portraits. There is only one transcript of this recording. Speakers are not labelled; one paragraph per line, so paragraph numbers are line numbers. Complete as received, except that a four-digit device PIN spoken in ¶43 is replaced by \"[PIN removed]\": it is a credential, not family history.",
+    "asides": [
+      [
+        2,
+        3
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        38,
+        40
+      ],
+      [
+        43,
+        43
+      ],
+      [
+        97,
+        97
+      ],
+      [
+        100,
+        100
+      ],
+      [
+        140,
+        141
+      ],
+      [
+        145,
+        149
+      ],
+      [
+        169,
+        176
+      ],
+      [
+        192,
+        194
+      ],
+      [
+        196,
+        197
+      ],
+      [
+        211,
+        235
+      ],
+      [
+        240,
+        254
+      ],
+      [
+        257,
+        258
+      ],
+      [
+        267,
+        268
+      ],
+      [
+        276,
+        285
+      ]
+    ],
+    "masked": [
+      {
+        "line": 43,
+        "what": "a four-digit device PIN (a credential)",
+        "replacement": "[PIN removed]"
+      }
+    ],
+    "sourceSha256": "be01a99278fdb7c2a8faf4e103436240da80416c8c3e1f6491c5ae89bd4ba534",
+    "sha256": "f122be23519b43715afcc7035b9b096f7254119f2fbee0aa359092f92a00e6a8"
   }
 ]

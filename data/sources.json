@@ -7,8 +7,8 @@
   "url": "https://landedfamilies.blogspot.com/2023/05/546-bellingham-of-levens-and-castle.html",
   "type": "genealogy",
   "reliability": "Well-researched secondary genealogy with footnoted sources; check details against originals.",
-  "used": "Children of Lt-Col. Henry Bellingham; Eliza's marriage (Roscrea, 30 Aug 1800) and death (16 Dec 1839); Alan and Monique Bâby (married Detroit 1795, separated 1815, Monique at Lyme Regis, d. 1856); Henry Tenison Bellingham killed at Badajoz 6 Apr 1812; Dorothea's marriage to William Riall; Castle Bellingham let to, then sold to, Sir William. Note: it gives Lt-Col. Henry's death as 10 Sep 1800 where a compiled genealogy has 8 Sep 1800.",
-  "checked": "2026-10-27",
+  "used": "Children of Lt-Col. Henry Bellingham; Eliza's marriage (Roscrea, 30 Aug 1800) and death (16 Dec 1839); Alan and Monique Bâby (married Detroit 1795, separated 1815, Monique at Lyme Regis, d. 1856); Henry Tenison Bellingham killed at Badajoz 6 Apr 1812; Dorothea's marriage to William Riall; Castle Bellingham let to, then sold to, Sir William. Note: it gives Lt-Col. Henry's death as 10 Sep 1800 where a compiled genealogy has 8 Sep 1800. Also (checked 28 Oct 2026): Col. Thomas Bellingham (c. 1646–1721) married in 1671 Abigail, daughter of William Handcock of Twyford, Co. Westmeath; their children included Henry (1676–1739) and Anne (c. 1680–1758). Henry (1676–1739), Whig MP for Dundalk 1703–14, married Mary, daughter of Thomas Moore; their sons were Henry (c. 1707–55), MP for Co. Louth 1741–55, and Alan (1709–96), the second son. Dorothea and William Riall of Annerville House, Clonmel, had three sons and three daughters. No Bellingham is called \"wicked\".",
+  "checked": "2026-10-28",
   "access": "direct"
  },
  {
@@ -73,8 +73,8 @@
   "url": "https://en.wikipedia.org/wiki/William_Somerville,_1st_Baron_Athlumney",
   "type": "encyclopedia",
   "reliability": "Tertiary.",
-  "used": "Chief Secretary for Ireland 1847–52 and other offices.",
-  "checked": "2026-10-27",
+  "used": "Chief Secretary for Ireland 1847–52 and other offices. Also (checked 28 Oct 2026): a Liberal; married first, in 1832, Lady Maria Harriet Conyngham (d. December 1843), daughter of the 1st Marquess Conyngham, and secondly, in 1860, Maria Georgiana Elizabeth Jones; the only surviving son was James, of the second marriage.",
+  "checked": "2026-10-28",
   "access": "direct"
  },
  {
@@ -84,8 +84,8 @@
   "url": "https://en.wikipedia.org/wiki/James_Somerville,_2nd_Baron_Athlumney",
   "type": "encyclopedia",
   "reliability": "Tertiary.",
-  "used": "Death on 8 January 1929 without issue.",
-  "checked": "2026-10-27",
+  "used": "Death on 8 January 1929 without issue. Also (checked 28 Oct 2026): baptised at Kentstown; Harrow; Leinster Regiment, extra ADC to the Lord Lieutenant, Coldstream Guards, Dongola expedition 1896 (mentioned in despatches), Kent Artillery Militia, staff officer to the Military Governor of Pretoria in the Boer War, Assistant Provost Marshal of London District in the First World War; married on 30 July 1919, at the Guards Chapel, \"Margery Boan, daughter of Henry Boan\"; Lady Athlumney drowned in the River Nanny on the family estate in July 1946.",
+  "checked": "2026-10-28",
   "access": "direct"
  },
  {
@@ -803,5 +803,275 @@
   "checked": "2026-10-27",
   "reliability": "Encyclopedia article citing Crockford's Clerical Directory (1898).",
   "used": "Henry Rooke was rector of Wicklow 1873–1906 and Archdeacon of Glendalough 1906–14; so Rev. Johnson's incumbency at Wicklow would follow 1906."
+ },
+ {
+  "id": "visitation-1897",
+  "title": "Visitation of Ireland, vol. 1: \"Somerville of Clermont, co. Wicklow\", pp. 64–65",
+  "publisher": "Joseph Jackson Howard and Frederick Arthur Crisp (eds), privately printed",
+  "year": "1897",
+  "url": "https://archive.org/details/visitationofirel01lond/page/n111/mode/2up",
+  "type": "printed pedigree (family-supplied)",
+  "reliability": "A printed pedigree compiled from information sent in by the family, here by Bellingham Arthur Somerville, whose signature it reproduces. It gives dates and places of birth, baptism, marriage and burial, wills and admissions to the Freedom of Dublin, with facsimile signatures from family letters and from Captain William's diary. Near-contemporary for the 1840s–1890s; for earlier generations it rests on the family's own records (the Bible and the diary). Not an official register: as the narrator says, \"The families themselves sent in the information, so they're not authoritative in many ways\" (C¶13). Read from the page images of the Internet Archive scan.",
+  "used": "Captain William Somerville of Ardrass: only son of Major William Somerville of Somerville, Co. Meath, and Ardrass (2nd son of Sir James Somerville, Bart.) by his 2nd wife Elizabeth, daughter of James Munroe; born 7 March, baptised at St Thomas', Dublin, 11 March 1776; an officer in the army and the Louth Militia; Freedom of Dublin 10 January 1842; died 19 December, buried at St Audoen's 21 December 1844; will dated 14 December 1844, proved 29 May 1845. Elizabeth (Eliza), 2nd daughter of Colonel Henry Bellingham of Castle Bellingham by Elizabeth, daughter of Richard Tenison of Thomastown, Co. Louth; born 5 September 1779; married at Roscrea 30 August 1800; died 16 December, buried at St Audoen's 19 December 1839. Their ten children, each born in a different place: William Henry (Leixlip, 13 Jan 1802; married Henrietta Ryves 1832; died s.p. 1847), Archibald James (Kilkenny, 13 May 1803; died 7 Feb 1871; no marriage given), John Churchill (Dover, 19 Dec 1804; died 3 Feb 1805), Corry (Carrick-on-Suir, 19 Mar 1806; died in America 20 Jan 1879; no marriage given), Eliza (Athboy, 1 Feb 1808; died 13 Jan 1812), Bellingham Arthur (Lucan, 15 Apr 1810; Freedom of Dublin 10 Jan 1842; died 17 Nov 1844), Tenison (Newry, 10–22 Aug 1812), Eliza (Dundalk, 13 Sep 1813; married Thomas Nelson 15 Apr 1833; died 21 Oct 1879), Tenison Alan (Loughbrickland, 16 Dec 1815; Freedom of Dublin 18 July 1883; died 31 July 1895, buried Mount Jerome; will proved 20 Sep 1895) and Samuel Riall (Cumry, 26 Nov–4 Dec 1820). Tenison Alan's wife Cecilia Eliza, 3rd daughter and coheir of Daniel O'Connor of Shoreham, Sussex, by Elizabeth, daughter of John Ritchie (born 21 June 1819; married 6 Nov 1840), and their children: William Dennistoun (Trinidad, 8 June 1842), Tenison Alan (Trinidad 1845 – 1855), Henry Bellingham (Dublin, 23 Dec 1848; an officer in the RIC; married Mary Dyas 22 June 1880; daughter Elizabeth Mary, born 29 Mar 1881), Erina Bellingham (Dublin, 30 July 1852; married 17 Jan 1883 Rev. Thomas Forster Rolfe, Rector of Kirk Bramwith), Bellingham Arthur (Dublin, 17 Nov 1853; baptised at St Thomas' 16 June 1854; Freedom of Dublin 19 May 1893; RIC, retired list; late Captain, 3rd Battalion King's Liverpool Regiment) and Tenison Alan (Dublin, 28 July 1859). Bellingham Arthur's wife Margaret Hall, 2nd daughter of William Clinch of The Elms, Witney, by Rachel Hall, daughter of John Wright of Curbridge; and their children, all baptised at St Audoen's: Cecilia (Newtownards 1880), William Arthur Tenison (Newtownards 1882), James Aubrey Henry (Queenstown 1884), Alan Everard Whichnour (Queenstown 1885; died at Merville, Queenstown, 14 Dec 1887), Dorothy Alrewas Hester (Seaview House, Wicklow, 1888; died there 6 Mar 1895), Vere (Friars Hill 1890), Edeline (Friars Hill 1892) and Gualter (Ballyhenry 1894). Arms: azure, three mullets or between seven cross-crosslets fitchée argent; crest, a demi-lion rampant sable; motto \"Crains Dieu tant que tu viveras\".",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "visitation-additions",
+  "title": "Visitation of Ireland, vol. 2: \"Additions & Corrections\", p. ii (Somerville, vol. 1, p. 65)",
+  "publisher": "Joseph Jackson Howard and Frederick Arthur Crisp (eds), privately printed",
+  "year": "c. 1898",
+  "url": "https://archive.org/details/visitationofirel02howa/page/n151/mode/2up",
+  "type": "printed pedigree (family-supplied)",
+  "reliability": "A printed addition to the family's own 1897 pedigree, as above. Read from the page image.",
+  "used": "\"Bellingham Arthur and Margaret Hall Somerville of Clermont, Rathnew, co. Wicklow, have further issue a son, Reginald Malcolm John Bellingham Somerville, born at Clermont 14 February 1897.\"",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "nli-arms-1924",
+  "title": "Grants and Confirmations of Arms, vol. M (1920–1929), fol. 44: confirmation of arms to the descendants of Major William Somerville (2 April 1924)",
+  "publisher": "National Library of Ireland catalogue (Genealogical Office manuscripts)",
+  "url": "https://catalogue.nli.ie/Record/vtls000810941",
+  "type": "archive catalogue",
+  "reliability": "A catalogue description of the Genealogical Office's register copy of the confirmation: good evidence of its date and terms, but known here only from search-engine extracts, because the catalogue blocks automated access.",
+  "used": "A confirmation of arms dated 2 April 1924 to the descendants of Major William Somerville, son of Sir James Somerville, Bart., of Dublin, extended to Elizabeth Mary Somerville of Morehampton Road, Dublin, only child of Henry Bellingham Somerville (fol. 44; one extract gives 43a). Not inspected.",
+  "access": "search-only",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "hansard-1887-sep8",
+  "title": "Royal Irish Constabulary: The Queen v. Sub-Inspector Somerville (HC Deb 8 September 1887, vol. 320, cc. 1642–3)",
+  "publisher": "Hansard (UK Parliament)",
+  "url": "https://api.parliament.uk/historic-hansard/commons/1887/sep/08/royal-irish-constabulary-the-queen-v-sub",
+  "type": "primary",
+  "reliability": "Primary parliamentary record.",
+  "used": "Asked whether he had entered a nolle prosequi in the case of \"the Queen v. Sub-Inspector Somerville and Constable Ward\", the Attorney General for Ireland, John Gibson, replied: \"I have to say yes, Sir. It was done at the last Cork Assizes.\" The prosecution was dropped, not tried.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-thomas-tennison",
+  "title": "Thomas Tennison",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Thomas_Tennison",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "Thomas Tennison (1707–1779), MP for Dunleer 1728–60 and 1761, Prime Serjeant 1759, justice of the Common Pleas from 1761; died at Dundalk on assize in 1779; married Dorothy Upton; \"They had one son, Richard, who predeceased his father by 20 years, leaving at least one daughter but no son.\"",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-peter-agnew",
+  "title": "Sir Peter Agnew, 1st Baronet",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Peter_Agnew",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "Naval officer (commander, 1940) and Conservative MP for Camborne (1931–50) and South Worcestershire (1955–66), 1900–1990; married in 1928 Enid Frances Boan, daughter of Henry Boan of Perth, Western Australia (she died in 1982); their only son Sir Quentin Agnew-Somerville; died at Ramsey, Isle of Man, in 1990.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-agnew-somerville",
+  "title": "Agnew-Somerville baronets",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Agnew-Somerville_baronets",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "Baronetcy of Clendry created on 31 January 1957 for Peter Garnett Agnew; the 2nd Baronet, Sir Quentin Charles Agnew-Somerville (8 March 1929 – 2010), took the additional surname Somerville by Royal Licence in 1950 \"in compliance with the will of his uncle by marriage\", the 2nd Baron Athlumney, and combined the Somerville arms with his own.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-somerville-baronets",
+  "title": "Somerville baronets",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Somerville_baronets",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "The baronetcy \"of Somerville\" (Baronetage of Ireland, 1748): Sir James (d. 1748); Sir Quaile (1714–1772); Sir James Quaile (c. 1742–c. 1800); Sir Marcus (c. 1775–1831); Sir William Meredyth (1802–1873), created Baron Athlumney (1863) and Baron Meredyth (1866); his son the 2nd Baron, in turn the 6th Baronet, died childless in 1929, when the baronies became extinct and the baronetcy dormant. No claimant is mentioned.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-harry-boan",
+  "title": "Harry Boan",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Harry_Boan",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "Harry Boan (1860–1941) opened Boans department store in Perth, Western Australia, in 1895 with his brother (it closed in 1986); married Sophie Bebarfald in 1896 and had four children; member of the Western Australian Legislative Council. No Adelaide business is mentioned.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-ulster-king-of-arms",
+  "title": "Ulster King of Arms",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Ulster_King_of_Arms",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "The office of Ulster King of Arms was created in 1552; Nevile Wilkinson held it from 1908 to 1940, after which it was vacant, with a deputy; in 1943 it was joined to Norroy (Norroy and Ulster King of Arms), and heraldry in the Republic passed to the Chief Herald of Ireland at the Genealogical Office.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-college-of-arms",
+  "title": "College of Arms",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/College_of_Arms",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "Founded by royal charter of Richard III on 2 March 1484 (re-chartered 1555); at 130 Queen Victoria Street, London; thirteen officers: three kings of arms, six heralds and four pursuivants, besides officers extraordinary. James Peill is Garter King of Arms.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-rouge-dragon",
+  "title": "Rouge Dragon Pursuivant",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Rouge_Dragon_Pursuivant",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "An office of the College of Arms instituted by Henry VII in 1485; the present holder, since 2023, is Phillip Bone (an Oxford DPhil in classics, according to the College's announcement as summarised in search results).",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-marcus-4bt",
+  "title": "Sir Marcus Somerville, 4th Baronet",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Sir_Marcus_Somerville,_4th_Baronet",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "Born 1772, died 11 July 1831; a Whig, MP for County Meath in the Irish House of Commons (1800) and at Westminster until his death; succeeded as 4th Baronet in 1800; married in 1801 Mary Anne Meredyth; father of the 1st Baron Athlumney.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-conyngham",
+  "title": "Elizabeth Conyngham, Marchioness Conyngham",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Elizabeth_Conyngham,_Marchioness_Conyngham",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "\"Thought to be the last mistress of King George IV\"; her daughter Lady Maria Harriet Conyngham (1810–1843) married William Somerville, later 1st Baron Athlumney.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-thomas-bellingham",
+  "title": "Thomas Bellingham",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Thomas_Bellingham",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "Thomas Bellingham (1644/45 – 15 September 1721), son of Henry Bellingham and Lucy Sibthorpe: \"He was an aide to King William prior to the Battle of the Boyne\", his knowledge of the Louth countryside helping the Williamite preparations; Jacobites burned his house at Castlebellingham in 1690.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-official-roll",
+  "title": "Official Roll of the Baronetage",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Official_Roll_of_the_Baronetage",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "The Roll is maintained for the Lord Chancellor; a claimant must furnish legal evidence of succession; a baronet not on the Roll is not entitled to the title's precedence or to be so described in official documents; in 2020 about 200 baronetcies had no proven holder.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "wp-lord-somerville",
+  "title": "Lord Somerville",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Lord_Somerville",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "The Scottish Somervilles trace their origin to Sir Gualter (Walter) de Somerville, \"a Norman knight and companion of William the Conqueror\", rewarded with lands including Whichnour (Wychnor) in Staffordshire and Aston Somerville near Evesham; The Memorie of the Somervilles, written in 1679 by James, 11th Lord Somerville, was published in two volumes in 1815, edited by Sir Walter Scott.",
+  "access": "direct",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "landedestates-riall",
+  "title": "Riall (family)",
+  "publisher": "Landed Estates Database, University of Galway",
+  "url": "https://landedestates.ie/family/3191",
+  "type": "reference database",
+  "reliability": "Scholarly database; seen only in search results (the page returned an error when fetched).",
+  "used": "Describes the Rialls as a Quaker family established in Clonmel by the end of the 17th century who became bankers; William Riall of Annerville was a son of Phineas Riall of Heywood. Not read directly.",
+  "access": "search-only",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "fam-bible",
+  "title": "The Somerville family Bible: Captain William Somerville's record of his family, with Tenison Alan Somerville's copy of 1850",
+  "publisher": "In the narrator's keeping; not published",
+  "type": "family document (not inspected)",
+  "access": "private",
+  "reliability": "A family record kept by the head of the household is among the best evidence for births and deaths before civil registration. This one is known only from a reading aloud in the second recording, transcribed once by speech-to-text, and three dates as heard disagree with the 1897 pedigree, which was drawn from the same family records (see the open question on the family Bible).",
+  "used": "Read aloud in the second recording (C¶25–34): Captain William's entry of his own birth and marriage and of Eliza's birth and death \"at Bayview Avenue in the City of Dublin\", and of each of the ten children \"as they were born or baptized\" (C¶27), with the godparents of the first Eliza (1808), her death at Warrenpoint in 1812 and burial at Clonallan, and the birthplaces Lucan, Newry and Dundalk. An envelope labelled by Cecil B. Rooke holds \"one small page of the original family record entered in the family Bible by Captain William Somerville\", a \"copy of the entire record of Captain William Somerville made by his son T.A. in 1850\", and Tenison Alan's own \"record of the births of his children\" (C¶34).",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "fam-arms-1924",
+  "title": "Letters patent confirming the Somerville arms to Elizabeth Mary Somerville and the descendants of Major William Somerville (the original, 1924)",
+  "publisher": "In the narrator's keeping; not published",
+  "type": "family document (not inspected)",
+  "access": "private",
+  "reliability": "The original grant, with its seal; read aloud in part in the second recording. Its date was not read out; the National Library's catalogue of the register copy dates it 2 April 1924.",
+  "used": "Read aloud in part (C¶79–86): issued by \"Major Sir Nevile Rodwell Wilkinson, Knight Commander of the Royal Victorian Order … Ulster King of Arms, and Principal Herald of All Ireland\" on the application of \"Elizabeth Mary Somerville of 74 [More]hampton Road in the City of Dublin, only child of Henry Bellingham Somerville, District Inspector, Royal Irish Constabulary, who was great-grandson of William Somerville, Major in His Majesty's Army, second son of Sir James Somerville of the City of Dublin, Baronet, M.P.\", confirming arms \"long used and borne\" by the family but not previously recorded to her and the other descendants of Major William; the shield, crest and motto.",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "fam-athlumney-cutting",
+  "title": "Newspaper report of the death of Lord Athlumney (January 1929), a family cutting",
+  "publisher": "In the narrator's keeping; not published",
+  "type": "newspaper cutting (not inspected)",
+  "access": "private",
+  "reliability": "A contemporary press report, read aloud; the newspaper's title and date were not read out.",
+  "used": "Read aloud (C¶91–96): \"Lord Athlumney dies at his Irish home\", at Somerville, Balrath, Co. Meath; owned 10,000 acres; also Baron Meredyth of the United Kingdom and a baronet; \"There is no heir to the barony. Major William A.T.B. Somerville is heir to the baronetcy\"; aged 63; Harrow; succeeded his father in 1873; married in 1919 Marjorie Boan, daughter of Mr Boan of Australia; page of honour and ADC to three Viceroys of Ireland; Coldstream Guards and Egyptian Army; ADC to Lord Kitchener; Dongola expedition 1896 (mentioned in despatches; Osmanieh, Medjidie, Sudan medal and two clasps); commanded a battery of machine guns in South Africa; Provost Marshal of London in the Great War.",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "fam-ba-notebooks",
+  "title": "Bellingham Arthur Somerville's genealogical notebooks",
+  "publisher": "In the narrator's keeping; not published",
+  "type": "family research notes (not inspected)",
+  "access": "private",
+  "reliability": "Notes made over a lifetime from documents, many lost in 1922, and from what relatives told him; not chronological, and of varying authority.",
+  "used": "Shown and read from in the second recording (C¶4–11): begun \"when he was a boy\"; notes going back \"to Sir Gualter de Somerville\"; on St Audoen's parish, Dublin; and on Dorothea Riall, \"third daughter of William Riall of Annerville by his wife, Dorothea Bellingham\", first cousin of Tenison Alan Somerville, who married in 1830 Richard Moore of Clonmel.",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "fam-rolls",
+  "title": "Pedigree rolls prepared for the baronetcy claim (1950s), and the narrator's roll of living descendants",
+  "publisher": "In the narrator's keeping; not published",
+  "type": "family document (not inspected)",
+  "access": "private",
+  "reliability": "Prepared by the family to support a claim; not independent evidence.",
+  "used": "Shown in the second recording (C¶177–188): two rolls \"prepared in the 1950s … in order to put the claim in\", a family tree of Corry Somerville's descendants, and a roll of the living family recording, for example, the interviewer's baptism at St Audoen's in 2006.",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "fam-profiles",
+  "title": "The narrator's written profiles of the family (in progress, 2020s)",
+  "publisher": "In the narrator's keeping; not published",
+  "type": "family research notes (not inspected)",
+  "access": "private",
+  "reliability": "The narrator's own research, with his additions marked in red; unfinished.",
+  "used": "Shown on screen in the second recording (C¶150–167, 195): profiles of every member of the family in \"branches\", the first (Major William's descendants) complete and the second (the senior line) well advanced; the profile of Bellingham Arthur is divided into childhood, profession and the Clermont years.",
+  "checked": "2026-10-28"
+ },
+ {
+  "id": "fam-portraits",
+  "title": "Family portraits, miniatures and photographs",
+  "publisher": "In the narrator's keeping; not published",
+  "type": "family collection (not inspected)",
+  "access": "private",
+  "reliability": "Identifications are the narrator's, sometimes from labels on the backs of the pictures; dates of painting not established.",
+  "used": "Shown in the second recording (C¶236–275): Colonel Thomas Bellingham and a woman the narrator calls his wife \"Anna\"; one of the two Henry Bellinghams, MPs; Sir Marcus Somerville; John Williams Clinch and his wife; Monique Bâby; an Alan Bellingham; miniatures of Sir James Somerville, 1st Bt, Major William, Captain William and Eliza Bellingham (unfinished); \"probably Wicked Alan, son of Henry Bellingham\"; Judge Tenison; Daniel O'Connor of Shoreham; a portrait from Maudie Moore's family; and a photograph of Bellingham Arthur's family.",
+  "checked": "2026-10-28"
  }
 ]

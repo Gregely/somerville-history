@@ -2077,5 +2077,928 @@
   "reading": "probably Headfort, the preparatory school at Kells, Co. Meath",
   "conf": "medium",
   "note": "A reading of the sound, not confirmed."
+ },
+ {
+  "t": "T3",
+  "line": 4,
+  "phrase": "Bell and DeMartha's records",
+  "reading": "Bellingham Arthur's records (his genealogical notebooks)",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 5,
+  "phrase": "Sir Galter the Somerville, a nobleman knight",
+  "reading": "Sir Gualter de Somerville, a Norman knight",
+  "conf": "high",
+  "link": "t:gualter-de-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 6,
+  "phrase": "St. Audouin's church",
+  "reading": "St Audoen's Church",
+  "conf": "high",
+  "link": "pl:st-audoens"
+ },
+ {
+  "t": "T3",
+  "line": 9,
+  "phrase": "Dorothea Ryle",
+  "reading": "Dorothea Riall",
+  "conf": "high",
+  "link": "p:dorothea-riall"
+ },
+ {
+  "t": "T3",
+  "line": 9,
+  "phrase": "William Ryle of Annabelle",
+  "reading": "William Riall of Annerville (Clonmel)",
+  "conf": "high",
+  "link": "p:william-riall"
+ },
+ {
+  "t": "T3",
+  "line": 10,
+  "phrase": "Tennyson Alan Somerville Esquire",
+  "reading": "Tenison Alan Somerville, Esq.",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 10,
+  "phrase": "The Riles were bankers in Clonmel",
+  "reading": "The Rialls were bankers in Clonmel",
+  "conf": "high",
+  "link": "p:william-riall"
+ },
+ {
+  "t": "T3",
+  "line": 13,
+  "phrase": "very crisp",
+  "reading": "very … Crisp's (the Visitation of Ireland)",
+  "conf": "medium",
+  "link": "t:crisps-visitation",
+  "note": "The narrator is showing the family's copy of the Visitation of Ireland, which the first recording calls \"Crisp's\"."
+ },
+ {
+  "t": "T3",
+  "line": 15,
+  "phrase": "William Somerville of Ardross",
+  "reading": "William Somerville of Ardrass",
+  "conf": "high",
+  "link": "pl:ardrass"
+ },
+ {
+  "t": "T3",
+  "line": 15,
+  "phrase": "County Goodale",
+  "reading": "County Kildare",
+  "conf": "high",
+  "link": "pl:ardrass",
+  "note": "The printed pedigree reads \"of Ardrass, co. Kildare\"."
+ },
+ {
+  "t": "T3",
+  "line": 18,
+  "phrase": "William Deniston",
+  "reading": "William Dennistoun Somerville",
+  "conf": "high",
+  "link": "p:william-dennistoun-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 20,
+  "phrase": "William Dennison was born into the dad",
+  "reading": "William Dennistoun was born in Trinidad",
+  "conf": "medium",
+  "link": "p:william-dennistoun-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 20,
+  "phrase": "the surgeon was locked up",
+  "reading": "the surgeon … [made a mistake]",
+  "conf": "low",
+  "note": "The sense continues in the next paragraph: \"made a mistake, and he was dumb\"."
+ },
+ {
+  "t": "T3",
+  "line": 23,
+  "phrase": "Bellinger Martha",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 26,
+  "phrase": "Captain William Sandal",
+  "reading": "Captain William Somerville",
+  "conf": "medium",
+  "link": "p:captain-william-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 28,
+  "phrase": "born on the 7th of March, 1778",
+  "reading": "born on the 7th of March, 1776 (as the 1897 pedigree has it)",
+  "conf": "low",
+  "link": "qn:q-family-bible",
+  "note": "The day agrees with the printed pedigree; the year as heard does not. Whether the narrator misread it or the transcript misheard it cannot be told."
+ },
+ {
+  "t": "T3",
+  "line": 28,
+  "phrase": "Eliza Bellingham II",
+  "reading": "Eliza Bellingham, 2nd [daughter]",
+  "conf": "high",
+  "link": "p:eliza-bellingham"
+ },
+ {
+  "t": "T3",
+  "line": 29,
+  "phrase": "born on the 8th of September 1772",
+  "reading": "born on the 5th of September 1779 (as the 1897 pedigree has it)",
+  "conf": "low",
+  "link": "qn:q-family-bible",
+  "note": "1772 cannot be right: Eliza was the second daughter and her parents married in June 1772."
+ },
+ {
+  "t": "T3",
+  "line": 30,
+  "phrase": "Eliza Mellingham",
+  "reading": "Eliza Bellingham",
+  "conf": "high",
+  "link": "p:eliza-bellingham"
+ },
+ {
+  "t": "T3",
+  "line": 30,
+  "phrase": "Corrie",
+  "reading": "Corry",
+  "conf": "high",
+  "link": "p:corry-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 31,
+  "phrase": "Warren Point",
+  "reading": "Warrenpoint",
+  "conf": "high",
+  "link": "pl:warrenpoint"
+ },
+ {
+  "t": "T3",
+  "line": 31,
+  "phrase": "John George Bellingham, the squire",
+  "reading": "a Bellingham godfather (name uncertain)",
+  "conf": "low",
+  "note": "The name of the godfather is unclear; no John George Bellingham is known in the published genealogies."
+ },
+ {
+  "t": "T3",
+  "line": 31,
+  "phrase": "Bellingham Arthur.",
+  "reading": "Bellingham Arthur (the elder, born 1810)",
+  "conf": "high",
+  "link": "p:bellingham-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 32,
+  "phrase": "Lucan Tennyson born at Newry",
+  "reading": "Lucan. Tenison born at Newry",
+  "conf": "high",
+  "link": "p:tenison-somerville-1812"
+ },
+ {
+  "t": "T3",
+  "line": 32,
+  "phrase": "Tennyson Allen some of them",
+  "reading": "Tenison Alan Somerville",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 34,
+  "phrase": "Tennyson Allen Somerville",
+  "reading": "Tenison Alan Somerville",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 42,
+  "phrase": "set up by Henry II",
+  "reading": "set up by Henry II [in fact chartered by Richard III, 1484]",
+  "conf": "high",
+  "link": "t:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 50,
+  "phrase": "Clive Cheeseman",
+  "reading": "Clive Cheesman",
+  "conf": "medium"
+ },
+ {
+  "t": "T3",
+  "line": 52,
+  "phrase": "From Quayle, was it?",
+  "reading": "From Quaile, was it?",
+  "conf": "high",
+  "link": "p:quaile-somerville-2bt"
+ },
+ {
+  "t": "T3",
+  "line": 53,
+  "phrase": "James Quell",
+  "reading": "James Quaile",
+  "conf": "high",
+  "link": "p:james-quaile-somerville-3bt"
+ },
+ {
+  "t": "T3",
+  "line": 54,
+  "phrase": "first Baron Athelomne",
+  "reading": "first Baron Athlumney",
+  "conf": "high",
+  "link": "p:william-meredyth-somerville",
+  "note": "The narrator corrects himself a moment later: it was Sir William Meredyth, not a Sir James."
+ },
+ {
+  "t": "T3",
+  "line": 56,
+  "phrase": "the first Baroness Lumley",
+  "reading": "the first Baron Athlumney",
+  "conf": "high",
+  "link": "p:william-meredyth-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 58,
+  "phrase": "first Baron of Thumbnail",
+  "reading": "first Baron Athlumney",
+  "conf": "high",
+  "link": "p:william-meredyth-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 59,
+  "phrase": "a member of the little slain castle",
+  "reading": "a member of the [family of] Slane Castle",
+  "conf": "medium",
+  "link": "pl:slane-castle"
+ },
+ {
+  "t": "T3",
+  "line": 60,
+  "phrase": "Sainte-Castle",
+  "reading": "Slane Castle",
+  "conf": "medium",
+  "link": "pl:slane-castle",
+  "note": "The interviewer's guesses (\"Canterbury\", \"open-air concerts\") confuse it with another Slane Castle association; the narrator means the Conyngham seat in Co. Meath."
+ },
+ {
+  "t": "T3",
+  "line": 60,
+  "phrase": "she was a gunner",
+  "reading": "she was a Conyngham",
+  "conf": "medium",
+  "link": "pl:slane-castle"
+ },
+ {
+  "t": "T3",
+  "line": 60,
+  "phrase": "the second Baron of Thun",
+  "reading": "the second Baron Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 62,
+  "phrase": "Marjorie Bone",
+  "reading": "Margery (Marjorie) Boan",
+  "conf": "high",
+  "link": "p:margery-boan"
+ },
+ {
+  "t": "T3",
+  "line": 62,
+  "phrase": "Harry Bone",
+  "reading": "Harry Boan",
+  "conf": "high",
+  "link": "p:harry-boan"
+ },
+ {
+  "t": "T3",
+  "line": 63,
+  "phrase": "his father-in-law, Sir James Herbert Gustavus II",
+  "reading": "his son-in-law, Sir James Herbert Gustavus [Meredyth Somerville, the 2nd Baron]",
+  "conf": "medium",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 64,
+  "phrase": "The Irish Summers were counting me",
+  "reading": "The Irish Somervilles were County Meath",
+  "conf": "medium",
+  "link": "pl:somerville-meath"
+ },
+ {
+  "t": "T3",
+  "line": 67,
+  "phrase": "James Peel, P-E-I-L-L",
+  "reading": "James Peill (Garter King of Arms)",
+  "conf": "high",
+  "link": "t:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 68,
+  "phrase": "perservant",
+  "reading": "pursuivant",
+  "conf": "high",
+  "link": "t:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 69,
+  "phrase": "Philip Bone. B-O-N-E",
+  "reading": "Phillip Bone, Rouge Dragon Pursuivant",
+  "conf": "high",
+  "link": "t:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 69,
+  "phrase": "113 Queen Victoria Street",
+  "reading": "130 Queen Victoria Street",
+  "conf": "medium",
+  "link": "pl:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 70,
+  "phrase": "Philip Byrne",
+  "reading": "Phillip Bone",
+  "conf": "high",
+  "link": "t:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 72,
+  "phrase": "King of Arms, Legata",
+  "reading": "King of Arms, Garter",
+  "conf": "medium",
+  "link": "t:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 73,
+  "phrase": "because they're only boys",
+  "reading": "because they're only girls",
+  "conf": "medium",
+  "note": "The sense requires \"girls\": James has no son (C¶186)."
+ },
+ {
+  "t": "T3",
+  "line": 77,
+  "phrase": "Henry Bellingham Sullivan",
+  "reading": "Henry Bellingham Somerville",
+  "conf": "high",
+  "link": "p:henry-bellingham-somerville-1859"
+ },
+ {
+  "t": "T3",
+  "line": 80,
+  "phrase": "Neville Rodwell Wilkinson",
+  "reading": "Nevile Rodwell Wilkinson",
+  "conf": "high",
+  "link": "t:ulster-king-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 81,
+  "phrase": "74 Mohampton Road",
+  "reading": "74 Morehampton Road",
+  "conf": "high",
+  "link": "p:elizabeth-mary-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 83,
+  "phrase": "Oster King of Arms",
+  "reading": "Ulster King of Arms",
+  "conf": "high",
+  "link": "t:ulster-king-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 84,
+  "phrase": "the said William's Honourable Major",
+  "reading": "the said William Somerville, Major",
+  "conf": "medium",
+  "link": "p:major-william-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 86,
+  "phrase": "Fear God as long as you live",
+  "reading": "Crains Dieu tant que tu viveras (the family motto)",
+  "conf": "high",
+  "link": "t:family-motto"
+ },
+ {
+  "t": "T3",
+  "line": 86,
+  "phrase": "Claremont",
+  "reading": "Clermont",
+  "conf": "high",
+  "link": "pl:clermont"
+ },
+ {
+  "t": "T3",
+  "line": 89,
+  "phrase": "the second Baron of Thumbelay",
+  "reading": "the second Baron Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 90,
+  "phrase": "David Robert Choice, C-H-O-Y-C-E",
+  "reading": "David Robert Choyce",
+  "conf": "high",
+  "note": "Spelled out in the recording."
+ },
+ {
+  "t": "T3",
+  "line": 91,
+  "phrase": "Lord Athlamne",
+  "reading": "Lord Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 91,
+  "phrase": "Somerville, Ballrath",
+  "reading": "Somerville, Balrath",
+  "conf": "high",
+  "link": "pl:somerville-meath"
+ },
+ {
+  "t": "T3",
+  "line": 93,
+  "phrase": "Lord Asamble",
+  "reading": "Lord Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 94,
+  "phrase": "Marjorie Bone",
+  "reading": "Margery Boan",
+  "conf": "high",
+  "link": "p:margery-boan"
+ },
+ {
+  "t": "T3",
+  "line": 95,
+  "phrase": "Order of the Osmaniye, Order of the Medjidji",
+  "reading": "Order of the Osmanieh, Order of the Medjidie",
+  "conf": "high"
+ },
+ {
+  "t": "T3",
+  "line": 96,
+  "phrase": "Provence Marshal of London",
+  "reading": "Provost Marshal of London",
+  "conf": "high"
+ },
+ {
+  "t": "T3",
+  "line": 98,
+  "phrase": "the second Lord Azami",
+  "reading": "the second Lord Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 99,
+  "phrase": "second Lord Athambe",
+  "reading": "second Lord Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 102,
+  "phrase": "the Second Lord Assembly",
+  "reading": "the Second Lord Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 106,
+  "phrase": "Adramne",
+  "reading": "Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 107,
+  "phrase": "Margery Bone",
+  "reading": "Margery Boan",
+  "conf": "high",
+  "link": "p:margery-boan"
+ },
+ {
+  "t": "T3",
+  "line": 107,
+  "phrase": "Lord Azamri's will",
+  "reading": "Lord Athlumney's will",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 109,
+  "phrase": "as-male of your body",
+  "reading": "heirs male of your body",
+  "conf": "high",
+  "link": "t:strict-settlement"
+ },
+ {
+  "t": "T3",
+  "line": 109,
+  "phrase": "air-male of your body",
+  "reading": "heir male of your body",
+  "conf": "high",
+  "link": "t:strict-settlement"
+ },
+ {
+  "t": "T3",
+  "line": 110,
+  "phrase": "Athlamne",
+  "reading": "Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 112,
+  "phrase": "Lord Assembly",
+  "reading": "Lord Athlumney",
+  "conf": "high",
+  "link": "p:james-somerville-2nd-baron"
+ },
+ {
+  "t": "T3",
+  "line": 114,
+  "phrase": "Lady Athlumne",
+  "reading": "Lady Athlumney",
+  "conf": "high",
+  "link": "p:margery-boan"
+ },
+ {
+  "t": "T3",
+  "line": 116,
+  "phrase": "de Bretts",
+  "reading": "Debrett's",
+  "conf": "high",
+  "link": "t:debretts"
+ },
+ {
+  "t": "T3",
+  "line": 124,
+  "phrase": "Agnew's album",
+  "reading": "Agnew-Somerville",
+  "conf": "medium",
+  "link": "p:quentin-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 124,
+  "phrase": "Natham",
+  "reading": "Navan",
+  "conf": "medium"
+ },
+ {
+  "t": "T3",
+  "line": 128,
+  "phrase": "King William IV, his mistress, was a Cunningham",
+  "reading": "King George IV's mistress was a Conyngham",
+  "conf": "high",
+  "link": "pl:slane-castle",
+  "note": "The narrator corrects himself to George IV in C¶130."
+ },
+ {
+  "t": "T3",
+  "line": 129,
+  "phrase": "Miss Cunningham",
+  "reading": "Miss Conyngham",
+  "conf": "high",
+  "link": "p:william-meredyth-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 130,
+  "phrase": "Staincastle",
+  "reading": "Slane Castle",
+  "conf": "high",
+  "link": "pl:slane-castle"
+ },
+ {
+  "t": "T3",
+  "line": 130,
+  "phrase": "de Bretz",
+  "reading": "Debrett's",
+  "conf": "high",
+  "link": "t:debretts"
+ },
+ {
+  "t": "T3",
+  "line": 131,
+  "phrase": "the American syllables",
+  "reading": "the American Somervilles",
+  "conf": "high",
+  "link": "t:american-somervilles"
+ },
+ {
+  "t": "T3",
+  "line": 132,
+  "phrase": "American synodals",
+  "reading": "American Somervilles",
+  "conf": "high",
+  "link": "t:american-somervilles"
+ },
+ {
+  "t": "T3",
+  "line": 135,
+  "phrase": "Brachy",
+  "reading": "Brakey (Breakey)",
+  "conf": "high",
+  "link": "p:elizabeth-breakey"
+ },
+ {
+  "t": "T3",
+  "line": 136,
+  "phrase": "Tennyson Allan",
+  "reading": "Tenison Alan",
+  "conf": "high",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 137,
+  "phrase": "De Bretts",
+  "reading": "Debrett's",
+  "conf": "high",
+  "link": "t:debretts"
+ },
+ {
+  "t": "T3",
+  "line": 139,
+  "phrase": "Mr. Peel, Mr. Bone, who's dragging the persimmon",
+  "reading": "Mr Bone, the Rouge Dragon pursuivant",
+  "conf": "medium",
+  "link": "t:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 140,
+  "phrase": "It was 2013 or 2014",
+  "reading": "It was 2023 or 2024",
+  "conf": "medium",
+  "link": "e:ev-coa-visit",
+  "note": "\"Three Augusts ago\" (C¶70), the London trip \"two, three years ago\" in the first recording (B¶37), and the pursuivant's appointment in 2023 all point to 2023–24."
+ },
+ {
+  "t": "T3",
+  "line": 158,
+  "phrase": "Lord Assembly",
+  "reading": "Lord Athlumney",
+  "conf": "high",
+  "link": "p:william-meredyth-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 162,
+  "phrase": "Benjamin Arthur",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 162,
+  "phrase": "Jonathan Allen",
+  "reading": "Tenison Alan",
+  "conf": "medium",
+  "link": "p:tenison-alan-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 163,
+  "phrase": "I was arrested by D.I. Kellen of yore",
+  "reading": "[He] was arrested by D.I. Kerin of Youghal",
+  "conf": "high",
+  "link": "e:ev-youghal-1887",
+  "note": "District Inspector Kerin was the local officer at Youghal (Hansard, 18 March 1887)."
+ },
+ {
+  "t": "T3",
+  "line": 166,
+  "phrase": "Belanger Martha",
+  "reading": "Bellingham Arthur",
+  "conf": "high",
+  "link": "p:bellingham-arthur-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 178,
+  "phrase": "One of Katharine's songs was Corrie Salmonella",
+  "reading": "One of Captain William's sons was Corry Somerville",
+  "conf": "medium",
+  "link": "p:corry-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 178,
+  "phrase": "Lucinda Simonson",
+  "reading": "Lucinda Simmonton",
+  "conf": "high",
+  "link": "p:lucinda-simmonton"
+ },
+ {
+  "t": "T3",
+  "line": 185,
+  "phrase": "Goge Anthony Marcus",
+  "reading": "Gergely Anthony Marcus",
+  "conf": "high",
+  "link": "p:interviewer"
+ },
+ {
+  "t": "T3",
+  "line": 185,
+  "phrase": "Kishtarcha",
+  "reading": "Kistarcsa (Hungary)",
+  "conf": "medium"
+ },
+ {
+  "t": "T3",
+  "line": 189,
+  "phrase": "Archibald Gregg",
+  "reading": "Archibald James",
+  "conf": "high",
+  "link": "p:archibald-james-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 191,
+  "phrase": "Philip Bowen",
+  "reading": "Phillip Bone",
+  "conf": "high",
+  "link": "t:college-of-arms"
+ },
+ {
+  "t": "T3",
+  "line": 198,
+  "phrase": "Veer Truel",
+  "reading": "Vere Truell",
+  "conf": "high",
+  "link": "p:vere-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 199,
+  "phrase": "Aunt Bea's family",
+  "reading": "Aunt Vere's family",
+  "conf": "high",
+  "link": "p:vere-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 202,
+  "phrase": "Zoe Troll",
+  "reading": "Zoe Truell",
+  "conf": "high"
+ },
+ {
+  "t": "T3",
+  "line": 202,
+  "phrase": "Aunt Vera",
+  "reading": "Aunt Vere",
+  "conf": "high",
+  "link": "p:vere-somerville"
+ },
+ {
+  "t": "T3",
+  "line": 202,
+  "phrase": "Charles William Somerville Troll",
+  "reading": "Charles William Somerville Truell (\"Toby\")",
+  "conf": "high",
+  "link": "p:toby-truell"
+ },
+ {
+  "t": "T3",
+  "line": 204,
+  "phrase": "The Truro family",
+  "reading": "The Truell family",
+  "conf": "high",
+  "link": "p:edmund-truell"
+ },
+ {
+  "t": "T3",
+  "line": 237,
+  "phrase": "Dorothea Ryan was her maiden name",
+  "reading": "Dorothea Riall was her married name (born Bellingham)",
+  "conf": "medium",
+  "link": "p:dorothea-bellingham"
+ },
+ {
+  "t": "T3",
+  "line": 239,
+  "phrase": "lived across the border",
+  "reading": "lived [at Castle Bellingham, near] the border",
+  "conf": "low",
+  "link": "pl:castle-bellingham"
+ },
+ {
+  "t": "T3",
+  "line": 263,
+  "phrase": "another Bellingen",
+  "reading": "another Bellingham",
+  "conf": "high",
+  "link": "p:henry-bellingham-1676"
+ },
+ {
+  "t": "T3",
+  "line": 264,
+  "phrase": "This is Marcos",
+  "reading": "This is Marcus (Sir Marcus Somerville)",
+  "conf": "high",
+  "link": "p:marcus-somerville-4bt"
+ },
+ {
+  "t": "T3",
+  "line": 269,
+  "phrase": "Monique Beauvais",
+  "reading": "Monique Bâby",
+  "conf": "high",
+  "link": "p:monique-baby"
+ },
+ {
+  "t": "T3",
+  "line": 271,
+  "phrase": "Alan Bellinger",
+  "reading": "Alan Bellingham",
+  "conf": "high",
+  "link": "qn:q-wicked-alan"
+ },
+ {
+  "t": "T3",
+  "line": 273,
+  "phrase": "Wicked Alan, son of Henry Bellingham",
+  "reading": "\"Wicked Alan\", son of Henry Bellingham (label on a portrait)",
+  "conf": "medium",
+  "link": "qn:q-wicked-alan"
+ },
+ {
+  "t": "T3",
+  "line": 274,
+  "phrase": "Judge Tennyson",
+  "reading": "Judge Tenison (Thomas Tennison, 1707–1779)",
+  "conf": "high",
+  "link": "p:thomas-tennison"
+ },
+ {
+  "t": "T3",
+  "line": 275,
+  "phrase": "Colonel Thomas Belgium",
+  "reading": "Colonel Thomas Bellingham",
+  "conf": "high",
+  "link": "p:thomas-bellingham"
+ },
+ {
+  "t": "T3",
+  "line": 275,
+  "phrase": "Battle of the Moines",
+  "reading": "Battle of the Boyne",
+  "conf": "high",
+  "link": "e:ev-boyne-guide"
  }
 ]

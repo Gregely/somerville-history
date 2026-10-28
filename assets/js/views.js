@@ -9,7 +9,7 @@
     <div class="legend" aria-label="How to read the evidence labels">
       ${Object.entries(SA.STATUS).map(([k, s]) => `<div>${SA.badge(k)}<span>${esc(s.long)}</span></div>`).join("")}
       <div><span class="badge st-plain">Confidence<span class="conf conf-high"><i></i><i></i><i></i></span></span><span>three bars high · two medium · one low</span></div>
-      <div><span><a class="cite-q" tabindex="-1">¶16</a> <a class="cite-q cite-b" tabindex="-1">B¶7</a></span><span>a supporting passage in transcript A (the original) or B (the companion transcript); hover to see it beside the parallel passage in the other transcript</span></div>
+      <div><span><a class="cite-q" tabindex="-1">¶16</a> <a class="cite-q cite-b" tabindex="-1">B¶7</a> <a class="cite-q cite-b" tabindex="-1">C¶24</a></span><span>a supporting passage in transcript A (the original) or B (the companion transcript) of the first recording, or in transcript C, of the second recording; hover to see it (for A and B, beside the parallel passage in the other transcript)</span></div>
       <div><a class="cite-s" tabindex="-1">[3]</a><span>links to an external source</span></div>
     </div>`;
   SA.legend = legend;
@@ -97,7 +97,7 @@
           <h2>Most important open questions</h2>
           ${questionItems(A.questions.filter((q) => q.priority === "high"))}
           <p><a href="#/questions">All ${A.questions.length} questions →</a></p>
-          <div class="callout callout-sensitive"><div class="callout-label">The complete record</div><p>Both transcripts are published in full, including the everyday conversation around the history. Grandpa asked for discretion about the 1887 Youghal story; the family has decided to include it, with the family account, the parliamentary record and local history kept separate. See <a href="#/about">About this archive</a>.</p></div>
+          <div class="callout callout-sensitive"><div class="callout-label">The complete record</div><p>All three transcripts, of two recordings, are published in full, including the everyday conversation around the history (only a device PIN spoken in the second recording is left out). Grandpa asked for discretion about the 1887 Youghal story; the family has decided to include it, with the family account, the parliamentary record and local history kept separate. See <a href="#/about">About this archive</a>.</p></div>
         </div>
       </section>`;
   };
@@ -439,7 +439,7 @@
     return `<a class="par" href="#/compare?at=${key}" title="Compare with the same passage in transcript ${SA.TLABEL[t]}">≈ ${SA.TLABEL[t]}¶${par.map((k) => k.split(":")[1]).join(", ")}</a>`;
   };
   function transcriptTabs(cur) {
-    return `<nav class="ttabs" aria-label="Transcripts">${A.transcripts.map((t) => `<a href="#/transcript/${t.id}" class="${cur === t.id ? "cur" : ""}"><b>${SA.TLABEL[t.id]}</b> ${esc(t.role === "original" ? "Original transcript" : "Companion transcript")}</a>`).join("")}${A.alignment ? `<a href="#/compare" class="${cur === "compare" ? "cur" : ""}"><b>A | B</b> Compare side by side</a>` : ""}</nav>`;
+    return `<nav class="ttabs" aria-label="Transcripts">${A.transcripts.map((t) => `<a href="#/transcript/${t.id}" class="${cur === t.id ? "cur" : ""}"><b>${SA.TLABEL[t.id]}</b> ${esc(SA.TROLE[t.role] || "Transcript")}</a>`).join("")}${A.alignment ? `<a href="#/compare" class="${cur === "compare" ? "cur" : ""}"><b>A | B</b> Compare side by side</a>` : ""}</nav>`;
   }
   const filterBar = (extra = "") => `
         <div class="filters sticky">
@@ -456,7 +456,7 @@
         <header class="page-head"><p class="kicker">Primary source · transcript ${SA.TLABEL[t.id]}</p><h1>${esc(t.title)}</h1>
           ${transcriptTabs(t.id)}
           <p class="lede">${esc(t.origin)}</p>
-          <p class="small">Recorded ${esc(t.date)}. Source file: <code>${esc(t.sourceFile || "")}</code>. Paragraph numbers (¶) are line numbers of that file; citations in this archive point to them (transcript A as “¶n”, transcript B as “B¶n”). This is the complete transcript as received; the everyday conversation around the history is marked as asides. <a href="${esc(t.file)}" download>Download the full text (.txt)</a>.</p>
+          <p class="small">Recorded ${esc(t.date)}. Source file: <code>${esc(t.sourceFile || "")}</code>. Paragraph numbers (¶) are line numbers of that file; citations in this archive point to them (transcript A as “¶n”, transcript B as “B¶n”, transcript C as “C¶n”). This is the complete transcript as received${(t.masked || []).length ? ` (except that ${t.masked.map((m) => `${esc(m.what)} in ¶${m.line} is replaced by “${esc(m.replacement)}”`).join("; ")})` : ""}; the everyday conversation around the history is marked as asides. <a href="${esc(t.file)}" download>Download the full text (.txt)</a>.</p>
         </header>
         ${filterBar()}
         <div class="transcript"></div>
@@ -519,9 +519,9 @@
     }).join("");
     main.innerHTML = `
       <div class="transcript-layout wide">
-        <header class="page-head"><p class="kicker">Primary sources · comparison</p><h1>Compare the two transcripts</h1>
+        <header class="page-head"><p class="kicker">Primary sources · comparison</p><h1>Compare transcripts A and B</h1>
           ${transcriptTabs("compare")}
-          <p class="lede">Both are automatic transcripts of the same recording. Each row pairs a paragraph of transcript A with the matching passage of transcript B, aligned word by word. Where they agree, that agreement is evidence about what was said. Where they differ, the archive keeps both readings, because no audio was available to settle them.</p>
+          <p class="lede">Both are automatic transcripts of the first recording (transcript C, of the second recording, has no counterpart). Each row pairs a paragraph of transcript A with the matching passage of transcript B, aligned word by word. Where they agree, that agreement is evidence about what was said. Where they differ, the archive keeps both readings, because no audio was available to settle them.</p>
         </header>
         ${filterBar()}
         <div class="compare"><div class="chead"><div>A · ${esc(SA.transcripts[ta].sourceFile || ta)}</div><div>B · ${esc(SA.transcripts[tb].sourceFile || tb)}</div></div>${rows}</div>
@@ -570,7 +570,7 @@
       <header class="page-head"><p class="kicker">Testimony checked against the record</p><h1>Incorrect information</h1>
         <p class="lede">Places where something Grandpa said in the recording is contradicted by stronger documentary evidence. Each entry keeps his words, with the transcript reference, beside the best-supported conclusion and the sources behind it.</p></header>
       <div class="callout callout-int narrow-callout"><div class="callout-label">What this page corrects</div>
-        <p>It corrects the <b>factual claim</b>, not the record of what he remembered or said. His words stay exactly as recorded in both transcripts, and the rest of the archive still shows them wherever they appear. Most entries are dates he gave as approximate (“I think”, “about”), or family stories passed down to him. Their order of events is usually right.</p>
+        <p>It corrects the <b>factual claim</b>, not the record of what he remembered or said. His words stay exactly as recorded in the transcripts, and the rest of the archive still shows them wherever they appear. Most entries are dates he gave as approximate (“I think”, “about”), or family stories passed down to him. Their order of events is usually right.</p>
         <p class="small">Only genuine contradictions are listed. Uncertainties and open questions are on the <a href="#/questions">Open questions</a> page; misheard words are handled as readings in the transcripts; and claims contradicted only by the family's private tree are not listed (see the <a href="https://github.com/Gregely/somerville-history/blob/claude/family-history-archive-nwmc6d/research/evidence-audit-2026-10.md">evidence audit</a>).</p></div>
       <div class="filters"><div class="seg" role="group" aria-label="Verdict"><button data-v="" aria-pressed="true">All ${list.length}</button><button data-v="corrected" aria-pressed="false">Corrected ${n("corrected")}</button><button data-v="probable" aria-pressed="false">Probably incorrect ${n("probable")}</button></div></div>
       <div class="corrections">${list.map((c) => `
@@ -615,12 +615,12 @@
     (A.corrections || []).forEach((c) => (c.evidence || []).forEach((ev) => (use[ev.src] = use[ev.src] || new Set()).add(`ic:${c.id}`)));
     return use;
   }
-  const ACCESS_SHORT = { direct: "read directly", partial: "partly read", "search-only": "search result only", private: "private family file" };
+  const ACCESS_SHORT = { direct: "read directly", partial: "partly read", "search-only": "search result only", private: "private family material" };
   const ACCESS = {
     direct: "The page itself was read and checked against the claims attributed to it.",
     partial: "Only part of the source could be read (e.g. text extracted from a scan); see the note.",
     "search-only": "Located through search results; the page blocks automated access, so the quoted details still need direct inspection.",
-    private: "A private family research file (not published); its claims are shown as family information and its own citations are named, but the records it cites were not inspected.",
+    private: "Private family material, not published: the family's research files, or documents and pictures in the family's keeping that were shown or read aloud in the recordings. The archive has not inspected the originals, so what they say is shown as family information or testimony.",
   };
   V.sources = function (main, params) {
     sourceUse = sourceUse || computeSourceUse();
@@ -630,13 +630,13 @@
       <div class="two-col block">
         <section class="prose">
           <h2>The primary sources</h2>
-          <p>Two automatic transcripts of the same recorded conversation:</p>
+          <p>Automatic transcripts of two recorded conversations: A and B are two independent transcripts of the first recording (27 October 2026); C is the only transcript of the second (28 October 2026), made while the narrator showed the family's papers and portraits.</p>
           <ul>${A.transcripts.map((t) => `<li><a href="#/transcript/${t.id}"><b>${SA.TLABEL[t.id]}</b>: ${esc(t.title)}</a> (${t.lines.length} paragraphs; file <code>${esc(t.sourceFile || "")}</code>). ${esc(t.origin)}</li>`).join("")}</ul>
-          <p>Transcript A was used to build the archive; B was added during an audit. The <a href="#/compare">side-by-side comparison</a> pairs their paragraphs. Citations to A read “¶n”, citations to B “B¶n”.</p>
+          <p>Transcript A was used to build the archive; B was added during an audit, and C after the second visit. The <a href="#/compare">side-by-side comparison</a> pairs the paragraphs of A and B. Citations to A read “¶n”, to B “B¶n”, and to C “C¶n”. Transcript C has no second transcript to check it against, so its readings of names and dates are compared with the documents instead (see <a href="#/questions?q=q-family-bible">the family Bible question</a>).</p>
           <h2>Method</h2>
           <p>Every person, place, event and term was extracted by reading the whole transcript, resolving the speech-to-text errors from context (for example “Bellinger Martha” as <i>Bellingham Arthur</i>, “Whitflow” as <i>Wicklow</i>, “badayos” as <i>Badajoz</i>). These readings are shown in the transcript itself and graded by confidence.</p>
           <p>References to the same person were merged only when the context made it clear (for instance, “Bunt”, “Bundt” and “Uncle buns” are William Arthur Tenison Bellingham Somerville). People who are mentioned but not named have placeholder entries rather than invented names.</p>
-          <p>Where the two transcripts disagree, the more plausible reading is shown with a confidence label, and the alternative is kept in the reading note or an open question. No audio was available. Where they agree on a wording, that is treated as evidence of what was said, even when the wording is itself a slip (for example “my aunt Eddie's parents”).</p>
+          <p>Where transcripts A and B disagree, the more plausible reading is shown with a confidence label, and the alternative is kept in the reading note or an open question. No audio was available. Where they agree on a wording, that is treated as evidence of what was said, even when the wording is itself a slip (for example “my aunt Eddie's parents”).</p>
           <p>Where the narrator's account could be checked, we looked for published sources, preferring primary records (Hansard), then scholarly and heritage databases, then reference works. External facts are always shown separately from family testimony and numbered below. Where a primary record or well-supported published research contradicts the narrator, the archive's conclusion follows the documentary evidence, and his own account is still shown beside it (“Narrator's account”) with the source and the reasoning, so his testimony is never silently replaced. Where the evidence is not decisive, both versions are kept and the conflict is flagged.</p>
           <p>A few identifications were supplied by the family in 2026 rather than said in the recording (for example the names of the narrator's children); they carry the label “Family information”.</p>
           <p>Nothing has been added to fill gaps. Dates the narrator did not give are left blank or marked as estimates.</p>
@@ -644,7 +644,7 @@
         <section><h2>Evidence labels</h2>${legend()}</section>
       </div>
       <section class="block"><h2>External sources <span class="count">${A.sources.length}</span></h2>
-        <p class="small muted">Each source is labelled <span class="access access-direct">read directly</span>, <span class="access access-partial">partly read</span> or <span class="access access-search-only">search result only</span>. Compiled online genealogies are secondary: they can confirm that a claim exists somewhere else, but they are not proof of it, and some draw on the same family's own research.</p>
+        <p class="small muted">Each source is labelled <span class="access access-direct">read directly</span>, <span class="access access-partial">partly read</span>, <span class="access access-search-only">search result only</span> or <span class="access access-private">private family material</span> (not inspected by the archive). Compiled online genealogies are secondary: they can confirm that a claim exists somewhere else, but they are not proof of it, and some draw on the same family's own research.</p>
         <ol class="sources">${A.sources.map((s) => `
           <li id="src-${s.id}" value="${SA.sourceNo[s.id]}">
             <div class="st">${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>` : esc(s.title)}</div>
@@ -682,18 +682,18 @@
         <p class="lede">This site preserves a recorded conversation in which Grandpa, William Somerville (born 1937), told his grandson Gergely what he knows about the Somerville family, organised so that people now and later can explore it, check it and add to it.</p>
         <h2>What is here</h2>
         <ul>
-          <li><b>Story</b>: a narrative in eleven chapters, with testimony, interpretation and published history clearly distinguished.</li>
+          <li><b>Story</b>: a narrative in twelve chapters, with testimony, interpretation and published history clearly distinguished.</li>
           <li><b>Incorrect information</b>: the places where Grandpa's testimony is contradicted by stronger documentary evidence, with his words, the best-supported conclusion and the sources side by side. It corrects the facts, not the record of what he said.</li>
           <li><b>Tree</b>: the Somervilles and five related families, drawn from structured parent and partner links.</li>
           <li><b>People, Places, Glossary, Timeline</b>: directories that link to each other and to the transcript.</li>
           <li><b>Open questions</b>: everything uncertain or contradictory, with suggested next steps.</li>
-          <li><b>Transcripts</b>: two independent speech-to-text transcripts of the same conversation (A, the original, and B, a companion), with readings of misheard words, links between parallel passages, and a side-by-side <a href="#/compare">comparison</a>.</li>
+          <li><b>Transcripts</b>: two independent speech-to-text transcripts of the first conversation (A, the original, and B, a companion), with readings of misheard words, links between parallel passages, and a side-by-side <a href="#/compare">comparison</a>; and transcript C, of a second conversation the next day, spent over the family's papers and portraits.</li>
         </ul>
         <h2>Privacy and discretion</h2>
-        <p>Both transcripts are published complete, exactly as received, and can be downloaded as text files from the transcript pages. Passages of everyday conversation are marked as asides, shown by default, and can be hidden to keep to the history. The narrator, William Somerville, and his immediate family are named, as confirmed by the family in 2026; profiles of living people record their place in the family rather than personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
+        <p>All three transcripts are published complete, exactly as received (except that a four-digit device PIN spoken in the second recording is replaced by “[PIN removed]”: it is a credential, not family history), and can be downloaded as text files from the transcript pages. Passages of everyday conversation are marked as asides, shown by default, and can be hidden to keep to the history. The narrator, William Somerville, and his immediate family are named, as confirmed by the family in 2026; profiles of living people record their place in the family rather than personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
         <h2>Limitations</h2>
         <ul>
-          <li>Both transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle their disagreements; some passages are garbled beyond recovery in both.</li>
+          <li>All three transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle their disagreements; some passages are garbled beyond recovery. The second recording has only one transcript, so where it reads a document aloud (the family Bible, for example) a date may be misheard as well as misread; such readings are checked against the printed sources before they are relied on.</li>
           <li>Many dates rest on one person's memory. External checks cover the points listed under Sources; most family details are not yet verified against civil or church records.</li>
           <li>Map positions marked “approximate” are best guesses.</li>
           <li>Search and the tree run in your browser; the map needs an internet connection.</li>

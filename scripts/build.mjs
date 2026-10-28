@@ -58,7 +58,9 @@ const transcripts = manifest.map((t) => {
     if (/\[Passage withheld|withheld…\]/.test(text)) err(`${t.id}:${n}: transcript contains a redaction marker; the archive publishes the complete text`);
     lines.push({ n, text, kind: inAside(n) ? "aside" : "text" });
   });
-  return { id: t.id, title: t.title, date: t.date, origin: t.origin, role: t.role, sourceFile: t.sourceFile, file: t.file, lines };
+  // a credential spoken in a recording is masked, and the manifest says where
+  for (const m of t.masked || []) if (!(raw[m.line - 1] || "").includes(m.replacement)) err(`${t.id}:${m.line}: masked passage should contain "${m.replacement}"`);
+  return { id: t.id, title: t.title, date: t.date, origin: t.origin, role: t.role, sourceFile: t.sourceFile, file: t.file, masked: t.masked, lines };
 });
 const lineIndex = new Map();
 for (const t of transcripts) for (const l of t.lines) lineIndex.set(`${t.id}:${l.n}`, l);

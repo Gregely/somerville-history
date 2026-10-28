@@ -100,9 +100,91 @@
   "variants": [
    "baronet"
   ],
-  "def": "A hereditary title (Sir …) below the peerage, passing normally to the eldest legitimate male heir. The Somerville baronetcy was created in 1748 for Sir James Somerville {q:84} {s:wp-sir-james-somerville}.",
+  "def": "A hereditary title (Sir …) below the peerage, passing normally to the eldest legitimate male heir. The Somerville baronetcy was created in 1748 for Sir James Somerville {q:84} {s:wp-sir-james-somerville}. {ctx}The holders were Sir James (1748), Sir Quaile, Sir James Quaile, Sir Marcus and Sir William Meredyth Somerville, the last created Baron Athlumney; his son the 2nd Baron was the 6th Baronet {s:wp-somerville-baronets}, so a successor proved today would be the 7th. A baronet's arms carry the red hand of Ulster ({t:red-hand}); succession must be proved for entry on the {t:roll-of-baronetage|Official Roll}.",
   "people": [
    "james-somerville-1bt"
+  ]
+ },
+ {
+  "id": "confirmation-of-arms",
+  "term": "Confirmation of arms",
+  "category": "Heraldry",
+  "aliases": [
+   "confirmation"
+  ],
+  "variants": [
+   "confirmation of arms"
+  ],
+  "def": "A heraldic authority's formal recognition that arms a family has long used are its own, recorded in the official register, as distinct from a new grant. \"In our case, our family's case, there wasn't a formal grant of arms, but there was a confirmation of arms\" {q:T3:76}: the king confirming \"that the arms which her father and brothers and ancestors had used were authentic and in use from time immemorial\" {q:T3:78}. {ctx}The Somerville confirmation, made to Elizabeth Mary (Lily) Somerville and the descendants of Major William Somerville, is dated 2 April 1924 in the Genealogical Office's register {s:nli-arms-1924}.",
+  "people": [
+   "elizabeth-mary-somerville",
+   "major-william-somerville"
+  ]
+ },
+ {
+  "id": "ulster-king-of-arms",
+  "term": "Ulster King of Arms",
+  "category": "Heraldry",
+  "aliases": [
+   "Ulster",
+   "Ulster's Office",
+   "Office of Arms"
+  ],
+  "variants": [
+   "Oster King of Arms"
+  ],
+  "def": "Ireland's chief herald from 1552, based in Dublin Castle. \"The person in charge of the arms in Ireland was the Ulster King of Arms\" {q:T3:49}; Lily Somerville's confirmation was signed by \"Major Sir Neville Rodwell Wilkinson … Ulster King of Arms, and Principal Herald of All Ireland\" {q:T3:80}. {ctx}Wilkinson held the office from 1908 until his death in 1940; in 1943 it was joined to Norroy (Norroy and Ulster King of Arms, at the College of Arms in London), and heraldry in the Republic passed to the Chief Herald of Ireland at the Genealogical Office {s:wp-ulster-king-of-arms} {s:wp-genealogical-office}. The narrator dates the change \"after 1930\" {q:T3:49-50}.",
+  "places": [
+   "genealogical-office",
+   "dublin-castle"
+  ]
+ },
+ {
+  "id": "college-of-arms",
+  "term": "College of Arms; kings of arms, heralds and pursuivants",
+  "category": "Heraldry",
+  "aliases": [
+   "Garter King of Arms",
+   "Garter",
+   "herald",
+   "pursuivant",
+   "Rouge Dragon"
+  ],
+  "variants": [
+   "perservant",
+   "Perseverant",
+   "persimmon",
+   "Legata"
+  ],
+  "def": "The heralds' college in London: \"it has what are called heralds\" — \"the chief officer, garter, king of arms. There are other kings of arms here. And then there are heralds. And then there are pursuivants\" {q:T3:42-44}. The officers of arms record arms and, the narrator explains, rule on claims such as his family's to the baronetcy; his claim is in the hands of a pursuivant, \"Philip Bone\" {q:T3:69} {q:T3:139} {q:T3:189-191}. {ctx}The College was chartered by Richard III in 1484 (not Henry II, as the narrator says) and is at 130 Queen Victoria Street; it has thirteen officers, and James Peill is Garter King of Arms {s:wp-college-of-arms}. Phillip Bone has been Rouge Dragon Pursuivant since 2023 {s:wp-rouge-dragon}.",
+  "places": [
+   "college-of-arms"
+  ]
+ },
+ {
+  "id": "armiger",
+  "term": "Armiger, armigerous",
+  "category": "Heraldry",
+  "aliases": [
+   "armigerous"
+  ],
+  "variants": [
+   "Armiger"
+  ],
+  "def": "Entitled to bear a coat of arms. \"People who have coats of arms are described as armigerous. Armiger. In other words, bearing arms\" {q:T3:47-48}; \"Our family have always had arms\" {q:T3:48}."
+ },
+ {
+  "id": "family-motto",
+  "term": "\"Crains Dieu tant que tu viveras\" (family motto)",
+  "category": "Heraldry",
+  "aliases": [
+   "Fear God in life",
+   "Fear God as long as you live"
+  ],
+  "variants": [],
+  "def": "The Somerville motto, \"Fear God as long as you live\": \"That's the family motto. Fear God as long as you live. Fear God in life\", carved on the hall fireplace at Clermont {q:T3:86}. {ctx}The family's 1897 pedigree prints it in French, \"Crains Dieu tant que tu viveras\", with the arms: azure, three mullets or, between seven cross-crosslets fitchée argent; crest, a demi-lion rampant sable charged with a cross-crosslet and two mullets {s:visitation-1897}.",
+  "places": [
+   "clermont"
   ]
  },
  {
@@ -115,11 +197,131 @@
   "variants": [
    "became dormant"
   ],
-  "def": "A title is dormant when the last holder dies and no heir has proved a claim, although one may exist (as opposed to extinct, when no heir can exist). The Somerville baronetcy has been dormant since January 1929 {q:174} {s:wp-athlumney}. A claimant would have to prove legitimate male descent from a baronet, which is why the legitimacy of little Archie, Archibald James's son, matters to the family's story {q:130, 168-174}.",
+  "def": "A title is dormant when the last holder dies and no heir has proved a claim, although one may exist (as opposed to extinct, when no heir can exist). The Somerville baronetcy has been dormant since January 1929 {q:174} {s:wp-athlumney}. A claimant would have to prove legitimate male descent from a baronet, which is why the legitimacy of little Archie, Archibald James's son, matters to the family's story {q:130, 168-174}. In January 1929 the press reported that \"Major William A.T.B. Somerville\" (Uncle Bunt) was \"heir to the baronetcy\" {q:T3:92-93}; no one has since been entered on the {t:roll-of-baronetage|Official Roll} ({qn:q-baronetcy-succession}).",
   "people": [
    "james-somerville-2nd-baron",
    "little-archie",
    "archibald-james-somerville"
+  ]
+ },
+ {
+  "id": "roll-of-baronetage",
+  "term": "Official Roll of the Baronetage",
+  "category": "Title",
+  "aliases": [
+   "the Roll",
+   "roll of baronets"
+  ],
+  "variants": [
+   "role of baronets"
+  ],
+  "def": "The official register of baronets. The narrator: the baronetcy \"remains dormant because … there is no member of the family on what is called the role [roll] of baronets\" accepted as \"the eldest son of the eldest son of the eldest son, … born in Wedlock\" {q:T3:138-139}. {ctx}The Roll is maintained for the Lord Chancellor; a claimant must furnish legal evidence of succession, and a baronet not on the Roll is not entitled to the title's precedence or to be so styled in official documents {s:wp-official-roll}."
+ },
+ {
+  "id": "strict-settlement",
+  "term": "Settlement in tail (\"heirs male of the body\")",
+  "category": "Legal term",
+  "aliases": [
+   "entail",
+   "tail male",
+   "heirs male of the body"
+  ],
+  "variants": [
+   "as-male of your body",
+   "air-male of your body"
+  ],
+  "def": "A settlement of land on a line of heirs in turn: \"You leave your estate to the [heirs] male of your body, as long as there is an [heir] male of your body … Then it's the [heirs] female of your body, and so on\" {q:T3:109}. The 2nd Baron Athlumney's estates were so settled, ending with the sons of his wife's sister, which brought Somerville to Quentin Agnew {q:T3:108-112}. A name-and-arms clause, requiring the heir to take the family's name and arms, made him Quentin Agnew-Somerville {q:T3:113} {s:wp-agnew-somerville}.",
+  "people": [
+   "james-somerville-2nd-baron",
+   "quentin-somerville"
+  ]
+ },
+ {
+  "id": "red-hand",
+  "term": "Red hand of Ulster (baronet's badge)",
+  "category": "Heraldry",
+  "aliases": [
+   "hand of Ulster"
+  ],
+  "variants": [],
+  "def": "The red hand added to a baronet's arms as the badge of his rank: \"That's the hand of Ulster. It's the sign of a baronet. The red hand of Ulster\" {q:T3:119}, on Quentin Agnew-Somerville's shield."
+ },
+ {
+  "id": "freedom-of-dublin",
+  "term": "Freedom of the City of Dublin",
+  "category": "Institution",
+  "aliases": [
+   "freedom of the city"
+  ],
+  "variants": [],
+  "def": "Citizenship of the city with its old privileges, which could be claimed by descent. \"Bellingham also got the freedom of the city of Dublin … You could get the freedom of the city by descent … So it doesn't actually mean very much\" {q:T3:17-18}. {ctx}The 1897 pedigree records the admissions of Captain William and his son Bellingham (1842), Tenison Alan (1883) and Bellingham Arthur (1893) {s:visitation-1897}.",
+  "people": [
+   "captain-william-somerville",
+   "bellingham-somerville",
+   "tenison-alan-somerville",
+   "bellingham-arthur-somerville"
+  ]
+ },
+ {
+  "id": "family-bible",
+  "term": "Family Bible",
+  "category": "Source",
+  "aliases": [
+   "the Bible"
+  ],
+  "variants": [],
+  "def": "A Bible in which a family wrote its births, baptisms, marriages and deaths. \"That is the actual family Bible\"; \"It was said that my Captain William [Somerville] entered in all his ten children here … As they were born or baptized\" {q:T3:25-27}. \"So by Bible you mean just sort of a list of names, not the Holy Bible?\" \"No, no, this is the Holy Bible\" {q:T3:27}. See {qn:q-family-bible}.",
+  "people": [
+   "captain-william-somerville",
+   "tenison-alan-somerville"
+  ]
+ },
+ {
+  "id": "debretts",
+  "term": "Debrett's",
+  "category": "Source",
+  "aliases": [
+   "Debrett's Peerage and Baronetage"
+  ],
+  "variants": [
+   "de Bretts",
+   "de Bretz",
+   "De Bretts"
+  ],
+  "def": "The standard reference book of the peerage and baronetage. The narrator: the penultimate edition shows the senior line; in the latest, on the advice of a professional genealogist, an American descendant of Archibald James is shown as \"probably\" the baronet {q:T3:116} {q:T3:130-131} {q:T3:137}. Not checked."
+ },
+ {
+  "id": "american-somervilles",
+  "term": "\"The American Somervilles\"",
+  "category": "Family",
+  "aliases": [],
+  "variants": [
+   "American syllables",
+   "American synodals"
+  ],
+  "def": "The narrator's name for the descendants of Archibald James Somerville's 1836 marriage to Elizabeth Crawford, who settled in America: \"That is where the people I refer to as the American Somervilles\" come from {q:T3:144}. He regards that marriage as bigamous and their line as illegitimate; a genealogist has advised them \"that the senior American [Somerville] is the current baronet\" {q:T3:131-137} ({qn:q-baronetcy-succession}).",
+  "people": [
+   "archibald-james-somerville",
+   "elizabeth-crawford",
+   "bellingham-brooke-somerville"
+  ]
+ },
+ {
+  "id": "gualter-de-somerville",
+  "term": "Sir Gualter de Somerville",
+  "category": "Family",
+  "aliases": [
+   "Walter de Somerville"
+  ],
+  "variants": [
+   "Sir Galter the Somerville"
+  ],
+  "def": "The Norman knight with whom Bellingham Arthur's notebooks begin: \"going back … to Sir Galter the Somerville [Gualter de Somerville], a nobleman knight, something, came into England\" {q:T3:4-5}. {ctx}Accounts of the Scottish Somervilles make Sir Gualter \"a Norman knight and companion of William the Conqueror\", rewarded with Whichnour (Wychnor) in Staffordshire and Aston Somerville near Evesham {s:wp-lord-somerville}. {int}Bellingham Arthur gave two of his children the Staffordshire names Whichnour and Alrewas, and named a son Gualter {p:pat|(Uncle Pat)}.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "alan-everard-somerville",
+   "dorothy-somerville",
+   "pat"
   ]
  },
  {
@@ -436,7 +638,7 @@
   "category": "Legal term",
   "aliases": [],
   "variants": [],
-  "def": "A formal notice by the prosecution that it will not proceed with a charge. A local history says the Crown entered one in the case against D.I. Somerville and Constable Ward in 1887, and describes the men as \"eventually acquitted\" {s:ballymacoda-1887}; Hansard records that the Attorney General saw \"no grounds to advise a prosecution\" {s:hansard-1887c}. The narrator says, more exactly, that Captain Somerville was \"reinstated, but … never formally acquitted\" {q:T2:126-127} {q:322}.",
+  "def": "A formal notice by the prosecution that it will not proceed with a charge. On 8 September 1887 the Attorney General for Ireland confirmed to the Commons that a nolle prosequi had been entered at the Cork Assizes in \"the Queen v. Sub-Inspector Somerville and Constable Ward\" {s:hansard-1887-sep8}; in May he had said he saw \"no grounds to advise a prosecution\" {s:hansard-1887c}. A local history describes the men as \"eventually acquitted\" {s:ballymacoda-1887}. The narrator says, more exactly, that Captain Somerville was \"reinstated, but … never formally acquitted\" {q:T2:126-127} {q:322}.",
   "people": [
    "bellingham-arthur-somerville"
   ]
@@ -599,12 +801,15 @@
    "Crisp's"
   ],
   "variants": [
-   "Crips"
+   "Crips",
+   "very crisp"
   ],
-  "def": "The narrator shows \"an entry in a journal called Crisp's\" with facsimile signatures of Captain William and Eliza {q:124} {q:T2:54-55}. {int}This is very probably Joseph Jackson Howard and Frederick Arthur Crisp's Visitation of Ireland (1897–1918), privately printed pedigrees that often reproduce family signatures. The entry would list the children, which may resolve the unnamed eighth son.",
+  "def": "The Visitation of Ireland, edited by Joseph Jackson Howard and Frederick Arthur Crisp (1897–1918): privately printed pedigrees, supplied by the families themselves, that often reproduce family signatures. In the first recording the narrator shows \"an entry in a journal called Crisp's\" with the facsimile signatures of Captain William and Eliza {q:124} {q:T2:54-55}. In the second he explains it: \"The families themselves sent in the information, so they're not authoritative in many ways. It is what the family believed to be the case. This is what my grandfather sent in\" {q:T3:13-14}, and the family's copy carries handwritten additions by his grandfather and father {q:T3:23-24}. {ctx}The Somerville pedigree is in volume 1 (1897), pp. 64–65, \"Somerville of Clermont, co. Wicklow\" {s:visitation-1897}, with Reginald's birth in the additions to volume 2 {s:visitation-additions}. It names all ten of Captain William's children, which settles the eighth son ({qn:q-eighth-son}).",
   "people": [
    "captain-william-somerville",
-   "eliza-bellingham"
+   "eliza-bellingham",
+   "bellingham-arthur-somerville",
+   "reginald-somerville"
   ]
  },
  {
@@ -637,7 +842,7 @@
   "category": "Institution",
   "aliases": [],
   "variants": [],
-  "def": "Dublin's principal gentlemen's club for the Protestant landed class; its former building at the bottom of Kildare Street later housed the Genealogical Office {q:274}.",
+  "def": "Dublin's principal gentlemen's club for the Protestant landed class; its former building at the bottom of Kildare Street later housed the Genealogical Office {q:274}. In the second recording the narrator mentions a talk by the Garter King of Arms \"in the Kildare Street Club\" the following evening {q:T3:65-66}.",
   "places": [
    "genealogical-office"
   ]

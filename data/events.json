@@ -78,33 +78,35 @@
  {
   "id": "ev-capt-william-born",
   "year": 1776,
-  "display": "3 Mar 1776",
+  "display": "7 Mar 1776",
   "kind": "family",
   "title": "Captain William Somerville born",
-  "desc": "Born 3 March 1776, according to a compiled genealogy; the published Bellingham genealogy also gives 1776 {s:winters-p67} {s:lf-bellingham}. The narrator: \"born in 1777, I think\" {q:62} {q:T2:30}.",
+  "desc": "Born on 7 March and baptised at St Thomas', Dublin, on 11 March 1776, according to the family's printed pedigree {s:visitation-1897}; Kingsley also gives 1776 {s:lf-bellingham}, and Stirnet 3 March {s:winters-p67}. The narrator remembered \"born in 1777, I think\" {q:62} {q:T2:30}; reading the family Bible in the second recording he was heard as saying \"born on the 7th of March, 1778\" {q:T3:28} ({qn:q-family-bible}).",
   "people": [
    "captain-william-somerville"
   ],
   "cite": [
    62,
-   "T2:30"
+   "T2:30",
+   "T3:28"
   ],
   "status": "record",
-  "conf": "medium",
+  "conf": "high",
   "src": [
+   "visitation-1897",
    "lf-bellingham",
    "winters-p67"
   ],
   "month": 3,
-  "day": 3
+  "day": 7
  },
  {
   "id": "ev-eliza-born",
   "year": 1779,
-  "display": "1779",
+  "display": "5 Sep 1779",
   "kind": "family",
   "title": "Eliza Bellingham born",
-  "desc": "Published date {s:lf-bellingham}; a compiled genealogy gives 5 September 1779, Thomastown, Co. Louth {s:winters-p67}.",
+  "desc": "The second of three daughters of Colonel Henry Bellingham of Castle Bellingham, born 5 September 1779 {s:visitation-1897} {s:lf-bellingham}. The family Bible, as heard in the second recording, gives \"the 8th of September 1772\" {q:T3:29}, which cannot be right for a second daughter whose parents married in June 1772 ({qn:q-family-bible}).",
   "people": [
    "eliza-bellingham"
   ],
@@ -112,7 +114,16 @@
    "castle-bellingham"
   ],
   "status": "record",
-  "conf": "medium"
+  "conf": "high",
+  "month": 9,
+  "day": 5,
+  "src": [
+   "visitation-1897",
+   "lf-bellingham"
+  ],
+  "cite": [
+   "T3:29"
+  ]
  },
  {
   "id": "ev-alan-monique",
@@ -460,20 +471,26 @@
   "display": "16 Dec 1839",
   "kind": "family",
   "title": "Eliza Somerville (née Bellingham) dies",
-  "desc": "\"Eliza died, 1839\" {q:186}; \"the family then went into decline\" {q:198}. Day from the published genealogy {s:lf-bellingham}.",
+  "desc": "\"Eliza died, 1839\" {q:186}; \"the family then went into decline\" {q:198}. She died on 16 December and was buried at St Audoen's on 19 December 1839 {s:visitation-1897} {s:lf-bellingham}. The family Bible, as read aloud in the second recording, has her die \"on the 18th of December 1839 at Bayview Avenue in the City of Dublin\" {q:T3:29}.",
   "people": [
    "eliza-bellingham"
   ],
   "places": [
-   "bayview"
+   "bayview",
+   "st-audoens"
   ],
   "cite": [
    186,
    196,
-   198
+   198,
+   "T3:29"
   ],
-  "status": "testimony",
-  "conf": "high"
+  "status": "record",
+  "conf": "high",
+  "src": [
+   "visitation-1897",
+   "lf-bellingham"
+  ]
  },
  {
   "id": "ev-tenison-returns",
@@ -501,16 +518,17 @@
   "id": "ev-1844-deaths",
   "year": 1844,
   "month": 12,
-  "display": "autumn & Dec 1844",
+  "display": "17 Nov & 19 Dec 1844",
   "kind": "family",
   "title": "Deaths of Bellingham and of Captain William Somerville",
-  "desc": "Father and son had moved to lodgings north of the Liffey. \"Bellingham died in the autumn of 1844 and Captain William died in December 1844\" {q:198-200} {q:T2:81-82}. A compiled genealogy gives 19 December 1844 for Captain William, and 17 November 1845 for Bellingham, noting that the IGI gives 1844 {s:winters-p67}.",
+  "desc": "Father and son had moved to lodgings north of the Liffey. \"Bellingham died in the autumn of 1844 and Captain William died in December 1844\" {q:198-200} {q:T2:81-82}. The family's 1897 pedigree gives the days: Bellingham died on 17 November (buried at St Audoen's on 19 November) and Captain William on 19 December (buried there on 21 December) 1844 {s:visitation-1897}. The compiled genealogy's 1845 for Bellingham is wrong {s:winters-p67}.",
   "people": [
    "bellingham-somerville",
    "captain-william-somerville"
   ],
   "places": [
-   "dublin-lodgings"
+   "dublin-lodgings",
+   "st-audoens"
   ],
   "cite": [
    198,
@@ -518,11 +536,60 @@
    "T2:81",
    "T2:82"
   ],
-  "status": "testimony",
+  "status": "record",
   "conf": "high",
   "src": [
+   "visitation-1897",
    "winters-p67"
   ]
+ },
+ {
+  "id": "ev-freedom-1842",
+  "year": 1842,
+  "month": 1,
+  "day": 10,
+  "display": "10 Jan 1842",
+  "kind": "family",
+  "title": "Captain William and his son Bellingham admitted to the Freedom of Dublin",
+  "desc": "The 1897 pedigree records the admission of Captain William Somerville and his son Bellingham to the Freedom of the City of Dublin on 10 January 1842; Tenison Alan followed in 1883 and Bellingham Arthur in 1893 {s:visitation-1897}. The narrator, reading the pedigree: \"Bellingham also got the freedom of the city of Dublin … You could get the freedom of the city by descent … So it doesn't actually mean very much\" {q:T3:17-18}.",
+  "people": [
+   "captain-william-somerville",
+   "bellingham-somerville",
+   "tenison-alan-somerville",
+   "bellingham-arthur-somerville"
+  ],
+  "places": [
+   "dublin"
+  ],
+  "cite": [
+   "T3:17",
+   "T3:18"
+  ],
+  "src": [
+   "visitation-1897"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-bible-copy",
+  "year": 1850,
+  "display": "1850",
+  "kind": "family",
+  "title": "Tenison Alan copies his father's family record",
+  "desc": "An envelope in the narrator's keeping holds \"one small page of the original family record entered in the family Bible by Captain William Somerville\", a \"copy of the entire record of Captain William Somerville made by his son T.A. in 1850\", and Tenison Alan's own \"record of the births of his children made in the family Bible\" {q:T3:34}.",
+  "people": [
+   "tenison-alan-somerville",
+   "captain-william-somerville"
+  ],
+  "cite": [
+   "T3:34"
+  ],
+  "src": [
+   "fam-bible"
+  ],
+  "status": "testimony",
+  "conf": "high"
  },
  {
   "id": "ev-famine",
@@ -619,18 +686,23 @@
  {
   "id": "ev-archibald-dies",
   "year": 1871,
-  "display": "1871",
+  "display": "7 Feb 1871",
   "kind": "family",
-  "title": "Archibald James Somerville dies (?)",
-  "desc": "\"He died in 1871, I think\" {q:128}. Unverified.",
+  "title": "Archibald James Somerville dies",
+  "desc": "\"He died in 1871, I think\" {q:128}. The family's 1897 pedigree confirms it: died 7 February 1871, place not given {s:visitation-1897}.",
   "people": [
    "archibald-james-somerville"
   ],
   "cite": [
    128
   ],
-  "status": "testimony",
-  "conf": "low"
+  "status": "record",
+  "conf": "high",
+  "month": 2,
+  "day": 7,
+  "src": [
+   "visitation-1897"
+  ]
  },
  {
   "id": "ev-bunt-born",
@@ -801,10 +873,10 @@
   "id": "ev-reginald-born",
   "year": 1897,
   "approx": false,
-  "display": "1897",
+  "display": "14 Feb 1897",
   "kind": "family",
   "title": "Reginald Somerville born at Clermont",
-  "desc": "The youngest child and the only one born at Clermont; he was 17 when war broke out in 1914 {q:348} {q:574} {q:T2:138} {q:T2:228}. The family tree cites a civil birth registration in 1897, Rathdrum district {s:family-tree-2026}.",
+  "desc": "The youngest child and the only one born at Clermont; he was 17 when war broke out in 1914 {q:348} {q:574} {q:T2:138} {q:T2:228}. Born at Clermont on 14 February 1897, according to the printed additions to the family's pedigree {s:visitation-additions}, which the narrator read from the family's copy {q:T3:24}.",
   "people": [
    "reginald-somerville"
   ],
@@ -817,13 +889,17 @@
    574,
    "T2:138",
    "T2:199",
-   "T2:228"
+   "T2:228",
+   "T3:24"
   ],
-  "status": "family",
-  "conf": "medium",
+  "status": "record",
+  "conf": "high",
   "src": [
+   "visitation-additions",
    "family-tree-2026"
-  ]
+  ],
+  "month": 2,
+  "day": 14
  },
  {
   "id": "ev-cecil-marries",
@@ -1127,19 +1203,24 @@
   "display": "8 Jan 1929",
   "kind": "family",
   "title": "Somerville baronetcy becomes dormant",
-  "desc": "The 2nd Baron Athlumney dies without issue; his peerages become extinct and the baronetcy dormant {q:174} {q:T2:73} {s:wp-2nd-baron}. (Transcript B: \"the Somerville baronetcy became dormant when the then baronet died in January 1929\".)",
+  "desc": "The 2nd Baron Athlumney dies without issue; his peerages become extinct and the baronetcy dormant {q:174} {q:T2:73} {s:wp-2nd-baron}. (Transcript B: \"the Somerville baronetcy became dormant when the then baronet died in January 1929\" {q:T2:73}.) The newspaper report the narrator read in the second recording ended: \"There is no heir to the barony. Major William A.T.B. Somerville is heir to the baronetcy\": that is, Uncle Bunt {q:T3:92-93}.",
   "people": [
-   "james-somerville-2nd-baron"
+   "james-somerville-2nd-baron",
+   "bunt"
   ],
   "places": [
    "somerville-meath"
   ],
   "cite": [
    174,
-   "T2:73"
+   "T2:73",
+   "T3:91",
+   "T3:92",
+   "T3:93"
   ],
   "src": [
-   "wp-2nd-baron"
+   "wp-2nd-baron",
+   "fam-athlumney-cutting"
   ],
   "status": "record",
   "conf": "high"
@@ -1444,7 +1525,7 @@
   "approx": true,
   "display": "27 Oct 2026",
   "kind": "family",
-  "title": "The conversation is recorded",
+  "title": "The first conversation is recorded",
   "desc": "Transcript A's file is labelled \"27 Oct at 16-17\"; transcript B's file is stamped \"2026-10-27 19.50.34\". The narrator, born 1937, is \"coming up to 90\" {q:50} {q:T2:25}. {int}The file timestamps point to 27 October 2026, though they record when the files were made rather than the conversation itself. See {qn:q-recording-date}.",
   "people": [
    "narrator",
@@ -1464,7 +1545,7 @@
   "display": "1802–1820",
   "kind": "family",
   "title": "Ten children born to Captain William and Eliza",
-  "desc": "\"Eight boys and two girls … every single one born at a different place\" {q:62} {q:84} {q:T2:31} {q:T2:40}. A compiled genealogy gives dates for all ten, from William Henry (January 1802) to Samuel Riall (November 1820), including two who died within days or weeks of birth and an Eliza who died aged four {s:winters-p67}.",
+  "desc": "\"Eight boys and two girls … every single one born at a different place\" {q:62} {q:84} {q:T2:31} {q:T2:40}. The family's 1897 pedigree bears this out: William Henry at Leixlip (1802), Archibald James at Kilkenny (1803), John Churchill at Dover (1804), Corry at Carrick-on-Suir (1806), Eliza at Athboy (1808), Bellingham at Lucan (1810), Tenison at Newry (1812), Eliza at Dundalk (1813), Tenison Alan at Loughbrickland (1815) and Samuel Riall at Cumry (1820) {s:visitation-1897}. Captain William entered each child in the family Bible \"as they were born or baptized\" {q:T3:26-27}, and the second recording reads several of the entries {q:T3:30-32}. A compiled genealogy gives similar dates {s:winters-p67}.",
   "people": [
    "captain-william-somerville",
    "eliza-bellingham",
@@ -1480,19 +1561,60 @@
    "samuel-somerville"
   ],
   "places": [
-   "ulster",
+   "leixlip",
+   "kilkenny",
+   "dover",
+   "carrick-on-suir",
+   "athboy",
+   "lucan",
+   "newry",
+   "dundalk",
+   "loughbrickland",
    "cumry"
   ],
   "cite": [
    62,
    84,
    "T2:31",
-   "T2:40"
+   "T2:40",
+   "T3:26",
+   "T3:27",
+   "T3:30",
+   "T3:31",
+   "T3:32"
   ],
   "src": [
+   "visitation-1897",
    "winters-p67"
   ],
   "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-eliza-infant-dies",
+  "year": 1812,
+  "month": 6,
+  "day": 13,
+  "approx": true,
+  "display": "13 Jun (or 13 Jan) 1812",
+  "kind": "family",
+  "title": "The first Eliza dies, aged four",
+  "desc": "The family Bible, as read aloud: she \"died at Warren Point near Newry on landing from Liverpool on the 13th of June, 1812, buried in Clonallan churchyard\" {q:T3:31}. The 1897 pedigree has 13 January 1812 {s:visitation-1897}; the compiled genealogy 13 June {s:winters-p67} ({qn:q-eliza-infant-death}).",
+  "people": [
+   "eliza-somerville-infant"
+  ],
+  "places": [
+   "warrenpoint"
+  ],
+  "cite": [
+   "T3:31"
+  ],
+  "src": [
+   "visitation-1897",
+   "winters-p67",
+   "fam-bible"
+  ],
+  "status": "conflict",
   "conf": "medium"
  },
  {
@@ -1515,6 +1637,27 @@
   ],
   "status": "record",
   "conf": "low"
+ },
+ {
+  "id": "ev-archibald-trinidad",
+  "year": 1835,
+  "display": "1823–1835",
+  "approx": true,
+  "kind": "family",
+  "title": "Archibald James in Trinidad, then home to Ireland",
+  "desc": "\"Archibald James lived in Trinidad from … 1823, I think it was, till 1835. He then came back to Ireland\" {q:T3:133-134}, and married Elizabeth Crawford in 1836.",
+  "people": [
+   "archibald-james-somerville"
+  ],
+  "places": [
+   "trinidad"
+  ],
+  "cite": [
+   "T3:133",
+   "T3:134"
+  ],
+  "status": "testimony",
+  "conf": "medium"
  },
  {
   "id": "ev-tenison-marriage",
@@ -1648,11 +1791,11 @@
   "id": "ev-dorothy-dies",
   "year": 1895,
   "month": 3,
-  "day": 5,
-  "display": "5 Mar 1895",
+  "day": 6,
+  "display": "6 Mar 1895",
   "kind": "family",
   "title": "Dorothy Somerville dies, aged six",
-  "desc": "At Seaview House, Wicklow, according to a compiled genealogy citing The Times {s:winters-p68}. Probably one of the two children the narrator \"left out because they died as children\" {q:228} {q:T2:92}.",
+  "desc": "At Seaview House, Wicklow, where she had been born in 1888; buried in Wicklow churchyard on 8 March {s:visitation-1897}. A compiled genealogy citing The Times gives 5 March {s:winters-p68}. One of the two children the narrator \"left out because they died as children\" {q:228} {q:T2:92}.",
   "people": [
    "dorothy-somerville",
    "bellingham-arthur-somerville",
@@ -1666,35 +1809,38 @@
    "T2:92"
   ],
   "src": [
+   "visitation-1897",
    "winters-p68"
   ],
   "status": "record",
-  "conf": "medium"
+  "conf": "high"
  },
  {
   "id": "ev-tenison-dies",
   "year": 1895,
-  "approx": true,
+  "approx": false,
   "display": "31 Jul 1895",
   "kind": "family",
   "title": "Tenison Alan Somerville dies",
-  "desc": "Tenison Alan Somerville died on 31 July 1895, according to the IGI as quoted in a compiled genealogy {s:winters-p67}. The narrator thought he \"died first … about 1890. Early 1890s\", and his wife \"about 1895\" {q:T2:88}; the order of their deaths is still open ({qn:q-tenison-death}).",
+  "desc": "Tenison Alan Somerville died on 31 July 1895 and was buried in Mount Jerome Cemetery on 3 August; his will was proved on 20 September 1895 {s:visitation-1897}. The narrator thought he \"died first … about 1890. Early 1890s\", and his wife \"about 1895\" {q:T2:88} ({qn:q-tenison-death}).",
   "people": [
    "tenison-alan-somerville",
    "eliza-oconnor"
   ],
   "places": [
-   "rathmines"
+   "rathmines",
+   "mount-jerome"
   ],
   "cite": [
    216,
    "T2:88"
   ],
   "src": [
+   "visitation-1897",
    "winters-p67"
   ],
   "status": "record",
-  "conf": "medium",
+  "conf": "high",
   "month": 7,
   "day": 31
  },
@@ -1994,23 +2140,24 @@
   "approx": true,
   "kind": "family",
   "title": "The family at Queenstown, Co. Cork",
-  "desc": "According to the family tree, Jim was born at Queenstown (Cobh) on 23 March 1884 and Alan Everard on 6 October 1885; Alan Everard died there on 14 December 1887 {s:family-tree-2026}. {int}This places Bellingham Arthur in east Cork through the Youghal affair of March 1887, as the narrator's \"early stations … in Cork\" implies {q:T2:116}; by April 1888 the family was in Wicklow. The entries are uncited and need the civil registers.",
+  "desc": "The family's 1897 pedigree records Jim's birth at Queenstown (Cobh) on 23 March 1884, Alan Everard's on 6 October 1885, and Alan Everard's death \"at Merville, Queenstown\" on 14 December 1887 {s:visitation-1897}. {int}This places Bellingham Arthur in east Cork through the Youghal affair of March 1887, as the narrator's \"early stations … in Cork\" implies {q:T2:116}; by April 1888 the family was at Seaview House, Wicklow.",
   "people": [
    "bellingham-arthur-somerville",
    "jim",
    "alan-everard-somerville"
   ],
   "places": [
-   "cork-city"
+   "queenstown"
   ],
   "cite": [
    "T2:116"
   ],
   "src": [
+   "visitation-1897",
    "family-tree-2026"
   ],
-  "status": "family",
-  "conf": "medium"
+  "status": "record",
+  "conf": "high"
  },
  {
   "id": "ev-reginald-dies",
@@ -2029,5 +2176,381 @@
   ],
   "status": "family",
   "conf": "medium"
+ },
+ {
+  "id": "ev-corry-marriage",
+  "year": 1834,
+  "month": 5,
+  "day": 16,
+  "approx": true,
+  "display": "1834",
+  "kind": "family",
+  "title": "Corry Somerville marries Lucinda in Dublin",
+  "desc": "A compiled genealogy dates the marriage of Corry Somerville and Lucinda Simmonton to 16 May 1834 {s:winters-p67}. The narrator's research established that \"Corrie and Lucinda were married in Dublin before they went west to America\", so their children were legitimate {q:T3:179-180}.",
+  "people": [
+   "corry-somerville",
+   "lucinda-simmonton"
+  ],
+  "places": [
+   "dublin",
+   "rochester"
+  ],
+  "cite": [
+   "T3:179",
+   "T3:180"
+  ],
+  "src": [
+   "winters-p67"
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-henry-bs-marriage",
+  "year": 1880,
+  "month": 6,
+  "day": 22,
+  "display": "22 Jun 1880",
+  "kind": "family",
+  "title": "Henry Bellingham Somerville marries Mary Dyas",
+  "desc": "At St Stephen's, Dublin; their only child, Elizabeth Mary (Lily), was born on 29 March 1881 {s:visitation-1897}.",
+  "people": [
+   "henry-bellingham-somerville-1859",
+   "mary-dyas",
+   "elizabeth-mary-somerville"
+  ],
+  "places": [
+   "dublin"
+  ],
+  "src": [
+   "visitation-1897"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-erina-marriage",
+  "year": 1883,
+  "month": 1,
+  "day": 17,
+  "display": "17 Jan 1883",
+  "kind": "family",
+  "title": "Erina Somerville marries the Rev. Thomas Forster Rolfe",
+  "desc": "At St Andrew's, Dublin; he was later Rector of Kirk Bramwith, near Doncaster {s:visitation-1897}.",
+  "people": [
+   "erina-somerville",
+   "thomas-forster-rolfe"
+  ],
+  "places": [
+   "dublin",
+   "kirk-bramwith"
+  ],
+  "src": [
+   "visitation-1897"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-youghal-nolle",
+  "year": 1887,
+  "month": 9,
+  "day": 8,
+  "display": "8 Sep 1887",
+  "kind": "family",
+  "title": "The Youghal prosecution is dropped",
+  "desc": "The Attorney General for Ireland tells the Commons that a nolle prosequi was entered at the last Cork Assizes in \"the Queen v. Sub-Inspector Somerville and Constable Ward\" {s:hansard-1887-sep8}: the charge was dropped, not tried, as the family's \"never formally acquitted\" implies {q:T2:126-127}.",
+  "people": [
+   "bellingham-arthur-somerville"
+  ],
+  "places": [
+   "youghal",
+   "cork-city"
+  ],
+  "cite": [
+   "T2:126",
+   "T2:127"
+  ],
+  "src": [
+   "hansard-1887-sep8"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-visitation",
+  "year": 1897,
+  "display": "1897",
+  "kind": "family",
+  "title": "The family pedigree is printed in the Visitation of Ireland",
+  "desc": "Bellingham Arthur sends the family's pedigree to the Visitation of Ireland, printed in 1897 as \"Somerville of Clermont, co. Wicklow\", with the arms, his signature and those of Captain William and Eliza {s:visitation-1897}; Reginald's birth is added in the second volume {s:visitation-additions}. \"This is what my grandfather sent in … The families themselves sent in the information, so they're not authoritative in many ways\" {q:T3:13-14}.",
+  "people": [
+   "bellingham-arthur-somerville",
+   "reginald-somerville"
+  ],
+  "places": [
+   "clermont"
+  ],
+  "cite": [
+   "T3:13",
+   "T3:14",
+   "T3:24"
+  ],
+  "src": [
+   "visitation-1897",
+   "visitation-additions"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-athlumney-marriage",
+  "year": 1919,
+  "month": 7,
+  "day": 30,
+  "display": "30 Jul 1919",
+  "kind": "family",
+  "title": "The 2nd Baron Athlumney marries Margery Boan",
+  "desc": "At the Guards Chapel, Wellington Barracks, London; she was a daughter of the Australian department-store owner Harry Boan {s:wp-2nd-baron} {q:T3:62} {q:T3:93}.",
+  "people": [
+   "james-somerville-2nd-baron",
+   "margery-boan",
+   "harry-boan"
+  ],
+  "cite": [
+   "T3:62",
+   "T3:93"
+  ],
+  "src": [
+   "wp-2nd-baron"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-arms-1924",
+  "year": 1924,
+  "month": 4,
+  "day": 2,
+  "display": "2 Apr 1924",
+  "kind": "family",
+  "title": "The family's arms are confirmed",
+  "desc": "On the application of Elizabeth Mary (Lily) Somerville, only child of Henry Bellingham Somerville, the Ulster King of Arms, Sir Nevile Wilkinson, confirms the family's arms to her and to the other descendants of Major William Somerville {q:T3:76-86} {s:nli-arms-1924}. The narrator holds the original, with its seal; he dated it \"in the 1930s, I think\" {q:T3:77}.",
+  "people": [
+   "elizabeth-mary-somerville",
+   "henry-bellingham-somerville-1859",
+   "major-william-somerville"
+  ],
+  "places": [
+   "dublin-castle"
+  ],
+  "cite": [
+   "T3:76",
+   "T3:77",
+   "T3:78",
+   "T3:79",
+   "T3:80",
+   "T3:81",
+   "T3:82",
+   "T3:83",
+   "T3:84",
+   "T3:85",
+   "T3:86"
+  ],
+  "src": [
+   "nli-arms-1924",
+   "fam-arms-1924"
+  ],
+  "status": "record",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-lady-athlumney",
+  "year": 1946,
+  "month": 7,
+  "display": "Jul 1946",
+  "kind": "family",
+  "title": "Lady Athlumney dies; the Somerville estate passes to Quentin Agnew",
+  "desc": "Lord Athlumney's widow drowned in the River Nanny on the estate {s:wp-2nd-baron}. \"After the death of Lady Athlumne[y] … he inherited the whole of the Somerville estate\" {q:T3:114}.",
+  "people": [
+   "margery-boan",
+   "quentin-somerville"
+  ],
+  "places": [
+   "somerville-meath"
+  ],
+  "cite": [
+   "T3:114"
+  ],
+  "src": [
+   "wp-2nd-baron"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-quentin-name",
+  "year": 1950,
+  "display": "1950",
+  "kind": "context",
+  "title": "Quentin Agnew takes the name Somerville",
+  "desc": "By Royal Licence, \"in compliance with the will of his uncle by marriage\", the 2nd Baron Athlumney {s:wp-agnew-somerville}; \"he had to change his surname from Agnew to Somerville. And he had to bear the arms of Somerville\" {q:T3:113}.",
+  "people": [
+   "quentin-somerville"
+  ],
+  "places": [
+   "somerville-meath"
+  ],
+  "cite": [
+   "T3:113"
+  ],
+  "src": [
+   "wp-agnew-somerville"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-claim-1950s",
+  "year": 1955,
+  "approx": true,
+  "display": "1950s–60s",
+  "kind": "family",
+  "title": "Reginald begins a claim to the dormant baronetcy",
+  "desc": "\"My father started to make\" the claim to the baronetcy {q:T3:71}; two pedigree rolls \"were prepared in the 1950s … in order to put the claim in\", but \"the problems of Archibald James and his family, and Corrie and his family, were not explored sufficiently\" {q:T3:188}. The Garter King of Arms of the day asked whether Corry had married Lucinda {q:T3:180}.",
+  "people": [
+   "reginald-somerville"
+  ],
+  "cite": [
+   "T3:71",
+   "T3:180",
+   "T3:188"
+  ],
+  "src": [
+   "fam-rolls"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-somerville-sold",
+  "year": 1973,
+  "approx": true,
+  "display": "1970s",
+  "kind": "context",
+  "title": "Somerville House is sold",
+  "desc": "Quentin Agnew-Somerville sells Somerville and moves to the Isle of Man, \"in about 1970\" or after the 1975 wealth tax, in the narrator's account {q:T3:121} {q:T3:124}.",
+  "people": [
+   "quentin-somerville"
+  ],
+  "places": [
+   "somerville-meath",
+   "isle-of-man"
+  ],
+  "cite": [
+   "T3:121",
+   "T3:124"
+  ],
+  "status": "testimony",
+  "conf": "medium"
+ },
+ {
+  "id": "ev-coa-visit",
+  "year": 2024,
+  "month": 8,
+  "approx": true,
+  "display": "August 2023 or 2024",
+  "kind": "family",
+  "title": "The narrator takes the claim to the College of Arms",
+  "desc": "\"Edward and I went to visit him last August or the August before. In fact, I think it was three Augusts ago\" {q:T3:70}; the pursuivant \"had considered the whole matter and he was optimistic\" {q:T3:140}. The first recording mentions the same August trip to London with Edward {q:T2:37} {q:78}. {int}Transcript C's \"2013 or 2014\" {q:T3:140} is very probably \"2023 or 2024\": the pursuivant named, Phillip Bone, was appointed in 2023 {s:wp-rouge-dragon}.",
+  "people": [
+   "narrator",
+   "edward-somerville"
+  ],
+  "places": [
+   "college-of-arms"
+  ],
+  "cite": [
+   "T3:70",
+   "T3:139",
+   "T3:140",
+   "T2:37",
+   78
+  ],
+  "src": [
+   "wp-rouge-dragon"
+  ],
+  "status": "testimony",
+  "conf": "high"
+ },
+ {
+  "id": "ev-recording-2",
+  "year": 2026,
+  "month": 10,
+  "day": 28,
+  "approx": true,
+  "display": "28 Oct 2026",
+  "kind": "family",
+  "title": "The second conversation is recorded",
+  "desc": "The day after the first, the narrator shows the interviewer the family's papers (the Bible, Bellingham Arthur's notebooks, the Visitation, the 1924 confirmation of arms, the pedigree rolls) and, at the other house, the portraits {q:T3:8} {q:T3:25} {q:T3:240}. {int}The date follows from the file name (\"28\") and from the references to \"yesterday\" {q:T3:8} {q:T3:17}.",
+  "people": [
+   "narrator",
+   "interviewer"
+  ],
+  "cite": [
+   "T3:8",
+   "T3:17",
+   "T3:25",
+   "T3:240"
+  ],
+  "status": "inferred",
+  "conf": "high"
+ },
+ {
+  "id": "ev-boyne-guide",
+  "year": 1690,
+  "display": "1690",
+  "kind": "family",
+  "title": "Colonel Thomas Bellingham guides William III to the Boyne",
+  "desc": "\"He was an aide to King William prior to the Battle of the Boyne\"; Jacobites burned his house at Castlebellingham {s:wp-thomas-bellingham}. His portrait hangs in the family collection: \"the guide to King William at the Battle of the [Boyne]\" {q:T3:275} {q:T3:239}.",
+  "people": [
+   "thomas-bellingham"
+  ],
+  "places": [
+   "castle-bellingham"
+  ],
+  "cite": [
+   "T3:239",
+   "T3:275"
+  ],
+  "src": [
+   "wp-thomas-bellingham"
+  ],
+  "status": "record",
+  "conf": "high"
+ },
+ {
+  "id": "ev-conyngham-marriage",
+  "year": 1832,
+  "display": "1832",
+  "kind": "family",
+  "title": "William Meredyth Somerville marries Lady Maria Harriet Conyngham",
+  "desc": "Daughter of the 1st Marquess Conyngham of Slane Castle and of Elizabeth, Marchioness Conyngham, George IV's mistress {s:wp-1st-baron} {s:wp-conyngham}; the narrator: \"his first marriage was to a Miss Cunningham [Conyngham]\" {q:T3:129-130}.",
+  "people": [
+   "william-meredyth-somerville"
+  ],
+  "places": [
+   "slane-castle"
+  ],
+  "cite": [
+   "T3:129",
+   "T3:130"
+  ],
+  "src": [
+   "wp-1st-baron",
+   "wp-conyngham"
+  ],
+  "status": "record",
+  "conf": "high"
  }
 ]

@@ -1,18 +1,18 @@
 # The Somerville Family Archive
 
-An interactive, interconnected family-history archive built from a recorded conversation in which Grandpa, **William Somerville** (born 1937), told his grandson **Gergely Somerville** what he knows about the Somerville family. Two independent speech-to-text transcripts of the same recording survive. **Both are published complete, exactly as received**, including the everyday conversation around the history; the archive cites both and lets you compare them side by side. It turns those imperfect transcripts into something future generations can explore, check and extend:
+An interactive, interconnected family-history archive built from a recorded conversation in which Grandpa, **William Somerville** (born 1937), told his grandson **Gergely Somerville** what he knows about the Somerville family. Two independent speech-to-text transcripts of that recording survive, and a third records a second conversation the next day, spent over the family's papers and portraits. **All three are published complete, exactly as received** (except a device PIN spoken aloud, which is masked), including the everyday conversation around the history; the archive cites them all and lets you compare the first two side by side. It turns those imperfect transcripts into something future generations can explore, check and extend:
 
-- **Story**: an 11-chapter historical narrative, from the 1748 baronetcy to the sale of Clermont, with family testimony, our interpretations and published history visibly distinguished.
+- **Story**: a 12-chapter historical narrative, from the 1748 baronetcy to the sale of Clermont, with family testimony, our interpretations and published history visibly distinguished.
 - **Family tree**: an interactive SVG chart (pan, zoom, pinch, collapse branches, click for details) of the Somervilles and related families (Bellingham, Clinch, Johnson, Truell, O'Connor and others), with the narrator's line of descent highlighted, plus an accessible outline view.
-- **People**: 89 profiles, including the narrator's own immediate family, including a few placeholders for people known to exist but not named. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
-- **Places**: 64 places on a map (Leaflet/OpenStreetMap), from Cumry and Castle Bellingham to Trinidad, Archangel and Nanyuki.
-- **Timeline**: 86 events, with family events and wider history side by side, grouped by era.
-- **Glossary**: 66 terms covering RIC ranks, militia, dormant titles, expressions, surnames and nicknames.
-- **Open questions**: a register of 43 ambiguities and contradictions (13 resolved, 13 partly resolved, 17 open), each with the evidence, the reasoning and the next research steps.
-- **Transcripts**: both versions of the conversation (A, the original working transcript; B, the companion), with 283 inline "readings" of misheard words (e.g. *"Whitflow"* → Wicklow, *"badayos"* → Badajoz, *"Green desert"* → Reendesert), each with a confidence level and, where useful, a note on how the other transcript heard it. Chips show which entries cite each passage, and every paragraph links to its parallel in the other transcript.
+- **People**: 106 profiles, including the narrator's own immediate family, including a few placeholders for people known to exist but not named. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
+- **Places**: 83 places on a map (Leaflet/OpenStreetMap), from Cumry and Castle Bellingham to Trinidad, Archangel and Nanyuki, including the ten different birthplaces of Captain William's children.
+- **Timeline**: 105 events, with family events and wider history side by side, grouped by era.
+- **Glossary**: 79 terms covering RIC ranks, militia, heraldry, dormant titles, expressions, surnames and nicknames.
+- **Open questions**: a register of 51 ambiguities and contradictions (20 resolved, 15 partly resolved, 16 open), each with the evidence, the reasoning and the next research steps.
+- **Transcripts**: both versions of the first conversation (A, the original working transcript; B, the companion) and the transcript of the second (C), with 398 inline "readings" of misheard words (e.g. *"Whitflow"* → Wicklow, *"badayos"* → Badajoz, *"Green desert"* → Reendesert), each with a confidence level and, where useful, a note on how the other transcript heard it. Chips show which entries cite each passage, and every paragraph of A and B links to its parallel in the other.
 - **Compare**: transcripts A and B side by side, paragraph by paragraph (`#/compare`), so any reading can be checked against both.
-- **Sources**: 72 sources, including the family's private Ancestry tree (cited, never published), each marked as read directly, partly read, or known only from a search result, with the date checked.
-- **Incorrect information**: a separate tab (`#/corrections`) listing the 10 places where Grandpa's testimony is contradicted by stronger documentary evidence. Each entry shows his words with transcript references, the best-supported conclusion, why they differ, and the evidence: primary or secondary, with links, and whether it was read directly. It corrects the factual claim, not the record of what he said, and marks entries as *Corrected* (3) or *Probably incorrect* (7).
+- **Sources**: 97 sources, including the family's printed pedigree of 1897 and private family material (the Ancestry tree, the family Bible, the 1924 confirmation of arms and other documents shown in the second recording: cited, never published, never described as inspected), each marked as read directly, partly read, known only from a search result, or private, with the date checked.
+- **Incorrect information**: a separate tab (`#/corrections`) listing the 14 places where Grandpa's testimony is contradicted by stronger documentary evidence. Each entry shows his words with transcript references, the best-supported conclusion, why they differ, and the evidence: primary or secondary, with links, and whether it was read directly. It corrects the factual claim, not the record of what he said, and marks entries as *Corrected* (7) or *Probably incorrect* (7).
 - **Search**: one search box over everything, including transcript misspellings and near-misses (try *bellendrum*, *Bunt*, *Tete*, *Whitflow*, *Gualter*).
 
 ## Running it
@@ -36,16 +36,19 @@ Everything except the map tiles and web fonts works offline. It can also be publ
 - **Installing:** copy the APK to the phone and open it. Android will ask you to allow installs from that source (the app is not on Google Play).
 - **Versions:** bump `android:versionCode` and `android:versionName` in `android/AndroidManifest.xml` for each new release.
 
-## The two transcripts
+## The transcripts
 
-| | Transcript A (original) | Transcript B (companion) |
-|---|---|---|
-| File received | `27 Oct at 16-17.txt` | `+353 85 ••• •••• - 2026-10-27 19.50.34.txt` (phone number in the file name masked) |
-| Published file (complete) | `transcripts/interview-01.txt` | `transcripts/interview-01-companion.txt` |
-| Cited as | `¶n` | `B¶n` |
-| Paragraphs | 304 (lines 1–607, every other line) | 243 |
+| | Transcript A (original) | Transcript B (companion) | Transcript C (second recording) |
+|---|---|---|---|
+| Recording | 27 Oct 2026 | the same recording as A | 28 Oct 2026, the next day |
+| File received | `27 Oct at 16-17.txt` | `+353 85 ••• •••• - 2026-10-27 19.50.34.txt` (phone number in the file name masked) | `28.txt` |
+| Published file (complete) | `transcripts/interview-01.txt` | `transcripts/interview-01-companion.txt` | `transcripts/interview-02.txt` (a four-digit PIN at ¶43 masked as `[PIN removed]`) |
+| Cited as | `¶n` | `B¶n` | `C¶n` |
+| Paragraphs | 304 (lines 1–607, every other line) | 243 | 285 (one per line) |
 
 They are two machine transcriptions of one recording, not two interviews: B is often cleaner on names (*Fighting Atty*, *Louth Militia*, *Bell Turbot* → Belturbet, *Henry Rook*, *Vere*), A sometimes keeps words B drops, and both garble some names the same way (for example *Tennyson*, the default spelling, which is no evidence for how the family spelled Tenison). No audio was available, so where they disagree both readings are kept and graded. `scripts/align.py` aligns them word by word into `transcripts/alignment.json` (293 aligned blocks), which drives the compare view, the parallel links and the citation popovers. The archive was first built from A, and A's paragraph numbers are unchanged.
+
+**Transcript C** is the only transcript of the second conversation, in which the narrator showed the family Bible, his grandfather's notebooks, the family's copy of the *Visitation of Ireland*, the 1924 confirmation of arms, a 1929 newspaper cutting, the pedigree rolls of the 1950s and the portraits. With no second transcript to check it, numbers read aloud from documents are treated with care: they are compared with the printed 1897 pedigree, and where they disagree both are kept (see the open question on the family Bible). Its speakers are not labelled, so the archive says in each case whether a statement is the narrator's memory, his reading of a document, the interviewer's own research, or the narrator's written profiles read aloud. The manifest records the checksum of the file as received (`sourceSha256`) and of the published copy (`sha256`), and lists the masked passage under `masked`. The full review, with a claim-by-claim register, is in [`research/transcript-c-review-2026-10.md`](research/transcript-c-review-2026-10.md) and [`research/transcript-c-claims-2026-10.csv`](research/transcript-c-claims-2026-10.csv).
 
 ## How the evidence is labelled
 
@@ -83,13 +86,14 @@ data/corrections.json       "Incorrect information": testimony contradicted by s
 transcripts/transcripts.json  transcript manifest (id, role, file, sha256 of the original, aside ranges)
 transcripts/interview-01.txt            transcript A, complete, byte-for-byte as received
 transcripts/interview-01-companion.txt  transcript B, complete, byte-for-byte as received
+transcripts/interview-02.txt            transcript C (second recording), complete; one PIN masked
 transcripts/alignment.json  GENERATED A↔B paragraph alignment
 scripts/build.mjs           validator + bundler (+ quotation checker)
 scripts/align.py            regenerates the A↔B alignment
 scripts/build-apk.sh        builds the Android app (see Android app)
 scripts/repo-check.mjs      final check: no credentials, transcripts complete and fully bundled
 android/                    Android app shell (manifest, WebView activity, icons)
-research/                   evidence-audit reports and registers (e.g. evidence-audit-2026-10.md / .csv)
+research/                   evidence-audit reports and registers (evidence-audit-2026-10, transcript-c-review-2026-10)
 tests/smoke.cjs             headless browser smoke test (Playwright)
 ```
 
@@ -111,16 +115,16 @@ tests/smoke.cjs             headless browser smoke test (Playwright)
 
 The build rejects an entry with no citation, no evidence beyond context, or only the private family tree as evidence.
 
-**Adding a new recording:** put the transcript file, unchanged, in `transcripts/`, add an entry to `transcripts/transcripts.json` with a new id (`T3`, …), its `file`, its `sha256` (`sha256sum transcripts/<file>`) and any `asides` ranges, and cite it as `{q:T3:15}`. Mark off-topic conversation as asides rather than removing it. If it is another transcript of an existing recording, extend `scripts/align.py`. Paragraph numbers are always line numbers of the file, so never re-wrap a transcript after citing it. If a transcript file is ever corrected deliberately, update its `sha256`; the build refuses a file that no longer matches.
+**Adding a new recording:** put the transcript file, unchanged, in `transcripts/`, add an entry to `transcripts/transcripts.json` with a new id (`T4`, …), its `file`, `role`, its `sha256` (`sha256sum transcripts/<file>`) and any `asides` ranges, and cite it as `{q:T4:15}` (shown as `D¶15`). If the recording contains a credential (a PIN or password spoken aloud), replace just those characters, record the original's checksum as `sourceSha256` and the change under `masked` (`line`, `what`, `replacement`), as for transcript C. Mark off-topic conversation as asides rather than removing it. If it is another transcript of an existing recording, extend `scripts/align.py`. Paragraph numbers are always line numbers of the file, so never re-wrap a transcript after citing it. If a transcript file is ever corrected deliberately, update its `sha256`; the build refuses a file that no longer matches.
 
 ## A complete public archive
 
 **This repository is public, and so is everything in it.** The family has decided to publish the whole archive:
 
-- Both transcripts are published in full, exactly as received: the family history and the conversation around it, including personal and domestic asides and the interviewer's recollections of their Hungarian family (recorded as an attributed, unverified story in the open questions). Nothing is redacted, and there is no separate private build.
+- All three transcripts are published in full, exactly as received: the family history and the conversation around it, including personal and domestic asides and the interviewer's recollections of their Hungarian family (recorded as an attributed, unverified story in the open questions). Nothing is redacted, and there is no separate private build.
 - Everyday conversation is marked as **asides** in `transcripts/transcripts.json`. Asides are shown by default; readers can untick *Asides* on the transcript and compare pages to keep to the history. They are searchable like everything else.
 - Each transcript page links to its plain-text file for download.
-- The only thing not reproduced is the phone number in transcript B's file name, which is masked where the name is shown. It is not part of the transcript.
+- Two things are not reproduced: the phone number in transcript B's file name, which is masked where the name is shown (it is not part of the transcript); and a four-digit device PIN spoken during the second recording (transcript C ¶43), replaced by `[PIN removed]`. A PIN is a credential, not family history.
 - **Youghal, 1887.** Grandpa said: *"This now is not for publication … I'll let you use your own discretion, but be careful."* The family has decided to publish it. The archive keeps his caution visible and sets out the story in three separate layers: the family's account, Hansard, and local history. It names the officer as Bellingham Arthur only as the family's identification, since the records give only "District Inspector Somerville" and "Sub-Inspector Summerville". Patrick Hanlon, who died, is treated with respect.
 - Editorial choices, not exclusions: profiles of living people record only their place in the family (what they said is all in the transcripts), and some disparaging local hearsay about Rathnew is left in the transcripts rather than repeated in the narrative.
 
@@ -128,11 +132,11 @@ The build rejects an entry with no citation, no evidence beyond context, or only
 
 `node scripts/repo-check.mjs` (also run in CI) confirms that:
 
-1. no committed file contains credentials (API keys, access tokens, private keys, password assignments). Family history, names and anecdotes are not treated as secrets;
-2. each transcript matches the sha256 of the original recorded in `transcripts/transcripts.json` and carries no redaction marker;
-3. every paragraph of both transcripts appears, unaltered, in the committed bundle the site loads.
+1. no committed file contains credentials (API keys, access tokens, private keys, password assignments, a PIN spoken aloud). Family history, names and anecdotes are not treated as secrets;
+2. each transcript matches the sha256 recorded in `transcripts/transcripts.json`, carries no redaction marker, and has any masked credential in place;
+3. every paragraph of all three transcripts appears, unaltered, in the committed bundle the site loads.
 
-`tests/smoke.cjs` additionally opens the transcript and compare pages in a browser and checks that previously withheld passages are visible.
+`tests/smoke.cjs` additionally opens the transcript and compare pages in a browser and checks that previously withheld passages are visible, that transcript C shows the PIN masked, and that `C¶` citations render.
 
 ## Key findings from checking the testimony
 
@@ -165,7 +169,7 @@ Open questions were re-examined against primary records and well-supported publi
 
 - **Youghal, 1887: District Inspector Somerville was Bellingham Arthur Somerville.** Hansard gives only the surname, under both ranks: sub-inspectors had been restyled district inspectors by the Constabulary and Police (Ireland) Act 1883. The identification combines four strands. (1) Bellingham Arthur was a serving RIC officer of that rank: he joined in 1872, aged 18, and the 1891 census describes him as a "Retired D. I. R. I. Constabulary". (2) Dr Ronayne's letter, read in the Commons, shows the officer was a "young officer, Mr. Somerville" from outside, not the local inspector, Kerin; this matches the family's detachment "from Cork". (3) The family's account, independent of Hansard, matches the inquest, arrest, Parliament and return to duty without a trial. (4) The family links the affair to his transfer to Wicklow, and his career ended by 1891. *Limitations:* no surviving document seen names him in full in connection with Youghal, and his RIC service register (HO 184) has not been examined.
 - **Bellingham Arthur's birth: 17 November 1853** (baptised in Dublin in June 1854; his RIC and census ages agree), not the narrator's "1856, I think".
-- **Captain William's birth: 3 March 1776** (two published genealogies agree), not "1777, I think".
+- **Captain William's birth: 1776** (two published genealogies agree), not "1777, I think". The day, **7 March** (baptised 11 March at St Thomas', Dublin), came later from the family's 1897 pedigree; see below.
 - **Henry Rooke**, not Rook: a solicitor, son of Archdeacon Henry Rooke of Wicklow, who married Cecilia on 11 April 1912 and died in 1942. Cecilia, as **Cecil B. Rooke** (1880–1973), registered the Somerville pedigree at the Genealogical Office in 1955 (G.O. MS 182A). Her papers, including extracts of Somerville wills her father made before the 1922 fire, are in the National Library's Rooke Papers.
 - **Bunt: King's Own (Royal Lancaster)**, the commander at Archangel. **Tenison**, not Tennyson. **Cumry** is the townland Na Comraigh in Aghnamullen parish, near Ballybay, spelled exactly as the narrator spelled it. **Reendesert Lodge** was Kitty's home with her first husband, **Alan Campbell Ferguson** (d. 1920), so she was his widow. The sale of **Castle Bellingham** was completed by Alan's widow. The **recording date** is adopted as 27 October 2026.
 - Partly resolved: **Pat** was probably captured in October 1914 near Zonnebeke, with the 2nd Battalion, not "in the retreat from Mons". **Tenison Alan** died on 31 July 1895, but who died first is still open. **Gunners' Venture Ltd** existed: a 17,000-acre farm near Nanyuki owned by ex-artillery officers. A **Rachel Clinch** was Margaret's mother; a sister of that name is unconfirmed. Some of the **papers** are located: the NLI's Rooke Papers and G.O. MS 182A, and in 1998 the library noted that "the Somerville Papers" were with Mr William Somerville.
@@ -191,22 +195,51 @@ Main results:
 
 Every external source was re-checked against the specific claim it supports, and its `used` note was rewritten to say exactly that. 56 sources were read directly, one only partly (a *London Gazette* page), and 13 are known only from search results, because their sites block automated access or were unavailable: the three Wicklow Heritage pages, Agriland, Landed Estates, the NLI catalogue record, IWM Lives of the First World War, the Great War Forum, TheGenealogist, a Clarke article, a Dublin street site, a study of Nanyuki in the 1920s and the King's Own museum. The Irish census and civil-registration sites were also unreachable by automated access, so the 1901/1911 census and civil death records remain to be checked by hand. These are marked "search result only" on the Sources page and should be read by a person before being relied on. The Clarke article is based on interviews with the narrator, so it is not independent corroboration of his account. New sources include the Hansard reports of 31 March, 4 April and 10 May 1887, the 1883 Act, the National Library of Ireland's descriptive list of the Rooke Papers, the Dictionary of Irish Architects, Logainm and four pages of a compiled genealogy (treated as secondary, though it quotes primary records such as the 1891 census and The Times).
 
+### The second recording (28 October 2026)
+
+A second conversation, spent over the family's papers and portraits, was transcribed once (transcript C) and reviewed claim by claim against both earlier transcripts, the archive, the GEDCOM audit and independent sources. The report is [`research/transcript-c-review-2026-10.md`](research/transcript-c-review-2026-10.md), with a 54-row [claim register](research/transcript-c-claims-2026-10.csv). The main results:
+
+- **The family's own pedigree.** The "Crisp's" of both recordings is the *Visitation of Ireland* (1897), pp. 64–65, "Somerville of Clermont". Bellingham Arthur sent it in and signed it, and it was read here from the page images.
+  - It confirms that Captain William's ten children were each born in a different place (Leixlip to Cumry).
+  - It names the eighth son, dates Reginald's birth (**14 February 1897**), and shows every child of Bellingham Arthur baptised at St Audoen's.
+  - It corrects several dates held by the archive and the family tree.
+- **Henry Bellingham Somerville** (b. **1848**, not 1859) was the RIC "elder brother", not William Dennistoun ("Uncle Billy"), who could not speak. His only child, **Lily**, obtained the **confirmation of the family's arms**, dated 2 April 1924 in the National Library's catalogue. The narrator remembered "the 1930s". The motto is "Crains Dieu tant que tu viveras".
+- **The family Bible.** Captain William entered his children in it, and Tenison Alan copied it in 1850. Three dates as heard disagree with the pedigree and are left open until the pages are transcribed.
+- **The baronetcy.**
+  - In 1929 the press named Bunt heir to the baronetcy, and Reginald began a claim in the 1950s.
+  - The narrator is pursuing it with the College of Arms (Rouge Dragon Pursuivant, confirmed).
+  - His case rests on Archibald James's second marriage being bigamous, and on Corry's only son dying childless; William Henry died without children in 1847.
+  - The archive sets out each branch's evidence without deciding the claim.
+- **The senior line.** The 2nd Baron Athlumney's will brought Somerville House to **Quentin Agnew-Somerville**, which explains the first recording's "Quentin Somerville debacle".
+- **Portraits.** Colonel Thomas Bellingham (guide at the Boyne), the two Henry Bellinghams (MPs), Sir Marcus, Judge Tennison (very probably Eliza Bellingham's great-grandfather), Daniel O'Connor of Shoreham, and "Wicked Alan".
+- **Incorrect information.**
+  - Four new entries: the date of the confirmation; the founder of the College of Arms; the Agnew marriage; Colonel Thomas's wife.
+  - Three existing entries upgraded to *Corrected*: Captain William's, Bunt's and Tenison Alan's dates.
+- **Not repeated in the structured archive.** Details of living people outside the immediate family, a criminal allegation against a named private person, and DNA results all remain in the transcript only.
+
 ## Unresolved questions (summary)
 
-The full register (43 questions: 13 resolved, 13 partly resolved, 17 open), with the evidence, reasoning and next steps, is on the site's **Open questions** page (`data/questions.json`). The most important genuine uncertainties are:
+The full register (51 questions: 20 resolved, 15 partly resolved, 16 open), with the evidence, reasoning and next steps, is on the site's **Open questions** page (`data/questions.json`). The most important genuine uncertainties are:
 
 1. **Parentage and marriages.** Did Archibald James marry Elizabeth Breakey (Brakey), and was "little Archie" (b. 1823) their son? A compiled genealogy instead records his marriage to an Elizabeth Crawford in 1836; whether she is the same woman is unknown. Whose servant was Elizabeth Brakey? Is "for 19 years" the family's time in Monaghan or Archibald's age?
-2. **The dormant baronetcy.** The archive does not assess any claim. Open points include surviving male heirs of the senior line, Major William's parentage and the lawfulness of Archibald James's marriage.
+2. **The dormant baronetcy.** The archive does not decide the claim. It sets out the evidence for each branch. The open points are:
+   - whether Archibald James married Elizabeth Brakey, which decides whether his 1836 marriage was bigamous;
+   - his American descendants;
+   - the documentation of Corry's line;
+   - William Dennistoun's issue;
+   - the College of Arms' view.
+
+   **The family Bible.** Transcribing it from photographs would settle three disputed dates.
 3. What Bellingham Arthur died of in January 1916 (influenza, but not the 1918 pandemic): the civil death record has not been read.
 4. Pat's escapes, camps and Military Cross, and the London Gazette entries for Bunt's DSO and Pat's MC; whether Jim also held the DSO.
 5. Places still unlocated: the farm within Cumry, the house "Farm" near Belturbet, Tenison's Dublin address, Reginald's Kenya farm, Jim's grave.
-6. Rachel Clinch as Margaret's sister; Maudie Moore's origin; Reginald's exact birth date; the Johnson ancestry, which comes only from an unverified online tree; Aunt Eddie's husband; who "Sir William the younger" was (G.O. MS 182A should answer this).
+6. Rachel Clinch as Margaret's sister (Margaret was the second daughter, so a sister existed); Maudie Moore's origin; who "Wicked Alan" was; the Johnson ancestry, which comes only from an unverified online tree; Aunt Eddie's husband; who "Sir William the younger" was (G.O. MS 182A should answer this).
 7. An inventory of the papers in the narrator's keeping, and a reading of the registered pedigree, are the most valuable next steps.
 
 ## Limitations
 
-- Both transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle disagreements. Some passages are unrecoverable in both, and every reading of a garbled word is an interpretation (all are shown and graded).
+- All three transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle disagreements; the second recording has only one transcript. Some passages are unrecoverable in both, and every reading of a garbled word is an interpretation (all are shown and graded).
 - Many family details still rest on one person's memory. Civil and church registers, the 1901/1911 Irish census and RIC service records have not yet been read directly, because those sites block automated access; several dates come from a compiled genealogy quoting the IGI, the 1891 census and The Times.
 - Map positions marked "approximate" are best guesses; "Farm" is placed at Belturbet. Cumry is now placed at its townland.
 - The tree uses a simple layout that is wide rather than compact; the outline view is easier on small screens.
-- The recording is dated 27 October 2026 from transcript B's file name.
+- The first recording is dated 27 October 2026 from transcript B's file name, and the second 28 October 2026 from its file name and its references to "yesterday".

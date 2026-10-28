@@ -30,9 +30,15 @@
   for (const t of A.transcripts) for (const l of t.lines) SA.lines[`${t.id}:${l.n}`] = l;
   SA.readingsByLine = {};
   for (const r of A.readings) { const k = `${r.t || "T1"}:${r.line}`; (SA.readingsByLine[k] = SA.readingsByLine[k] || []).push(r); }
-  // Transcript labels: A = the original working transcript, B = the companion.
+  // Transcript labels: A = the original working transcript and B = the companion
+  // transcript of the first recording; C = the transcript of the second recording.
   SA.transcripts = Object.fromEntries(A.transcripts.map((t) => [t.id, t]));
   SA.TLABEL = Object.fromEntries(A.transcripts.map((t, i) => [t.id, String.fromCharCode(65 + i)]));
+  SA.TROLE = { original: "Original transcript", companion: "Companion transcript", second: "Second recording, 28 Oct" };
+  SA.tname = (tid) => {
+    const t = SA.transcripts[tid] || {};
+    return t.role === "original" ? "transcript A" : t.role === "second" ? `transcript ${SA.TLABEL[tid]} (second recording)` : `companion transcript ${SA.TLABEL[tid] || tid}`;
+  };
   // Parallel passages in the other transcript(s), from transcripts/alignment.json.
   SA.parallel = function (key) {
     const al = A.alignment;
@@ -202,11 +208,12 @@
       return r ? { t: tid, a: +r[1], b: r[2] ? +r[2] : +r[1] } : null;
     }).filter(Boolean);
   };
-  // Transcript A citations read "¶148"; companion transcript B citations "B¶65".
+  // Transcript A citations read "¶148"; companion transcript B citations "B¶65";
+  // transcript C (the second recording) citations "C¶24".
   SA.citeLink = function (c) {
     const pre = c.t === "T1" ? "" : SA.TLABEL[c.t] || c.t;
     const label = c.a === c.b ? `${pre}¶${c.a}` : `${pre}¶${c.a}–${c.b}`;
-    const name = c.t === "T1" ? "transcript A" : `companion transcript ${pre}`;
+    const name = SA.tname(c.t);
     return `<a class="cite-q${c.t === "T1" ? "" : " cite-b"}" href="#/transcript/${c.t}:${c.a}" data-t="${c.t}" data-a="${c.a}" data-b="${c.b}" title="${name}, paragraph ${label.replace(/^.*¶/, "")}">${label}</a>`;
   };
   // keys like "T1:16" collapsed into ranges of consecutive paragraphs, per transcript
