@@ -2,3 +2,8 @@ node_modules/
 .DS_Store
 *.ged
 *.GED
+android/build/
+dist/
+*.apk
+*.keystore
+*.jks

@@ -25,6 +25,17 @@ python3 -m http.server 8765      # then visit http://localhost:8765
 
 Everything except the map tiles and web fonts works offline. It can also be published as-is with GitHub Pages (the family has decided that the whole archive is public; see *A complete public archive* below).
 
+
+### Android app
+
+`scripts/build-apk.sh` packages the whole archive as an Android app (`dist/somerville-archive-<version>.apk`, about 3 MB, Android 7.0 or later). The app is a full-screen WebView over a bundled copy of the site, so it works offline: the map library (Leaflet) and the web fonts are bundled too. Only the map tiles need a connection, and links to external sources open in the phone's browser. The Back button moves through the archive's pages, and the app follows the phone's light or dark mode.
+
+- **Build requirements:** JDK 17+, Node, and the Android SDK (`platforms;android-34`, `build-tools;34.0.0`) at `$ANDROID_HOME` (default `/opt/android-sdk`). No Gradle is needed.
+- **Source:** `android/` holds the manifest, two small Java classes and the launcher icons. Build output goes to `android/build/` and `dist/`; both are git-ignored.
+- **Signing:** the APK is signed with `android/release.keystore` (git-ignored; created on first build, or set `APK_KEYSTORE` / `APK_KEYPASS`). Keep that file. Android installs an update over an existing copy only if it is signed with the same key; otherwise uninstall the old app first.
+- **Installing:** copy the APK to the phone and open it. Android will ask you to allow installs from that source (the app is not on Google Play).
+- **Versions:** bump `android:versionCode` and `android:versionName` in `android/AndroidManifest.xml` for each new release.
+
 ## The two transcripts
 
 | | Transcript A (original) | Transcript B (companion) |
@@ -75,7 +86,9 @@ transcripts/interview-01-companion.txt  transcript B, complete, byte-for-byte as
 transcripts/alignment.json  GENERATED A↔B paragraph alignment
 scripts/build.mjs           validator + bundler (+ quotation checker)
 scripts/align.py            regenerates the A↔B alignment
+scripts/build-apk.sh        builds the Android app (see Android app)
 scripts/repo-check.mjs      final check: no credentials, transcripts complete and fully bundled
+android/                    Android app shell (manifest, WebView activity, icons)
 research/                   evidence-audit reports and registers (e.g. evidence-audit-2026-10.md / .csv)
 tests/smoke.cjs             headless browser smoke test (Playwright)
 ```
