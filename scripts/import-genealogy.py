@@ -11,12 +11,14 @@ text is kept as written; insertions by "William Somerville" (Grandpa,
 2021-22) and by "7" (2011-12) stay marked, and deletions are kept but hidden
 on the site.
 
-Privacy (see also scripts/build.mjs, which enforces it):
-  - living people (LIVING): name and place in the family only;
-  - people born after 1910 who have died (MODERN): name, years and place;
-  - passages in other profiles about living relatives (REDACT) are replaced
-    by a marker. Each is pinned to a fingerprint of the paragraph, so if a
-    profile is edited the import stops until the passage is reviewed again.
+Privacy (see also scripts/build.mjs and scripts/repo-check.mjs): profiles
+are published in full, including those of living relatives (the family's
+decision, October 2026), but without addresses. Every paragraph that names a
+present-day home or postal address (ADDRESSES) is replaced by the same text with the
+address taken out, and e-mail addresses are removed. Each replacement is
+pinned to a fingerprint of the paragraph as received, so if a profile is
+edited the import stops until the passage is reviewed again; the addresses
+themselves are not written into this script.
 
 The editorial tables below (links the profiles do not state by number,
 doubtful parentage, notes, links to Grandpa's account) are the archive's own
@@ -306,9 +308,11 @@ def links():
 
 
 # ---------- 4. editorial tables (the archive's own judgements) ----------
-LIVING = {"0682", "0683", "0686", "0687", "0691", "0692", "0693", "0694", "0695", "0696"}
-MODERN = {"0684", "0685", "0688", "0689", "0690"}  # born after 1910 and since died
-OMIT = "⟦omitted⟧"
+# living people (no death recorded; marked "living" on the site)
+LIVING = {"0682", "0683", "0686", "0691", "0692", "0693", "0694", "0695", "0696"}
+# deaths stated in a profile's notes rather than in its Death field
+DIED = {"0687": "2018"}
+ADDRESS = "⟦address⟧"
 
 # ---------- manual corrections to the links read from the profiles ----------
 EXTRA_SPOUSES = [("0505", "0504"), ("0577", "0574"), ("0610", "0611"), ("0612", "0609"), ("0637", "0636"),
@@ -407,39 +411,50 @@ ARCHIVE_NOTES = {
     "0613": None,
 }
 
-# ---------- passages about living relatives (replaced, with a marker) ----------
-KEEP_REST = True
+# ---------- addresses (each paragraph replaced by its text without the address) ----------
+# Homes and postal addresses of living people and of those who died since
+# 1980, including where a living person was born; Grandpa's house wherever it
+# is named. Addresses of people who died long ago are family history and stay.
 # (record, paragraph index in the document) -> (fingerprint of the paragraph as
-# received, replacement text; None drops the paragraph). The 0584 entry keeps the
-# rest of its paragraph after the replaced opening.
-REDACT = {
-    ("0564", 47): ("49dfa29772", "NB The above extract has been corrected by WBRBS from reference to LG of Ireland 1952 Edition ‘Riall of Ballyorney House’ and the Somerville records. Dorothea married William Riall of Annerville, Clonmel, Co Tipperary while her youngest sister married his youngest brother Andrew Arthur Riall. The Rialls were bankers in Clonmel, a prosperous milling town. The Riall family, but not the direct descendants of the above, subsequently married into the Roberts family of Old Conna Hall, near Bray, Co Wicklow, which they inherited. (It is now(2011) a prep school). " + OMIT + " Dorothea Riall, referred to as Dora R in Capt William’s diary, was obviously close to her sister Eliza Somerville, and is frequently mentioned in the Diary and the family correspondence. Archibald James Somerville, before his flight to Barbados in February 1823, spent three days at Clonmel before embarking on the George and Thomas. The purpose of the visit has occasioned much speculation."),
-    ("0584", 140): ("e16ec589ff", "After Regi’s death, it fell to W B R B Somerville (Bill)(0682) to persue the matter. " + OMIT + " he just did not have an opportunity of taking up the necessary research himself or organising other, professional, genealogists.", KEEP_REST),
-    ("0615", 169): ("d2e4b01884", None),
-    ("0615", 170): ("1425114fdf", None),
+# received, the paragraph without the address; None drops the paragraph).
+ADDRESSES = {
+    ("0564", 47): ("49dfa29772", "NB The above extract has been corrected by WBRBS from reference to LG of Ireland 1952 Edition ‘Riall of Ballyorney House’ and the Somerville records. Dorothea married William Riall of Annerville, Clonmel, Co Tipperary while her youngest sister married his youngest brother Andrew Arthur Riall. The Rialls were bankers in Clonmel, a prosperous milling town. The Riall family, but not the direct descendants of the above, subsequently married into the Roberts family of Old Conna Hall, near Bray, Co Wicklow, which they inherited. (It is now(2011) a prep school). They then moved to Ballyorney, near Enniskerry where Patrick (Dudley Erskine) Riall and his wife Jane and family became close friends of WBRBS and Manon. Manon taught the Riall children to ride, Selina and Caroline Riall were her bridesmaids and Selina’s elder daughter is Manon’s goddaughter. Patrick and Jane were walking companions of WBRBS and Manon on the continent over a five year period. After the death of Patrick’s sister (2010), her sons insisted that her portrait of Dorothea should join her Bellingham relations at " + ADDRESS + ". This is fitting as Dorothea Riall, referred to as Dora R in Capt William’s diary, was obviously close to her sister Eliza Somerville, and is frequently mentioned in the Diary and the family correspondence. Archibald James Somerville, before his flight to Barbados in February 1823, spent three days at Clonmel before embarking on the George and Thomas. The purpose of the visit has occasioned much speculation."),
+    ("0564", 51): ("f3d5207e83", "While no portrait of Eliza survives, there are sillhouettes, and a photograph of an unfinished painting said to be Eliza at " + ADDRESS + ". There is also a miniature painting of Henry Bellingham. There is also a miniature of Judge Tenison."),
+    ("0664", 61): ("9816e43f63", "Greta very kindly gave WBRBS Jim’s second signature ring for his son James, following a visit to " + ADDRESS + ". His first signature ring (given to Jim by his mother) was lost while bathing in a lake in Kashmir. During the visit, it was discovered that the Starkey family were neighbours and friends of Sir Charles Birkin, who had lived at " + ADDRESS + " from about 1950 to 1961 and been responsible for enlarging and considerably improving the property."),
+    ("0667", 162): ("5324d8f47a", "Story also has it that all the girls fell for him, although he hadn’t the looks of his brothers. His charm attracted, among others, Diana Somerville, one of the Cork family, and most recently, the late Hilda Sandys (of " + ADDRESS + ") told us how she used to cycle the 15 miles to Clermont for the dancing in the hope that Pat would be at home. RMJBS related how Heather(0668) was invited to Clermont by Jim(0663), but ended up with Pat!"),
+    ("0662", 41): ("58a1108d3e", "Maureen married a Brigadier Regi Keller, who lived near Bantry. He was excessively hearty. They had a daughter who married a clergyman surnamed Connors " + ADDRESS + "."),
+    ("0615", 169): ("d2e4b01884", "Mr. & Mrs. J.V. Shipp " + ADDRESS + " Sunny Slope Farm/Shipp House"),
+    ("0615", 170): ("1425114fdf", "Mr. & Mrs. Van Shipp " + ADDRESS),
     ("0615", 204): ("e61bf8205c", None),
-    ("0662", 41): ("58a1108d3e", "Maureen married a Brigadier Regi Keller, who lived near Bantry. He was excessively hearty. They had a daughter who married a clergyman surnamed Connors " + OMIT + "."),
-    ("0668", 18): ("eefb789653", "Julia Heather Margaret Somerville (0687) " + OMIT),
-    ("0675", 27): ("0ece311bb1", "daughters " + OMIT),
-    ("0675", 28): ("105811c556", None),
-    ("0675", 29): ("896a03338a", OMIT + " Girlie d 3"),
-    ("0675", 33): ("8cc9a55e72", "Magdalen Virginia Dormer, who d ? and had one son " + OMIT),
-    ("0675", 34): ("30d4693e4b", OMIT + " Tommy d 8 July 1999."),
-    ("0675", 37): ("02c39db8d3", "Gwendolyn Rosemary Ormsby (Rose) and had one daughter and five sons " + OMIT),
-    ("0675", 38): ("7921708e3c", None),
-    ("0675", 39): ("7452a4cdb2", None),
-    ("0675", 40): ("5c0b72fa08", None),
-    ("0675", 41): ("1b41dd4ca0", None),
-    ("0675", 42): ("c57fce4d62", None),
-    ("0675", 43): ("2b4e6d37f1", None),
-    ("0675", 44): ("26c2c9f042", None),
-    ("0678", 19): ("046e79cbae", "(1) de Merlie - - -(Merlie) bn 15 August 1913, md ? George Byas and was mother of " + OMIT),
-    ("0678", 20): ("3ad441375c", OMIT + " Merlie d 27 August 1949"),
-    ("0678", 23): ("d9ff5c6797", "(4)Rachel - - - (Ray) bn 21 November 1916, md ? Gordon Dewar and was mother of " + OMIT + " Ray d ?"),
-    ("0678", 24): ("cbc514c087", "(5)Michael - - - bn 27 February md (1) ? divd ? md (2) Cazalet and was father of " + OMIT + " Michael d 28 November 1967"),
-    ("0678", 25): ("628f3a0726", "(6)Charles Willliam Somerville (Toby) bn 22 May 1922 md ? Elizabeth (Beth) Moffatt-Wilson and was father of " + OMIT + " Toby d ??"),
-    ("0678", 27): ("02f68288df", "(8)George - - - bn 11 July 1926 md ? Mary Fosbroke- Hobbs and was father of " + OMIT + " _d 20? _ _."),
-    ("0678", 28): ("315cdb5889", "(9,10)Gillian and Joy (twins) bn 5 September 1929. Gillian md?John Gilmour and is mother of " + OMIT + " Gillian d-- Joy md ?Raymond Goss (divd) and was mother of " + OMIT + " She d ? ."),
+    ("0527", 31): ("192dc9eff4", "[S125] Richard Glanville-Brown, online <e-mail address>, Richard Glanville-Brown (" + ADDRESS + "), downloaded 17 August 2005."),
+    ("0664", 3): ("4b96765c67", "of " + ADDRESS),
+    ("0668", 2): ("7e67a3bea1", "of " + ADDRESS),
+    ("0682", 3): ("c7c64aab0f", "of " + ADDRESS),
+    ("0682", 7): ("ee8c48957b", "Birth: 18 Mar 1937 at " + ADDRESS + ", Dublin"),
+    ("0682", 68): ("e4811235f1", "‘responsible for all the shite work’ at " + ADDRESS + "; stable lad;"),
+    ("0683", 5): ("9483c1882f", "Birth: 4 May 1941 at " + ADDRESS + ", Dublin"),
+    ("0684", 3): ("17339bae44", "of " + ADDRESS + " and sometime of Cultra Manor, Holywood, Co Down"),
+    ("0684", 4): ("0c5ca226dd", "and " + ADDRESS),
+    ("0685", 2): ("9f89fa1ff4", "of " + ADDRESS),
+    ("0685", 25): ("2bcf716423", "third husband, Duncan, visited Ireland and stayed at " + ADDRESS + ". After the death of her third"),
+    ("0685", 37): ("8f13198123", "Richmond born 1993 and Zoe Elizabeth Richmond born 1992. " + ADDRESS),
+    ("0685", 38): ("15e4b0dce4", None),
+    ("0686", 3): ("dda7096630", "Son of Major Richmond Nicholas of " + ADDRESS),
+    ("0687", 2): ("e41261153e", "of " + ADDRESS),
+    ("0687", 10): ("33815f5a1c", "James Stevenson, of " + ADDRESS + ", as his 2nd wife."),
+    ("0688", 3): ("db01075c2b", "Only son of James Stevenson of " + ADDRESS + " by his wife Kathleen Mary, daughter of John ffolliot Young."),
+    ("0689", 2): ("8e8040174f", "of Lucita Farm, Naivasha, Kenya and subsequently " + ADDRESS),
+    ("0689", 61): ("10d5dc66a3", "Peter had died in 1986 and by 1988, she realized that vegetable farming on the shore of Lake Naivasha was becoming too difficult. Among other things, the Government’s and civil servants’ corruption led to sudden and unannounced changes in the law. One day she found she was breaking the law, introduced that day, if there was such a law, banning the sale of onions in a certain district. The result was a night in an African gaol without any legal process. Costs were also rising at an alarming pace, unless one joined in the corruption. So she retired to live in a cottage " + ADDRESS + " where she took up good works: the Wicklow S P C A, the Irish Horse Welfare Trust – for retired or beaten up race horses – and, in particular, S S A F A and the Royal British Legion where she collected more money for poppies than any other in Ireland; but she left her heart in Kenya."),
+    ("0691", 2): ("ab75d3d20c", "of " + ADDRESS),
+    ("0691", 6): ("b578b6f5fd", "Birth: 22 Apr 1969 at " + ADDRESS + ", Dublin"),
+    ("0692", 3): ("0f848d63e1", "Dau of Professor James Nixon of " + ADDRESS + " by his wife Katherine, nee Nesbittt"),
+    ("0693", 3): ("8e1ae141b8", "of " + ADDRESS),
+    ("0693", 7): ("06bdd82b0a", "Birth: 7 March 1971 at " + ADDRESS + ", Dublin"),
+    ("0693", 10): ("d3f2b56c50", ADDRESS + " by his wife Maria,nee Rusznyak"),
+    ("0694", 3): ("a2fd6561e8", "Only child of Dr Miklos Asztalos of " + ADDRESS + " by his wife Maria,"),
+    ("0695", 2): ("e6728cca2e", "Of " + ADDRESS),
+    ("0695", 6): ("e595b25265", "Birth: 19 April 1972 at " + ADDRESS + ", Dublin"),
+    ("0696", 4): ("bb1bc6f79c", "of " + ADDRESS + "."),
 }
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+(\.[\w-]+)+")
@@ -496,7 +511,30 @@ def convert(tmp):
     return docs
 
 
+def remove_addresses(DOCS):
+    """Replace each paragraph listed in ADDRESSES before anything is read from it."""
+    count, applied = collections.Counter(), set()
+    for d in DOCS:
+        m = re.match(r"(\d{4}[AB]?)", d["base"])
+        rec = m.group(1) if m else None
+        for i, segs in enumerate(d["paras"]):
+            if (rec, i) not in ADDRESSES:
+                continue
+            fp, rep = ADDRESSES[(rec, i)]
+            full = re.sub(r"\s+", " ", accepted(segs)).strip()
+            if hashlib.sha1(full.encode()).hexdigest()[:10] != fp:
+                sys.exit(f"✗ {rec}, paragraph {i}: a paragraph with an address has changed; review it and update ADDRESSES")
+            d["paras"][i] = [] if rep is None else [[rep, ""]]
+            count[rec] += 1
+            applied.add((rec, i))
+    missing = set(ADDRESSES) - applied
+    if missing:
+        sys.exit(f"✗ paragraphs with addresses not found: {sorted(missing)}")
+    return count
+
+
 def build(DOCS):
+    addresses = remove_addresses(DOCS)
     STRUCT = {d["base"]: structure(d) for d in DOCS}
     P[:] = [s for s in STRUCT.values() if s["rec"]]
     BYREC.clear(); BYREC.update({p["rec"]: p for p in P})
@@ -504,7 +542,6 @@ def build(DOCS):
     for p in P:
         BYTYPED[p["typed"] or p["rec"]].append(p)
     LINKS, _ = links()
-    seen = set()
     profiles = {}
     order = []
     alt = None
@@ -521,30 +558,13 @@ def build(DOCS):
         paras_raw = d["paras"]
         # body: everything after the "Record No" and name lines
         body_idx = [i for i in range(start, len(paras_raw)) if not (st["nameIdx"] >= 0 and i == start + st["nameIdx"])]
-        paras, omitted = [], 0
+        paras = []
         revs = collections.Counter()
         for i in body_idx:
             segs = paras_raw[i]
             for t, c in segs:
                 if c.startswith(("i:", "d:")) and t.strip():
                     revs[c[2:]] += 1
-            key = (rec, i)
-            if key in REDACT:
-                fp, rep, *keep = REDACT[key]
-                full = re.sub(r"\s+", " ", accepted(segs)).strip()
-                if hashlib.sha1(full.encode()).hexdigest()[:10] != fp:
-                    sys.exit(f"✗ {rec}, paragraph {i}: the passage withheld for privacy has changed; review it and update REDACT")
-                seen.add(key)
-                omitted += 1
-                if rep is None:
-                    continue
-                if keep:
-                    # keep the rest of the paragraph after the replaced opening
-                    cut = full.find("genealogists.")
-                    rest = full[cut + len("genealogists."):].strip() if cut >= 0 else ""
-                    rep = rep + (" " + rest if rest else "")
-                paras.append(rep)
-                continue
             c = collapse(segs)
             if c == "" or c == []:
                 continue
@@ -581,19 +601,18 @@ def build(DOCS):
             life["born"] = ("c. " if approx(born or bapt) else "") + by + ("" if year_of(born) else " (bapt.)")
         if dy:
             life["died"] = ("c. " if approx(died) else "") + dy
-        privacy = "living" if rec in LIVING else "modern" if rec in MODERN else "full"
-        p["privacy"] = privacy
-        if privacy == "full":
-            p["life"] = life
-            p["header"] = [EMAIL.sub("[email address removed]", h) for h in st["header"]]
-            p["fields"] = [{"label": f["label"], "value": EMAIL.sub("[email address removed]", f["value"])} for f in fields if f["value"].strip()] if rec != "0558" else []
-            p["paras"] = [] if rec == "0557" else paras
-            if omitted:
-                p["omitted"] = omitted
-            if revs:
-                p["revisions"] = dict(revs)
-        elif privacy == "modern":
-            p["life"] = {k: re.sub(r"[^\d.c ]|\(.*", "", v).strip() for k, v in life.items()}
+        if rec in DIED and "died" not in life:
+            life["died"] = DIED[rec]
+        if rec in LIVING:
+            p["living"] = True
+        p["life"] = life
+        p["header"] = [EMAIL.sub("[email address removed]", h) for h in st["header"]]
+        p["fields"] = [{"label": f["label"], "value": EMAIL.sub("[email address removed]", f["value"])} for f in fields if f["value"].strip()] if rec != "0558" else []
+        p["paras"] = [] if rec == "0557" else paras
+        if addresses[rec]:
+            p["addresses"] = addresses[rec]
+        if revs:
+            p["revisions"] = dict(revs)
         if rec == "0557":
             p.pop("typedRec", None)
             p["header"], p["fields"], p["life"] = [], [], {}
@@ -722,9 +741,6 @@ def build(DOCS):
     branches = [{"id": b, "title": t, "head": h, "desc": dsc, "count": sum(1 for p in profiles.values() if p["branch"] == b)} for b, t, h, dsc in BR]
 
     out = {"branches": branches, "profiles": [profiles[r] for r in sorted(order, key=lambda x: (x[:4], x[4:]))]}
-    missing = set(REDACT) - seen
-    if missing:
-        sys.exit(f"✗ withheld passages not found: {sorted(missing)}")
     for p in out["profiles"]:
         if not p["parents"] and not p["spouses"] and not kids[p["id"]]:
             print(f"  note: {p['id']} {p['name']} has no family links")
@@ -740,7 +756,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         out = build(convert(tmp))
     text = json.dumps(out, indent=1, ensure_ascii=False)
-    counts = f"{len(out['profiles'])} profiles; {dict(collections.Counter(p['branch'] for p in out['profiles']))}; {dict(collections.Counter(p['privacy'] for p in out['profiles']))}"
+    counts = f"{len(out['profiles'])} profiles; {dict(collections.Counter(p['branch'] for p in out['profiles']))}; {sum(1 for p in out['profiles'] if p.get('living'))} living"
     if args.check:
         same = os.path.exists(OUT) and open(OUT, encoding="utf-8").read() == text
         print(("✓ data/genealogy.json is up to date: " if same else "✗ data/genealogy.json differs from the profiles: ") + counts)

@@ -51,7 +51,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0501 JAMES SOMERVILLE.doc",
    "known": "The Planter",
-   "privacy": "full",
    "life": {
     "died": "1642"
    },
@@ -124,7 +123,6 @@
    "name": "Elizabeth Hamilton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0502 ELIZABETH HAMILTON.doc",
-   "privacy": "full",
    "life": {
     "died": "1666"
    },
@@ -168,7 +166,6 @@
    "name": "Thomas Hamilton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0503 THOMAS HAMILTON.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Father of Elizabeth Hamilton (0502) who married James Somerville (0501)"
@@ -206,7 +203,6 @@
    "name": "James Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0504 JAMES SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "c. 1687"
    },
@@ -264,7 +260,6 @@
    "name": "Anna Katharina Stiernfelt",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0505 ANNA STIERNFELT.doc",
-   "privacy": "full",
    "life": {
     "born": "1631",
     "died": "1705"
@@ -348,7 +343,6 @@
    "name": "Lars Pedersson Grubbe Stiernfelt",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0506 LARS GRUBBE STIERNFELT.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Father of Anna Katharina Steynfelt, wife of James Somerville (0504)"
@@ -385,7 +379,6 @@
    "name": "Malcolm Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0507 MALCOLM SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1642",
     "died": "c. 1665"
@@ -427,7 +420,6 @@
    "name": "Thomas Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0508 THOMAS SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1642",
     "died": "1669"
@@ -493,7 +485,6 @@
    "name": "Jean Warnock",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0509 JEAN WARNOCK.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Wife of Thomas Somerville (0508)"
@@ -524,7 +515,6 @@
    "name": "James Warnock",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0510 JAMES WARNOCK.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Enniskillen",
@@ -550,7 +540,6 @@
    "name": "John Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0511 JOHN SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1642"
    },
@@ -591,7 +580,6 @@
    "name": "Jeanne Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0512 JEANNE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Eldest daughter of James Somerville (0501) and Elizabeth Hamilton (0502)."
@@ -626,7 +614,6 @@
    "name": "John Hamilton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0513 JOHN HAMILTON.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Ballygally and Tullyereary, Co Fermanagh.",
@@ -668,7 +655,6 @@
    "name": "Catherine Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0514 CATHERINE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1642",
     "died": "c. 1665"
@@ -710,7 +696,6 @@
    "name": "Sydney Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0515 SYDNEY SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1687",
     "died": "1725"
@@ -758,7 +743,6 @@
    "name": "John Caulfield",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0516 JOHN CAULFIELD.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1687",
     "died": "c. 1705"
@@ -806,7 +790,6 @@
    "name": "James Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0517 JAMES SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1680"
    },
@@ -843,7 +826,6 @@
    "name": "Malcolm Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0518 MALCOLM SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1680",
     "died": "1682"
@@ -886,7 +868,6 @@
    "name": "Thomas Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0519 THOMAS SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1667",
     "died": "1718"
@@ -944,7 +925,6 @@
    "name": "Catherine King",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0520 CATHERINE KING.doc",
-   "privacy": "full",
    "life": {
     "died": "1725"
    },
@@ -991,7 +971,6 @@
    "name": "James King",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0521 JAMES KING.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Corrard & Gola, Co Fermanagh",
@@ -1033,7 +1012,6 @@
    "name": "Jennitt Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0522 JENNITT SOMERVILLE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Eldest daughter of Thomas Somerville (0508) and Jean Warnock (0509)."
@@ -1071,7 +1049,6 @@
    "name": "Ludovic Cathcart",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0523 LUDOVIC CATHCART.doc",
-   "privacy": "full",
    "life": {
     "died": "1711"
    },
@@ -1112,7 +1089,6 @@
    "name": "Elizabeth Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0524 ELIZABETH SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1668",
     "died": "c. 1681"
@@ -1153,7 +1129,6 @@
    "name": "Sir James Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0525 SIR JAMES SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "1748"
    },
@@ -1225,7 +1200,6 @@
    "name": "Elizabeth Quaile",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0526 ELIZABETH QUAILE.doc",
-   "privacy": "full",
    "life": {
     "died": "1725"
    },
@@ -1274,7 +1248,6 @@
    "name": "William Quaile",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0527 WILLIAM QUAILE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Father of Elizabeth Quaile (0525)."
@@ -1304,9 +1277,10 @@
     "Last Edited=13 Oct 2005",
     "Elizabeth Quayle was born before 1698. She was the daughter of James Quayle.2 She married Sir James Somerville, 1st Bt., son of Thomas Somerville and Katherine King, on 2 February 1713.2 She died on 10 November 1725.2 Elizabeth Quayle was also known as Elizabeth Quaile.2 From 2 February 1713, her married name became Somerville.2",
     "Citations",
-    "[S125] Richard Glanville-Brown, online <e-mail address>, Richard Glanville-Brown (RR 2, Milton, Ontario, Canada), downloaded 17 August 2005.",
+    "[S125] Richard Glanville-Brown, online <e-mail address>, Richard Glanville-Brown (⟦address⟧), downloaded 17 August 2005.",
     "[S21] L. G. Pine, The New Extinct Peerage 1884-1971: Containing Extinct, Abeyant, Dormant and Suspended Peerages With Genealogies and Arms (London, U.K.: Heraldry Today, 1972), page 17. Hereinafter cited as The New Extinct Peerage."
    ],
+   "addresses": 1,
    "sex": "m",
    "parents": [],
    "spouses": [],
@@ -1318,7 +1292,6 @@
    "name": "Catherine Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0528 CATHERINE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "1748"
    },
@@ -1358,7 +1331,6 @@
    "name": "Robert Finlay",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0529 ROBERT FINLAY.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Husband of Catherine Somerville (0528)."
@@ -1390,7 +1362,6 @@
    "name": "Jane Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0530 JANE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Daughter of Thomas Somerville (0519) and Catherine King (0520)."
@@ -1420,7 +1391,6 @@
    "name": "Sarah Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0531 SARAH SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "c. 1724"
    },
@@ -1464,7 +1434,6 @@
    "name": "Edward Meares",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0532 EDWARD MEARES.doc",
-   "privacy": "full",
    "life": {
     "died": "1773"
    },
@@ -1504,7 +1473,6 @@
    "name": "Margaret Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0533 MARGARET SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1718",
     "died": "1748"
@@ -1554,7 +1522,6 @@
    "name": "Rev. James King",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0534 REV. JAMES KING.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Husband and Cousin of Margaret Somerville (0533)."
@@ -1593,7 +1560,6 @@
    "name": "Sir Quaile Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0535 SIR QUAILE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1714 (bapt.)",
     "died": "1772"
@@ -1659,7 +1625,6 @@
    "name": "Mary Warburton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0536 MARY WARBURTON.doc",
-   "privacy": "full",
    "life": {
     "died": "1748"
    },
@@ -1701,7 +1666,6 @@
    "name": "George Warburton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0537 GEORGE WARBURTON.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Father of Mary Warburton (0536)."
@@ -1732,7 +1696,6 @@
    "name": "Sarah Towers",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0538 SARAH TOWERS.doc",
-   "privacy": "full",
    "life": {
     "died": "c. 1780"
    },
@@ -1792,7 +1755,6 @@
    "name": "Thomas Towers",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0539 THOMAS TOWERS.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Arthurstown Co Meath & of Borrisokane, Co Tipperary.",
@@ -1820,7 +1782,6 @@
    "name": "Thomas Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0540 THOMAS SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1717",
     "died": "1721"
@@ -1870,7 +1831,6 @@
    "name": "William Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0541 WILLIAM SOMERVILLE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Ardrass, Co Kildare",
@@ -1919,7 +1879,6 @@
    "name": "Sarah Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0542 SARAH SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "c. 1774"
    },
@@ -1952,7 +1911,6 @@
    "name": "Elizabeth Monroe",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0543 ELIZABETH MONROE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1756",
     "died": "1817"
@@ -2006,7 +1964,6 @@
    "name": "James Monroe",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0544 JAMES MONROE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Father of Elizabeth Somerville (0543)."
@@ -2030,7 +1987,6 @@
    "name": "James Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0545 JAMES SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1722",
     "died": "1797"
@@ -2092,7 +2048,6 @@
    "name": "Deborah Constable",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0546 DEBORAH CONSTABLE.doc",
-   "privacy": "full",
    "life": {
     "died": "c. 1784"
    },
@@ -2133,7 +2088,6 @@
    "name": "Edward Constable",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0547 EDWARD CONSTABLE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Parish of St Bridget, Dublin.",
@@ -2165,7 +2119,6 @@
    "name": "Katharine Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0548 KATHARINE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1716"
    },
@@ -2213,7 +2166,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0549 SIR JOSEPH HOARE.doc",
    "typedRec": "0548",
-   "privacy": "full",
    "life": {
     "born": "1707",
     "died": "1801"
@@ -2282,7 +2234,6 @@
    "name": "Anne Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0550 ANNE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1719"
    },
@@ -2331,7 +2282,6 @@
    "name": "William Murray",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0551 WILLIAM MURRAY.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Ronaldsway, Isle of Man.",
@@ -2366,7 +2316,6 @@
    "name": "Elizabeth Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0552 ELIZABETH SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1721",
     "died": "1726"
@@ -2416,7 +2365,6 @@
    "name": "Sir James Quaile Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0553 SIR JAMES QUAILE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1729",
     "died": "1797"
@@ -2475,7 +2423,6 @@
    "name": "Catherine Lowther-Crofton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0554 CATHERINE LOWTHER CROFTON.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1752",
     "died": "1775"
@@ -2527,7 +2474,6 @@
    "name": "Sir Marcus Lowther-Crofton Bt.",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0555 SIR  MARCUS LOWTHER CROFTON.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Moate, Co Roscommon",
@@ -2554,7 +2500,6 @@
    "name": "Warburton Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0556 WARBURTON SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "c. 1840"
    },
@@ -2606,7 +2551,6 @@
    "name": "Elizabeth Hamilton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0557 ELIZBABETH HAMILTON.doc",
-   "privacy": "full",
    "life": {},
    "header": [],
    "fields": [],
@@ -2625,7 +2569,6 @@
    "name": "Charlotte Mitchell",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0558 CHARLOTTE MITCHELL.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Wife of Warburton Somerville (0556) and widow of Richard Sheridan MP."
@@ -2657,7 +2600,6 @@
    "name": "William Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0559 WILLIAM SOMERVILLE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Lake, Co Cavan.",
@@ -2691,7 +2633,6 @@
    "name": "Martha Matilda Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0560 MARTHA MATILDA SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1756",
     "died": "1826"
@@ -2744,7 +2685,6 @@
    "name": "Hon. Gustavus Hamilton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0561 HON GUSTAVUS HAMILTON.doc",
-   "privacy": "full",
    "life": {
     "born": "1749",
     "died": "1816"
@@ -2808,7 +2748,6 @@
    "name": "Sir Thomas Webb",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0562 SIR THOMAS WEBB.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "6th Bt.",
@@ -2859,7 +2798,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0563 WILLIAM SOMERVILLE(amended).doc",
    "known": "Capt. William",
-   "privacy": "full",
    "life": {
     "born": "1776",
     "died": "1844"
@@ -3706,7 +3644,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0564 ELIZABETH BELLINGHAM(amended).doc",
    "known": "Eliza",
-   "privacy": "full",
    "life": {
     "born": "1779",
     "died": "1839"
@@ -4064,35 +4001,14 @@
      ]
     ],
     "http://bellinghamroot.tripod.com/bellingh/pafg06.htm#68",
-    "NB The above extract has been corrected by WBRBS from reference to LG of Ireland 1952 Edition ‘Riall of Ballyorney House’ and the Somerville records. Dorothea married William Riall of Annerville, Clonmel, Co Tipperary while her youngest sister married his youngest brother Andrew Arthur Riall. The Rialls were bankers in Clonmel, a prosperous milling town. The Riall family, but not the direct descendants of the above, subsequently married into the Roberts family of Old Conna Hall, near Bray, Co Wicklow, which they inherited. (It is now(2011) a prep school). ⟦omitted⟧ Dorothea Riall, referred to as Dora R in Capt William’s diary, was obviously close to her sister Eliza Somerville, and is frequently mentioned in the Diary and the family correspondence. Archibald James Somerville, before his flight to Barbados in February 1823, spent three days at Clonmel before embarking on the George and Thomas. The purpose of the visit has occasioned much speculation.",
+    "NB The above extract has been corrected by WBRBS from reference to LG of Ireland 1952 Edition ‘Riall of Ballyorney House’ and the Somerville records. Dorothea married William Riall of Annerville, Clonmel, Co Tipperary while her youngest sister married his youngest brother Andrew Arthur Riall. The Rialls were bankers in Clonmel, a prosperous milling town. The Riall family, but not the direct descendants of the above, subsequently married into the Roberts family of Old Conna Hall, near Bray, Co Wicklow, which they inherited. (It is now(2011) a prep school). They then moved to Ballyorney, near Enniskerry where Patrick (Dudley Erskine) Riall and his wife Jane and family became close friends of WBRBS and Manon. Manon taught the Riall children to ride, Selina and Caroline Riall were her bridesmaids and Selina’s elder daughter is Manon’s goddaughter. Patrick and Jane were walking companions of WBRBS and Manon on the continent over a five year period. After the death of Patrick’s sister (2010), her sons insisted that her portrait of Dorothea should join her Bellingham relations at ⟦address⟧. This is fitting as Dorothea Riall, referred to as Dora R in Capt William’s diary, was obviously close to her sister Eliza Somerville, and is frequently mentioned in the Diary and the family correspondence. Archibald James Somerville, before his flight to Barbados in February 1823, spent three days at Clonmel before embarking on the George and Thomas. The purpose of the visit has occasioned much speculation.",
     [
      [
       "Eliza, from her correspondence, is a loving mother of a widely scattered family, pleading with them to keep in touch with her and their siblings. From the sons’ status in life we are lead to believe that their circumstances fell far short of those to which Eliza and her sisters were accustomed. Eliza was constantly concerned that they should marry well and gain good appointments, if necessary, through Bellingham contacts. She also remembers her brother Tenison fondly in her correspondence.",
       "i7"
      ]
     ],
-    [
-     [
-      "While no portrait of Eliza survives, there are sillhouet",
-      "i7"
-     ],
-     [
-      "te",
-      "iW"
-     ],
-     [
-      "s, and a photograph of a",
-      "i7"
-     ],
-     [
-      "n unfinished",
-      "iW"
-     ],
-     [
-      " painting said to be Eliza at Dargle Hill. There is also a miniature painting of Henry Bellingham. There is also a miniature of Judge Tenison.",
-      "i7"
-     ]
-    ],
+    "While no portrait of Eliza survives, there are sillhouettes, and a photograph of an unfinished painting said to be Eliza at ⟦address⟧. There is also a miniature painting of Henry Bellingham. There is also a miniature of Judge Tenison.",
     [
      [
       "",
@@ -4162,10 +4078,10 @@
      ]
     ]
    ],
-   "omitted": 1,
+   "addresses": 2,
    "revisions": {
-    "7": 44,
-    "W": 26
+    "7": 36,
+    "W": 18
    },
    "archive": "eliza-bellingham",
    "sex": "f",
@@ -4183,7 +4099,6 @@
    "name": "Col. Henry Bellingham",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0565 COL. HENRY BELLINGHAM.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1739",
     "died": "1800"
@@ -4227,7 +4142,6 @@
    "name": "Anne Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0566 ANNE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "c. 1779"
    },
@@ -4267,7 +4181,6 @@
    "name": "Elizabeth Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0567 ELIZABETH SOMERVILLE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "2nd dau of William Somerville (0541) and Sarah (0542)."
@@ -4302,7 +4215,6 @@
    "name": "Dr Frederick Jebb",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0568 FREDERICK JEBB.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Husband of Elizabeth Somerville (0567)."
@@ -4343,7 +4255,6 @@
    "name": "Jane Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0569 JANE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "3RD dau of William Somerville (0541) and Sarah (0542)."
@@ -4378,7 +4289,6 @@
    "name": "Sir Henry Jebb",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0570 SIR HENRY JEBB.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "College of Surgeons Ireland, of Malborough St, Dublin.",
@@ -4429,7 +4339,6 @@
    "name": "Edward Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0571 EDWARD SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1752"
    },
@@ -4469,7 +4378,6 @@
    "name": "James Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0572 JAMES SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1755"
    },
@@ -4509,7 +4417,6 @@
    "name": "Sydney Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0573 SYDNEY SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1756"
    },
@@ -4549,7 +4456,6 @@
    "name": "Sir Marcus Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0574 SIR MARCUS SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1772",
     "died": "1831"
@@ -4657,7 +4563,6 @@
    "name": "Mary Anne Gorges Meredyth",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0575 MARY ANNE GORGES MEREDYTH.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1778",
     "died": "1821"
@@ -4703,7 +4608,6 @@
    "name": "Sir Richard Gorges Meredyth",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0576  SIR RICHARD GORGES MEREDYTH.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of St Katharine’s Grove, Co Dublin.",
@@ -4739,7 +4643,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0577 ELIZABETH GEALE.doc",
    "typedRec": "0574",
-   "privacy": "full",
    "life": {
     "born": "c. 1805",
     "died": "1896"
@@ -4799,7 +4702,6 @@
    "name": "Piers Geale",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0578 PIERS GEALE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Mountjoy Square, Dublin and Clonsilla, Co Dublin",
@@ -4834,7 +4736,6 @@
    "name": "James Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0579 JAMES SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "1837"
    },
@@ -4879,7 +4780,6 @@
    "name": "Frances Armytage Thompson",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0580 FRANCES THOMPSON.doc",
-   "privacy": "full",
    "life": {
     "died": "1835"
    },
@@ -4920,7 +4820,6 @@
    "name": "Skefington Thompson",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0581 SKEFINGTON THOMPSON.doc",
-   "privacy": "full",
    "life": {
     "died": "1810"
    },
@@ -4964,7 +4863,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0582 WILLIAM HENRY SOMERVILLE(amended).doc",
    "known": "WHS",
-   "privacy": "full",
    "life": {
     "born": "1802",
     "died": "1847"
@@ -5251,7 +5149,6 @@
    "name": "Henrietta Ryves",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0583 HENRIETTA RYVES(amended).doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Wife of William Henry Somerville (0582)"
@@ -5333,7 +5230,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0584 ARCHIBALD JAMES SOMERVILLE(amended).doc",
    "known": "AJS",
-   "privacy": "full",
    "life": {
     "born": "1803",
     "died": "1871"
@@ -6142,7 +6038,12 @@
       "iW"
      ]
     ],
-    "After Regi’s death, it fell to W B R B Somerville (Bill)(0682) to persue the matter. ⟦omitted⟧ he just did not have an opportunity of taking up the necessary research himself or organising other, professional, genealogists. Eventually in the closing years of the 20th century, contact was made through a Mr Henry McDowell, a retired professional genealogist, with Mr Henry Beddingfeld in the College of Arms and some further small progress was made, but, sadly, Mr Beddingfeld lacked the interest shown in previous years by Sir Walter Verco and, following a fire in his office, retired. Further contact was made by Bill , through the Secretary of the Standing Council of the Baronetage, a Commander Perry Abbott, with Mr Peter O’Donoghue, then York Herald and a preliminary meeting held in November 2015. Mr O’Donoghue was thoroughly discouraging, maintaining that all the work and research undertaken by Regi and Tetty 50 years earlier would have to be repeated anew, the draft Pedigree prepared in the College would be ignored and any evidence from family papers would be irrelevant. He showed an amazing lack of understanding of the case and it seemed doubtful that he had even read the summary of the history provided. Since then no further action has been taken although from time to time some further information is forthcoming.",
+    [
+     [
+      "After Regi’s death, it fell to W B R B Somerville (Bill)(0682) to persue the matter. He had embarked upon a new career in the law in 1964 and then married in 1968 so, while he was acutely aware of how the matter lay, he just did not have an opportunity of taking up the necessary research himself or organising other, professional, genealogists. Eventually in the closing years of the 20th century, contact was made through a Mr Henry McDowell, a retired professional genealogist, with Mr Henry Beddingfeld in the College of Arms and some further small progress was made, but, sadly, Mr Beddingfeld lacked the interest shown in previous years by Sir Walter Verco and, following a fire in his office, retired. Further contact was made by Bill , through the Secretary of the Standing Council of the Baronetage, a Commander Perry Abbott, with Mr Peter O’Donoghue, then York Herald and a preliminary meeting held in November 2015. Mr O’Donoghue was thoroughly discouraging, maintaining that all the work and research undertaken by Regi and Tetty 50 years earlier would have to be repeated anew, the draft Pedigree prepared in the College would be ignored and any evidence from family papers would be irrelevant. He showed an amazing lack of understanding of the case and it seemed doubtful that he had even read the summary of the history provided. Since then no further action has been taken although from time to time some further information is forthcoming.",
+      "iW"
+     ]
+    ],
     [
      [
       "In the 2019 edition of Debretts there is an account of the descendants of AJS and Bessie, and a statement that the senior member of that line a John Somerville is the probable ninth Baronet. It is not clear who has drawn up this entry, being the first that has ever been put forward for publication in Debretts. Clearly it has been made with reference to that branch of the family as some of the information can only have been included from access to the family. At the time of the last contact with the College in 2015, it was revealed that an approach had been made to Commander Abbott, in his role of Secretary to the Standing Council, by a professional Genealogist, a Mr Stephen Kershaw, who claimed that he had ‘found’ the present Baronet in America! By coincidence the letter from Mr Kershaw arrived during the same month as Bill’s approach to Commander Abbott. By agreement with Mr Kershaw, he allowed Commander Abbott to forward to Bill his proofs which were professionally prepared but somewhat lacking in evidence. It is assumed that it is he who put forward the entry for inclusion in the 2019 edition of Debretts.",
@@ -6184,7 +6085,6 @@
      ]
     ]
    ],
-   "omitted": 1,
    "revisions": {
     "7": 102,
     "W": 54
@@ -6207,7 +6107,6 @@
    "name": "Elizabeth Breaky",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0584A ELIZABETH BREAKY (amended).docx",
-   "privacy": "full",
    "life": {
     "born": "c. 1806",
     "died": "1866"
@@ -6260,7 +6159,6 @@
    "name": "Elizabeth Crawford",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0584B ELIZABETH CRAWFORD (Amended).docx",
-   "privacy": "full",
    "life": {
     "born": "1806",
     "died": "1883"
@@ -6370,7 +6268,6 @@
    "name": "John Churchill Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0585 JOHN CHURCHILL SOMERVILLE(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1804",
     "died": "1805"
@@ -6416,7 +6313,6 @@
    "name": "Corry Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0586 CORRY SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1806",
     "died": "1879"
@@ -6495,7 +6391,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0587 LUCINDA SIMONTON (amended).doc",
    "known": "Lucy",
-   "privacy": "full",
    "life": {
     "born": "c. 1806",
     "died": "1875"
@@ -6641,7 +6536,6 @@
    "name": "Thomas Simonton",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0588 THOMAS SIMONTON (amended).doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Father of Lucinda Simonton (0587)."
@@ -6681,7 +6575,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0589 BELLINGHAM ARTHUR SOMERVILLE (amended).doc",
    "known": "Bm",
-   "privacy": "full",
    "life": {
     "born": "1810",
     "died": "1844"
@@ -6735,7 +6628,6 @@
    "name": "Tenison Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0590 TENISON SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1812",
     "died": "1812"
@@ -6781,7 +6673,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0591 TENISON ALAN SOMERVILLE(amended).doc",
    "known": "TAS",
-   "privacy": "full",
    "life": {
     "born": "1815",
     "died": "1895"
@@ -7032,7 +6923,6 @@
    "name": "Cecilia Eliza O’Connor",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0592 CECILIA ELIZA O_CONNOR(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1816",
     "died": "1898"
@@ -7238,7 +7128,6 @@
    "name": "Daniel O’Connor",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0593 DANIEL O_CONNOR(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1778"
    },
@@ -7384,7 +7273,6 @@
    "name": "Samuel Riall Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0594 SAMUEL RIALL SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1820",
     "died": "1820"
@@ -7428,7 +7316,6 @@
    "name": "Eliza Bellingham Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0595 ELIZA BELLINGHAM SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1808",
     "died": "1812"
@@ -7473,7 +7360,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0596 ELIZA BELLINGHAM SOMERVILLE (amended).doc",
    "known": "Aunt Nelson",
-   "privacy": "full",
    "life": {
     "born": "1813",
     "died": "1879"
@@ -7532,7 +7418,6 @@
    "name": "Thomas Nelson",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0597 THOMAS NELSON (amended).doc",
-   "privacy": "full",
    "life": {
     "died": "1879"
    },
@@ -7574,7 +7459,6 @@
    "name": "Sir William Meredyth Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0598 SIR WM MEREDYTH SOMERVILLE - LORD ATHLUMNEY.doc",
-   "privacy": "full",
    "life": {
     "born": "1803",
     "died": "1873"
@@ -7674,7 +7558,6 @@
    "name": "Lady Maria Harriet Conyngham",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0599 LADY MARIA CONYNGHAM.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1810",
     "died": "1843"
@@ -7738,7 +7621,6 @@
    "name": "Henry Nathaniel Marcus Conyngham",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0600 HENRY CONGYNGHAN.doc",
-   "privacy": "full",
    "life": {
     "born": "1766"
    },
@@ -7893,7 +7775,6 @@
    "name": "Maria Georgiana Elizabeth Jones",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0601 MARIA GEORGIANA ELIZABETH JONES.doc",
-   "privacy": "full",
    "life": {
     "born": "1831",
     "died": "1899"
@@ -7954,7 +7835,6 @@
    "name": "Hubert George Jones",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0602 HUBERT GEORGE JONES.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "Father of Maria Georgiana Elizabeth Jones (0601)."
@@ -8008,7 +7888,6 @@
    "name": "James Richard Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0603 JAMES RICHARD SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1803",
     "died": "1869"
@@ -8063,7 +7942,6 @@
    "name": "Anna Maria Torrens",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0604 ANNA MARIA TORRENS.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1814",
     "died": "1855"
@@ -8111,7 +7989,6 @@
    "name": "Maj Gen Sir Henry Torrens KCB",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0605 HENRY TORRENS.doc",
-   "privacy": "full",
    "life": {
     "born": "1779",
     "died": "1828"
@@ -8240,7 +8117,6 @@
    "name": "James Richard Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0606 JAMES SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1816",
     "died": "1896"
@@ -8290,7 +8166,6 @@
    "name": "Marcus Richard Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0607 MARCUS RICHARD SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "1863"
    },
@@ -8327,7 +8202,6 @@
    "name": "William Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0608 WILLIAM SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "died": "1845"
    },
@@ -8367,7 +8241,6 @@
    "name": "Frances Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0609 FRANCES SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1814",
     "died": "1869"
@@ -8419,7 +8292,6 @@
    "name": "Pierce Norton",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0610 PIERCE MORTON.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of Kilnacrot, Co Cavan"
@@ -8456,7 +8328,6 @@
    "name": "Louisa Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0611 LOUISA SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1818",
     "died": "1894"
@@ -8510,7 +8381,6 @@
    "name": "William Cruise",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0612 WILLIAM CRUISE.doc",
-   "privacy": "full",
    "life": {},
    "header": [
     "of 21 Hardwicke St, Dublin."
@@ -8546,7 +8416,6 @@
    "name": "William Bellingham Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0613 WILLIAM BELLINGHAM SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1839"
    },
@@ -8676,7 +8545,6 @@
    "name": "Amanthus Shipp",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0614 AMANTHUS SHIPP (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1825",
     "died": "1906"
@@ -8771,7 +8639,6 @@
    "name": "Ewell Shipp",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0615 EWELL SHIPP (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1785"
    },
@@ -8893,6 +8760,8 @@
     "In early 20th century the Shipps were dealers in tobacco seed, and also bred race horses.",
     "It isn’t known if Sunny Slope is still a National Historic Site, and can be visited as such. According to the April 17, 2008 edition of Versailles KY newspaper, The Woodford Sun, the 168 acre Sunny Slope Farm located at 1870 Aiken Road sold April 8 for $3.1 million. The Shipp Family had owned the farm for 6 generations. A little historical background on the farm, reveals that all the way back in the 1780s, Richard and Elizabeth Shipp acquired the place that was then known as The Old Fort Place. Throughout its 200 year history, this Woodford County KY farm has been utilized for everything from growing of hemp, horse farms breeding, raising of cattle, tobacco farming, and even as a dairy farm.",
     "Shipps living in the area in 1996 were:",
+    "Mr. & Mrs. J.V. Shipp ⟦address⟧ Sunny Slope Farm/Shipp House",
+    "Mr. & Mrs. Van Shipp ⟦address⟧",
     "Sources:",
     "Early Colonial Settlers of Southern Maryland and Virginia’s Northern Neck Counties. Online at https://www.colonial-settlers-md-va.us/getperson.php?personalID=1028819&tree=tree1",
     "Shipp history from Josiah Shipp mid 1600’s to Rappahannock Co, VA in Genealogies of Virginia Families by Tylers Quarterly and Historical and Genealogical",
@@ -8918,7 +8787,7 @@
     "http://www.angelfire.com/pe/shirleyspage/shipp.html",
     "NB. email sent to ShirleyJean on 10 July 2011. No response to date, D R G Gilmour, 30 July 2011."
    ],
-   "omitted": 3,
+   "addresses": 3,
    "sex": "m",
    "parents": [],
    "spouses": [],
@@ -8930,7 +8799,6 @@
    "name": "Eliza Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0616 ELIZA SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1835",
     "died": "c. 1881"
@@ -8992,7 +8860,6 @@
    "name": "John Gamble",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0617 JOHN GAMBLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1820",
     "died": "1911"
@@ -9052,7 +8919,6 @@
    "name": "Margaret Adelaide Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0618 MARGARET ADELAIDE SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1836",
     "died": "c. 1915"
@@ -9122,7 +8988,6 @@
    "name": "Sinicoe Dennis",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0619 SINICOE DENNIS.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1829",
     "died": "1912"
@@ -9171,7 +9036,6 @@
    "name": "Dorothea Victoria Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0620 DOROTHEA VICTORIA SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1840",
     "died": "1922"
@@ -9247,7 +9111,6 @@
    "name": "Hugh Stevenson",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0621 HUGH STEVENSON(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1842",
     "died": "1915"
@@ -9320,7 +9183,6 @@
    "name": "Henrietta Alicia Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0622 HENRIETTA ALICIA SOMERVILLE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1843",
     "died": "1865"
@@ -9374,7 +9236,6 @@
    "name": "Samuel B Street",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0623 SAMUEL B STREET(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1842"
    },
@@ -9418,7 +9279,6 @@
    "name": "Lucinda Catherine Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0624 LUCINDA CATHERINE (amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1846",
     "died": "c. 1877"
@@ -9478,7 +9338,6 @@
    "name": "Job E McKinnon",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0625 JOB MCKINNON(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1838"
    },
@@ -9536,7 +9395,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0626 WILLIAM DENNISTOUN SOMERVILLE(amended).doc",
    "known": "Uncle Billy",
-   "privacy": "full",
    "life": {
     "born": "1842",
     "died": "1917"
@@ -9694,7 +9552,6 @@
    "name": "Tenison Alan Somerville",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0627 TENISON ALAN SOMERVILLE(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1845",
     "died": "1855"
@@ -9767,7 +9624,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0628 HENRY BELLINGHAM SOMERVILLE (amended).doc",
    "known": "Uncle Henry",
-   "privacy": "full",
    "life": {
     "born": "1848",
     "died": "1915"
@@ -9871,7 +9727,6 @@
    "name": "Richard Dyas",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0630 RICHARD DYAS(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1799",
     "died": "1865"
@@ -10039,7 +9894,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0631 BELLINGHAM ARTHUR SOMERVILLE(amended).doc",
    "known": "BAS",
-   "privacy": "full",
    "life": {
     "born": "1853",
     "died": "1916"
@@ -11163,7 +11017,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0632 MARGARET HALL CLINCH(amended).doc",
    "known": "Daisy/Dick",
-   "privacy": "full",
    "life": {
     "born": "1859",
     "died": "1949"
@@ -11611,7 +11464,6 @@
    "name": "William Clinch",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0633 WILLIAM CLINCH(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1820",
     "died": "1891"
@@ -11807,7 +11659,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0634 TENISON ALAN SOMERVILLE(amended).doc",
    "known": "Uncle Sonny",
-   "privacy": "full",
    "life": {
     "died": "1906"
    },
@@ -11989,7 +11840,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0634A ERINA BELLINGHAM SOMERVILLE (003).doc",
    "known": "Cis/Aunt Amy",
-   "privacy": "full",
    "life": {
     "born": "1851",
     "died": "1927"
@@ -12054,7 +11904,6 @@
    "name": "Thomas Foster Rolfe",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0634B THOMAS FOSTER ROLFE.doc",
-   "privacy": "full",
    "life": {
     "died": "1935"
    },
@@ -12093,7 +11942,6 @@
    "name": "William Henry Marcus Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0635 WILLIAM HENRY MARCUS SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1836",
     "died": "1837"
@@ -12132,7 +11980,6 @@
    "name": "Elizabeth Jane Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0636 ELIZABETH JANE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1834",
     "died": "1882"
@@ -12198,7 +12045,6 @@
    "name": "James Molyneux Caulfield",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0637 JAMES MOLYNEUX CAULFIELD.doc",
-   "privacy": "full",
    "life": {
     "born": "1820",
     "died": "1892"
@@ -12266,7 +12112,6 @@
    "name": "Sir James Herbert Gustavis Meredyth Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0638 JAMES SOMERVILLE - 2ND LORD ATHLUMNEY.doc",
-   "privacy": "full",
    "life": {
     "born": "1865",
     "died": "1929"
@@ -12405,7 +12250,6 @@
    "name": "Margery Honor Boan",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0639 MARGERY BOAN - LADY ATHLUMNEY.doc",
-   "privacy": "full",
    "life": {
     "born": "c. 1899",
     "died": "1946"
@@ -12457,7 +12301,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0640 HENRY BOAN.doc",
    "typedRec": "0638",
-   "privacy": "full",
    "life": {
     "born": "1860",
     "died": "1941"
@@ -12522,7 +12365,6 @@
    "name": "Marcus Edward Francis Meredyth Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0641 MARCUS  E.F.M. SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1867",
     "died": "1871"
@@ -12566,7 +12408,6 @@
    "name": "Mary Anne Blanche Somerville",
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0642 MARY ANNE BLANCHE SOMERVILLE.doc",
-   "privacy": "full",
    "life": {
     "born": "1861"
    },
@@ -12606,7 +12447,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0643 GEORGINA A.L. SOMERVILLE.doc",
    "typedRec": "0641",
-   "privacy": "full",
    "life": {
     "born": "1862"
    },
@@ -12652,7 +12492,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0644 CHARLES TOTTENHAM.doc",
    "typedRec": "0642",
-   "privacy": "full",
    "life": {
     "died": "1929"
    },
@@ -12706,7 +12545,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0645 EDITH SOPHIA SOMERVILLE.doc",
    "typedRec": "0643",
-   "privacy": "full",
    "life": {
     "born": "1863",
     "died": "1867"
@@ -12751,7 +12589,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0646 CECILIA LOUISA SOMERVILLE.doc",
    "typedRec": "0644",
-   "privacy": "full",
    "life": {
     "born": "1866",
     "died": "1946"
@@ -12796,7 +12633,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0647 FLORENCE SOMERVILLE.doc",
    "typedRec": "0645",
-   "privacy": "full",
    "life": {
     "born": "1869"
    },
@@ -12850,7 +12686,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0648 WILLIAM WOODING STANMER.doc",
    "typedRec": "0646",
-   "privacy": "full",
    "life": {
     "died": "1927"
    },
@@ -12896,7 +12731,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0649 CATHERINE SOMERVILLE.doc",
    "typedRec": "0647",
-   "privacy": "full",
    "life": {
     "born": "1870",
     "died": "1873"
@@ -12946,7 +12780,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0650 WILLIAM MEREDYTH SOMERVILLE.doc",
    "typedRec": "0648",
-   "privacy": "full",
    "life": {
     "born": "1835",
     "died": "1855"
@@ -12986,7 +12819,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0651 HENRY J TORRENS SOMERVILLE.doc",
    "typedRec": "0649",
-   "privacy": "full",
    "life": {
     "born": "1837",
     "died": "1850"
@@ -13026,7 +12858,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0652 MARCUS SOMERVILLE.doc",
    "typedRec": "0650",
-   "privacy": "full",
    "life": {
     "born": "1842",
     "died": "1846"
@@ -13066,7 +12897,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0653 MARY ANNE EMILY SOMERVILLE.doc",
    "typedRec": "0651",
-   "privacy": "full",
    "life": {
     "born": "c. 1838",
     "died": "1871"
@@ -13115,7 +12945,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0654 REV THEOBALD BUTLER.doc",
    "typedRec": "0652",
-   "privacy": "full",
    "life": {},
    "header": [
     "Husband of Mary Anne Emily Somerville (0651)"
@@ -13172,7 +13001,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0655 ANNA MARIA  SOMERVILLE.doc",
    "typedRec": "0653",
-   "privacy": "full",
    "life": {
     "born": "c. 1848"
    },
@@ -13211,7 +13039,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0656 FRANCES SOMERVILLE.doc",
    "typedRec": "0654",
-   "privacy": "full",
    "life": {
     "born": "c. 1848"
    },
@@ -13250,7 +13077,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0657 HENRIETTA SARA SOMERVILLE.doc",
    "typedRec": "0654",
-   "privacy": "full",
    "life": {
     "born": "c. 1856",
     "died": "1931"
@@ -13306,7 +13132,6 @@
    "tranche": 2,
    "file": "research/David Gilmour amended records/Tranche 2/0658 COL JOHN RICKABY.doc",
    "typedRec": "0656",
-   "privacy": "full",
    "life": {
     "born": "c. 1845"
    },
@@ -13360,7 +13185,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0659 ELIZABETH MARY SOMERVILLE(amended).doc",
    "known": "Lily",
-   "privacy": "full",
    "life": {
     "born": "1881",
     "died": "1930"
@@ -13467,7 +13291,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0660 WILLIAM A.T.B. SOMERVILLE (amended).doc",
    "known": "Bunt",
-   "privacy": "full",
    "life": {
     "born": "1882",
     "died": "1951"
@@ -13834,7 +13657,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0661 AMY KATHLEEN HARRISON (amended).doc",
    "known": "Kitty",
-   "privacy": "full",
    "life": {
     "born": "1884",
     "died": "1962"
@@ -14078,7 +13900,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0662 STANDISH HENRY HARRISON(amended).doc",
    "known": "Gen. Harrison",
-   "privacy": "full",
    "life": {
     "born": "1853",
     "died": "1953"
@@ -14186,7 +14007,7 @@
       "i7"
      ]
     ],
-    "Maureen married a Brigadier Regi Keller, who lived near Bantry. He was excessively hearty. They had a daughter who married a clergyman surnamed Connors ⟦omitted⟧.",
+    "Maureen married a Brigadier Regi Keller, who lived near Bantry. He was excessively hearty. They had a daughter who married a clergyman surnamed Connors ⟦address⟧.",
     [
      [
       "WBRBS.",
@@ -14194,9 +14015,9 @@
      ]
     ]
    ],
-   "omitted": 1,
+   "addresses": 1,
    "revisions": {
-    "7": 9
+    "7": 8
    },
    "sex": "m",
    "parents": [],
@@ -14210,7 +14031,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0663 JAMES A.H.B. SOMERVILLE (amended).doc",
    "known": "Jim",
-   "privacy": "full",
    "life": {
     "born": "1884",
     "died": "1950"
@@ -14628,13 +14448,12 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0664 MARGARET LUCY STARKEY(amended).doc",
    "known": "Greta",
-   "privacy": "full",
    "life": {
     "born": "1903",
     "died": "1986"
    },
    "header": [
-    "of 59 Queensgate Mews, London SW7",
+    "of ⟦address⟧",
     "Youngest daughter of Sir John Starkey (0665) of Norwood Park, Southwell by his wife Emily, dau of Sir Charles Seely."
    ],
    "fields": [
@@ -14652,12 +14471,7 @@
     }
    ],
    "paras": [
-    [
-     [
-      "of 59 Queensgate Mews, London SW7",
-      "i7"
-     ]
-    ],
+    "of ⟦address⟧",
     [
      [
       "Youngest daughter of Sir John Starkey (0665) of Norwood Park, Southwell ",
@@ -14832,12 +14646,7 @@
       "i7"
      ]
     ],
-    [
-     [
-      "Greta very kindly gave WBRBS Jim’s second signature ring for his son James, following a visit to Dargle Hill. His first signature ring (given to Jim by his mother) was lost while bathing in a lake in Kashmir. During the visit, it was discovered that the Starkey family were neighbours and friends of Sir Charles Birkin, who had lived at Dargle Hill from about 1950 to 1961 and been responsible for enlarging and considerably improving the property.",
-      "i7"
-     ]
-    ],
+    "Greta very kindly gave WBRBS Jim’s second signature ring for his son James, following a visit to ⟦address⟧. His first signature ring (given to Jim by his mother) was lost while bathing in a lake in Kashmir. During the visit, it was discovered that the Starkey family were neighbours and friends of Sir Charles Birkin, who had lived at ⟦address⟧ from about 1950 to 1961 and been responsible for enlarging and considerably improving the property.",
     [
      [
       "Greta, who had a wide circle of friends, even while she and Jim lived at Clermont for a while in 1949/1950, always appeared ‘vague’ and some would say ‘scatty’. When she moved to Queensgate Mews, she led a secluded life. Jim had contemplated living in Ireland when they were at Clermont, but his early death intervened.",
@@ -14885,8 +14694,9 @@
     ],
     "The Times, 24 Mar 1962"
    ],
+   "addresses": 2,
    "revisions": {
-    "7": 24
+    "7": 22
    },
    "archive": "margaret-lucy-starkey",
    "sex": "f",
@@ -14905,7 +14715,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0665 SIR JOHN RALPH STARKEY(amended).doc",
    "known": "Sir Ralph",
-   "privacy": "full",
    "life": {
     "born": "1859",
     "died": "1940"
@@ -15101,7 +14910,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0666 ALAN E.W.B. SOMERVILLE (amended).doc",
    "known": "Alan",
-   "privacy": "full",
    "life": {
     "born": "1885",
     "died": "1887"
@@ -15310,7 +15118,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0667 GUALTER H.R.B.SOMERVILLE (amended).doc",
    "known": "Pat",
-   "privacy": "full",
    "life": {
     "born": "1894",
     "died": "1947"
@@ -15942,12 +15749,7 @@
       "i7"
      ]
     ],
-    [
-     [
-      "Story also has it that all the girls fell for him, although he hadn’t the looks of his brothers. His charm attracted, among others, Diana Somerville, one of the Cork family, and most recently, the late Hilda Sandys (of Dargle Hill) told us how she used to cycle the 15 miles to Clermont for the dancing in the hope that Pat would be at home. RMJBS related how Heather(0668) was invited to Clermont by Jim(0663), but ended up with Pat!",
-      "i7"
-     ]
-    ],
+    "Story also has it that all the girls fell for him, although he hadn’t the looks of his brothers. His charm attracted, among others, Diana Somerville, one of the Cork family, and most recently, the late Hilda Sandys (of ⟦address⟧) told us how she used to cycle the 15 miles to Clermont for the dancing in the hope that Pat would be at home. RMJBS related how Heather(0668) was invited to Clermont by Jim(0663), but ended up with Pat!",
     [
      [
       "WBRBS from personal knowledge and conversation with Regi",
@@ -15996,8 +15798,9 @@
     "Pat Somerville, cerca 1941.",
     "Source:Patrick Nicholas, son of Patricia May Naomi Nicholas (nee Somerville), eldest dau of Pat Somerville and Heather (nee Baker)."
    ],
+   "addresses": 1,
    "revisions": {
-    "7": 48,
+    "7": 47,
     "W": 13
    },
    "archive": "pat",
@@ -16018,13 +15821,12 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0668 HEATHER EDITH BAKER (amended).doc",
    "known": "Heather",
-   "privacy": "full",
    "life": {
     "born": "1905",
     "died": "c. 1994"
    },
    "header": [
-    "of 42, Squitchey Lane, Oxford",
+    "of ⟦address⟧",
     "2nd dau of Col. Cecil Norris Baker(0669) CIE Indian Army by his wife Ella Mary (nee Hutchinson)"
    ],
    "fields": [
@@ -16042,7 +15844,7 @@
     }
    ],
    "paras": [
-    "of 42, Squitchey Lane, Oxford",
+    "of ⟦address⟧",
     "2nd dau of Col. Cecil Norris Baker(0669) CIE Indian Army by his wife Ella Mary (nee Hutchinson)",
     "Birth: 9 Apr 1905",
     "Marriage: 7 Sept 1925 at St Nicholas’ Church, Longparish, Hants to Gualter H R B Somerville",
@@ -16052,7 +15854,7 @@
     "Notes:",
     "Mother of:",
     "Patricia May Naomi Somerville (0685) bn 2 May 1929",
-    "Julia Heather Margaret Somerville (0687) ⟦omitted⟧",
+    "Julia Heather Margaret Somerville (0687) bn 27 October 1931",
     "Further research:",
     "Engagement announcement:",
     [
@@ -16096,7 +15898,7 @@
     "Anne’s College",
     "WBRBS remembers Heather in her later years at Squitchey Lane in Oxford, kind and thoughtful to all her visitors and devoted to her family. A very strong personality."
    ],
-   "omitted": 1,
+   "addresses": 1,
    "archive": "heather-baker",
    "sex": "f",
    "parents": [
@@ -16114,7 +15916,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0669 CECIL NORRIS BAKER (amended).doc",
    "typedRec": "0668",
-   "privacy": "full",
    "life": {
     "died": "1934"
    },
@@ -16166,7 +15967,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0670 REGINALD M.J.B. SOMERVILLE (amended).doc",
    "known": "Regi",
-   "privacy": "full",
    "life": {
     "born": "1897",
     "died": "1971"
@@ -16762,7 +16562,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0671 MAUDE G C V  MOORE (amended).doc",
    "known": "Maudie",
-   "privacy": "full",
    "life": {
     "born": "1901",
     "died": "1935"
@@ -17014,7 +16813,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0672 ARTHUR E H MOORE (amended).doc",
    "known": "Capt Moore",
-   "privacy": "full",
    "life": {
     "born": "1856",
     "died": "1946"
@@ -17177,7 +16975,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0673 HONOR L P JOHNSON (amended)).doc",
    "known": "Honor",
-   "privacy": "full",
    "life": {
     "born": "1902",
     "died": "1985"
@@ -17519,7 +17316,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0674 REV. CANON PHILIP B JOHNSON (amended).doc",
    "known": "Canon Johnson",
-   "privacy": "full",
    "life": {
     "born": "1866",
     "died": "1926"
@@ -17759,7 +17555,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0675 CECILIA E.M.B. SOMERVILLE(amended).doc",
    "known": "Cecil",
-   "privacy": "full",
    "life": {
     "born": "1880",
     "died": "1973"
@@ -18057,8 +17852,60 @@
       "i7"
      ]
     ],
-    "daughters ⟦omitted⟧",
-    "⟦omitted⟧ Girlie d 3",
+    [
+     [
+      "daughters Cecilia Louise Somerville (Louise) bn 26 December 1940 md Alexander",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Hamilton and has issue",
+      "i7"
+     ],
+     [
+      " (",
+      "iW"
+     ],
+     [
+      " ",
+      "dW"
+     ],
+     [
+      "Caspar and Cecilia",
+      "i7"
+     ],
+     [
+      ")",
+      "iW"
+     ],
+     [
+      " and Julia Margaret Churchill bn 23",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "April 1942 md Michael Pettigrew and has issue",
+      "i7"
+     ],
+     [
+      "(",
+      "iW"
+     ],
+     [
+      " Lucy and Timothy",
+      "i7"
+     ],
+     [
+      ")",
+      "iW"
+     ],
+     [
+      ". Girlie d 3",
+      "i7"
+     ]
+    ],
     [
      [
       "January 1999",
@@ -18071,15 +17918,148 @@
       "i7"
      ]
     ],
-    "Magdalen Virginia Dormer, who d ? and had one son ⟦omitted⟧",
-    "⟦omitted⟧ Tommy d 8 July 1999.",
+    [
+     [
+      "Magdalen Virginia Dormer, who d ? and had one son Henry John Patrick Dormer",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(John) bn 9 May 1946 md Helen Howard and has no issue. Tommy d 8 July 1999.",
+      "i7"
+     ]
+    ],
     [
      [
       "William Warburton Lloyd (Billy) bn 9 November 1916 md 30 July 1952 Lucy",
       "i7"
      ]
     ],
-    "Gwendolyn Rosemary Ormsby (Rose) and had one daughter and five sons ⟦omitted⟧",
+    [
+     [
+      "Gwendolyn Rosemary Ormsby (Rose) and had one daughter and five sons, Brigid",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Rosemary bn 20 May 1953 md 28 August 1976 Timothy John Michael Clesham",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "and has issue ",
+      "i7"
+     ],
+     [
+      "(",
+      "iW"
+     ],
+     [
+      "Mary, Thomas and Jennifer",
+      "i7"
+     ],
+     [
+      ")",
+      "iW"
+     ],
+     [
+      "; Patrick William bn 12 April 1955 md 7",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "July 1979 Alison Forsythe and has",
+      "i7"
+     ],
+     [
+      " issue",
+      "dW"
+     ],
+     [
+      "(",
+      "iW"
+     ],
+     [
+      " Emily, Nicholas and Susanna",
+      "dW"
+     ],
+     [
+      ")",
+      "iW"
+     ],
+     [
+      "; ",
+      "dW"
+     ],
+     [
+      "Henry",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Yeadon bn 12 April 1955 md 21 April 1990 Hazel Blair",
+      "i7"
+     ],
+     [
+      "-",
+      "iW"
+     ],
+     [
+      " White and has issue",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(",
+      "iW"
+     ],
+     [
+      " Christopher and Bevan",
+      "i7"
+     ],
+     [
+      ")",
+      "iW"
+     ],
+     [
+      "; David Bernard bn 12 August 1956 md 31 July 1983 Sian",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Evans and has issue",
+      "i7"
+     ],
+     [
+      "(",
+      "iW"
+     ],
+     [
+      " Cerys,Megan and Lowrie",
+      "i7"
+     ],
+     [
+      ")",
+      "iW"
+     ],
+     [
+      "; Stephen Lloyd bn 1 May 1959 md ?",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marie Nelson and has no issue; and Peter John bn 24 August 1960 unmarried.",
+      "i7"
+     ]
+    ],
     [
      [
       "Billy d 15 December 1978.",
@@ -18298,7 +18278,6 @@
      ]
     ]
    ],
-   "omitted": 13,
    "revisions": {
     "7": 86,
     "W": 19
@@ -18320,7 +18299,6 @@
    "name": "Henry Rooke B.A.",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0676 HENRY ROOKE(amended).doc",
-   "privacy": "full",
    "life": {
     "born": "1860",
     "died": "1942"
@@ -18571,7 +18549,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0677 DOROTHY A.H.B. SOMERVILLE (amended).doc",
    "known": "Dorry",
-   "privacy": "full",
    "life": {
     "born": "1888",
     "died": "1895"
@@ -18792,7 +18769,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0678 VERE F. de M. B. SOMERVILLE (amended).doc",
    "known": "Vere",
-   "privacy": "full",
    "life": {
     "born": "1890",
     "died": "1976"
@@ -18958,8 +18934,18 @@
       "i7"
      ]
     ],
-    "(1) de Merlie - - -(Merlie) bn 15 August 1913, md ? George Byas and was mother of ⟦omitted⟧",
-    "⟦omitted⟧ Merlie d 27 August 1949",
+    [
+     [
+      "(1) de Merlie - - -(Merlie) bn 15 August 1913, md ? George Byas and was mother of Veronica",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "- - , Patricia - - - and George - - - .Merlie d 27 August 1949",
+      "i7"
+     ]
+    ],
     [
      [
       "(2)Robert - - bn ? d 24 February 1919",
@@ -18972,17 +18958,94 @@
       "i7"
      ]
     ],
-    "(4)Rachel - - - (Ray) bn 21 November 1916, md ? Gordon Dewar and was mother of ⟦omitted⟧ Ray d ?",
-    "(5)Michael - - - bn 27 February md (1) ? divd ? md (2) Cazalet and was father of ⟦omitted⟧ Michael d 28 November 1967",
-    "(6)Charles Willliam Somerville (Toby) bn 22 May 1922 md ? Elizabeth (Beth) Moffatt-Wilson and was father of ⟦omitted⟧ Toby d ??",
+    [
+     [
+      "(4)Rachel - - - (Ray) bn 21 November 1916, md ? Gordon Dewar and was mother of Alison - - -(Sally),Felicity - - -, James - - - and Susan - - -. Ray d ",
+      "i7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      "?",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(5)Michael - - - bn 27 February md (1) ? divd ? md (2) Cazalet and was father of Peter - - and Angela Michael d 28 November 1967",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(6)Charles Willliam Somerville (Toby) bn 22 May 1922 md ? Elizabeth (Beth) Moffatt-Wilson and was father of Jean - - -, Charles - - - and Zoe - - -. Toby d ??",
+      "i7"
+     ]
+    ],
     [
      [
       "(7)Frances bn and d 8 September 1925",
       "i7"
      ]
     ],
-    "(8)George - - - bn 11 July 1926 md ? Mary Fosbroke- Hobbs and was father of ⟦omitted⟧ _d 20? _ _.",
-    "(9,10)Gillian and Joy (twins) bn 5 September 1929. Gillian md?John Gilmour and is mother of ⟦omitted⟧ Gillian d-- Joy md ?Raymond Goss (divd) and was mother of ⟦omitted⟧ She d ? .",
+    [
+     [
+      "(8)George - - - bn 11 July 1926 md ? Mary Fosbroke- Hobbs and was father of Edmund - - -, Daniel - - - and Sophie _",
+      "i7"
+     ],
+     [
+      "d 20?",
+      "iW"
+     ],
+     [
+      " _ _.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(9,10)Gillian and Joy (twins) bn 5 September 1929. Gillian md",
+      "i7"
+     ],
+     [
+      " ",
+      "dW"
+     ],
+     [
+      "?",
+      "iW"
+     ],
+     [
+      "John Gilmour and is mother of ",
+      "i7"
+     ],
+     [
+      "Angus---",
+      "iW"
+     ],
+     [
+      "Virginia - -, ? , Frances - - - and David.",
+      "i7"
+     ],
+     [
+      "Gillian d--",
+      "iW"
+     ],
+     [
+      " Joy md ",
+      "i7"
+     ],
+     [
+      "?",
+      "iW"
+     ],
+     [
+      "Raymond Goss (divd) and was mother of ? ? ? ? ? ? . She d ? .",
+      "i7"
+     ]
+    ],
     [
      [
       "For further information on Vere’s descendants, see the Truell Index and Pedigree.",
@@ -19144,7 +19207,6 @@
     "following his emigration to New Zealand never saw",
     "her son Toby again."
    ],
-   "omitted": 7,
    "revisions": {
     "7": 50,
     "W": 6
@@ -19167,7 +19229,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0679 EDMUND G. S. TRUELL(amended).doc",
    "known": "Edmund",
-   "privacy": "full",
    "life": {
     "born": "1878",
     "died": "1950"
@@ -19317,7 +19378,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0680 EDELINE B.M.B. SOMERVILLE (amended).doc",
    "known": "Tetty",
-   "privacy": "full",
    "life": {
     "born": "1892",
     "died": "1973"
@@ -19657,7 +19717,6 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0681 BRIG. ERNEST FREDERICK JOHN HILL(amended).doc",
    "known": "John",
-   "privacy": "full",
    "life": {
     "born": "1879",
     "died": "1962"
@@ -19796,7 +19855,389 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0682 WILLIAM B. R. B. SOMERVILLE (amended).doc",
    "known": "Bill",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1937"
+   },
+   "header": [
+    "of ⟦address⟧",
+    "Son of Reginald Malcolm John Bellingham Somerville (0670) and Honor Lucretia Philippa (nee Johnson) (0673)."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "18 Mar 1937 at ⟦address⟧, Dublin"
+    },
+    {
+     "label": "Bapt",
+     "value": "20 Apr 1937, at Clermont, Rathnew, Co Wicklow by Rev Canon Jennings"
+    },
+    {
+     "label": "Marriage",
+     "value": "15 June 1968 at St Patrick’s Church, Powerscourt to Margery Manon (0683), elder dau of George Clemenger Vincent Brittain (0684) by his wife Marjorie Maude, nee Swale."
+    }
+   ],
+   "paras": [
+    "of ⟦address⟧",
+    [
+     [
+      "Son of Reginald ",
+      ""
+     ],
+     [
+      "John",
+      "d7"
+     ],
+     [
+      " Malcolm ",
+      ""
+     ],
+     [
+      "John ",
+      "i7"
+     ],
+     [
+      "Bellingham Somerville (0670) and Honor Lucretia Philippa (nee Johns",
+      ""
+     ],
+     [
+      "t",
+      "d7"
+     ],
+     [
+      "on) (0673).",
+      ""
+     ]
+    ],
+    "Birth: 18 Mar 1937 at ⟦address⟧, Dublin",
+    [
+     [
+      "Bapt: 20 Apr 1937,",
+      ""
+     ],
+     [
+      " at ",
+      "i7"
+     ],
+     [
+      " Clermont, Rathnew, Co Wicklow by Rev Canon",
+      ""
+     ]
+    ],
+    "Jennings",
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      "Manon",
+      "d7"
+     ],
+     [
+      "15 June 1968 at St Patrick’s Church, Powerscourt to Margery Manon (0683), elder",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "dau of George Clemenger Vincent Brittain (0684) by his wife Marjorie Maude, nee",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Swale.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      " Educated Heronwater, Coed Coch, Abergele, North Wales 1944 – 1950",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "St Columba’s College, Rathfarnham, Co Dublin 1950 – 1951",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "St Andrew’s College, Ballsbridge, Dublin 1951 – 1955",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trinity College, Dublin 1955 – 1959",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Mod. BA (Classics) 1959",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Entered HM Overseas Civil Service (formerly Colonial Service)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Cadet - Tanganyika 1959",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Oriel College, Oxford 1st Devonshire 1959 – 1960",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "District Officer, Kondoa 1960 – 1961",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "District Commisioner, Kondoa 1961 – 1962",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Magistrate - Tabora, Nzega and Kahama 1962",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Management Trainee - Courage Group 1963 – 1964",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Solicitor’s Apprentice: Article",
+      "i7"
+     ],
+     [
+      "s",
+      ""
+     ],
+     [
+      " - A & L Goodbody 1964 - 1967",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Admitted - Solicitor Irish Supreme Court 1967",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Partner A & L Goodbody",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(specializing Corporate Law, Taxation and Equity) 1968 – 2000",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Chairman A & L Goodbody 1983 – 1990",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Consultant 2000 – 2005",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Sometime director of public and private companies,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trustee of pension schemes and private trusts,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Sometime Governor of The King’s Hospital School",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Sometime Council Member – Institute of Taxation in Ireland",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Sometime Lecturer on UK and Irish Taxation to Professional",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Associations",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Sometime Hon secy Glendalough Diocesan Council.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Member Kildare St and University Club",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ],
+     [
+      " One time sheep farmer; keen but poor shot; occasional dinghy",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "sailor; gardener to the ‘Grand Design’; as a friend says",
+      "i7"
+     ]
+    ],
+    "‘responsible for all the shite work’ at ⟦address⟧; stable lad;",
+    [
+     [
+      "erratic and disorganized interest in genealogy",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Partner with Manon in the Rossana Arabian Stud.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: WBRBS.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ],
+     [
+      "",
+      "p"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ],
+     [
+      "Source: Somerville Index",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ]
+    ],
+    [
+     [
+      "Family of Bill and Manon taken at Hunters Hotel in 2008 after a lunch to celebrate Bill and Manon’s 40th Wedding Anniversary.",
+      "iW"
+     ]
+    ],
+    [
+     [
+      "Back Row: Ruth, Edward, Charles Adrienn with Gergely.",
+      "iW"
+     ]
+    ],
+    [
+     [
+      "Next Row: Manon and Bill.",
+      "iW"
+     ]
+    ],
+    [
+     [
+      "Front Row:Eliza with Poppy behind, Georgia, Alexander, Beatrice James and Holly.",
+      "iW"
+     ]
+    ],
+    [
+     [
+      "Benedek had not yet been born.",
+      "iW"
+     ]
+    ]
+   ],
+   "addresses": 3,
+   "revisions": {
+    "7": 44,
+    "W": 5
+   },
    "archive": "narrator",
    "sex": "m",
    "parents": [
@@ -19814,7 +20255,298 @@
    "name": "Margery Manon Brittain",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0683 MARGERY MANON BRITTAIN (amended).doc",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1941"
+   },
+   "header": [
+    "Elder dau of George Clemenger Vincent Brittain (0684) by his wife Marjorie Maude,",
+    "nee Swale"
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "4 May 1941 at ⟦address⟧, Dublin"
+    },
+    {
+     "label": "Bapt",
+     "value": "1941 at All Saints Church, Blackrock, Co Dublin"
+    },
+    {
+     "label": "Marriage",
+     "value": "15 June 1968 at St Patrick’s Church, Powerscourt to William B. R. B. Somerville (0682)"
+    }
+   ],
+   "paras": [
+    "Elder dau of George Clemenger Vincent Brittain (0684) by his wife Marjorie Maude,",
+    "nee Swale",
+    "Birth: 4 May 1941 at ⟦address⟧, Dublin",
+    [
+     [
+      "Bapt: ",
+      ""
+     ],
+     [
+      " 1941 at All Saints Church, Blackrock, Co Dublin",
+      "i7"
+     ]
+    ],
+    "Marriage: 15 June 1968 at St Patrick’s Church, Powerscourt to William B. R. B.",
+    "Somerville (0682)",
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "i7"
+     ]
+    ],
+    "Educated: The French School,",
+    [
+     [
+      "Bray, Co Wicklow 19",
+      ""
+     ],
+     [
+      "48",
+      "i7"
+     ],
+     [
+      " - 19",
+      ""
+     ],
+     [
+      "57",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Riesby",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "– 19",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Col Hume Dudgeon’s ",
+      ""
+     ],
+     [
+      "Equestrian School ",
+      "i7"
+     ],
+     [
+      "Riding Academy,",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Burton Hall",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Stillorgan",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Burton Hall,",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Stillorgan,",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Co Dublin ",
+      ""
+     ],
+     [
+      " ",
+      "d7"
+     ],
+     [
+      "19",
+      ""
+     ],
+     [
+      "57",
+      "i7"
+     ],
+     [
+      " - 19",
+      ""
+     ],
+     [
+      "59",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Riisby Husmorskole,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dokka,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Norway",
+      "i7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      " 1959",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "B H S A I ",
+      ""
+     ],
+     [
+      " ",
+      "d7"
+     ],
+     [
+      "1959",
+      "i7"
+     ],
+     [
+      " 19",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      " ",
+      "i7"
+     ],
+     [
+      " Manon has three sons:",
+      ""
+     ]
+    ],
+    "James William Reginald Bellingham (0691) born 22 April 1968",
+    "Charles John George Bellingham (0693) born 7 March 1971",
+    "Edward Henry Tenison Bellingham (0695) born 19 April 1972",
+    "Member Kildare Hunt Club 1961 - …",
+    "Life Member Royal Dublin Society",
+    "Founded Rossana Arabian Stud 1968",
+    "Breeder of pure bred Arabians of pure Crabbet and associated blood lines",
+    [
+     [
+      "Member Arab Horse Society of UK and Ireland",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Sometime Council Member",
+      "i7"
+     ]
+    ],
+    "A really keen, able and devoted breeder of the pure bred Arabian Horse. It",
+    "has been the greatest sadness that, as a resident of Ireland, where there are",
+    "so many sport horses, other than Arabians, which are generally shunned",
+    "through ignorance, she has not had access to good stallions or to Breed",
+    "Shows. Where she has had mares covered in England, or been lent stallions by",
+    "English friends, and produced good stock, she has exhibited at the Arab Horse",
+    "shows in England with success.",
+    "An enthusiastic gardener with a spectacular garden and important and varied",
+    "herbaceous borders (up to 100 yards long)",
+    "A true polymath with an astonishing variety of interests: cooking and the",
+    "domestic arts, textiles, spinning and weaving, period furniture and paintings,",
+    "eastern carpets, animal husbandry, wild and woodland birds, canines and",
+    "their training, trees and grasses, biographical history etc, etc all supplemented",
+    "by avid reading with an ever enquiring mind.",
+    "A really wonderful and supportive wife and mother. She has inherited her",
+    [
+     [
+      "father’s loyalty and integrity and her mother’s gentleness and ability ",
+      ""
+     ],
+     [
+      "t",
+      "d7"
+     ],
+     [
+      "to",
+      ""
+     ]
+    ],
+    "communicate with all.",
+    [
+     [
+      "Source: WBRBS from personal knowledge",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ]
+    ],
+    [
+     [
+      "Manon aged 25 in Kildare Hunt dress. (Bad reflection)",
+      "iW"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ]
+    ],
+    [
+     [
+      "Charles, Manon with Edward in front, Zareef with James in saddle. (Again bad reflection}",
+      "iW"
+     ]
+    ]
+   ],
+   "addresses": 1,
+   "revisions": {
+    "7": 26,
+    "W": 2
+   },
    "sex": "f",
    "parents": [
     "0684"
@@ -19831,10 +20563,318 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0684 GEORGE C V BRITTAIN (amended).doc",
    "known": "Vincent",
-   "privacy": "modern",
    "life": {
     "born": "1913",
     "died": "2003"
+   },
+   "header": [
+    "of ⟦address⟧ and sometime of Cultra Manor, Holywood, Co Down",
+    "and ⟦address⟧",
+    "."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "16 March 1913 at Dunmurry, Belfast to George Alan Brittain by his wife Alice Louise, nee Finlay"
+    },
+    {
+     "label": "Marriage",
+     "value": "30 July 1937 at All Saints Church, Blackrock, Co Dublin to Marjorie Maude Swale, only dau of Adam Swale by his wife Maude, nee Campbell"
+    },
+    {
+     "label": "Death",
+     "value": "27 March 2003 at Kylemore Nursing Home, Ballybrack, Co Dublin Bd Mount Jerome Cemetery, Dublin"
+    }
+   ],
+   "paras": [
+    "of ⟦address⟧ and sometime of Cultra Manor, Holywood, Co Down",
+    "and ⟦address⟧",
+    [
+     [
+      "Father of Manon",
+      "d7"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    [
+     [
+      "Birth:",
+      ""
+     ],
+     [
+      " 16 March 1913 at Dunmurry, Belfast to George Alan Brittain by his wife",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Alice Louise, nee Finlay",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marriage:",
+      ""
+     ],
+     [
+      " 30 July 1937 at All Saints Church, Blackrock, Co Dublin to Marjorie Maude Swale, only",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "dau of Adam Swale by his wife Maude, nee Campbell",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Death: ",
+      ""
+     ],
+     [
+      " 27 March 2003 at Kylemore Nursing Home, Ballybrack, Co Dublin Bd Mount Jerome",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Cemetery, Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes: ",
+      ""
+     ],
+     [
+      " Educated: Sandford Park School, 1920 - 1923",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Ranelagh, Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dragon School, 1923 – 1926",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Oxford",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Cheltenham College, 1926 - 1931",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Cheltenham",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trinity College, 1931 - 1935",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "B A (Arts)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Director, Chief Executive and Chairman of the Brittain group of Companies engaged in the",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "motor industry, successively:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "G A Brittain Motors Ltd",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "G A Brittain Ltd",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Brittain Dublin Ltd",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "B L N Ltd and subsidiaries",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Brittain Smith Ltd and subsidiaries",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "The Brittain Group Ltd and subsidiaries",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "And of the following companies engaged in the laundering and pharmacy industries:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Brittain Laboratories Ltd",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "The Monarch Laundry Ltd",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Northenden Laundry Ltd",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "And of the following companies engaged in radio and TV rentals:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Urenta Ltd",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "G A Brittain (Radio) Ltd.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "He also extended his business activities to publishing, shipping , hire purchase et al.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "and geographically to Ireland, Northern Ireland, England and the Channel Islands.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "An enthusiastic yachtsman sailing in northern waters around the Western Isles, Orkney,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Shetland, Faroes and Norway; a consummate navigator. He travelled widely throughout",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Europe. He was an ardent photographer developing his own film. One of the most widely",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "read people one could come across.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Much has been written about Vincent. Suffice it to say here that, as a true Ulsterman and",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "member of the Orange Order, he ran his business and his private life as tightly as he did his",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "ship. He was a model of order, loyalty and integrity, and allowed no compromise, sadly,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "qualities that were partly responsible for the demise of the long established motor",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "businesses in rapidly changing times.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source:",
+      ""
+     ],
+     [
+      " WBRBS from personal knowledge",
+      "i7"
+     ]
+    ]
+   ],
+   "addresses": 2,
+   "revisions": {
+    "7": 43
    },
    "sex": "m",
    "parents": [],
@@ -19848,10 +20888,315 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0685 PATRICIA MAY NAOMI SOMERVILLE (amended).doc",
    "known": "Trish",
-   "privacy": "modern",
    "life": {
     "born": "1929",
     "died": "2006"
+   },
+   "header": [
+    "of ⟦address⟧",
+    "Elder dau of Gualter Hugh Rodger Bellingham Somerville (0667) and Heather Edith, née Baker (0668), dau of Col Cecil Norris Baker C.I.E. (0669)."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "2 May 1929, Bombay"
+    },
+    {
+     "label": "Bapt",
+     "value": "4 July 1929, Afghan Memorial Church, Colaba, Bombay"
+    },
+    {
+     "label": "Marriage",
+     "value": "(1) 30 July 1951, at St Aldates Church,Oxford to E. Michael William Richmond Nicholas R.N. Marriage dissolved by divorce 1973. (2) ? 1974 in ? to Robert James Henderson who died ? 1977 ? (3) ? 1978 in ? to Professor Thomas David Duncan Williams who died ? 1985"
+    },
+    {
+     "label": "Death",
+     "value": "20 December 2006 in Italy."
+    }
+   ],
+   "paras": [
+    "of ⟦address⟧",
+    [
+     [
+      "Elde",
+      ""
+     ],
+     [
+      "r",
+      "i7"
+     ],
+     [
+      "st",
+      "d7"
+     ],
+     [
+      " dau of Gualter Hugh Rodger Bellingham Somerville (0667) and Heather ",
+      ""
+     ],
+     [
+      "Edith, ",
+      "i7"
+     ],
+     [
+      "née Baker (0668), dau of",
+      ""
+     ],
+     [
+      " Lt",
+      "dW"
+     ],
+     [
+      " Col Cecil Norris Baker C.I.E. (0669).",
+      ""
+     ]
+    ],
+    "Birth: 2 May 1929, Bombay",
+    [
+     [
+      "Bapt: 4 July 1929, Afgha",
+      ""
+     ],
+     [
+      "n",
+      "i7"
+     ],
+     [
+      "m",
+      "d7"
+     ],
+     [
+      " Memoria",
+      ""
+     ],
+     [
+      "l",
+      "i7"
+     ],
+     [
+      "m",
+      "d7"
+     ],
+     [
+      " Church, Colaba, Bombay",
+      ""
+     ]
+    ],
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      "(1) ",
+      "i7"
+     ],
+     [
+      "30 July 1951, ",
+      ""
+     ],
+     [
+      " at ",
+      "i7"
+     ],
+     [
+      "St Aldates ",
+      ""
+     ],
+     [
+      "Church,",
+      "i7"
+     ],
+     [
+      "Oxford to E. Michael William Richmond",
+      ""
+     ]
+    ],
+    [
+     [
+      "Nicholas",
+      ""
+     ],
+     [
+      " ",
+      "d7"
+     ],
+     [
+      " ",
+      "i7"
+     ],
+     [
+      "R.N.",
+      ""
+     ],
+     [
+      " Marriage dissolved by divorce 1973.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(2) ? 1974 in ? to Robert James Henderson who died ? 1977 ?",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(3) ? 1978 in ? to Professor Thomas David Duncan Williams who died ?",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "1985",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Death: ",
+      ""
+     ],
+     [
+      "20 December ",
+      "i7"
+     ],
+     [
+      "2006",
+      ""
+     ],
+     [
+      " in Italy.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Had issue by first marriage:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Patrick Richmond bn. ? 1952",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Elizabeth Richmond bn. ? 1954",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes: WBRBS has a strong memory of Trish, at the Silver Strand outside Wicklow, as a really pretty",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "blonde teenager when we were all playing in the sand. In appearance, she was like her mother.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Following the breakdown of her marriage to Michael Nicholas, she clearly had an unsettled life.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "She changed her name, at some point before her second marriage, to Bellingham. She and her",
+      "i7"
+     ]
+    ],
+    "third husband, Duncan, visited Ireland and stayed at ⟦address⟧. After the death of her third",
+    [
+     [
+      "husband she went to live in Italy, near her son Patrick.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "She directed that , after her death, her body should be cremated and her ashes scattered on her",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "parents’ grave in Adderbury, Oxfordshire.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trish’s son Patrick, who has a photographic studio, lives in Viterbo, is married to an Italian named",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Lucia and has one daughter Allegra.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trish’s daughter Elizabeth (Buffy) has married three times; firstly, in 1978 to Capt Andrew",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Malcolm Wright ( marriage dissolved 1984), secondly, in1991, to Robert James Turner (who died ?",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "), and thirdly,in ? to Richard Graves. She has two children, by her second husband,Samuel David",
+      "i7"
+     ]
+    ],
+    "Richmond born 1993 and Zoe Elizabeth Richmond born 1992. ⟦address⟧",
+    [
+     [
+      "Source: WBRBS from information supplied by Julia Stevenson and Debretts Peerage (1995)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ]
+    ],
+    "The Times, Thurs 2 Aug 1951"
+   ],
+   "addresses": 4,
+   "revisions": {
+    "7": 35,
+    "W": 1
    },
    "sex": "f",
    "parents": [
@@ -19869,7 +21214,36 @@
    "name": "E. Michael William Richmond Nicholas R.N.",
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0686 E. MICHAEL W. R. NICHOLAS( amended).doc",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1925"
+   },
+   "header": [
+    "Son of Major Richmond Nicholas of ⟦address⟧"
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "15 June 1925"
+    },
+    {
+     "label": "Marriage",
+     "value": "30 July 1951, St Aldates Oxford, Patricia May Naomi Somerville (0685), elder dau of Gualter Hugh Rodger Somerville ( 0667) and Heather Edith, née Baker(0668), dau of Col Cecil Norris Baker C.I.E. (0669). Marriage dissolved by divorce 1973"
+    }
+   ],
+   "paras": [
+    "Son of Major Richmond Nicholas of ⟦address⟧",
+    "Birth: 15 June 1925",
+    "Marriage: 30 July 1951, St Aldates Oxford, Patricia May Naomi Somerville (0685), elder dau",
+    "of Gualter Hugh Rodger Somerville ( 0667) and Heather Edith, née Baker(0668), dau",
+    "of Col Cecil Norris Baker C.I.E. (0669). Marriage dissolved by divorce 1973",
+    "Source: Somerville Index",
+    "Notes: Father of:",
+    "Patrick Richmond Nicholas born ? 1952",
+    "Elizabeth Richmond Nicholas born ? 1954",
+    "Source: WBRBS from Debretts Peerage(1995)"
+   ],
+   "addresses": 1,
    "sex": "m",
    "parents": [],
    "spouses": [
@@ -19884,7 +21258,219 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0687 JULIA HEATHER MARGARET SOMERVILLE(amended).doc",
    "known": "Julia",
-   "privacy": "living",
+   "life": {
+    "born": "1931",
+    "died": "2018"
+   },
+   "header": [
+    "of ⟦address⟧",
+    "Younger dau of Gualter Hugh Rodger Bellingham Somerville (0667) and Heather née Baker (0668), dau of Col Cecil Norris Baker C.I.E. (0669)."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "27 Oct 1931, at Woking, Surrey"
+    },
+    {
+     "label": "Bapt",
+     "value": "6 Dec 1931, at The Garrison Church, Inkerman Barracks, Woking"
+    },
+    {
+     "label": "Marriage",
+     "value": "15 November 1958, at St Columba’s Church, Pont Street, London to William Bristow Stevenson(0688), son of James Stevenson, of ⟦address⟧, as his 2nd wife."
+    }
+   ],
+   "paras": [
+    "of ⟦address⟧",
+    [
+     [
+      "Younger dau of Gualter Hugh Rodger Bellingham Somerville (0667) and Heather née Baker (0668), dau of",
+      ""
+     ],
+     [
+      " Lt",
+      "d7"
+     ],
+     [
+      " Col Cecil Norris Baker C.I.E. (0669).",
+      ""
+     ]
+    ],
+    [
+     [
+      "Birth: 27 Oct 1931,",
+      ""
+     ],
+     [
+      " at",
+      "i7"
+     ],
+     [
+      " Woking, Surrey",
+      ""
+     ]
+    ],
+    [
+     [
+      "Bapt: 6 Dec 1931, ",
+      ""
+     ],
+     [
+      " at ",
+      "i7"
+     ],
+     [
+      "The Garrison Church, Inkerman Barracks, Woking",
+      ""
+     ]
+    ],
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      "15 November",
+      "i7"
+     ],
+     [
+      "Oct ",
+      "d7"
+     ],
+     [
+      " ",
+      "i7"
+     ],
+     [
+      "1958",
+      ""
+     ],
+     [
+      ", at St Columba’s Church, Pont Street, London to",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "William Bristow Stevenson(0688), son of",
+      "i7"
+     ]
+    ],
+    "James Stevenson, of ⟦address⟧, as his 2nd wife.",
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes: Has issue:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Diana Margaret Julia born 10 June 1961",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "James Roger born 24 September 1963",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Henry Bristow born 26 March 1970",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Diana, who has an Honours Degree (BSc) in Social Science from London",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "University, married Dr Kevin Richardson and has two children Joseph Michael",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "born 1st October 1992 and Anna Heather Margaret born 26th June 1995.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "James Roger, an Insurance Broker, married Fiona daughter of Sidney Balgarnie",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "by his wife Anne, and has two children Alethea Rose born 10th May 2004 and",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "William Charles Bristow born 30th June 2006.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Henry , a Solicitor, married Colina, daughter of Sir Peter and Lady Redwood, and",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "has two daughters Eliza Charlotte born !st August 2007 and Letitia (Lettie)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Katherine born 8th September 2009.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Julia died 22nd September 2018",
+      "iW"
+     ]
+    ],
+    [
+     [
+      "Source: WBRBS from information supplied by Julia and Henry Stevenson",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "d7"
+     ]
+    ]
+   ],
+   "addresses": 2,
+   "revisions": {
+    "7": 24,
+    "W": 1
+   },
    "sex": "f",
    "parents": [
     "0667",
@@ -19902,10 +21488,253 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0688 WILLIAM BRISTOW STEVENSON (amended).doc",
    "known": "Bristow",
-   "privacy": "modern",
    "life": {
     "born": "1924",
     "died": "2006"
+   },
+   "header": [
+    "Only son of James Stevenson of ⟦address⟧ by his wife Kathleen Mary, daughter of John ffolliot Young."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "1 November 1924"
+    },
+    {
+     "label": "Marriage",
+     "value": "(1) 25 November 1949 to Barbara Stephanie, elder daughter of William Angus Boyd Iliff, CMG,MBE Marriage dissolved by divorce 1958 (2) 15 November 1958 at St Columba’s Church, Pont Street, London to Julia Heather Margaret(0687), younger daughter of Gualter Hugh Rodger Bellingham Somerville(0667) by his wife Heather Edith, née Baker (0668), dau of Col Cecil Norris Baker C.I.E. (0669)"
+    },
+    {
+     "label": "Death",
+     "value": "3 April 2006"
+    }
+   ],
+   "paras": [
+    "Only son of James Stevenson of ⟦address⟧ by his wife Kathleen Mary, daughter of John ffolliot Young.",
+    [
+     [
+      "Birth: ",
+      ""
+     ],
+     [
+      "1 November 1924",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      " (1) 25 November 1949 to Barbara Stephanie, elder daughter of William Angus Boyd Iliff,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "CMG,MBE Marriage dissolved by divorce 1958",
+      "i7"
+     ],
+     [
+      "DATE/PLACE Julia Heather Margaret Somerville, younger dau of GHRB Somerville",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "(2) 15 November 1958 at St Columba’s Church, Pont Street, London to Julia Heather",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Margaret(0687), younger daughter of Gualter Hugh",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Rodger Bellingham Somerville",
+      "i7"
+     ],
+     [
+      "(0667)",
+      ""
+     ],
+     [
+      " and He",
+      "d7"
+     ],
+     [
+      " by his wife He",
+      "i7"
+     ],
+     [
+      "ather",
+      ""
+     ],
+     [
+      " Edith,",
+      "i7"
+     ],
+     [
+      " née Baker (0668), dau of",
+      ""
+     ]
+    ],
+    [
+     [
+      "Lt ",
+      "d7"
+     ],
+     [
+      "Col Cecil Norris Baker C.I.E. (0669)",
+      ""
+     ]
+    ],
+    [
+     [
+      "Death: 3 April 2006",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes: Educated:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "St Edwards School, Oxford",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trinity College, Oxford",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "MA 1953",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Served World War 2 as Lieut. RNVR",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Solicitor and Landowner",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Partner in Dickson and McNulty,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Solicitors Londonderry and Buncrana",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "High Sheriff Co Londonderry 1971",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Chancellor Diocese of Derry and Raphoe",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Member of the Representative Church Body",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "By his first marriage, father of:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Adrian James Michael born 24 October 1950",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Peter Adam William Bristow born 20 June 1952",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "By his second marriage, father of:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Diana Margaret Julia born 10th June 1961",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "James Roger born 24th September 1963",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Henry Bristow born 26th March 1970",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: WBRBS from information supplied by Julia, Burkes LG of Ireland (1958) and Debretts Peerage (1995)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "d7"
+     ]
+    ]
+   ],
+   "addresses": 1,
+   "revisions": {
+    "7": 34
    },
    "sex": "m",
    "parents": [],
@@ -19921,10 +21750,380 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0689 JUANITA E M SOMERVILLE(amended).doc",
    "known": "Juanita",
-   "privacy": "modern",
    "life": {
     "born": "1932",
     "died": "2007"
+   },
+   "header": [
+    "of Lucita Farm, Naivasha, Kenya and subsequently ⟦address⟧",
+    "Dau of Reginald Malcolm John Bellingham Somerville (0670) and Maude Gwendolyne Constance",
+    "Violet née Moore (0671), only dau of Capt Arthur E H Moore (0672) of the Royal Dublin Fusiliers by",
+    "his wife Bertha Emily, nee Campbell."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "6 July 1932, Eldoret, Kenya"
+    },
+    {
+     "label": "Bapt",
+     "value": "4 Oct 1932, Hoey’s Bridge, Kenya"
+    },
+    {
+     "label": "Marriage",
+     "value": "18 January 1964 at Nairobi, Kenya to Peter Allan Keith Brumby"
+    },
+    {
+     "label": "Death",
+     "value": "9 April 2007 at St Columcille’s Hospital, Loughlinstown, Co Dublin."
+    }
+   ],
+   "paras": [
+    "of Lucita Farm, Naivasha, Kenya and subsequently ⟦address⟧",
+    [
+     [
+      "Dau of Reginald ",
+      ""
+     ],
+     [
+      "John",
+      "d7"
+     ],
+     [
+      " Malcolm",
+      ""
+     ],
+     [
+      " John",
+      "i7"
+     ],
+     [
+      " Bellingham Somerville (0670) and Maude Gwendolyne Constance",
+      ""
+     ]
+    ],
+    [
+     [
+      "Violet née Moore (0671), only ",
+      ""
+     ],
+     [
+      "dau",
+      "i7"
+     ],
+     [
+      "child",
+      "d7"
+     ],
+     [
+      " of Capt Arthur",
+      ""
+     ],
+     [
+      " E H ",
+      "i7"
+     ],
+     [
+      " Moore (0672) of the Royal Dublin Fusiliers",
+      ""
+     ],
+     [
+      " by",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "his wife Bertha Emily, nee Campbell",
+      "i7"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    "Birth: 6 July 1932, Eldoret, Kenya",
+    "Bapt: 4 Oct 1932, Hoey’s Bridge, Kenya",
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      "18 January 1964 at Nairobi, Kenya to Peter Allan Keith Brumby",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Death: 9 April 2007 at St Columcille’s Hospital, Loughlinstown, Co Dublin.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Educated: The French School, 1937 - 1939",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Bray",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Wicklow",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "St George’s Junior School, 19",
+      "i7"
+     ],
+     [
+      "40",
+      "iW"
+     ],
+     [
+      "39",
+      "dW"
+     ],
+     [
+      " - 1942",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Onslow Hall,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Shrewsbury.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Moreton Hall, 1942 - 1945",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Oswestry.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Hillcourt,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Glenageary, 1945 – 1950",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Ling Physical Training College, 1950 - 1953",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Mount St,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "P E Teaching Moor Park, Ludlow 1953 – 1955",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Shute School, Axminster 1955 – 1958",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Beaufort School, Camberley 1958 – 1961",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Limuru Girls School, Kenya 1961 – 1964",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Farming Lucerne, vegetables and dairy produce on the",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "shores of Lake Naivasha at Lucita Farm",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      " 1966 – 1988",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Juanita, apart from being an Irish lacrosse international in her youth, had a wide variety of interests and accomplishments, including fishing and shooting, particularly wild fowling in Kenya, flying and diving; she built up a spectacular collection of shells about which she was really knowledgable, collected by herself from the Indian ocean and South Pacific, which is now housed in her nephews’ house in Connemara",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "She inherited her mother’s vivacity and sociability (and extravagance) and her father’s looks. She broke the heart of many men; was engaged twice, to Michael Tweed of the Gurkha Rifles and Derek Taylor in Canada, before marrying Peter. She brought up Peter’s three children by his previous marriage. They had no children of their own.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Juanita was entirely fearless; tough but naïve. She was one of those people who never really grew up and treated life like a game to be enjoyed no matter what. She was adored by her African neighbours.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "She fed her nine dogs from antique Irish coasters, and scooped out their food with a Georgian marrow scoop. So what !! She sold her fine jewellery in the Indian bazaar in Nakuru.",
+      "i7"
+     ]
+    ],
+    "Peter had died in 1986 and by 1988, she realized that vegetable farming on the shore of Lake Naivasha was becoming too difficult. Among other things, the Government’s and civil servants’ corruption led to sudden and unannounced changes in the law. One day she found she was breaking the law, introduced that day, if there was such a law, banning the sale of onions in a certain district. The result was a night in an African gaol without any legal process. Costs were also rising at an alarming pace, unless one joined in the corruption. So she retired to live in a cottage ⟦address⟧ where she took up good works: the Wicklow S P C A, the Irish Horse Welfare Trust – for retired or beaten up race horses – and, in particular, S S A F A and the Royal British Legion where she collected more money for poppies than any other in Ireland; but she left her heart in Kenya.",
+    [
+     [
+      "Fiercely independent, she didn’t respond to medical advice, and developed diabetes which ultimately got the better of her. Her body was cremated and her ashes scattered over Lake Naivasha, from the air, by her step son, Russell, and her friend Barry Gaymer",
+      "i7"
+     ],
+     [
+      " of Crescent Island, Naivasha",
+      "iW"
+     ],
+     [
+      ".",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: ",
+      ""
+     ],
+     [
+      " WBRBS from personal knowledge",
+      "i7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      "Somerville Index",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ],
+     [
+      "",
+      "p"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ],
+     [
+      "",
+      "p"
+     ]
+    ],
+    [
+     [
+      "",
+      "p"
+     ],
+     [
+      "",
+      "p"
+     ],
+     [
+      "",
+      "p"
+     ],
+     [
+      "",
+      "p"
+     ]
+    ]
+   ],
+   "addresses": 2,
+   "revisions": {
+    "7": 42,
+    "W": 3
    },
    "archive": "juanita",
    "sex": "f",
@@ -19944,9 +22143,215 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0690 PETER A K BRUMBY(amended).doc",
    "known": "Peter",
-   "privacy": "modern",
    "life": {
     "born": "c. 1926"
+   },
+   "header": [
+    "Son of Allan Thomas Brumby"
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "? ? 1926 in India"
+    },
+    {
+     "label": "Marriage",
+     "value": "(1) 20 April 1947 at Christ Church, Cawnpore, India to Avril Grace ? . Marriage dissolved by divorce 1 September 1962 at Nairobi, Kenya on Peter’s Petition."
+    }
+   ],
+   "paras": [
+    [
+     [
+      "Son of ",
+      ""
+     ],
+     [
+      "Allan Thomas Brumby",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Birth: ",
+      ""
+     ],
+     [
+      " ? ? 1926 in India",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marriage:",
+      ""
+     ],
+     [
+      " (1) 20 April 1947 at Christ Church, Cawnpore, India to Avril Grace ? . Marriage dissolved by",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "divorce 1 September 1962 at Nairobi, Kenya on Peter’s Petition.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(2) 18 January 1964 at Nairobi, Kenya to Juanita Elizabeth Maude Somerville (0689)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dau of Reginald Malcolm John Bellingham Somerville (0670) by his wife Maude",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Gwendolyne Constance Violet, nee Moore (0671)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Death: 5 May 1986 at Nairobi Hospital, Nairobi",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somrville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Children of the first marriage:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Linda",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Russell",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Malcolm",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "No children of the second marriage",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Peter spent his career flying, both as a private pilot and as a pilot for civil airlines, mainly in",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "India and West and East Africa; finally as Chief Pilot for East African Air",
+      "i7"
+     ],
+     [
+      "ways",
+      "iW"
+     ],
+     [
+      "lines",
+      "dW"
+     ],
+     [
+      ". He retired shortly",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "after his marriage to Juanita. He flew Jomo Kenyatta to exile in the NFD.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Peter was a blunt colonial, a bully in domestic life and extremely fond of ‘Bloody Marys’ on",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "the veranda at 10.00 in the morning. He was lucky enough to meet, and marry, as his",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "second wife, a pretty girl with some means, who spent her fortune in maintaining a loss",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "making farm and educating his elder son. ",
+      "i7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      "date/place Juanita ELIZABETH Maude Somerville, dau of Reginald Malcolm John Bellingham Somerville (0670) and Maude Gwendolyne Constance Violet née Moore (0671) only child of Capt Arthur Moore (0672) of the Royal Dublin Fusiliers.",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Source:",
+      ""
+     ],
+     [
+      " WBRBS from personal knowledge and Juanita’s papers",
+      "i7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      "Somerville Index",
+      "d7"
+     ]
+    ]
+   ],
+   "revisions": {
+    "7": 27,
+    "W": 2
    },
    "sex": "m",
    "parents": [],
@@ -19962,7 +22367,382 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0691 JAMES W. R. B. SOMERVILLE (amended).doc",
    "known": "James",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1969"
+   },
+   "header": [
+    "of ⟦address⟧",
+    "Eldest son of William Barnard Reginald Bellingham Somerville (0682) and Margery Manon (0683), dau of George Clemenger Vincent Brittain (0684) by his wife Marjorie Maude, nee Swale"
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "22 Apr 1969 at ⟦address⟧, Dublin"
+    },
+    {
+     "label": "Bapt",
+     "value": "7 September 1969 at Nun’s Cross, Killiskey, Co Wicklow"
+    },
+    {
+     "label": "Marriage",
+     "value": "27 September 1999 at the Rotunda Chapel, Dublin to Holly Katherine Nixon, dau of Professor James Nixon by his wife Katherine, nee Nesbitt"
+    }
+   ],
+   "paras": [
+    "of ⟦address⟧",
+    [
+     [
+      "Eldest son of William B",
+      ""
+     ],
+     [
+      "a",
+      "i7"
+     ],
+     [
+      "e",
+      "d7"
+     ],
+     [
+      "rnard Reginald Bellingham Somerville (0682) and ",
+      ""
+     ],
+     [
+      " Margery ",
+      "i7"
+     ],
+     [
+      "Manon",
+      ""
+     ],
+     [
+      " ",
+      "d7"
+     ],
+     [
+      " (0683), dau of",
+      ""
+     ],
+     [
+      " George Clemenger Vincent Brittain (0684) by his wife Marjorie Maude, nee Swale",
+      "i7"
+     ],
+     [
+      " (0684).",
+      "d7"
+     ]
+    ],
+    "Birth: 22 Apr 1969 at ⟦address⟧, Dublin",
+    [
+     [
+      "Bapt: 7 September 1969 at Nun’s Cross, Killiskey, Co Wicklow",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      "27 September 1999 at the Rotunda Chapel, Dublin to Holly Katherine Nixon, dau",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "of Professor James Nixon by his wife Katherine, nee Nesbitt",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Three daughters:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eliza Florence Bellingham Born: 30 April 2002 at The Rotunda Hospital, Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Bapt: at Ballinure Church, Grange",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Con, Co Wicklow",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Alice Poppy Bellingham Born: 7 November 2003 at The Rotunda Hospital,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Bapt: at Donoughmore Church,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Donard, Co Wicklow",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Beatrice Daisy Bellingham Born: 20 March 2006 at The Rotunda Hospital,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Bapt: at Donoughmore",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Church,Donard, Co Wickow",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Educated: Dragon School,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Oxford 1977 – 1982",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Radley College,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Abingdon 1982 – 1987",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "First viii Senior Schools Race,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Henley 1987",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trinity College,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dublin 1988 – 1992",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "LLB 1992",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Secy DUCAC etc",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Solicitors’ Apprentice – Articles A&L Goodbody",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "1993 -1996",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Admitted Solicitor Irish Supreme Court",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "1996",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Admitted Solicitor England & Wales",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "1997",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Partner in the Law Firm of A&L Goodbody of Dublin, Belfast, London, New York,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Brussels 2004 -…",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Member Taxation Committee Irish Law Society",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Vice Chair of Foreign Lawyers Taxation Section American Bar Association",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Lecturer on Taxation Issues to various professional associations",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Author of numerous articles in legal and tax publications",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Governor King’s Hospital School, Dublin",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Member of The Friendly Brothers",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Member of Kildare St and University Club, Leander etc",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "A keen sailing man, dinghy and off shore (Norway, Brittany and",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Mediterranean): a first class shot; useful on skis – an all round sportsman, but",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "without an eye for a ball.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "( Others see him as a pedant !- - - CJGBS)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Source:",
+      ""
+     ],
+     [
+      " WBRBS from personal knowledge",
+      "i7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      "Somerville Index",
+      "d7"
+     ]
+    ]
+   ],
+   "addresses": 2,
+   "revisions": {
+    "7": 54
+   },
    "archive": "james-somerville",
    "sex": "m",
    "parents": [
@@ -19981,7 +22761,53 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0692 HOLLY KATHERINE NIXON (amended).doc",
    "known": "Holly",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1968"
+   },
+   "header": [
+    "Dau of Professor James Nixon of ⟦address⟧ by his wife Katherine, nee Nesbittt"
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "27 December 1968 at The Rotunda Hospital, Dublin"
+    },
+    {
+     "label": "Marriage",
+     "value": "27 December 1999 at The Rotunda Chapel, Dublin to James William Reginald Bellingham Somerville (0691)"
+    }
+   ],
+   "paras": [
+    "Dau of Professor James Nixon of ⟦address⟧ by his wife Katherine, nee Nesbittt",
+    "Birth: 27 December 1968 at The Rotunda Hospital, Dublin",
+    "Marriage: 27 December 1999 at The Rotunda Chapel, Dublin to James William Reginald",
+    "Bellingham Somerville (0691)",
+    "Source: Somerville Index",
+    "Notes:",
+    "Mother of:",
+    "Eliza Florence Bellingham Somerville born 30 April 2002",
+    "Alice Poppy Bellingham Somerville born 7 November 2003",
+    "Beatrice Daisy Bellingham Somerville born 20 March 2006",
+    "Educated: Rockport, Holywood, Co Down 1977 – 81",
+    "St Columba’s College, Rathfarnham, Co Dublin 1981 – 1984",
+    "Fettes College, Edinburgh 1984 – 1986",
+    "Somerville College, Oxford 1987 – 1990",
+    "MA (Plant Sciences)",
+    "Edinburgh College of Art 1991 – 1994",
+    "Botanical Artist",
+    "Exhibited Bay Tree Gallery, Holywood",
+    "The Kennedy Gallery, Dublin",
+    "The Garden House, Enniskerry",
+    "The Royal Hibernian Academy",
+    "Based for some years in the Herbarium of the Botany Department of TCD. She has",
+    "produced extensively botanically correct pen and ink drawings for researchers at TCD,",
+    "Mainz University, Aberdeen, Perth (WA) and Leiden Universities and Edinburgh",
+    "Botanical Gardens.",
+    "Like James, a competent skier; and like her father and James, a keen and skilled sailor",
+    "Heavily engaged in looking after her daughters."
+   ],
+   "addresses": 1,
    "sex": "f",
    "parents": [],
    "spouses": [
@@ -19996,7 +22822,331 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0693 CHARLES J. G. B. SOMERVILLE(amended).doc",
    "known": "Charles",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1971"
+   },
+   "header": [
+    "of ⟦address⟧",
+    "2nd son of William Barnard Reginald Bellingham Somerville (0682) andMargery Manon Brittain (0683), dau of George Clemenger Vincent Brittain (0684) by his wife Marjorie Maude, nee Swale."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "7 March 1971 at ⟦address⟧, Dublin"
+    },
+    {
+     "label": "Bapt",
+     "value": "18 April 1971 at Nun’ Cross Church, Killiskey, Co Wicklow"
+    },
+    {
+     "label": "Marriage",
+     "value": "3 May 2003 at Banhorvati, Hungary to Adrienn, dau of Dr Miklos Asztalos of ⟦address⟧ by his wife Maria,nee Rusznyak"
+    }
+   ],
+   "paras": [
+    [
+     [
+      "EDWARD HENRY TENISON BELLINGHAM SOMERVILLE",
+      "d7"
+     ]
+    ],
+    "of ⟦address⟧",
+    [
+     [
+      "2nd",
+      "i7"
+     ],
+     [
+      "3nd",
+      "d7"
+     ],
+     [
+      " son of William B",
+      ""
+     ],
+     [
+      "a",
+      "i7"
+     ],
+     [
+      "e",
+      "d7"
+     ],
+     [
+      "rnard Reginald Bellingham Somerville (0682) and",
+      ""
+     ],
+     [
+      "Margery ",
+      "i7"
+     ],
+     [
+      " Manon",
+      ""
+     ],
+     [
+      " Brittain ",
+      "i7"
+     ],
+     [
+      " ",
+      "d7"
+     ],
+     [
+      "(",
+      "i7"
+     ],
+     [
+      "(",
+      "d7"
+     ],
+     [
+      "0683), dau of",
+      ""
+     ],
+     [
+      " George Clemenger Vincent Brittain",
+      "i7"
+     ],
+     [
+      " ",
+      "d7"
+     ],
+     [
+      " (0684)",
+      ""
+     ],
+     [
+      " by his wife Marjorie Maude, nee Swale",
+      "i7"
+     ],
+     [
+      ".",
+      ""
+     ]
+    ],
+    "Birth: 7 March 1971 at ⟦address⟧, Dublin",
+    [
+     [
+      "Bapt: 18 April 1971 at Nun’ Cross Church, Killiskey, Co Wicklow",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      "3 May 2003 at Banhorvati, Hungary to Adrienn, dau of Dr Miklos Asztalos of",
+      "i7"
+     ]
+    ],
+    "⟦address⟧ by his wife Maria,nee Rusznyak",
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Two sons:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Gergely Anthony Marcus Bellingham born: 22 June 2005",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "at Budapest, Hungary",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "bapt: 6 August 2006",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "at St Audoen’s Church, Dublin.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Benedek Thomas Matthew Bellingham born: 5 February 2010",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "at Eger, Hungary",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Bapt: 2 January 2011",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "at St Audoen’s Church, Dublin.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Educated:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dragon School, Oxford 1979 – 1984",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Cheltenham College 1984 – 1986",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Kelly College, Tavistock 1986 – 1991",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Birmingham Rep. 1992",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trinity College, Dublin 1993 – 1998",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Mod. BA (Theology) 1998",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Volunteer Social Work with Simon Community, Dublin. 1999 - 2001",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Open Door, Bray, Co Wicklow.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Community Service Volunteers,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Warminster, Wiltshire.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Camphill Communities, Gorey,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Wexford.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "English Teaching (TEFL) International House 2001 – 2004",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Budapest and Eger, Hungary",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Lecturer in English language and British Civilisation and Culture 2004 -…",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eszterhazy Karoly Foiskola,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eger, Hungary.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Walks everywhere, academics, theatre, photography, travel and technology",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: WBRBS from personal knowledge",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "d7"
+     ]
+    ]
+   ],
+   "addresses": 3,
+   "revisions": {
+    "7": 46
+   },
    "archive": "charles-somerville",
    "sex": "m",
    "parents": [
@@ -20015,7 +23165,243 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0694 ADRIENN MARIA ASZTALOS (amended).doc",
    "known": "Adrienn",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1972"
+   },
+   "header": [
+    "Only child of Dr Miklos Asztalos of ⟦address⟧ by his wife Maria,",
+    "nee Rusznyak"
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "8 September 1972"
+    },
+    {
+     "label": "Marriage",
+     "value": "3 May 2003 at Banhorvati, Hungary to Charles John George Bellingham Somerville (0693)"
+    }
+   ],
+   "paras": [
+    "Only child of Dr Miklos Asztalos of ⟦address⟧ by his wife Maria,",
+    [
+     [
+      "nee Rusznyak",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Birth: ",
+      ""
+     ],
+     [
+      "8 September 1972",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      "3 May 2003 at Banhorvati, Hungary to Charles John George Bellingham Somerville",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(0693)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Mother of:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Gergely Anthony Marcus Bellingham Somerville born 22 June 2005",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Benedek Thomas Matthew Bellingham Somerville born 5 February",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "2010",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Educated: Geza Gardonyi Secondary School,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eger",
+      "i7"
+     ],
+     [
+      "date/place to Charles John George Bellingham Somerville",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      " 1987 – 1991",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eszterhazy Karoly Foiskola",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eger 1991 – 1995",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "T F University of Budapest,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Szeged 1996 - 1999",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(Mental Hygiene)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Teaching: Kossuth Zsusza Secodary School,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eger 1996 – 1999",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Voluntary Work:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Camphill Communities.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Down 1995 – 1996",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Camphill Communities,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Gorey, Co Wexford 1999 – 2001",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Vocational Counselling: Budapest 2001",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Teaching: Dobo Istvan Secondary School,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eger 2001 – 2002",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eger 2001 Secondary School,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Eger 2002 – 2005",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Travel; Foundation for pre-primary education; caring for two demanding boys.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: WBRBS from personal knowledge",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "d7"
+     ]
+    ]
+   ],
+   "addresses": 1,
+   "revisions": {
+    "7": 34
+   },
    "sex": "f",
    "parents": [],
    "spouses": [
@@ -20030,7 +23416,304 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0695 EDWARD H.T.B.SOMERVILLE(amended).doc",
    "known": "Edward",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1972"
+   },
+   "header": [
+    "Of ⟦address⟧",
+    "3rd son of William Barnard Reginald Bellingham Somerville (0682) by his wife Margery Manon (0683), elder daughter of George Clemenger Vincent Brittain (0684) by his wife Marjorie Maud, nee Swale."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "19 April 1972 at ⟦address⟧, Dublin"
+    },
+    {
+     "label": "Bapt",
+     "value": "at St Patrick’s Church, Powerscourt."
+    },
+    {
+     "label": "Marriage",
+     "value": "26 January 2002 at Loughrea Cathedral, Co Galway to Ruth Helen Katherine (0696), only daughter of Joseph and Mabel Barrett"
+    }
+   ],
+   "paras": [
+    "Of ⟦address⟧",
+    [
+     [
+      "3rd ",
+      "i7"
+     ],
+     [
+      "son",
+      ""
+     ],
+     [
+      "/dau",
+      "d7"
+     ],
+     [
+      " of",
+      ""
+     ],
+     [
+      " William Barnard Reginald Bellingham Somerville (0682) by his wife Margery Manon (0683), elder daughter of George Clemenger Vincent Brittain (0684) by his wife Marjorie Maud, nee Swale.",
+      "i7"
+     ]
+    ],
+    "Birth: 19 April 1972 at ⟦address⟧, Dublin",
+    [
+     [
+      "Bapt: at St Patrick’s Church, Powerscourt.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marriage: ",
+      ""
+     ],
+     [
+      "26 January 2002 at Loughrea Cathedral, Co Galway to Ruth Helen Katherine",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "(0696), only daughter of Joseph and Mabel Barrett",
+      "i7"
+     ],
+     [
+      "date and place, to",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Source",
+      "i7"
+     ],
+     [
+      "Notes: ",
+      "d7"
+     ],
+     [
+      " Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "i7"
+     ],
+     [
+      " ",
+      ""
+     ],
+     [
+      " Two Children:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Georgia Helen Katherine Bellingham born 6 January 2003",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Bapt at Ardrahan Church,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Galway",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "2003",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Alexander William Geoffrey Bellingham born 11 June 2007",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Bapt at Ardrahan Church",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Galway",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "2007",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Educated:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Dragon School, Oxford 1980 – 1985",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Radley College, Abingdon 1985 – 1990",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Trinity College, Dublin 1991 – 1995",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Mod. BA (Geography & Sociology) 1995",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Royal Agricultural College,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Cirencester. 1997 – 1998",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "MSc (Rural Estate Management) 1998",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Jackaroo Malahide, 1996",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Fingal,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Tasmania",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Farm Assistant Killruddery, 1996 – 1997",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Bray, & 1998 - 2000",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Wicklow.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Estate Manager Lough Cutra Castle,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Gort,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Galway 2000 – 2010",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "An expert in forestry management, tourism in great houses etc.; consultant in rural",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "estate management.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Manager/ Partner in Gort Garden Centre, Co Galway.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "A first class shot; keen fisherman; a thoroughly domesticated husband; a workaholic.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Possessor of considerable manual dexterity.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: WBRBS from personal knowledge",
+      "i7"
+     ]
+    ]
+   ],
+   "addresses": 2,
+   "revisions": {
+    "7": 44
+   },
    "archive": "edward-somerville",
    "sex": "m",
    "parents": [
@@ -20049,7 +23732,196 @@
    "tranche": 1,
    "file": "research/David Gilmour amended records/Tranche 1/0696 RUTH HELEN KATHERINE BARRETT(amended).doc",
    "known": "Ruth",
-   "privacy": "living",
+   "living": true,
+   "life": {
+    "born": "1978"
+   },
+   "header": [
+    "only daughter of Joseph Barrett (0697) and, his wife, Mabel, nee ?",
+    "of ⟦address⟧."
+   ],
+   "fields": [
+    {
+     "label": "Birth",
+     "value": "7 January 1978"
+    },
+    {
+     "label": "Marriage",
+     "value": "26 January 2002 at Loughrea Cathedral, Loughrea, Co Galway to Edward Henry Tenison Bellingham Somerville (0695)"
+    }
+   ],
+   "paras": [
+    [
+     [
+      "o",
+      "i7"
+     ],
+     [
+      "NAME",
+      "d7"
+     ],
+     [
+      "nly daughter of Joseph Barrett (0697) and, his wife, Mabel, nee ",
+      "i7"
+     ],
+     [
+      "?",
+      "iW"
+     ]
+    ],
+    "of ⟦address⟧.",
+    [
+     [
+      "Birth: 7 January 1978",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Marriage: ",
+      "i7"
+     ],
+     [
+      "2",
+      "iW"
+     ],
+     [
+      "6 January ",
+      "i7"
+     ],
+     [
+      "2002",
+      "iW"
+     ],
+     [
+      " at Loughrea Cathedral, Loughrea, Co Galway to Edward Henry",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Tenison Bellingham Somerville (0695)",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Mother of:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Georgia Helen Katherine Bellingham Somerville born 6 January",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "2003",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Alexander William Geoffrey Bellingham Somerville born 11 June",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "2007",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Educated:",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Wilson’s Hospital,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Multyfarnham, Co Westmeath",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Manager/Partner in Gort Garden Centre,",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Co Galway.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "An enthusiastic and knowledgable gardener.",
+      "i7"
+     ]
+    ],
+    [
+     [
+      "Source: WBRBS from personal knowledge",
+      "i7"
+     ],
+     [
+      "Dau of",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Birth:",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Marriage: date/place to Edward Henry Tenison Bellingham Somerville",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Notes:",
+      "d7"
+     ]
+    ],
+    [
+     [
+      "Source: Somerville Index",
+      "d7"
+     ]
+    ]
+   ],
+   "addresses": 1,
+   "revisions": {
+    "7": 27,
+    "W": 3
+   },
    "sex": "f",
    "parents": [],
    "spouses": [

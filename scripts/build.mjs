@@ -239,17 +239,19 @@ for (const c of data.corrections) {
 // ---------- extended genealogy ----------
 const branchIds = new Set((genealogy.branches || []).map((b) => b.id));
 for (const b of genealogy.branches || []) if (!has("g", b.head)) err(`genealogy branch ${b.id}: unknown head ${b.head}`);
-const ownText = (p) => JSON.stringify([p.header || [], p.fields || [], p.paras || [], p.life || {}]);
+const ownText = (p) => JSON.stringify([p.header || [], p.fields || [], p.paras || [], p.life || {}, p.alt || []]);
 for (const p of genealogy.profiles) {
   const ctx = `genealogy ${p.id}`;
   if (!branchIds.has(p.branch)) err(`${ctx}: unknown branch ${p.branch}`);
   for (const x of [...(p.parents || []), ...(p.spouses || [])]) if (!has("g", x)) err(`${ctx}: unknown relative ${x}`);
   if ((p.parents || []).length > 2) err(`${ctx}: more than two parents`);
   if (p.archive && !has("p", p.archive)) err(`${ctx}: unknown account person ${p.archive}`);
-  if (!["full", "modern", "living"].includes(p.privacy)) err(`${ctx}: privacy must be full | modern | living`);
-  // living people: name and place in the family only
-  if (p.privacy === "living" && (p.header || p.fields || p.paras || p.life || p.alt)) err(`${ctx}: a living person's profile must carry no dates, places or text`);
-  if (p.privacy === "modern" && (p.header || p.fields || p.paras || p.alt)) err(`${ctx}: only the years of a recent profile are published`);
+  // published in full, living relatives included, but never with a present-day
+  // address: no postcodes, and no house-number addresses for anyone living,
+  // born since 1920 or died since 1980
+  const yr = (k) => +(String((p.life || {})[k] || "").match(/\d{4}/) || [0])[0];
+  if (/\b[A-Z]{1,2}\d{1,2}[A-Z]? ?\d[A-Z]{2}\b|\b(?:Kentucky|Hungary),? \d{4,5}\b|\b\d{4} \w+ ut\./.test(ownText(p))) err(`${ctx}: contains a postcode or postal address`);
+  if ((p.living || yr("born") >= 1920 || yr("died") >= 1980) && /\b\d{1,4}[a-z]?,? (?:Lower |Upper )?[A-Z][a-z’']+ (?:Road|Rd|Street|St|Lane|Avenue|Drive|Terrace|Crescent|Place|Square)\b/.test(ownText(p))) err(`${ctx}: contains a street address`);
   if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(ownText(p))) err(`${ctx}: contains an e-mail address`);
   if (!/^research\/David Gilmour amended records\//.test(p.file || "") || !fs.existsSync(path.join(root, p.file))) err(`${ctx}: source file ${p.file} not found`);
 }
@@ -378,7 +380,7 @@ const refs = {};
 for (const [k, set] of backrefs) refs[k] = [...set].sort();
 const counts = Object.fromEntries(Object.entries(data).map(([k, v]) => [k, v.length]));
 console.log(`✓ Data valid: ${Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(", ")}; ${transcripts.reduce((a, t) => a + t.lines.length, 0)} transcript passages; ${backrefs.size} cited passages.`);
-console.log(`✓ Extended genealogy valid: ${genealogy.profiles.length} profiles in ${branchIds.size} branches (${genealogy.profiles.filter((p) => p.archive).length} linked to the account; ${genealogy.profiles.filter((p) => p.privacy !== "full").length} shown by name only); ${gdiff.length} differences.`);
+console.log(`✓ Extended genealogy valid: ${genealogy.profiles.length} profiles in ${branchIds.size} branches (${genealogy.profiles.filter((p) => p.archive).length} linked to the account; ${genealogy.profiles.filter((p) => p.living).length} living; ${genealogy.profiles.reduce((n, p) => n + (p.addresses || 0), 0)} paragraphs with addresses removed); ${gdiff.length} differences.`);
 if (CHECK_ONLY) process.exit(0);
 
 const bundle = { ...data, genealogy, gdiff, transcripts, alignment, refs, mentions };

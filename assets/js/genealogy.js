@@ -11,10 +11,6 @@
   const fileUrl = (path) => REPO + path.split("/").map(encodeURIComponent).join("/");
   const branchTitle = (b) => (SA.genBranches[b] || {}).title || "";
   const TRANCHE = { 1: "Tranche 1 · Major William's descendants", 2: "Tranche 2 · the senior line and the early generations" };
-  const PRIVACY = {
-    living: "Living person: only the name and place in the family are shown. The compiled profile is not reproduced.",
-    modern: "Born after 1910: only the name, years and place in the family are shown, because the profile describes living relatives. The compiled profile is not reproduced.",
-  };
 
   // ---------- fragments ----------
   const gChip = (id, extra = "") => {
@@ -27,14 +23,14 @@
 
   // A profile paragraph: base text, tracked insertions (by "William Somerville",
   // i.e. Grandpa, or by the earlier editor "7"), deletions (hidden by default),
-  // pictures, and markers where passages about living people are omitted.
+  // pictures, and markers where an address has been taken out.
   const REV = {
     W: "Amendment recorded in the file as by “William Somerville” (Grandpa), 2021–22",
     7: "Revision of 2011–12 by an editor recorded in the file only as “7”",
     U: "Revision by an unrecorded editor",
   };
-  const OMIT = `<span class="omit" title="A passage giving dates, addresses or other details of living people is not reproduced on the website">[omitted: details of living people]</span>`;
-  const text = (t) => esc(t).replace(/⟦omitted⟧/g, OMIT);
+  const ADDR = `<span class="omit" title="A home or postal address is not reproduced on the website">[address omitted]</span>`;
+  const text = (t) => esc(t).replace(/⟦address⟧/g, ADDR);
   function seg([t, c]) {
     if (c === "") return text(t);
     if (c === "p") return `<span class="pic" title="A picture in the original document, not reproduced">▣ picture</span>`;
@@ -103,7 +99,7 @@
           <h2>More</h2>
           <ul>
             <li><a href="#/genealogy/differences">Where the sources differ</a>: dates and versions on which the account and the profiles disagree, with both kept.</li>
-            <li><a href="#/genealogy/sources">Sources and notes</a>: the files, who compiled them, what they cite, how the text was prepared, and what is withheld for privacy.</li>
+            <li><a href="#/genealogy/sources">Sources and notes</a>: the files, who compiled them, what they cite, how the text was prepared, and what is left out (addresses).</li>
             <li><a href="#/genealogy/tree">The tree</a> from James the Planter to the present generation, or by branch.</li>
           </ul>
         </div>
@@ -140,7 +136,7 @@
       grid.innerHTML = list.map((p) => {
         const rel = SA.gRelLabel(p.id);
         return `<a class="person-card gen-card${p.archive ? " in-account" : ""}" href="#/genealogy/person/${p.id}">
-          <div class="pc-top"><span class="fam">Record ${esc(p.id)}</span>${p.privacy === "living" ? `<span class="tag">living</span>` : ""}${p.archive ? `<span class="tag tag-a" title="Also in Grandpa's account">❝ in the account</span>` : ""}${p.doubt ? `<span class="tag tag-doubt">⚑ doubtful link</span>` : ""}</div>
+          <div class="pc-top"><span class="fam">Record ${esc(p.id)}</span>${p.living ? `<span class="tag">living</span>` : ""}${p.archive ? `<span class="tag tag-a" title="Also in Grandpa's account">❝ in the account</span>` : ""}${p.doubt ? `<span class="tag tag-doubt">⚑ doubtful link</span>` : ""}</div>
           <h3>${esc(p.name)}</h3>
           ${p.known ? `<div class="aka">“${esc(p.known)}”</div>` : ""}
           <div class="lf">${esc(SA.gLife(p))}</div>
@@ -162,11 +158,11 @@
     const partners = [...new Set([...spouses, ...coParents])];
     const acc = p.archive && SA.people[p.archive];
     const diffs = SA.gDiffsFor(id);
-    const full = p.privacy === "full";
+    const full = true;
     const tree = SA.genTreeOf(id);
     const linkNote = (x) => p.linkNotes && p.linkNotes[x] ? `<div class="small note">Archive note: ${esc(p.linkNotes[x])}</div>` : "";
     const accRows = acc && full ? [["Born", acc.born, /^(birth|born|bapt)/i], ["Died", acc.died, /^(death|died|bur|bd)/i]].map(([l, a, re]) => {
-      const gv = (p.fields || []).filter((f) => re.test(f.label)).map((f) => `${esc(f.label)}: ${esc(f.value)}`).join("<br>");
+      const gv = (p.fields || []).filter((f) => re.test(f.label)).map((f) => `${esc(f.label)}: ${text(f.value)}`).join("<br>");
       return a || gv ? `<tr><th>${l}</th><td>${a ? `${esc(a.display)} ${SA.badge(a.status, a.conf)}` : "—"}</td><td>${gv || "—"}</td></tr>` : "";
     }).join("") : "";
     main.innerHTML = `
@@ -178,7 +174,7 @@
           ${SA.gLife(p) ? `<p class="g-life">${esc(SA.gLife(p))}</p>` : ""}
           ${relLine(id)}
           <p class="g-prov"><span class="gl gl-profile">▦ Compiled profile</span> <span class="small">from <a href="${fileUrl(p.file)}" target="_blank" rel="noopener">${esc(p.file.split("/").slice(-2).join(" / "))}</a> · ${esc(TRANCHE[p.tranche] || "")}. Not from the recordings.</span></p>
-          ${p.privacy !== "full" ? `<div class="callout callout-sensitive"><div class="callout-label">${p.privacy === "living" ? "Living person" : "Recent generation"}</div><p>${PRIVACY[p.privacy]}</p></div>` : ""}
+          ${p.living ? `<div class="callout callout-sensitive"><div class="callout-label">Living person</div><p>The profile is shown in full, as the family has decided, except for addresses, which are left out.</p></div>` : ""}
           ${p.doubt ? `<div class="callout callout-doubt"><div class="callout-label">⚑ Archive note · doubtful parentage</div><p>${esc(p.doubt)}</p></div>` : ""}
           ${p.note ? `<div class="callout callout-note"><div class="callout-label">Archive note</div><p>${esc(p.note)}</p></div>` : ""}
         </header>
@@ -195,7 +191,7 @@
                 <label class="tog"><input type="checkbox" data-r="del" /> Show deleted text</label>
               </div>
               <div class="g-text show-W">${profileText(p.paras)}</div>
-              ${p.omitted ? `<p class="small muted">${p.omitted} passage${p.omitted > 1 ? "s" : ""} about living people ${p.omitted > 1 ? "are" : "is"} not reproduced here.</p>` : ""}
+              ${p.addresses ? `<p class="small muted">${p.addresses > 1 ? "Addresses are" : "An address is"} left out of ${p.addresses} paragraph${p.addresses > 1 ? "s" : ""} of this profile.</p>` : ""}
             </section>` : ""}
             ${(p.alt || []).map((a) => `<section class="block g-alt"><h2>${esc(a.title)}</h2>
               <p class="small"><span class="gl gl-other">Others' research</span> By ${esc(a.by)} · <a href="${fileUrl(a.file)}" target="_blank" rel="noopener">${esc(a.file.split("/").slice(-2).join(" / "))}</a>. ${esc(a.about)}</p>
@@ -268,8 +264,8 @@
     const allText = G.profiles.map((p) => [...(p.header || []), ...(p.fields || []).map((f) => f.value), ...(p.paras || []).map(SA.gParaText)].join(" ")).join(" ");
     const sr = new Set((allText.match(/\bSR\s?\d{2,4}/g) || []).map((x) => x.replace(/\s/, "")));
     const typed = G.profiles.filter((p) => p.typedRec);
-    const priv = (k) => G.profiles.filter((p) => p.privacy === k);
-    const omitted = G.profiles.reduce((s, p) => s + (p.omitted || 0), 0);
+    const living = G.profiles.filter((p) => p.living);
+    const addr = G.profiles.reduce((s, p) => s + (p.addresses || 0), 0);
     main.innerHTML = `
       <article class="profile narrow prose g-sources">
         <header class="profile-head g-profile-head"><p class="kicker">Extended genealogy · evidence</p><h1>Sources and notes</h1>
@@ -310,9 +306,9 @@
         </ul>
         <h2>Privacy</h2>
         <ul>
-          <li>${priv("living").length} profiles are of living people: only their names and places in the family are shown.</li>
-          <li>${priv("modern").length} profiles are of people born after 1910 who have died: their names, years and places in the family are shown, but not their profiles, which describe living relatives.</li>
-          <li>${omitted} passages in other profiles that list living people's dates, addresses or children are replaced by <span class="omit">[omitted: details of living people]</span>, and e-mail addresses are removed.</li>
+          <li>The profiles are published in full, including those of the ${living.length} living relatives, as the family decided in October 2026.</li>
+          <li>Addresses are left out: present-day homes and postal addresses, the addresses of living people and of those who died since 1980 (including where living people were born), and Grandpa's house wherever it is named. ${addr} paragraphs carry the marker <span class="omit">[address omitted]</span>. E-mail addresses are removed. Addresses of people who died long ago are family history and are kept.</li>
+          <li>The photographs filed with the profiles are not published: they are unlabelled and include children.</li>
           <li>The original files are in the repository folder as received.</li>
         </ul>
       </article>`;

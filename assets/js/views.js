@@ -247,12 +247,12 @@
     if (!rec) return "";
     const g = SA.gen[rec], p = SA.people[id];
     const diffs = SA.gDiffsFor(rec);
-    const gf = (re) => (g.fields || []).filter((f) => re.test(f.label)).map((f) => `${esc(f.label)}: ${esc(f.value.length > 90 ? f.value.slice(0, 90) + "…" : f.value)}`).join("<br>");
-    const rows = g.privacy === "full" ? [["Born", p.born && p.born.display, gf(/^(birth|born|bapt)/i)], ["Died", p.died && p.died.display, gf(/^(death|died)/i)]].filter((r) => r[1] || r[2]) : [];
+    const gf = (re) => (g.fields || []).filter((f) => re.test(f.label)).map((f) => `${esc(f.label)}: ${esc(((v) => v.length > 90 ? v.slice(0, 90) + "…" : v)(SA.gPlain(f.value)))}`).join("<br>");
+    const rows = [["Born", p.born && p.born.display, gf(/^(birth|born|bapt)/i)], ["Died", p.died && p.died.display, gf(/^(death|died)/i)]].filter((r) => r[1] || r[2]);
     return `<section class="side-card xcard xcard-g">
       <div class="xk">${SA.GI} Extended genealogy · supplementary research</div>
       <h2><a href="#/genealogy/person/${rec}">→ ${esc(g.name)}</a></h2>
-      <p class="small">Record ${esc(rec)} in the compiled family profiles${g.privacy === "full" ? "" : " (name and place in the family only)"}. That profile is a separate source, not something Grandpa said; its claims are labelled as the genealogy's own.</p>
+      <p class="small">Record ${esc(rec)} in the compiled family profiles. That profile is a separate source, not something Grandpa said; its claims are labelled as the genealogy's own.</p>
       ${rows.length ? `<table class="xdates"><thead><tr><th></th><th>❝ This account</th><th>${SA.GI} The profile</th></tr></thead><tbody>${rows.map(([l, a, b]) => `<tr><th>${l}</th><td>${esc(a || "—")}</td><td>${b || "—"}</td></tr>`).join("")}</tbody></table>` : ""}
       ${diffs.length ? `<p class="small">⚑ ${diffs.map((d) => `<a href="#/genealogy/differences?d=${d.id}">${esc(d.title)}</a>`).join("; ")}</p>` : ""}
       <a class="btn small-btn xlink-g" href="#/genealogy/person/${rec}">→ In the extended genealogy</a>
@@ -790,7 +790,7 @@
         </ul>
         <h2>Privacy and discretion</h2>
         <p>All three transcripts are published complete, exactly as received (except that a four-digit device PIN spoken in the second recording is replaced by “[PIN removed]”: it is a credential, not family history), and can be downloaded as text files from the transcript pages. Passages of everyday conversation are marked as asides, shown by default, and can be hidden to keep to the history. The narrator, William Somerville, and his immediate family are named, as confirmed by the family in 2026; profiles of living people record their place in the family rather than personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
-        <p>The extended genealogy follows the same rule. For living people it shows only the name and place in the family. For people born after 1910 who have died, it shows their years as well, because their profiles describe living relatives. Passages in other profiles that give living people's dates, addresses or contact details are replaced by a visible marker. The photographs filed with the profiles are not published: they are unlabelled and include living children.</p>
+        <p>The extended genealogy is different: the family has decided that its profiles, including those of living relatives, are published in full. Addresses are the exception. Present-day homes and postal addresses, and the addresses of living people and of those who died recently, are replaced by “[address omitted]”, and e-mail addresses are removed. The photographs filed with the profiles are not published: they are unlabelled and include children.</p>
         <h2>Limitations</h2>
         <ul>
           <li>All three transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle their disagreements; some passages are garbled beyond recovery. The second recording has only one transcript, so where it reads a document aloud (the family Bible, for example) a date may be misheard as well as misread; such readings are checked against the printed sources before they are relied on.</li>

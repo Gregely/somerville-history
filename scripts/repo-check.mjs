@@ -10,8 +10,9 @@
 //    and every paragraph appears in full in the committed bundle. The only
 //    permitted change from the file as received is a masked credential (a PIN
 //    spoken aloud), listed under "masked" in the manifest.
-// 3. The extended genealogy in the published bundle shows living people by
-//    name and place in the family only, and no e-mail addresses.
+// 3. The extended genealogy in the published bundle (published in full,
+//    living relatives included) contains no postcodes, postal or e-mail
+//    addresses; build.mjs also checks for street addresses of recent people.
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -69,18 +70,17 @@ for (const t of manifest) {
   paras += lines.length;
 }
 
-// ---------- 3. living people in the extended genealogy ----------
+// ---------- 3. no addresses in the extended genealogy ----------
 const gen = (ctx.window.ARCHIVE.genealogy || { profiles: [] }).profiles;
-const ALLOWED = { living: new Set(["id", "rec", "name", "known", "tranche", "file", "privacy", "archive", "archiveNote", "sex", "parents", "spouses", "branch", "note", "linkNotes"]) };
-ALLOWED.modern = new Set([...ALLOWED.living, "life"]);
 for (const p of gen) {
-  const allowed = ALLOWED[p.privacy];
-  if (allowed) for (const k of Object.keys(p)) if (!allowed.has(k)) fail(`genealogy ${p.id}: ${p.privacy} profile publishes "${k}"`);
-  if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(JSON.stringify(p))) fail(`genealogy ${p.id}: contains an e-mail address`);
+  const t = JSON.stringify(p);
+  if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(t)) fail(`genealogy ${p.id}: contains an e-mail address`);
+  if (/\b[A-Z]{1,2}\d{1,2}[A-Z]? ?\d[A-Z]{2}\b|\b(?:Kentucky|Hungary),? \d{4,5}\b|\b\d{4} \w+ ut\./.test(t)) fail(`genealogy ${p.id}: contains a postcode or postal address`);
 }
+const removed = gen.reduce((n, p) => n + (p.addresses || 0), 0);
 
 if (problems.length) {
   console.error(`✗ Repository check failed (${problems.length}):\n  ` + problems.join("\n  "));
   process.exit(1);
 }
-console.log(`✓ Repository check passed: ${files.length} files scanned, no credentials; ${manifest.length} transcripts match their recorded checksums and all ${paras} paragraphs are in the published bundle; ${gen.filter((p) => p.privacy !== "full").length} genealogy profiles of recent generations are shown by name and place in the family only.`);
+console.log(`✓ Repository check passed: ${files.length} files scanned, no credentials; ${manifest.length} transcripts match their recorded checksums and all ${paras} paragraphs are in the published bundle; the extended genealogy carries no postal or e-mail addresses (${removed} paragraphs with addresses taken out).`);

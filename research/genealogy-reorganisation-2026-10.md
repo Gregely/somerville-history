@@ -78,16 +78,19 @@ Red text is applied inconsistently, so it is not used to attribute anything.
 
 ## 4. Privacy
 
-| Group | What is shown |
+The profiles were first published with living people shown by name and family links only. On 29 October 2026 the family decided to publish them in full, living relatives included, in the public repository, without addresses.
+
+| What | How it is handled |
 |---|---|
-| Living people (10) | Name and family links only |
-| People born after 1910 who have died (5) | Name, years and family links only, because their profiles describe living relatives |
-| Other profiles | 27 paragraphs giving living people's dates, addresses or children are replaced by a visible marker; e-mail addresses are removed |
-| Photographs | Not published |
+| Profiles of living relatives (9) and everyone else | Published in full: dates, marriages, children, education, careers |
+| Present-day homes and postal addresses; addresses of living people and of those who died since 1980, including where living people were born; Grandpa's house wherever named | Taken out of 37 paragraphs, shown as “[address omitted]” |
+| E-mail addresses | Removed |
+| Addresses of people who died long ago | Kept, as family history |
+| Photographs | Not published (unlabelled; include children) |
 
-`scripts/build.mjs` and `scripts/repo-check.mjs` enforce these rules. `tests/smoke.cjs` checks a sample of pages in the browser.
+Each paragraph with an address is pinned to a fingerprint, and the script holds only the replacement text, so the addresses are not repeated in it. `scripts/build.mjs` rejects postcodes, postal and e-mail addresses, and house-number addresses for anyone living, born since 1920 or died since 1980; `scripts/repo-check.mjs` repeats the postcode and e-mail checks on the published bundle; `tests/smoke.cjs` checks living relatives' pages for their text and for the absence of their addresses.
 
-**The original Word files are in the public repository as received.** They include living people's full details: dates and places of birth, addresses, careers and marriages. The website does not reproduce these details, but the files themselves are public on GitHub and in the repository's history. Removing them from the history would mean rewriting it, which has not been done.
+The original Word files, which do include the addresses, are in the public repository as received.
 
 ## 5. Regenerating
 

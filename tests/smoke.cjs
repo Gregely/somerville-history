@@ -52,13 +52,16 @@ const { chromium } = require('playwright');
       const t = await page.evaluate((q) => { const el = document.querySelector(q); return el && !el.hidden ? el.textContent : null; }, sel);
       if (!t || !t.includes(want)) errs.push(`${tag} ${r}: expected "${want}" in ${sel}`);
     }
-    // living people in the genealogy: name and place in the family only
-    for (const [r, banned] of [['genealogy/person/0682', /1937|Marlborough|Dargle|Enniskerry|solicitor/i], ['genealogy/person/0691', /1969|Hatch St|Slaney/i], ['genealogy/person/0689', /Loughlinstown|Naivasha|Lucita/i], ['genealogy/person/0675', /26 December 1940|Pettigrew|Clesham/]]) {
+    // living relatives' profiles are published in full, without addresses
+    for (const [r, want, banned] of [['genealogy/person/0682', /18 Mar 1937/, /Marlborough|Dargle|Rossana Cottage/i], ['genealogy/person/0691', /22 Apr 1969/, /Hatch St|Slaney/i],
+      ['genealogy/person/0693', /Budapest/, /Szarvas|Olasz|Hatch St/i], ['genealogy/person/0689', /Naivasha/, /Dargle|Crowe/i], ['genealogy/person/0687', /Feeny|2018/, /Ash Park|Knockan|BT47/i],
+      ['genealogy/person/0664', /Kashmir/, /Dargle|59 Queensgate|SW7/i], ['genealogy/person/0675', /Pettigrew/, /@/]]) {
       await page.goto('http://127.0.0.1:8765/#/' + r, { waitUntil: 'networkidle' });
       await page.waitForTimeout(300);
-      // the genealogy's own content (the linked account card shows only what the account itself records)
       const body = await page.evaluate(() => [...document.querySelectorAll('main .g-profile-head, main .profile-main, main .family-card')].map((el) => el.innerText).join(' '));
-      if (banned.test(body)) errs.push(`${tag} ${r}: shows details withheld for privacy (${body.match(banned)[0]})`);
+      if (!want.test(body)) errs.push(`${tag} ${r}: profile text missing (${want})`);
+      if (banned.test(body)) errs.push(`${tag} ${r}: shows an address (${body.match(banned)[0]})`);
+      if ((await page.evaluate(() => document.querySelector('main').innerText)).includes('⟦')) errs.push(`${tag} ${r}: raw address marker shown`);
     }
     console.log(tag, errs.length ? errs.join('\n') : 'no errors');
     if (errs.length) process.exitCode = 1;

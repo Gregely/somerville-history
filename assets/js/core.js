@@ -224,7 +224,6 @@
   };
   SA.gLife = (p) => {
     const l = p.life || {};
-    if (p.privacy === "living") return "";
     if (l.born && l.died) return `${l.born.replace(/ \(bapt\.\)/, "")}–${l.died}`;
     if (l.born) return `b. ${l.born}`;
     if (l.died) return `d. ${l.died}`;
@@ -236,6 +235,8 @@
   SA.gDiffsFor = (rec) => SA.genDiffs.filter((d) => (d.profiles || []).includes(rec));
   // Accepted text of a profile paragraph (string, or [[text, code], ...] where
   // code "" is base text, "i7"/"iW"/"iU" inserted, "d7"/"dW"/"dU" deleted, "p" a picture).
+  // Addresses taken out of the profiles are marked ⟦address⟧ in the data.
+  SA.gPlain = (t) => String(t || "").replace(/⟦address⟧/g, "[address omitted]");
   SA.gParaText = (para) => typeof para === "string" ? para : para.filter(([, c]) => c[0] !== "d" && c !== "p").map(([t]) => t).join("");
 
   // ---------- citations ----------
@@ -404,9 +405,8 @@
   for (const c of A.narrative) add("chapter", c.id, c.title, c.era, [], SA.plain(c.lede + " " + c.body.join(" ")), `#/story/${c.id}`);
   for (const s of A.sources) add("source", s.id, s.title, s.publisher, [], s.used || "", `#/sources?s=${s.id}`);
   for (const g of GD.profiles) {
-    const full = g.privacy === "full";
-    const text = full ? [...(g.header || []), ...(g.fields || []).map((f) => f.value), ...(g.paras || []).map(SA.gParaText)].join(" ") : "";
-    add("gprofile", g.id, g.name, `Record ${g.id}${SA.gLife(g) ? " · " + SA.gLife(g) : ""}`, [g.known || ""], text.length > 6000 ? text.slice(0, 6000) : text, `#/genealogy/person/${g.id}`);
+    const text = [...(g.header || []), ...(g.fields || []).map((f) => f.value), ...(g.paras || []).map(SA.gParaText)].join(" ");
+    add("gprofile", g.id, g.name, `Record ${g.id}${SA.gLife(g) ? " · " + SA.gLife(g) : ""}`, [g.known || ""], SA.gPlain(text.length > 6000 ? text.slice(0, 6000) : text), `#/genealogy/person/${g.id}`);
   }
   for (const d of SA.genDiffs) add("gdiff", d.id, d.title, "where the collections differ", [], SA.plain([d.account, d.genealogy, d.note].join(" ")), `#/genealogy/differences?d=${d.id}`);
   for (const t of A.transcripts) for (const l of t.lines) add("passage", `${t.id}:${l.n}`, `${SA.TLABEL[t.id]} ¶${l.n}`, "", [], l.text, `#/transcript/${t.id}:${l.n}`);
