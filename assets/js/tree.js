@@ -9,6 +9,9 @@
 
   const W = 188, H = 70, CG = 18, HG = 26, VG = 78;
 
+  // The tree draws either collection through a small graph adapter: the
+  // account's people (SA.people) or the extended genealogy's profiles (SA.gen).
+
   // Family trees. `stop` people are shown but their descendants continue in another tree.
   SA.TREES = [
     { id: "somerville", label: "Somerville", root: "james-somerville-1bt", stop: {}, anchor: "captain-william-somerville" },
@@ -18,52 +21,120 @@
     { id: "truell", label: "Truell of Clonmannon", root: "truell-of-clonmannon", stop: {} },
     { id: "oconnor", label: "O'Connor", root: "oconnor-seaman", stop: { "eliza-oconnor": "somerville" } },
   ];
-  const treeById = Object.fromEntries(SA.TREES.map((t) => [t.id, t]));
+  // Trees of the extended genealogy: the whole family from James the Planter,
+  // and each main branch on its own.
+  SA.GTREES = [
+    { id: "all", label: "Whole family, from James “the Planter”", short: "whole-family", root: "0501", stop: {}, anchor: "0525" },
+    { id: "senior", label: "Senior line (baronets, Lords Athlumney)", short: "senior-line", root: "0535", stop: {} },
+    { id: "ardrass", label: "Major William of Ardrass", short: "Ardrass", root: "0541", stop: {}, anchor: "0563" },
+    { id: "america", label: "Corry Somerville's North American family", short: "North American", root: "0586", stop: {} },
+    { id: "clermont", label: "Tenison Alan Somerville and Clermont", short: "Clermont", root: "0591", stop: {}, anchor: "0631" },
+  ];
 
-  function membersOf(tree) {
-    const out = new Set();
-    const walk = (id) => {
-      if (out.has(id)) return;
-      out.add(id);
-      for (const p of SA.partnersOf(id)) out.add(p);
-      if (tree.stop[id]) return;
-      for (const c of SA.childrenOf(id)) walk(c);
+  function makeGraph(o) {
+    const byId = Object.fromEntries(o.trees.map((t) => [t.id, t]));
+    const g = { ...o, byId };
+    const memberCache = {};
+    g.members = (tid) => (memberCache[tid] = memberCache[tid] || (() => {
+      const tree = byId[tid], out = new Set();
+      const walk = (id) => {
+        if (out.has(id)) return;
+        out.add(id);
+        for (const p of g.partnersOf(id)) out.add(p);
+        if (tree.stop[id]) return;
+        for (const c of g.childrenOf(id)) walk(c);
+      };
+      walk(tree.root);
+      return out;
+    })());
+    g.descends = (id, root) => id === root || g.parentsOf(id).some((p) => g.descends(p, root));
+    // The tree in which a person appears as a descendant (preferred) or at all.
+    g.treeOf = (id) => {
+      for (const t of o.trees) if (g.descends(id, t.root)) return t.id;
+      for (const t of o.trees) if (g.members(t.id).has(id)) return t.id;
+      return null;
     };
-    walk(tree.root);
-    return out;
+    // Where a married-in person's own family is drawn.
+    g.originTree = (id, currentTree) => {
+      if (!g.parentsOf(id).length) return null;
+      for (const t of o.trees) if (t.id !== currentTree && g.descends(id, t.root)) return t.id;
+      return null;
+    };
+    return g;
   }
-  const memberCache = {};
-  SA.treeMembers = (tid) => (memberCache[tid] = memberCache[tid] || membersOf(treeById[tid]));
-  const descends = (id, root) => id === root || SA.parentsOf(id).some((p) => descends(p, root));
-  // The tree in which a person appears as a descendant (preferred) or at all.
-  SA.treeOf = function (id) {
-    for (const t of SA.TREES) if (descends(id, t.root)) return t.id;
-    for (const t of SA.TREES) if (SA.treeMembers(t.id).has(id)) return t.id;
-    return null;
-  };
-  // Where a married-in person's own family is drawn.
-  function originTree(id, currentTree) {
-    if (!SA.parentsOf(id).length) return null;
-    for (const t of SA.TREES) if (t.id !== currentTree && descends(id, t.root)) return t.id;
-    return null;
-  }
+
+  const ACCOUNT = makeGraph({
+    key: "account",
+    trees: SA.TREES,
+    get: (id) => SA.people[id],
+    parentsOf: SA.parentsOf, childrenOf: SA.childrenOf, partnersOf: SA.partnersOf,
+    spouseConf: (a, b) => { const sp = SA.spousesOf(a).find((s) => s.id === b); return !sp ? "partner" : sp.conf === "low" ? "low" : ""; },
+    parentConf: (id) => SA.people[id].parentConf,
+    life: (p) => SA.shortLife(p),
+    lifespan: (p) => SA.lifespan(p),
+    cls: (p) => `fam-${p.family}`,
+    isPlaceholder: (p) => !!p.placeholder,
+    isLiving: (p) => !!(p.living || p.possiblyLiving),
+    full: (p) => p.fullName || p.name,
+    href: (id) => `#/person/${id}`,
+    treeHref: (t, id) => `#/tree/${t}${id ? `?focus=${id}` : ""}`,
+    narrator: "narrator",
+    relLabel: (id) => SA.relLabel(id),
+    kicker: (p) => `${SA.FAMILY[p.family] || ""} · ${SA.CATEGORY[p.category] || ""}`,
+    summary: (p) => `<p>${SA.inline(p.summary)}</p>`,
+    find: (v) => (SA.data.people.find((p) => p.name.toLowerCase() === v) || SA.search(v, 20).find((d) => d.type === "person") || {}).id,
+    names: (ids) => ids.map((id) => SA.people[id].name),
+    cross: (id) => SA.genOf[id] ? `<a class="btn xlink-g" href="#/genealogy/person/${SA.genOf[id]}">→ In the extended genealogy</a>` : "",
+    lineLabel: "Narrator's line",
+    unnamedToggle: true,
+  });
+  SA.treeMembers = (tid) => ACCOUNT.members(tid);
+  SA.treeOf = (id) => ACCOUNT.treeOf(id);
+
+  const GEN = makeGraph({
+    key: "genealogy",
+    trees: SA.GTREES,
+    get: (id) => SA.gen[id],
+    parentsOf: SA.gParents, childrenOf: SA.gChildren,
+    partnersOf: (id) => { const out = SA.gSpouses(id).slice(); for (const c of SA.gChildren(id)) for (const par of SA.gParents(c)) if (par !== id && !out.includes(par)) out.push(par); return out; },
+    spouseConf: () => "",
+    parentConf: (id) => (SA.gen[id].doubt ? "low" : ""),
+    life: (p) => SA.gLife(p),
+    lifespan: (p) => SA.gLife(p),
+    cls: (p) => `gen-card${p.archive ? " in-account" : ""}`,
+    isPlaceholder: () => false,
+    isLiving: (p) => p.privacy === "living",
+    full: (p) => p.name,
+    href: (id) => `#/genealogy/person/${id}`,
+    treeHref: (t, id) => `#/genealogy/tree/${t}${id ? `?focus=${id}` : ""}`,
+    narrator: "0682",
+    relLabel: (id) => SA.gRelLabel(id),
+    kicker: (p) => `Record ${p.id} · ${(SA.genBranches[p.branch] || {}).title || ""}`,
+    summary: (p) => p.privacy === "living" ? `<p class="small muted">Living: only the name and place in the family are shown.</p>` : (p.header || []).length ? `<p class="small">${SA.esc(p.header.join(" "))}</p>` : "",
+    find: (v) => (SA.data.genealogy.profiles.find((p) => p.name.toLowerCase() === v) || SA.search(v, 30).find((d) => d.type === "gprofile") || {}).id,
+    names: (ids) => ids.map((id) => SA.gen[id].name),
+    cross: (id) => SA.gen[id].archive ? `<a class="btn xlink-a" href="#/person/${SA.gen[id].archive}">↩ In Grandpa's account</a>` : "",
+    lineLabel: "Grandpa's line",
+    unnamedToggle: false,
+  });
+  SA.genTreeOf = (id) => GEN.treeOf(id);
 
   // ---------- layout ----------
-  function layout(tree, opts) {
+  function layout(G, tree, opts) {
     const placed = new Set();
     const nodes = [], edges = [];
-    const visible = (id) => opts.placeholders || !SA.people[id].placeholder;
+    const visible = (id) => opts.placeholders || !G.isPlaceholder(G.get(id));
 
     function measure(id) {
       placed.add(id);
-      const partners = SA.partnersOf(id);
+      const partners = G.partnersOf(id);
       const stopTo = tree.stop[id];
-      const allKids = SA.childrenOf(id).filter(visible);
+      const allKids = G.childrenOf(id).filter(visible);
       const hidden = stopTo || opts.collapsed.has(id) ? allKids.length : 0;
       const kids = hidden ? [] : allKids.filter((k) => !placed.has(k));
       const groupsMap = new Map();
       for (const k of kids) {
-        const co = SA.parentsOf(k).find((x) => x !== id) || null;
+        const co = G.parentsOf(k).find((x) => x !== id) || null;
         if (!groupsMap.has(co)) groupsMap.set(co, []);
         groupsMap.get(co).push(k);
       }
@@ -95,8 +166,7 @@
       });
       for (const pid of m.partners) {
         const a = Math.min(xs[pid], xs[m.id]) + W, b = Math.max(xs[pid], xs[m.id]);
-        const sp = SA.spousesOf(m.id).find((s) => s.id === pid);
-        edges.push({ kind: "couple", d: `M${a},${y + H / 2}H${b}`, style: !sp ? "partner" : sp.conf === "low" ? "low" : "", a: m.id, b: pid });
+        edges.push({ kind: "couple", d: `M${a},${y + H / 2}H${b}`, style: G.spouseConf(m.id, pid), a: m.id, b: pid });
       }
       let cursor = left + (m.w - m.kidsW) / 2;
       m.groups.forEach((g, gi) => {
@@ -119,7 +189,7 @@
         edges.push({ kind: "stem", d: `M${anchorX},${anchorY}V${busY}`, a: m.id, b: g.partner, kids });
         edges.push({ kind: "bus", d: `M${minX},${busY}H${maxX}`, a: m.id, b: g.partner, kids });
         for (const c of cx) {
-          const conf = SA.people[c.id].parentConf;
+          const conf = G.parentConf(c.id);
           edges.push({ kind: "drop", d: `M${c.x},${busY}V${y + H + VG}`, style: conf === "low" ? "low" : conf === "medium" ? "medium" : "", a: m.id, child: c.id });
         }
       });
@@ -144,8 +214,10 @@
   }
 
   SA.mountTree = function (host, initial) {
+    const G = initial.graph === "genealogy" ? GEN : ACCOUNT;
+    const treeById = G.byId;
     const state = {
-      tree: treeById[initial.tree] ? initial.tree : "somerville",
+      tree: treeById[initial.tree] ? initial.tree : G.trees[0].id,
       focus: initial.focus || null,
       collapsed: new Set(),
       placeholders: true,
@@ -154,13 +226,13 @@
       view: initial.view || "chart",
     };
     const narratorAnc = new Set();
-    (function walk(id) { narratorAnc.add(id); SA.parentsOf(id).forEach(walk); })("narrator");
+    (function walk(id) { if (!G.get(id)) return; narratorAnc.add(id); G.parentsOf(id).forEach(walk); })(G.narrator);
 
     host.innerHTML = `
       <div class="tree-shell">
         <div class="tree-toolbar" role="toolbar" aria-label="Family tree controls">
           <label class="sel"><span class="sr">Family</span>
-            <select data-act="tree">${SA.TREES.map((t) => `<option value="${t.id}">${esc(t.label)}</option>`).join("")}</select>
+            <select data-act="tree">${G.trees.map((t) => `<option value="${t.id}">${esc(t.label)}</option>`).join("")}</select>
           </label>
           <div class="find">
             <input type="search" placeholder="Find a person…" list="tree-people" data-act="find" aria-label="Find a person in the tree" />
@@ -174,18 +246,20 @@
             <button data-act="fit" title="Fit to screen">Fit</button>
             <button data-act="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
           </div>
-          <label class="tog"><input type="checkbox" data-act="line" checked /> Narrator's line</label>
-          <label class="tog"><input type="checkbox" data-act="ph" checked /> Unnamed</label>
+          <label class="tog"><input type="checkbox" data-act="line" checked /> ${G.lineLabel}</label>
+          ${G.unnamedToggle ? `<label class="tog"><input type="checkbox" data-act="ph" checked /> Unnamed</label>` : ""}
         </div>
         <div class="tree-stage">
           <svg class="tree-svg" role="img" aria-label="Family tree chart"><g class="vp"></g></svg>
           <div class="tree-list" hidden></div>
           <aside class="tree-panel" hidden aria-live="polite"></aside>
           <div class="tree-legend">
-            <span><i class="lg lg-solid"></i>parent (stated)</span>
+            ${G.key === "genealogy" ? `<span><i class="lg lg-solid"></i>parent (as stated in the profiles)</span>
+            <span><i class="lg lg-low"></i>doubtful</span>
+            <span><i class="lg lg-acc"></i>also in Grandpa's account</span>` : `<span><i class="lg lg-solid"></i>parent (stated)</span>
             <span><i class="lg lg-medium"></i>parent (inferred)</span>
-            <span><i class="lg lg-low"></i>uncertain</span>
-            <span><i class="lg lg-line"></i>narrator's line</span>
+            <span><i class="lg lg-low"></i>uncertain</span>`}
+            <span><i class="lg lg-line"></i>${G.key === "genealogy" ? "Grandpa's line" : "narrator's line"}</span>
             <span class="hint">Drag to pan · scroll or pinch to zoom · click a person</span>
           </div>
         </div>
@@ -230,7 +304,7 @@
     function render() {
       const tree = treeById[state.tree];
       $('[data-act="tree"]').value = state.tree;
-      current = layout(tree, state);
+      current = layout(G, tree, state);
       const sel = state.focus;
       let html = "";
       for (const e of current.edges) {
@@ -240,29 +314,31 @@
         html += `<path class="edge e-${e.kind} ${e.style ? "e-" + e.style : ""} ${onLine ? "on-line" : ""}" d="${e.d}"/>`;
       }
       for (const n of current.nodes) {
-        const p = SA.people[n.id];
+        const p = G.get(n.id);
         const lines = wrap(p.name, 24);
-        const life = SA.shortLife(p);
-        const cls = ["card", `fam-${p.family}`, n.main ? "main" : "spouse", p.placeholder ? "ph" : "", p.living || p.possiblyLiving ? "living" : "", n.id === sel ? "sel" : "", state.lineHighlight && narratorAnc.has(n.id) ? "on-line" : ""].join(" ");
-        const origin = !n.main ? originTree(n.id, state.tree) : null;
+        const life = G.life(p);
+        const living = G.isLiving(p);
+        const cls = ["card", G.cls(p), n.main ? "main" : "spouse", G.isPlaceholder(p) ? "ph" : "", living ? "living" : "", n.id === sel ? "sel" : "", state.lineHighlight && narratorAnc.has(n.id) ? "on-line" : ""].join(" ");
+        const origin = !n.main ? G.originTree(n.id, state.tree) : null;
         let extra = "";
-        if (n.hidden && n.stopTo) extra = `<g class="more" data-goto="${n.stopTo}" data-focus="${n.id}"><rect x="${W / 2 - 62}" y="${H + 6}" width="124" height="20" rx="10"/><text x="${W / 2}" y="${H + 20}">${n.hidden} children ↘ ${esc(treeById[n.stopTo].label.split(" ")[0])}</text></g>`;
+        if (n.hidden && n.stopTo) extra = `<g class="more" data-goto="${n.stopTo}" data-focus="${n.id}"><rect x="${W / 2 - 62}" y="${H + 6}" width="124" height="20" rx="10"/><text x="${W / 2}" y="${H + 20}">${n.hidden} children ↘ ${esc(treeById[n.stopTo].short || treeById[n.stopTo].label.split(" ")[0])}</text></g>`;
         else if (n.hidden) extra = `<g class="more" data-expand="${n.id}"><rect x="${W / 2 - 46}" y="${H + 6}" width="92" height="20" rx="10"/><text x="${W / 2}" y="${H + 20}">+ ${n.hidden} hidden</text></g>`;
         else if (n.main && n.total && n.depth >= 0) extra = `<g class="fold" data-collapse="${n.id}" role="button" aria-label="Collapse ${esc(p.name)}'s descendants"><circle cx="${W / 2}" cy="${H + 8}" r="8"/><text x="${W / 2}" y="${H + 12}">−</text></g>`;
         if (origin) extra += `<g class="origin" data-goto="${origin}" data-focus="${n.id}"><title>Show ${esc(p.name)}'s own family</title><rect x="${W - 30}" y="-10" width="40" height="20" rx="10"/><text x="${W - 10}" y="4">↑ fam</text></g>`;
         html += `<g class="${cls}" data-id="${n.id}" transform="translate(${n.x},${n.y})" tabindex="0" role="button" aria-label="${esc(p.name + (life ? ", " + life : ""))}">
-          <title>${esc(p.fullName || p.name)}${life ? " (" + esc(life) + ")" : ""}</title>
+          <title>${esc(G.full(p))}${life ? " (" + esc(life) + ")" : ""}</title>
           <rect class="bg" width="${W}" height="${H}" rx="10"/>
           <rect class="bar" width="5" height="${H - 16}" x="0" y="8" rx="2"/>
           <text class="nm" x="14" y="${lines.length > 1 ? 22 : 30}">${lines.map((l, i) => `<tspan x="14" dy="${i ? 16 : 0}">${esc(l)}</tspan>`).join("")}</text>
-          <text class="lf" x="14" y="${H - 12}">${esc(life || (p.placeholder ? "name not recorded" : p.living ? "living" : "dates unknown"))}</text>
-          ${p.living || p.possiblyLiving ? `<circle class="lv" cx="${W - 12}" cy="${H - 16}" r="4"><title>Living or possibly living</title></circle>` : ""}
+          <text class="lf" x="14" y="${H - 12}">${esc(life || (G.isPlaceholder(p) ? "name not recorded" : living ? "living" : "dates unknown"))}</text>
+          ${G.key === "genealogy" ? `<text class="rec" x="${W - 10}" y="16">${esc(p.id)}</text>` : ""}
+          ${living ? `<circle class="lv" cx="${W - 12}" cy="${H - 16}" r="4"><title>Living or possibly living</title></circle>` : ""}
           ${extra}
         </g>`;
       }
       vp.innerHTML = html;
       // datalist
-      $("#tree-people").innerHTML = [...SA.treeMembers(state.tree)].map((id) => `<option value="${esc(SA.people[id].name)}">`).join("");
+      $("#tree-people").innerHTML = G.names([...G.members(state.tree)]).map((n) => `<option value="${esc(n)}">`).join("");
       renderList();
     }
 
@@ -272,45 +348,46 @@
       const li = (id) => {
         if (seen.has(id)) return "";
         seen.add(id);
-        const p = SA.people[id];
-        const sp = SA.partnersOf(id).map((s) => `<span class="ol-sp">∞ <a href="#/person/${s}">${esc(SA.people[s].name)}</a></span>`).join(" ");
-        const kids = tree.stop[id] ? [] : SA.childrenOf(id).filter((k) => state.placeholders || !SA.people[k].placeholder);
-        const cont = tree.stop[id] ? ` <a class="ol-cont" href="#/tree/${tree.stop[id]}?focus=${id}">continues in ${esc(treeById[tree.stop[id]].label)} →</a>` : "";
-        return `<li><a href="#/person/${id}" class="${narratorAnc.has(id) ? "on-line" : ""}">${esc(p.name)}</a> <span class="ol-life">${esc(SA.lifespan(p))}</span> ${sp}${cont}${kids.length ? `<ul>${kids.map(li).join("")}</ul>` : ""}</li>`;
+        const p = G.get(id);
+        const sp = G.partnersOf(id).map((s) => `<span class="ol-sp">∞ <a href="${G.href(s)}">${esc(G.get(s).name)}</a></span>`).join(" ");
+        const kids = tree.stop[id] ? [] : G.childrenOf(id).filter((k) => state.placeholders || !G.isPlaceholder(G.get(k)));
+        const cont = tree.stop[id] ? ` <a class="ol-cont" href="${G.treeHref(tree.stop[id], id)}">continues in ${esc(treeById[tree.stop[id]].label)} →</a>` : "";
+        return `<li><a href="${G.href(id)}" class="${narratorAnc.has(id) ? "on-line" : ""}">${esc(p.name)}</a> <span class="ol-life">${esc(G.lifespan(p))}</span> ${sp}${cont}${kids.length ? `<ul>${kids.map(li).join("")}</ul>` : ""}</li>`;
       };
       list.innerHTML = `<ul class="outline">${li(tree.root)}</ul>`;
     }
 
     function showPanel(id) {
-      const p = SA.people[id];
+      const p = G.get(id);
       if (!p) return;
-      const rel = SA.relLabel(id);
-      const chips = (ids) => ids.map((x) => `<button class="chip chip-p" data-sel="${x}">${esc(SA.people[x].name)}</button>`).join(" ") || "<span class='muted'>—</span>";
-      const origin = originTree(id, state.tree);
-      const home = SA.treeOf(id);
+      const rel = G.relLabel(id);
+      const chips = (ids) => ids.map((x) => `<button class="chip chip-p" data-sel="${x}">${esc(G.get(x).name)}</button>`).join(" ") || "<span class='muted'>—</span>";
+      const origin = G.originTree(id, state.tree);
+      const home = G.treeOf(id);
       panel.innerHTML = `
         <button class="close" data-act="close" aria-label="Close panel">×</button>
-        <div class="kicker">${esc(SA.FAMILY[p.family] || "")} · ${esc(SA.CATEGORY[p.category] || "")}</div>
+        <div class="kicker">${esc(G.kicker(p))}</div>
         <h3>${esc(p.name)}</h3>
-        <div class="life">${esc(SA.lifespan(p))}</div>
+        <div class="life">${esc(G.lifespan(p))}</div>
         ${rel ? `<div class="rel">${esc(rel)}</div>` : ""}
-        <p>${SA.inline(p.summary)}</p>
+        ${G.summary(p)}
         <dl>
-          <dt>Parents</dt><dd>${chips(SA.parentsOf(id))}</dd>
-          <dt>Partners</dt><dd>${chips(SA.partnersOf(id))}</dd>
-          <dt>Children</dt><dd>${chips(SA.childrenOf(id))}</dd>
+          <dt>Parents</dt><dd>${chips(G.parentsOf(id))}</dd>
+          <dt>Partners</dt><dd>${chips(G.partnersOf(id))}</dd>
+          <dt>Children</dt><dd>${chips(G.childrenOf(id))}</dd>
         </dl>
         <div class="panel-actions">
-          <a class="btn primary" href="#/person/${id}">Open full profile</a>
+          <a class="btn primary" href="${G.href(id)}">Open full profile</a>
+          ${G.cross(id)}
           ${origin ? `<button class="btn" data-goto="${origin}" data-focus="${id}">Show own family</button>` : ""}
-          ${home && home !== state.tree && !origin ? `<button class="btn" data-goto="${home}" data-focus="${id}">Show in ${esc(treeById[home].label.split(" ")[0])} tree</button>` : ""}
+          ${home && home !== state.tree && !origin ? `<button class="btn" data-goto="${home}" data-focus="${id}">Show in ${esc(treeById[home].short || treeById[home].label.split(" ")[0])} tree</button>` : ""}
         </div>`;
       panel.hidden = false;
     }
 
     function select(id, { center = true, animate = true } = {}) {
-      if (!SA.treeMembers(state.tree).has(id)) {
-        const t = SA.treeOf(id);
+      if (!G.members(state.tree).has(id)) {
+        const t = G.treeOf(id);
         if (t) { state.tree = t; render(); }
       }
       state.focus = id;
@@ -318,7 +395,7 @@
       vp.querySelectorAll(`.card[data-id="${CSS.escape(id)}"]`).forEach((n) => n.classList.add("sel"));
       showPanel(id);
       if (center) centerOn(id, animate);
-      history.replaceState(null, "", `#/tree/${state.tree}?focus=${id}`);
+      history.replaceState(null, "", G.treeHref(state.tree, id));
     }
 
     // ---------- interaction ----------
@@ -344,7 +421,7 @@
     });
     host.addEventListener("dblclick", (ev) => {
       const c = ev.target.closest(".card");
-      if (c) location.hash = `#/person/${c.dataset.id}`;
+      if (c) location.hash = G.href(c.dataset.id);
     });
     host.addEventListener("keydown", (ev) => {
       const c = ev.target.closest && ev.target.closest(".card");
@@ -354,14 +431,14 @@
       if (ev.key === "-") zoomBy(0.83);
       if (ev.key === "0") fit(true);
     });
-    $('[data-act="tree"]').addEventListener("change", (e) => { state.tree = e.target.value; state.focus = null; state.collapsed.clear(); panel.hidden = true; render(); initialView(); history.replaceState(null, "", `#/tree/${state.tree}`); });
+    $('[data-act="tree"]').addEventListener("change", (e) => { state.tree = e.target.value; state.focus = null; state.collapsed.clear(); panel.hidden = true; render(); initialView(); history.replaceState(null, "", G.treeHref(state.tree)); });
     $('[data-act="line"]').addEventListener("change", (e) => { state.lineHighlight = e.target.checked; render(); });
-    $('[data-act="ph"]').addEventListener("change", (e) => { state.placeholders = e.target.checked; render(); });
+    if ($('[data-act="ph"]')) $('[data-act="ph"]').addEventListener("change", (e) => { state.placeholders = e.target.checked; render(); });
     $('[data-act="find"]').addEventListener("change", (e) => {
       const v = e.target.value.trim().toLowerCase();
       if (!v) return;
-      const hit = SA.data.people.find((p) => p.name.toLowerCase() === v) || SA.search(v, 20).find((d) => d.type === "person");
-      if (hit) select(hit.id);
+      const hit = G.find(v);
+      if (hit) select(hit);
       e.target.value = "";
     });
     function setView(v) {

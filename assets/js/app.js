@@ -4,26 +4,65 @@
   const SA = window.SA, esc = SA.esc, V = SA.views;
   const main = document.getElementById("main");
 
+  // [pattern, view, title, nav key, section]. The archive has two parts:
+  // "account" (Grandpa's recorded account, the original project) and
+  // "genealogy" (the extended genealogy, supplementary research); a few pages
+  // ("shared") cover both.
   const ROUTES = [
-    [/^\/?$/, () => V.home(main), "Home"],
-    [/^\/story\/?$/, () => V.story(main), "Story", "story"],
-    [/^\/story\/([^/]+)$/, (m) => V.story(main, m[1]), (m) => SA.chapters[m[1]] && SA.chapters[m[1]].title, "story"],
-    [/^\/tree\/?([^/]*)$/, (m, p) => V.tree(main, m[1], p), "Family tree", "tree"],
-    [/^\/people\/?$/, (m, p) => V.people(main, p), "People", "people"],
-    [/^\/person\/([^/]+)$/, (m) => V.person(main, m[1]), (m) => SA.people[m[1]] && SA.people[m[1]].name, "people"],
-    [/^\/places\/?$/, (m, p) => V.places(main, p), "Places", "places"],
-    [/^\/place\/([^/]+)$/, (m) => V.place(main, m[1]), (m) => SA.places[m[1]] && SA.places[m[1]].name, "places"],
-    [/^\/timeline\/?$/, (m, p) => V.timeline(main, p), "Timeline", "timeline"],
-    [/^\/glossary\/?$/, (m, p) => V.glossary(main, p), "Glossary", "glossary"],
-    [/^\/term\/([^/]+)$/, (m) => V.term(main, m[1]), (m) => SA.terms[m[1]] && SA.terms[m[1]].term, "glossary"],
-    [/^\/transcript\/?([^/]*)$/, (m) => V.transcript(main, m[1]), "Transcript", "transcript"],
-    [/^\/compare\/?$/, (m, p) => V.compare(main, p), "Compare transcripts", "transcript"],
-    [/^\/questions\/?$/, (m, p) => V.questions(main, p), "Open questions", "questions"],
-    [/^\/corrections\/?$/, (m, p) => V.corrections(main, p), "Incorrect information", "corrections"],
-    [/^\/sources\/?$/, (m, p) => V.sources(main, p), "Sources", "sources"],
-    [/^\/search\/?$/, (m, p) => V.search(main, p), "Search"],
-    [/^\/about\/?$/, () => V.about(main), "About", "about"],
+    [/^\/?$/, () => V.home(main), "Home", null, "shared"],
+    [/^\/account\/?$/, () => V.account(main), "My Grandfather's Account", "account", "account"],
+    [/^\/story\/?$/, () => V.story(main), "Story", "story", "account"],
+    [/^\/story\/([^/]+)$/, (m) => V.story(main, m[1]), (m) => SA.chapters[m[1]] && SA.chapters[m[1]].title, "story", "account"],
+    [/^\/tree\/?([^/]*)$/, (m, p) => V.tree(main, m[1], p), "Family tree", "tree", "account"],
+    [/^\/people\/?$/, (m, p) => V.people(main, p), "People", "people", "account"],
+    [/^\/person\/([^/]+)$/, (m) => V.person(main, m[1]), (m) => SA.people[m[1]] && SA.people[m[1]].name, "people", "account"],
+    [/^\/places\/?$/, (m, p) => V.places(main, p), "Places", "places", "account"],
+    [/^\/place\/([^/]+)$/, (m) => V.place(main, m[1]), (m) => SA.places[m[1]] && SA.places[m[1]].name, "places", "account"],
+    [/^\/timeline\/?$/, (m, p) => V.timeline(main, p), "Timeline", "timeline", "account"],
+    [/^\/glossary\/?$/, (m, p) => V.glossary(main, p), "Glossary", "glossary", "account"],
+    [/^\/term\/([^/]+)$/, (m) => V.term(main, m[1]), (m) => SA.terms[m[1]] && SA.terms[m[1]].term, "glossary", "account"],
+    [/^\/transcript\/?([^/]*)$/, (m) => V.transcript(main, m[1]), "Transcript", "transcript", "account"],
+    [/^\/compare\/?$/, (m, p) => V.compare(main, p), "Compare transcripts", "transcript", "account"],
+    [/^\/questions\/?$/, (m, p) => V.questions(main, p), "Open questions", "questions", "account"],
+    [/^\/corrections\/?$/, (m, p) => V.corrections(main, p), "Incorrect information", "corrections", "account"],
+    [/^\/sources\/?$/, (m, p) => V.sources(main, p), "Sources", "sources", "account"],
+    [/^\/genealogy\/?$/, () => V.gHome(main), "Extended Genealogy", "g-home", "genealogy"],
+    [/^\/genealogy\/people\/?$/, (m, p) => V.gPeople(main, p), "Genealogy profiles", "g-people", "genealogy"],
+    [/^\/genealogy\/person\/([^/]+)$/, (m, p) => V.gPerson(main, m[1], p), (m) => SA.gen[m[1]] && `${SA.gen[m[1]].name} (genealogy)`, "g-people", "genealogy"],
+    [/^\/genealogy\/tree\/?([^/]*)$/, (m, p) => V.gTree(main, m[1], p), "Genealogy tree", "g-tree", "genealogy"],
+    [/^\/genealogy\/differences\/?$/, (m, p) => V.gDiff(main, p), "Where the sources differ", "g-diff", "genealogy"],
+    [/^\/genealogy\/sources\/?$/, () => V.gSources(main), "Genealogy sources and notes", "g-sources", "genealogy"],
+    [/^\/search\/?$/, (m, p) => V.search(main, p), "Search", null, "shared"],
+    [/^\/about\/?$/, () => V.about(main), "About", "about", "shared"],
   ];
+
+  // Every page says which part of the archive it belongs to.
+  const GI = SA.GI;
+  const BANNER = {
+    account: `<div class="sec-banner-in"><span class="sec-ic" aria-hidden="true">❝</span><span class="sb-t"><b>My Grandfather's Account</b> <span>the original oral-history project: Grandpa's words from the recordings, with our checks labelled</span></span><a class="sb-x" href="#/genealogy">Explore the extended genealogy →</a></div>`,
+    genealogy: `<div class="sec-banner-in"><span class="sec-ic" aria-hidden="true">${GI}</span><span class="sb-t"><b>Extended Somerville Family Genealogy</b> <span>supplementary research: compiled family profiles, not what Grandpa said in the recordings</span></span><a class="sb-x" href="#/account">↩ Return to Grandpa's account</a></div>`,
+  };
+  const banner = document.getElementById("sec-banner");
+  const head = document.querySelector(".site-head");
+  function setSection(sec) {
+    document.body.classList.remove("sec-account", "sec-genealogy", "sec-shared");
+    document.body.classList.add(`sec-${sec}`);
+    document.querySelectorAll(".sec-tab").forEach((a) => {
+      const on = a.dataset.tab === sec;
+      a.classList.toggle("cur", on);
+      if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+    });
+    banner.innerHTML = BANNER[sec] || "";
+    banner.hidden = !BANNER[sec];
+    banner.className = `sec-banner sb-${sec}`;
+    chrome();
+  }
+  // full-height pages (the trees) fill the space below the header and banner
+  function chrome() {
+    const h = head.offsetHeight + (banner.hidden ? 0 : banner.offsetHeight);
+    document.documentElement.style.setProperty("--chrome-h", `${h}px`);
+  }
+  window.addEventListener("resize", chrome);
 
   function parse() {
     const raw = decodeURIComponent(location.hash.replace(/^#/, "")) || "/";
@@ -39,18 +78,25 @@
     if (moved && MOVED[moved[2]]) { location.replace(`#/${moved[1]}/${MOVED[moved[2]]}`); return; }
     hidePop();
     main.className = "";
-    for (const [re, fn, title, nav] of ROUTES) {
+    for (const [re, fn, title, nav, sec] of ROUTES) {
       const m = path.match(re);
       if (!m) continue;
+      setSection(sec);
       try { fn(m, params); } catch (e) { console.error(e); main.innerHTML = `<div class="profile narrow"><h1>Something went wrong</h1><pre>${esc(e.stack || e)}</pre></div>`; }
       const t = typeof title === "function" ? title(m) : title;
       document.title = (t && t !== "Home" ? `${t} · ` : "") + "Somerville Family Archive";
-      document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("cur", a.dataset.nav === nav));
+      document.querySelectorAll(".subnav a").forEach((a) => {
+        const on = a.dataset.nav === nav;
+        a.classList.toggle("cur", on);
+        if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+      });
       document.body.classList.remove("nav-open");
-      if (!params.e && !params.q && !params.s && !params.c && !params.at && !/^\/transcript\/.+:/.test(path) && !/^\/tree/.test(path)) window.scrollTo(0, 0);
+      document.getElementById("menu").setAttribute("aria-expanded", "false");
+      if (!params.e && !params.q && !params.s && !params.c && !params.at && !params.d && !/^\/transcript\/.+:/.test(path) && !/^\/(genealogy\/)?tree/.test(path)) window.scrollTo(0, 0);
       main.focus({ preventScroll: true });
       return;
     }
+    setSection("shared");
     V.notFound(main);
   }
   window.addEventListener("hashchange", route);
@@ -59,7 +105,7 @@
   const input = document.getElementById("q");
   const drop = document.getElementById("q-results");
   let sel = -1, items = [];
-  const TYPE = { person: "Person", place: "Place", term: "Term", event: "Event", chapter: "Story", question: "Question", correction: "Correction", source: "Source", passage: "Transcript" };
+  const TYPE = { person: "❝ Person", place: "❝ Place", term: "❝ Term", event: "❝ Event", chapter: "❝ Story", question: "❝ Question", correction: "❝ Correction", source: "❝ Source", passage: "❝ Transcript", gprofile: "Genealogy", gdiff: "Genealogy" };
   const excerpt = (l) => esc(l.text.length > 360 ? l.text.slice(0, 360) + "…" : l.text);
   function showDrop() {
     const q = input.value.trim();
@@ -150,7 +196,11 @@
     root.dataset.theme = dark ? "light" : "dark";
     try { localStorage.setItem("theme", root.dataset.theme); } catch (e) { /* storage unavailable */ }
   });
-  document.getElementById("menu").addEventListener("click", () => document.body.classList.toggle("nav-open"));
+  document.getElementById("menu").addEventListener("click", (e) => {
+    const open = document.body.classList.toggle("nav-open");
+    e.currentTarget.setAttribute("aria-expanded", String(open));
+    chrome();
+  });
 
   route();
 })();

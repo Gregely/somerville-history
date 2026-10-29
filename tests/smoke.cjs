@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 (async () => {
   const browser = await chromium.launch();
   const out = process.argv[2] || null;
-  const routes = ['', 'story', 'story/west-indies', 'story/district-inspector', 'tree', 'tree/bellingham', 'tree/somerville?focus=reginald-somerville', 'people', 'person/bellingham-arthur-somerville', 'person/tenison-alan-somerville', 'person/narrator', 'person/interviewer', 'person/charles-somerville', 'tree/somerville?focus=interviewer', 'place/cumry', 'person/alan-everard-somerville', 'person/rector-johnson', 'person/william-abraham-johnson', 'sources?s=family-tree-2026', 'person/tenison-somerville-1812', 'person/pat', 'person/vere-somerville', 'places', 'place/clermont', 'timeline', 'timeline?e=ev-youghal-1887', 'glossary', 'term/ric', 'transcript', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'questions', 'questions?q=q-bunt-regiment', 'corrections', 'corrections?c=ic-pat-capture', 'search?q=sabre', 'sources', 'search?q=bellendrum', 'search?q=Bunt', 'search?q=Tenison', 'search?q=Reendesert', 'about', 'transcript/T3', 'transcript/T3:81', 'story/arms-and-claim', 'person/elizabeth-mary-somerville', 'person/quentin-somerville', 'person/henry-bellingham-somerville-1859', 'person/thomas-tennison', 'tree/bellingham?focus=thomas-bellingham', 'place/queenstown', 'questions?q=q-family-bible', 'corrections?c=ic-arms-date', 'term/confirmation-of-arms', 'sources?s=visitation-1897', 'search?q=Athlumney', 'search?q=Choyce'];
+  const routes = ['', 'story', 'story/west-indies', 'story/district-inspector', 'tree', 'tree/bellingham', 'tree/somerville?focus=reginald-somerville', 'people', 'person/bellingham-arthur-somerville', 'person/tenison-alan-somerville', 'person/narrator', 'person/interviewer', 'person/charles-somerville', 'tree/somerville?focus=interviewer', 'place/cumry', 'person/alan-everard-somerville', 'person/rector-johnson', 'person/william-abraham-johnson', 'sources?s=family-tree-2026', 'person/tenison-somerville-1812', 'person/pat', 'person/vere-somerville', 'places', 'place/clermont', 'timeline', 'timeline?e=ev-youghal-1887', 'glossary', 'term/ric', 'transcript', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'questions', 'questions?q=q-bunt-regiment', 'corrections', 'corrections?c=ic-pat-capture', 'search?q=sabre', 'sources', 'search?q=bellendrum', 'search?q=Bunt', 'search?q=Tenison', 'search?q=Reendesert', 'about', 'transcript/T3', 'transcript/T3:81', 'story/arms-and-claim', 'person/elizabeth-mary-somerville', 'person/quentin-somerville', 'person/henry-bellingham-somerville-1859', 'person/thomas-tennison', 'tree/bellingham?focus=thomas-bellingham', 'place/queenstown', 'questions?q=q-family-bible', 'corrections?c=ic-arms-date', 'term/confirmation-of-arms', 'sources?s=visitation-1897', 'search?q=Athlumney', 'search?q=Choyce', 'account', 'genealogy', 'genealogy/people', 'genealogy/people?branch=america', 'genealogy/person/0563', 'genealogy/person/0501', 'genealogy/person/0587', 'genealogy/person/0603', 'genealogy/person/0682', 'genealogy/person/0689', 'genealogy/tree', 'genealogy/tree/clermont?focus=0631', 'genealogy/tree/all?view=list', 'genealogy/differences', 'genealogy/differences?d=gd-corry-death', 'genealogy/sources', 'search?q=Tullykelter'];
   for (const [w, h, tag] of [[1366, 900, 'd'], [390, 844, 'm']]) {
     const page = await browser.newPage({ viewport: { width: w, height: h } });
     const errs = [];
@@ -19,7 +19,7 @@ const { chromium } = require('playwright');
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
       if (/Something went wrong|Not found/.test(txt) || overflow) errs.push(`${tag} ${r}: ${overflow ? 'HORIZONTAL OVERFLOW ' : ''}${txt}`);
       const name = (tag + '-' + (r || 'home')).replace(/[^a-z0-9-]+/gi, '_');
-      if (out && ['', 'tree', 'person/bellingham-arthur-somerville', 'places', 'timeline', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'story/west-indies', 'people'].includes(r)) await page.screenshot({ path: `${out}/${name}.png` });
+      if (out && ['', 'tree', 'person/bellingham-arthur-somerville', 'places', 'timeline', 'transcript/T1:148', 'transcript/T2', 'transcript/T2:118', 'compare', 'compare?at=T1:312', 'story/west-indies', 'people', 'account', 'genealogy', 'genealogy/person/0563', 'genealogy/tree', 'genealogy/differences'].includes(r)) await page.screenshot({ path: `${out}/${name}.png` });
     }
     // the complete transcripts are published: no redaction markers, and
     // passages once withheld are visible on the transcript and compare pages
@@ -40,6 +40,26 @@ const { chromium } = require('playwright');
     await page.waitForTimeout(400);
     const cites = await page.evaluate(() => [...document.querySelectorAll('main a.cite-q')].map((a) => a.textContent));
     if (!cites.some((c) => /^C¶\d/.test(c))) errs.push(`${tag} person/elizabeth-mary-somerville: no C¶ citation links`);
+    // the two parts: every page says which part it belongs to, and links between them are labelled
+    for (const [r, sel, want] of [['story', '.sec-banner.sb-account', "My Grandfather's Account"], ['person/corry-somerville', '.sec-banner.sb-account', "My Grandfather's Account"],
+      ['genealogy/person/0586', '.sec-banner.sb-genealogy', 'Extended Somerville Family Genealogy'], ['genealogy/tree', '.sec-banner.sb-genealogy', 'not what Grandpa said'],
+      ['person/corry-somerville', 'main .xcard-g', 'In the extended genealogy'], ['genealogy/person/0586', 'main .xcard-a', "Grandpa's account"],
+      ['genealogy/person/0501', 'main .xcard-none', 'Not in Grandpa'], ['', 'main .part-g', 'supplementary research'], ['', 'main .part-a', 'original project'],
+      ['genealogy/person/0603', 'main .callout-doubt', 'doubtful'], ['genealogy/person/0587', 'main .g-alt', 'Wendy Stevenson'],
+      ['search?q=Tullykelter', 'main .rp-genealogy', 'In the extended genealogy'], ['people', 'main', 'not in the recordings']]) {
+      await page.goto('http://127.0.0.1:8765/#/' + r, { waitUntil: 'networkidle' });
+      await page.waitForTimeout(300);
+      const t = await page.evaluate((q) => { const el = document.querySelector(q); return el && !el.hidden ? el.textContent : null; }, sel);
+      if (!t || !t.includes(want)) errs.push(`${tag} ${r}: expected "${want}" in ${sel}`);
+    }
+    // living people in the genealogy: name and place in the family only
+    for (const [r, banned] of [['genealogy/person/0682', /1937|Marlborough|Dargle|Enniskerry|solicitor/i], ['genealogy/person/0691', /1969|Hatch St|Slaney/i], ['genealogy/person/0689', /Loughlinstown|Naivasha|Lucita/i], ['genealogy/person/0675', /26 December 1940|Pettigrew|Clesham/]]) {
+      await page.goto('http://127.0.0.1:8765/#/' + r, { waitUntil: 'networkidle' });
+      await page.waitForTimeout(300);
+      // the genealogy's own content (the linked account card shows only what the account itself records)
+      const body = await page.evaluate(() => [...document.querySelectorAll('main .g-profile-head, main .profile-main, main .family-card')].map((el) => el.innerText).join(' '));
+      if (banned.test(body)) errs.push(`${tag} ${r}: shows details withheld for privacy (${body.match(banned)[0]})`);
+    }
     console.log(tag, errs.length ? errs.join('\n') : 'no errors');
     if (errs.length) process.exitCode = 1;
     await page.close();

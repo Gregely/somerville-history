@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Somerville Family Archive</title>
-  <meta name="description" content="An interconnected archive of the Somerville family history, built from a recorded conversation: family tree, people, places, timeline, glossary and annotated transcript." />
+  <meta name="description" content="The Somerville family archive in two parts: Grandpa's own account, from recorded conversations, with transcripts, story, people, places and timeline; and the extended Somerville genealogy, from compiled family profiles going back to James Somerville, the first of the family in Ireland." />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237a2e2a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' text-anchor='middle' fill='%23f6f1e7'%3ES%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,34 +16,51 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-head">
-    <a class="brand" href="#/" aria-label="Somerville Family Archive, home">
-      <span class="mono" aria-hidden="true">S</span>
-      <span class="brand-text"><b>Somerville</b><small>Family Archive</small></span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="#/story" data-nav="story">Story</a>
-      <a href="#/tree" data-nav="tree">Tree</a>
-      <a href="#/people" data-nav="people">People</a>
-      <a href="#/places" data-nav="places">Places</a>
-      <a href="#/timeline" data-nav="timeline">Timeline</a>
-      <a href="#/glossary" data-nav="glossary">Glossary</a>
-      <a href="#/transcript" data-nav="transcript">Transcript</a>
-      <a href="#/questions" data-nav="questions">Questions</a>
-      <a href="#/corrections" data-nav="corrections">Incorrect Information</a>
-      <a href="#/sources" data-nav="sources">Sources</a>
-    </nav>
-    <div class="search" role="search">
-      <input id="q" type="search" placeholder="Search… ( / )" autocomplete="off" aria-label="Search the archive" aria-controls="q-results" />
-      <div id="q-results" class="q-results" role="listbox" hidden></div>
+    <div class="head-row">
+      <a class="brand" href="#/" aria-label="Somerville Family Archive, home">
+        <span class="mono" aria-hidden="true">S</span>
+        <span class="brand-text"><b>Somerville</b><small>Family Archive</small></span>
+      </a>
+      <nav class="sections" aria-label="The two parts of the archive">
+        <a class="sec-tab sec-tab-a" href="#/account" data-tab="account"><span class="sec-ic" aria-hidden="true">❝</span><span class="sec-tx"><b>My Grandfather's Account</b><small>the original oral history</small></span></a>
+        <a class="sec-tab sec-tab-g" href="#/genealogy" data-tab="genealogy"><span class="sec-ic" aria-hidden="true"><svg class="gi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v4M12 9H6v6M12 9h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="4" r="2.6" fill="currentColor"/><circle cx="6" cy="18.5" r="2.6" fill="currentColor"/><circle cx="18" cy="18.5" r="2.6" fill="currentColor"/></svg></span><span class="sec-tx"><b>Extended Genealogy</b><small>supplementary research</small></span></a>
+      </nav>
+      <div class="search" role="search">
+        <input id="q" type="search" placeholder="Search both parts… ( / )" autocomplete="off" aria-label="Search the archive" aria-controls="q-results" />
+        <div id="q-results" class="q-results" role="listbox" hidden></div>
+      </div>
+      <button id="theme" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+      <button id="menu" class="icon-btn menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
     </div>
-    <button id="theme" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
-    <button id="menu" class="icon-btn menu-btn" aria-label="Menu">☰</button>
+    <nav class="subnav" aria-label="Pages">
+      <div class="sub sub-a" data-sub="account">
+        <a class="sub-h" href="#/account" data-nav="account"><span aria-hidden="true">❝</span> My Grandfather's Account</a>
+        <a href="#/story" data-nav="story">Story</a>
+        <a href="#/transcript" data-nav="transcript">Transcripts</a>
+        <a href="#/people" data-nav="people">People</a>
+        <a href="#/tree" data-nav="tree">Tree</a>
+        <a href="#/places" data-nav="places">Places</a>
+        <a href="#/timeline" data-nav="timeline">Timeline</a>
+        <a href="#/glossary" data-nav="glossary">Glossary</a>
+        <a href="#/questions" data-nav="questions">Questions</a>
+        <a href="#/corrections" data-nav="corrections">Incorrect Information</a>
+        <a href="#/sources" data-nav="sources">Sources</a>
+      </div>
+      <div class="sub sub-g" data-sub="genealogy">
+        <a class="sub-h" href="#/genealogy" data-nav="g-home"><svg class="gi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v4M12 9H6v6M12 9h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="4" r="2.6" fill="currentColor"/><circle cx="6" cy="18.5" r="2.6" fill="currentColor"/><circle cx="18" cy="18.5" r="2.6" fill="currentColor"/></svg> Extended Genealogy</a>
+        <a href="#/genealogy/people" data-nav="g-people">Profiles</a>
+        <a href="#/genealogy/tree" data-nav="g-tree">Tree</a>
+        <a href="#/genealogy/differences" data-nav="g-diff">Where the sources differ</a>
+        <a href="#/genealogy/sources" data-nav="g-sources">Sources &amp; notes</a>
+      </div>
+    </nav>
   </header>
+  <div id="sec-banner" class="sec-banner" hidden></div>
   <main id="main" tabindex="-1">
     <noscript><p style="padding:2rem">This archive needs JavaScript. The underlying data is in the <code>data/</code> folder as plain JSON, and the transcript in <code>transcripts/</code>.</p></noscript>
   </main>
   <footer class="site-foot">
-    <p>Built from a conversation with Grandpa. Testimony, interpretation and published record are labelled throughout. <a href="#/about">About &amp; privacy</a> · <a href="#/sources">Sources &amp; method</a></p>
+    <p><b>My Grandfather's Account</b> is the original oral-history project, built from recorded conversations with Grandpa; the <b>Extended Genealogy</b> is supplementary research from compiled family profiles. Each is labelled throughout. <a href="#/about">About &amp; privacy</a> · <a href="#/sources">Sources &amp; method</a> · <a href="#/genealogy/sources">Genealogy sources</a></p>
   </footer>
   <div id="pop" class="pop" role="tooltip" hidden></div>
 
@@ -52,6 +69,7 @@
   <script src="assets/js/core.js"></script>
   <script src="assets/js/tree.js"></script>
   <script src="assets/js/views.js"></script>
+  <script src="assets/js/genealogy.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

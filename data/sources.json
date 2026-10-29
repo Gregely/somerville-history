@@ -1056,13 +1056,14 @@
  },
  {
   "id": "fam-profiles",
-  "title": "The narrator's written profiles of the family (in progress, 2020s)",
-  "publisher": "In the narrator's keeping; not published",
-  "type": "family research notes (not inspected)",
-  "access": "private",
-  "reliability": "The narrator's own research, with his additions marked in red; unfinished.",
-  "used": "Shown on screen in the second recording (C¶150–167, 195): profiles of every member of the family in \"branches\", the first (Major William's descendants) complete and the second (the senior line) well advanced; the profile of Bellingham Arthur is divided into childhood, profession and the Clermont years.",
-  "checked": "2026-10-28"
+  "title": "The narrator's written profiles of the family: the compiled family profiles (“David Gilmour amended records”)",
+  "publisher": "Compiled by David Gilmour and amended by the narrator and others; Word files in the repository folder research/David Gilmour amended records",
+  "type": "family research notes",
+  "access": "direct",
+  "reliability": "A family compilation, not independent evidence: profiles begun by a cousin, David Gilmour, revised in 2011–12 and amended by the narrator in 2021–22, citing an earlier family pedigree (the “Somerville Index”), family records, letters and published works. They were received after the second recording and read for the extended genealogy; they are not used to correct anything the narrator said.",
+  "used": "Shown on screen in the second recording (C¶150–167, 195): profiles of every member of the family in \"branches\", the first (Major William's descendants) complete and the second (the senior line) well advanced; the profile of Bellingham Arthur is divided into childhood, profession and the Clermont years. The files the family later supplied, \"the ones as amended\" (C¶167), are published as the archive's second part, the Extended Somerville Family Genealogy (#/genealogy), kept separate from this account; differences between the two are listed there.",
+  "checked": "2026-10-28",
+  "url": "https://github.com/Gregely/somerville-history/tree/claude/family-history-archive-nwmc6d/research/David%20Gilmour%20amended%20records"
  },
  {
   "id": "fam-portraits",

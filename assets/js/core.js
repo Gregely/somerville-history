@@ -11,6 +11,8 @@
   const esc = (s) =>
     String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   SA.esc = esc;
+  // The extended genealogy's motif: a small branching pedigree.
+  SA.GI = '<svg class="gi" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v4M12 9H6v6M12 9h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="4" r="2.6" fill="currentColor"/><circle cx="6" cy="18.5" r="2.6" fill="currentColor"/><circle cx="18" cy="18.5" r="2.6" fill="currentColor"/></svg>';
   SA.h = function (html) {
     const t = document.createElement("template");
     t.innerHTML = html.trim();
@@ -114,26 +116,26 @@
     return "";
   };
 
-  // Ancestors with distance.
-  function ancestors(id) {
+  // Ancestors with distance, over any family graph G = {parentsOf, spousesOf, get}.
+  function ancestors(G, id) {
     const out = new Map([[id, 0]]);
     const q = [id];
     while (q.length) {
       const cur = q.shift();
-      for (const par of SA.parentsOf(cur)) if (!out.has(par)) { out.set(par, out.get(cur) + 1); q.push(par); }
+      for (const par of G.parentsOf(cur)) if (!out.has(par)) { out.set(par, out.get(cur) + 1); q.push(par); }
     }
     return out;
   }
   const ordinal = (n) => (n === 1 ? "" : n === 2 ? "second " : n === 3 ? "third " : n === 4 ? "fourth " : `${n}th `);
   const greats = (n) => (n <= 0 ? "" : n === 1 ? "great-" : n === 2 ? "great-great-" : `${n}× great-`);
   const times = (n) => (n === 1 ? "once" : n === 2 ? "twice" : `${n} times`);
-  // Relationship of `id` to `ref` (e.g. "great-grandfather of the narrator").
-  SA.relationship = function (id, ref, viaSpouse) {
+  // Relationship of `id` to `ref` in graph G (e.g. "great-grandfather").
+  SA.relate = function (G, id, ref, viaSpouse) {
     if (id === ref) return "the narrator himself";
-    const p = SA.people[id];
+    const p = G.get(id);
     const male = p.sex === "m", female = p.sex === "f";
     const g = (m, f, n) => (male ? m : female ? f : n);
-    const a1 = ancestors(id), a2 = ancestors(ref);
+    const a1 = ancestors(G, id), a2 = ancestors(G, ref);
     let best = null;
     for (const [anc, d1] of a1) if (a2.has(anc)) {
       const d2 = a2.get(anc);
@@ -142,9 +144,9 @@
     if (!best) {
       // married in?
       if (viaSpouse) return null;
-      for (const s of SA.spousesOf(id)) {
-        const r = SA.relationship(s.id, ref, true);
-        if (r) return `${g("husband", "wife", "spouse")} of ${SA.people[s.id].name} (${r === "the narrator himself" ? "the narrator" : r + " of the narrator"})`;
+      for (const sid of G.spouseIds(id)) {
+        const r = SA.relate(G, sid, ref, true);
+        if (r) return `${g("husband", "wife", "spouse")} of ${G.get(sid).name} (${r === "the narrator himself" ? "the narrator" : r + " of the narrator"})`;
       }
       return null;
     }
@@ -161,8 +163,8 @@
       return greats(d1 - 2) + g("grandson", "granddaughter", "grandchild");
     }
     if (d1 === 1 && d2 === 1) {
-      const shared = SA.parentsOf(id).filter((x) => SA.parentsOf(ref).includes(x)).length;
-      return (shared === 1 && SA.parentsOf(id).length === 2 && SA.parentsOf(ref).length === 2 ? "half-" : "") + g("brother", "sister", "sibling");
+      const shared = G.parentsOf(id).filter((x) => G.parentsOf(ref).includes(x)).length;
+      return (shared === 1 && G.parentsOf(id).length === 2 && G.parentsOf(ref).length === 2 ? "half-" : "") + g("brother", "sister", "sibling");
     }
     if (d2 === 1) return (d1 === 2 ? "" : greats(d1 - 2)) + g("nephew", "niece", "nephew/niece");
     if (d1 === 1) {
@@ -172,12 +174,14 @@
     const cousin = Math.min(d1, d2) - 1, removed = Math.abs(d1 - d2);
     return `${ordinal(cousin)}cousin${removed ? ` ${times(removed)} removed` : ""}`.replace(/^\s+/, "").replace(/^cousin/, "first cousin");
   };
-  SA.relLabel = function (id) {
-    const r = SA.relationship(id, "narrator");
+  const ACCOUNT_G = { get: (id) => SA.people[id], parentsOf: (id) => SA.parentsOf(id), spouseIds: (id) => SA.spousesOf(id).map((s) => s.id) };
+  SA.relationship = (id, ref, viaSpouse) => SA.relate(ACCOUNT_G, id, ref, viaSpouse);
+  const relText = (r) => {
     if (!r) return null;
     const txt = /^(the narrator|husband|wife|spouse)/.test(r) ? r : `${r} of the narrator`;
     return txt[0].toUpperCase() + txt.slice(1);
   };
+  SA.relLabel = (id) => relText(SA.relationship(id, "narrator"));
   // Chain of ancestors from the earliest ancestor down to `id`, following the
   // parent that has the longest recorded ancestry.
   SA.lineOfDescent = function (id) {
@@ -196,6 +200,43 @@
     }
     return chain;
   };
+
+  // ---------- extended genealogy (the compiled profiles) ----------
+  // A separate collection with its own people, keyed by record number. Shared
+  // people are linked to the account by `archive`, never merged with it.
+  const GD = A.genealogy || { branches: [], profiles: [] };
+  SA.gen = Object.fromEntries(GD.profiles.map((p) => [p.id, p]));
+  SA.genBranches = Object.fromEntries(GD.branches.map((b) => [b.id, b]));
+  SA.genDiffs = A.gdiff || [];
+  SA.genOf = {};
+  for (const p of GD.profiles) if (p.archive) SA.genOf[p.archive] = p.id;
+  const gkids = {};
+  for (const p of GD.profiles) for (const par of p.parents) (gkids[par] = gkids[par] || []).push(p.id);
+  const gyear = (p) => { const m = String((p.life && (p.life.born || p.life.died)) || "").match(/\d{4}/); return m ? +m[0] : 9999; };
+  for (const k in gkids) gkids[k].sort((a, b) => gyear(SA.gen[a]) - gyear(SA.gen[b]) || a.localeCompare(b));
+  SA.gChildren = (id) => gkids[id] || [];
+  SA.gParents = (id) => (SA.gen[id] && SA.gen[id].parents) || [];
+  SA.gSpouses = (id) => (SA.gen[id] && SA.gen[id].spouses) || [];
+  SA.gSiblings = (id) => {
+    const set = new Set();
+    for (const par of SA.gParents(id)) for (const c of SA.gChildren(par)) if (c !== id) set.add(c);
+    return [...set].sort((a, b) => gyear(SA.gen[a]) - gyear(SA.gen[b]));
+  };
+  SA.gLife = (p) => {
+    const l = p.life || {};
+    if (p.privacy === "living") return "";
+    if (l.born && l.died) return `${l.born.replace(/ \(bapt\.\)/, "")}–${l.died}`;
+    if (l.born) return `b. ${l.born}`;
+    if (l.died) return `d. ${l.died}`;
+    return "";
+  };
+  const GEN_G = { get: (id) => SA.gen[id], parentsOf: SA.gParents, spouseIds: SA.gSpouses };
+  SA.gNarrator = "0682";
+  SA.gRelLabel = (id) => (SA.gen[SA.gNarrator] ? relText(SA.relate(GEN_G, id, SA.gNarrator)) : null);
+  SA.gDiffsFor = (rec) => SA.genDiffs.filter((d) => (d.profiles || []).includes(rec));
+  // Accepted text of a profile paragraph (string, or [[text, code], ...] where
+  // code "" is base text, "i7"/"iW"/"iU" inserted, "d7"/"dW"/"dU" deleted, "p" a picture).
+  SA.gParaText = (para) => typeof para === "string" ? para : para.filter(([, c]) => c[0] !== "d" && c !== "p").map(([t]) => t).join("");
 
   // ---------- citations ----------
   // "142-150" / 16 / "T1:16" -> [{t:"T1", a:142, b:150}]
@@ -241,7 +282,7 @@
   };
 
   // ---------- markup ----------
-  const TOKEN = /\{(p|pl|t|e|s|qn|ch|q):([^}|]+)(?:\|([^}]*))?\}/g;
+  const TOKEN = /\{(p|pl|t|e|s|qn|ch|q|g):([^}|]+)(?:\|([^}]*))?\}/g;
   SA.link = function (kind, id, text) {
     switch (kind) {
       case "p": { const p = SA.people[id]; return `<a class="ref ref-p" href="#/person/${id}">${esc(text || (p && p.name) || id)}</a>`; }
@@ -250,6 +291,7 @@
       case "e": { const e = SA.events[id]; return `<a class="ref ref-e" href="#/timeline?e=${id}">${esc(text || (e && e.title) || id)}</a>`; }
       case "qn": { const q = SA.questions[id]; return `<a class="ref ref-qn" href="#/questions?q=${id}" title="Open question">${esc(text || (q ? "open question: " + q.title : id))}</a>`; }
       case "ch": { const c = SA.chapters[id]; return `<a class="ref ref-ch" href="#/story/${id}">${esc(text || (c && c.title) || id)}</a>`; }
+      case "g": { const g = SA.gen[id]; return `<a class="ref ref-g" href="#/genealogy/person/${id}" title="Extended genealogy, record ${esc(id)}">${esc(text || (g && g.name) || id)}</a>`; }
       case "s": return SA.sourceLink(id);
       case "q": return SA.parseCite(id).map(SA.citeLink).join(" ");
     }
@@ -293,6 +335,7 @@
     if (k === "p" && SA.people[id]) return SA.people[id].name;
     if (k === "pl" && SA.places[id]) return SA.places[id].name;
     if (k === "t" && SA.terms[id]) return SA.terms[id].term;
+    if (k === "g" && SA.gen[id]) return SA.gen[id].name;
     return "";
   }).replace(/\{(ctx|int|sensitive)\}/g, "").replace(/\s+/g, " ").trim();
 
@@ -305,6 +348,9 @@
     return keys.sort((a, b) => a.split(":")[0].localeCompare(b.split(":")[0]) || +a.split(":")[1] - +b.split(":")[1]);
   };
   SA.mentionsOf = (owner) => (A.mentions[owner] || []);
+  // People in the account who are never cited from, or found in, a transcript:
+  // research context added to explain the story, not something Grandpa spoke of.
+  SA.inRecordings = (id) => SA.refsOwnedBy(`p:${id}`).length > 0 || SA.mentionsOf(`p:${id}`).length > 0;
   SA.eventsFor = (kind, id) => A.events.filter((e) => (kind === "p" ? e.people : e.places || []).includes(id) || (e.desc || "").includes(`{${kind}:${id}`));
   SA.questionsFor = (kind, id) => A.questions.filter((q) => (kind === "p" ? q.people || [] : kind === "pl" ? q.places || [] : []).includes(id) || (q.desc || "").includes(`{${kind}:${id}`));
   SA.termsFor = (kind, id) => A.glossary.filter((t) => (kind === "p" ? t.people || [] : t.places || []).includes(id));
@@ -319,11 +365,13 @@
     if (k === "qn") return SA.questions[id] && SA.questions[id].title;
     if (k === "ch") return SA.chapters[id] && SA.chapters[id].title;
     if (k === "ic") return SA.corrections[id] && `Correction: ${SA.corrections[id].title}`;
+    if (k === "g") return SA.gen[id] && SA.gen[id].name;
+    if (k === "gd") { const d = SA.genDiffs.find((x) => x.id === id); return d && `Genealogy differs: ${d.title}`; }
     return id;
   };
   SA.entityHref = function (ref) {
     const [k, ...rest] = ref.split(":"); const id = rest.join(":");
-    return { p: `#/person/${id}`, pl: `#/place/${id}`, t: `#/term/${id}`, e: `#/timeline?e=${id}`, qn: `#/questions?q=${id}`, ch: `#/story/${id}`, ic: `#/corrections?c=${id}` }[k] || "#/";
+    return { p: `#/person/${id}`, pl: `#/place/${id}`, t: `#/term/${id}`, e: `#/timeline?e=${id}`, qn: `#/questions?q=${id}`, ch: `#/story/${id}`, ic: `#/corrections?c=${id}`, g: `#/genealogy/person/${id}`, gd: `#/genealogy/differences?d=${id}` }[k] || "#/";
   };
   SA.chip = (ref) => {
     const k = ref.split(":")[0];
@@ -355,6 +403,12 @@
   for (const c of A.corrections || []) add("correction", c.id, c.title, c.verdict === "corrected" ? "corrected" : "probably incorrect", [], SA.plain([c.said, c.conclusion, c.explanation].join(" ")), `#/corrections?c=${c.id}`);
   for (const c of A.narrative) add("chapter", c.id, c.title, c.era, [], SA.plain(c.lede + " " + c.body.join(" ")), `#/story/${c.id}`);
   for (const s of A.sources) add("source", s.id, s.title, s.publisher, [], s.used || "", `#/sources?s=${s.id}`);
+  for (const g of GD.profiles) {
+    const full = g.privacy === "full";
+    const text = full ? [...(g.header || []), ...(g.fields || []).map((f) => f.value), ...(g.paras || []).map(SA.gParaText)].join(" ") : "";
+    add("gprofile", g.id, g.name, `Record ${g.id}${SA.gLife(g) ? " · " + SA.gLife(g) : ""}`, [g.known || ""], text.length > 6000 ? text.slice(0, 6000) : text, `#/genealogy/person/${g.id}`);
+  }
+  for (const d of SA.genDiffs) add("gdiff", d.id, d.title, "where the collections differ", [], SA.plain([d.account, d.genealogy, d.note].join(" ")), `#/genealogy/differences?d=${d.id}`);
   for (const t of A.transcripts) for (const l of t.lines) add("passage", `${t.id}:${l.n}`, `${SA.TLABEL[t.id]} ¶${l.n}`, "", [], l.text, `#/transcript/${t.id}:${l.n}`);
 
   SA.search = function (query, limit = 60) {

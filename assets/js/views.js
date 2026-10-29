@@ -48,8 +48,57 @@
   };
   SA.personChip = personChip;
 
-  // ---------- home ----------
+  // ---------- home: the two parts of the archive ----------
   V.home = function (main) {
+    const G = A.genealogy || { profiles: [] };
+    const linked = G.profiles.filter((p) => p.archive).length;
+    main.innerHTML = `
+      <section class="landing">
+        <p class="kicker">The Somerville Family Archive</p>
+        <h1>The Somervilles of Ardrass, Castle Bellingham &amp; Clermont</h1>
+        <p class="lede">The archive has two separate parts. <b>My Grandfather's Account</b> is the original project: Grandpa's own telling of the family history, recorded in conversation in 2026 and kept in his words. The <b>Extended Somerville Family Genealogy</b> is supplementary research from compiled family profiles, reaching further back and wider than he spoke of. Every page says which part it belongs to.</p>
+      </section>
+      <section class="parts" aria-label="The two parts">
+        <a class="part part-a" href="#/account">
+          <span class="part-k"><span class="sec-ic" aria-hidden="true">❝</span> Part one · the original project</span>
+          <h2>My Grandfather's Account</h2>
+          <p>What Grandpa, William Somerville (born 1937), told his grandson in two recorded conversations in October 2026: his recollections, the family stories passed down to him, his explanations and his own research, with his uncertainties kept. The complete transcripts are the primary source, and the story, people, places and timeline are built from them. Corrections from documents are shown beside his words, never in place of them.</p>
+          <ul class="part-stats"><li><b>${A.transcripts.length}</b> transcripts</li><li><b>${A.transcripts.reduce((a, t) => a + t.lines.length, 0)}</b> passages</li><li><b>${A.people.filter((p) => !p.placeholder).length}</b> people</li><li><b>${A.narrative.length}</b> chapters</li></ul>
+          <span class="btn primary">Enter Grandpa's account →</span>
+        </a>
+        <a class="part part-g" href="#/genealogy">
+          <span class="part-k"><span class="sec-ic" aria-hidden="true">${SA.GI}</span> Part two · supplementary research</span>
+          <h2>Extended Somerville Family Genealogy</h2>
+          <p>The family descending from James Somerville “the Planter” (d. 1642), identified in family tradition as the first Somerville to come to Ireland: ${G.profiles.length} compiled profiles of the family and those they married, begun by a cousin, David Gilmour, and amended by Grandpa and others. Many of these people and branches never come up in the recordings. It is not Grandpa's account, and much of it rests on compiled pedigrees and tradition rather than checked records.</p>
+          <ul class="part-stats"><li><b>${G.profiles.length}</b> profiles</li><li><b>${(G.branches || []).length}</b> branches</li><li><b>${linked}</b> also in the account</li><li><b>${(A.gdiff || []).length}</b> differences noted</li></ul>
+          <span class="btn primary">Explore the extended genealogy →</span>
+        </a>
+      </section>
+      <section class="block two-col relate">
+        <div>
+          <h2>How the two parts fit together</h2>
+          <ul>
+            <li><b>Kept apart.</b> The account is built only from the recordings and the sources used to check them; the genealogy is built only from the compiled profiles. Nothing from the genealogy is presented as something Grandpa said, knew or endorsed.</li>
+            <li><b>Linked where they meet.</b> ${linked} people appear in both. Their records are linked, not merged: <span class="xl xl-a">↩ In Grandpa's account</span> leads back to what he said; <span class="xl xl-g">→ In the extended genealogy</span> leads to the compiled profile.</li>
+            <li><b>Disagreements stay visible.</b> Where the two give different dates or versions, both are shown, and the differences are listed on <a href="#/genealogy/differences">Where the sources differ</a>.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Start here</h2>
+          <div class="start-links">
+            <a class="sl sl-a" href="#/story">❝ Read the family story</a>
+            <a class="sl sl-a" href="#/transcript">❝ Read the transcripts</a>
+            <a class="sl sl-a" href="#/tree">❝ Grandpa's family tree</a>
+            <a class="sl sl-g" href="#/genealogy/tree">${SA.GI} The genealogy from 1642</a>
+            <a class="sl sl-g" href="#/genealogy/people">${SA.GI} Browse the profiles</a>
+            <a class="sl sl-g" href="#/genealogy/differences">${SA.GI} Where the sources differ</a>
+          </div>
+        </div>
+      </section>`;
+  };
+
+  // ---------- part one: introduction to Grandpa's account ----------
+  V.account = function (main) {
     const line = SA.lineOfDescent("narrator");
     const counts = [
       ["people", A.people.filter((p) => !p.placeholder).length, "#/people"],
@@ -61,13 +110,13 @@
     main.innerHTML = `
       <section class="hero">
         <div class="hero-text">
-          <p class="kicker">A family archive · from a recorded conversation</p>
-          <h1>The Somervilles of Ardrass, Castle Bellingham &amp; Clermont</h1>
-          <p class="lede">Six generations of a family remembered by Grandpa, who is coming up to 90: a Lord Mayor's baronetcy, a diary kept every evening in the 1820s, a son who fled to Barbados, three generations in the Irish Constabulary, a house at Rathnew, and the Great War. Every claim links to the words he used.</p>
+          <p class="kicker">Part one · the original oral-history project</p>
+          <h1>My Grandfather's Account</h1>
+          <p class="lede">This part preserves Grandpa's account of the Somerville family in his own words: what William Somerville, born in 1937 and coming up to 90, told his grandson in two recorded conversations in October 2026. Six generations remembered: a Lord Mayor's baronetcy, a diary kept every evening in the 1820s, a son who fled to Barbados, three generations in the Irish Constabulary, a house at Rathnew, and the Great War. Every claim links to the words he used.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#/story">Read the family story</a>
             <a class="btn" href="#/tree">Explore the tree</a>
-            <a class="btn" href="#/transcript">Read the transcript</a>
+            <a class="btn" href="#/transcript">Read the transcripts</a>
           </div>
         </div>
         <ol class="descent" aria-label="Line of descent to the narrator">
@@ -75,16 +124,27 @@
         </ol>
       </section>
       <section class="stats">${counts.map(([l, n, href]) => `<a href="${href}"><b>${n}</b><span>${l}</span></a>`).join("")}</section>
+      <section class="block principles">
+        <h2>How his words are treated</h2>
+        <div class="principle-grid">
+          <div><h3>❝ Preserved, not rewritten</h3><p>The transcripts are published complete, and his recollections, opinions and uncertainties are quoted as he said them, with paragraph references. Later research never silently replaces them.</p></div>
+          <div><h3>▤ Checks kept separate</h3><p>Published records, our interpretations and family information are labelled apart from his testimony. Where a record contradicts him, the <a href="#/corrections">Incorrect information</a> page shows both, and his account stays visible wherever it appears.</p></div>
+          <div><h3>${SA.GI} Not the extended genealogy</h3><p>The compiled family profiles are a separate, supplementary collection. Where someone appears in both, the profile is linked, never merged, and labelled as coming from the genealogy, not from him.</p></div>
+        </div>
+      </section>
       <section class="grid-cards">
         ${[
-          ["#/story", "Family story", "Eleven chapters that follow the family from the 1740s to the sale of Clermont, with the wider history alongside."],
+          ["#/story", "Family story", "Twelve chapters that follow the family from the 1740s to the sale of Clermont, with the wider history alongside."],
           ["#/tree", "Family tree", "Interactive chart of the Somervilles and the families they married into. Drag, zoom, and click anyone."],
           ["#/people", "People", "A searchable profile for every identifiable person, with the name variants heard in the recording."],
           ["#/places", "Places", "From Cumry and Castle Bellingham to Trinidad, Archangel and Nanyuki, on a map."],
           ["#/timeline", "Timeline", "Family events and the wider history from 1736 to today, side by side."],
           ["#/glossary", "Glossary", "RIC ranks, militia, dormant titles, local expressions, surnames and nicknames."],
           ["#/questions", "Open questions", "What is uncertain or contradictory, and what to look for next."],
-          ["#/transcript", "Transcript", "The full conversation, annotated with readings of the words the transcription software misheard."],
+          ["#/transcript", "Transcripts", "The complete transcripts of both recordings, annotated with readings of the words the transcription software misheard."],
+          ["#/corrections", "Incorrect information", "Where stronger documents contradict what he said: his words beside the evidence, never replaced by it."],
+          ["#/sources", "Sources and method", "Every external source, how far it was read, and how the evidence is labelled."],
+          ["#/genealogy", "→ Extended genealogy", "Leave the account for the supplementary research: 199 compiled family profiles, many of people he never mentioned."],
         ].map(([h, t, d]) => `<a class="card-link" href="${h}"><h3>${t}</h3><p>${d}</p></a>`).join("")}
       </section>
       <section class="block two-col">
@@ -134,7 +194,7 @@
   V.tree = function (main, tid, params) {
     main.classList.add("full");
     main.innerHTML = `<div class="tree-host"></div>`;
-    SA.mountTree(main.querySelector(".tree-host"), { tree: tid || (params.focus && SA.treeOf(params.focus)) || "somerville", focus: params.focus, view: params.view });
+    SA.mountTree(main.querySelector(".tree-host"), { graph: "account", tree: tid || (params.focus && SA.treeOf(params.focus)) || "somerville", focus: params.focus, view: params.view });
   };
 
   // ---------- people ----------
@@ -142,12 +202,13 @@
     const fams = [...new Set(A.people.map((p) => p.family))];
     main.innerHTML = `
       <header class="page-head"><p class="kicker">Directory</p><h1>People</h1>
-        <p class="lede">${A.people.filter((p) => !p.placeholder).length} named people and ${A.people.filter((p) => p.placeholder).length} placeholders for people we know existed but cannot name. Search by any name, nickname or the way the transcript spelled it.</p></header>
+        <p class="lede">${A.people.filter((p) => !p.placeholder).length} named people and ${A.people.filter((p) => p.placeholder).length} placeholders for people we know existed but cannot name, from Grandpa's account. Search by any name, nickname or the way the transcript spelled it. ${A.people.filter((p) => !SA.inRecordings(p.id)).length} of them are never mentioned in the recordings and are marked as research context; for the wider family, see the <a href="#/genealogy/people">extended genealogy's ${(A.genealogy || { profiles: [] }).profiles.length} profiles</a>.</p></header>
       <div class="filters">
         <input type="search" class="grow" placeholder="Filter by name, nickname or misspelling (e.g. Bellendrum, Bunt, Tete)…" data-f="q" value="${esc(params.q || "")}" aria-label="Filter people" />
         <select data-f="family" aria-label="Family"><option value="">All families</option>${fams.map((f) => `<option value="${f}">${esc(SA.FAMILY[f] || f)}</option>`).join("")}</select>
         <select data-f="cat" aria-label="Category"><option value="">All categories</option>${Object.entries(SA.CATEGORY).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select>
         <select data-f="sort" aria-label="Sort"><option value="gen">Sort by generation</option><option value="az">Sort A–Z</option></select>
+        <select data-f="src" aria-label="In the recordings"><option value="">Everyone</option><option value="rec">Mentioned in the recordings</option><option value="ctx">Research context only (not in the recordings)</option><option value="gen">Also in the extended genealogy</option></select>
         <label class="tog"><input type="checkbox" data-f="ph" checked /> Placeholders</label>
       </div>
       <div class="people-grid" aria-live="polite"></div>`;
@@ -157,15 +218,16 @@
     const gen = (id) => { const ps = SA.parentsOf(id); return ps.length ? 1 + Math.max(...ps.map(gen)) : (SA.partnersOf(id).length ? Math.max(0, ...SA.partnersOf(id).filter((x) => SA.parentsOf(x).length).map((x) => gen(x))) : 0); };
     const birthKey = (p) => { const m = String((p.born && p.born.display) || (p.died && p.died.display) || "").match(/\d{4}/); return m ? +m[0] : 9999; };
     const draw = () => {
-      const q = f("q").value.trim(), fam = f("family").value, cat = f("cat").value, ph = f("ph").checked;
-      let list = A.people.filter((p) => (!fam || p.family === fam) && (!cat || p.category === cat) && (ph || !p.placeholder));
+      const q = f("q").value.trim(), fam = f("family").value, cat = f("cat").value, ph = f("ph").checked, src = f("src").value;
+      let list = A.people.filter((p) => (!fam || p.family === fam) && (!cat || p.category === cat) && (ph || !p.placeholder)
+        && (!src || (src === "rec" ? SA.inRecordings(p.id) : src === "ctx" ? !SA.inRecordings(p.id) : !!SA.genOf[p.id])));
       if (q) { const hits = new Set(SA.search(q, 200).filter((d) => d.type === "person").map((d) => d.id)); list = list.filter((p) => hits.has(p.id)); }
       if (f("sort").value === "az") list.sort((a, b) => a.name.localeCompare(b.name));
       else list.sort((a, b) => gen(a.id) - gen(b.id) || birthKey(a) - birthKey(b) || a.name.localeCompare(b.name));
       grid.innerHTML = list.length ? list.map((p) => {
         const rel = SA.relLabel(p.id);
         return `<a class="person-card fam-${p.family} ${p.placeholder ? "ph" : ""}" href="#/person/${p.id}">
-          <div class="pc-top"><span class="fam">${esc(SA.FAMILY[p.family])}</span>${p.living || p.possiblyLiving ? `<span class="tag">living</span>` : ""}${p.placeholder ? `<span class="tag">placeholder</span>` : ""}</div>
+          <div class="pc-top"><span class="fam">${esc(SA.FAMILY[p.family])}</span>${p.living || p.possiblyLiving ? `<span class="tag">living</span>` : ""}${p.placeholder ? `<span class="tag">placeholder</span>` : ""}${!SA.inRecordings(p.id) ? `<span class="tag tag-ctx" title="Not mentioned in the recordings: included as research context">not in the recordings</span>` : ""}${SA.genOf[p.id] ? `<span class="tag tag-g" title="Also has a compiled profile in the extended genealogy">${SA.GI} genealogy</span>` : ""}</div>
           <h3>${esc(p.name)}</h3>
           <div class="lf">${esc(SA.lifespan(p))}</div>
           ${rel ? `<div class="rel">${esc(rel)}</div>` : ""}
@@ -177,6 +239,26 @@
     main.querySelector(".filters").addEventListener("input", draw);
     draw();
   };
+
+  // Link from an account profile to the same person's compiled profile in the
+  // extended genealogy, with both collections' dates side by side.
+  function genCard(id) {
+    const rec = SA.genOf[id];
+    if (!rec) return "";
+    const g = SA.gen[rec], p = SA.people[id];
+    const diffs = SA.gDiffsFor(rec);
+    const gf = (re) => (g.fields || []).filter((f) => re.test(f.label)).map((f) => `${esc(f.label)}: ${esc(f.value.length > 90 ? f.value.slice(0, 90) + "…" : f.value)}`).join("<br>");
+    const rows = g.privacy === "full" ? [["Born", p.born && p.born.display, gf(/^(birth|born|bapt)/i)], ["Died", p.died && p.died.display, gf(/^(death|died)/i)]].filter((r) => r[1] || r[2]) : [];
+    return `<section class="side-card xcard xcard-g">
+      <div class="xk">${SA.GI} Extended genealogy · supplementary research</div>
+      <h2><a href="#/genealogy/person/${rec}">→ ${esc(g.name)}</a></h2>
+      <p class="small">Record ${esc(rec)} in the compiled family profiles${g.privacy === "full" ? "" : " (name and place in the family only)"}. That profile is a separate source, not something Grandpa said; its claims are labelled as the genealogy's own.</p>
+      ${rows.length ? `<table class="xdates"><thead><tr><th></th><th>❝ This account</th><th>${SA.GI} The profile</th></tr></thead><tbody>${rows.map(([l, a, b]) => `<tr><th>${l}</th><td>${esc(a || "—")}</td><td>${b || "—"}</td></tr>`).join("")}</tbody></table>` : ""}
+      ${diffs.length ? `<p class="small">⚑ ${diffs.map((d) => `<a href="#/genealogy/differences?d=${d.id}">${esc(d.title)}</a>`).join("; ")}</p>` : ""}
+      <a class="btn small-btn xlink-g" href="#/genealogy/person/${rec}">→ In the extended genealogy</a>
+    </section>`;
+  }
+  SA.genCard = genCard;
 
   V.person = function (main, id) {
     const p = SA.people[id];
@@ -203,6 +285,7 @@
           ${(p.aliases || []).length ? `<p class="aka"><span class="lbl">Also known as</span> ${p.aliases.map((a) => `<span class="alias">${esc(a)}</span>`).join(" ")}</p>` : ""}
           ${(p.variants || []).length ? `<p class="aka"><span class="lbl">Heard in the transcript as</span> ${p.variants.map((a) => `<span class="variant">“${esc(a)}”</span>`).join(" ")}</p>` : ""}
           ${p.living || p.possiblyLiving ? `<div class="callout callout-sensitive"><div class="callout-label">Living person</div><p>This person is living or may be living. Only what bears on the family history is recorded.</p></div>` : ""}
+          ${!SA.inRecordings(id) ? `<div class="callout callout-ctx"><div class="callout-label">Not mentioned in the recordings</div><p>No passage of the transcripts is cited for ${esc(p.name)} or found to name them. This entry is research context, added to explain people and events Grandpa did speak of; its facts come from the sources cited, not from him.</p></div>` : ""}
         </header>
         <div class="profile-grid">
           <div class="profile-main prose">
@@ -212,6 +295,7 @@
             ${evidenceSection(`p:${id}`, p.name)}
           </div>
           <aside class="profile-side">
+            ${genCard(id)}
             <section class="side-card family-card">
               <h2>Family</h2>
               <h3>Parents</h3><div class="pchips">${parents.map((x) => personChip(x)).join("") || "<span class='muted small'>Not recorded</span>"}${parents.length && p.parentConf && p.parentConf !== "high" ? `<div class="small">${SA.badge("inferred", p.parentConf)} parentage</div>` : ""}</div>
@@ -626,7 +710,8 @@
     sourceUse = sourceUse || computeSourceUse();
     const t = A.transcripts[0];
     main.innerHTML = `
-      <header class="page-head"><p class="kicker">Evidence</p><h1>Sources and method</h1></header>
+      <header class="page-head"><p class="kicker">Evidence · Grandpa's account</p><h1>Sources and method</h1>
+        <p class="lede">The transcripts of the recordings, and the outside sources used to explain and check Grandpa's account. The compiled family profiles of the extended genealogy are described separately, under <a href="#/genealogy/sources">Genealogy sources and notes</a>.</p></header>
       <div class="two-col block">
         <section class="prose">
           <h2>The primary sources</h2>
@@ -657,7 +742,8 @@
   };
 
   // ---------- search ----------
-  const TYPE_NAMES = { person: "People", place: "Places", term: "Glossary", event: "Timeline", chapter: "Story", question: "Open questions", correction: "Incorrect information", source: "Sources", passage: "Transcript passages" };
+  const TYPE_NAMES = { person: "People", place: "Places", term: "Glossary", event: "Timeline", chapter: "Story", question: "Open questions", correction: "Incorrect information", source: "Sources", passage: "Transcript passages", gprofile: "Compiled profiles", gdiff: "Where the sources differ" };
+  const TYPE_PART = (t) => (t.startsWith("g") && t !== "gdiff" ? "genealogy" : t === "gdiff" ? "genealogy" : "account");
   V.search = function (main, params) {
     const q = params.q || "";
     const res = SA.search(q, 200);
@@ -666,40 +752,55 @@
     main.innerHTML = `
       <header class="page-head"><p class="kicker">Search</p><h1>${q ? `Results for “${esc(q)}”` : "Search the archive"}</h1>
         <form class="search-big" role="search"><input type="search" name="q" value="${esc(q)}" placeholder="Name, place, word or phrase… misspellings welcome" aria-label="Search" /><button class="btn primary">Search</button></form>
-        ${q ? `<p class="muted">${res.length} results. The search matches names, nicknames, the transcript's misspellings and near-misses.</p>` : ""}</header>
-      ${Object.keys(TYPE_NAMES).filter((t) => groups[t]).map((t) => `
+        ${q ? `<p class="muted">${res.length} results from both parts of the archive, shown separately. The search matches names, nicknames, the transcript's misspellings and near-misses.</p>` : ""}</header>
+      ${["account", "genealogy"].map((part) => {
+        const ts = Object.keys(TYPE_NAMES).filter((t) => groups[t] && TYPE_PART(t) === part);
+        if (!ts.length) return "";
+        return `<div class="results-part rp-${part}"><h2 class="rp-h">${part === "account" ? `<span aria-hidden="true">❝</span> In Grandpa's account` : `${SA.GI} In the extended genealogy`}</h2>` + ts.map((t) => `
         <section class="block results"><h2>${TYPE_NAMES[t]} <span class="count">${groups[t].length}</span></h2>
-          <ul>${groups[t].slice(0, t === "passage" ? 40 : 20).map((d) => `<li><a href="${d.href}"><b>${esc(d.title)}</b>${d.sub ? ` <span class="muted">${esc(d.sub)}</span>` : ""}</a><div class="snip">${SA.snippet(SA.docText(d), q)}</div></li>`).join("")}</ul></section>`).join("") || (q ? `<p class="empty">Nothing found. Try another spelling or a shorter word.</p>` : "")}`;
+          <ul>${groups[t].slice(0, t === "passage" ? 40 : 20).map((d) => `<li><a href="${d.href}"><b>${esc(d.title)}</b>${d.sub ? ` <span class="muted">${esc(d.sub)}</span>` : ""}</a><div class="snip">${SA.snippet(SA.docText(d), q)}</div></li>`).join("")}</ul></section>`).join("") + `</div>`;
+      }).join("") || (q ? `<p class="empty">Nothing found. Try another spelling or a shorter word.</p>` : "")}`;
     main.querySelector("form").addEventListener("submit", (e) => { e.preventDefault(); location.hash = `#/search?q=${encodeURIComponent(e.target.q.value)}`; });
     if (!q) main.querySelector("input").focus();
   };
 
   // ---------- about ----------
   V.about = function (main) {
+    const G = A.genealogy || { profiles: [] };
     main.innerHTML = `
       <article class="profile narrow prose">
         <header class="profile-head"><p class="kicker">About</p><h1>About this archive</h1></header>
-        <p class="lede">This site preserves a recorded conversation in which Grandpa, William Somerville (born 1937), told his grandson Gergely what he knows about the Somerville family, organised so that people now and later can explore it, check it and add to it.</p>
-        <h2>What is here</h2>
+        <p class="lede">This site preserves a recorded conversation in which Grandpa, William Somerville (born 1937), told his grandson Gergely what he knows about the Somerville family, and sets beside it, separately, a wider genealogy of the family compiled from family profiles. It is organised so that people now and later can explore it, check it and add to it.</p>
+        <h2>Two parts, kept apart</h2>
+        <div class="about-parts">
+          <section class="ap ap-a"><h3><span aria-hidden="true">❝</span> My Grandfather's Account: the original project</h3>
+            <p>Everything built from the recordings: the <a href="#/transcript">transcripts</a>, the <a href="#/story">story</a>, and the <a href="#/people">people</a>, <a href="#/places">places</a>, <a href="#/timeline">timeline</a>, <a href="#/glossary">glossary</a>, <a href="#/tree">tree</a>, <a href="#/questions">open questions</a>, <a href="#/corrections">incorrect information</a> and <a href="#/sources">sources</a> that explain and check it. His words are preserved as he said them; corrections, interpretations and outside facts are labelled and kept apart from his testimony.</p></section>
+          <section class="ap ap-g"><h3>${SA.GI} Extended Somerville Family Genealogy: supplementary research</h3>
+            <p>${G.profiles.length} compiled profiles of the family descending from James Somerville “the Planter”, with the families they married into, from the folder <code>research/David Gilmour amended records</code>: <a href="#/genealogy">overview</a>, <a href="#/genealogy/people">profiles</a>, <a href="#/genealogy/tree">tree</a>, <a href="#/genealogy/differences">where the sources differ</a> and <a href="#/genealogy/sources">sources and notes</a>. They were compiled by others as well as by Grandpa, and are not presented as something he said, knew or endorsed.</p></section>
+        </div>
+        <p>Where a person appears in both parts, the two records are linked rather than merged, and each keeps its own sources and claims. Links are labelled <span class="xl xl-a">↩ In Grandpa's account</span> or <span class="xl xl-g">→ In the extended genealogy</span>, and the two parts have their own colours and headings throughout.</p>
+        <h2>What is in Grandpa's account</h2>
         <ul>
           <li><b>Story</b>: a narrative in twelve chapters, with testimony, interpretation and published history clearly distinguished.</li>
           <li><b>Incorrect information</b>: the places where Grandpa's testimony is contradicted by stronger documentary evidence, with his words, the best-supported conclusion and the sources side by side. It corrects the facts, not the record of what he said.</li>
           <li><b>Tree</b>: the Somervilles and five related families, drawn from structured parent and partner links.</li>
-          <li><b>People, Places, Glossary, Timeline</b>: directories that link to each other and to the transcript.</li>
+          <li><b>People, Places, Glossary, Timeline</b>: directories that link to each other and to the transcript. People he never mentions, added to explain the story, are marked “not in the recordings”.</li>
           <li><b>Open questions</b>: everything uncertain or contradictory, with suggested next steps.</li>
           <li><b>Transcripts</b>: two independent speech-to-text transcripts of the first conversation (A, the original, and B, a companion), with readings of misheard words, links between parallel passages, and a side-by-side <a href="#/compare">comparison</a>; and transcript C, of a second conversation the next day, spent over the family's papers and portraits.</li>
         </ul>
         <h2>Privacy and discretion</h2>
         <p>All three transcripts are published complete, exactly as received (except that a four-digit device PIN spoken in the second recording is replaced by “[PIN removed]”: it is a credential, not family history), and can be downloaded as text files from the transcript pages. Passages of everyday conversation are marked as asides, shown by default, and can be hidden to keep to the history. The narrator, William Somerville, and his immediate family are named, as confirmed by the family in 2026; profiles of living people record their place in the family rather than personal details. Grandpa said of the 1887 Youghal story, “This now is not for publication … use your own discretion, but be careful”; the family has decided to include it. His caution is shown, and the family's account, the parliamentary record and local history are kept separate.</p>
+        <p>The extended genealogy follows the same rule. For living people it shows only the name and place in the family. For people born after 1910 who have died, it shows their years as well, because their profiles describe living relatives. Passages in other profiles that give living people's dates, addresses or contact details are replaced by a visible marker. The photographs filed with the profiles are not published: they are unlabelled and include living children.</p>
         <h2>Limitations</h2>
         <ul>
           <li>All three transcripts are automatic speech-to-text with no speaker labels, and no audio was available to settle their disagreements; some passages are garbled beyond recovery. The second recording has only one transcript, so where it reads a document aloud (the family Bible, for example) a date may be misheard as well as misread; such readings are checked against the printed sources before they are relied on.</li>
           <li>Many dates rest on one person's memory. External checks cover the points listed under Sources; most family details are not yet verified against civil or church records.</li>
+          <li>The extended genealogy is a compilation. Its profiles cite an earlier family pedigree, family papers and some published works, but the archive has not checked them record by record, and a compiled pedigree is not treated as authoritative because it is more detailed.</li>
           <li>Map positions marked “approximate” are best guesses.</li>
-          <li>Search and the tree run in your browser; the map needs an internet connection.</li>
+          <li>Search and the trees run in your browser; the map needs an internet connection.</li>
         </ul>
         <h2>Maintaining the archive</h2>
-        <p>All content lives in plain JSON files in the <code>data/</code> folder (people, places, events, glossary, sources, questions, readings, narrative), and transcripts in <code>transcripts/</code>. After editing, run <code>node scripts/build.mjs</code>, which checks every link and citation and regenerates the site's data file. See the README for details.</p>
+        <p>All content lives in plain JSON files in the <code>data/</code> folder: the account's people, places, events, glossary, sources, questions, readings and narrative; the genealogy's profiles (<code>genealogy.json</code>) and the list of differences between the two (<code>genealogy-differences.json</code>). The transcripts are in <code>transcripts/</code>. After editing, run <code>node scripts/build.mjs</code>, which checks every link and citation and regenerates the site's data file. See the README for details.</p>
       </article>`;
   };
 

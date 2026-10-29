@@ -1,10 +1,33 @@
 # The Somerville Family Archive
 
-An interactive, interconnected family-history archive built from a recorded conversation in which Grandpa, **William Somerville** (born 1937), told his grandson **Gergely Somerville** what he knows about the Somerville family. Two independent speech-to-text transcripts of that recording survive, and a third records a second conversation the next day, spent over the family's papers and portraits. **All three are published complete, exactly as received** (except a device PIN spoken aloud, which is masked), including the everyday conversation around the history; the archive cites them all and lets you compare the first two side by side. It turns those imperfect transcripts into something future generations can explore, check and extend:
+An interactive family-history archive in **two clearly separate parts**:
+
+1. **My Grandfather's Account: the original project.** A recorded conversation in which Grandpa, **William Somerville** (born 1937), told his grandson **Gergely Somerville** what he knows about the Somerville family, and a second conversation the next day over the family's papers. Everything in this part is built from those recordings and the sources used to explain and check them. His words, opinions, recollections and uncertainties are preserved and never rewritten to fit later research; corrections, interpretations and outside facts are labelled and kept apart from his testimony.
+2. **Extended Somerville Family Genealogy: supplementary research.** 199 compiled profiles of the family descending from James Somerville “the Planter” (d. 1642), identified in family tradition as the first Somerville to come to Ireland, with the families they married into. They come from the folder `research/David Gilmour amended records`: profiles begun by a cousin, David Gilmour, and amended by Grandpa and others. They include many people and branches Grandpa never discussed, and are not presented as anything he said, knew or endorsed.
+
+Every page belongs to one part or the other (or, for the home, search and about pages, to both), and says so: a section tab in the header, the part's own pages in the second header row, a coloured banner across the top of every page (burgundy ❝ for the account, teal with a branch motif for the genealogy), and matching colours on cards, profiles and trees. Where a person appears in both parts the two records are **linked, not merged**: each keeps its own sources and claims, and the links are labelled *↩ In Grandpa's account* or *→ In the extended genealogy*.
+
+### Where each kind of content lives
+
+| Content | Part | Where |
+|---|---|---|
+| The transcripts of both recordings (complete), readings of misheard words, A/B comparison | Account | `#/transcript`, `#/compare`; `transcripts/` |
+| Story chapters, people, places, timeline, glossary, Grandpa's family tree | Account | `#/story`, `#/people`, `#/places`, `#/timeline`, `#/glossary`, `#/tree`; `data/*.json` |
+| Open questions, Incorrect information (his words beside stronger evidence), sources and method | Account | `#/questions`, `#/corrections`, `#/sources` |
+| Research reports on the account (GEDCOM evidence audit, transcript C review) | Account | `research/*.md`, `research/*.csv` |
+| People in the account never mentioned in the recordings (added as research context) | Account, flagged | marked *not in the recordings* on their profiles and in the People filter |
+| The compiled family profiles, with Grandpa's and others' amendments marked | Genealogy | `#/genealogy/people`, `#/genealogy/person/<record>`; `data/genealogy.json` |
+| Branches, the tree from 1642, by branch | Genealogy | `#/genealogy`, `#/genealogy/tree` |
+| Where the account and the profiles disagree (both kept) | Genealogy | `#/genealogy/differences`; `data/genealogy-differences.json` |
+| Provenance, contributors, what the profiles cite, how the text was prepared, privacy | Genealogy | `#/genealogy/sources` |
+| The original Word files, earlier packaged versions, the unpublished photographs | Genealogy (source) | `research/David Gilmour amended records/` |
+| Home, search (results grouped by part), about and privacy | Both | `#/`, `#/search`, `#/about` |
+
+### Part one: My Grandfather's Account
 
 - **Story**: a 12-chapter historical narrative, from the 1748 baronetcy to the sale of Clermont, with family testimony, our interpretations and published history visibly distinguished.
 - **Family tree**: an interactive SVG chart (pan, zoom, pinch, collapse branches, click for details) of the Somervilles and related families (Bellingham, Clinch, Johnson, Truell, O'Connor and others), with the narrator's line of descent highlighted, plus an accessible outline view.
-- **People**: 106 profiles, including the narrator's own immediate family, including a few placeholders for people known to exist but not named. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
+- **People**: 106 profiles, including the narrator's own immediate family, including a few placeholders for people known to exist but not named. Eleven are never cited from or named in the transcripts; they are research context and are marked *not in the recordings*. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
 - **Places**: 83 places on a map (Leaflet/OpenStreetMap), from Cumry and Castle Bellingham to Trinidad, Archangel and Nanyuki, including the ten different birthplaces of Captain William's children.
 - **Timeline**: 105 events, with family events and wider history side by side, grouped by era.
 - **Glossary**: 79 terms covering RIC ranks, militia, heraldry, dormant titles, expressions, surnames and nicknames.
@@ -14,6 +37,18 @@ An interactive, interconnected family-history archive built from a recorded conv
 - **Sources**: 97 sources, including the family's printed pedigree of 1897 and private family material (the Ancestry tree, the family Bible, the 1924 confirmation of arms and other documents shown in the second recording: cited, never published, never described as inspected), each marked as read directly, partly read, known only from a search result, or private, with the date checked.
 - **Incorrect information**: a separate tab (`#/corrections`) listing the 14 places where Grandpa's testimony is contradicted by stronger documentary evidence. Each entry shows his words with transcript references, the best-supported conclusion, why they differ, and the evidence: primary or secondary, with links, and whether it was read directly. It corrects the factual claim, not the record of what he said, and marks entries as *Corrected* (7) or *Probably incorrect* (7).
 - **Search**: one search box over everything, including transcript misspellings and near-misses (try *bellendrum*, *Bunt*, *Tete*, *Whitflow*, *Gualter*).
+
+### Part two: Extended Somerville Family Genealogy
+
+- **Profiles** (`#/genealogy/people`): 199 compiled profiles, by record number (0501–0696), in six branches: the first generations in Ireland; the senior line (the baronets and Lords Athlumney); Sir James's other children; Major William of Ardrass and Captain William; Corry Somerville's North American descendants; and Tenison Alan's descendants, the Clermont line, which is Grandpa's own. Filters show who is also in Grandpa's account (65 people) and who is only in the genealogy.
+- **Profile pages** show the profile's opening lines and vital fields as written, then the full text. Tracked changes in the Word files are kept: additions recorded as by “William Somerville” in 2021–22 (Grandpa's amendments: 221 inserted passages in the published profiles) and by an editor recorded only as “7” in 2011–12 (1,146) can be highlighted, and deleted text can be shown. A side card links to the same person in the account, with both collections' dates side by side. Archive notes, always labelled as ours, record doubtful parentage (James Richard, 0603), duplicated or missing records and name mismatches. A second profile of Lucinda Simonton by Wendy Stevenson is shown beside the compiled one.
+- **Tree** (`#/genealogy/tree`): the whole family from James the Planter, or one branch at a time, with Grandpa's line highlighted, people who are also in the account marked, and doubtful links dotted.
+- **Where the sources differ** (`#/genealogy/differences`): 15 disagreements between the account and the profiles (or within the profiles), each with both versions and what would settle it, for example Captain William's baptism (11 or 14 March 1776), Corry's death (1879 or 1880) and his marriage (May or September 1834), Honor Johnson's birth year, Erina's birth, and the two traditions of the Planter's origin. A compiled pedigree is not treated as authoritative because it has more detail, and nothing in the genealogy is used to correct what Grandpa said; that remains the job of *Incorrect information*, with documentary evidence.
+- **Sources and notes** (`#/genealogy/sources`): the files and their versions, the compilers and contributors, what the profiles cite (the *Somerville Index* pedigree, the family's “SR” records, the *Visitation of Ireland*, published works), how the text was prepared, and what is withheld.
+
+**Privacy.** The genealogy follows the archive's rule that living people are recorded only by their place in the family. For the 10 living people it shows only the name and family links; for the 5 people born after 1910 who have died, only the name, years and family links, because their profiles describe living relatives. In other profiles, 27 paragraphs that give living people's dates, addresses or children are replaced by a visible “[omitted: details of living people]” marker, and e-mail addresses are removed. The 53 photographs in `Pictures/` are not published: they are unlabelled and include living children. The build and the repository check both enforce these rules.
+
+**Regenerating it.** `data/genealogy.json` is generated from the Word files by `python3 scripts/import-genealogy.py` (needs LibreOffice; `--check` compares without writing). The editorial tables at the top of that script hold the archive's own judgements: the links to account people, links the profiles state only by name, doubtful parentage, notes, and the privacy omissions, each pinned to a fingerprint of the paragraph so that an edited profile stops the import until it is reviewed. `data/genealogy-differences.json` is kept by hand; its `account` text uses the account's markup and citations.
 
 ## Running it
 
@@ -71,7 +106,8 @@ index.html                  the single-page app shell
 assets/css/app.css          styles (light and dark themes, responsive)
 assets/js/core.js           indexes, markup renderer, relationships, search
 assets/js/tree.js           family-tree layout and interaction
-assets/js/views.js          page views
+assets/js/views.js          page views of the account, home, search and about
+assets/js/genealogy.js      page views of the extended genealogy
 assets/js/app.js            router, header search, popovers, theme
 assets/js/archive-data.js   GENERATED bundle of data + transcript (do not edit)
 data/people.json            people: parents, spouses, dates, facts, biography
@@ -83,6 +119,8 @@ data/questions.json         unresolved questions and research leads
 data/readings.json          interpretations of misheard phrases in the transcript
 data/narrative.json         story chapters
 data/corrections.json       "Incorrect information": testimony contradicted by stronger evidence
+data/genealogy.json         GENERATED part two: the compiled profiles (from scripts/import-genealogy.py)
+data/genealogy-differences.json  part two: where the account and the profiles disagree (kept by hand)
 transcripts/transcripts.json  transcript manifest (id, role, file, sha256 of the original, aside ranges)
 transcripts/interview-01.txt            transcript A, complete, byte-for-byte as received
 transcripts/interview-01-companion.txt  transcript B, complete, byte-for-byte as received
@@ -91,9 +129,11 @@ transcripts/alignment.json  GENERATED A↔B paragraph alignment
 scripts/build.mjs           validator + bundler (+ quotation checker)
 scripts/align.py            regenerates the A↔B alignment
 scripts/build-apk.sh        builds the Android app (see Android app)
-scripts/repo-check.mjs      final check: no credentials, transcripts complete and fully bundled
+scripts/repo-check.mjs      final check: no credentials, transcripts complete and fully bundled, genealogy privacy
+scripts/import-genealogy.py regenerates data/genealogy.json from the Word profiles
 android/                    Android app shell (manifest, WebView activity, icons)
-research/                   evidence-audit reports and registers (evidence-audit-2026-10, transcript-c-review-2026-10)
+research/                   evidence-audit reports and registers (evidence-audit-2026-10, transcript-c-review-2026-10, genealogy-reorganisation-2026-10)
+research/David Gilmour amended records/  the compiled profiles as received (source of part two)
 tests/smoke.cjs             headless browser smoke test (Playwright)
 ```
 
@@ -134,9 +174,10 @@ The build rejects an entry with no citation, no evidence beyond context, or only
 
 1. no committed file contains credentials (API keys, access tokens, private keys, password assignments, a PIN spoken aloud). Family history, names and anecdotes are not treated as secrets;
 2. each transcript matches the sha256 recorded in `transcripts/transcripts.json`, carries no redaction marker, and has any masked credential in place;
-3. every paragraph of all three transcripts appears, unaltered, in the committed bundle the site loads.
+3. every paragraph of all three transcripts appears, unaltered, in the committed bundle the site loads;
+4. the extended genealogy in that bundle shows living people (and people born after 1910) by name and place in the family only, and contains no e-mail addresses.
 
-`tests/smoke.cjs` additionally opens the transcript and compare pages in a browser and checks that previously withheld passages are visible, that transcript C shows the PIN masked, and that `C¶` citations render.
+`tests/smoke.cjs` additionally opens every view of both parts in a browser at desktop and phone width, and checks that previously withheld passages are visible, that transcript C shows the PIN masked, that `C¶` citations render, that every page carries its part's banner and labelled cross-links, and that the genealogy shows no withheld details of living people.
 
 ## Key findings from checking the testimony
 

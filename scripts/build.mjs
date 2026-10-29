@@ -34,6 +34,11 @@ const data = {
   narrative: readJSON("data/narrative.json"),
   corrections: readJSON("data/corrections.json"),
 };
+// Part two, the extended genealogy: compiled profiles (generated from the
+// files in research/David Gilmour amended records) and the hand-kept list of
+// differences between them and Grandpa's account.
+const genealogy = readJSON("data/genealogy.json");
+const gdiff = readJSON("data/genealogy-differences.json");
 const manifest = readJSON("transcripts/transcripts.json");
 const alignment = fs.existsSync(path.join(root, "transcripts/alignment.json")) ? readJSON("transcripts/alignment.json") : null;
 const QUOTE_REPORT = args.has("--quotes");
@@ -92,7 +97,7 @@ const ids = {};
 for (const [kind, list, key] of [
   ["p", data.people, "id"], ["pl", data.places, "id"], ["e", data.events, "id"],
   ["t", data.glossary, "id"], ["s", data.sources, "id"], ["qn", data.questions, "id"],
-  ["ch", data.narrative, "id"], ["ic", data.corrections, "id"],
+  ["ch", data.narrative, "id"], ["ic", data.corrections, "id"], ["g", genealogy.profiles, "id"], ["gd", gdiff, "id"],
 ]) {
   ids[kind] = new Set();
   for (const item of list) {
@@ -112,7 +117,7 @@ function addBackref(keys, owner) {
     backrefs.get(k).add(owner);
   }
 }
-const TOKEN = /\{(p|pl|t|e|s|qn|ch|q):([^}|]+)(?:\|([^}]*))?\}/g;
+const TOKEN = /\{(p|pl|t|e|s|qn|ch|q|g):([^}|]+)(?:\|([^}]*))?\}/g;
 function checkMarkup(str, ctx, owner) {
   if (typeof str !== "string") return;
   const stripped = str.replace(/^\{(ctx|int|sensitive)\}/, "");
@@ -231,6 +236,33 @@ for (const c of data.corrections) {
   if (!(c.evidence || []).some((ev) => ev.kind !== "context")) err(`${ctx}: needs evidence beyond context`);
   for (const k of ["said", "conclusion", "explanation", "remaining", "alsoSaid", "hedge"]) checkMarkup(c[k], `${ctx} ${k}`, owner);
 }
+// ---------- extended genealogy ----------
+const branchIds = new Set((genealogy.branches || []).map((b) => b.id));
+for (const b of genealogy.branches || []) if (!has("g", b.head)) err(`genealogy branch ${b.id}: unknown head ${b.head}`);
+const ownText = (p) => JSON.stringify([p.header || [], p.fields || [], p.paras || [], p.life || {}]);
+for (const p of genealogy.profiles) {
+  const ctx = `genealogy ${p.id}`;
+  if (!branchIds.has(p.branch)) err(`${ctx}: unknown branch ${p.branch}`);
+  for (const x of [...(p.parents || []), ...(p.spouses || [])]) if (!has("g", x)) err(`${ctx}: unknown relative ${x}`);
+  if ((p.parents || []).length > 2) err(`${ctx}: more than two parents`);
+  if (p.archive && !has("p", p.archive)) err(`${ctx}: unknown account person ${p.archive}`);
+  if (!["full", "modern", "living"].includes(p.privacy)) err(`${ctx}: privacy must be full | modern | living`);
+  // living people: name and place in the family only
+  if (p.privacy === "living" && (p.header || p.fields || p.paras || p.life || p.alt)) err(`${ctx}: a living person's profile must carry no dates, places or text`);
+  if (p.privacy === "modern" && (p.header || p.fields || p.paras || p.alt)) err(`${ctx}: only the years of a recent profile are published`);
+  if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(ownText(p))) err(`${ctx}: contains an e-mail address`);
+  if (!/^research\/David Gilmour amended records\//.test(p.file || "") || !fs.existsSync(path.join(root, p.file))) err(`${ctx}: source file ${p.file} not found`);
+}
+const linkedTwice = Object.entries(genealogy.profiles.reduce((m, p) => { if (p.archive) (m[p.archive] = m[p.archive] || []).push(p.id); return m; }, {})).filter(([, v]) => v.length > 1);
+for (const [pid, recs] of linkedTwice) err(`account person ${pid} is linked from several genealogy profiles: ${recs.join(", ")}`);
+for (const d of gdiff) {
+  const ctx = `genealogy difference ${d.id}`, owner = `gd:${d.id}`;
+  if (!(d.profiles || []).length) err(`${ctx}: names no profile`);
+  for (const x of d.profiles || []) if (!has("g", x)) err(`${ctx}: unknown profile ${x}`);
+  for (const x of d.people || []) if (!has("p", x)) err(`${ctx}: unknown account person ${x}`);
+  for (const k of ["account", "genealogy", "note"]) { if (!d[k]) err(`${ctx}: missing ${k}`); checkMarkup(d[k], `${ctx} ${k}`, owner); }
+}
+
 // ---------- narrative ----------
 for (const ch of data.narrative) {
   const ctx = `chapter ${ch.id}`, owner = `ch:${ch.id}`;
@@ -323,7 +355,7 @@ const scan = (obj, ctx) => {
   if (Array.isArray(obj)) return obj.forEach((x, i) => scan(x, ctx));
   if (obj && typeof obj === "object") for (const [k, v] of Object.entries(obj)) if (!["cite", "src", "id", "url"].includes(k)) scan(v, ctx);
 };
-for (const [kind, list] of Object.entries({ people: data.people, places: data.places, events: data.events, glossary: data.glossary, questions: data.questions, narrative: data.narrative, corrections: data.corrections }))
+for (const [kind, list] of Object.entries({ people: data.people, places: data.places, events: data.events, glossary: data.glossary, questions: data.questions, narrative: data.narrative, corrections: data.corrections, "genealogy-differences": gdiff }))
   for (const item of list) scan(item, `${kind}/${item.id}`);
 if (QUOTE_REPORT) for (const q of quoteIssues) console.warn(`⚠ quote ${q}`);
 else if (quoteIssues.length) warn(`${quoteIssues.length} quotation(s) with weak overlap with their cited passages (run with --quotes to list)`);
@@ -346,9 +378,10 @@ const refs = {};
 for (const [k, set] of backrefs) refs[k] = [...set].sort();
 const counts = Object.fromEntries(Object.entries(data).map(([k, v]) => [k, v.length]));
 console.log(`✓ Data valid: ${Object.entries(counts).map(([k, v]) => `${v} ${k}`).join(", ")}; ${transcripts.reduce((a, t) => a + t.lines.length, 0)} transcript passages; ${backrefs.size} cited passages.`);
+console.log(`✓ Extended genealogy valid: ${genealogy.profiles.length} profiles in ${branchIds.size} branches (${genealogy.profiles.filter((p) => p.archive).length} linked to the account; ${genealogy.profiles.filter((p) => p.privacy !== "full").length} shown by name only); ${gdiff.length} differences.`);
 if (CHECK_ONLY) process.exit(0);
 
-const bundle = { ...data, transcripts, alignment, refs, mentions };
+const bundle = { ...data, genealogy, gdiff, transcripts, alignment, refs, mentions };
 const js = `/* Generated by scripts/build.mjs from data/*.json and transcripts/. Do not edit by hand. */\nwindow.ARCHIVE = ${JSON.stringify(bundle)};\n`;
 
 fs.writeFileSync(path.join(root, "assets/js/archive-data.js"), js);

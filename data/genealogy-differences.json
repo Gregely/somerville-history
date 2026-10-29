@@ -1,0 +1,137 @@
+[
+ {
+  "id": "gd-captain-william-baptism",
+  "title": "Captain William Somerville's baptism",
+  "profiles": ["0563"],
+  "people": ["captain-william-somerville"],
+  "account": "Born 7 March 1776 and baptised at St Thomas', Dublin, on 11 March, as the family's printed pedigree of 1897 records {s:visitation-1897}. In the recordings Grandpa gave the year as \"1777, I think\" {q:62}, and read \"the 7th of March, 1778\" from the family Bible {q:T3:28}.",
+  "genealogy": "\"Birth: 7 Mar 1776\"; \"Bapt: 14 Mar 1776, St Thomas’ Church, Dublin\".",
+  "note": "Both give the same day of birth. They disagree on the day of baptism: 11 March in the 1897 pedigree, 14 March in the compiled profile. The parish register of St Thomas' has not been checked."
+ },
+ {
+  "id": "gd-corry-death",
+  "title": "When Corry Somerville died",
+  "profiles": ["0586"],
+  "people": ["corry-somerville"],
+  "account": "The 1897 pedigree gives 20 January 1879, \"in America\" {s:visitation-1897}; a compiled online genealogy gives 12 January 1880, at Cleveland, Ohio {s:winters-p67}.",
+  "genealogy": "\"Death: 12th January 1879 at Cleveland, Ohio\"; \"Buried: Woodland Cemetery, Cleveland. Burial recorded as Conrad Sommerville\". His profile also quotes his obituary and family letters.",
+  "note": "Three versions: the profile agrees with the 1897 pedigree on the year and with the online genealogy on the day and place. None of the three has been checked against the cemetery record."
+ },
+ {
+  "id": "gd-corry-marriage",
+  "title": "When and where Corry married Lucinda Simonton",
+  "profiles": ["0586", "0587"],
+  "people": ["corry-somerville", "lucinda-simmonton"],
+  "account": "Grandpa said that Corry married Lucinda in Dublin before they emigrated {q:T3:178-180}; the archive gives the date as 16 May 1834, from a compiled genealogy {s:winters-p67}.",
+  "genealogy": "Lucinda's profile: \"(2) 16th Sept. 1834 Corry Somerville (0586); ceremony performed by Rev JGF Schulze of the Lutheran Church, Poolbeg St., Dublin.\" Corry's profile describes the search: no marriage in the Irish family Bible; 1834 in the \"Canadian edition\" of the family Bible; 1830 in the pedigree Corry left in Dublin in 1874; and finally the entry for 16 September 1834 in Schulze's register, found by WBRBS (Grandpa).",
+  "note": "The profile and the account agree that the marriage took place in Dublin shortly before the emigration in 1834; they disagree on the month. The profile's own text keeps the earlier versions (1830, 1834) visible. The Schulze register has not been inspected for this archive."
+ },
+ {
+  "id": "gd-ba-death",
+  "title": "The day Bellingham Arthur Somerville died",
+  "profiles": ["0631"],
+  "people": ["bellingham-arthur-somerville"],
+  "account": "Died at Clermont in January 1916, on the 20th according to a compiled genealogy citing The Times {s:winters-p68}.",
+  "genealogy": "\"Death: 16 Jan 1916 at Clermont, Rathnew, Co Wicklow.\"",
+  "note": "Same month, year and place; the day differs (20 or 16 January). A death notice of the 20th could report a death some days earlier, but neither the notice nor the civil register has been checked."
+ },
+ {
+  "id": "gd-erina",
+  "title": "Erina Somerville's birth and death",
+  "profiles": ["0634A"],
+  "people": ["erina-somerville"],
+  "account": "Born 30 July 1852 in Dublin, according to the 1897 pedigree {s:visitation-1897}; died 22 January 1927 at Doncaster, according to the family's Ancestry tree {s:family-tree-2026}.",
+  "genealogy": "\"Birth: 30 August 1851 at North Summer St., Dublin\"; \"Bapt: 14 January, 1852 at St George’s Church, Dublin\"; \"Death: 23 Jan 1927 Kirk Bramwith Rectory\".",
+  "note": "The profile's baptism in January 1852 cannot follow a birth in July 1852, so the two collections cannot both be right about her birth; neither the baptismal register nor the death register has been checked. Kirk Bramwith, where her husband was rector, is near Doncaster."
+ },
+ {
+  "id": "gd-honor-birth",
+  "title": "Honor Johnson's year of birth and surname",
+  "profiles": ["0673", "0674"],
+  "people": ["honor-johnson", "rector-johnson"],
+  "account": "Born 27 June 1903 in Dublin, according to the family's Ancestry tree, which cites the 1911 and 1926 censuses {s:family-tree-2026}. The account spells the family name Johnson.",
+  "genealogy": "\"Birth: 27 June 1902, Portobello House, Dublin\". Her surname, and her father's, were first typed \"Johnston\" and changed to \"Johnson\" in tracked revisions of August 2011 by the editor recorded only as “7”.",
+  "note": "Same day and month, a year apart. The census returns cited by the family tree would settle it; they have not been inspected."
+ },
+ {
+  "id": "gd-dorothy-death",
+  "title": "The day Dorothy Somerville died",
+  "profiles": ["0677"],
+  "people": ["dorothy-somerville"],
+  "account": "6 March 1895, at Seaview House, Wicklow, in the 1897 pedigree and the family tree; a compiled genealogy citing The Times gives 5 March {s:visitation-1897} {s:winters-p68}.",
+  "genealogy": "\"Death: 5 Mar 1895, at Sea View, Wicklow\".",
+  "note": "The profile agrees with the compiled genealogy rather than the printed pedigree."
+ },
+ {
+  "id": "gd-eliza-oconnor-birth",
+  "title": "Eliza O'Connor's year of birth",
+  "profiles": ["0592"],
+  "people": ["eliza-oconnor"],
+  "account": "21 June 1819 in the 1897 pedigree, supplied by her son {s:visitation-1897}; 21 June 1815 in the family tree {s:family-tree-2026}. Grandpa thought she died \"about 1895\" {q:T2:88}.",
+  "genealogy": "\"Birth: 21 June 1816\"; \"Death: 31 Dec 1898\"; \"Burial: 4 Jan 1899 Mt Jerome Cemetery, Dublin\".",
+  "note": "A third year for the same day and month. The profile's death date agrees with the family tree."
+ },
+ {
+  "id": "gd-3rd-baronet",
+  "title": "Sir James Quaile Somerville's dates",
+  "profiles": ["0553"],
+  "people": ["james-quaile-somerville-3bt"],
+  "account": "c. 1742 – c. 1800, from a published list of the baronets {s:wp-athlumney}.",
+  "genealogy": "\"Birth: abt 1729\"; \"Death: 19 July 1797, aged 68\".",
+  "note": "The profile gives an exact date of death, with an age that implies the birth year it gives; its source is not stated beyond the Somerville Index."
+ },
+ {
+  "id": "gd-1st-baron-birth",
+  "title": "Lord Athlumney's year of birth",
+  "profiles": ["0598"],
+  "people": ["william-meredyth-somerville"],
+  "account": "1802, from published biographies {s:wp-1st-baron}.",
+  "genealogy": "\"Birth: 13 Jun 1803\". The same profile quotes the Oxford Dictionary of National Biography entry, which gives \"(1802–1873)\".",
+  "note": "The profile contains both years: its vital field says 1803, and the extract it quotes says 1802."
+ },
+ {
+  "id": "gd-clinch",
+  "title": "William Clinch's birth and death",
+  "profiles": ["0633"],
+  "people": ["mr-clinch"],
+  "account": "Born c. 1821, according to a compiled genealogy {s:winters-p68}; buried at St Mary's, Witney, on 8 August 1891, according to the family tree {s:family-tree-2026}.",
+  "genealogy": "\"Birth: 13th April 1820\"; \"Baptised: 10th May 1820\"; \"Death: 5th August 1891 at The Elms.\"",
+  "note": "Consistent with each other: the profile is more exact, a year earlier for the birth, and a death three days before the burial in the account."
+ },
+ {
+  "id": "gd-juanita",
+  "title": "Whether Juanita Somerville is living",
+  "profiles": ["0689"],
+  "people": ["juanita"],
+  "account": "The archive treats Grandpa's sister Juanita, born in Kenya in 1932 {q:508}, as possibly living, because the recordings do not say otherwise.",
+  "genealogy": "Her profile records her death in 2007. The genealogy shows only her name, years and place in the family, as it does for everyone born after 1910.",
+  "note": "The account's \"possibly living\" is the archive's own caution, not something Grandpa said, and it has been left as it is; the compiled profile is the only source for her death."
+ },
+ {
+  "id": "gd-james-richard",
+  "title": "Whose son was James Richard Somerville?",
+  "profiles": ["0603", "0563", "0564"],
+  "people": ["captain-william-somerville", "eliza-bellingham"],
+  "account": "The account lists Captain William's and Eliza's children from the family Bible and the 1897 pedigree; no James Richard is among them.",
+  "genealogy": "James Richard's profile begins \"Son of William Somerville (0563) and Elizabeth Bellingham (0564)\" and gives his birth as \"about 1803–1804\"; it is filed with the senior line, and his children's profiles follow those of Sir Marcus Somerville's family.",
+  "note": "Their sons Archibald James (born May 1803) and John Churchill (born December 1804) leave little room for another son born about 1803–4. The genealogy shows the parentage as stated, with a dashed line, and does not choose another."
+ },
+ {
+  "id": "gd-planter-origin",
+  "title": "Where James “the Planter” came from",
+  "profiles": ["0501"],
+  "people": [],
+  "account": "Grandpa's account begins with Sir James Somerville, 1st Baronet. In the second recording he showed his profile of \"the first man to come to Ireland\", which \"says where it is believed he came from\" {q:T3:152}.",
+  "genealogy": "The Planter's profile gives two traditions: that he was a natural son of James Somerville, 4th Baron of Cambusnethan (“Velvet Eye”), citing the Memorie of the Somervilles; and \"another theory\", that he descended from Hugh, 5th Lord Somerville.",
+  "note": "Both theories are kept in the profile, and neither is established. The archive has not checked the Memorie of the Somervilles."
+ },
+ {
+  "id": "gd-william-bellingham-marriage",
+  "title": "When Corry's son William Bellingham married",
+  "profiles": ["0613", "0586"],
+  "people": ["corry-son-william"],
+  "account": "The account records that he died without children, so that Corry's male line ended {q:T3:179}.",
+  "genealogy": "His profile: \"Marriage: 1 Aug 1868 Amanthus Buckner\". His father's profile, quoting the pedigree Corry sent to Dublin in 1874, gives \"1 August 1867\".",
+  "note": "A disagreement within the compiled profiles themselves; both are shown."
+ }
+]
