@@ -25,7 +25,7 @@ Every page belongs to one part or the other (or, for the home, search and about 
 
 ### Part one: My Grandfather's Account
 
-- **Story**: a 12-chapter historical narrative, from the 1748 baronetcy to the sale of Clermont, with family testimony, our interpretations and published history visibly distinguished.
+- **Story**: a 12-chapter historical narrative, from the 1748 baronetcy to the sale of Clermont, with family testimony, our interpretations and published history visibly distinguished. A thirteenth story, **The Dormant Title: a Somerville saga** (`#/story/dormant-title`), is a later synthesis of the whole archive, both parts included, telling the baronetcy from the first baronet to the present claim. It is marked as not Grandpa's own account, labels every claim by the kind of evidence behind it, links his words to the transcripts, and keeps the contradictions. It is written to be presented section by section.
 - **Family tree**: an interactive SVG chart (pan, zoom, pinch, collapse branches, click for details) of the Somervilles and related families (Bellingham, Clinch, Johnson, Truell, O'Connor and others), with the narrator's line of descent highlighted, plus an accessible outline view.
 - **People**: 106 profiles, including the narrator's own immediate family, including a few placeholders for people known to exist but not named. Eleven are never cited from or named in the transcripts; they are research context and are marked *not in the recordings*. Each gives aliases, the ways the transcript misspelled the name, relationship to the narrator, family links, a fact table with evidence labels, and every supporting transcript passage.
 - **Places**: 83 places on a map (Leaflet/OpenStreetMap), from Cumry and Castle Bellingham to Trinidad, Archangel and Nanyuki, including the ten different birthplaces of Captain William's children.
@@ -135,15 +135,19 @@ android/                    Android app shell (manifest, WebView activity, icons
 research/                   evidence-audit reports and registers (evidence-audit-2026-10, transcript-c-review-2026-10, genealogy-reorganisation-2026-10)
 research/David Gilmour amended records/  the compiled profiles as received (source of part two)
 tests/smoke.cjs             headless browser smoke test (Playwright)
+tests/succession.cjs        the saga's succession argument, worked out from the profiles
 ```
 
 ### Editing and adding material
 
 1. Edit the JSON in `data/`. Text fields support a small markup:
    - `{p:person-id}` or `{p:person-id|label}` for a person link; likewise `{pl:…}` place, `{t:…}` glossary term, `{e:…}` event, `{qn:…}` open question, `{ch:…}` chapter
-   - `{q:142-150}` cites paragraphs of transcript A; `{q:T2:10}` cites transcript B
+   - `{q:142-150}` cites paragraphs of transcript A; `{q:T2:10}` cites transcript B; `{q:T3:71}` transcript C
+   - `{g:0584}` cites a profile of the extended genealogy (shown as ▦ 0584); `{g:0584|Archibald}` links a name to it. `{ic:correction-id}` links an entry in Incorrect information.
+   - `{k:label}` adds an evidence label: `rec` documented, `comp` compiled profile, `mem` Grandpa's recollection, `trad` family tradition, `alleg` allegation, `inf` our inference, `conf` sources conflict. A paragraph `{h}Title` is a section heading within a chapter.
    - `{s:source-id}` cites an external source. Each source has `access` (`direct` | `partial` | `search-only`) and a `checked` date; say in `used` exactly what the source supports.
    - start a paragraph with `{ctx}` (wider history), `{int}` (our interpretation) or `{sensitive}` (handle with discretion) to style it as a labelled box. Used mid-paragraph, the same markers produce an inline labelled note.
+   - a chapter with a `synthesis` field is a later synthesis, not part of Grandpa's account. The field is shown above the chapter with the key to the evidence labels, and must say "not Grandpa's own account". The build requires every paragraph of such a chapter (headings aside) to carry an evidence label or citation.
 2. Facts take `status` (`testimony` | `inferred` | `record` | `conflict`), `conf` (`high` | `medium` | `low`), `cite` (transcript paragraphs) and `src` (source ids).
 3. Run `node scripts/build.mjs`. It checks every cross-reference, citation, parent link and transcript reading, refuses to write the bundle if anything is broken, and otherwise regenerates `assets/js/archive-data.js`. It also checks that quoted words appear in the paragraphs cited for them (or their parallels in the other transcript); `node scripts/build.mjs --check --quotes` lists every doubtful quotation. Then run `node scripts/repo-check.mjs` (see below). CI (`.github/workflows/validate.yml`) runs the same checks and fails if the committed bundle is stale.
 
@@ -177,7 +181,9 @@ The build rejects an entry with no citation, no evidence beyond context, or only
 3. every paragraph of all three transcripts appears, unaltered, in the committed bundle the site loads;
 4. the extended genealogy in that bundle contains no postcodes, postal addresses or e-mail addresses.
 
-`tests/smoke.cjs` additionally opens every view of both parts in a browser at desktop and phone width, and checks that previously withheld passages are visible, that transcript C shows the PIN masked, that `C¶` citations render, that every page carries its part's banner and labelled cross-links, and that living relatives' profiles are shown in full but without addresses.
+`tests/smoke.cjs` additionally opens every view of both parts in a browser at desktop and phone width, and checks that previously withheld passages are visible, that transcript C shows the PIN masked, that `C¶` citations render, that every page carries its part's banner and labelled cross-links, and that living relatives' profiles are shown in full but without addresses. It also checks that the saga is marked as a later synthesis and renders its evidence key, labels, sections and links to all three transcripts.
+
+`node tests/succession.cjs` (also run in CI) checks the succession argued in the saga against the extended genealogy, without restating it. It walks every male line from Sir James, 1st Baronet, in order of seniority, as a baronetcy descends, and finds the first living male. Every line it passes over must be recorded as ending: died young, unmarried, d.s.p., or daughters only. The exceptions are the two lines the saga names as gaps, Warburton and William of Lake, and Archibald James, whose line is the point in dispute. The walk must reach Grandpa, with his sons and grandsons in the order he gave (C¶73–74). The test also checks that every quotation the saga attributes to a profile is found in that profile, and prints the full ranking. It tests the archive's reasoning, not the claim: the Crawford line is not traced in the profiles.
 
 ## Key findings from checking the testimony
 

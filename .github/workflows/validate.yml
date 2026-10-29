@@ -16,3 +16,5 @@ jobs:
           git diff --quiet -- assets/js/archive-data.js || { echo "assets/js/archive-data.js is stale: run node scripts/build.mjs and commit"; exit 1; }
       - name: Check for credentials and confirm the transcripts are complete
         run: node scripts/repo-check.mjs
+      - name: Check the baronetcy succession argued in the saga against the profiles
+        run: node tests/succession.cjs

@@ -166,12 +166,12 @@
   V.story = function (main, id) {
     const chs = A.narrative;
     const ch = id && SA.chapters[id];
-    const toc = `<nav class="toc" aria-label="Chapters"><ol>${chs.map((c, i) => `<li class="${ch && c.id === ch.id ? "cur" : ""}"><a href="#/story/${c.id}"><span class="n">${i + 1}</span><span><b>${esc(c.title)}</b><small>${esc(c.era)}</small></span></a></li>`).join("")}</ol></nav>`;
+    const toc = `<nav class="toc" aria-label="Chapters"><ol>${chs.map((c, i) => `<li class="${ch && c.id === ch.id ? "cur" : ""}${c.synthesis ? " syn" : ""}"><a href="#/story/${c.id}"><span class="n">${c.synthesis ? "✦" : i + 1}</span><span><b>${esc(c.title)}</b><small>${esc(c.era)}</small></span></a></li>`).join("")}</ol></nav>`;
     if (!ch) {
       main.innerHTML = `
         <header class="page-head"><p class="kicker">Historical narrative</p><h1>The family story</h1>
-        <p class="lede">A connected account, built from the conversation and checked against published history. Grandpa's words are quoted with links to the transcript; wider history appears in shaded boxes; our own interpretations are marked.</p></header>
-        <div class="story-index">${chs.map((c, i) => `<a class="chapter-card" href="#/story/${c.id}"><span class="n">${i + 1}</span><div><h3>${esc(c.title)}</h3><p class="era">${esc(c.era)}</p><p>${esc(c.lede)}</p></div></a>`).join("")}</div>`;
+        <p class="lede">A connected account, built from the conversation and checked against published history. Grandpa's words are quoted with links to the transcript; wider history appears in shaded boxes; our own interpretations are marked. The chapters marked ✦ are later syntheses of the whole archive, not part of Grandpa's own account.</p></header>
+        <div class="story-index">${chs.map((c, i) => `<a class="chapter-card${c.synthesis ? " syn" : ""}" href="#/story/${c.id}"><span class="n">${c.synthesis ? "✦" : i + 1}</span><div>${c.synthesis ? `<p class="syn-badge">Later synthesis · not Grandpa's own account</p>` : ""}<h3>${esc(c.title)}</h3><p class="era">${esc(c.era)}</p><p>${esc(c.lede)}</p></div></a>`).join("")}</div>`;
       return;
     }
     const i = chs.indexOf(ch);
@@ -179,16 +179,32 @@
       <div class="story-layout">
         <aside class="story-side">${toc}</aside>
         <article class="chapter prose">
-          <p class="kicker">Chapter ${i + 1} · ${esc(ch.era)}</p>
+          <p class="kicker">${ch.synthesis ? "A later synthesis" : `Chapter ${i + 1}`} · ${esc(ch.era)}</p>
           <h1>${esc(ch.title)}</h1>
           <p class="lede">${esc(ch.lede)}</p>
           ${ch.sensitive ? `<div class="callout callout-sensitive"><div class="callout-label">Handle with discretion</div><p>The narrator asked that part of this chapter be treated carefully. It concerns a death in 1887 that is documented in public records.</p></div>` : ""}
+          ${ch.synthesis ? synthesisNote(ch) : ""}
           ${SA.paras(ch.body)}
           ${(ch.people || []).length ? `<div class="chapter-people"><h2>People in this chapter</h2><div class="pchips">${ch.people.map((p) => personChip(p)).join("")}</div></div>` : ""}
           <nav class="pager">${i > 0 ? `<a href="#/story/${chs[i - 1].id}">← ${esc(chs[i - 1].title)}</a>` : "<span></span>"}${i < chs.length - 1 ? `<a href="#/story/${chs[i + 1].id}">${esc(chs[i + 1].title)} →</a>` : ""}</nav>
         </article>
       </div>`;
+    // A synthesis is long: list its sections so it can be presented in parts.
+    const heads = [...main.querySelectorAll(".chapter h2.ch-h")];
+    const secs = main.querySelector(".ch-sections");
+    if (secs && heads.length) {
+      secs.innerHTML = `<h2>Sections</h2><ol>${heads.map((h, k) => `<li><button type="button" data-k="${k}">${esc(h.textContent)}</button></li>`).join("")}</ol>`;
+      secs.addEventListener("click", (e) => { const b = e.target.closest("button[data-k]"); if (b) heads[+b.dataset.k].scrollIntoView({ behavior: "smooth", block: "start" }); });
+    }
   };
+
+  // The notice at the head of a synthesis chapter: what it is, and the key to its evidence labels.
+  function synthesisNote(ch) {
+    const key = Object.keys(SA.EVIDENCE).map((k) => `<li>${SA.link("k", k)} <span>${esc(SA.EVIDENCE[k][2])}</span></li>`).join("");
+    return `<div class="callout callout-syn"><div class="callout-label">A later synthesis, not Grandpa's own account</div><p>${esc(ch.synthesis)}</p>
+      <ul class="evk-key">${key}</ul></div>
+      <nav class="ch-sections" aria-label="Sections of this chapter"></nav>`;
+  }
 
   // ---------- tree ----------
   V.tree = function (main, tid, params) {
@@ -781,7 +797,7 @@
         <p>Where a person appears in both parts, the two records are linked rather than merged, and each keeps its own sources and claims. Links are labelled <span class="xl xl-a">↩ In Grandpa's account</span> or <span class="xl xl-g">→ In the extended genealogy</span>, and the two parts have their own colours and headings throughout.</p>
         <h2>What is in Grandpa's account</h2>
         <ul>
-          <li><b>Story</b>: a narrative in twelve chapters, with testimony, interpretation and published history clearly distinguished.</li>
+          <li><b>Story</b>: a narrative in twelve chapters, with testimony, interpretation and published history clearly distinguished, and a later synthesis, <a href="#/story/dormant-title">The Dormant Title</a>, which draws on both parts of the archive to tell the baronetcy story and labels each claim by its evidence.</li>
           <li><b>Incorrect information</b>: the places where Grandpa's testimony is contradicted by stronger documentary evidence, with his words, the best-supported conclusion and the sources side by side. It corrects the facts, not the record of what he said.</li>
           <li><b>Tree</b>: the Somervilles and five related families, drawn from structured parent and partner links.</li>
           <li><b>People, Places, Glossary, Timeline</b>: directories that link to each other and to the transcript. People he never mentions, added to explain the story, are marked “not in the recordings”.</li>

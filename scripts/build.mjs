@@ -117,13 +117,15 @@ function addBackref(keys, owner) {
     backrefs.get(k).add(owner);
   }
 }
-const TOKEN = /\{(p|pl|t|e|s|qn|ch|q|g):([^}|]+)(?:\|([^}]*))?\}/g;
+const TOKEN = /\{(p|pl|t|e|s|qn|ch|ic|q|g|k):([^}|]+)(?:\|([^}]*))?\}/g;
+const EVIDENCE = new Set(["rec", "comp", "mem", "trad", "alleg", "inf", "conf"]);
 function checkMarkup(str, ctx, owner) {
   if (typeof str !== "string") return;
-  const stripped = str.replace(/^\{(ctx|int|sensitive)\}/, "");
+  const stripped = str.replace(/^\{(ctx|int|sensitive|h)\}/, "");
   for (const m of stripped.matchAll(TOKEN)) {
     const [, kind, ref] = m;
     if (kind === "q") addBackref(expandCite(ref.replace(/\s+/g, ""), ctx), owner);
+    else if (kind === "k") { if (!EVIDENCE.has(ref)) err(`${ctx}: unknown evidence label "${ref}"`); }
     else if (!has(kind, ref)) err(`${ctx}: unknown ${kind} reference "${ref}"`);
   }
   const leftovers = stripped.replace(TOKEN, "").match(/\{[a-z]+:[^}]*\}/g);
@@ -270,6 +272,12 @@ for (const ch of data.narrative) {
   const ctx = `chapter ${ch.id}`, owner = `ch:${ch.id}`;
   (ch.body || []).forEach((b, i) => checkMarkup(b, `${ctx} body[${i}]`, owner));
   for (const id of ch.people || []) if (!has("p", id)) err(`${ctx}: unknown person ${id}`);
+  // A later synthesis must say so in plain text (shown above the chapter), and every
+  // paragraph that is not a heading must carry at least one evidence label or source.
+  if ("synthesis" in ch) {
+    if (typeof ch.synthesis !== "string" || !/not Grandpa's own account/.test(ch.synthesis)) err(`${ctx}: synthesis must be plain text saying it is "not Grandpa's own account"`);
+    (ch.body || []).forEach((b, i) => { if (!b.startsWith("{h}") && !/\{(k|q|s|g|qn|ic):/.test(b)) err(`${ctx} body[${i}]: synthesis paragraph without an evidence label or citation`); });
+  }
 }
 // ---------- alignment ----------
 if (alignment) {
@@ -330,11 +338,12 @@ function checkQuotes(str, ctx) {
   if (typeof str !== "string") return;
   // Runs of adjacent {q:..} tokens are checked together; quotations are
   // attributed to the run that follows them, after the last {s:..} or {q:..}.
-  const tokens = [...str.matchAll(/\{(q|s):([^}]+)\}/g)];
+  // {g:..} (a compiled profile) ends a quotation's scope just as {s:..} does
+  const tokens = [...str.matchAll(/\{(q|s|g):([^}]+)\}/g)];
   let prevEnd = 0;
   for (let i = 0; i < tokens.length; i++) {
     const m = tokens[i];
-    if (m[1] === "s") { prevEnd = m.index + m[0].length; continue; }
+    if (m[1] !== "q") { prevEnd = m.index + m[0].length; continue; }
     const group = [m];
     while (i + 1 < tokens.length && tokens[i + 1][1] === "q" && /^\s*$/.test(str.slice(group[group.length - 1].index + group[group.length - 1][0].length, tokens[i + 1].index))) group.push(tokens[++i]);
     const seg = str.slice(prevEnd, m.index);

@@ -283,7 +283,17 @@
   };
 
   // ---------- markup ----------
-  const TOKEN = /\{(p|pl|t|e|s|qn|ch|q|g):([^}|]+)(?:\|([^}]*))?\}/g;
+  const TOKEN = /\{(p|pl|t|e|s|qn|ch|ic|q|g|k):([^}|]+)(?:\|([^}]*))?\}/g;
+  // Inline evidence labels for synthesis chapters: {k:rec} and so on.
+  SA.EVIDENCE = {
+    rec: ["▤", "Documented", "A record or published source, cited"],
+    comp: ["▦", "Compiled profile", "The family's compiled profiles (the extended genealogy), quoting family papers"],
+    mem: ["❝", "Grandpa's recollection", "Said by Grandpa in the recordings"],
+    trad: ["☙", "Family tradition", "Long believed in the family; no record establishes it"],
+    alleg: ["⚠", "Allegation", "Asserted by someone in the story, unproven"],
+    inf: ["◇", "Our inference", "The archive's reasoning from the evidence"],
+    conf: ["⚑", "Sources conflict", "The records disagree; both versions are kept"],
+  };
   SA.link = function (kind, id, text) {
     switch (kind) {
       case "p": { const p = SA.people[id]; return `<a class="ref ref-p" href="#/person/${id}">${esc(text || (p && p.name) || id)}</a>`; }
@@ -292,8 +302,15 @@
       case "e": { const e = SA.events[id]; return `<a class="ref ref-e" href="#/timeline?e=${id}">${esc(text || (e && e.title) || id)}</a>`; }
       case "qn": { const q = SA.questions[id]; return `<a class="ref ref-qn" href="#/questions?q=${id}" title="Open question">${esc(text || (q ? "open question: " + q.title : id))}</a>`; }
       case "ch": { const c = SA.chapters[id]; return `<a class="ref ref-ch" href="#/story/${id}">${esc(text || (c && c.title) || id)}</a>`; }
-      case "g": { const g = SA.gen[id]; return `<a class="ref ref-g" href="#/genealogy/person/${id}" title="Extended genealogy, record ${esc(id)}">${esc(text || (g && g.name) || id)}</a>`; }
+      case "ic": { const c = SA.corrections[id]; return `<a class="ref ref-ic" href="#/corrections?c=${id}" title="Incorrect information">${esc(text || (c ? "correction: " + c.title : id))}</a>`; }
+      case "g": {
+        // {g:0584|name} is a named link; a bare {g:0584} cites the profile, like a transcript citation
+        const g = SA.gen[id];
+        if (!text) return `<a class="cite-g" href="#/genealogy/person/${id}" title="Extended genealogy, record ${esc(id)}${g ? ": " + esc(g.name) : ""}">▦ ${esc(id)}</a>`;
+        return `<a class="ref ref-g" href="#/genealogy/person/${id}" title="Extended genealogy, record ${esc(id)}">${esc(text)}</a>`;
+      }
       case "s": return SA.sourceLink(id);
+      case "k": { const e = SA.EVIDENCE[id] || ["", id, ""]; return `<span class="evk evk-${esc(id)}" title="${esc(e[2])}">${e[0]} ${esc(text || e[1])}</span>`; }
       case "q": return SA.parseCite(id).map(SA.citeLink).join(" ");
     }
     return esc(text || id);
@@ -311,11 +328,13 @@
     }
     return out + esc(str.slice(last));
   }
-  SA.inline = (s) => inline(String(s || "").replace(/\{(ctx|int|sensitive)\}/g, ""));
+  SA.inline = (s) => inline(String(s || "").replace(/\{(ctx|int|sensitive|h)\}/g, ""));
   // A paragraph may start with {ctx}/{int}/{sensitive} (styled block) and may
   // switch mode mid-way (rendered as an inline labelled span).
   SA.para = function (str, tag = "p") {
     str = String(str || "");
+    // {h} marks a section heading within a chapter
+    if (str.startsWith("{h}")) return `<h2 class="ch-h">${inline(str.slice(3))}</h2>`;
     const parts = str.split(/\{(ctx|int|sensitive)\}/);
     let html = "", blockKind = null;
     if (parts[0] === "" && parts.length > 2) { blockKind = parts[1]; parts.splice(0, 2); html = inline(parts.shift()); }
@@ -338,7 +357,7 @@
     if (k === "t" && SA.terms[id]) return SA.terms[id].term;
     if (k === "g" && SA.gen[id]) return SA.gen[id].name;
     return "";
-  }).replace(/\{(ctx|int|sensitive)\}/g, "").replace(/\s+/g, " ").trim();
+  }).replace(/\{(ctx|int|sensitive|h)\}/g, "").replace(/\s+/g, " ").trim();
 
   // ---------- reverse indexes ----------
   // Which entities cite / mention / relate to a given entity.
