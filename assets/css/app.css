@@ -799,3 +799,10 @@ del.rv { display: none; }
 .ch-sections button:hover { border-color: var(--accent); color: var(--ink); }
 @media (max-width: 900px) { .chapter h2.ch-h { scroll-margin-top: 170px; } }
 @media print { .ch-sections { display: none; } .chapter h2.ch-h { break-after: avoid; } }
+
+/* ---------- figures ---------- */
+/* Images published with their provenance (data/images.json). */
+.arch-fig { margin: 1.8rem 0; }
+.arch-fig img { display: block; max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); background: var(--paper-2); }
+.arch-fig figcaption { font: .88rem/1.5 var(--sans); color: var(--ink-2); margin-top: .55rem; max-width: 60ch; }
+.fig-credit { display: block; margin-top: .3rem; font-size: .78rem; color: var(--muted); }

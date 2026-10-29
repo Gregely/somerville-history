@@ -33,6 +33,7 @@ const data = {
   readings: readJSON("data/readings.json"),
   narrative: readJSON("data/narrative.json"),
   corrections: readJSON("data/corrections.json"),
+  images: readJSON("data/images.json"),
 };
 // Part two, the extended genealogy: compiled profiles (generated from the
 // files in research/David Gilmour amended records) and the hand-kept list of
@@ -97,7 +98,7 @@ const ids = {};
 for (const [kind, list, key] of [
   ["p", data.people, "id"], ["pl", data.places, "id"], ["e", data.events, "id"],
   ["t", data.glossary, "id"], ["s", data.sources, "id"], ["qn", data.questions, "id"],
-  ["ch", data.narrative, "id"], ["ic", data.corrections, "id"], ["g", genealogy.profiles, "id"], ["gd", gdiff, "id"],
+  ["ch", data.narrative, "id"], ["ic", data.corrections, "id"], ["fig", data.images, "id"], ["g", genealogy.profiles, "id"], ["gd", gdiff, "id"],
 ]) {
   ids[kind] = new Set();
   for (const item of list) {
@@ -121,6 +122,9 @@ const TOKEN = /\{(p|pl|t|e|s|qn|ch|ic|q|g|k):([^}|]+)(?:\|([^}]*))?\}/g;
 const EVIDENCE = new Set(["rec", "comp", "mem", "trad", "alleg", "inf", "conf"]);
 function checkMarkup(str, ctx, owner) {
   if (typeof str !== "string") return;
+  // a paragraph that is only {fig:id} shows a registered image (data/images.json)
+  const fig = /^\{fig:([^}]+)\}$/.exec(str);
+  if (fig) { if (!has("fig", fig[1])) err(`${ctx}: unknown image "${fig[1]}"`); return; }
   const stripped = str.replace(/^\{(ctx|int|sensitive|h)\}/, "");
   for (const m of stripped.matchAll(TOKEN)) {
     const [, kind, ref] = m;
@@ -276,7 +280,7 @@ for (const ch of data.narrative) {
   // paragraph that is not a heading must carry at least one evidence label or source.
   if ("synthesis" in ch) {
     if (typeof ch.synthesis !== "string" || !/not Grandpa's own account/.test(ch.synthesis)) err(`${ctx}: synthesis must be plain text saying it is "not Grandpa's own account"`);
-    (ch.body || []).forEach((b, i) => { if (!b.startsWith("{h}") && !/\{(k|q|s|g|qn|ic):/.test(b)) err(`${ctx} body[${i}]: synthesis paragraph without an evidence label or citation`); });
+    (ch.body || []).forEach((b, i) => { if (!b.startsWith("{h}") && !b.startsWith("{fig:") && !/\{(k|q|s|g|qn|ic):/.test(b)) err(`${ctx} body[${i}]: synthesis paragraph without an evidence label or citation`); });
   }
 }
 // ---------- alignment ----------
@@ -370,6 +374,18 @@ for (const [kind, list] of Object.entries({ people: data.people, places: data.pl
   for (const item of list) scan(item, `${kind}/${item.id}`);
 if (QUOTE_REPORT) for (const q of quoteIssues) console.warn(`⚠ quote ${q}`);
 else if (quoteIssues.length) warn(`${quoteIssues.length} quotation(s) with weak overlap with their cited passages (run with --quotes to list)`);
+
+// ---------- images ----------
+// Every image published needs its creator, date, licence and where it came from,
+// and the file must be in the repository.
+for (const im of data.images) {
+  const ctx = `image ${im.id}`;
+  for (const k of ["file", "title", "caption", "creator", "date", "licence", "licenceUrl", "source", "sourceTitle"]) if (!im[k]) err(`${ctx}: missing ${k}`);
+  if (im.file && !fs.existsSync(path.join(root, im.file))) err(`${ctx}: file ${im.file} not found`);
+  if (!/^(CC BY(-SA)? [\d.]+|CC0 1\.0|Public domain)$/.test(im.licence || "")) err(`${ctx}: licence must be an open licence (CC BY, CC BY-SA, CC0 or public domain)`);
+  for (const k of ["licenceUrl", "source"]) if (im[k] && !/^https?:\/\//.test(im[k])) err(`${ctx}: ${k} must be a URL`);
+  checkMarkup(im.caption, `${ctx} caption`, `fig:${im.id}`);
+}
 
 // ---------- sources ----------
 for (const s of data.sources) {

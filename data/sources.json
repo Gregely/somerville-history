@@ -1074,5 +1074,75 @@
   "reliability": "Identifications are the narrator's, sometimes from labels on the backs of the pictures; dates of painting not established.",
   "used": "Shown in the second recording (C¶236–275): Colonel Thomas Bellingham and a woman the narrator calls his wife \"Anna\"; one of the two Henry Bellinghams, MPs; Sir Marcus Somerville; John Williams Clinch and his wife; Monique Bâby; an Alan Bellingham; miniatures of Sir James Somerville, 1st Bt, Major William, Captain William and Eliza Bellingham (unfinished); \"probably Wicked Alan, son of Henry Bellingham\"; Judge Tenison; Daniel O'Connor of Shoreham; a portrait from Maudie Moore's family; and a photograph of Bellingham Arthur's family.",
   "checked": "2026-10-28"
+ },
+ {
+  "id": "dpp-v-prunty-1986",
+  "title": "The People (DPP) v Prunty [1986] ILRM 716 (Court of Criminal Appeal, 15 May 1986)",
+  "publisher": "Court of Criminal Appeal (McCarthy, D'Arcy and Egan JJ); text as reproduced by vLex",
+  "year": "1986",
+  "url": "https://ie.vlex.com/vid/people-v-prunty-792875333",
+  "type": "law report",
+  "reliability": "A reported appeal judgment: primary evidence of the facts as found at trial and of the course of the prosecution. The reproduction read was truncated part-way through the court's reasoning; the outcome is taken from its synopsis.",
+  "used": "\"On the 10th August 1983, William Sommerville was taken by force from his home at Enniskerry, Co. Wicklow and held for a period of approximately twenty four hours\"; \"a ransom for his release was deposited at a quarry near to his home\". Michael Boyle \"pleaded guilty and has been duly sentenced\". A second accused pleaded not guilty and was convicted by a jury in the Dublin Circuit Court before Judge Dominic Lynch and sentenced to ten years, the prosecution relying on a detective garda's identification of his voice on \"a tape made from a telephone call to the Sommerville home at 5 p.m. on the 11th August\", in which the caller gave directions for paying the ransom. The Court of Criminal Appeal set the convictions aside and ordered a new trial. The surname is spelt \"Sommerville\" throughout.",
+  "access": "partial",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "it-maher-1997",
+  "title": "\"Kidnappings and robberies litter Dublin criminal's path to Old Bailey for murder attempt\"",
+  "publisher": "The Irish Times (John Maher)",
+  "year": "1997",
+  "url": "https://www.irishtimes.com/culture/kidnappings-and-robberies-litter-dublin-criminal-s-path-to-old-bailey-for-murder-attempt-1.56974",
+  "type": "journalism",
+  "reliability": "A national newspaper's profile of Michael Boyle, written fourteen years after the kidnapping, when he was jailed for life in London; secondary for 1983, and differs from the court record on the length of captivity.",
+  "used": "Published 29 March 1997. \"Boyle's most notorious crime before the attempted murder was the kidnap of solicitor Bill Somerville in Wicklow in 1983.\" The kidnappers \"had planned to kidnap Mr Somerville's son but were persuaded to take the solicitor when he convinced them his wife could raise the £50,000 ransom they demanded\". \"The family organised payment of the ransom but also called in gardai, who taped the kidnappers calls and recognised their voices.\" \"Mr Somerville was freed after two days.\" \"Gardai found Boyle had taped him to a tree, with a plastic bag fixed over his head, in a forest five miles from the Somerville home.\" Released on bail, Boyle falsely imprisoned a woman at Greystones and demanded £60,000; \"He was convicted of both crimes in July 1984 and received a 12 year sentence.\" Boyle (49), from Inchicore, had spent most of his early life in Bray; in 1997 he was \"jailed for life at the Old Bailey in London for attempted murder\".",
+  "access": "direct",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "it-murtagh-2008",
+  "title": "\"Dark ending to kidnap nightmare\"",
+  "publisher": "The Irish Times (Peter Murtagh)",
+  "year": "2008",
+  "url": "https://www.irishtimes.com/news/dark-ending-to-kidnap-nightmare-1.1272455",
+  "type": "journalism",
+  "reliability": "A retrospective on the Don Tidey kidnapping by the paper's security correspondent of 1983; secondary, with one sentence on the Somerville case.",
+  "used": "Published 27 June 2008. Describes \"a spate of abductions (usually accompanied by ransom demands) and attempted abductions\" before the Tidey kidnapping of November 1983: \"In August, an attempt to kidnap Galen Weston … failed\". \"A few days later, it was the turn of Enniskerry solicitor William Somerville, who was held tied to a tree at the Army firing range in Kilpedder for 24 hours.\" It attributes the Tidey kidnapping to the Provisional IRA but makes no attribution for the Somerville case.",
+  "access": "direct",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "bray-people-1983",
+  "title": "\"North Wicklow a terror target\" (Bray People, August 1983, reprinted)",
+  "publisher": "Bray People; the 1983 report as reprinted in the paper's archive feature, on PressReader (issue of 2 August 2017; also 22 August 2018)",
+  "year": "1983",
+  "url": "https://www.pressreader.com/ireland/bray-people/20170802/283158608709080",
+  "type": "journalism",
+  "reliability": "The local weekly's report of the week of the kidnapping: the nearest thing to a contemporary account found. PressReader refused automated access (HTTP 403), so it is known here only from search-engine extracts of the reprint; the original 1983 page and any photographs were not seen.",
+  "used": "\"The drama began when Mr Somerville and his wife Manon returned home and found their eldest son James (14) tied up and held by a lone gunman. The gunman, dressed in paramilitary uniform, masked and wielding a sawn-off shotgun, demanded £50,000.\" The extracts also give the case as \"the latest in a series of crimes involving terror and extortion in the north Wicklow area\" and, in paraphrase, that Mr Somerville was held as a hostage, tied to a tree at the military rifle range at Kilpeddar for 24 hours; and, according to Mr Somerville and the gardaí, no ransom was paid.",
+  "access": "search-only",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "rte-kidnappings",
+  "title": "\"Kidnappings in Ireland\" (RTÉ News report, Mary Fanning)",
+  "publisher": "RTÉ Archives",
+  "url": "https://www.rte.ie/archives/collections/news/21214662-kidnappings-in-ireland",
+  "type": "broadcast archive",
+  "reliability": "An archive catalogue entry for a television news report; the footage was not viewed.",
+  "used": "\"Report shows a look back at recent kidnappings in the Republic of Ireland\", covering cases from 1974 to 1983 including the attempted kidnapping of Galen Weston in August 1983. The catalogue description does not mention the Somerville case; whether the report does is not known.",
+  "access": "partial",
+  "checked": "2026-10-29"
+ },
+ {
+  "id": "wp-tanganyika",
+  "title": "Tanganyika (territory)",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Tanganyika_(territory)",
+  "type": "encyclopedia",
+  "reliability": "Tertiary.",
+  "used": "\"Tanganyika eventually gained its independence on 9 December 1961\"; with Zanzibar it became the United Republic of Tanzania in 1964.",
+  "access": "direct",
+  "checked": "2026-10-29"
  }
 ]

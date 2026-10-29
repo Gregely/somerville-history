@@ -27,6 +27,7 @@
   SA.questions = byId(A.questions);
   SA.corrections = byId(A.corrections || []);
   SA.chapters = byId(A.narrative);
+  SA.images = byId(A.images || []);
   SA.sourceNo = Object.fromEntries(A.sources.map((s, i) => [s.id, i + 1]));
   SA.lines = {};
   for (const t of A.transcripts) for (const l of t.lines) SA.lines[`${t.id}:${l.n}`] = l;
@@ -335,6 +336,9 @@
     str = String(str || "");
     // {h} marks a section heading within a chapter
     if (str.startsWith("{h}")) return `<h2 class="ch-h">${inline(str.slice(3))}</h2>`;
+    // {fig:id} shows a registered image with its caption, creator, licence and source
+    const fig = /^\{fig:([^}]+)\}$/.exec(str);
+    if (fig) return SA.figure(fig[1]);
     const parts = str.split(/\{(ctx|int|sensitive)\}/);
     let html = "", blockKind = null;
     if (parts[0] === "" && parts.length > 2) { blockKind = parts[1]; parts.splice(0, 2); html = inline(parts.shift()); }
@@ -349,6 +353,12 @@
     }
     return `<${tag}>${html}</${tag}>`;
   };
+  SA.figure = function (id) {
+    const im = SA.images[id];
+    if (!im) return "";
+    return `<figure class="arch-fig"><img src="${esc(im.file)}" alt="${esc(im.title)}" width="${im.width || ""}" height="${im.height || ""}" loading="lazy">
+      <figcaption>${inline(im.caption)}<span class="fig-credit">Photograph: ${esc(im.creator)}, ${esc(im.date)}. <a href="${esc(im.licenceUrl)}" rel="license noopener" target="_blank">${esc(im.licence)}</a>, via <a href="${esc(im.source)}" rel="noopener" target="_blank">${esc(im.sourceTitle)}</a>.${im.note ? " " + esc(im.note) : ""}</span></figcaption></figure>`;
+  };
   SA.paras = (arr) => (arr || []).map((s) => SA.para(s)).join("");
   SA.plain = (s) => String(s || "").replace(TOKEN, (m, k, id, text) => {
     if (text) return text;
@@ -357,7 +367,7 @@
     if (k === "t" && SA.terms[id]) return SA.terms[id].term;
     if (k === "g" && SA.gen[id]) return SA.gen[id].name;
     return "";
-  }).replace(/\{(ctx|int|sensitive|h)\}/g, "").replace(/\s+/g, " ").trim();
+  }).replace(/\{(ctx|int|sensitive|h)\}/g, "").replace(/\{fig:([^}]+)\}/g, (m, id) => (SA.images[id] ? SA.images[id].title : "")).replace(/\s+/g, " ").trim();
 
   // ---------- reverse indexes ----------
   // Which entities cite / mention / relate to a given entity.
