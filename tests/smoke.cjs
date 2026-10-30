@@ -72,6 +72,21 @@ const { chromium } = require('playwright');
     await page.goto('http://127.0.0.1:8765/#/story', { waitUntil: 'networkidle' });
     await page.waitForTimeout(300);
     if (!(await page.evaluate(() => document.querySelector('.chapter-card.syn .syn-badge')?.textContent || '')).includes("not Grandpa's own account")) errs.push(`${tag} story: synthesis badge missing`);
+    if (await page.evaluate(() => !!document.querySelector('.sec-banner, #sec-banner'))) errs.push(`${tag}: the section banner is back`);
+    // the map: tiles load (from a provider that does not need a Referer) and it goes full screen
+    await page.goto('http://127.0.0.1:8765/#/places', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(1500);
+    const tiles = await page.evaluate(() => [...document.querySelectorAll('#places-map .leaflet-tile-loaded')].map((i) => new URL(i.src).hostname));
+    if (!tiles.length || !tiles.every((h) => h === 'server.arcgisonline.com')) errs.push(`${tag} places: map tiles not loaded (${tiles.length}: ${[...new Set(tiles)].join(', ')})`);
+    await page.click('#places-map .map-fs');
+    await page.waitForTimeout(500);
+    const mfs = await page.evaluate(() => { const w = document.querySelector('.map-wrap'), r = w.getBoundingClientRect(); return { on: w.classList.contains('fs-on'), w: r.width, h: r.height, vw: innerWidth, vh: innerHeight }; });
+    if (!mfs.on || mfs.w < mfs.vw - 2 || mfs.h < mfs.vh - 2) errs.push(`${tag} places: map full screen failed ${JSON.stringify(mfs)}`);
+    await page.keyboard.press('Escape'); await page.waitForTimeout(400);
+    if (await page.evaluate(() => document.querySelector('.map-wrap').classList.contains('fs-on'))) {
+      await page.click('#places-map .map-fs'); await page.waitForTimeout(300);
+      if (await page.evaluate(() => document.querySelector('.map-wrap').classList.contains('fs-on'))) errs.push(`${tag} places: could not leave map full screen`);
+    }
     // the corkboard tree: pinned cards with the right silhouettes, and every control still works
     await page.goto('http://127.0.0.1:8765/#/tree/somerville?focus=bellingham-arthur-somerville', { waitUntil: 'networkidle' });
     await page.waitForTimeout(700);
@@ -91,6 +106,11 @@ const { chromium } = require('playwright');
     const k0 = await page.evaluate(() => document.querySelector('.vp').getAttribute('transform'));
     await page.click('[data-act="zoom-in"]'); await page.waitForTimeout(200);
     if (k0 === await page.evaluate(() => document.querySelector('.vp').getAttribute('transform'))) errs.push(`${tag} tree: zoom did nothing`);
+    await page.click('[data-act="fullscreen"]'); await page.waitForTimeout(400);
+    const tfs = await page.evaluate(() => { const h = document.querySelector('.tree-host'), r = h.getBoundingClientRect(); return { on: h.classList.contains('fs-on'), w: r.width, h: r.height, vw: innerWidth, vh: innerHeight }; });
+    if (!tfs.on || tfs.w < tfs.vw - 2 || tfs.h < tfs.vh - 2) errs.push(`${tag} tree: full screen failed ${JSON.stringify(tfs)}`);
+    await page.click('[data-act="fullscreen"]'); await page.waitForTimeout(300);
+    if (await page.evaluate(() => document.querySelector('.tree-host').classList.contains('fs-on'))) errs.push(`${tag} tree: could not leave full screen`);
     await page.click('[data-act="view-list"]'); await page.waitForTimeout(200);
     if (!(await page.evaluate(() => !document.querySelector('.tree-list').hidden && document.querySelectorAll('.outline a').length > 20))) errs.push(`${tag} tree: outline view failed`);
     await page.click('[data-act="view-chart"]'); await page.waitForTimeout(200);
@@ -115,8 +135,9 @@ const { chromium } = require('playwright');
       if (!(await page.evaluate((s) => !!document.querySelector(s), sel))) errs.push(`${tag} ${r}: portrait ${sel} missing`);
     }
     // the two parts: every page says which part it belongs to, and links between them are labelled
-    for (const [r, sel, want] of [['story', '.sec-banner.sb-account', "My Grandfather's Account"], ['person/corry-somerville', '.sec-banner.sb-account', "My Grandfather's Account"],
-      ['genealogy/person/0586', '.sec-banner.sb-genealogy', 'Extended Somerville Family Genealogy'], ['genealogy/tree', '.sec-banner.sb-genealogy', 'not what Grandpa said'],
+    // the two parts: the header's tab marks which part a page belongs to (there is no banner)
+    for (const [r, sel, want] of [['story', '.sec-tab-a.cur', "My Grandfather's Account"], ['person/corry-somerville', '.sec-tab-a.cur', "My Grandfather's Account"],
+      ['genealogy/person/0586', '.sec-tab-g.cur', 'Extended Genealogy'], ['genealogy/tree', '.sec-tab-g.cur', 'Extended Genealogy'],
       ['person/corry-somerville', 'main .xcard-g', 'In the extended genealogy'], ['genealogy/person/0586', 'main .xcard-a', "Grandpa's account"],
       ['genealogy/person/0501', 'main .xcard-none', 'Not in Grandpa'], ['', 'main .part-g', 'supplementary research'], ['', 'main .part-a', 'original project'],
       ['genealogy/person/0603', 'main .callout-doubt', 'doubtful'], ['genealogy/person/0587', 'main .g-alt', 'Wendy Stevenson'],

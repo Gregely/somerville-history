@@ -230,6 +230,35 @@
     if (l.died) return `d. ${l.died}`;
     return "";
   };
+  // ---------- full screen (the map and the family trees) ----------
+  // The element always fills the window (class fs-on), which works everywhere,
+  // including phones and the app's WebView; where the browser allows it, it also
+  // goes truly full screen. Esc, the browser's own exit, or the button leaves it.
+  SA.fullscreen = function (el, onChange) {
+    const on = !el.classList.contains("fs-on");
+    const done = () => { document.body.classList.toggle("fs-lock", on); if (onChange) setTimeout(() => onChange(on), 60); };
+    if (on) {
+      el.classList.add("fs-on");
+      const leave = (e) => {
+        if ((e.type === "keydown" && e.key === "Escape") || (e.type === "fullscreenchange" && !document.fullscreenElement && el._fsNative) || e.type === "hashchange") SA.fullscreen(el, onChange);
+      };
+      el._fsLeave = leave;
+      document.addEventListener("keydown", leave);
+      document.addEventListener("fullscreenchange", leave);
+      window.addEventListener("hashchange", leave);
+      el._fsNative = false;
+      if (el.requestFullscreen) el.requestFullscreen().then(() => { el._fsNative = true; }).catch(() => {});
+    } else {
+      el.classList.remove("fs-on");
+      document.removeEventListener("keydown", el._fsLeave);
+      document.removeEventListener("fullscreenchange", el._fsLeave);
+      window.removeEventListener("hashchange", el._fsLeave);
+      if (document.fullscreenElement === el && document.exitFullscreen) document.exitFullscreen().catch(() => {});
+    }
+    done();
+    return on;
+  };
+
   // ---------- painted silhouette portraits ----------
   // Everyone is shown as a painted silhouette in a gilt oval (symbols in index.html):
   // a man or a woman; a boy or a girl for those who died in childhood (under 16 by

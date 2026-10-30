@@ -341,7 +341,36 @@
   function mapInto(el, places, opts = {}) {
     if (!window.L) { el.innerHTML = `<div class="map-off">The map needs an internet connection. All places are listed below.</div>`; return null; }
     const map = L.map(el, { scrollWheelZoom: false, worldCopyJump: true });
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(map);
+    // Map tiles that need no key and no Referer, so the map also works when the archive
+    // is opened from a file or inside the Android app (OpenStreetMap's and CARTO's own
+    // servers refuse such requests). Esri's National Geographic map, which looks like an
+    // old atlas, comes first; if a source fails, the next one is used.
+    const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services";
+    const TILES = [
+      [`${ESRI}/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}`, { maxNativeZoom: 16, maxZoom: 19, attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC' }],
+      [`${ESRI}/World_Street_Map/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 19, attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom' }],
+      ["https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }],
+    ];
+    (function addTiles(i) {
+      const layer = L.tileLayer(TILES[i][0], TILES[i][1]).addTo(map);
+      let ok = 0, bad = 0;
+      layer.on("tileload", () => ok++);
+      layer.on("tileerror", () => { if (++bad >= 4 && !ok && i + 1 < TILES.length) { map.removeLayer(layer); addTiles(i + 1); } });
+    })(0);
+    // full screen: the map (with its extent buttons, if any) fills the screen
+    const Fs = L.Control.extend({ options: { position: "topleft" }, onAdd() {
+      const b = L.DomUtil.create("button", "map-fs");
+      b.type = "button"; b.title = "Full screen"; b.setAttribute("aria-label", "Show the map full screen"); b.textContent = "⛶";
+      L.DomEvent.disableClickPropagation(b);
+      b.addEventListener("click", () => {
+        const on = SA.fullscreen(el.closest(".map-wrap") || el, () => map.invalidateSize());
+        b.title = on ? "Exit full screen" : "Full screen";
+        b.setAttribute("aria-label", on ? "Exit full screen" : "Show the map full screen");
+        b.setAttribute("aria-pressed", on);
+      });
+      return b;
+    } });
+    map.addControl(new Fs());
     const markers = {};
     for (const p of places) {
       if (!p.coords) continue;

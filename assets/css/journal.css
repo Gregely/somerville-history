@@ -267,16 +267,6 @@ main.full::before { display: none; }
   body.nav-open .sub .sub-h { color: var(--muted) !important; font: 600 1.3rem var(--hand); }
 }
 
-/* the part's silk ribbon, running across the top of each page */
-.sec-banner { border: 0; font-family: var(--serif); position: relative; z-index: 2; }
-.sec-banner-in { font-size: .95rem; padding: .38rem clamp(16px, 3vw, 30px); }
-.sb-account { background: linear-gradient(180deg, #9c2f26, #7a1f19); color: #f6e5c4; box-shadow: 0 2px 4px rgba(0, 0, 0, .45), inset 0 1px 0 rgba(255, 210, 170, .25); }
-.sb-genealogy { background: linear-gradient(180deg, #33604f, #1f4034); color: #f0e6cc; box-shadow: 0 2px 4px rgba(0, 0, 0, .45), inset 0 1px 0 rgba(220, 240, 220, .2); }
-.sec-banner b { font: 400 1.04rem var(--display); color: var(--gilt-2) !important; }
-.sec-banner .sb-t span { color: inherit; opacity: .92; font-style: italic; }
-.sec-banner .sb-x { color: #fbe9c0 !important; font: 600 1.15rem var(--hand); text-decoration: underline; text-decoration-color: rgba(251, 233, 192, .5); }
-.sec-banner .sec-ic { background: #f2deb2 !important; color: #4a1c16 !important; }
-.sb-genealogy .sec-ic { color: #1f4034 !important; }
 
 /* the endpaper: marbling with a printed label */
 .site-foot {
@@ -695,7 +685,7 @@ main.full::before { display: none; }
 
 /* ---------- places: an old map in a frame ---------- */
 .map { border-radius: 1px; border: 0; box-shadow: 0 0 0 6px #6b4a2c, 0 0 0 8px #3a2516, 0 0 0 9px rgba(255, 220, 170, .2), 0 10px 22px rgba(0, 0, 0, .4); background: #e8d9b4; }
-.map .leaflet-tile-pane { filter: sepia(.6) saturate(.55) hue-rotate(-12deg) brightness(.98) contrast(.95); }
+.map .leaflet-tile-pane { filter: sepia(.28) saturate(.8) brightness(.99); }
 .map-btns button { font: .8rem var(--type); border-radius: 1px; background: #f4e8cc; color: #2a1f16; }
 .leaflet-container { font-family: var(--serif); }
 .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #f8f0db; color: #2a1f16; border-radius: 1px; }
@@ -801,3 +791,18 @@ mark.reading { border-bottom-width: 2px; }
 .card.sel.spouse .bg { fill: url(#cardStock2); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) main:not(.full) { background: var(--tex-grain), var(--tex-fibre), radial-gradient(ellipse at 50% 50%, transparent 60%, rgba(0, 0, 0, .35) 100%), var(--paper); } }
 :root[data-theme="dark"] main:not(.full) { background: var(--tex-grain), var(--tex-fibre), radial-gradient(ellipse at 50% 50%, transparent 60%, rgba(0, 0, 0, .35) 100%), var(--paper); }
+
+/* ---------- full screen: the map and the family trees ---------- */
+.fs-on { position: fixed !important; inset: 0 !important; z-index: 3000 !important; width: 100vw !important; height: 100vh !important; height: 100dvh !important; max-width: none !important; margin: 0 !important; }
+body.fs-lock { overflow: hidden; }
+.tree-host.fs-on { background: var(--desk); }
+.map-wrap.fs-on { background: var(--desk); padding: 10px; }
+.map-wrap.fs-on .map, .map.fs-on { height: 100% !important; }
+.map-wrap.fs-on .map-btns { top: 20px; right: 20px; }
+.map-fs { width: 34px; height: 34px; border: 2px solid rgba(0, 0, 0, .25); border-radius: 4px; background: #f4e8cc; color: #2a1f16; font-size: 1.15rem; line-height: 1; cursor: pointer; }
+.map-fs:hover { background: #fbf4e1; }
+.map-fs[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.fs-btn { border: 1px solid #8a6a3a; border-radius: 2px; padding: .4rem .75rem; cursor: pointer; font: 400 1rem var(--display); color: #2a1f16; background: linear-gradient(180deg, #f4e8cc, #e1cd9f); }
+.fs-btn:hover { background: linear-gradient(180deg, #fbf4e1, #ecdcb7); }
+.fs-btn[aria-pressed="true"] { background: linear-gradient(180deg, #a3332a, #8e2a22); color: #fbf1dc; border-color: #6d1512; }
+@media (max-width: 640px) { .fs-btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } }

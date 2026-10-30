@@ -36,9 +36,11 @@ cp transcripts/*.txt "$OUT/www/transcripts/"
 if [ ! -f "$OUT/vendor/leaflet/leaflet.js" ]; then
   (cd "$OUT/vendor" && npm pack leaflet@1.9.4 --silent >/dev/null && tar xzf leaflet-1.9.4.tgz && rm -rf leaflet && mv package/dist leaflet && rm -rf package leaflet-1.9.4.tgz)
 fi
-FONTS_URL='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600;700&display=swap'
-if [ ! -f "$OUT/vendor/fonts/fonts.css" ]; then
-  mkdir -p "$OUT/vendor/fonts"
+# the fonts are the ones index.html asks for; the cached copy is refreshed when that list changes
+FONTS_URL=$(grep -o 'https://fonts.googleapis.com/css2[^"]*' index.html | head -1)
+[ -n "$FONTS_URL" ] || { echo "index.html has no Google Fonts link" >&2; exit 1; }
+if [ ! -f "$OUT/vendor/fonts/fonts.css" ] || [ "$(cat "$OUT/vendor/fonts/url.txt" 2>/dev/null)" != "$FONTS_URL" ]; then
+  rm -rf "$OUT/vendor/fonts" && mkdir -p "$OUT/vendor/fonts"
   curl -sSfL -A 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Mobile Safari/537.36' "$FONTS_URL" -o "$OUT/vendor/fonts/remote.css"
   node -e '
     const fs = require("fs"), path = require("path"), dir = process.argv[1];
@@ -47,8 +49,10 @@ if [ ! -f "$OUT/vendor/fonts/fonts.css" ]; then
     fs.writeFileSync(path.join(dir, "fonts.css"), css); fs.writeFileSync(path.join(dir, "list.txt"), list.join("\n") + "\n");' "$OUT/vendor/fonts"
   while read -r url file; do [ -n "$url" ] && curl -sSfL "$url" -o "$OUT/vendor/fonts/$file"; done < "$OUT/vendor/fonts/list.txt"
   rm "$OUT/vendor/fonts/remote.css" "$OUT/vendor/fonts/list.txt"
+  printf '%s' "$FONTS_URL" > "$OUT/vendor/fonts/url.txt"
 fi
 mkdir -p "$OUT/www/vendor" && cp -r "$OUT/vendor/leaflet" "$OUT/vendor/fonts" "$OUT/www/vendor/"
+rm -f "$OUT/www/vendor/fonts/url.txt"
 find "$OUT/www/vendor" -name "*.map" -delete
 node -e '
   const fs = require("fs"), f = process.argv[1];

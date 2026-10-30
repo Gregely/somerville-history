@@ -254,6 +254,7 @@
             <button data-act="fit" title="Fit to screen">Fit</button>
             <button data-act="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
           </div>
+          <button class="fs-btn" data-act="fullscreen" aria-pressed="false" title="Full screen">⛶ <span>Full screen</span></button>
           <label class="tog"><input type="checkbox" data-act="line" checked /> ${G.lineLabel}</label>
           ${G.unnamedToggle ? `<label class="tog"><input type="checkbox" data-act="ph" checked /> Unnamed</label>` : ""}
         </div>
@@ -446,6 +447,12 @@
       if (act === "zoom-in") zoomBy(1.25);
       else if (act === "zoom-out") zoomBy(0.8);
       else if (act === "fit") fit(true);
+      else if (act === "fullscreen") {
+        const on = SA.fullscreen(host);
+        t.setAttribute("aria-pressed", on);
+        t.title = on ? "Exit full screen" : "Full screen";
+        t.querySelector("span").textContent = on ? "Exit full screen" : "Full screen";
+      }
       else if (act === "close") { panel.hidden = true; }
       else if (act === "view-chart" || act === "view-list") setView(act === "view-list" ? "list" : "chart");
       else if (t.classList.contains("card")) { if (!dragMoved) select(t.dataset.id, { center: false }); }

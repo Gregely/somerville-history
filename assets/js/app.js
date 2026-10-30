@@ -36,13 +36,7 @@
     [/^\/about\/?$/, () => V.about(main), "About", "about", "shared"],
   ];
 
-  // Every page says which part of the archive it belongs to.
-  const GI = SA.GI;
-  const BANNER = {
-    account: `<div class="sec-banner-in"><span class="sec-ic" aria-hidden="true">❝</span><span class="sb-t"><b>My Grandfather's Account</b> <span>the original oral-history project: Grandpa's words from the recordings, with our checks labelled</span></span><a class="sb-x" href="#/genealogy">Explore the extended genealogy →</a></div>`,
-    genealogy: `<div class="sec-banner-in"><span class="sec-ic" aria-hidden="true">${GI}</span><span class="sb-t"><b>Extended Somerville Family Genealogy</b> <span>supplementary research: compiled family profiles, not what Grandpa said in the recordings</span></span><a class="sb-x" href="#/account">↩ Return to Grandpa's account</a></div>`,
-  };
-  const banner = document.getElementById("sec-banner");
+  // The current part is marked by its tab in the header and by its page tabs.
   const head = document.querySelector(".site-head");
   function setSection(sec) {
     document.body.classList.remove("sec-account", "sec-genealogy", "sec-shared");
@@ -52,14 +46,11 @@
       a.classList.toggle("cur", on);
       if (on) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
     });
-    banner.innerHTML = BANNER[sec] || "";
-    banner.hidden = !BANNER[sec];
-    banner.className = `sec-banner sb-${sec}`;
     chrome();
   }
-  // full-height pages (the trees) fill the space below the header and banner
+  // full-height pages (the trees) fill the space below the header
   function chrome() {
-    const h = head.offsetHeight + (banner.hidden ? 0 : banner.offsetHeight);
+    const h = head.offsetHeight;
     document.documentElement.style.setProperty("--chrome-h", `${h}px`);
   }
   window.addEventListener("resize", chrome);

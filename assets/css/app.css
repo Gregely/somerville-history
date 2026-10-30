@@ -164,18 +164,6 @@ body.sec-account .sub-a, body.sec-genealogy .sub-g { display: flex; }
 }
 @media (max-width: 460px) { .sec-tab { padding: .3rem .5rem; } .sec-tab b { font-size: .84rem; } .sec-tab small { display: none; } }
 
-/* every page in a part carries its banner */
-.sec-banner { font-family: var(--sans); border-bottom: 1px solid; }
-.sec-banner-in { max-width: var(--maxw); margin: 0 auto; padding: .45rem clamp(16px, 3vw, 28px); display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; font-size: .86rem; }
-.sec-banner .sb-t { flex: 1; min-width: 14rem; }
-.sec-banner .sb-t span { color: var(--ink-2); }
-.sec-banner .sb-x { font-weight: 600; text-decoration: none; white-space: nowrap; }
-.sb-account { background: var(--acc-bg); border-color: var(--acc-line); }
-.sb-account b, .sb-account .sb-x, .sb-account .sec-ic { color: var(--acc); }
-.sb-genealogy { background: var(--gen-bg); border-color: var(--gen-line); }
-.sb-genealogy b, .sb-genealogy .sb-x, .sb-genealogy .sec-ic { color: var(--gen); }
-.sb-account .sb-x { color: var(--gen); } .sb-genealogy .sb-x { color: var(--acc); }
-.sec-banner .sec-ic { width: 1.4rem; height: 1.4rem; background: var(--card); }
 /* the genealogy's links, buttons and highlights take its own colour */
 body.sec-genealogy { --accent: var(--gen); }
 
