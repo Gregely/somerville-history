@@ -6,19 +6,123 @@
   <title>Somerville Family Archive</title>
   <meta name="description" content="The Somerville family archive in two parts: Grandpa's own account, from recorded conversations, with transcripts, story, people, places and timeline; and the extended Somerville genealogy, from compiled family profiles going back to James Somerville, the first of the family in Ireland." />
   <meta name="color-scheme" content="light dark" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237a2e2a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' text-anchor='middle' fill='%23f6f1e7'%3ES%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%238e1f1b'/%3E%3Ccircle cx='32' cy='32' r='20' fill='%23a52a24' stroke='%236d1512' stroke-width='2'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-style='italic' font-size='28' text-anchor='middle' fill='%23f2d9a8'%3ES%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="stylesheet" href="assets/css/journal.css" />
 </head>
 <body>
+  <!-- painted silhouette portraits and the journal's ornaments, used throughout by <use href="#…"> -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- painted silhouette portraits: ink-black figure, cream oval ground, gilt frame -->
+      <radialGradient id="silGround" cx="50%" cy="42%" r="62%">
+        <stop offset="0" stop-color="#f6ecd2"/><stop offset=".7" stop-color="#e9d8b0"/><stop offset="1" stop-color="#d2b884"/>
+      </radialGradient>
+      <linearGradient id="silInk" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2b211a"/><stop offset=".55" stop-color="#16110d"/><stop offset="1" stop-color="#241a14"/>
+      </linearGradient>
+      <linearGradient id="silGilt" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#e3c47a"/><stop offset=".35" stop-color="#a77d33"/><stop offset=".6" stop-color="#e8cf8c"/><stop offset="1" stop-color="#8a6326"/>
+      </linearGradient>
+      <filter id="silBrush" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" seed="7" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" result="d"/>
+        <feGaussianBlur in="d" stdDeviation=".25"/>
+      </filter>
+      <radialGradient id="pinBrass" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#fbe7a6"/><stop offset=".45" stop-color="#c79a3a"/><stop offset="1" stop-color="#6e4d14"/></radialGradient>
+    <radialGradient id="pinRed" cx="35%" cy="32%" r="70%"><stop offset="0" stop-color="#f6a08f"/><stop offset=".45" stop-color="#b3261e"/><stop offset="1" stop-color="#5e0f0b"/></radialGradient>
+    <linearGradient id="cardStock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf4e1"/><stop offset="1" stop-color="#f1e5c6"/></linearGradient>
+    <linearGradient id="cardStock2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3e6c6"/><stop offset="1" stop-color="#e8d7ae"/></linearGradient>
+    <clipPath id="silOval"><ellipse cx="50" cy="60" rx="44" ry="55"/></clipPath>
+  
+      <symbol id="sil-frame" viewBox="0 0 100 120">
+        <ellipse cx="50" cy="60" rx="44" ry="55" fill="url(#silGround)"/>
+      </symbol>
+      <symbol id="sil-ring" viewBox="0 0 100 120">
+        <ellipse cx="50" cy="60" rx="45.5" ry="56.5" fill="none" stroke="url(#silGilt)" stroke-width="4"/>
+        <ellipse cx="50" cy="60" rx="42.6" ry="53.6" fill="none" stroke="#7a5a24" stroke-opacity=".55" stroke-width=".8"/>
+      </symbol>
+  
+      <!-- gentleman: short hair, side-whisker, high collar and cravat, coat -->
+      <symbol id="sil-man" viewBox="0 0 100 120">
+        <use href="#sil-frame"/>
+        <g clip-path="url(#silOval)">
+          <path filter="url(#silBrush)" fill="url(#silInk)" d="M18 122C18 104 28 96 40 93C39 87 37 81 35 75C29 69 26 59 27 49C28 30 41 18 56 18C66 18 72 24 72.5 32C72.5 36 73.5 39 75 41.5C77 45.5 79.5 49 80.5 53C78.5 55.2 75.5 55.4 73.5 56C74.5 57.8 74.5 59 73.5 60.2C74.5 62 73.6 63.4 71.6 64.2C72.4 67.2 72 70 70 72.4C67.2 75 63.6 75.4 61.2 76.2C61.2 80.2 62 84 63.4 87.4C66.2 88.8 69.6 89 72.2 90.6C84 95 93 104 94 122Z"/>
+          <path fill="#efe2c4" fill-opacity=".9" filter="url(#silBrush)" d="M63.4 87.6C66.6 88.6 70 89 72.2 90.6C71 93.4 68.6 95.8 66.4 98.6C65.6 95.4 64.2 91.4 63.4 87.6Z"/>
+          <path fill="#16110d" d="M64.6 91.4C66.4 92.2 68.4 92.4 70 92.6C68.8 94.6 67.6 96 66.4 97.4Z"/>
+          <path fill="none" stroke="#f3e2bb" stroke-opacity=".16" stroke-width="1.1" stroke-linecap="round" d="M38 30C45 24 55 22 64 25M34 40C39 33 47 29 56 29M48 58C46 64 47 70 51 74M63 88C58 95 54 103 52 120"/>
+        </g>
+        <use href="#sil-ring"/>
+      </symbol>
+  
+      <!-- lady: hair dressed in a bun, slender neck, lace collar, gown -->
+      <symbol id="sil-woman" viewBox="0 0 100 120">
+        <use href="#sil-frame"/>
+        <g clip-path="url(#silOval)">
+          <path filter="url(#silBrush)" fill="url(#silInk)" d="M20 122C21 107 31 99 43 96C41.5 89 40.5 84 39.5 79C34 77.5 29 73.5 27.5 67.5C22 65.5 19.5 57 23.5 50.5C26 46 29.5 44 32 44.5C32.5 30 43 20 56.5 20C66 20 71 26 71.2 33.5C71.4 37.5 72.2 40 73.6 42.4C75.4 45.6 77.2 48.6 78 51.8C76.2 53.8 74 54 72.2 54.8C73.2 56.6 73 57.8 72.2 58.8C73 60.6 72.2 61.8 70.6 62.6C71 65.6 70 68.6 68 70.6C65.4 72.8 62.4 73 60.2 73.8C60 79 60.8 84 62.2 88.2C63.8 89.6 66 90 68.4 91.4C70.4 90.6 72.2 91.4 73 92.8C84 97.5 91 106 92 122Z"/>
+          <path fill="#16110d" filter="url(#silBrush)" d="M62 88C64 85.6 67 86.2 68.4 88.6C70.4 87.6 73 88.8 73.2 91.6C71 92.6 66 92 62 90Z"/>
+          <path fill="none" stroke="#f3e2bb" stroke-opacity=".17" stroke-width="1" stroke-linecap="round" d="M26 52C27 60 31 66 36 69M37 31C44 24 53 23 62 26M44 40C46 45 49 48 53 50M60 99C58 106 57 113 57 120"/>
+          <circle cx="61.5" cy="96" r="1.1" fill="#f3e2bb" fill-opacity=".22"/><circle cx="65" cy="98.5" r="1.1" fill="#f3e2bb" fill-opacity=".22"/><circle cx="68.5" cy="100.5" r="1.1" fill="#f3e2bb" fill-opacity=".22"/>
+        </g>
+        <use href="#sil-ring"/>
+      </symbol>
+  
+      <!-- boy (died in childhood): round head, fringe curl, short neck, small shoulders, wide collar -->
+      <symbol id="sil-boy" viewBox="0 0 100 120">
+        <use href="#sil-frame"/>
+        <g clip-path="url(#silOval)">
+          <path filter="url(#silBrush)" fill="url(#silInk)" d="M26 122C26.5 110 34 103 43 100.5C41.5 96 40 92 38.5 88C31 84 26.5 74 27 63.5C28 45 41 33 56 33C64 33 70 36.5 73 42C71.5 43.5 71.2 45.5 72.6 47.2C74.6 49.6 75.4 52.6 75.6 55.6C77 58 78.6 60.4 79.4 62.6C78 64.2 76.2 64.6 74.8 65.2C75.6 66.6 75.4 67.8 74.6 68.8C75.2 70.4 74.2 72 72.4 72.8C72.2 75.4 70.6 77.4 68.2 78.2C66.4 78.8 64.6 79 63.4 79.6C63.2 83 63.6 86.4 64.6 89.6C70 91 76 94 78.6 98.4C76 100.4 79.6 104 82.4 106C84 111 84.6 116 84.6 122Z"/>
+          <path fill="none" stroke="#f3e2bb" stroke-opacity=".17" stroke-width="1" stroke-linecap="round" d="M40 45C47 39 56 37 64 39M66 40C69 41 71 43 71.5 45.5M35 58C36 52 39 48 43 45"/>
+        </g>
+        <use href="#sil-ring"/>
+      </symbol>
+  
+      <!-- girl (died in childhood): round head, hair ribbon, ringlet, small shoulders, frilled collar -->
+      <symbol id="sil-girl" viewBox="0 0 100 120">
+        <use href="#sil-frame"/>
+        <g clip-path="url(#silOval)">
+          <path filter="url(#silBrush)" fill="url(#silInk)" d="M26 122C26.5 110 34 103.5 43.5 101C42 96 40.6 92.4 39.4 89C35 88.6 31 86 29.4 81.4C26.6 79.6 25 75 26 70.6C26 67 26.4 64.6 27.2 62.6C28.6 45 41 33.5 56 33.5C64.6 33.5 71 38 73.6 44.6C74.8 47.8 75.6 51 76 54.4C77.4 57.4 78.8 60 79.4 62.4C78 64 76.2 64.4 74.8 65C75.6 66.4 75.4 67.6 74.6 68.6C75.2 70.2 74.2 71.8 72.4 72.6C72.2 75.2 70.6 77.2 68.2 78C66.4 78.6 64.6 78.8 63.4 79.4C63.2 82.8 63.6 86.2 64.6 89.4C68 90.4 71 91.2 74 93.2C76.4 92.6 78.6 93.8 79 96.2C81.6 99 83.6 104 84.6 110C85 114 85 118 85 122Z"/>
+          <path fill="#16110d" filter="url(#silBrush)" d="M38 36C33 31 30 34 31.5 38.5C29 40 30 44.5 34 44C36.5 43.6 38.5 41 38.8 38.4Z"/>
+          <path fill="none" stroke="#f3e2bb" stroke-opacity=".17" stroke-width="1" stroke-linecap="round" d="M42 45C49 40 57 38.5 65 41M30 66C29 72 30 77 33 81M64 94C63 101 62.4 110 62.4 120"/>
+          <circle cx="67" cy="98.5" r="1" fill="#f3e2bb" fill-opacity=".22"/><circle cx="70.5" cy="100.5" r="1" fill="#f3e2bb" fill-opacity=".22"/>
+        </g>
+        <use href="#sil-ring"/>
+      </symbol>
+  
+      <!-- a child whose sex is not recorded: the plain child's portrait -->
+    <symbol id="sil-child" viewBox="0 0 100 120"><use href="#sil-boy"/></symbol>
+
+    <!-- unknown or unrecorded: an empty frame with a faint draped bust -->
+      <symbol id="sil-unknown" viewBox="0 0 100 120">
+        <use href="#sil-frame"/>
+        <g clip-path="url(#silOval)">
+          <path fill="#2b211a" fill-opacity=".22" d="M20 122C21 104 33 94 45 92C37 86 33 77 33 66C33 50 41 38 51 38C61 38 69 50 69 66C69 77 65 86 57 92C69 94 81 104 82 122Z"/>
+          <text x="51" y="72" text-anchor="middle" font-family="'IM Fell English', Georgia, serif" font-size="30" fill="#5b4632" fill-opacity=".55">?</text>
+        </g>
+        <use href="#sil-ring"/>
+      </symbol>
+  
+      <!-- small decorative pieces reused in the page chrome -->
+      <symbol id="orn-seal" viewBox="0 0 64 64">
+        <path fill="#8e1f1b" d="M32 3C37 3 39 7 43 7.5S51 5.5 54 9.5S55 18 58 21S62 28 61 32S57 39 58 43S55 52 51.5 54S46 59 41.5 60S35 62 32 61.5S25.5 61 22 59.5S14 57 11.5 53.5S6 46 6 42S2 35 3 31S6 23.5 8 20.5S10 12 14 9.5S21 6.5 24.5 5S28 3 32 3Z"/>
+        <circle cx="32" cy="32" r="19" fill="#a52a24"/>
+        <circle cx="32" cy="32" r="19" fill="none" stroke="#6d1512" stroke-width="2"/>
+        <circle cx="32" cy="32" r="15.5" fill="none" stroke="#c2463c" stroke-width="1" stroke-opacity=".7"/>
+        <path fill="#d45a4c" fill-opacity=".35" d="M17 20C21 13 29 10 36 11C27 13 21 17 17 25Z"/>
+      </symbol>
+      <symbol id="orn-fern" viewBox="0 0 120 200"><path d="M60.0 190.0 L60.5 187.0 L61.0 184.0 L61.5 181.0 L62.0 178.0 L62.4 175.0 L62.9 172.0 L63.4 169.0 L63.9 166.0 L64.3 163.0 L64.8 160.0 L65.2 157.0 L65.7 154.0 L66.1 151.0 L66.5 148.0 L66.9 145.0 L67.3 142.0 L67.7 139.0 L68.0 136.0 L68.4 133.0 L68.7 130.0 L69.0 127.0 L69.3 124.0 L69.6 121.0 L69.9 118.0 L70.1 115.0 L70.3 112.0 L70.5 109.0 L70.7 106.0 L70.9 103.0 L71.0 100.0 L71.2 97.0 L71.3 94.0 L71.3 91.0 L71.4 88.0 L71.4 85.0 L71.4 82.0 L71.4 79.0 L71.4 76.0 L71.3 73.0 L71.2 70.0 L71.1 67.0 L71.0 64.0 L70.8 61.0 L70.7 58.0 L70.4 55.0 L70.2 52.0 L70.0 49.0 L69.7 46.0 L69.4 43.0 L69.0 40.0 L68.7 37.0 L68.3 34.0 L67.9 31.0 L67.5 28.0 L67.1 25.0 L66.6 22.0 L66.1 19.0 L65.6 16.0 L65.1 13.0 L64.6 10.0" fill="none" stroke="#6f6a3a" stroke-width="1.6" stroke-linecap="round"/><path d="M61.8 179.2 Q60.2 166.1 55.1 175.7 Q52.5 164.6 48.5 172.3 Q44.9 163.1 41.9 168.8 Q37.2 161.6 35.3 165.4 Q29.6 160.2 28.7 161.9 Q33.3 169.1 35.3 165.4 Q38.9 174.5 41.9 168.8 Q44.5 180.0 48.5 172.3 Q50.1 185.4 55.1 175.7 Q55.7 190.9 61.8 179.2Z" fill="#857f45" fill-opacity=".78"/><path d="M61.8 179.2 Q71.6 188.0 69.0 177.4 Q78.4 184.1 76.3 175.6 Q85.1 180.1 83.5 173.8 Q91.8 176.1 90.8 172.0 Q98.5 172.2 98.0 170.3 Q89.8 168.0 90.8 172.0 Q82.0 167.6 83.5 173.8 Q74.2 167.2 76.3 175.6 Q66.4 166.8 69.0 177.4 Q58.6 166.4 61.8 179.2Z" fill="#8a8048" fill-opacity=".78"/><path d="M63.5 168.4 Q63.3 155.8 57.5 164.5 Q56.1 153.6 51.6 160.5 Q49.0 151.5 45.6 156.6 Q41.9 149.3 39.7 152.7 Q34.7 147.2 33.7 148.8 Q37.4 156.0 39.7 152.7 Q42.2 161.8 45.6 156.6 Q47.0 167.5 51.6 160.5 Q51.8 173.2 57.5 164.5 Q56.6 178.9 63.5 168.4Z" fill="#7b7a43" fill-opacity=".78"/><path d="M63.5 168.4 Q72.8 177.0 70.5 166.8 Q79.3 173.3 77.4 165.2 Q85.7 169.6 84.4 163.6 Q92.2 166.0 91.3 162.0 Q98.7 162.3 98.3 160.5 Q90.4 158.1 91.3 162.0 Q83.0 157.6 84.4 163.6 Q75.6 157.1 77.4 165.2 Q68.1 156.6 70.5 166.8 Q60.7 156.2 63.5 168.4Z" fill="#8a8048" fill-opacity=".78"/><path d="M65.1 157.6 Q64.2 145.6 59.2 154.2 Q57.3 144.0 53.4 150.8 Q50.4 142.3 47.5 147.4 Q43.5 140.7 41.6 144.0 Q36.6 139.1 35.7 140.6 Q39.7 147.3 41.6 144.0 Q44.5 152.5 47.5 147.4 Q49.4 157.7 53.4 150.8 Q54.3 162.8 59.2 154.2 Q59.2 168.0 65.1 157.6Z" fill="#857f45" fill-opacity=".78"/><path d="M65.1 157.6 Q74.9 164.6 71.5 155.3 Q80.6 160.4 77.9 153.0 Q86.3 156.2 84.3 150.7 Q92.0 152.0 90.7 148.4 Q97.7 147.7 97.1 146.0 Q89.4 144.8 90.7 148.4 Q82.3 145.1 84.3 150.7 Q75.3 145.5 77.9 153.0 Q68.2 145.9 71.5 155.3 Q61.1 146.3 65.1 157.6Z" fill="#8a8048" fill-opacity=".78"/><path d="M66.7 146.8 Q66.6 135.4 61.3 143.2 Q60.2 133.3 56.0 139.6 Q53.7 131.3 50.6 135.9 Q47.3 129.3 45.3 132.3 Q40.9 127.3 39.9 128.7 Q43.2 135.3 45.3 132.3 Q47.5 140.6 50.6 135.9 Q51.8 145.8 56.0 139.6 Q56.0 151.0 61.3 143.2 Q60.3 156.2 66.7 146.8Z" fill="#8a8048" fill-opacity=".78"/><path d="M66.7 146.8 Q75.9 153.5 72.8 144.6 Q81.4 149.5 78.8 142.5 Q86.8 145.5 84.9 140.3 Q92.2 141.5 91.0 138.1 Q97.7 137.5 97.1 135.9 Q89.8 134.7 91.0 138.1 Q83.0 135.0 84.9 140.3 Q76.3 135.4 78.8 142.5 Q69.6 135.7 72.8 144.6 Q62.8 136.1 66.7 146.8Z" fill="#857f45" fill-opacity=".78"/><path d="M68.0 136.0 Q67.4 125.2 62.8 132.9 Q61.2 123.6 57.6 129.7 Q55.0 122.1 52.3 126.6 Q48.8 120.5 47.1 123.4 Q42.7 118.9 41.8 120.3 Q45.3 126.4 47.1 123.4 Q49.6 131.1 52.3 126.6 Q53.9 135.8 57.6 129.7 Q58.2 140.5 62.8 132.9 Q62.5 145.2 68.0 136.0Z" fill="#857f45" fill-opacity=".78"/><path d="M68.0 136.0 Q76.4 142.8 73.9 134.3 Q81.8 139.4 79.8 132.5 Q87.1 135.9 85.6 130.8 Q92.5 132.4 91.5 129.1 Q97.8 128.9 97.3 127.4 Q90.5 125.8 91.5 129.1 Q84.1 125.8 85.6 130.8 Q77.8 125.7 79.8 132.5 Q71.4 125.7 73.9 134.3 Q65.0 125.7 68.0 136.0Z" fill="#8a8048" fill-opacity=".78"/><path d="M69.2 125.2 Q69.8 115.0 64.6 121.7 Q64.1 112.9 60.1 118.2 Q58.5 110.8 55.5 114.7 Q52.9 108.6 50.9 111.2 Q47.3 106.5 46.4 107.7 Q49.0 113.8 50.9 111.2 Q52.5 118.6 55.5 114.7 Q56.0 123.5 60.1 118.2 Q59.5 128.4 64.6 121.7 Q63.0 133.2 69.2 125.2Z" fill="#7b7a43" fill-opacity=".78"/><path d="M69.2 125.2 Q78.2 130.0 74.3 122.5 Q82.5 125.8 79.4 119.9 Q86.8 121.6 84.5 117.2 Q91.1 117.4 89.6 114.6 Q95.4 113.2 94.7 111.9 Q88.1 111.7 89.6 114.6 Q82.2 112.8 84.5 117.2 Q76.3 113.9 79.4 119.9 Q70.4 115.1 74.3 122.5 Q64.5 116.2 69.2 125.2Z" fill="#7b7a43" fill-opacity=".78"/><path d="M70.2 114.4 Q69.8 104.8 65.6 111.5 Q64.4 103.3 61.0 108.6 Q59.0 101.8 56.5 105.7 Q53.6 100.3 51.9 102.8 Q48.1 98.7 47.4 99.9 Q50.3 105.4 51.9 102.8 Q54.0 109.7 56.5 105.7 Q57.7 113.9 61.0 108.6 Q61.4 118.2 65.6 111.5 Q65.1 122.4 70.2 114.4Z" fill="#7b7a43" fill-opacity=".78"/><path d="M70.2 114.4 Q78.2 119.6 75.2 112.3 Q82.5 116.1 80.2 110.3 Q86.9 112.6 85.1 108.2 Q91.3 109.0 90.1 106.2 Q95.7 105.5 95.1 104.1 Q89.0 103.4 90.1 106.2 Q83.4 103.9 85.1 108.2 Q77.8 104.5 80.2 110.3 Q72.2 105.1 75.2 112.3 Q66.6 105.6 70.2 114.4Z" fill="#6e6c3b" fill-opacity=".78"/><path d="M70.9 103.6 Q70.9 94.7 66.7 100.7 Q65.9 93.1 62.6 97.9 Q60.9 91.5 58.4 95.0 Q55.9 89.9 54.3 92.2 Q50.9 88.2 50.2 89.3 Q52.7 94.5 54.3 92.2 Q56.0 98.6 58.4 95.0 Q59.3 102.7 62.6 97.9 Q62.6 106.8 66.7 100.7 Q65.8 110.9 70.9 103.6Z" fill="#8a8048" fill-opacity=".78"/><path d="M70.9 103.6 Q78.6 107.9 75.4 101.4 Q82.5 104.3 79.9 99.1 Q86.3 100.7 84.4 96.9 Q90.1 97.1 88.9 94.6 Q94.0 93.6 93.4 92.4 Q87.6 92.1 88.9 94.6 Q82.4 93.0 84.4 96.9 Q77.3 93.9 79.9 99.1 Q72.1 94.8 75.4 101.4 Q66.9 95.7 70.9 103.6Z" fill="#8a8048" fill-opacity=".78"/><path d="M71.3 92.8 Q71.2 84.6 67.4 90.2 Q66.5 83.1 63.5 87.6 Q61.9 81.7 59.7 85.1 Q57.3 80.3 55.8 82.5 Q52.6 78.9 51.9 79.9 Q54.3 84.7 55.8 82.5 Q57.5 88.4 59.7 85.1 Q60.6 92.1 63.5 87.6 Q63.7 95.9 67.4 90.2 Q66.8 99.6 71.3 92.8Z" fill="#8a8048" fill-opacity=".78"/><path d="M71.3 92.8 Q78.5 96.8 75.5 90.7 Q82.0 93.5 79.6 88.6 Q85.6 90.2 83.8 86.6 Q89.1 86.8 88.0 84.5 Q92.7 83.5 92.1 82.4 Q86.8 82.1 88.0 84.5 Q82.0 83.0 83.8 86.6 Q77.2 83.8 79.6 88.6 Q72.4 84.6 75.5 90.7 Q67.6 85.5 71.3 92.8Z" fill="#857f45" fill-opacity=".78"/><path d="M71.4 82.0 Q72.1 74.5 68.1 79.3 Q68.0 72.8 64.8 76.6 Q63.9 71.0 61.5 73.9 Q59.8 69.3 58.2 71.2 Q55.7 67.6 54.9 68.5 Q56.7 73.0 58.2 71.2 Q59.2 76.7 61.5 73.9 Q61.7 80.4 64.8 76.6 Q64.2 84.1 68.1 79.3 Q66.7 87.8 71.4 82.0Z" fill="#7b7a43" fill-opacity=".78"/><path d="M71.4 82.0 Q78.7 83.9 74.7 79.2 Q81.1 80.2 77.9 76.4 Q83.5 76.4 81.1 73.6 Q85.9 72.7 84.4 70.9 Q88.3 68.9 87.6 68.1 Q82.8 69.0 84.4 70.9 Q78.7 70.9 81.1 73.6 Q74.7 72.7 77.9 76.4 Q70.6 74.5 74.7 79.2 Q66.5 76.3 71.4 82.0Z" fill="#8a8048" fill-opacity=".78"/><path d="M71.3 71.2 Q70.9 64.4 68.0 69.2 Q67.0 63.3 64.7 67.2 Q63.1 62.3 61.4 65.2 Q59.2 61.3 58.0 63.2 Q55.3 60.3 54.7 61.2 Q56.9 65.0 58.0 63.2 Q59.6 68.0 61.4 65.2 Q62.3 71.0 64.7 67.2 Q65.0 74.0 68.0 69.2 Q67.7 77.0 71.3 71.2Z" fill="#8a8048" fill-opacity=".78"/><path d="M71.3 71.2 Q77.7 73.6 74.4 69.0 Q80.2 70.4 77.6 66.8 Q82.7 67.3 80.8 64.5 Q85.2 64.1 84.0 62.3 Q87.7 60.9 87.1 60.1 Q82.7 60.5 84.0 62.3 Q78.9 61.8 80.8 64.5 Q75.0 63.1 77.6 66.8 Q71.2 64.4 74.4 69.0 Q67.4 65.6 71.3 71.2Z" fill="#6e6c3b" fill-opacity=".78"/><path d="M70.8 60.4 Q70.7 54.3 67.9 58.5 Q67.3 53.2 65.0 56.6 Q63.8 52.2 62.2 54.7 Q60.4 51.1 59.3 52.8 Q56.9 50.1 56.4 50.8 Q58.2 54.4 59.3 52.8 Q60.5 57.2 62.2 54.7 Q62.8 59.9 65.0 56.6 Q65.1 62.7 67.9 58.5 Q67.4 65.5 70.8 60.4Z" fill="#8a8048" fill-opacity=".78"/><path d="M70.8 60.4 Q76.7 62.0 73.4 58.2 Q78.7 59.0 76.0 55.9 Q80.6 55.9 78.7 53.7 Q82.6 52.9 81.3 51.4 Q84.5 49.8 83.9 49.2 Q80.0 49.9 81.3 51.4 Q76.7 51.4 78.7 53.7 Q73.4 52.9 76.0 55.9 Q70.1 54.3 73.4 58.2 Q66.8 55.8 70.8 60.4Z" fill="#8a8048" fill-opacity=".78"/><path d="M70.0 49.6 Q70.1 44.2 67.5 47.8 Q67.1 43.2 65.1 46.1 Q64.1 42.2 62.6 44.3 Q61.1 41.2 60.1 42.6 Q58.1 40.2 57.7 40.8 Q59.2 44.0 60.1 42.6 Q61.1 46.5 62.6 44.3 Q63.0 49.0 65.1 46.1 Q65.0 51.5 67.5 47.8 Q66.9 53.9 70.0 49.6Z" fill="#6e6c3b" fill-opacity=".78"/><path d="M70.0 49.6 Q75.2 50.8 72.2 47.6 Q76.8 48.1 74.5 45.5 Q78.5 45.4 76.7 43.5 Q80.1 42.7 78.9 41.4 Q81.7 40.0 81.2 39.4 Q77.8 40.2 78.9 41.4 Q74.9 41.5 76.7 43.5 Q72.1 42.9 74.5 45.5 Q69.3 44.3 72.2 47.6 Q66.4 45.7 70.0 49.6Z" fill="#7b7a43" fill-opacity=".78"/><path d="M68.9 38.8 Q69.2 34.3 66.9 37.2 Q66.8 33.3 64.9 35.6 Q64.3 32.3 62.9 34.0 Q61.8 31.3 60.9 32.4 Q59.3 30.3 58.9 30.8 Q60.0 33.5 60.9 32.4 Q61.5 35.7 62.9 34.0 Q63.0 37.9 64.9 35.6 Q64.6 40.1 66.9 37.2 Q66.1 42.3 68.9 38.8Z" fill="#857f45" fill-opacity=".78"/><path d="M68.9 38.8 Q73.4 39.6 70.7 37.0 Q74.6 37.2 72.5 35.1 Q75.9 34.9 74.3 33.3 Q77.2 32.5 76.1 31.5 Q78.4 30.1 77.9 29.7 Q75.1 30.5 76.1 31.5 Q72.8 31.8 74.3 33.3 Q70.4 33.0 72.5 35.1 Q68.0 34.3 70.7 37.0 Q65.7 35.6 68.9 38.8Z" fill="#6e6c3b" fill-opacity=".78"/><path d="M67.5 28.0 Q67.9 24.3 65.9 26.7 Q65.9 23.5 64.3 25.3 Q63.9 22.6 62.7 24.0 Q61.9 21.8 61.1 22.7 Q59.9 20.9 59.5 21.3 Q60.4 23.6 61.1 22.7 Q61.6 25.4 62.7 24.0 Q62.8 27.2 64.3 25.3 Q64.0 29.0 65.9 26.7 Q65.2 30.8 67.5 28.0Z" fill="#7b7a43" fill-opacity=".78"/><path d="M67.5 28.0 Q71.2 28.5 68.9 26.5 Q72.1 26.5 70.3 24.9 Q73.0 24.5 71.7 23.4 Q73.9 22.6 73.1 21.8 Q74.8 20.6 74.4 20.3 Q72.2 21.0 73.1 21.8 Q70.3 22.2 71.7 23.4 Q68.5 23.3 70.3 24.9 Q66.6 24.4 68.9 26.5 Q64.8 25.6 67.5 28.0Z" fill="#857f45" fill-opacity=".78"/></symbol>
+      <symbol id="orn-flowers" viewBox="0 0 100 160"><path d="M40 150 Q48.1 95.0 52 40" fill="none" stroke="#7a7444" stroke-width="1.3"/><path d="M46 150 Q45.8 104.0 30 58" fill="none" stroke="#7a7444" stroke-width="1.3"/><path d="M48 150 Q56.3 106.0 72 62" fill="none" stroke="#7a7444" stroke-width="1.3"/><path d="M44 150 Q45.0 119.0 58 88" fill="none" stroke="#7a7444" stroke-width="1.3"/><ellipse cx="40" cy="120" rx="9" ry="3.4" transform="rotate(20 40 120)" fill="#86804a" fill-opacity=".8"/><ellipse cx="54" cy="128" rx="7" ry="2.7" transform="rotate(-30 54 128)" fill="#86804a" fill-opacity=".8"/><circle cx="55.6" cy="42.5" r="3.4" fill="#93a5c4" fill-opacity=".85"/><circle cx="50.8" cy="44.2" r="3.4" fill="#7f95b8" fill-opacity=".85"/><circle cx="47.7" cy="40.1" r="3.4" fill="#7389ad" fill-opacity=".85"/><circle cx="50.6" cy="35.9" r="3.4" fill="#7f95b8" fill-opacity=".85"/><circle cx="55.5" cy="37.4" r="3.4" fill="#93a5c4" fill-opacity=".85"/><circle cx="52" cy="40" r="1.5" fill="#d9c070"/><circle cx="31.6" cy="61.4" r="2.9" fill="#7f95b8" fill-opacity=".85"/><circle cx="27.3" cy="60.6" r="2.9" fill="#7389ad" fill-opacity=".85"/><circle cx="26.7" cy="56.2" r="2.9" fill="#93a5c4" fill-opacity=".85"/><circle cx="30.7" cy="54.3" r="2.9" fill="#93a5c4" fill-opacity=".85"/><circle cx="33.7" cy="57.5" r="2.9" fill="#7f95b8" fill-opacity=".85"/><circle cx="30" cy="58" r="1.3" fill="#d9c070"/><circle cx="76.0" cy="62.2" r="3.1" fill="#7f95b8" fill-opacity=".85"/><circle cx="73.0" cy="65.9" r="3.1" fill="#93a5c4" fill-opacity=".85"/><circle cx="68.6" cy="64.2" r="3.1" fill="#7389ad" fill-opacity=".85"/><circle cx="68.9" cy="59.5" r="3.1" fill="#7389ad" fill-opacity=".85"/><circle cx="73.5" cy="58.2" r="3.1" fill="#8aa0c2" fill-opacity=".85"/><circle cx="72" cy="62" r="1.4" fill="#d9c070"/><circle cx="59.1" cy="91.2" r="2.6" fill="#7389ad" fill-opacity=".85"/><circle cx="55.2" cy="90.0" r="2.6" fill="#7f95b8" fill-opacity=".85"/><circle cx="55.2" cy="86.0" r="2.6" fill="#7f95b8" fill-opacity=".85"/><circle cx="59.0" cy="84.8" r="2.6" fill="#7f95b8" fill-opacity=".85"/><circle cx="61.4" cy="88.0" r="2.6" fill="#7f95b8" fill-opacity=".85"/><circle cx="58" cy="88" r="1.2" fill="#d9c070"/><circle cx="44.0" cy="32.6" r="2.2" fill="#93a5c4" fill-opacity=".85"/><circle cx="40.9" cy="31.8" r="2.2" fill="#7389ad" fill-opacity=".85"/><circle cx="40.6" cy="28.5" r="2.2" fill="#7389ad" fill-opacity=".85"/><circle cx="43.7" cy="27.3" r="2.2" fill="#8aa0c2" fill-opacity=".85"/><circle cx="45.8" cy="29.8" r="2.2" fill="#7f95b8" fill-opacity=".85"/><circle cx="43" cy="30" r="1.0" fill="#d9c070"/><circle cx="65.0" cy="48.9" r="2.4" fill="#7389ad" fill-opacity=".85"/><circle cx="61.5" cy="47.9" r="2.4" fill="#7389ad" fill-opacity=".85"/><circle cx="61.4" cy="44.2" r="2.4" fill="#7389ad" fill-opacity=".85"/><circle cx="64.9" cy="43.0" r="2.4" fill="#8aa0c2" fill-opacity=".85"/><circle cx="67.1" cy="45.9" r="2.4" fill="#93a5c4" fill-opacity=".85"/><circle cx="64" cy="46" r="1.1" fill="#d9c070"/><circle cx="26.5" cy="45.3" r="2.2" fill="#93a5c4" fill-opacity=".85"/><circle cx="23.6" cy="46.8" r="2.2" fill="#7f95b8" fill-opacity=".85"/><circle cx="21.2" cy="44.4" r="2.2" fill="#7389ad" fill-opacity=".85"/><circle cx="22.7" cy="41.5" r="2.2" fill="#93a5c4" fill-opacity=".85"/><circle cx="26.0" cy="42.0" r="2.2" fill="#8aa0c2" fill-opacity=".85"/><circle cx="24" cy="44" r="1.0" fill="#d9c070"/><circle cx="81.0" cy="52.3" r="1.9" fill="#93a5c4" fill-opacity=".85"/><circle cx="78.1" cy="51.6" r="1.9" fill="#7389ad" fill-opacity=".85"/><circle cx="77.9" cy="48.7" r="1.9" fill="#7389ad" fill-opacity=".85"/><circle cx="80.6" cy="47.6" r="1.9" fill="#7389ad" fill-opacity=".85"/><circle cx="82.5" cy="49.8" r="1.9" fill="#7f95b8" fill-opacity=".85"/><circle cx="80" cy="50" r="0.9" fill="#d9c070"/><circle cx="51.4" cy="72.1" r="1.9" fill="#7389ad" fill-opacity=".85"/><circle cx="48.4" cy="71.9" r="1.9" fill="#7f95b8" fill-opacity=".85"/><circle cx="47.7" cy="69.1" r="1.9" fill="#93a5c4" fill-opacity=".85"/><circle cx="50.1" cy="67.5" r="1.9" fill="#8aa0c2" fill-opacity=".85"/><circle cx="52.4" cy="69.3" r="1.9" fill="#7f95b8" fill-opacity=".85"/><circle cx="50" cy="70" r="0.9" fill="#d9c070"/></symbol>
+    </defs>
+  </svg>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-head">
     <div class="head-row">
       <a class="brand" href="#/" aria-label="Somerville Family Archive, home">
-        <span class="mono" aria-hidden="true">S</span>
+        <span class="mono" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#orn-seal"/></svg><i>S</i></span>
         <span class="brand-text"><b>Somerville</b><small>Family Archive</small></span>
       </a>
       <nav class="sections" aria-label="The two parts of the archive">

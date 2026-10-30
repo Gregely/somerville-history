@@ -230,6 +230,32 @@
     if (l.died) return `d. ${l.died}`;
     return "";
   };
+  // ---------- painted silhouette portraits ----------
+  // Everyone is shown as a painted silhouette in a gilt oval (symbols in index.html):
+  // a man or a woman; a boy or a girl for those who died in childhood (under 16 by
+  // their dates, or, where a date is missing, an explicit "died young" in their own
+  // record); an empty frame where the sex is not recorded.
+  const yearOf = (s) => { const m = /\b(1[5-9]\d\d|20\d\d)\b/.exec(s || ""); return m ? +m[1] : null; };
+  const DIED_YOUNG = /\b(died (?:young|in infancy|as an? (?:infant|baby|child)|an infant)|died aged (?:[0-9]|1[0-5])\b)/i;
+  function portraitKind(sex, born, died, young) {
+    const child = born != null && died != null ? died - born < 16 : !!young;
+    if (sex === "m") return child ? "boy" : "man";
+    if (sex === "f") return child ? "girl" : "woman";
+    return child ? "child" : "unknown";
+  }
+  SA.pKind = (p) => {
+    const d = p.died && p.died.display;
+    return portraitKind(p.sex, yearOf(p.born && p.born.display), yearOf(d), /infan/i.test(d || "") || DIED_YOUNG.test(p.summary || ""));
+  };
+  SA.gKind = (p) => {
+    const l = p.life || {};
+    const own = (p.fields || []).filter((f) => /^(death|died)/i.test(f.label)).map((f) => f.value)
+      .concat((p.paras || []).map((x) => (typeof x === "string" ? x : x.map((r) => r[0]).join(""))).filter((t) => t.length < 60));
+    return portraitKind(p.sex, yearOf(l.born), yearOf(l.died), own.some((t) => /\b(died young|in infancy|died an infant)\b/i.test(t)));
+  };
+  SA.KIND_LABEL = { man: "a man", woman: "a woman", boy: "a boy who died in childhood", girl: "a girl who died in childhood", child: "a child who died in childhood", unknown: "not recorded" };
+  SA.portrait = (kind, cls = "") => `<svg class="sil sil-${kind}${cls ? " " + cls : ""}" viewBox="0 0 100 120" aria-hidden="true" focusable="false"><use href="#sil-${kind}"/></svg>`;
+
   const GEN_G = { get: (id) => SA.gen[id], parentsOf: SA.gParents, spouseIds: SA.gSpouses };
   SA.gNarrator = "0682";
   SA.gRelLabel = (id) => (SA.gen[SA.gNarrator] ? relText(SA.relate(GEN_G, id, SA.gNarrator)) : null);

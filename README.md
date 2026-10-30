@@ -99,11 +99,45 @@ They are two machine transcriptions of one recording, not two interviews: B is o
 
 Each label also carries a high, medium or low confidence level. `¶n` links go to paragraph *n* of transcript A and `B¶n` to paragraph *n* of transcript B, numbered by line of each original file. `[n]` links go to external source *n*. Facts taken from compiled genealogies (for example the Winters family pages) are labelled as published records but described as compiled, secondary evidence, not as original registers.
 
+## The design
+
+The site is presented as a preserved family journal and scrapbook lying on a desk, not as a conventional website:
+
+- **The binding:** the header is the leather cover, with a wax-seal monogram and gilt tooling. The two parts are ribbon bookmarks, oxblood for Grandpa's account and bottle green for the genealogy. Each part's pages are card-index tabs, and each page carries its part's silk ribbon.
+- **The page:** pages are aged paper, with grain, fibres, foxing and a stitched gutter.
+- **The type:** titles are set in IM Fell English, the text in EB Garamond, typed records in Courier Prime, and pencilled marginalia in Caveat.
+- **Each section is a different archival object:**
+
+  | Section | Presented as |
+  |---|---|
+  | Home | A title page with pressed flowers, and the two parts as cloth-bound volumes |
+  | People | Record cards with portraits |
+  | Profiles | Album pages, with the portrait held by photo corners |
+  | Story | A printed book, with drop capitals, a Contents card and wax-sealed chapter numbers |
+  | Timeline | Diary slips for family events and newspaper clippings for the wider history |
+  | Transcripts | Typed sheets with red-pencil paragraph numbers |
+  | Glossary | A two-column lexicon |
+  | Questions and corrections | Paper-clipped slips |
+  | Notes | Pasted and taped notes (wider history as clippings) |
+  | Evidence labels | Rubber stamps |
+  | Map | Sepia, in a wooden frame |
+  | Footer | A marbled endpaper |
+
+- **The family trees** are corkboards. Each person is a card pinned to the cork and hanging slightly askew from its pin. The relationships are strings running from pin to pin, with a wax seal for each marriage. The narrator's line is red string.
+- **Portraits:** everyone, in the trees, directories and profiles, has a painted silhouette in a gilt oval, chosen from their record:
+  - a man or a woman;
+  - a boy or a girl for those who died in childhood (under 16 by their dates, or an explicit "died young" in their own record where a date is missing), or a plain child where the sex is not recorded;
+  - an empty frame where nothing is recorded.
+
+  The silhouettes and ornaments are inline SVG symbols in `index.html`. `SA.pKind` and `SA.gKind` in `core.js` choose the portrait.
+- **What is unchanged:** every class, link, filter and control of the earlier layout is kept, and `journal.css` only changes how they look. The dark theme becomes the same journal by lamplight. Decorations are hidden from screen readers and in print.
+
 ## Project layout
 
 ```
 index.html                  the single-page app shell
-assets/css/app.css          styles (light and dark themes, responsive)
+assets/css/app.css          layout and behaviour styles (responsive)
+assets/css/journal.css      the journal design: materials, typography and every section's look (day and lamplight themes)
 assets/js/core.js           indexes, markup renderer, relationships, search
 assets/js/tree.js           family-tree layout and interaction
 assets/js/views.js          page views of the account, home, search and about

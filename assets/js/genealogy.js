@@ -136,6 +136,7 @@
       grid.innerHTML = list.map((p) => {
         const rel = SA.gRelLabel(p.id);
         return `<a class="person-card gen-card${p.archive ? " in-account" : ""}" href="#/genealogy/person/${p.id}">
+          <span class="pc-portrait">${SA.portrait(SA.gKind(p))}</span>
           <div class="pc-top"><span class="fam">Record ${esc(p.id)}</span>${p.living ? `<span class="tag">living</span>` : ""}${p.archive ? `<span class="tag tag-a" title="Also in Grandpa's account">❝ in the account</span>` : ""}${p.doubt ? `<span class="tag tag-doubt">⚑ doubtful link</span>` : ""}</div>
           <h3>${esc(p.name)}</h3>
           ${p.known ? `<div class="aka">“${esc(p.known)}”</div>` : ""}
@@ -167,7 +168,8 @@
     }).join("") : "";
     main.innerHTML = `
       <article class="profile g-profile">
-        <header class="profile-head g-profile-head">
+        <header class="profile-head g-profile-head has-portrait">
+          <div class="head-portrait" title="Silhouette: ${esc(SA.KIND_LABEL[SA.gKind(p)])}">${SA.portrait(SA.gKind(p))}</div>
           <p class="kicker"><a href="#/genealogy">Extended genealogy</a> · Record ${esc(id)}${p.typedRec ? ` (typed “${esc(p.typedRec)}” in the file)` : ""} · ${esc(branchTitle(p.branch))}</p>
           <h1>${esc(p.name)}</h1>
           ${p.known ? `<p class="fullname">Known as “${esc(p.known)}”</p>` : ""}

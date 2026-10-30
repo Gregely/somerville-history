@@ -1,13 +1,16 @@
-/* Interactive descendant tree drawn in SVG.
-   Each family is a descendant tree from its earliest known ancestor; people who
-   married in are drawn beside their partner, and a link takes you to their own
-   family's tree. Layout is a simple recursive "tidy" layout. */
+/* Interactive descendant tree drawn in SVG, as a corkboard: each person is an
+   archival card pinned to the cork with a painted silhouette, and the family
+   relationships are strings running from pin to pin, with a wax seal for each
+   marriage. Each family is a descendant tree from its earliest known ancestor;
+   people who married in are drawn beside their partner, and a link takes you to
+   their own family's tree. Layout is a simple recursive "tidy" layout. */
 (function () {
   "use strict";
   const SA = window.SA;
   const esc = SA.esc;
 
-  const W = 188, H = 70, CG = 18, HG = 26, VG = 78;
+  const W = 214, H = 98, CG = 34, HG = 30, VG = 92;
+  const PIN = 6; // the pin sits at the top centre of each card; strings end there
 
   // The tree draws either collection through a small graph adapter: the
   // account's people (SA.people) or the extended genealogy's profiles (SA.gen).
@@ -82,6 +85,7 @@
     relLabel: (id) => SA.relLabel(id),
     kicker: (p) => `${SA.FAMILY[p.family] || ""} · ${SA.CATEGORY[p.category] || ""}`,
     summary: (p) => `<p>${SA.inline(p.summary)}</p>`,
+    kind: (p) => SA.pKind(p),
     find: (v) => (SA.data.people.find((p) => p.name.toLowerCase() === v) || SA.search(v, 20).find((d) => d.type === "person") || {}).id,
     names: (ids) => ids.map((id) => SA.people[id].name),
     cross: (id) => SA.genOf[id] ? `<a class="btn xlink-g" href="#/genealogy/person/${SA.genOf[id]}">→ In the extended genealogy</a>` : "",
@@ -111,6 +115,7 @@
     relLabel: (id) => SA.gRelLabel(id),
     kicker: (p) => `Record ${p.id} · ${(SA.genBranches[p.branch] || {}).title || ""}`,
     summary: (p) => (p.header || []).length ? `<p class="small">${SA.esc(SA.gPlain(p.header.join(" ")))}</p>` : "",
+    kind: (p) => SA.gKind(p),
     find: (v) => (SA.data.genealogy.profiles.find((p) => p.name.toLowerCase() === v) || SA.search(v, 30).find((d) => d.type === "gprofile") || {}).id,
     names: (ids) => ids.map((id) => SA.gen[id].name),
     cross: (id) => SA.gen[id].archive ? `<a class="btn xlink-a" href="#/person/${SA.gen[id].archive}">↩ In Grandpa's account</a>` : "",
@@ -166,7 +171,7 @@
       });
       for (const pid of m.partners) {
         const a = Math.min(xs[pid], xs[m.id]) + W, b = Math.max(xs[pid], xs[m.id]);
-        edges.push({ kind: "couple", d: `M${a},${y + H / 2}H${b}`, style: G.spouseConf(m.id, pid), a: m.id, b: pid });
+        edges.push({ kind: "couple", d: `M${a - 6},${y + H / 2 - 4}Q${(a + b) / 2},${y + H / 2 + 3} ${b + 6},${y + H / 2 - 4}`, seal: [(a + b) / 2, y + H / 2], style: G.spouseConf(m.id, pid), a: m.id, b: pid });
       }
       let cursor = left + (m.w - m.kidsW) / 2;
       m.groups.forEach((g, gi) => {
@@ -186,11 +191,14 @@
         });
         const minX = Math.min(anchorX, ...cx.map((c) => c.x)), maxX = Math.max(anchorX, ...cx.map((c) => c.x));
         const kids = cx.map((c) => c.id);
-        edges.push({ kind: "stem", d: `M${anchorX},${anchorY}V${busY}`, a: m.id, b: g.partner, kids });
-        edges.push({ kind: "bus", d: `M${minX},${busY}H${maxX}`, a: m.id, b: g.partner, kids });
+        // the cross-string sags a little between its ends, like a real string
+        const sag = Math.min(12, (maxX - minX) * 0.035);
+        const sagAt = (x) => { const t = maxX > minX ? (x - minX) / (maxX - minX) : 0.5; return busY + 4 * sag * t * (1 - t); };
+        edges.push({ kind: "stem", d: `M${anchorX},${anchorY}L${anchorX},${sagAt(anchorX)}`, a: m.id, b: g.partner, kids });
+        edges.push({ kind: "bus", d: maxX > minX ? `M${minX},${busY}Q${(minX + maxX) / 2},${busY + 2 * sag} ${maxX},${busY}` : `M${minX},${busY}`, a: m.id, b: g.partner, kids, kidX: Object.fromEntries(cx.map((c) => [c.id, c.x])), anchorX, sagAt });
         for (const c of cx) {
           const conf = G.parentConf(c.id);
-          edges.push({ kind: "drop", d: `M${c.x},${busY}V${y + H + VG}`, style: conf === "low" ? "low" : conf === "medium" ? "medium" : "", a: m.id, child: c.id });
+          edges.push({ kind: "drop", d: `M${c.x},${sagAt(c.x)}L${c.x},${y + H + VG + PIN}`, style: conf === "low" ? "low" : conf === "medium" ? "medium" : "", a: m.id, child: c.id });
         }
       });
     }
@@ -209,7 +217,7 @@
       else cur = (cur + " " + w).trim();
     }
     if (cur) lines.push(cur);
-    if (lines.length > 2) { lines.length = 2; lines[1] = lines[1].replace(/.{0,2}$/, "") + "…"; }
+    if (lines.length > 3) { lines.length = 3; lines[2] = lines[2].replace(/.{0,2}$/, "") + "…"; }
     return lines;
   }
 
@@ -260,7 +268,9 @@
             <span><i class="lg lg-medium"></i>parent (inferred)</span>
             <span><i class="lg lg-low"></i>uncertain</span>`}
             <span><i class="lg lg-line"></i>${G.key === "genealogy" ? "Grandpa's line" : "narrator's line"}</span>
-            <span class="hint">Drag to pan · scroll or pinch to zoom · click a person</span>
+            <span><i class="lg-seal" aria-hidden="true"></i>married</span>
+            <span class="lg-sils">${SA.portrait("man")}${SA.portrait("woman")} adult · ${SA.portrait("boy")}${SA.portrait("girl")} died in childhood</span>
+            <span class="hint">Drag to pan · scroll or pinch to zoom · click a card</span>
           </div>
         </div>
       </div>`;
@@ -306,16 +316,26 @@
       $('[data-act="tree"]').value = state.tree;
       current = layout(G, tree, state);
       const sel = state.focus;
-      let html = "";
+      let html = "", shadows = "", seals = "";
       for (const e of current.edges) {
         const anc = (x) => x && narratorAnc.has(x);
         const onLine = state.lineHighlight && anc(e.a) && (
           e.kind === "couple" ? anc(e.b) : e.kind === "drop" ? anc(e.child) : e.kids.some(anc));
-        html += `<path class="edge e-${e.kind} ${e.style ? "e-" + e.style : ""} ${onLine ? "on-line" : ""}" d="${e.d}"/>`;
+        // on a shared cross-string only the stretch leading to the narrator's ancestor is red
+        const busLine = e.kind === "bus" && onLine;
+        const cls = `e-${e.kind} ${e.style ? "e-" + e.style : ""} ${onLine && !busLine ? "on-line" : ""}`;
+        shadows += `<path class="edge-shadow" d="${e.d}"/>`;
+        html += `<path class="edge ${cls}" d="${e.d}"/>${e.style ? "" : `<path class="twist" d="${e.d}"/>`}`;
+        if (busLine) for (const k of e.kids.filter(anc)) {
+          const x0 = e.anchorX, x1 = e.kidX[k], pts = [];
+          for (let i = 0; i <= 12; i++) { const x = x0 + ((x1 - x0) * i) / 12; pts.push(`${x.toFixed(1)},${e.sagAt(x).toFixed(1)}`); }
+          html += `<path class="edge e-bus on-line" d="M${pts.join("L")}"/><path class="twist on-line" d="M${pts.join("L")}"/>`;
+        }
+        if (e.seal) seals += `<g class="seal ${e.style ? "seal-" + e.style : ""} ${onLine ? "on-line" : ""}" transform="translate(${e.seal[0]},${e.seal[1]})"><title>${e.style ? "Partners (uncertain)" : "Married"}</title><path d="M0,-9.5C3,-9.6 4.6,-7.6 6.6,-6.8S9.8,-3.2 9.6,0S8.4,4.6 6.8,6.6S3.2,9.8 0,9.6S-4.6,8.4 -6.6,6.8S-9.8,3.2 -9.6,0S-8.4,-4.6 -6.8,-6.6S-3,-9.4 0,-9.5Z"/><circle r="6"/><text y="3.6">∞</text></g>`;
       }
       for (const n of current.nodes) {
         const p = G.get(n.id);
-        const lines = wrap(p.name, 24);
+        const lines = wrap(p.name, 17);
         const life = G.life(p);
         const living = G.isLiving(p);
         const cls = ["card", G.cls(p), n.main ? "main" : "spouse", G.isPlaceholder(p) ? "ph" : "", living ? "living" : "", n.id === sel ? "sel" : "", state.lineHighlight && narratorAnc.has(n.id) ? "on-line" : ""].join(" ");
@@ -325,18 +345,28 @@
         else if (n.hidden) extra = `<g class="more" data-expand="${n.id}"><rect x="${W / 2 - 46}" y="${H + 6}" width="92" height="20" rx="10"/><text x="${W / 2}" y="${H + 20}">+ ${n.hidden} hidden</text></g>`;
         else if (n.main && n.total && n.depth >= 0) extra = `<g class="fold" data-collapse="${n.id}" role="button" aria-label="Collapse ${esc(p.name)}'s descendants"><circle cx="${W / 2}" cy="${H + 8}" r="8"/><text x="${W / 2}" y="${H + 12}">−</text></g>`;
         if (origin) extra += `<g class="origin" data-goto="${origin}" data-focus="${n.id}"><title>Show ${esc(p.name)}'s own family</title><rect x="${W - 30}" y="-10" width="40" height="20" rx="10"/><text x="${W - 10}" y="4">↑ fam</text></g>`;
-        html += `<g class="${cls}" data-id="${n.id}" transform="translate(${n.x},${n.y})" tabindex="0" role="button" aria-label="${esc(p.name + (life ? ", " + life : ""))}">
+        const kind = G.kind(p);
+        // each card hangs a little askew from its pin, consistently for each person
+        let h = 0; for (const ch of n.id) h = (h * 31 + ch.charCodeAt(0)) | 0;
+        const tilt = ((((h % 1000) + 1000) % 1000) / 1000 - 0.5) * 3.2;
+        const nameY = lines.length === 1 ? 44 : lines.length === 2 ? 36 : 28;
+        html += `<g class="${cls} k-${kind}" data-id="${n.id}" transform="translate(${n.x},${n.y})" tabindex="0" role="button" aria-label="${esc(p.name + (life ? ", " + life : ""))}">
           <title>${esc(G.full(p))}${life ? " (" + esc(life) + ")" : ""}</title>
-          <rect class="bg" width="${W}" height="${H}" rx="10"/>
-          <rect class="bar" width="5" height="${H - 16}" x="0" y="8" rx="2"/>
-          <text class="nm" x="14" y="${lines.length > 1 ? 22 : 30}">${lines.map((l, i) => `<tspan x="14" dy="${i ? 16 : 0}">${esc(l)}</tspan>`).join("")}</text>
-          <text class="lf" x="14" y="${H - 12}">${esc(life || (G.isPlaceholder(p) ? "name not recorded" : living ? "living" : "dates unknown"))}</text>
-          ${G.key === "genealogy" ? `<text class="rec" x="${W - 10}" y="16">${esc(p.id)}</text>` : ""}
-          ${living ? `<circle class="lv" cx="${W - 12}" cy="${H - 16}" r="4"><title>Living or possibly living</title></circle>` : ""}
+          <g class="pinned" transform="rotate(${tilt.toFixed(2)} ${W / 2} ${PIN})">
+            <rect class="bg" width="${W}" height="${H}" rx="2.5"/>
+            <rect class="bar" width="${W}" height="4" rx="1"/>
+            <path class="ruled" d="M78 ${H - 31}H${W - 10}M78 ${H - 13}H${W - 10}"/>
+            <use class="sil" href="#sil-${kind}" x="9" y="13" width="60" height="72"/>
+            <text class="nm" x="80" y="${nameY}">${lines.map((l, i) => `<tspan x="80" dy="${i ? 17 : 0}">${esc(l)}</tspan>`).join("")}</text>
+            <text class="lf" x="80" y="${H - 17}">${esc(life || (G.isPlaceholder(p) ? "name not recorded" : living ? "living" : "dates unknown"))}</text>
+            ${G.key === "genealogy" ? `<text class="rec" x="${W - 8}" y="18">№ ${esc(p.id)}</text>` : ""}
+            ${living ? `<text class="lv" x="${W - 9}" y="${H - 4}"><title>Living or possibly living</title>living</text>` : ""}
+          </g>
+          <g class="pin" aria-hidden="true"><ellipse class="pin-sh" cx="${W / 2 + 2.5}" cy="${PIN + 3}" rx="6" ry="4"/><circle class="pin-head" cx="${W / 2}" cy="${PIN}" r="6.5"/><circle class="pin-hi" cx="${W / 2 - 2.2}" cy="${PIN - 2.2}" r="2"/></g>
           ${extra}
         </g>`;
       }
-      vp.innerHTML = html;
+      vp.innerHTML = `<g class="strings-shadow">${shadows}</g>${html}${seals}`;
       // datalist
       $("#tree-people").innerHTML = G.names([...G.members(state.tree)]).map((n) => `<option value="${esc(n)}">`).join("");
       renderList();
@@ -366,6 +396,7 @@
       const home = G.treeOf(id);
       panel.innerHTML = `
         <button class="close" data-act="close" aria-label="Close panel">×</button>
+        <div class="panel-portrait" title="Silhouette: ${esc(SA.KIND_LABEL[G.kind(p)])}">${SA.portrait(G.kind(p))}</div>
         <div class="kicker">${esc(G.kicker(p))}</div>
         <h3>${esc(p.name)}</h3>
         <div class="life">${esc(G.lifespan(p))}</div>

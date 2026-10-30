@@ -53,9 +53,12 @@
     const G = A.genealogy || { profiles: [] };
     const linked = G.profiles.filter((p) => p.archive).length;
     main.innerHTML = `
-      <section class="landing">
+      <section class="landing title-page">
+        <span class="orn orn-fern" aria-hidden="true"><svg viewBox="0 0 120 200"><use href="#orn-fern"/></svg></span>
+        <span class="orn orn-flowers" aria-hidden="true"><svg viewBox="0 0 100 160"><use href="#orn-flowers"/></svg></span>
         <p class="kicker">The Somerville Family Archive</p>
         <h1>The Somervilles of Ardrass, Castle Bellingham &amp; Clermont</h1>
+        <p class="title-rule" aria-hidden="true"><span>❦</span></p>
         <p class="lede">The archive has two separate parts. <b>My Grandfather's Account</b> is the original project: Grandpa's own telling of the family history, recorded in conversation in 2026 and kept in his words. The <b>Extended Somerville Family Genealogy</b> is supplementary research from compiled family profiles, reaching further back and wider than he spoke of. Every page says which part it belongs to.</p>
       </section>
       <section class="parts" aria-label="The two parts">
@@ -120,7 +123,7 @@
           </div>
         </div>
         <ol class="descent" aria-label="Line of descent to the narrator">
-          ${line.map((id, i) => { const p = SA.people[id]; const sp = SA.partnersOf(id).find((s) => line[i + 1] && SA.parentsOf(line[i + 1]).includes(s)); return `<li><a href="#/person/${id}"><span class="nm">${esc(p.name)}</span><span class="lf">${esc(SA.shortLife(p))}</span></a>${sp ? `<span class="sp">∞ <a href="#/person/${sp}">${esc(SA.people[sp].name)}</a></span>` : ""}</li>`; }).join("")}
+          ${line.map((id, i) => { const p = SA.people[id]; const sp = SA.partnersOf(id).find((s) => line[i + 1] && SA.parentsOf(line[i + 1]).includes(s)); return `<li><a href="#/person/${id}">${SA.portrait(SA.pKind(p), "mini")}<span class="nm">${esc(p.name)}</span><span class="lf">${esc(SA.shortLife(p))}</span></a>${sp ? `<span class="sp">∞ <a href="#/person/${sp}">${esc(SA.people[sp].name)}</a></span>` : ""}</li>`; }).join("")}
         </ol>
       </section>
       <section class="stats">${counts.map(([l, n, href]) => `<a href="${href}"><b>${n}</b><span>${l}</span></a>`).join("")}</section>
@@ -243,6 +246,7 @@
       grid.innerHTML = list.length ? list.map((p) => {
         const rel = SA.relLabel(p.id);
         return `<a class="person-card fam-${p.family} ${p.placeholder ? "ph" : ""}" href="#/person/${p.id}">
+          <span class="pc-portrait">${SA.portrait(SA.pKind(p))}</span>
           <div class="pc-top"><span class="fam">${esc(SA.FAMILY[p.family])}</span>${p.living || p.possiblyLiving ? `<span class="tag">living</span>` : ""}${p.placeholder ? `<span class="tag">placeholder</span>` : ""}${!SA.inRecordings(p.id) ? `<span class="tag tag-ctx" title="Not mentioned in the recordings: included as research context">not in the recordings</span>` : ""}${SA.genOf[p.id] ? `<span class="tag tag-g" title="Also has a compiled profile in the extended genealogy">${SA.GI} genealogy</span>` : ""}</div>
           <h3>${esc(p.name)}</h3>
           <div class="lf">${esc(SA.lifespan(p))}</div>
@@ -292,7 +296,8 @@
     const lifeFact = (k, label) => p[k] ? `<div class="lifefact"><span class="lbl">${label}</span> <b>${esc(p[k].display)}</b> ${SA.badge(p[k].status, p[k].conf)} ${SA.citeList(p[k].cite)} ${(p[k].src || []).map(SA.sourceLink).join(" ")}${p[k].narrator ? `<div class="note narrator"><b>❝ Narrator's account:</b> ${SA.inline(p[k].narrator)}</div>` : ""}${p[k].note ? `<div class="note">${esc(p[k].note)}</div>` : ""}</div>` : "";
     main.innerHTML = `
       <article class="profile">
-        <header class="profile-head fam-${p.family}">
+        <header class="profile-head fam-${p.family} has-portrait">
+          <div class="head-portrait" title="Silhouette: ${esc(SA.KIND_LABEL[SA.pKind(p)])}">${SA.portrait(SA.pKind(p))}</div>
           <p class="kicker">${esc(SA.FAMILY[p.family])} · ${esc(SA.CATEGORY[p.category] || "")}${p.placeholder ? " · placeholder" : ""}</p>
           <h1>${esc(p.name)}</h1>
           ${p.fullName && p.fullName !== p.name ? `<p class="fullname">${esc(p.fullName)}</p>` : ""}

@@ -72,6 +72,48 @@ const { chromium } = require('playwright');
     await page.goto('http://127.0.0.1:8765/#/story', { waitUntil: 'networkidle' });
     await page.waitForTimeout(300);
     if (!(await page.evaluate(() => document.querySelector('.chapter-card.syn .syn-badge')?.textContent || '')).includes("not Grandpa's own account")) errs.push(`${tag} story: synthesis badge missing`);
+    // the corkboard tree: pinned cards with the right silhouettes, and every control still works
+    await page.goto('http://127.0.0.1:8765/#/tree/somerville?focus=bellingham-arthur-somerville', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(700);
+    const kinds = await page.evaluate(() => Object.fromEntries(['dorothy-somerville', 'alan-everard-somerville', 'bellingham-arthur-somerville', 'margaret-hall-clinch'].map((id) => {
+      const c = document.querySelector(`.card[data-id="${id}"] use.sil`); return [id, c && c.getAttribute('href')];
+    })));
+    const wantKinds = { 'dorothy-somerville': '#sil-girl', 'alan-everard-somerville': '#sil-child', 'bellingham-arthur-somerville': '#sil-man', 'margaret-hall-clinch': '#sil-woman' };
+    for (const [id, k] of Object.entries(wantKinds)) if (kinds[id] !== k) errs.push(`${tag} tree: ${id} drawn as ${kinds[id]}, expected ${k}`);
+    const treeUi = await page.evaluate(() => ({ pins: document.querySelectorAll('.card .pin-head').length, cards: document.querySelectorAll('.card').length, seals: document.querySelectorAll('.seal').length, panel: !document.querySelector('.tree-panel').hidden && !!document.querySelector('.tree-panel .panel-portrait .sil') }));
+    if (!treeUi.cards || treeUi.pins !== treeUi.cards || !treeUi.seals || !treeUi.panel) errs.push(`${tag} tree: cards ${treeUi.cards}, pins ${treeUi.pins}, seals ${treeUi.seals}, panel ${treeUi.panel}`);
+    await page.evaluate(() => document.querySelector('.card[data-id="margaret-hall-clinch"]').dispatchEvent(new MouseEvent('click', { bubbles: true })));
+    await page.waitForTimeout(300);
+    if (!(await page.evaluate(() => document.querySelector('.tree-panel h3')?.textContent || '')).includes('Margaret')) errs.push(`${tag} tree: clicking a card did not open its panel`);
+    await page.fill('[data-act="find"]', 'Captain William Somerville'); await page.press('[data-act="find"]', 'Enter'); await page.dispatchEvent('[data-act="find"]', 'change');
+    await page.waitForTimeout(400);
+    if (!(await page.evaluate(() => document.querySelector('.tree-panel h3')?.textContent || '')).includes('Captain William')) errs.push(`${tag} tree: find a person failed`);
+    const k0 = await page.evaluate(() => document.querySelector('.vp').getAttribute('transform'));
+    await page.click('[data-act="zoom-in"]'); await page.waitForTimeout(200);
+    if (k0 === await page.evaluate(() => document.querySelector('.vp').getAttribute('transform'))) errs.push(`${tag} tree: zoom did nothing`);
+    await page.click('[data-act="view-list"]'); await page.waitForTimeout(200);
+    if (!(await page.evaluate(() => !document.querySelector('.tree-list').hidden && document.querySelectorAll('.outline a').length > 20))) errs.push(`${tag} tree: outline view failed`);
+    await page.click('[data-act="view-chart"]'); await page.waitForTimeout(200);
+    const before = await page.evaluate(() => document.querySelectorAll('.card').length);
+    await page.evaluate(() => document.querySelector('.fold[data-collapse="captain-william-somerville"]').dispatchEvent(new MouseEvent('click', { bubbles: true })));
+    await page.waitForTimeout(200);
+    const after = await page.evaluate(() => document.querySelectorAll('.card').length);
+    await page.evaluate(() => document.querySelector('.more[data-expand="captain-william-somerville"]').dispatchEvent(new MouseEvent('click', { bubbles: true })));
+    await page.waitForTimeout(200);
+    if (!(after < before && before === await page.evaluate(() => document.querySelectorAll('.card').length))) errs.push(`${tag} tree: collapse/expand failed (${before} → ${after})`);
+    await page.evaluate(() => document.querySelector('.origin[data-goto="bellingham"]').dispatchEvent(new MouseEvent('click', { bubbles: true })));
+    await page.waitForTimeout(400);
+    if (await page.evaluate(() => document.querySelector('[data-act="tree"]').value) !== 'bellingham') errs.push(`${tag} tree: link to a spouse's own family failed`);
+    await page.goto('http://127.0.0.1:8765/#/genealogy/tree/clermont?focus=0677', { waitUntil: 'networkidle' });
+    await page.waitForTimeout(600);
+    if (await page.evaluate(() => document.querySelector('.card[data-id="0677"] use.sil')?.getAttribute('href')) !== '#sil-girl') errs.push(`${tag} genealogy tree: Dorothy (0677) not drawn as a girl`);
+    if (!(await page.evaluate(() => document.querySelector('.tree-panel h3')?.textContent || '')).includes('Dorothy')) errs.push(`${tag} genealogy tree: focus panel missing`);
+    // portraits on the directories and profiles
+    for (const [r, sel] of [['people', '.person-card .pc-portrait .sil'], ['genealogy/people', '.person-card .pc-portrait .sil'], ['person/dorothy-somerville', '.head-portrait .sil-girl'], ['genealogy/person/0631', '.head-portrait .sil-man']]) {
+      await page.goto('http://127.0.0.1:8765/#/' + r, { waitUntil: 'networkidle' });
+      await page.waitForTimeout(300);
+      if (!(await page.evaluate((s) => !!document.querySelector(s), sel))) errs.push(`${tag} ${r}: portrait ${sel} missing`);
+    }
     // the two parts: every page says which part it belongs to, and links between them are labelled
     for (const [r, sel, want] of [['story', '.sec-banner.sb-account', "My Grandfather's Account"], ['person/corry-somerville', '.sec-banner.sb-account', "My Grandfather's Account"],
       ['genealogy/person/0586', '.sec-banner.sb-genealogy', 'Extended Somerville Family Genealogy'], ['genealogy/tree', '.sec-banner.sb-genealogy', 'not what Grandpa said'],
